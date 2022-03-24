@@ -1,0 +1,5726 @@
+[
+	{
+		"Name": "Dialog_Tutorial01_Text1",
+		"Text_English": "Well hello stranger, it's good to see you again.",
+		"Text_Korean": "아니 이게 누구야! <br>이렇게 다시 만나다니 매우 반갑군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Tutorial01_Text2",
+		"Text_English": "Oh! This isn't the time for this. <br>A new enemy has polluted the Holy Ground. <br>We must defeat the enemies and cleanse the area.",
+		"Text_Korean": "음… 그 표정은 설마, 이 위대한 마법사를 기억 못 하는 거요? <br>섭섭하지만 세월이 많이 지났으니 그럴 수도 있겠지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Tutorial01_Text3",
+		"Text_English": "Oh! This isn't the time for this. <br>A new enemy has polluted the Holy Ground. <br>We must defeat the enemies and cleanse the area.",
+		"Text_Korean": "참! 이럴 때가 아니지. 새로운 적이 성역을 오염시켰소. <br>우리는 적을 물리치고 성역을 정화해야 하오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Tutorial01_Text4",
+		"Text_English": "You didn’t forget how to move, did you? <br>I marked it just in case, so go find the light!",
+		"Text_Korean": "설마 이동하는 것 정도는 잊지 않았겠지? <br>혹시 몰라 내 친절하게 표시해 놓았으니 빛을 찾아가시오!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Tutorial01_Text5",
+		"Text_English": "These clowns are your first enemies?",
+		"Text_Korean": "처음 나타난 적이 이런 우스꽝스러운 놈들이라니!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Tutorial01_Text6",
+		"Text_English": "Seems like you still got it. <br>But even I can take care of this much.",
+		"Text_Korean": "녹슬지 않은 것 같군. <br>하지만 이런 잔챙이들은 나도 해치울 수 있지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Tutorial01_Text7",
+		"Text_English": "Now there are some stronger enemies, <br>beat them to prove your strength.",
+		"Text_Korean": "이번에 좀 더 강한 놈들이 덤비는군! <br>저 놈들을 물리친다면 실력을 인정하지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Tutorial01_Text8",
+		"Text_English": "GREAT WORK! 1, 2, 123, Remember this rhythm.",
+		"Text_Korean": "오! 멋진 실력이야. <br>탁 타! 타닥 타! 이 리듬을 꼭 기억하시오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Tutorial01_Text9",
+		"Text_English": "It's an ambush! Use your counterattack! <br>Counterattack is an important skill <br>that can change the tide of the battle.",
+		"Text_Korean": "첫 번째 길을 열었군. 잘했소.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Tutorial01_Text10",
+		"Text_English": "Counterattacking is very crucial in combat. <br>Trust your instincts and counterattack with perfect timing.",
+		"Text_Korean": "이번 전투에 필요한 것은 <br>이 세계에서 정말 중요한 반격이오. <br>감각을 떠올려 정확한 타이밍으로 반격해보시오!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Tutorial01_Text11",
+		"Text_English": "Counterattack now!",
+		"Text_Korean": "지금이 바로 그 타이밍이오!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Tutorial01_Text12",
+		"Text_English": "Excellent! <br>Counterattacks are a bit hard, but it can turn the tides of battle.",
+		"Text_Korean": "훌륭하오! 반격은 조금 어렵지만 전투를 뒤집을 수 있으니 <br>익혀두시오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Tutorial01_Text13",
+		"Text_English": "Pathfinder, arise. <br>This is just a nightmare.",
+		"Text_Korean": "두 번째도 성공이군. 훌륭하오!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Tutorial01_Text14",
+		"Text_English": "You can defeat multiple enemies with the skill buttons. <br>Destroy everything!",
+		"Text_Korean": "스킬 버튼을 사용하면 많은 적을 쉽게 무찌를 수 있소. <br>모두 파괴하시오!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Tutorial01_Text15",
+		"Text_English": "Well uh…you… shouldn’t have broken that….",
+		"Text_Korean": "그, 그것까지 부수면….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Tutorial01_Text16",
+		"Text_English": "To open a blocked path, you must suppress your enemy.",
+		"Text_Korean": "막힌 길을 열려면 적을 제압해서 조종해야 하오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Tutorial01_Text17",
+		"Text_English": "Now! Now! Press the button to suppress!",
+		"Text_Korean": "지금! 버튼을 눌러 제압하시오!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Tutorial01_Text18",
+		"Text_English": "Th-that monster polluted the Holy ground! <br>We have to gather our power to defeat it.",
+		"Text_Korean": "저, 저 괴물이 성역을 오염시켰소! <br>모두의 힘을 모아 거대한 적을 물리치시오!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0101_Text1",
+		"Text_English": "What is happening?",
+		"Text_Korean": "활기에 가득 찼던 도시가 대체 왜…?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0101_Text2",
+		"Text_English": "Demons are besieging the city!",
+		"Text_Korean": "이 악마들이 루에모스를 차단하고 있었군!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0101_Text3",
+		"Text_English": "Mortal, <br>are you ready to sacrifice yourself?",
+		"Text_Korean": "인간이여, <br>피와 살을 바칠 준비가 되었는가?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0101_Text4",
+		"Text_English": "You shall also suffer from Rachel's curse.",
+		"Text_Korean": "너에게도 라헬의 저주가 있을 것이다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0102_Text1",
+		"Text_English": "Thank you for helping me. <br>Keep your wits about you on this road.",
+		"Text_Korean": "부탁을 들어주어 고맙네. <br>어떤 위험이 기다리고 있을지 모르니 조심하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0102_Text2",
+		"Text_English": "They’re all dead…",
+		"Text_Korean": "병사들의 시체가…",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0102_Text3",
+		"Text_English": "How precious!",
+		"Text_Korean": "안녕?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0102_Text4",
+		"Text_English": "Are you looking for them, too?",
+		"Text_Korean": "어머! 너도 그놈들을 찾고 있는 거야?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0102_Text5",
+		"Text_English": "Stop!",
+		"Text_Korean": "그만둬!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0102_Text6",
+		"Text_English": "I’m afraid you’re too late!",
+		"Text_Korean": "누가 먼저 찾는지 볼까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0102_Text7",
+		"Text_English": "That wicked thing Rahel, is also looking for <br>Lord Alfrid! Let’s hurry!",
+		"Text_Korean": "라헬! 저 사악한 자도 알프리드 님을 찾고 있는 거야! <br>서두르세!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0102_Text8",
+		"Text_English": "See you again soon!",
+		"Text_Korean": "그럼 먼저 갈게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0102_Text9",
+		"Text_English": "Bitten by the prey…",
+		"Text_Korean": "사냥감에게 목을 물리다니….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0103_Text1",
+		"Text_English": "Look around to find some clues!",
+		"Text_Korean": "단서를 찾을 수 있도록 주의를 기울이게!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0103_Text2",
+		"Text_English": "Are you from Elysium?",
+		"Text_Korean": "엘리시움에서 온 자인가?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0103_Text3",
+		"Text_English": "So you’re Gote…?",
+		"Text_Korean": "당신이 고트…?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0103_Text4",
+		"Text_English": "Yes, follow me!",
+		"Text_Korean": "맞아! 일단 날 따라와 줘!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0103_Text5",
+		"Text_English": "I was escorting Lord Alfrid when we were ambushed….",
+		"Text_Korean": "영주님과 엘리시움으로 피신 도중 습격을 받았지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0103_Text6",
+		"Text_English": "I lost my liege in the chaos. <br>You must help me find him, I beg of you!",
+		"Text_Korean": "그 이후 영주님의 행방을 알 수 없어. <br>날 좀 도와줘.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0103_Text7",
+		"Text_English": "The city is ours!",
+		"Text_Korean": "도시는 이제 우리 것이닷! ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0103_Text8",
+		"Text_English": "You cannot stop us…",
+		"Text_Korean": "우리를 막을 수 없을 것이다….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0104_Text1",
+		"Text_English": "Now lord Alfried! Hahaha!",
+		"Text_Korean": "이제 영주만 남았군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0104_Text2",
+		"Text_English": "You will pay if you hurt him, Rahel! I am warning you!",
+		"Text_Korean": "라헬! 고트를 해친다면 똑같이 갚아줄 것이다!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0104_Text3",
+		"Text_English": "Damn, I lost her after she took Gote towards the main square.",
+		"Text_Korean": "제길! 놓쳤군. <br>라헬이 고트를 끌고 간 방향은 중앙 광장 쪽일세.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0104_Text4",
+		"Text_English": "Let me pierce your heart!",
+		"Text_Korean": "심장을 꿰뚫어주마!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0104_Text5",
+		"Text_English": "Darkness shall take over…",
+		"Text_Korean": "어둠에 삼켜지리라….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0105_Text1",
+		"Text_English": "Hello!",
+		"Text_Korean": "안녕?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0105_Text2",
+		"Text_English": "I love a good heroic last stand.",
+		"Text_Korean": "눈물겨운 전우애군. 언제까지 버틸 수 있을까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0105_Text3",
+		"Text_English": "How exciting! Yes! Laugh!",
+		"Text_Korean": "흥분되게 하네. 좀 더 날뛰어 봐! 아하하하!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0105_Text4",
+		"Text_English": "Oh, how exhilarating, darling. I have a gift for you.",
+		"Text_Korean": "아! 반해버렸어. 그럼 선물을 줄게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0105_Text5",
+		"Text_English": "S… Stooop!!! Nooo!",
+		"Text_Korean": "그, 그만둬! 으아악!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0105_Text6",
+		"Text_English": "I would love to stay and chat, but I must go. Kisses!",
+		"Text_Korean": "아쉽지만 난 영주를 찾으러 가볼게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0105_Text7",
+		"Text_English": "Pl…ease… Find… lord… Alfrid…",
+		"Text_Korean": "부디 영주님을…",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0105_Text8",
+		"Text_English": "You cannot run!",
+		"Text_Korean": "빠져나갈 수 없을 것이다!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0106_Text1",
+		"Text_English": "I’m from Luemos and was the lieutenant for Lord Alfrid.",
+		"Text_Korean": "난 루에모스 출신일세. <br>알프리드 님을 모시던 부관이었지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0106_Text2",
+		"Text_English": "Gote was my aide. He was like a brother to me.",
+		"Text_Korean": "고트는 내 후임이었네. 나와 형제 같은 사이였어.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0106_Text3",
+		"Text_English": "This way…",
+		"Text_Korean": "이쪽이에요….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0106_Text4",
+		"Text_English": "Who is that? I wonder if they know where Lord Alrid is?",
+		"Text_Korean": "저 환영은 누구지? <br>알프리드 님의 행방을 알려주는 걸까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0106_Text5",
+		"Text_English": "Let’s follow it. It's where Rahel flew to.",
+		"Text_Korean": "일단 따라가세. 라헬이 날아간 방향과도 일치해.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0106_Text6",
+		"Text_English": "I like your eyes. Let me take them!",
+		"Text_Korean": "눈이 마음에 드는구나! 내가 가지겠다!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0106_Text7",
+		"Text_English": "You cannot stop the ritual…",
+		"Text_Korean": "의식은 막을 수 없다….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0107_Text1",
+		"Text_English": "Where, oh, where is that old geezer?",
+		"Text_Korean": "이 늙은이는 대체 어디 있는 거야?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0107_Text2",
+		"Text_English": "Oh did you kill Gote already?",
+		"Text_Korean": "뭐야, 너 동료를 죽였어? 죽인 거야?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0107_Text3",
+		"Text_English": "That Demon shouldn’t have done that!",
+		"Text_Korean": "저 악마가 입에 담아서는 안 될 말을 하다니….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0107_Text4",
+		"Text_English": "Fortunately, it seems Rahel hasn’t found him yet either. <br>There’s still hope!",
+		"Text_Korean": "하지만 라헬도 아직 찾지 못한 것 같군. <br>이 기회를 살리도록 하세!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0107_Text5",
+		"Text_English": "Human! You cannot go further.",
+		"Text_Korean": "인간! 더 이상 갈 수 없다",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0107_Text6",
+		"Text_English": "The darkness shall swallow the light.",
+		"Text_Korean": "빛은 어둠으로 물들 것이다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0108_Text1",
+		"Text_English": "Wait, something’s not right. Don't let your guard down.",
+		"Text_Korean": "왠지 소름 돋는군. 불길한 기분이 드네. 조심하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0108_Text2",
+		"Text_English": "Will you just die already?",
+		"Text_Korean": "아직도 살아 있는 거야?!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0108_Text3",
+		"Text_English": "When the time comes, she will die by my hand. ",
+		"Text_Korean": "할 수 있다면 라헬과의 악연을 끊어버리고 싶네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0108_Text4",
+		"Text_English": "You annoying pest!",
+		"Text_Korean": "질척대지 말고 떨어져!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0108_Text5",
+		"Text_English": "You still haven’t taken care of this?",
+		"Text_Korean": "아직도 처리하지 못한 건가?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0108_Text6",
+		"Text_English": "Ha! You're in no position to question me.",
+		"Text_Korean": "흥! 넌 늙은이나 잘 처리해.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0108_Text7",
+		"Text_English": "Hmmph!",
+		"Text_Korean": "흥!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0108_Text8",
+		"Text_English": "Isn't that Caligula…?!",
+		"Text_Korean": "저 자는 칼리굴라…?!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0108_Text9",
+		"Text_English": "Oh look, it’s time for you to die!",
+		"Text_Korean": "이제 친구에게 보내줄게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0108_Text10",
+		"Text_English": "Caligula's behind all this, I am just a pawn….",
+		"Text_Korean": "나, 난 아니야. 다 칼리굴라 계획이야!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0108_Text11",
+		"Text_English": "He's the one who gave us the city!",
+		"Text_Korean": "그가 우리에게 도시를 넘겼다고!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0108_Text12",
+		"Text_English": "Shut up.",
+		"Text_Korean": "그만 닥쳐.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0108_Text13",
+		"Text_English": "Funny thing, Alfrid’s probably rotting as we speak….",
+		"Text_Korean": "흥, 지금쯤 그의 손에 영주는…",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0109_Text1",
+		"Text_English": "Everyone wanted to exile Caligula, <br>but Lord Alfrid was against it.",
+		"Text_Korean": "모두가 칼리굴라를 쫓아내자고 했지만 <br>알프리드 님이 반대하셨네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0109_Text2",
+		"Text_English": "My lord’s kindness was answered with treachery!",
+		"Text_Korean": "끝까지 사람을 믿은 어진 성품이 배신당한 걸세.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0109_Text3",
+		"Text_English": "What is he after?",
+		"Text_Korean": "칼리굴라의 목적은 대체 무엇일까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0109_Text4",
+		"Text_English": "We, we were too late… I'm sorry Gote.",
+		"Text_Korean": "이미 늦었어… 고트 미안하네….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0109_Text5",
+		"Text_English": "This arrow shall pierce your heart!",
+		"Text_Korean": "화살이 심장을 꿰뚫으리라!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0109_Text6",
+		"Text_English": "The ritual has begun…",
+		"Text_Korean": "의식은 시작됐다…",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0110_Text1",
+		"Text_English": "I wonder what Caligula was promised for opening the gate….",
+		"Text_Korean": "칼리굴라는 악마에게 뭘 받은 거지? 방심할 수 없군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0110_Text2",
+		"Text_English": "Save her…",
+		"Text_Korean": "그분을 구하세요….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0110_Text3",
+		"Text_English": "To whom is she referring to?",
+		"Text_Korean": "그분? 누굴 말하는 거지?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0110_Text4",
+		"Text_English": "This is it! Prepare for battle!",
+		"Text_Korean": "마지막 관문일세! 결전을 준비하게!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0110_Text5",
+		"Text_English": "Now! The Dark power…!",
+		"Text_Korean": "어둠의 힘을….!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0110_Text6",
+		"Text_English": "This is the power of darkness!",
+		"Text_Korean": "이것이 어둠의 힘인가!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0110_Text7",
+		"Text_English": "W-what! What is this? Did they betray me? Nooo!",
+		"Text_Korean": "어? 이, 이게 뭐야? 날 속였나…? 으아아아아….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0110_Text8",
+		"Text_English": "Lucci…",
+		"Text_Korean": "루치…",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0110_Text9",
+		"Text_English": "How dare you desecrate the ritual? Die!",
+		"Text_Korean": "의식을 망치려 하다니 죽어라!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0110_Text10",
+		"Text_English": "The ritual has already begun…",
+		"Text_Korean": "이미 의식은 시작됐다….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0201_Text1",
+		"Text_English": "This corruption is more powerful than I remember… the darkness within me is growing.  ",
+		"Text_Korean": "백 년 전보다 강력한 타락의 힘이에요. <br>제 안의 절대 어둠이 강해지고 있어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0201_Text2",
+		"Text_English": "A hundred years ago, an evil force had invaded the Fairy Forest.",
+		"Text_Korean": "백 년 전 요정의 숲을 오염시키려는 악의 침공이 있었어요",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0201_Text3",
+		"Text_English": "Lilith and I fought together to protect it.",
+		"Text_Korean": "저는 동료 릴리스와 숲을 지키기 위해 싸웠어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0201_Text4",
+		"Text_English": "I fear I cannot go with you anymore. <br>I must call Bella before I lose control.",
+		"Text_Korean": "으윽! 더 이상 함께하는 건 어렵겠군요. <br>대신 숲의 관리인 벨라를 부르겠어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0202_Text1",
+		"Text_English": "This corrupted odor has engulfed our forest. <br>I hope the fairies are okay….",
+		"Text_Korean": "타락의 악취가 짙군요! 요정들이 무사해야 할 텐데….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0202_Text2",
+		"Text_English": "That demon reeks of corruption! <br>It’s no ordinary demon.",
+		"Text_Korean": "저 악마, 타락의 악취가 강해요. <br>보통 악마가 아닌 것 같아요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0202_Text3",
+		"Text_English": "Wow! Interesting…",
+		"Text_Korean": "호오 이것 봐라….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0202_Text4",
+		"Text_English": "You’re pretty strong!",
+		"Text_Korean": "제법 강하네…",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0202_Text5",
+		"Text_English": "Well, if you insist, I'll go with you! Let's go!",
+		"Text_Korean": "좋아! 특별히 내가 같이 가줄게! 출발!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0202_Text6",
+		"Text_English": "A ghostly demon is spreading the Corruption in the forest!",
+		"Text_Korean": "고스트라는 악마가 숲에 타락의 힘을 퍼뜨리고 있어.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0202_Text7",
+		"Text_English": "If you protect me, you’ll be rewarded by my master!",
+		"Text_Korean": "아리따운 나를 지켜주면 숲의 주인께 말해서 큰 상을 줄게",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0203_Text1",
+		"Text_English": "I can feel Lilith’s presence. I think she’s here.",
+		"Text_Korean": "릴리스님의 기운이 느껴져. 이곳에 계신 것 같아.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0203_Text2",
+		"Text_English": "Nisse, the Corruption is beginning to eat at me. Hurry!",
+		"Text_Korean": "니스, 타락이 나를 잠식하기 시작했어. 서둘러 줘.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0203_Text3",
+		"Text_English": "Corruption? Lilith!",
+		"Text_Korean": "타락이라니요? 릴리스님! ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0203_Text4",
+		"Text_English": "What should we do? <br>The ghost implanted the Seed of Corruption within Lilith!",
+		"Text_Korean": "어떡해! 고스트가 릴리스님께 타락의 씨앗을 심었나 봐.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0203_Text5",
+		"Text_English": "Forget about Rio and Pang for now, <br>we need to help Lilith!",
+		"Text_Korean": "다른 두 녀석이 문제가 아니야. <br>빨리 릴리스님께 가야 해!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0204_Text1",
+		"Text_English": "We must protect Nice from Ghost.",
+		"Text_Korean": "고스트가 나타날지 모르니 니스를 잘 지켜야 해.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0204_Text2",
+		"Text_English": "Is that Lilith? There is a sense of urgency in her voice.",
+		"Text_Korean": "어? 릴리스님의 소리가… 뭔가 다급하신 것 같아.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0204_Text3",
+		"Text_English": "The Fey Gate has closed, you must open it again! AH!",
+		"Text_Korean": "요정의 문이 닫혔어. 너희가 다시 열어야 해.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0204_Text4",
+		"Text_English": "Perhaps it's not too late…",
+		"Text_Korean": "아직 잠식되지 않았나….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0204_Text5",
+		"Text_English": "Find Rio and Pang! Hurry!",
+		"Text_Korean": "리오와 팡을 찾아! 어서!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0204_Text6",
+		"Text_English": "How dare you?",
+		"Text_Korean": "감히….!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0204_Text7",
+		"Text_English": "Lilith!",
+		"Text_Korean": "릴리스님!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0204_Text8",
+		"Text_English": "We must hurry…",
+		"Text_Korean": "서둘러야겠군….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0204_Text9",
+		"Text_English": "Quick! Let's go now!",
+		"Text_Korean": "어서 가자! 빨리! 빨리!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0204_Text10",
+		"Text_English": "Get away!",
+		"Text_Korean": "음! 피해!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0205_Text1",
+		"Text_English": "The corruption here is intense…",
+		"Text_Korean": "수상해… 다른 곳 보다 타락의 힘이 강하게 느껴져.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0205_Text2",
+		"Text_English": "This must be a trap by Ghost! <br>It's blocking us from reaching Lilith!",
+		"Text_Korean": "고스트의 함정인 것 같아! <br>릴리스님께 갈 수 없도록 막으려는 거야!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0205_Text3",
+		"Text_English": "Accept your death…",
+		"Text_Korean": "타락을 방해하는 자… 죽음을 받아들여라….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0205_Text4",
+		"Text_English": "Death is fair to all…",
+		"Text_Korean": "죽음은 누구에게나 평등하지….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0205_Text5",
+		"Text_English": "You cannot undo what's happened here…",
+		"Text_Korean": "넌 타락한 숲을 되돌릴 수 없다…",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0206_Text1",
+		"Text_English": "I'm worried about Rio. <br>She never stays put…",
+		"Text_Korean": "리오가 얌전히 있어야 할 텐데… 영 찜찜하단 말이야.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0206_Text2",
+		"Text_English": " I can sense  recklessness nearby... it must be Rio! <br>He’s close!",
+		"Text_Korean": "어머! 앞뒤 안 가리는 이 느낌, 분명 리오야! <br>가까이 있어.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0206_Text3",
+		"Text_English": "Rio!",
+		"Text_Korean": "리오!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0206_Text4",
+		"Text_English": "Give me a second, Nisse.",
+		"Text_Korean": "어! 니스 잠깐만!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0206_Text5",
+		"Text_English": "You, fool! It's dangerous!",
+		"Text_Korean": "바보야! 위험하다구!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0206_Text6",
+		"Text_English": "Aww… c'mon I was having fun!",
+		"Text_Korean": "하아, 재미없어…",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0206_Text7",
+		"Text_English": "A human has defeated the ghost? <br>But why is the power of corruption still strong?",
+		"Text_Korean": "인간이 고스트를 물리쳤다고?! <br>그런데 왜 타락의 힘이 약해지지 않지?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0207_Text1",
+		"Text_English": "I sense her presence! This way!",
+		"Text_Korean": "릴리스님이 가까이 계신 것 같아! 어서 가보자!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0207_Text2",
+		"Text_English": "I can’t hold on any longer…Go!",
+		"Text_Korean": "이제 버틸 수가… 타락이 날 삼키기 전에… 떠나!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0207_Text3",
+		"Text_English": "Sorry, we were too late…",
+		"Text_Korean": "늦어서 미안해….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0207_Text4",
+		"Text_English": "Vines of the forest, please! We need to pass!",
+		"Text_Korean": "부탁이야. 길을 열어줘!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0207_Text5",
+		"Text_English": "Hurry, there's still time. <br>We cannot be late…",
+		"Text_Korean": "서두르자. 아직 늦지 않았을 거야. <br>아니, 늦지 않아야 해….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0208_Text1",
+		"Text_English": "There's something in the forest, <br>something I have never felt before….",
+		"Text_Korean": "어머! 숲 속에 뭔가 있어. 이런 힘은 처음 느껴보는데….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0208_Text2",
+		"Text_English": "So it was true? I sense it as well… Let’s go!",
+		"Text_Korean": "정말이네? 뭔가 따뜻한 느낌이야… 일단 가보자!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0208_Text3",
+		"Text_English": "If you wish to meet the person you seek, <br>please hurry….",
+		"Text_Korean": "서두르세요. 만날 수 있을 거예요….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0208_Text4",
+		"Text_English": "Something was trying to help us. <br>It didn't feel evil.",
+		"Text_Korean": "뭔가 도우려는 느낌이었어. <br>악한 존재는 아닌 것 같은데….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0208_Text5",
+		"Text_English": "So… who was she talking about?",
+		"Text_Korean": "그런데 누굴 만날 수 있다는 거야?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0209_Text1",
+		"Text_English": "Ahhhh, this ambivalence. It must be Pan! <br>Let's find her.",
+		"Text_Korean": "그래… 흐리멍덩한 이 느낌, 팡의 기운이야! <br>찾아보자.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0209_Text2",
+		"Text_English": "Where is she? <br>I can't believe I am doing this…",
+		"Text_Korean": "대체 이 녀석 어디 숨어 있는 거야? <br>가녀린 날 고생시키다니…",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0209_Text3",
+		"Text_English": "Nisse! Rio!",
+		"Text_Korean": "니스! 리오!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0209_Text4",
+		"Text_English": "Hey! That hurts! You could have asked if you wanted a ride….",
+		"Text_Korean": "아이 아팡, 타고 싶으면 말로 하징… 히잉.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0209_Text5",
+		"Text_English": "Ugh… Let's just go.",
+		"Text_Korean": "하아… 일단 가자.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0209_Text6",
+		"Text_English": "Where are we going? Are we going to Lady Lilith?",
+		"Text_Korean": "우리 놀다 말고 어디 가는 거양? <br>릴리스 님께 가는 거양?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0209_Text7",
+		"Text_English": "I heard a voice like hers… <br>she said she’s going to kill us all!",
+		"Text_Korean": "아까 릴리스 님과 똑같은 목소리를 들었엉. <br>모두 죽인다고 했엉.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0210_Text1",
+		"Text_English": "Now that three of us have gathered, we can open the gate.",
+		"Text_Korean": "우리 셋이 모였으니 닫혀버린 요정의 문을 열 수 있어.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0210_Text2",
+		"Text_English": "Poor Lady Lilith, this is for you! <br>I’m gonna to do my best to open the gate!",
+		"Text_Korean": "난 릴리스 님께 너무 미안하당. <br>요정의 문을 여는데, 온 힘을 다할 거당.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0210_Text3",
+		"Text_English": "We need to stop Lilith from breaking the seal.",
+		"Text_Korean": "릴리스 님이 봉인에서 벗어나는 걸 막아야 해.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0210_Text4",
+		"Text_English": "If we fail, we will never be able to cure Lilith.",
+		"Text_Korean": "막지 못하면 릴리스 님을 치유할 기회를 잃는 거야.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0210_Text5",
+		"Text_English": "Lilith!",
+		"Text_Korean": "릴리스 님!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0210_Text6",
+		"Text_English": "Go away!",
+		"Text_Korean": "더러운 것들!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0210_Text7",
+		"Text_English": "Come on in, I will show you death…",
+		"Text_Korean": "죽음을 맛 보여주마!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0210_Text8",
+		"Text_English": "Rio! Pan! Open the portal!",
+		"Text_Korean": "리오! 팡! 문을 열자!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0210_Text9",
+		"Text_English": "I’ll catch up later with Ramiel. You go first!",
+		"Text_Korean": "라미엘 님과 갈게. 먼저 가!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0210_Text10",
+		"Text_English": "Take care of Lilith…",
+		"Text_Korean": "릴리스 님을 부탁해….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0210_Text11",
+		"Text_English": "This power… It’s been 100 years…!",
+		"Text_Korean": "이 해방감… 백 년만인가…!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0210_Text12",
+		"Text_English": "Remiel?",
+		"Text_Korean": "라미엘인가…?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0210_Text13",
+		"Text_English": "I can rest now…",
+		"Text_Korean": "이제 쉴 수 있겠어….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0301_Text1",
+		"Text_English": "The Power of Grudgeis strong. <br>What is the High Priest of Death scheming?",
+		"Text_Korean": "원한의 기운이 자욱하잖소! <br>죽음의 사제는 뭘 꾸미는 거지?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0301_Text2",
+		"Text_English": "Wait- what? Something is getting in the way of my magic… <br>Be careful…",
+		"Text_Korean": "뭐지? 내 마법을 방해하는 힘이… 조심하시오….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0301_Text3",
+		"Text_English": "Mortal… His sacrifice…",
+		"Text_Korean": "인간… 그분의… 제물이다….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0301_Text4",
+		"Text_English": "We must… Break the seal…",
+		"Text_Korean": "우리는… 봉인을 풀어야 한다….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0302_Text1",
+		"Text_English": "I’m sensing a strange energy… be wary!",
+		"Text_Korean": "전과 다른 이상한 기운이 느껴지니 조심하시오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0302_Text2",
+		"Text_English": "Wait, wait!",
+		"Text_Korean": "자, 잠깐!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0302_Text3",
+		"Text_English": "A little rude, don’t you think?",
+		"Text_Korean": "자, 잠깐! 초면에 실례잖아!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0302_Text4",
+		"Text_English": "You’re looking for the hooded men, right?",
+		"Text_Korean": "흠… 얼마 전에 온 후드 쓴 놈들 찾고 있지? 그렇지?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0302_Text5",
+		"Text_English": "You saw them?",
+		"Text_Korean": "네가 봤다고…?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0302_Text6",
+		"Text_English": "Heh heh, I’ll show you the way. Trust me!",
+		"Text_Korean": "흐흐, 내가 길을 알려 줄게. 가자고!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0302_Text7",
+		"Text_English": "Ah! I forgot to warn you… this path is dangerous. <br>Sorry!",
+		"Text_Korean": "아! 적이 있다는 걸 안 알려줬군, 미안.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0302_Text8",
+		"Text_English": "Very good!  Now, this way!",
+		"Text_Korean": "좋아, 이쪽이야!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0302_Text9",
+		"Text_English": "We have to go through here.",
+		"Text_Korean": "여기를 지나야 해.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0302_Text10",
+		"Text_English": "Hey, don't die!",
+		"Text_Korean": "살아서 보자고!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0303_Text1",
+		"Text_English": "Very good! You're alive.",
+		"Text_Korean": "살아있었네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0303_Text2",
+		"Text_English": "Shall we?",
+		"Text_Korean": "그럼 갈까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0303_Text3",
+		"Text_English": "The monsters… I think they’re trying to break the seal from <br>the deep within the tomb.",
+		"Text_Korean": "괴물들 말이야. <br>무덤 깊은 곳의 봉인을 풀려고 하는 것 같아.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0303_Text4",
+		"Text_English": "Heh heh, you’re keeping up well!",
+		"Text_Korean": "흐흥, 잘 따라오네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0303_Text5",
+		"Text_English": "The tomb’s master!",
+		"Text_Korean": "이크! 무덤의 주인이로군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0303_Text6",
+		"Text_English": "There you are! Kill that zombie!",
+		"Text_Korean": "여기 있었군. 저 좀비 놈을 없애라!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0303_Text7",
+		"Text_English": "I'll go first!",
+		"Text_Korean": "먼저 갈게!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0303_Text8",
+		"Text_English": "He wishes… Kill all humans…",
+		"Text_Korean": "그분의 명령… 인간 죽인다….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0303_Text9",
+		"Text_English": "Sacrifice… You cannot run…",
+		"Text_Korean": "넌 제물… 못 도망친다…",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0304_Text1",
+		"Text_English": "Die by the claws of my underlings, human!",
+		"Text_Korean": "인간, 무시무시한 내 부하들의 손에 죽어라!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0304_Text2",
+		"Text_English": "Ha! Nothing, don’t get cocky after only defeating my underlings.",
+		"Text_Korean": "조, 조금 하는구나. <br>허약한 내 부하들을 상대로 우쭐하지 마라.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0304_Text3",
+		"Text_English": "Human, can't find the zombie?",
+		"Text_Korean": "그, 그래. 그 좀비 놈이 왜 안 보이는지 알고 있나?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0304_Text4",
+		"Text_English": "You are a fool tricked by a zombie.",
+		"Text_Korean": "넌 속고 있다. 대가 없는 도움은 없는 법이다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0304_Text5",
+		"Text_English": "Hey, FRIEND! Help me!",
+		"Text_Korean": "친구 도와줘!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0305_Text1",
+		"Text_English": "My FRIEND, please help!!",
+		"Text_Korean": "으으, 이봐 친구 도와줘!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0305_Text2",
+		"Text_English": "Hey, will you hurry up?! Help!",
+		"Text_Korean": "이, 이봐 아직 멀었어? 이놈 강하다구!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0305_Text3",
+		"Text_English": "Don’t let the filthy human get in my way. <br>Predator, go!",
+		"Text_Korean": "저 인간 놈이 방해하지 못 하게 해라. <br>가라! 포식자여.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0305_Text4",
+		"Text_English": "Master says… I can eat…",
+		"Text_Korean": "주인님이… 너 먹으라고 했다….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0305_Text5",
+		"Text_English": "Human, you shall follow that zombie.",
+		"Text_Korean": "인간, 너도 좀비놈 뒤를 따르게 해주지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0306_Text1",
+		"Text_English": "Do you have a death wish, human?",
+		"Text_Korean": "인간, 한 켠에 묻히고 싶어서 돌아왔느냐?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0306_Text2",
+		"Text_English": "You think missing one of my eyes will slow me down?",
+		"Text_Korean": "내 눈 하나 없앤 정도로 우쭐하지 마라.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0306_Text3",
+		"Text_English": "It's your fault. I should have gotten rid of you when <br>I had the chance.",
+		"Text_Korean": "너 때문이다! 좀비 놈을 없앴어야 했는데… <br>그놈을 없애야 해….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0306_Text4",
+		"Text_English": "If only I had the Blood Diamond… <br>This kind of seal is nothing…",
+		"Text_Korean": "블러드 다이아몬드만 있었다면… <br>넌 물론이고 이런 봉인쯤은….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0306_Text5",
+		"Text_English": "I will kill that zombie and bury you next to him!",
+		"Text_Korean": "좀비 놈은 반드시 없앨 것이다! <br>그 옆에 네놈을 묻어주마.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0307_Text1",
+		"Text_English": "What was that Power of Light the Zombie Warrior found?",
+		"Text_Korean": "좀비 전사가 찾아낸 빛의 구슬은 무엇이었을까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0307_Text2",
+		"Text_English": "Did you find the Zombie Warrior? Follow him.",
+		"Text_Korean": "그 좀비 전사를 발견했소? 그를 따라가시오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0307_Text3",
+		"Text_English": "There's more he must be hiding.",
+		"Text_Korean": "그에게는 뭔가 더 감춰져 있는 것 같으니 말이오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0307_Text4",
+		"Text_English": "I am Miracle, the Oracle of the Soul Castle. <br>I will help Ramiel. Come to me.",
+		"Text_Korean": "저는 성녀 미라클. 라미엘 님을 돕겠습니다. <br>영혼의 성으로 오세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0307_Text5",
+		"Text_English": "I know the way, very well, my friend.",
+		"Text_Korean": "그 길은 내가 잘 알지, 친구.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0308_Text1",
+		"Text_English": "Miracle? <br>How… How did she appear from the Power of Light?",
+		"Text_Korean": "미라클인가? 무슨 관계야? <br>어떻게 빛의 구슬에서 나타난 건지 궁금하네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0308_Text2",
+		"Text_English": "My sword is being drawn to the Power of Light! My sword will lead the way.",
+		"Text_Korean": "아무튼, 내 검이 빛의 구슬과 반응하고 있어. <br>검이 이끄는 대로 가야 해.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0308_Text3",
+		"Text_English": "Looks like you still have some fight in you, <br>but I won’t go down that easily.",
+		"Text_Korean": "흥, 네놈 힘이 좀 돌아왔나 보군. <br>하지만 이번엔 어림없다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0308_Text4",
+		"Text_English": "Even if you managed to pass my underlings and traps, <br>you won’t get passed here! ",
+		"Text_Korean": "내 강력한 부하들과 함정을 지나도 <br>여기를 통과할 수 없다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0308_Text5",
+		"Text_English": "Do not worry. I just have to regain my memories, and it’ll be alright, my friend.",
+		"Text_Korean": "걱정 마, 내 남은 기억만 찾으면 해결될 거야. 친구.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0309_Text1",
+		"Text_English": "I can sense it! My sword is pulling me toward the Power of Light. <br>Let’s follow the sword.",
+		"Text_Korean": "빛이 부르는 게 느껴져. <br>내 검이 인도하는 데로 따라가자.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0309_Text2",
+		"Text_English": "You cannot escape. <br>The time for revenge shall come.",
+		"Text_Korean": "열심히 뛰어 봤자 날 벗어날 수 없지. <br>복수의 때가 온다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0309_Text3",
+		"Text_English": "That ugly demon is far too noisy.",
+		"Text_Korean": "저 악마 놈은 말도 많고 눈도 많아.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0309_Text4",
+		"Text_English": "I am Gregor… The one who sealed Beelzebub.",
+		"Text_Korean": "나는 그레고르… 대악마 벨제부브를 봉인한 자.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0310_Text1",
+		"Text_English": "You must defeat Beelzebub to pass through the tomb.",
+		"Text_Korean": "무덤을 통과하기 위해서는 벨제부브를 무찔러야 해.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0310_Text2",
+		"Text_English": "Even though he’s sealed, he still controls this place. <br>We must silence him at once.",
+		"Text_Korean": "봉인된 상태에서도 이곳을 지배하고 있어서 <br>그 힘을 없애야 하거든.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0310_Text3",
+		"Text_English": "I am going to break the seal, but you’ll still need to fight him….",
+		"Text_Korean": "난 봉인을 풀 힘을 모을 테니 전투를 부탁해, 친구.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0310_Text4",
+		"Text_English": "Ramiel isn’t well… Could Miracle really help her…?",
+		"Text_Korean": "라미엘 님의 상태가 안 좋더군. <br>정말 미라클이 도울 수 있는 걸까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0310_Text5",
+		"Text_English": "We must send her to Soul Castle. <br>Damn Beelzebub… We’re losing precious time here!",
+		"Text_Korean": "아무튼, 영혼의 성으로 꼭 보내 드려야 해. <br>벨제부브놈 성가시게 하다니!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0310_Text7",
+		"Text_English": "An irony… <br>I must undo the seal that I’ve bestowed….",
+		"Text_Korean": "운명의 장난 같군. <br>내가 만든 봉인을 내 손으로 열어야 한다니….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0310_Text8",
+		"Text_English": "You’ll need to take it from here, my friend.",
+		"Text_Korean": "뒤를 부탁하네, 친구….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0310_Text9",
+		"Text_English": "The Blood Diamond…",
+		"Text_Korean": "블러드 다이아몬드…",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0310_Text10",
+		"Text_English": "How dare you!",
+		"Text_Korean": "감히 네놈이!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0310_Text11",
+		"Text_English": "Time to release the hatred!",
+		"Text_Korean": "갇혀 있던 원한을 풀 시간이다!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0401_Text1",
+		"Text_English": "This was a sacred place… <br>It was supposed to protect the souls…",
+		"Text_Korean": "세계에서 모이는 영혼들을 지키고 정화시키는 <br>성역에 이런 일이….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0401_Text2",
+		"Text_English": "I wonder if Miracle is in danger as well?",
+		"Text_Korean": "미라클 님도 위험에 빠지신 게 아닐까요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0401_Text3",
+		"Text_English": "The spirits are screaming… <br>Something's wrong.",
+		"Text_Korean": "영혼들의 비명 소리가 들려요. 위급한 것 같은데… <br>뭔가 심상치 않아요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0401_Text4",
+		"Text_English": "Do you know how to do this?",
+		"Text_Korean": "이런 거 할 줄 알아?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0401_Text5",
+		"Text_English": "Well, well, well.",
+		"Text_Korean": "나보다 뛰어나다니….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0402_Text1",
+		"Text_English": "The spirits are dwindling. What happened?",
+		"Text_Korean": "영혼들의 수가 줄어들고 있어요. 어떻게 된 일이지?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0402_Text2",
+		"Text_English": "The goblin magician is reaping the spirits… <br>What's going on?",
+		"Text_Korean": "고블린 술사가 영혼들을 잡아들이다니… <br>무슨 일을 꾸미는 걸까요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0402_Text3",
+		"Text_English": "The spirits are calling us.",
+		"Text_Korean": "어! 어떤 영혼이 우리를 부르고 있어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0402_Text4",
+		"Text_English": "I’m Bertha, an Oracle that was sent by Miracle.",
+		"Text_Korean": "성녀 베르타입니다. 미라클님이 보내셨어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0402_Text5",
+		"Text_English": "I will explain on our way.",
+		"Text_Korean": "일단 가면서 말씀드리지요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0402_Text6",
+		"Text_English": "I served closely with Miracle and I’m here to help you.",
+		"Text_Korean": "전 미라클 님을 가까이 모시던 성녀입니다. <br>제가 여러분을 돕겠습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0403_Text1",
+		"Text_English": "I hear souls screaming. It must be the Goblin Shaman.",
+		"Text_Korean": "영혼들의 비명이 들려요. 고블린 술사가 틀림없어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0403_Text2",
+		"Text_English": "Who dares to interrupt the hunt?",
+		"Text_Korean": "넌 누군데 사냥을 방해하는 거야?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0403_Text3",
+		"Text_English": "We cannot lose it. I will chase it down.",
+		"Text_Korean": "놓치면 안 돼요. 제가 쫓아가겠습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0403_Text4",
+		"Text_English": "I lost it… It has left this place, <br>but I am sure it will search for souls elsewhere.",
+		"Text_Korean": "놓쳤어요. 이곳을 떠난 것 같아요. <br>다른 곳의 영혼들을 노릴 거예요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0403_Text5",
+		"Text_English": "Miracle has always suffered because of her powers. <br>It’s so sad…",
+		"Text_Korean": "미라클님은 그 힘 때문에 소녀 때부터 <br>고난이 끊이지 않았어요. 안타깝게도….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0403_Text6",
+		"Text_English": "Intruder! I shall teach you a lesson!",
+		"Text_Korean": "방해자 놈! 내 실력을 보여주마!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0403_Text7",
+		"Text_English": "Faster than my arrow…",
+		"Text_Korean": "내 화살보다 빠르다니….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0404_Text1",
+		"Text_English": "Their attacks are becoming more fierce. I will look for the Goblin Shaman.",
+		"Text_Korean": "공격이 거세군요. 제가 고블린 술사를 찾겠습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0404_Text2",
+		"Text_English": "I can hear Bertha's scream. She must be in danger!",
+		"Text_Korean": "베르타 님의 비명소리가 들려요. 위험한 것 같아요!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0404_Text3",
+		"Text_English": "H-help me!",
+		"Text_Korean": "도, 도와주세요!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0404_Text4",
+		"Text_English": "No! My hard work…",
+		"Text_Korean": "안돼! 내가 힘들게 모은 영혼들이….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0404_Text5",
+		"Text_English": "So close…",
+		"Text_Korean": "의식이 멀지 않았는데….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0404_Text6",
+		"Text_English": "Thank you so much, hero. <br>All the freed souls give their thanks as well.",
+		"Text_Korean": "정말 감사드려요. 풀려난 영혼들도 감사하고 있어요. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0404_Text7",
+		"Text_English": "They’ve informed me that there are more souls imprisoned <br>in the Butcher’s room.",
+		"Text_Korean": "그들이 도살자의 방에 영혼들이 잡혀 있다고 <br>알려 주었어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0405_Text1",
+		"Text_English": "The Goblin Shaman just went past here! <br>We must stop it.",
+		"Text_Korean": "고블린 술사가 지나갔어요! 그를 막아야 해요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0405_Text2",
+		"Text_English": "I can sense many souls, <br>but I cannot tell where they are.",
+		"Text_Korean": "많은 영혼이 느껴져요. <br>그런데 어디 있는지 모르겠군요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0405_Text3",
+		"Text_English": "I wonder where the Butcher could be hiding them…",
+		"Text_Korean": "도살자는 어디에 영혼들을 가둬 놓은 걸까요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0405_Text4",
+		"Text_English": "Sacrifice everything!",
+		"Text_Korean": "모든 것을 바쳐라!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0406_Text1",
+		"Text_English": "Oh no… We must prepare ourselves. <br>It looks like their ritual was successful.",
+		"Text_Korean": "이런… 새로운 위기를 각오해야 할 것 같습니다. <br>의식이 성공한 것 같아요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0406_Text2",
+		"Text_English": "It feels like the air is being torn apart. <br>Looks like a powerful demon has awakened.",
+		"Text_Korean": "공기가 짓눌리는 위압감이 느껴집니다. <br>강력한 악마가 눈을 뜬 것 같군요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0406_Text3",
+		"Text_English": "Bertha! Find the Memory Fragment!",
+		"Text_Korean": "베르타! 기억의 파편을 찾으세요!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0406_Text4",
+		"Text_English": "No! Miracle!",
+		"Text_Korean": "안돼! 미라클님!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0406_Text5",
+		"Text_English": "That is Vulcanus, a terrifying demon. <br>To think it was holding Miracle hostage.",
+		"Text_Korean": "불카누스라는 공포의 존재예요. <br>저 악마가 미라클님을 인질로 삼다니….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0406_Text6",
+		"Text_English": "But, Vulcanus died a hundred years ago… <br>And this Vulcanus felt different.",
+		"Text_Korean": "하지만 그는 백 년 전에 죽었어요. <br>그리고 불카누스가 아닌 것 같은 느낌을 받았어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0406_Text7",
+		"Text_English": "I… shall devour your soul.",
+		"Text_Korean": "너… 영혼까지 먹는다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0406_Text8",
+		"Text_English": "I will not let go…",
+		"Text_Korean": "난 놓치지 않아….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0407_Text1",
+		"Text_English": "Miracle spent her entire life in the castle, <br>but never once neglected her responsibilities. <br>I must save her.",
+		"Text_Korean": "미라클 님은 평생 성에서 살아야 했지만 원망 없이 <br>사명에 충실했어요. 그분을 꼭 구해드리고 싶어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0407_Text2",
+		"Text_English": "I could feel Miracle’s power. <br>A Memory Fragment is close by.",
+		"Text_Korean": "미라클 님의 힘이 느껴집니다. 가까이 있어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0407_Text3",
+		"Text_English": "There is a Memory Fragment here.",
+		"Text_Korean": "여기에 기억의 파편이 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0407_Text4",
+		"Text_English": "I am at the top floor. <br>Be wary of the soul within Vulcanus' body.",
+		"Text_Korean": "저는 최상층에 있어요. <br>불카누스에 담긴 빛의 영혼을 조심하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0407_Text5",
+		"Text_English": "Soul of light…? Let’s head to the top floor now.",
+		"Text_Korean": "빛의 영혼…? 일단 최상층으로 가시죠.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0407_Text6",
+		"Text_English": "So Vulcanus was able to move because of another soul.",
+		"Text_Korean": "불카누스가 움직일 수 있었던 건 다른 영혼이 있기 <br>때문이었군요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0407_Text7",
+		"Text_English": "I wonder who that soul of light was?",
+		"Text_Korean": "빛의 영혼은 대체 누구일까요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0407_Text8",
+		"Text_English": "Did you expect that I would run all the time?",
+		"Text_Korean": "언제까지 도망만 칠 줄 알았느냐!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0408_Text1",
+		"Text_English": "The strange disharmony I sensed was because of the soul of light.",
+		"Text_Korean": "불카누스를 목격했을 때 받은 이질적인 느낌은 <br>빛의 영혼 때문이었어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0408_Text2",
+		"Text_English": "How did that soul of light get a hold of Vulcanus’s body?",
+		"Text_Korean": "대체 빛의 영혼은 불카누스의 육체를 어떻게 <br>차지했을까요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0408_Text3",
+		"Text_English": "If it was the soul of light, it must be a holy being. <br>Could it be an angel’s soul…?",
+		"Text_Korean": "빛의 영혼이라면 성스러운 존재인 것 같은데 <br>설마 천사의 영혼…?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0408_Text4",
+		"Text_English": "I know it’s hard to believe, <br>but the power from that soul reminded me of an angel.",
+		"Text_Korean": "믿기 어렵지만, 그 영혼의 힘은 천사에 가까웠던 것 <br>같아요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0408_Text5",
+		"Text_English": "What could the purpose of that soul be? <br>We must heed Miracle’s warning.",
+		"Text_Korean": "그 영혼의 목적이 위험한 걸까요? <br>미라클 님의 말씀대로 조심해야 해요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0409_Text1",
+		"Text_English": "Something is odd… <br>It feels like something strange is watching us.",
+		"Text_Korean": "뭔가 이상해요. 이질적인 힘이 우리를 감시하는 것 <br>같은 기분이 들어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0409_Text2",
+		"Text_English": "Something is still watching us, <br>but we’ll be at the top soon. Hang on just a bit longer.",
+		"Text_Korean": "감시의 눈길이 사라지지 않는군요. <br>하지만 곧 최상층입니다. 힘내세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0409_Text3",
+		"Text_English": "Oh my, Miracle must have left another Memory Fragment. <br>I can sense it.",
+		"Text_Korean": "어머, 미라클 님께서 남겨 놓은 기억의 파편이 <br>또 있나 봐요. 힘이 느껴져요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0409_Text4",
+		"Text_English": "If you see this memory fragment…  I will have been taken to the Sky Castle.",
+		"Text_Korean": "이 기억을 읽었을 때 즈음 전 천공성에 끌려갔을 거예요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0409_Text5",
+		"Text_English": "Please, no….",
+		"Text_Korean": "오, 안돼….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0409_Text6",
+		"Text_English": "Bertha, my only true friend. I thank you",
+		"Text_Korean": "베르타 내 유일한 친구, 고마웠어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0409_Text7",
+		"Text_English": "This… is far as I go. Please rescue Miracle….",
+		"Text_Korean": "전… 여기까지군요. 미라클 님을 부탁….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0409_Text8",
+		"Text_English": "Tell Ramiel… That Azrael is waiting….",
+		"Text_Korean": "전해라, 라미엘에게. 아즈라엘이 기다린다고….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0410_Text1",
+		"Text_English": "Why did you summon Azrael! Why!? WHY!?",
+		"Text_Korean": "고위 죽음의 사제… 아즈라엘을 불러 내다니… 대체 왜?!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0410_Text2",
+		"Text_English": "It’s me Azrael wants. I’ll go alone.",
+		"Text_Korean": "아즈라엘이 원하는 건 저예요. 먼저 가겠어요!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0410_Text3",
+		"Text_English": "Come, Ramiel. This time, it is you who will burn in hell.",
+		"Text_Korean": "어서 오라, 라미엘… 이제는 네가 지옥에 갈 차례다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0410_Text4",
+		"Text_English": "Ramiel, I’ll be waiting in hell…",
+		"Text_Korean": "라미엘, 지옥에서 기다리겠다….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0501_Text1",
+		"Text_English": "Nidhogg ruled the surrounding lands with an iron fist.",
+		"Text_Korean": "성의 주인 니드호그의 힘 때문에 천공성은 <br>공포의 상징이었어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0501_Text2",
+		"Text_English": "A hundred years ago during the war, <br>we lost an angel in Nifelheim.",
+		"Text_Korean": "백 년 전 전쟁 때 우리는 천공성에서 한 천사를 잃었지요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0501_Text3",
+		"Text_English": "No one could defeat Nidhogg back then.",
+		"Text_Korean": "백 년 전 누구도 니드호그를 쓰러뜨리지 못했어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0501_Text4",
+		"Text_English": "The High Priests of Death couldn’t even compare to Nighogg's power.",
+		"Text_Korean": "그런 니드호그가 고위 죽음의 사제를 돕는 이유를 <br>알 수 없군요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0501_Text5",
+		"Text_English": "I follow the money!",
+		"Text_Korean": "돈만 주면 어디든지 간다!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0501_Text6",
+		"Text_English": "Where's my pay?",
+		"Text_Korean": "아직 다 못 받았는데….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0501_Text7",
+		"Text_English": "Daniel…?!",
+		"Text_Korean": "다니엘…?!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0502_Text1",
+		"Text_English": "How can a soul be this beautiful…",
+		"Text_Korean": "영혼마저 이렇게 아름다울 수가….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0502_Text2",
+		"Text_English": "Vivian was a strong and beautiful hero, <br>but she’s being controlled by darkness.",
+		"Text_Korean": "비비안은 아름답고도 강한 영웅이었는데 <br>어둠에 조종당하고 있군요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0502_Text3",
+		"Text_English": "We must free her soul and put her to rest.",
+		"Text_Korean": "조종당하는 그녀에게 필요한 건 안식일 거예요. <br>그렇지 않을까요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0502_Text4",
+		"Text_English": "I will lead you to your death!                 ",
+		"Text_Korean": "원하시니 죽음으로 인도해 드리지요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0502_Text5",
+		"Text_English": "Please free the others like me…",
+		"Text_Korean": "제 동료들을 부탁드려요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0502_Text6",
+		"Text_English": "May you finally have eternal peace…",
+		"Text_Korean": "이제는 영원한 안식을….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0503_Text1",
+		"Text_English": "You should’ve seen how great I was 100 years ago….",
+		"Text_Korean": "백 년 전 이곳에서 제 활약을 보셨어야 했는데….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0503_Text2",
+		"Text_English": "I may look like this now, but I was once one of the four lieutenants of Ramiel, the Archangel.",
+		"Text_Korean": "이래 봬도 라미엘 님을 보좌하는 네 명의 천사 중 <br>하나에요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0503_Text3",
+		"Text_English": "Sigh… I miss those times I spent with Azreal and Lilith.",
+		"Text_Korean": "아즈라엘, 릴리스와 함께했던 때가 그립네요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0503_Text4",
+		"Text_English": "Where are the other souls that Vivian spoke of?",
+		"Text_Korean": "비비안이 말한 다른 영혼들은 어디에 있을까요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0503_Text5",
+		"Text_English": "How could they not leave any trace?",
+		"Text_Korean": "어쩜 이렇게 흔적 하나 남기지 않았을까요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0503_Text6",
+		"Text_English": "I shall strike your heart!",
+		"Text_Korean": "네 심장을 맞춰주마!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0503_Text7",
+		"Text_English": "Missed! Unacceptable!",
+		"Text_Korean": "못 맞췄어! 아이고 분해!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0504_Text1",
+		"Text_English": "This is the path to the center of the Heavenly Castle.",
+		"Text_Korean": "여기가 천공성 중앙으로 가는 길입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0504_Text2",
+		"Text_English": "Watch out for demons. I will watch from the sky.",
+		"Text_Korean": "악마들을 조심하세요. <br>저는 하늘에서 지켜보겠습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0504_Text3",
+		"Text_English": "Damn, I should've had your head… hahahah!",
+		"Text_Korean": "아이참, 머리를 가져갈 수 있었는데….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0504_Text4",
+		"Text_English": "I’m fine. Haha. Let’s go after her.",
+		"Text_Korean": "저는 괜찮아요, 하하. 어서 쫓아가죠.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0504_Text5",
+		"Text_English": "Aveline is an assassin as deadly as she is beautiful.",
+		"Text_Korean": "아벨린은 그 미모만큼 뛰어난 암살자였어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0504_Text6",
+		"Text_English": "The demons who died by her hands were happy, <br>but they probably didn’t even realize what was happening.",
+		"Text_Korean": "그녀의 손에 죽은 악마들은 행복했겠지만 <br>대부분 자신도 모르는 사이에 당했지요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0504_Text7",
+		"Text_English": "I’ll gladly remove your head!",
+		"Text_Korean": "머리를 바치고 싶다면 받아주지!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0504_Text8",
+		"Text_English": "To be controlled by a creature like Bereth… Please avenge…",
+		"Text_Korean": "베레스 따위에게 이용당하다니, 복수를 부탁….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0504_Text9",
+		"Text_English": "Come amuse me, haha!",
+		"Text_Korean": "와라! 새로운 장난감들아. 으하하하!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0505_Text1",
+		"Text_English": "Bereth is hiding somewhere. <br>Be careful.",
+		"Text_Korean": "베레스가 모습을 감추고 있는 것 같습니다. <br>조심하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0505_Text2",
+		"Text_English": "I revel in death as much as you. Hahaha!",
+		"Text_Korean": "경쾌하지 않나? 악마들의 비명 소리가… 크크크.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0505_Text3",
+		"Text_English": "How did it feel when you killed my demons? <br>You’re no different from me! Hahahaha",
+		"Text_Korean": "내 영혼들을 죽일 때 기분이 어땠지? <br>넌 나와 다르지 않아. 흐흐흐.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0505_Text4",
+		"Text_English": "Embrace the darkness.",
+		"Text_Korean": "타락의 속박을 안겨주마.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0505_Text5",
+		"Text_English": "Let’s end this.",
+		"Text_Korean": "학살의 마무리를 지어볼까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0505_Text6",
+		"Text_English": "Remiel!",
+		"Text_Korean": "라미엘!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0505_Text7",
+		"Text_English": "Shut up!",
+		"Text_Korean": "닥쳐!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0505_Text8",
+		"Text_English": "Silence! Never utter my name with your foul breath!",
+		"Text_Korean": "그 썩은 입으로 내 이름을 말하지 마!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0505_Text9",
+		"Text_English": "Die! Die! DIEEEE!!",
+		"Text_Korean": "죽어! 죽어! 죽어!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0505_Text10",
+		"Text_English": "Wh… who are you?! KAHHH!",
+		"Text_Korean": "너, 넌 누구냐?! 크아악!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0506_Text1",
+		"Text_English": "I’m worried about her condition. <br>We need to help her now!",
+		"Text_Korean": "라미엘 님의 상태가 걱정입니다. <br>빨리 도와드려야 하는데….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0506_Text2",
+		"Text_English": "If Bereth is dead, then the corrupted souls must have been released.",
+		"Text_Korean": "잠깐, 베레스가 죽었다면 영혼들의 타락이 풀렸겠군요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0506_Text3",
+		"Text_English": "I will search for the other souls and request for help.",
+		"Text_Korean": "제가 다른 영혼을 찾아 도움을 청하겠습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0506_Text4",
+		"Text_English": "You. Come to me. I’ll be waiting!",
+		"Text_Korean": "네가 직접 와라! 기다리겠다!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0506_Text5",
+		"Text_English": "Is he gone?",
+		"Text_Korean": "갔나요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0506_Text6",
+		"Text_English": "Whew… Thought that’d be the last of me.",
+		"Text_Korean": "휴, 정말 죽는 줄 알았어요. 이, 이쪽입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0506_Text7",
+		"Text_English": "Let me kill you myself!",
+		"Text_Korean": "넌 특별히 이 손으로 죽여주마!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0506_Text8",
+		"Text_English": "Fail…",
+		"Text_Korean": "암살 실패….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0507_Text1",
+		"Text_English": "Jean still enjoys fighting strong opponents.",
+		"Text_Korean": "진은 여전히 강한 자와 겨루는 걸 좋아하네요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0507_Text2",
+		"Text_English": "He joined us just so he could fight more powerful demons. ",
+		"Text_Korean": "그는 강한 악마들과 겨루기 위해 우리와 함께 했어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0507_Text3",
+		"Text_English": "Now, it seems like the only one he’s looking at is you.",
+		"Text_Korean": "이제 그의 눈에는 당신밖에 보이지 않는 것 같아요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0507_Text4",
+		"Text_English": "Follow me if you dare!",
+		"Text_Korean": "용기가 있다면 나를 따라와라!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0507_Text5",
+		"Text_English": "He used to wreak havoc here and there when he was in Elisium too.",
+		"Text_Korean": "엘리시움에 있을 때도 여기저기를 부숴 댔어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0507_Text6",
+		"Text_English": "Uhg… I shudder every time I see him.",
+		"Text_Korean": "그가 보입니다. 으, 벌써부터 몸이 떨리는데요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0507_Text7",
+		"Text_English": "Let our weapons do the talking!",
+		"Text_Korean": "이제 힘의 대화를 시작해 볼까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0507_Text8",
+		"Text_English": "Where is the Oracle?",
+		"Text_Korean": "혹시 성녀를 보셨습니까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0507_Text9",
+		"Text_English": "The Oracle who summoned me?",
+		"Text_Korean": "날 불러낸 성녀를 말하는 건가?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0507_Text10",
+		"Text_English": "Go ask Zeke.",
+		"Text_Korean": "지크를 찾아가라.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0507_Text11",
+		"Text_English": "May you have eternal rest…",
+		"Text_Korean": "영원한 안식을….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0508_Text1",
+		"Text_English": "Zeke was a responsible, yet powerful drill master.",
+		"Text_Korean": "지크는 책임감이 강한 교관이었어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0508_Text2",
+		"Text_English": "He will hear my words. I will go request for his help.",
+		"Text_Korean": "그라면 말이 통할 거예요. 제가 도움을 청하겠습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0508_Text3",
+		"Text_English": "Ack! Please help!",
+		"Text_Korean": "아앗! 도와주세요!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0508_Text4",
+		"Text_English": "I faced a Gargoyle after finding Zeke, so….",
+		"Text_Korean": "지크를 찾아냈는데 가고일과 마주쳐서 그만….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0508_Text5",
+		"Text_English": "Ah… If my wings weren’t so cramped… I swear!",
+		"Text_Korean": "아오, 날개에 쥐만 안 났어도… 지, 진짜예요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0508_Text6",
+		"Text_English": "I am a master in faking death!",
+		"Text_Korean": "죽은 척이 내 특기다!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0508_Text7",
+		"Text_English": "It's time for my specialty…",
+		"Text_Korean": "내 특기를 쓸 때군….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0509_Text1",
+		"Text_English": "The soul of the Gladiator, Zeke, is in front of you. <br>Get ready!",
+		"Text_Korean": "전방에 검투사 지크의 영혼 출현입니다. <br>준비하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0509_Text2",
+		"Text_English": "If you train your senses, you can react to battles you didn’t expect.",
+		"Text_Korean": "감각을 익히면 예상치 못한 전투도 대응할 수 있네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0509_Text3",
+		"Text_English": "If you can’t beat me, you have no chance against Nidhogg!",
+		"Text_Korean": "나를 넘지 못하면 니드호그도 이길 수 없네!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0509_Text4",
+		"Text_English": "This is your final lesson.",
+		"Text_Korean": "마지막 가르침을 시작해볼까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0509_Text5",
+		"Text_English": "Look for the Oracle at the resting place of Nidhogg….",
+		"Text_Korean": "성녀를 찾고 있겠지? <br>가라. 니드호그의 안식처로….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0509_Text6",
+		"Text_English": "I wish you peace…",
+		"Text_Korean": "영원한 안식을….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0510_Text1",
+		"Text_English": "What a chilling area… This must be where Nidhogg resides.",
+		"Text_Korean": "오싹한 게 니드호그의 영역에 들어선 것 같군요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0510_Text2",
+		"Text_English": "It would be a nightmare if Nidhogg attacked us right now.",
+		"Text_Korean": "니드호그가 세계를 공격한다면 악몽이 시작될 겁니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0510_Text3",
+		"Text_English": "This darkness… I can sense him. <br>He’s here.",
+		"Text_Korean": "제 안의 어둠이 요동치는 이 느낌… 그 자가 있어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0510_Text4",
+		"Text_English": "Does Nidhogg want the power <br>of the Blood Diamond as well?",
+		"Text_Korean": "설마 니드호그도 블러드 다이아몬드의 힘을 <br>원하는 걸까요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0510_Text5",
+		"Text_English": "Feel the power of my curse!",
+		"Text_Korean": "저주로 얻은 힘을 느껴보아라!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0510_Text6",
+		"Text_English": "You are just a prey…",
+		"Text_Korean": "넌 먹이가 될 뿐이다….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0601_Text1",
+		"Text_English": "Was I dreaming? This place is identical to what Miracle had described.",
+		"Text_Korean": "미라클은 꿈이었을까? <br>하지만 이곳을 보면 그녀의 말과 일치하는 것 같아.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0601_Text2",
+		"Text_English": "A world consumed by darkness with demons more powerful than before.",
+		"Text_Korean": "과연 어둠이 뿌리내린 세계로군. <br>악마들의 공격이 강력해.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0601_Text3",
+		"Text_English": "What did Miracle mean by \"the source of darkness moves\"",
+		"Text_Korean": "어둠의 근원이 움직인다는 것은 어떤 의미지?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0601_Text4",
+		"Text_English": "So… You are the one who fights the darkness.",
+		"Text_Korean": "어둠과 싸우는 분이시군요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0601_Text5",
+		"Text_English": "Daniel!",
+		"Text_Korean": "다니엘!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0601_Text6",
+		"Text_English": "Do you… know me…?",
+		"Text_Korean": "저를… 아십니까…?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0602_Text1",
+		"Text_English": "I am worried about Ramiel. I can barely feel the power of light within her….",
+		"Text_Korean": "라미엘 님의 안위가 걱정이네요. <br>빛의 힘이 희미하게 느껴지다니…",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0602_Text2",
+		"Text_English": "It's been a while, Daniel.",
+		"Text_Korean": "오랜만이군. 다니엘.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0602_Text3",
+		"Text_English": "I'll take it from here sister.",
+		"Text_Korean": "어머 얘는, 오늘은 인사만 하러 온 거잖아.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0602_Text4",
+		"Text_English": "Hi, I've got a gift for you!",
+		"Text_Korean": "멋진 선물을 기대해.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0602_Text5",
+		"Text_English": "I fought those demons during the war. They can steal your memories.",
+		"Text_Korean": "저 악마들은 전쟁 때 저와 겨뤘던 자들입니다. <br>기억을 빼앗는 능력이 있어요",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0602_Text6",
+		"Text_English": "Beware, when they take your memories, they erase them from your mind.",
+		"Text_Korean": "빼앗긴 기억은 당신의 머리 속에서 지워지니 조심하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0602_Text7",
+		"Text_English": "How did we meet? How do you remember me?",
+		"Text_Korean": "그런데 우리는 어떻게 만났었나요? <br>당신이 저를 어떻게 기억하는지 궁금하네요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0602_Text8",
+		"Text_English": "Perhaps you know Miracle as well?",
+		"Text_Korean": "그렇다면 혹시 미라클 님도 알고 계신건가요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0603_Text1",
+		"Text_English": "It seems they took my memories of you.",
+		"Text_Korean": "어쩌면 저는 그들에게 당신에 대한 기억을 <br>빼앗겼는지도 모르겠군요. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0603_Text2",
+		"Text_English": "A dark presence is hiding. I should take a look. Be careful.",
+		"Text_Korean": "어둠의 기운이 숨어 있군요. 살펴봐야겠습니다. <br>조심하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0603_Text3",
+		"Text_English": "My my, calm down.",
+		"Text_Korean": "어머 진정해.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0603_Text4",
+		"Text_English": "You're in for a surprise the next time we meet.",
+		"Text_Korean": "다시 만날 때 깜짝 놀라게 될 거야.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0603_Text5",
+		"Text_English": "No! That demon must have stolen your memory.",
+		"Text_Korean": "이런! 저 악마가 당신의 기억을 훔친 게 분명합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0603_Text6",
+		"Text_English": "How much did she take? This can’t be…",
+		"Text_Korean": "어디까지 빼앗긴 거지? 큰일이군요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0604_Text1",
+		"Text_English": "Janne and Darc have the power to materialize <br>any creature from your memories.",
+		"Text_Korean": "잔느와 다르크는 훔친 기억 속의 어떤 존재건 <br>실체화시킬 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0604_Text2",
+		"Text_English": "Whether it be allies or monsters, of course.",
+		"Text_Korean": "그것이 아군은 물론이고 악마라도 말이지요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0604_Text3",
+		"Text_English": "That reminds me, there was a demon <br>that Janne and Darc worked for.",
+		"Text_Korean": "그러고 보니 잔느와 다르크가 따르던 악마가 떠오르네요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0604_Text4",
+		"Text_English": "He vowed to become the Absolute Darkness and take revenge.",
+		"Text_Korean": "그는 자신이 절대 어둠이 되어 복수하겠다고 <br>부르짖었었지요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0605_Text1",
+		"Text_English": "Something isn't right. This may be your chance to get your memories back!",
+		"Text_Korean": "심상치 않은 분위기군요. <br>당신의 기억을 찾을 기회가 있을지도 모르겠어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0605_Text2",
+		"Text_English": "The power of darkness may lie dormant nearby. <br>Be careful.",
+		"Text_Korean": "강력한 어둠의 힘이 잠들어 있는 것 같습니다. <br>조심하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0605_Text3",
+		"Text_English": "Recognize this, Daniel? It was taken from your memories.",
+		"Text_Korean": "다니엘, 너의 기억으로 만든 악마 병기야.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0605_Text4",
+		"Text_English": "What is that?",
+		"Text_Korean": "저, 저건 뭐지?!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0605_Text5",
+		"Text_English": "Daniel!",
+		"Text_Korean": "다니엘!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0605_Text6",
+		"Text_English": "Enjoy yourself.",
+		"Text_Korean": "그럼 놀아볼까!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0605_Text7",
+		"Text_English": "Kneel before my power!",
+		"Text_Korean": "내 힘을 보여주마!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0605_Text8",
+		"Text_English": "Apocalypse will deal with you….",
+		"Text_Korean": "어차피 네놈들은 아포칼립스 님에게….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0605_Text9",
+		"Text_English": "My memories have returned. It seems I was used as well….",
+		"Text_Korean": "당신이 기억납니다. 저도 이용당했군요….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0606_Text1",
+		"Text_English": "Your memories hold heroic friends, but powerful enemies as well.",
+		"Text_Korean": "당신의 기억 속에는 강한 적들과 훌륭한 친구들이 <br>존재하고 있어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0606_Text2",
+		"Text_English": "If your memories were to materialize, the coming battles will be fierce.",
+		"Text_Korean": "그런 자들이 실체화되어 나타난다면 버거운 전투가 <br>될지도 모르겠군요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0606_Text3",
+		"Text_English": "I wonder if the High Priest of Death is a minion of Apocalypse.",
+		"Text_Korean": "어쩌면 고위 죽음의 사제가 아포칼립스의 <br>부하일 수도 있겠군요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0606_Text4",
+		"Text_English": "So tell me, how did you meet Miracle?",
+		"Text_Korean": "그런데 그대는 미라클 님을 어떻게 알게 되었나요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0607_Text1",
+		"Text_English": "Janne has been very quiet… There is no reason for her to keep her distance.",
+		"Text_Korean": "잔느가 움직이지 않는 게 찜찜하군요. <br>가만히 있을 리 없는데…",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0607_Text2",
+		"Text_English": "You'll pay for what you've done to Darc!",
+		"Text_Korean": "네놈들이 감히 다르크를!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0607_Text3",
+		"Text_English": "Pain and suffering will come your way!",
+		"Text_Korean": "기대해. 괴로움에 몸부림치게 해줄 테니.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0607_Text4",
+		"Text_English": "I am worried which of your memories Janne will wield against us.",
+		"Text_Korean": "잔느가 당신의 어떤 기억을 이용할지 불안하군요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0607_Text5",
+		"Text_English": "Ramiel is still alive. I can still feel a faint trace of the power of light.",
+		"Text_Korean": "희미한 빛의 힘이 느껴지는 것으로 보아 <br>라미엘 님은 살아 계신 것 같습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0607_Text6",
+		"Text_English": "I just hope Miracle is okay as well.",
+		"Text_Korean": "부디 미라클 님도 무사하셨으면 좋겠군요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0608_Text1",
+		"Text_English": "The war drove us all mad, cruelty became our goal.",
+		"Text_Korean": "전쟁의 광기에 휩싸인 천사와 악마들은 경쟁하듯 <br>잔인한 살육을 벌였어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0608_Text2",
+		"Text_English": "The goodness of angels disapeared. Such are the horrors of war….",
+		"Text_Korean": "그것이 전쟁의 무서운 점이지만 천사들의 모습에서 <br>절대 선을 찾기 어려웠지요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0608_Text3",
+		"Text_English": "As a half-blood, I faced much discrimination for my smaller wings and frame.",
+		"Text_Korean": "혼혈인 저는 작은 날개와 체구 때문에 <br>극심한 차별과 고통을 겪었습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0608_Text4",
+		"Text_English": "I gave up everything to escape that pain in order to make it to where I am now.",
+		"Text_Korean": "저는 고통에서 벗어나기 위해 죽을 힘으로 노력했고 <br>지금의 자리에 올라왔지요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0608_Text5",
+		"Text_English": "I almost envy the Demons, they didn't discriminate against their own.",
+		"Text_Korean": "차라리 차별없이 본능에 충실한 악마들이 부럽기도 했습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0609_Text1",
+		"Text_English": "I feel a powerful, dark energy nearby. Be careful.",
+		"Text_Korean": "강력한 어둠의 힘이 숨어 있는 것 같아요. 조심하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0609_Text2",
+		"Text_English": "Wait, what is that? It feels... Familiar. Be careful, Hero.",
+		"Text_Korean": "뭐지? 어둠의 힘이 아닌 낯익은 기운이…. <br>아무튼 방심하지 마세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0609_Text3",
+		"Text_English": "Ah, a friendly reunion.",
+		"Text_Korean": "네 친구야. 어차피 기억 못 할 테지만…",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0609_Text4",
+		"Text_English": "Remember him?",
+		"Text_Korean": "어차피 기억 못 할 테지만…",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0609_Text5",
+		"Text_English": "That sword…is that you Gregor?",
+		"Text_Korean": "아니! 저 자가 든 검은…!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0609_Text6",
+		"Text_English": "Cunning fool….",
+		"Text_Korean": "교활한 놈….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0609_Text7",
+		"Text_English": "So, she had some of your memories as well, Daniel.",
+		"Text_Korean": "너도 빼앗긴 기억이 있었나 보군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0610_Text1",
+		"Text_English": "Something is wrong. The faint power of light has disappeared. You must hurry!",
+		"Text_Korean": "무슨 일이 생긴 것 같습니다. <br>희미한 빛의 기운이 사라졌어요. 서두릅시다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0610_Text2",
+		"Text_English": "Now I have become the true Absolute Darkness….",
+		"Text_Korean": "이제 내가 진정한 절대 어둠이다….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0701_Text1",
+		"Text_English": "Absolute Darkness is moving fast. <br>Elisium is already corrupted by its evil power.",
+		"Text_Korean": "절대 어둠의 움직임이 빠르군요. <br>이미 엘리시움은 사악한 힘에 오염되었어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0701_Text2",
+		"Text_English": "These seeds overflow with evil energy. <br>I may be able to purify them, but there are so many.",
+		"Text_Korean": "이 포자들이 사악한 힘을 뿜어내고 있어요. <br>제가 정화할 수 있을 것 같지만 너무 많네요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0701_Text3",
+		"Text_English": "Such cruelty. <br>I hope others who assisted you stay safe….",
+		"Text_Korean": "참혹하군요. 부디 그대를 돕던 다른 분들이 무사하기를….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0701_Text4",
+		"Text_English": "He is still alive.",
+		"Text_Korean": "아직 살아 있어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0701_Text5",
+		"Text_English": "Thank you. I’m Brutus, Daniel’s lieutenant.",
+		"Text_Korean": "고맙다. 나는 다니엘 님의 부관 브루투스다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0701_Text6",
+		"Text_English": "You're Daniel's lieutenant…?",
+		"Text_Korean": "다니엘의 부관이라고…?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0702_Text1",
+		"Text_English": "Those currupted angels were my comrades from Daniel’s unit.",
+		"Text_Korean": "세뇌 당한 천사들은 다니엘 부대에 있던 내 동료들이다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0702_Text2",
+		"Text_English": "Death to demons, protect Ramiel!",
+		"Text_Korean": "라미엘 님을 해치려는 악마들에게 죽음을!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0702_Text3",
+		"Text_English": "Daniel protected us and fought against demons with his might. Why would he do this…?",
+		"Text_Korean": "다니엘 님은 강한 힘으로 우리를 지키고 악마와 싸웠다. <br>그런데 왜 이런 일을…?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0702_Text4",
+		"Text_English": "Did Daniel make a this decision because of how poorly he was treated? <br>I didn't realize he was hurt so badly….",
+		"Text_Korean": "설마 다니엘 님은 자신의 상처 때문에 그릇된 선택을 <br>한 것인가? 그토록 상처가 깊을 줄은….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0702_Text5",
+		"Text_English": "What a tragedy… <br>What good am I if I can’t restore my comrades….",
+		"Text_Korean": "이런 비극이… 동료들을 되돌리지 못하는 내 자신이 <br>너무 무력하구나….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0703_Text1",
+		"Text_English": "Absolute Darkness used the Seeds of Death to remove the light and corrupt the sacred grounds.",
+		"Text_Korean": "죽음의 포자는 절대 어둠이 성역의 빛을 오염시킬 때 <br>사용해왔다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0703_Text2",
+		"Text_English": "Seeds of Death release evil energy that strengthens demons.",
+		"Text_Korean": "죽음의 포자는 사악한 힘을 뿜어내어 악마들을 강하게 만든다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0703_Text3",
+		"Text_English": "The stronger the power of darkness, the faster it spreads.",
+		"Text_Korean": "그리고 어둠의 힘이 강력해지면 빠르게 늘어나지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0703_Text4",
+		"Text_English": "Many of these spores will disappear once Absolute Darkness is defeated.",
+		"Text_Korean": "이 수많은 포자들도 절대 어둠을 쓰러뜨린다면 <br>사라질 것이다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0704_Text1",
+		"Text_English": "I sense Daniel’s energy. I will find him.",
+		"Text_Korean": "다니엘 님의 기운이 느껴진다. 내가 찾아내겠다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0704_Text2",
+		"Text_English": "You don’t have long, Brutus….",
+		"Text_Korean": "얼마 남지 않았구나. 부르투스….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0704_Text3",
+		"Text_English": "Daniel stop!",
+		"Text_Korean": "제발 멈추십시오!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0704_Text4",
+		"Text_English": "It belive Daniel went to the central assemble hall…. It was his place of rest….",
+		"Text_Korean": "다니엘 님은 중앙 집회소로 간 것 같다…. <br>자신의 안식처였지….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0704_Text5",
+		"Text_English": "Daniel must be stopped… Let’s break through here.",
+		"Text_Korean": "반드시 다니엘 님을 멈춰야 한다…. 이곳을 돌파하자.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0705_Text1",
+		"Text_English": "There isn’t much time. <br>Champion of Light, you must stop Daniel!",
+		"Text_Korean": "시간이 얼마 남지 않았다. 꼭 다니엘 님을 막아다오. <br>빛의 인도자여!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0705_Text2",
+		"Text_English": "So you have come… But you cannot stop me. <br>Watch as I create the brand new world!",
+		"Text_Korean": "결국 쫓아왔군… 너희는 날 막을 수 없다. <br>내가 만들어 내는 새로운 세상을 지켜보아라!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0705_Text3",
+		"Text_English": "Be the sacrifice of a new beginning!",
+		"Text_Korean": "새로운 시작의 제물이 되어라!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0705_Text4",
+		"Text_English": "Witness the power bestowed onto me!",
+		"Text_Korean": "그 분께 부여 받은 내 힘을 보아라!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0705_Text5",
+		"Text_English": "Let’s meet again in a world free of pain….",
+		"Text_Korean": "차별과 고통없는 세상에서 다시 만나기를….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0706_Text1",
+		"Text_English": "We stopped Daniel but the power of Absolute Darkness is still growing.",
+		"Text_Korean": "다니엘 님을 막는데 성공했지만 절대 어둠의 힘은 <br>점점 커지는 것 같아요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0706_Text2",
+		"Text_English": "As the flow of light remaining in Elisium disappears, its power weakens.",
+		"Text_Korean": "엘리시움에 남아 있는 빛의 흐름이 사라지면서 <br>그 힘이 약해지고 있어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0706_Text3",
+		"Text_English": "The power of light is disappearing because Elisium is being corrupted by Seeds of Death.",
+		"Text_Korean": "빛의 힘이 사라지는 것은 앨리시움을 오염시키고 있는 <br>죽음의 포자 때문이에요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0706_Text4",
+		"Text_English": "Without the light in Elisium, Ramiel may be completely consumed by Absolute Darkness.",
+		"Text_Korean": "앨리시움의 빛이 사라진다면 라미엘 님은 절대 어둠에게 <br>형체도 없이 먹혀 버릴지도 몰라요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0707_Text1",
+		"Text_English": "The closer we get to the top, the worse the corruption becomes. <br>I think there are more Seeds of Death.",
+		"Text_Korean": "상층부에 가까워질수록 오염이 심해지고 있어요. <br>죽음의 포자가 많아지는 것 같아요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0707_Text2",
+		"Text_English": "Seeds of Death are here too…?",
+		"Text_Korean": "죽음의 포자가 이런 곳까지…?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0707_Text3",
+		"Text_English": "The power of darkness is so strong…. <br>Why is Absolute Darkness staying quiet?",
+		"Text_Korean": "이토록 강렬하게 어둠이 드리우고 있는데 절대 어둠은 왜 웅크리고 있을까요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0707_Text4",
+		"Text_English": "Maybe Absolute Darkness is waiting for something? ",
+		"Text_Korean": "절대 어둠은 어쩌면 뭔가 기다리고 있는 게 아닐까요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0708_Text1",
+		"Text_English": "The power of light is getting weaker. <br>Maybe there’s more to it than I thought.",
+		"Text_Korean": "빛의 힘이 약해 지는 것 같아요. <br>뭔가 더 감춰져 있는 게 아닐까요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0708_Text2",
+		"Text_English": "It seems he’s planning to kill all angels. <br>This is too horrible.",
+		"Text_Korean": "모든 천사들을 없애 버릴 셈인가 봐요. <br>이건 너무 잔혹해요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0708_Text3",
+		"Text_English": "It’s strange. The power of light is getting weaker. <br>We must hurry.",
+		"Text_Korean": "이상해요. 빛의 힘이 약해지는 게 점점 빨라지고 있어요. <br>서둘러야겠어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0709_Text1",
+		"Text_English": "The evil power from the Seeds of Death is particularly strong here.",
+		"Text_Korean": "이곳의 죽음의 포자에서 나오는 사악한 힘은 특히 강해요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0709_Text2",
+		"Text_English": "I have received word from Gaius that the others are safe, so you needn't hold back.",
+		"Text_Korean": "피신해 있는 가이우스 님으로부터 다른 분들도 <br>무사하다는 연락이 있었어요. 마음껏 싸우세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0709_Text3",
+		"Text_English": "Absolute Darkness will be waiting past here. <br>Please, you must win this final battle.",
+		"Text_Korean": "이곳만 지나면 절대 어둠이 기다리고 있을 거예요. <br>운명의 전투에서 꼭 승리하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0709_Text4",
+		"Text_English": "Only your victory can restore Elisium and save Ramiel.",
+		"Text_Korean": "그대의 승리가 엘리시움을 되돌리고 라미엘 님을 구할 수 있어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0710_Text1",
+		"Text_English": "Remember that you carry the ties with all you have encountered on this journey.",
+		"Text_Korean": "그대가 쌓아온 모든 인연이 함께 한다는 것을 기억하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0710_Text2",
+		"Text_English": "A mortal dares to stand before perfect light and darkness…?",
+		"Text_Korean": "필멸의 존재 따위가 완벽한 빛과 어둠에게 대항하다니…",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0710_Text3",
+		"Text_English": "Let me award you for your bravery. You will fight eternally within the Shackles of Time.",
+		"Text_Korean": "가상한 용기에 선물을 주마. <br>넌 시간의 굴레에서 영원히 싸워야 할 것이다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0710_Text4",
+		"Text_English": "Mortal creature, face the destiny of death….",
+		"Text_Korean": "필멸의 존재여, 죽음의 운명을 따르라…",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0710_Text5",
+		"Text_English": "The time has finally arrived.",
+		"Text_Korean": "드디어 때가 도래했군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0710_Text6",
+		"Text_English": "We must hurry!",
+		"Text_Korean": "쫓아가야해요!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act0710_Text7",
+		"Text_English": "The true apocalypse begins!",
+		"Text_Korean": "이제 진정한 파멸의 시작이다!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2101_Text1",
+		"Text_English": "The resurrected demons are much stronger. Be careful.",
+		"Text_Korean": "부활한 악마들이 더욱 강력해졌으니 조심하십시오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2101_Text2",
+		"Text_English": "You can free the entrance if you defeat the demons that guard the area.",
+		"Text_Korean": "이곳을 지키는 악마를 물리치면 입구 지역을 <br>해방시킬 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2102_Text1",
+		"Text_English": "Other regions were also ambushed by these demons….",
+		"Text_Korean": "실은 다른 지역들도 부활한 악마들에게 <br>모두 빼앗겼습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2102_Text2",
+		"Text_English": "I wonder what it was that resurrected and empowered them….",
+		"Text_Korean": "악마들을 부활시키고 강하게 만든 원인이 의문입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2102_Text3",
+		"Text_English": "We must find out soon. The fate of our world depends on it!",
+		"Text_Korean": "의문을 풀지 못하면 세계를 되찾기 어려울 것 같습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2103_Text1",
+		"Text_English": "There appears to be some source of power that’s interacting with the demons.",
+		"Text_Korean": "찾아낸 약간의 정보에 의하면 악마들에게 <br>어떤 힘이 작용하고 있다고 합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2103_Text2",
+		"Text_English": "The source seems to react every time a demon is defeated.",
+		"Text_Korean": "악마들을 물리치면 그 힘의 반응을 확인할 수 <br>있다고 합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2103_Text3",
+		"Text_English": "The outcome of this battle may help us save the world!",
+		"Text_Korean": "지금의 전투는 세계의 탈환과 동시에 수수께끼를 <br>푸는 것이기도 합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2104_Text1",
+		"Text_English": "We need more information to figure out what power is behind all this.",
+		"Text_Korean": "상황을 이렇게 만든 힘을 파악할 단서가 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2104_Text2",
+		"Text_English": "Maybe we can get more clues as we reclaim the other invaded regions. ",
+		"Text_Korean": "지역을 탈환할수록 그 힘에 대한 많은 단서를 <br>얻을 수 있게 됩니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2104_Text3",
+		"Text_English": "Your victory is imperative for the future of our world!",
+		"Text_Korean": "당신의 승리가 세계와 우리의 시간을 되돌릴 수 <br>있을 것입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2105_Text1",
+		"Text_English": "If this power is capable of resurrecting the dead, who knows what else it can do….",
+		"Text_Korean": "악마가 아닌 존재까지 부활시키다니 <br>알 수 없는 힘이 점점 두렵습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2105_Text2",
+		"Text_English": "The pain and suffering it’s brought upon our world is unforgivable.",
+		"Text_Korean": "이런 끔찍한 시련이 닥치는 게 원망스럽습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2105_Text3",
+		"Text_English": "If we stand together, we can endure and overcome the darkness!",
+		"Text_Korean": "잘 버텨왔던 저희가 무너지지 않도록 도와주십시오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2105_Text4",
+		"Text_English": "I cannot believe there’s a human that can defeat me…",
+		"Text_Korean": "날 쓰러뜨리는 인간이 있다니….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2106_Text1",
+		"Text_English": "The weight of this dark power is unbearable…",
+		"Text_Korean": "저는 점점 두려워집니다. <br>부활한 어둠의 힘이 이 정도라니…",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2106_Text2",
+		"Text_English": "If we only had more Ether, these demons wouldn't stand a chance.",
+		"Text_Korean": "혹시 새로 나타난 물질인 에테르를 알고 계십니까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2106_Text3",
+		"Text_English": "With the right Ether in our hands, darkness would tremble before us.",
+		"Text_Korean": "신기한 힘이 있다고 하니 손에 넣는다면 <br>강해진 어둠에 대항할 힘이 생길 것입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2107_Text1",
+		"Text_English": "Gaius says we should feel the dark power grow as we get closer to Caligula.",
+		"Text_Korean": "칼리굴라에게 가까워지니 점차 강한 힘의 파장이 <br>감지된다고 합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2107_Text2",
+		"Text_English": "This intensity… I can barely withstand this amount of power!",
+		"Text_Korean": "제가 안일했던 것 같습니다. <br>병사인 저는 감당할 수 없는 힘이 느껴집니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2107_Text3",
+		"Text_English": "Impressive! In the midst of this chaos, I'd forgotten how truly powerful you are, hero.",
+		"Text_Korean": "이런 기운이 느껴지는데도 꿋꿋하시다니… <br>당신의 대단함을 잠시 잊었던 것 같습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2108_Text1",
+		"Text_English": "Rahel’s curse has spread. Even I can feel its terror.",
+		"Text_Korean": "여기저기 라헬의 저주가 퍼져 있습니다. <br>제가 느낄 정도로 지독합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2108_Text2",
+		"Text_English": "That chill… it feels like Rahel is watching us.",
+		"Text_Korean": "등골이 서늘합니다. <br>어디선가 라헬이 지켜보는 것 같습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2108_Text3",
+		"Text_English": "We are getting closer. Keep an eye out for Rahel!",
+		"Text_Korean": "점점 가까워지고 있습니다. <br>죽음을 거스른 라헬을 조심하십시오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2109_Text1",
+		"Text_English": "The dark power continues to grow stronger. We must be drawing near the center of Luemos.",
+		"Text_Korean": "알 수 없는 힘은 사악한 게 틀림없습니다. <br>강력한 에테르를 찾거나 만드셔야 합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2109_Text2",
+		"Text_English": "We are close to the location where Lord Alfrid was lost.",
+		"Text_Korean": "곧 당신이 영주님의 죽음을 목격한 곳에 도착합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2109_Text3",
+		"Text_English": "Let us reclaim this area so that his soul may rest in peace.",
+		"Text_Korean": "이곳을 되찾아 잠들어 계신 영주님의 넋을 <br>위로해 주십시오!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2110_Text1",
+		"Text_English": "There’s a message from Sir Gaius.",
+		"Text_Korean": "가이우스 님께서 부탁하신 말이 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2110_Text2",
+		"Text_English": "He says we must identify the dark power in order to understand how the demons are being resurrected.",
+		"Text_Korean": "힘의 파장을 알아낸다면 악마들의 부활도 <br>파악할 수 있다고 하셨습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2110_Text3",
+		"Text_English": "The final battle has come. Let’s give it all we got!",
+		"Text_Korean": "마지막 관문입니다! 결전을 준비하십시오! <br>음? 뭔가 예전에 누군가 말했던 것 같은…",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2201_Text1",
+		"Text_English": "The demons that corrupted the forest have returned! <br>They brought us so much trouble before….",
+		"Text_Korean": "숲을 타락시켰던 악마들이 부활하다니 <br>예전의 고난이 떠올라 막막하네요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2201_Text2",
+		"Text_English": "I wonder where this unknown power came from?",
+		"Text_Korean": "시간과 공간을 뒤튼 알 수 없는 힘의 파장은 <br>왜 나타난 걸까요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2201_Text3",
+		"Text_English": "Did that wave of power resurrect the darkness? <br>I’m glad you’re on our side.",
+		"Text_Korean": "정말 힘의 파장이 어둠을 부활시킨 걸까요? <br>이럴 때 그대가 있어 든든하네요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2202_Text1",
+		"Text_English": "It reminds me of when I was reunited with Nisse. <br>I felt frightened, yet relieved at the same time.",
+		"Text_Korean": "니스와 다시 만났을 때가 떠오르네요. <br>두려움과 안도감을 동시에 느꼈었지요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2202_Text2",
+		"Text_English": "We ran into Ghost here… <br>I’m glad he’s not here anymore.",
+		"Text_Korean": "이곳에서 고스트와 마주쳤었는데… <br>지금은 나타나지 않아 다행이에요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2202_Text3",
+		"Text_English": "I feel corrupted energy nearby… <br>Could Ghost have been resurrected as well?",
+		"Text_Korean": "타락의 기운이 느껴져요. <br>나타나지 않았을 뿐 고스트도 부활한 것 같아요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2203_Text1",
+		"Text_English": "I see traces of Ghost. <br>I can feel his corrupted power within the demons.",
+		"Text_Korean": "고스트의 흔적이 보이는군요. <br>타락의 힘이 악마들에게서 느껴져요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2203_Text2",
+		"Text_English": "I can’t sense the energy of the fairies at all! <br>I hope Ghost didn’t get to them already….",
+		"Text_Korean": "요정들의 기운이 전혀 느껴지지 않아요. <br>이미 고스트에게 당한 것은 아닌지…",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2204_Text1",
+		"Text_English": "This is the place where Lilith informed us of the danger. <br>Back then, I just wanted to run.",
+		"Text_Korean": "이곳에서 릴리스 님이 위기를 알리셨었지요. <br>그때 저는 도망치고 싶었어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2204_Text2",
+		"Text_English": "I’m so sad that Lilith isn’t here to tell us what’s going on.",
+		"Text_Korean": "지금은 상황을 알려주실 릴리스 님이 <br>계시지 않는 게 슬프네요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2204_Text3",
+		"Text_English": "Lilith and the fairies may not be here now, <br>but I’m glad you’re still here with me.",
+		"Text_Korean": "비록 요정도 릴리스 님도 없지만 흔들리지 않는 <br>그대가 있어 정말 다행이에요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2205_Text1",
+		"Text_English": "This corrupted power! Ghost must be back, <br>and he’s returned even stronger than before!",
+		"Text_Korean": "이 타락의 힘! 고스트의 부활이 확실하군요. <br>훨씬 강해져서 돌아왔어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2205_Text2",
+		"Text_English": "Ghost will show himself soon. <br>Defeat him and retrieve the wave of power!",
+		"Text_Korean": "곧 고스트가 모습을 드러낼 거에요. <br>반드시 물리쳐 힘의 파장을 찾아주세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2206_Text1",
+		"Text_English": "I wonder if Rio is still hiding deep in the forest… <br>He should show up any moment now….",
+		"Text_Korean": "금방이라도 리오가 나타날 것 같은데… <br>다들 숲 깊은 곳에 있는 걸까요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2206_Text2",
+		"Text_English": "Maybe it’s just me, but it feels like the demons are afraid of us.",
+		"Text_Korean": "기분 탓인지 모르겠지만 악마들의 기세가 <br>움츠러든 것 같아요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2206_Text3",
+		"Text_English": "The demons cower in fear of your strength! <br>You are amazing!",
+		"Text_Korean": "그대의 기세에 악마들이 짓눌린 것 같아요. <br>역시 대단해요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2207_Text1",
+		"Text_English": "Why would the fairies disappear with Gote’s resurrection? ",
+		"Text_Korean": "악마가 아니었던 고트 님이 부활하고 <br>살아있는 요정들이 사라지다니 이상해요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2207_Text2",
+		"Text_English": "Unlike Gote, fairies have nothing to do with the power of darkness. <br>I wonder what’s going on?",
+		"Text_Korean": "고트 님과 달리 요정들은 어둠의 힘과 관계가 <br>없어요. 지금의 현상과 관계가 있을까요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2207_Text3",
+		"Text_English": "I’m just glad we didn’t have to face any demons that resembled Lilith….",
+		"Text_Korean": "릴리스 님의 형상과 마주친 적이 없군요. <br>차라리 나쁜 소식이 없어 다행이에요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2208_Text1",
+		"Text_English": "A mysterious wave of power is said to influence time and space.",
+		"Text_Korean": "알 수 없는 힘의 파장은 시공에 영향을 준다더군요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2208_Text2",
+		"Text_English": "Maybe that influence erased all other beings and left only darkness.",
+		"Text_Korean": "그 영향이 어둠의 힘을 제외한 다른 존재들을 <br>지워버린 게 아닐까요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2208_Text3",
+		"Text_English": "Lilith…she should be here. But what if..? <br>I don’t see her image, so this can’t be right.",
+		"Text_Korean": "설마 릴리스 님도…? 아닐 거예요. <br>그분의 형상도 나타나지 않았으니 그럴 리 없어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2209_Text1",
+		"Text_English": "I miss the days when all three fairies were together. We came this far, and yet, there’s no sign of them….",
+		"Text_Korean": "세 요정이 모두 모였을 때가 그립네요. <br>여기까지 왔는데 찾지 못하다니….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2209_Text2",
+		"Text_English": "We’re approaching the deepest part of the forest. Hang on for just a bit longer!",
+		"Text_Korean": "이곳만 지나면 숲의 가장 깊은 곳이에요. <br>힘을 내주세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2209_Text3",
+		"Text_English": "The power of corruption is getting stronger like before! Then… could Lilith be…?",
+		"Text_Korean": "점점 강해지는 타락의 힘, 예전과 같아요. <br>그렇다면 릴리스 님은…?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2210_Text1",
+		"Text_English": "What if the Fey Gate is closed? We don’t have any fairies….",
+		"Text_Korean": "요정의 문이 닫혀 있으면 어쩌지요? <br>요정들도 없는데….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2210_Text2",
+		"Text_English": "Strange. I can’t find the Fey Gate but it seems we’re connected to Lilith’s dimension.",
+		"Text_Korean": "이상해요. 분명 요정의 문이 없는데 <br>릴리스 님의 공간과 연결되어 있는 것 같아요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2210_Text3",
+		"Text_English": "I wonder if this is due to the distortion of time and space from that mysterious power….",
+		"Text_Korean": "알 수 없는 힘의 파장에 의한 시공의 뒤틀림이 <br>만든 상황일까요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2301_Text1",
+		"Text_English": "Grachia has gone on a separate journey for research. <br>He says he found something amazing!",
+		"Text_Korean": "그라치아는 어떤 연구 때문에 여행을 떠났네. <br>놀라운 걸 알아냈다며 말이지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2301_Text2",
+		"Text_English": "It’s been rumored that Grachia is not human, <br>and that’s why he can use such powerful magic. ",
+		"Text_Korean": "그라치아가 인간이 아니라는 말도 있네. <br>그래서 강력한 마법을 사용한다는 소문이지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2301_Text3",
+		"Text_English": "I thought this as well, but after all we’ve been through, <br>I don’t know what to believe anymore.",
+		"Text_Korean": "나도 그라치아가 인간이 아니라는 생각을 했었네. <br>이런 곳을 자네와 함께 모험할 수 있을 정도라니….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2302_Text1",
+		"Text_English": "Have you met Sir Gregor before? <br>I thought Grachia might have mentioned it….",
+		"Text_Korean": "이곳에서 그레고르 님과 만났다고 했나? <br>예전에 그라치아에게 들었네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2302_Text2",
+		"Text_English": "I was looking forward to meeting him after all I’ve heard. It didn’t happen unfortunately….",
+		"Text_Korean": "나도 말로만 듣던 그레고르 님과 만나길 바랐다네. <br>하지만 이뤄지지 않는군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2302_Text3",
+		"Text_English": "On the other hand, maybe it’s a good thing he didn’t show up. Especially as an enemy. ",
+		"Text_Korean": "그분이 나타나지 않아 한편으로 다행일세. <br>적으로 만날지도 모르니 말이네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2303_Text1",
+		"Text_English": "I don’t think the zombies were trying to break the seal… Beelzebub is likely already freed. ",
+		"Text_Korean": "좀비들의 목적이 봉인을 푸는 게 아닌 걸 보니 <br>아마 벨제부브는 해방된 것 같네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2303_Text2",
+		"Text_English": "Although… If Beelzebub had been released, <br>I wonder why he’s being so quiet….",
+		"Text_Korean": "벨제부브가 이미 해방되었다면 직접 움직이지 않는 <br>이유가 의문일세",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2303_Text3",
+		"Text_English": "Something doesn’t seem right with these demons… <br>They’re not trying to kill us.",
+		"Text_Korean": "나는 이곳 악마들의 분위기가 이상하다고 느꼈네. <br>우리를 쫓아내려는 느낌이었어.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2304_Text1",
+		"Text_English": "Beelzebub is oddly quiet… <br>He’s not one to usually sit still.",
+		"Text_Korean": "벨제부브가 이상하리만치 조용하군. <br>가만히 있을 성미가 아닌데 말이지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2304_Text2",
+		"Text_English": "Wait… it wasn’t just Beelzebub. <br>The others didn’t move either.",
+		"Text_Korean": "그러고 보면 벨제부브뿐만이 아니었네. <br>다들 움직임이 없었지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2304_Text3",
+		"Text_English": "There must be some other motive for those resurrected by the Wave of Power.",
+		"Text_Korean": "힘의 파장이 강한 지역의 부활한 자들은 <br>어떤 목적이 있는 게 아닐까 생각하네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2305_Text1",
+		"Text_English": "It’s unnerving to know that the demons are using the system to prevent invasion.",
+		"Text_Korean": "침입을 막기 위한 장치를 악마들이 사용하다니 <br>무서운 결과군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2305_Text2",
+		"Text_English": "It seems like the Poisonous Overseer is watching. <br>I hope the Power of Light is well hidden.",
+		"Text_Korean": "맹독의 감시자가 지켜보는 것 같네. <br>빛의 힘이 숨겨져 있을지 궁금하군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2306_Text1",
+		"Text_English": "I sense a great dark being watching over us. <br>It may be Beelzebub….",
+		"Text_Korean": "거대한 어둠이 우리를 지켜보는 것 같네. <br>벨제부브인 것 같군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2306_Text2",
+		"Text_English": "Strange… Beelzebub is just watching us without a word….",
+		"Text_Korean": "이상해. 벨제부브가 침묵한 채 지켜보기만 하다니… <br>더욱 수상하군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2306_Text3",
+		"Text_English": "It’s definitely odd that Beelzebub isn’t showing us his wrath.",
+		"Text_Korean": "벨제부브가 자네에게 분노를 드러내지 않는 점도 <br>매우 이상하군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2307_Text1",
+		"Text_English": "One of the more identifiable changes from the Wave of Power are the stronger demons….",
+		"Text_Korean": "한층 강해진 악마들의 부활은 힘의 파장이 불러온 <br>대표적인 현상이라네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2307_Text2",
+		"Text_English": "Not to mention Gote and Lillith both being resurrected with no trace of culprits….",
+		"Text_Korean": "또 다른 현상은 고트와 릴리스 님의 <br>이해할 수 없는 부활과 조력자들의 실종이라네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2307_Text3",
+		"Text_English": "And the fact that the demons don’t remember you.",
+		"Text_Korean": "현상의 마지막 특징은 자네를 기억하지 못하는 <br>악마들의 반응이겠군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2308_Text1",
+		"Text_English": "The demons of the grave have stopped their invasion of Elisium, thanks to you.",
+		"Text_Korean": "무덤의 악마들도 엘리시움의 침공을 멈췄다고 하네. <br>자네 덕분일세.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2308_Text2",
+		"Text_English": "I hope there is some sort of clue to help us solve this….",
+		"Text_Korean": "현상의 원인을 파악할 수 있는 중요한 단서가 <br>있었으면 좋겠군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2308_Text3",
+		"Text_English": "Although, I’m worried we won’t be able to handle the truth behind what is happening.",
+		"Text_Korean": "혹시라도 단서를 통해 알아낸 사실을 우리가 <br>감당할 수 있을지 걱정이네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2309_Text1",
+		"Text_English": "I am pathetic compared to Sir Gregor.",
+		"Text_Korean": "그레고르 님을 생각하니 나 스스로가 한심하네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2309_Text2",
+		"Text_English": "I was so worried about the clue that I wasn’t prepared at all….",
+		"Text_Korean": "단서의 무게를 걱정하고 있었네만 <br>내 각오가 부족했던 것 같네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2309_Text3",
+		"Text_English": "But seeing you fight, hero, gives me courage.",
+		"Text_Korean": "자네가 싸우는 모습이 나에게 용기를 주고 있네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2310_Text1",
+		"Text_English": "There’s another being that has yet to appear the High Priest of Death.",
+		"Text_Korean": "그동안 모습을 보이지 않은 존재가 또 있군. <br>바로 고위 죽음의 사제일세.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2310_Text2",
+		"Text_English": "Dark beings are being resurrected, but the High Priest has yet to appear….",
+		"Text_Korean": "모든 어둠의 존재가 부활했음에도 나타나지 않다니 <br>어떻게 된 거지?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2310_Text3",
+		"Text_English": "For the time being, however, let’s focus on Beelzebub.",
+		"Text_Korean": "일단 복잡한 것은 생각하지 말게. <br>한층 강해진 벨제부브에게 집중해주게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2401_Text1",
+		"Text_English": "I’m so glad you’re with me now <br>just like you were with me at Soul Castle.",
+		"Text_Korean": "함께 영혼의 성을 누볐던 게 생각나네요. <br>그때처럼 그대가 있으니 든든해요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2401_Text2",
+		"Text_English": "Hmm...That’s very strange. <br>I don’t feel any souls around.",
+		"Text_Korean": "매우 이상하네요. <br>영혼들의 기운이 조금도 느껴지지 않아요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2401_Text3",
+		"Text_English": "Could it be… That the Goblin Magician took them all?",
+		"Text_Korean": "설마… 고블린 술사에게 모두 잡혀간 건 아닐까요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2402_Text1",
+		"Text_English": "Could it be... Did the Goblin Shaman capture them all?",
+		"Text_Korean": "가이우스 님께 영혼들이 사라졌다는 정보를 <br>알려드렸어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2402_Text2",
+		"Text_English": "I have sent the word to Gaius about the missing souls.",
+		"Text_Korean": "지금 일어나고 있는 현상과 관련이 있는 것 같아요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2402_Text3",
+		"Text_English": "It must have something to do with the current phenomenon.",
+		"Text_Korean": "용감했던 베르타 님의 모습이 그립네요. <br>지금의 싸움이 베르타 님께 위로가 되기를….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2403_Text1",
+		"Text_English": "I miss Bertha the brave. <br>I hope our battle will give her some comfort….",
+		"Text_Korean": "베르타 님은 부활하지 않은 것 같아요. <br>내심 기대했는데….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2403_Text2",
+		"Text_English": "It’s frustrating that strong demons are showing up instead of the friends who helped us.",
+		"Text_Korean": "우리를 도와주셨던 분들은 나타나지 않고 <br>강해진 악마들만 나타나니 억울하네요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2403_Text3",
+		"Text_English": "That’s right! Gaius reported that the demons we’re facing now aren’t resurrected beings.",
+		"Text_Korean": "아참! 가이우스 님께 들은 정보예요. <br>지금 악마들은 부활한 것이 아니라더군요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2404_Text1",
+		"Text_English": "If the demons were resurrected, what creature are we fighting?",
+		"Text_Korean": "악마들이 부활한 것이 아니라면 우리는 어떤 존재와 <br>싸우고 있는 걸까요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2404_Text2",
+		"Text_English": "Come to think of it, some of the demons looked different than before.",
+		"Text_Korean": "그러고 보니 모습이 달라진 악마들도 있었어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2404_Text3",
+		"Text_English": "But Caligula, Beelzebub and Lilith looked very much the same….",
+		"Text_Korean": "하지만 칼리굴라나 벨제부브, 릴리스 님은 <br>달라지지 않은 것 같은데…",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2405_Text1",
+		"Text_English": "Unlike before, I can’t sense any trapped souls.",
+		"Text_Korean": "전과 다르게 영혼들이 갇혀 있지 않은 것 같아요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2405_Text2",
+		"Text_English": "I can’t sense any souls here either.",
+		"Text_Korean": "이곳에서도 영혼의 기운을 전혀 느낄 수 없어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2406_Text1",
+		"Text_English": "I’m fearful that Azrael might suddenly show up again. ",
+		"Text_Korean": "아즈라엘 님이 예전처럼 갑자기 나타날까 두렵네요. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2406_Text2",
+		"Text_English": "I think we’re getting closer to the wave of power from Soul Castle.",
+		"Text_Korean": "영혼의 성에 있는 힘의 파장에 가까워지는 것 같아요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2406_Text3",
+		"Text_English": "The wave of power is getting stronger. It’s quite unnerving.",
+		"Text_Korean": "점점 힘의 파장이 강하게 느껴져요. 왠지 무섭네요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2407_Text1",
+		"Text_English": "The Goblin Shaman has been quiet... I guess it wasn’t the one hunting souls.",
+		"Text_Korean": "그러고 보니 고블린 술사가 잠잠했어요. <br>그가 영혼을 사냥한 게 아닌가 봐요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2407_Text2",
+		"Text_English": "I thought the souls disappeared but perhaps they were never here to begin with.",
+		"Text_Korean": "영혼들은 사라진 게 아니라 이곳에 처음부터 <br>존재하지 않았던 것 같은 느낌이에요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2407_Text3",
+		"Text_English": "Even if it isn’t hunting for souls, the fate of the Goblin Shaman has already been sealed.",
+		"Text_Korean": "영혼을 해치지 않았다 해도 고블린 술사에게는 <br>정해진 운명을 선사해야 해요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2408_Text1",
+		"Text_English": "No news from Gaius or the Magic Council...",
+		"Text_Korean": "가이우스 님과 마법 의회로부터 소식이 없네요….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2408_Text2",
+		"Text_English": "What if the information they found out is so horrible that they can’t handle it?",
+		"Text_Korean": "혹시 알게 된 정보가 감당하기 어렵고 무서운 <br>것이면 어쩌지요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2408_Text3",
+		"Text_English": "I wonder what form Azrael will take? I hope we don’t run into him.",
+		"Text_Korean": "아즈라엘 님은 어떤 모습으로 나타날까요? <br>사실 마주치지 않았으면 좋겠어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2409_Text1",
+		"Text_English": "Something is off... It feels like we’re being watched.",
+		"Text_Korean": "뭔가 이상해요. <br>우리를 감시하는 것 같은 시선이 느껴져요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2409_Text2",
+		"Text_English": "We’re still being watched. I wonder if it’s Azrael?",
+		"Text_Korean": "감시의 눈길이 사라지지 않네요. <br>혹시 아즈라엘 님이 아닐까요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2409_Text3",
+		"Text_English": "I’m suddenly reminded of Bertha. Let’s try harder for her sake.",
+		"Text_Korean": "베르타 님이 떠오르네요. <br>그분을 위해서라도 더 힘을 내도록 해요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2410_Text1",
+		"Text_English": "I, I’m scared. I can feel presence of Vulcanus and Azrael.",
+		"Text_Korean": "두, 두려워요. <br>불카누스와 아즈라엘 님의 기운이 느껴져요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2410_Text2",
+		"Text_English": "The wave of power is very intense. We’re close to unveiling the truth.",
+		"Text_Korean": "힘의 파장이 가장 강렬하군요. <br>비밀에 근접하고 있으니 용기를 내겠어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2501_Text1",
+		"Text_English": "Strange… Thought Nidhogg was defeated when his castle fell.",
+		"Text_Korean": "이상해. 분명 천공성이 붕괴하는 걸 보고 <br>니드호그가 패배했다고 생각했는데 말이야.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2501_Text2",
+		"Text_English": "So… Nidhogg may have returned… Scary stuff, but exciting times, this is….",
+		"Text_Korean": "니드호그가 돌아왔을 수도 있겠어. <br>두려운 일이지만 왠지 뜨거워지는군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2502_Text1",
+		"Text_English": "Vivian most definitely was beautiful… and also popular.  She was very kind to me…  Sad news indeed….",
+		"Text_Korean": "아름답고 강한 비비안은 인기가 많았지. <br>나에게는 친절했어… 애석하군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2502_Text2",
+		"Text_English": "I can’t bear the thought… Make it swift…  Don’t make it too painful for her.",
+		"Text_Korean": "차마 난 보고 싶지 않군. 비비안을 부탁해. <br>너무 고통스럽지는 않게….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2503_Text1",
+		"Text_English": "I don't understand, Everything appears to be the same… but it’s a different world…?",
+		"Text_Korean": "나는 이해가 안 돼. <br>모든 게 그대로인 것 같은데 다른 세계라니…",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2503_Text2",
+		"Text_English": "Everything, but Elisium, is just an illusion…?! How...?",
+		"Text_Korean": "엘리시움을 제외하고 전부 다른 세계라는 뜻인가?! <br>어찌 이럴 수가…?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2503_Text3",
+		"Text_English": "Must study those Force Waves… That’s the only way back to our world… Must focus….",
+		"Text_Korean": "힘의 파장을 분석해서 우리 세계로 돌아가야 해. <br>집중해야겠어.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2504_Text1",
+		"Text_English": "I remember just how quick Aveline was… Death would always come before they had a chance to react.",
+		"Text_Korean": "아벨린의 재빠른 움직임이 떠오르는군. <br>적이 죽음을 인식하기 전에 처치했었지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2504_Text2",
+		"Text_English": "I know this Aveline is not the same person I knew from our world… Yet… it still saddens me…",
+		"Text_Korean": "이곳의 아벨린이 다른 존재라지만 같은 모습에 <br>마음이 흔들리는군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2504_Text3",
+		"Text_English": "Gift her an eternal rest… Please….",
+		"Text_Korean": "이곳의 아벨린에게도 편안한 잠을 안겨줘. <br>내 부탁하지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2505_Text1",
+		"Text_English": "This Bereth is just as filthy as ours. Hiding like a maggot!",
+		"Text_Korean": "얄팍하게 숨은 꼴이 이 세계의 베레스도 똑같군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2505_Text2",
+		"Text_English": "Bereth must pay. Make it quick, but painful.",
+		"Text_Korean": "베레스는 정말 구역질 나는 녀석이야. <br>빨리 끌어내어 해치웠으면 좋겠군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2506_Text1",
+		"Text_English": "I do not carry an ounce of pity.  Wipe out all those demons.",
+		"Text_Korean": "이곳의 악마들에게 웃음이 나는군. <br>자네 같은 영웅의 습격을 받고 있으니 말이야.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2506_Text2",
+		"Text_English": "Awfully pleasant watching you destroy the darkness! Ha Ha Ha Ha Ha!!! ",
+		"Text_Korean": "목적을 이루고 평화롭게 사는데 자네가 <br>뒤집어버리고 있는 셈이 아닌가? 하하하.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2506_Text3",
+		"Text_English": "Yes, I can see you getting stronger. Darkness will yield to the Light.  ",
+		"Text_Korean": "역시 어둠은 쓸어버려야지. <br>그리고 분명 자네도 강해지고 있어.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2507_Text1",
+		"Text_English": "You don’t have to believe me… But, Daniel and I were able to hold our own when arm-wrestling Jean.",
+		"Text_Korean": "믿기지 않겠지만 나는 다니엘과 더불어 <br>진의 팔씨름 상대였어.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2507_Text2",
+		"Text_English": "I wonder what Jean is like here… Perhaps, meek… like a slug?  Hahaha!",
+		"Text_Korean": "이곳의 진은 어떤 성격일지 궁금하군. <br>파괴적인 성향은 같겠지?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2507_Text3",
+		"Text_English": "I will pay no attention to their appearance… I will not be swayed by it.",
+		"Text_Korean": "모습만 같은 다른 존재를 이제는 잊으려 해. <br>정에 흔들리지 말아야지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2508_Text1",
+		"Text_English": "I’m worried about Daniel. How can that strong angel be like this.",
+		"Text_Korean": "다니엘이 걱정되는군. 그 강력한 천사가 어떻게….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2508_Text2",
+		"Text_English": "Even Heavenly Castle looks the same here… I've lost a lot of friends there long ago….",
+		"Text_Korean": "이곳의 천공성도 모습까지 똑같군. <br>많은 친구들이 떠난 그곳과 닮았어.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2508_Text3",
+		"Text_English": "Don’t tell me the Goblin Shaman handed you a soul again…",
+		"Text_Korean": "또 고블린 술사가 나타나 자네의 손에 영혼을 <br>바치지는 않겠지?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2509_Text1",
+		"Text_English": "If I think about it… Zeke really is the devil of this world…",
+		"Text_Korean": "생각해보면 이 세계의 지크는 결국 악마인 게지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2509_Text2",
+		"Text_English": "Could Zeke be hiding somewhere?",
+		"Text_Korean": "과연 이곳의 지크는 자네에게 줄 가르침 따위 없나 보군. <br>숨어 있는 걸까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2509_Text3",
+		"Text_English": "If you can’t defeat the Zeke, you probably won't even get close to Nidhogg…",
+		"Text_Korean": "아마 이곳의 지크를 쓰러뜨리지 못하면 니드호그도 <br>이길 수 없을 테니 각오해.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2510_Text1",
+		"Text_English": "Could this be the power of Nidhogg?",
+		"Text_Korean": "이거 오싹하군. 이 무서운 기운이 이 세계 <br>니드호그의 힘이란 말인가?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2510_Text2",
+		"Text_English": "This Nidhogg is more powerful than the one I knew. Can you really defeat him?",
+		"Text_Korean": "내가 알던 니드호그의 힘과 차원이 달라. <br>자네가 정말 이길 수 있을까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2510_Text3",
+		"Text_English": "My apologies for doubting. I have faith in you. You will prevail.",
+		"Text_Korean": "아까는 쓸데없는 말을 해서 미안해. <br>나는 자네를 믿어. 빛의 승리를 보여주게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2601_Text1",
+		"Text_English": "I am so glad that you felt the power that I left behind to help you.",
+		"Text_Korean": "그대를 돕기 위해 남겨놓은 제 힘을 느끼실 수 있어 다행이에요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2601_Text2",
+		"Text_English": "I only have a vague notion of the future and cannot tell you more, but I left behind some of my power to help you.",
+		"Text_Korean": "제가 어렴풋이 아는 미래를 알려드릴 수 없어서 <br>그대를 위해 이 힘을 남겨놓아야 했어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2602_Text1",
+		"Text_English": "Someone has cursed you into the Shackles of Time.",
+		"Text_Korean": "그대가 영원한 시간의 굴레에 들어온 건 누군가의 <br>저주 때문인 것 같아요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2602_Text2",
+		"Text_English": "It must be the same being that created these monsters.",
+		"Text_Korean": "아마 시간의 굴레를 만들어 낸 자겠지요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2602_Text3",
+		"Text_English": "Once we find the caster, you should be able to escape this curse.",
+		"Text_Korean": "그 자를 찾는다면 저주에서 벗어날 방법이 있을 거예요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2603_Text1",
+		"Text_English": "Even in the faint future I saw, the one who cast the curse was shrouded.",
+		"Text_Korean": "제가 볼 수 있던 흐릿한 미래에서도 저주를 내린 자는 가려진 듯 볼 수 없었어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2603_Text2",
+		"Text_English": "He may be so powerful that my abilities cannot reach him. I have no idea where he could be.",
+		"Text_Korean": "아마 그 자는 제 힘이 닿지 않는 강한 자 같아요. <br>어디에 있을지 가늠조차 되지 않아요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2604_Text1",
+		"Text_English": "You must become stronger than the demons in this place. Without doing so, I fear that you may never be able to leave.",
+		"Text_Korean": "그대는 이 시간 속 악마들보다 강해져야 해요. <br>이들에게 패배한다면 나아갈 수 없으니까요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2604_Text2",
+		"Text_English": "If you can overcome the demons, you will be able to lift the curse and escape from the Shackles of Time.",
+		"Text_Korean": "그대는 저주의 힘보다 강해져야 해요. <br>그래야 시간의 굴레를 벗어날 수 있으니까요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2605_Text1",
+		"Text_English": "Those that were summoned to this place will live eternally through the demons' powers.",
+		"Text_Korean": "이곳에서 영원히 존재하는 자들은 위험한 힘을 계속 사용할 수 있어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2605_Text2",
+		"Text_English": "The Golem will soon move. Be careful.",
+		"Text_Korean": "곧 골렘이 움직일 거예요. 조심하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2606_Text1",
+		"Text_English": "There may be Unity Skills left undiscovered. Find them to grow even more powerful.",
+		"Text_Korean": "발견되지 않은 결속 스킬이 있을지 몰라요. <br>그것을 찾아낸다면 큰 도움이 될 거예요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2606_Text2",
+		"Text_English": "Upgrade your Unity Skills to master these powerful techniques and become even stronger.",
+		"Text_Korean": "강력한 기술인 결속 스킬을 강화해 위력을 증가시킨다면 큰 도움이 될 거예요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2607_Text1",
+		"Text_English": "You must have some powerful equipment to make it this far, Hero.",
+		"Text_Korean": "아마 지금 그대의 장비는 모두 강하고 높은 수준이겠군요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2607_Text2",
+		"Text_English": "If you have yet to change the random options for lower-level equipment, be sure to do so and get the option you desire.",
+		"Text_Korean": "낮은 등급의 장비도 랜덤 옵션을 변경할 수 있으니 원하는 옵션을 얻는데 문제가 없을 거예요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2608_Text1",
+		"Text_English": "There is a limit to how often you can ressurect within the raids against the great darkness. Use them well.",
+		"Text_Korean": "거대한 어둠을 상대하는 레이드에는 부활횟수가 있으니 다 사용하면서 끝까지 싸우세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2608_Text2",
+		"Text_English": "Be sure to watch the demons closely during combat as they will charge up their powerful attacks before striking.",
+		"Text_Korean": "레이드의 악마는 강력한 공격을 펼칠 때 범위가 나타나요. <br>그걸 보고 주의해서 전투하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2609_Text1",
+		"Text_English": "If Janne is using her powers, that means that you may have to fight Gregory again.",
+		"Text_Korean": "잔느가 위험한 능력을 사용한다는 것은 곧 그레고르 님과 다시 싸우게 된다는 뜻이에요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2609_Text2",
+		"Text_English": "As the real Gregory is still within your memories, you do not need to worry about fighting this weaker incarnation.",
+		"Text_Korean": "진짜 그레고르 님은 그대의 기억 속에 있으니 싸우게 될 그에게 마음 쓰지 마세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2610_Text1",
+		"Text_English": "I can feel the power of the one who had cast this curse from within the domain of the Apocalypse.",
+		"Text_Korean": "아포칼립스의 영역에서 저주를 내린 자의 힘이 강하게 느껴져요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2610_Text2",
+		"Text_English": "Could the Apocalypse be the one who had cast this curse?",
+		"Text_Korean": "혹시 저주를 내린 자가 아포칼립스는 아닐까요? ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2701_Text1",
+		"Text_English": "Elisium was once the kingdom of angels. That is why it was built in the skies.",
+		"Text_Korean": "엘리시움은 본래 천사들의 제국이었어요. <br>그래서 공중 도시처럼 만들었지요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2701_Text2",
+		"Text_English": "The place where you were was created for the humans.",
+		"Text_Korean": "그대가 있던 곳은 인간들을 받아들이면서 만들어 낸 새로운 터전이에요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2702_Text1",
+		"Text_English": "During the war with the Absolute Darkness, many angels sacrificed themselves to protect the humans of Elisium.",
+		"Text_Korean": "절대 어둠과의 전쟁 때 엘리시움의 인간들을 지키기 위해 많은 천사들이 희생되었어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2702_Text2",
+		"Text_English": "With the help of Heroes like you, the darkness was driven away, but Elisium was left in ruins.",
+		"Text_Korean": "그대와 같은 영웅들과 힘을 합쳐 어둠을 몰아냈지만 전장이었던 엘리시움은 피폐해졌지요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2702_Text3",
+		"Text_English": "The Seed of Death lingered after the war, making it difficult to restore Elisium to its previous glory.",
+		"Text_Korean": "남아 있던 죽음의 포자 때문에 엘리시움은 회복하기 어려웠어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2703_Text1",
+		"Text_English": "The Seed of Death fed off the light to spread darkness. The Absolute Darkness used this to corrupt our sacred grounds.",
+		"Text_Korean": "죽음의 포자는 빛을 없애고 어둠을 만들어요. <br>절대 어둠이 성역을 오염시키기 위해 만들었지요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2703_Text2",
+		"Text_English": "These seeds had originally spawned from mother spores during the war.",
+		"Text_Korean": "과거에는 죽음의 포자를 퍼지게 하는 어미 포자가 있었어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2703_Text3",
+		"Text_English": "We found the spores and destroyed them, but the Seed of Death still remained.",
+		"Text_Korean": "어미 포자를 찾아 없앴지만 그것 만으로 죽음의 포자가 모두 사라지지는 않았지요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2704_Text1",
+		"Text_English": "In truth, I knew Daniel was in pain... But I never had reason to doubt his efforts or his loyalty.",
+		"Text_Korean": "사실 다니엘이 받은 고통에 대해 알고 있었어요. <br>다만 그가 보여준 노력과 믿음을 의심할 수 없었지요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2704_Text2",
+		"Text_English": "Daniel did not allow his pain to overwhelm him. Instead, he was resolved to show his love for this world.",
+		"Text_Korean": "다니엘은 폭력과 괴롭힘에 굴하지 않았어요. <br>오히려 꿋꿋한 모습으로 이 세계에 대한 사랑을 보였지요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2705_Text1",
+		"Text_English": "Before using powerful attacks with longer cast times, be sure to incapacitate your target first.",
+		"Text_Korean": "시전 시간이 긴 강력한 공격은 상대를 무력화 시키고 사용하는 것이 유리해요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2705_Text2",
+		"Text_English": "During attacks, you can utilize \"tagging\" to change your actions. Use it wisely.",
+		"Text_Korean": "공격 중 태그를 통해서도 행동을 전환할 수 있으니 상황에 맞게 이용하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2706_Text1",
+		"Text_English": "You can increase the limit of your equipment by transcending them once they reach their maximum level.",
+		"Text_Korean": "장비의 레벨을 한계까지 올렸다면 초월을 시도해 보세요. <br>한계를 높일 수 있어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2706_Text2",
+		"Text_English": "Equipment with the same name and grade can be used as transcendence material.",
+		"Text_Korean": "초월할 장비와 등급과 이름이 같은 장비를 재료로 사용할 수 있으니 잊지 마세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2707_Text1",
+		"Text_English": "When the Absolute Darkness was sealed within me, I was determined to suppress it. But that did not go as planned...",
+		"Text_Korean": "저는 절대 어둠을 몸 안에 가두었을 때 억누를 자신이 있었어요. 하지만 뜻대로 되지 않았지요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2707_Text2",
+		"Text_English": "And since I did not trust anyone around me, I told no one of my struggle.",
+		"Text_Korean": "그럼에도 제 주변을 믿지 않았기 때문에 어려움을 누구에게도 말하지 않았어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2707_Text3",
+		"Text_English": "Even if I were to go back, I would do the same again. I would, however, not repeat the mistake of not trusting anyone.",
+		"Text_Korean": "아마 과거로 돌아가도 저는 같은 선택을 할 거예요. <br>다만 주변을 믿지 않은 실수는 반복하지 않을 거예요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2708_Text1",
+		"Text_English": "The Absolute Darkness has always taken different forms.",
+		"Text_Korean": "절대 어둠의 본 모습은 아무도 알지 못했어요. <br>전쟁에서 항상 다른 모습으로 나타났기 때문이에요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2708_Text2",
+		"Text_English": "But... perhaps it took on its true appearance when it fought you, Hero. ",
+		"Text_Korean": "최후를 맞이한 모습이 아마 실체이겠지요? <br>실체와 싸운 자는 그대가 유일할 거예요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2709_Text1",
+		"Text_English": "Be sure to utilize your defensive techniques to open up opportunities to attack.",
+		"Text_Korean": "방어나 생존에 관련된 기술도 놓치지 마세요. <br>공격 효과를 높여줄 수 있으니까요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2709_Text2",
+		"Text_English": "Do not worry about changes to your Combat Power when changing techniques. Use the technique that best suits your combat style.",
+		"Text_Korean": "기술 교체에 의한 전투력 변화에 의미를 두지 마세요. <br>자신에게 맞는 기술을 사용하는 게 더 중요해요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2710_Text1",
+		"Text_English": "Even the most powerful form of the Absolute Darkness cannot sway you. You can do this, Hero!",
+		"Text_Korean": "더 강력한 절대 어둠이라도 그대에게 달라질 것은 없어요. <br>용기를 내세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act2710_Text2",
+		"Text_English": "I cannot bear seeing myself in this fallen form, but I will not run.",
+		"Text_Korean": "타락한 제 모습을 보게 된다는 건 두려운 일이군요. <br>하지만 피하지 않고 눈에 담겠어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4101_Text1",
+		"Text_English": "You cannot be human. How can you take on a challenge like this!?",
+		"Text_Korean": "당신은 인간을 초월했습니다. <br>어떻게 이런 곳에 도전한단 말입니까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4101_Text2",
+		"Text_English": "Defeat the demons that guard the area and free up the entrance!",
+		"Text_Korean": "이곳을 지키는 악마를 물리치면 입구 지역을 <br>해방시킬 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4102_Text1",
+		"Text_English": "All the courage I had mustered up earlier is gone. I am terrified.",
+		"Text_Korean": "조금 전에 낸 용기가 모두 사라졌습니다. <br>아무래도 저는 너무 무섭습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4102_Text2",
+		"Text_English": "These hellish demons are immensely powerful.",
+		"Text_Korean": "지옥에서 볼 법한 불길을 두른 악마들은 <br>특히 강한 것 같습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4103_Text1",
+		"Text_English": "There must be a source that gives these demons their power.",
+		"Text_Korean": "아무리 봐도 이 세계 악마들에게 힘을 주는 <br>뭔가가 있는 것 같습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4103_Text2",
+		"Text_English": "It’s not that I’m scared or anything, but how about we rest after this battle?",
+		"Text_Korean": "제가 무서워서 그런 게 아니라 전투를 마치고 <br>쉬시는 게 어떻습니까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4104_Text1",
+		"Text_English": "I pray the information that Sir Gaius found can help us.",
+		"Text_Korean": "가이우스 님이 알아낸 정보가 제발 희망적인 <br>것이었으면 좋겠습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4104_Text2",
+		"Text_English": "But with you on our side, hero, I'm confident we will persevere.",
+		"Text_Korean": "이런 상황에 희망적인 정보는 영웅 단체가 <br>도우러 왔다 정도일 겁니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4105_Text1",
+		"Text_English": "The monsters here are far more powerful than before…",
+		"Text_Korean": "영웅 단체 같은 정보가 아니라 아쉽지만 <br>제가 느낀 게 정보와 일치했습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4105_Text2",
+		"Text_English": "But there’s no time to waste! The demon in Gote’s form approaches!",
+		"Text_Korean": "정보를 맞춰 우쭐할 사이도 없이 고트 님 모습의 <br>악마를 또 만나 너무 싫습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4106_Text1",
+		"Text_English": "The demons have overtaken our world with the Powers of Hell...",
+		"Text_Korean": "이곳의 악마들은 지옥의 힘으로 세계를 손아귀에 <br>넣은 것 같습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4106_Text2",
+		"Text_English": "What would happen to us if the source of this hellish power appears?",
+		"Text_Korean": "문득 두려운 생각이 듭니다. <br>지옥의 힘이 우리 세계를 침공하면…?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4107_Text1",
+		"Text_English": "There are tales of outstanding heroes in my grandfather’s journal.",
+		"Text_Korean": "조부님의 일기에는 뛰어난 영웅들이 등장합니다. <br>당신의 이야기 같습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4107_Text2",
+		"Text_English": "Such amazing stories… and yet, so similar to what’s going on now.",
+		"Text_Korean": "이런 놀라운 내용이…. <br>이 묘사는 지금 이 세계를 표현하는 것 같습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4108_Text1",
+		"Text_English": "The heroes in my grandfather’s journal were very powerful. All coming to fight by their own will.",
+		"Text_Korean": "조부님 일기 속의 영웅들은 무척 강했습니다. <br>스스로 이곳을 찾아와 싸웠습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4108_Text2",
+		"Text_English": "Though the heroes in the past have failed, we will succeed!",
+		"Text_Korean": "과거의 영웅들은 실패했지만 그들을 초월한 <br>그대는 성공할 것입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4109_Text1",
+		"Text_English": "My fear has caused me to act like a fool. ",
+		"Text_Korean": "사실은 두려움이 치밀어 올라 자꾸 엉뚱한 생각을 <br>한 것입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4109_Text2",
+		"Text_English": "Forgive me for being a burdon to you and being of little help.",
+		"Text_Korean": "제가 그대의 어려움을 외면하고 부담을 주는 것 <br>같아 미안합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4110_Text1",
+		"Text_English": "The source of this hellish power is overwhelming...",
+		"Text_Korean": "과연 지옥의 힘이 솟아나는 곳입니다. <br>소름끼치는 힘이 넘치고 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4110_Text2",
+		"Text_English": "Even though Caligula harnesses that power, I’m not worried at all thanks to you, hero.",
+		"Text_Korean": "이런 힘을 사용하는 칼리굴라는 두렵지만 <br>그대는 이기리라 믿습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4201_Text1",
+		"Text_English": "This place… it looks exactly like the forest I took care of. <br>How frightening!",
+		"Text_Korean": "어쩜 이렇게 제가 돌보던 숲과 같은 모습일까요? <br>정말 소름 끼치네요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4201_Text2",
+		"Text_English": "I can’t even imagine what would happen <br>if these demons were to pass through <br>the dimensional passage and invade Elisium…",
+		"Text_Korean": "이 강력한 악마들이 차원의 통로를 넘어 엘리시움을 <br>침공한다면… 상상하고 싶지 않네요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4202_Text1",
+		"Text_English": "Something… or someone must have created the power of hell.",
+		"Text_Korean": "비록 제 예상이기는 하지만 분명 지옥의 힘을 <br>만들어 낸 배후가 있어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4202_Text2",
+		"Text_English": "I wonder what kind of being could have given such energy to these demons… <br>Could the High Priest of Death garner such power?",
+		"Text_Korean": "대체 악마들에게 이런 힘을 준 배후는 <br>어떤 존재일까요? 죽음의 사제는 아니겠지요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4203_Text1",
+		"Text_English": "You’ve been fighting without rest, hero. <br>We won’t last if we continue on like this. ",
+		"Text_Korean": "쉬지 않고 싸우는 그대가 걱정돼요. <br>의지는 사라지고 기계처럼 싸우는 것은 아닌지….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4203_Text2",
+		"Text_English": "I can’t imagine the pressure that’s on your shoulders, <br>but please don’t overburden yourself.",
+		"Text_Korean": "그대는 분명 모두의 희망이지만 무게에 짓눌리지 <br>않도록 모든 걸 짊어지려 하지 마세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4204_Text1",
+		"Text_English": "That’s odd… <br>It looks as if the monster’s actions are being orchestrated.",
+		"Text_Korean": "이상하군요. <br>괴물들의 전투 방식에 체계가 있는 것 같아요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4204_Text2",
+		"Text_English": "Although each monster has their role in combat, <br>it looks as if they’re being controlled by something.",
+		"Text_Korean": "괴물들이 각자의 역할에 맞춰 전투하는 것 같아요. <br>잘 통제되는 것처럼 말이에요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4205_Text1",
+		"Text_English": "I agree with Gaius. <br>The one in control of the forest must be the source of power.",
+		"Text_Korean": "저도 가이우스 님과 같은 생각이에요. <br>분명 숲을 점령한 자가 힘의 통제자일 거예요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4205_Text2",
+		"Text_English": "To think they’d assign commanders in each area to control the powers of hell… <br>It’s frightening!",
+		"Text_Korean": "지역마다 통제자를 두고 지옥의 힘을 관리하게 하다니 <br>잘 정비된 나라 같은 느낌이네요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4206_Text1",
+		"Text_English": "If we find something unusual with the monsters’ movements, <br>it’d be aproof that they’re not acting on instincts.",
+		"Text_Korean": "괴물들에게 통제 감각이 발견된다면 본능으로 <br>움직이지 않는다는 증거가 될 거예요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4206_Text2",
+		"Text_English": "If they’re not being controlled, however, that means <br>the power that’s corrupted them is even more powerful that we thought!",
+		"Text_Korean": "통제 감각이 없다면 숲의 지배자가 무시무시한 힘으로 <br>이들을 조종한다는 뜻이에요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4207_Text1",
+		"Text_English": "I think it’s easier for them to corrupt the monsters, <br>rather than trying to control them like puppets.",
+		"Text_Korean": "차라리 괴물들은 의사소통이 아닌 힘에 의한 지배가 <br>더 어울리는 것 같아요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4207_Text2",
+		"Text_English": "I can’t even fathom how much power you’d need to rule over these monsters with such precision",
+		"Text_Korean": "이렇게 강한 괴물들을 힘으로 지배하는 우두머리는 <br>얼마나 강한 걸까요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4208_Text1",
+		"Text_English": "Everyone has someone dear to their hearts… <br>For me, that person is Lilith.",
+		"Text_Korean": "다른 분들도 그런 존재가 있겠지만 <br>저는 릴리스 님이 마음에 새겨진 존재 같아요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4208_Text2",
+		"Text_English": "Don’t worry about me, hero! <br>You must defeat the ruler of the forest!",
+		"Text_Korean": "저는 마음 쓰지 마시고 숲의 지배자를 <br>어서 물리쳐 주세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4209_Text1",
+		"Text_English": "It’s a good thing that these demons are <br>here instead of invading the innocent.",
+		"Text_Korean": "차라리 다행이네요. 우두머리의 목적이 침공이 <br>아니라 우리를 막는 것이라니….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4209_Text2",
+		"Text_English": "And yet, it seems we’re the one’s invading. <br>I guess you’re the powerful one, hero.",
+		"Text_Korean": "우리가 습격자라는 게 우습네요. <br>그만큼 그대가 강하다는 말이겠지요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4210_Text1",
+		"Text_English": "Doesn’t it seem odd that the ruler of <br>the forest is crouching down like that as if it's listening?",
+		"Text_Korean": "숲의 지배자가 웅크리고 있는 게 이상하지 않아요? <br>혹시 그도 명령을 받은 게 아닐까요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4210_Text2",
+		"Text_English": "What if they're giving orders to further protect the source of power?!",
+		"Text_Korean": "이건 제 추측인데 배후의 존재가 우두머리에게 <br>명령한 것 같아요. 힘의 근원을 지키라고….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4301_Text1",
+		"Text_English": "We have crossed many paths during our adventures together.",
+		"Text_Korean": "그러고 보니 자네와 함께 많은 모험을 하며 <br>생사를 넘나들었군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4301_Text2",
+		"Text_English": "I am deeply grateful. You’ve done so well despite the weight of this task.",
+		"Text_Korean": "자네를 끌어들인 장본인으로서 참 고맙네. <br>큰 짐을 짊어지고도 잘해줬어.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4302_Text1",
+		"Text_English": "If the Force of Hell gives this much power to even an underling… This is too dangerous!",
+		"Text_Korean": "지옥의 힘이 잔챙이에게도 이런 큰 힘을 주다니, <br>위험하기 짝이 없군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4302_Text2",
+		"Text_English": "The damage from the Force of Hell is much worse than expected. We need to get rid of it right now.",
+		"Text_Korean": "직접 보니 지옥의 힘의 폐해가 예상을 뛰어넘는군. <br>서둘러 없애야 하네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4303_Text1",
+		"Text_English": "It seems the corrupted rules of other regions are also focused on protecting the Force of Hell.",
+		"Text_Korean": "다른 지역의 지배자들도 지옥의 힘을 지키는 것에 <br>집중했던 것 같네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4303_Text2",
+		"Text_English": "Could there really be someone that bestowed the Force of Hell and gives orders to the rulers?",
+		"Text_Korean": "설마 지옥의 힘을 부여한 배후가 정말 있어 <br>지배자들에게 명령을 내린 걸까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4304_Text1",
+		"Text_English": "Why would the demons of the previous world attack Elisium when these demons have much more power?",
+		"Text_Korean": "이전 세계의 악마들은 엘리시움을 공격했는데… <br>왜 이런 힘을 가지고도….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4304_Text2",
+		"Text_English": "Beelzebub remains silent even in the face of our attack… Is he following someone’s orders not to move?",
+		"Text_Korean": "이런 공격에도 벨제부브가 말 한마디 없다니… <br>정말로 움직일 수 없는 명령을 따르는 건가?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4305_Text1",
+		"Text_English": "We have to fight two strong enemies, <br>but it’s no different from before. You can do this.",
+		"Text_Korean": "강력한 적 둘을 상대해야 하지만 이전과 다르지 않은 <br>싸움이라네. 힘을 내게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4305_Text2",
+		"Text_English": "If the Force of Unity is available, <br>we can use it here! Are you ready?",
+		"Text_Korean": "이럴 때 결속의 힘이 열려 있다면 큰 도움이 될 텐데… <br>혹시 준비되었나?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4306_Text1",
+		"Text_English": "Sorry. I have a lot on my mind. <br>I should be of more help to you….",
+		"Text_Korean": "미안하네. 여러 가지 생각으로 머리가 복잡하군. <br>자네에게 도움이 되어야 하는데….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4306_Text2",
+		"Text_English": "You have the toughest path, yet I am the one who is shaking. I will get a hold of myself.",
+		"Text_Korean": "가장 힘든 건 자네일 텐데, 내가 자꾸 흔들리는 모습을 <br>보이는군. 정신 차리겠네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4307_Text1",
+		"Text_English": "The Force of Hell hasn’t moved yet, <br>but it will invade from the other dimension when the time comes.",
+		"Text_Korean": "비록 지옥의 힘이 움직이지 않고 있었지만 때가 되면 <br>차원을 넘어 침공했을 걸세.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4307_Text2",
+		"Text_English": "Thanks to your challenge in the other dimension, <br>we were able to preemptively stop the Force of Hell.",
+		"Text_Korean": "자네가 차원을 넘어 도전한 덕분에 미리 지옥의 힘을 <br>막을 수 있었네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4308_Text1",
+		"Text_English": "Honesty and emotion is very unlike me. <br>This endless war and bloodshed has changed me. ",
+		"Text_Korean": "내가 전과 달리 솔직하고 감정적으로 변한 것 같네. <br>격한 상황 때문일까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4308_Text2",
+		"Text_English": "Please hero. You must defeat the Poisoner of Hell. <br>Show no mercy.",
+		"Text_Korean": "지옥의 독살자만큼은 꼭 물리쳐 주게. <br>내 원한이 깊다네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4309_Text1",
+		"Text_English": "Understanding the Force of Hell is as important as eliminating it. No enemy should remain unknown.",
+		"Text_Korean": "지옥의 힘을 없애는 것만큼 분석도 중요하네. <br>미지의 적을 알아야 하기 때문일세.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4309_Text2",
+		"Text_English": "We need to know who’s behind this, <br>so we can prepare for the battles ahead.",
+		"Text_Korean": "미지의 적인 배후의 존재를 알아야 앞으로 있을지 <br>모르는 싸움에 대비할 수 있네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4310_Text1",
+		"Text_English": "The strength of the Force of Hell is unbearable!",
+		"Text_Korean": "몸서리가 저절로 쳐지는군. 강렬한 지옥의 힘이 느껴지네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4310_Text2",
+		"Text_English": "Only Magnus, the absolute darkness, can order Beelzebub. But Magnus has been sealed away by Ramiel….",
+		"Text_Korean": "라미엘 님께 봉인된 절대 어둠 매그너스가 아니면 <br>벨제부브에게 명령할 수 없을 텐데….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4401_Text1",
+		"Text_English": "Greed overflows within Luemos, the Fairy Forest is corrupted, the grave is filled with grudge, and Soul Castle is congested with hate. Feels familiar…",
+		"Text_Korean": "루에모스는 탐욕, 요정의 숲은 타락, 무덤은 원한, <br>영혼의 성은 증오… 낯설지 않네요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4401_Text2",
+		"Text_English": "Is not the power of darkness covering each area the same as our first adventure.",
+		"Text_Korean": "각 지역을 뒤덮은 어둠의 힘들이 우리의 처음 <br>모험 때와 같지 않나요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4402_Text1",
+		"Text_English": "Somehow, this mysterious being that’s responsible for disturbing dimensions is aware of us. ",
+		"Text_Korean": "왠지 차원을 움직인 파장과 지옥의 힘을 움직인 <br>배후가 우리를 알고 있는 것 같아요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4402_Text2",
+		"Text_English": "Could it be possible that we’re being tested by this being?",
+		"Text_Korean": "이 모든 걸 꾸민 배후가 우리에게 거대한 시련을 <br>주고 관찰하는 것은 아닐까요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4403_Text1",
+		"Text_English": "Why cast a spell on the corpse? What truth is he hiding? This being is so unpredictable…",
+		"Text_Korean": "어떤 걸 감추기 위해 우두머리의 시체에 보호를 <br>걸었을까요? 배후는 무서운 존재네요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4403_Text2",
+		"Text_English": "It feels as if our journey is being controlled, and we’re at the mercy of the puppeteer. ",
+		"Text_Korean": "왠지 우리의 모험도 배후의 존재가 의도한 것 같은 <br>기분이 들어요. 조종당하는 것처럼….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4404_Text1",
+		"Text_English": "I wasn’t sure if this mysterious being was real… To think he was this powerful…",
+		"Text_Korean": "배후가 실제로 존재할 줄은 몰랐어요. <br>더구나 이렇게 강력할 줄은…",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4404_Text2",
+		"Text_English": "Even with an enemy this powerful, you don’t seem scared at all. I’m impressed.",
+		"Text_Korean": "그대는 적의 강력함을 알고도 한결같군요. <br>저 정말 감명받았어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4405_Text1",
+		"Text_English": "We have no clue as to who’s been hiding in the shadows.",
+		"Text_Korean": "우리가 정체조차 알지 못하는 어둠의 배후가 있다니 <br>큰일이네요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4405_Text2",
+		"Text_English": "But with the Butcher near, let’s focus on the battle at hand.",
+		"Text_Korean": "곧 도살자가 나타나겠군요. <br>일단 눈 앞의 전투에 집중하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4406_Text1",
+		"Text_English": "What if... Just what if... We face Magnus again like we faced the other bosses?",
+		"Text_Korean": "혹시 어쩌면, 정말 어쩌면 말인데요… <br>우두머리들처럼 매그너스가 또 있지는 않겠지요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4406_Text2",
+		"Text_English": "Actually, forget what I said. I tend to ramble on when I’m worried.",
+		"Text_Korean": "제가 아까 드렸던 말씀은 잊어주세요. <br>배후의 정체를 알 수 없으니 별 생각이 다 드네요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4407_Text1",
+		"Text_English": "Even if I’m right and we face Magnus again, I’m sure we’ll be fine with you on our side.",
+		"Text_Korean": "설령 제 예상이 맞아 또 다른 매그너스가 있더라도 <br>그대가 있으면 이겨낼 것 같아요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4407_Text2",
+		"Text_English": "Thanks to you, hero, we’ve become brave and are filled with passion!",
+		"Text_Korean": "저를 비롯해 많은 사람들이 그대에게 영향을 받아 <br>변했어요. 용기와 열정을 가지게 되었지요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4408_Text1",
+		"Text_English": "I wonder when I’ll have my life back. Eating delicious foods, going out with… *ah-hem…* friends…",
+		"Text_Korean": "언제쯤 제 삶을 찾을 수 있을까요? <br>맛있는 것도 먹고, 사람들도 만나고….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4408_Text2",
+		"Text_English": "If that day ever comes maybe we can enjoy it together.",
+		"Text_Korean": "그대 앞에 제가 배부른 소리를 했네요. <br>그 날이 오면 우리 함께 즐거움을 누려요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4409_Text1",
+		"Text_English": "I’ve been rambling so much lately, it surprises me how much I’ve changed.",
+		"Text_Korean": "요즘 제가 하는 말에 깜짝 놀라요. <br>거칠어진 것 같아 걱정이에요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4409_Text2",
+		"Text_English": "Bella speaks the same same way, but Holy Maidens shouldn’t say such things, in times like this, it’s okay, right?",
+		"Text_Korean": "사실 벨라 님도 저와 같은 생각이 들었대요. <br>신녀가 쓸 말은 아니지만 비상시이니 괜찮겠지요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4410_Text1",
+		"Text_English": "I can’t help but wonder what the enemy is thinking. Giving us this power and telling us to wait....",
+		"Text_Korean": "새삼 배후의 생각이 궁금하네요. <br>이 강력한 힘을 주고 때를 기다리라고 하다니….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4410_Text2",
+		"Text_English": "I could feel Azrael’s hellish flames all the way from here. Please be careful.",
+		"Text_Korean": "아즈라엘이 두르고 있는 지옥의 불길이 여기까지 <br>느껴지는 것 같아요. 조심하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4501_Text1",
+		"Text_English": "Greed, defamation, hatred, and grudge… This world is filled with an absolute fear…",
+		"Text_Korean": "탐욕, 타락, 원한, 증오라… <br>이곳을 뒤덮은 어둠의 힘은 공포인 것 같군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4501_Text2",
+		"Text_English": "Fear only works against the weakhearted. I know you can overcome it.",
+		"Text_Korean": "공포란 힘은 두려워하지 않는 자에게 통하지 않지. <br>자네는 충분히 이겨낼 수 있어.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4502_Text1",
+		"Text_English": "I analyzed the demons’ powers. It seems they have become stronger and acquired more skills.",
+		"Text_Korean": "악마들의 힘을 분석해 봤는데 몇몇 악마들은 힘과 <br>더불어 기술까지 늘어난 것 같더군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4502_Text2",
+		"Text_English": "You could face them directly if you were stronger. You need to dodge or counter their critical attacks.",
+		"Text_Korean": "자네가 더 강하다면 맞붙어 싸울 수 있겠지만 <br>치명적인 공격은 회피하거나 반격하는 게 좋아.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4503_Text1",
+		"Text_English": "What is this strange sensation? I don’t feel Nidhogg’s power within Heavenly Castle.",
+		"Text_Korean": "이 위화감은 뭘까? 니드호그의 힘으로 유지되는 <br>천공성이 아닌 것 같은 기분이 들어.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4503_Text2",
+		"Text_English": "Why do I feel like Heavenly Castle is not being maintained? Did Nidhogg get weaker?",
+		"Text_Korean": "왜 천공성이 아슬아슬하게 유지되는 기분이 들지? <br>니드호그의 힘이 약해진 걸까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4504_Text1",
+		"Text_English": "The power flowing through Heavenly Castle is definitely different. <br>It doesn't seem like the power of Nidhogg resides there.",
+		"Text_Korean": "천공성에 흐르는 힘이 다른 것 같군. <br>니드호그의 힘이 아닌 것 같아.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4504_Text2",
+		"Text_English": "If it’s not Nidhogg's power, then what is maintaining Heavenly Castle?",
+		"Text_Korean": "니드호그의 힘이 아니라면 과연 어떤 힘이 천공성을 <br>유지시키고 있는 걸까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4505_Text1",
+		"Text_English": "If it really isn’t Nidhogg that’s maintaining Heavenly Castle, then it might be the mysterious being.",
+		"Text_Korean": "천공성을 유지시키는 막대한 힘의 주인이 <br>니드호그가 아니라면 혹시 배후의 존재가 아닐까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4505_Text2",
+		"Text_English": "We will know for sure once we defeat Bereth. He keeps getting in the way of  Sorcery Council's investigation. Why isn’t he showing up now?",
+		"Text_Korean": "마법 의회의 조사를 방해하는 베레스를 물리치면 <br>알 수 있겠지. 놈은 왜 안 나오는 거야?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4506_Text1",
+		"Text_English": "For a being to surpass Nidhogg and maintain Heavenly Castle… It has to be Magnus, the Absolute Darkness.",
+		"Text_Korean": "니드호그를 수하로 두고 천공성을 유지하는 <br>힘이라면 절대 어둠 정도는 되어야 하는데…",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4506_Text2",
+		"Text_English": "But Magnus has been sealed. Could this be a new Absolute Darkness?",
+		"Text_Korean": "분명 절대 어둠 매그너스는 봉인되어 있어. <br>그렇다면 새로운 절대 어둠의 등장인가?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4507_Text1",
+		"Text_English": "You didn’t hear about Sorcery Council? What has everyone been doing?",
+		"Text_Korean": "혹시 마법 의회에 대해 듣지 못했나? <br>이런 다들 뭘 한 거야?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4507_Text2",
+		"Text_English": "It’s a secret research organization created by Ramiel in order to identify the power of darkness. Grachia was its chief.",
+		"Text_Korean": "라미엘 님이 비밀리에 어둠의 힘을 파악하려고 만든 <br>연구 집단이야. 그라치아가 수장이었지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4508_Text1",
+		"Text_English": "Larger conflicts will come after the Power of Hell has been dealt with.",
+		"Text_Korean": "지옥의 힘을 몰아낸 후 자네는 더 큰 전투에 <br>나서게 될 거야.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4508_Text2",
+		"Text_English": "It would be wise to search for whatever being made the unknown Wave of Force to spread that hellish power.",
+		"Text_Korean": "자네는 알 수 없는 힘의 파장을 만들고 지옥의 힘을 <br>퍼뜨린 배후의 존재를 찾아가겠지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4509_Text1",
+		"Text_English": "I feel as though this journey was intentionally designed by someone to make you stronger.",
+		"Text_Korean": "지금 모험은 자네가 강해지도록 누군가 일부러 마련한 <br>시련 같은 기분이 들어.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4509_Text2",
+		"Text_English": "And whoever made it is watching over us, as you’d watch a fruit ripen.",
+		"Text_Korean": "시련을 만든 자가 마치 과일이 익기를 기다리는 기분으로 <br>음흉하게 보는 것 같아 참 불쾌하군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4510_Text1",
+		"Text_English": "The power of hell is stronger here than anywhere else. Don’t falter.",
+		"Text_Korean": "어떤 곳 보다 공포의 힘이 강력하군. <br>공포에 짓눌리지 말게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4510_Text2",
+		"Text_English": "Deliver the final blow to the Power of Hell, show it’s puppet master who is boss!",
+		"Text_Korean": "마지막 지옥의 힘에 한 방 먹여서 어디선가 지켜볼 <br>음흉한 배후를 비웃어 줘!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4601_Text1",
+		"Text_English": "The fact that there are new Shackles of Time is proof that Apocalypse is not behind this.",
+		"Text_Korean": "새로운 시간의 굴레가 있다는 것은 아포칼립스가 저주를 내린 게 아니라는 뜻이에요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4601_Text2",
+		"Text_English": "This curse is even more powerful than before. Whoever created the Shackles of Time must be stronger than Apocalypse.",
+		"Text_Korean": "저주의 힘이 더욱 강력해요. 시간의 굴레를 만든 자는 아포칼립스 이상의 힘을 가졌어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4602_Text1",
+		"Text_English": "I am sure that I felt the power of the one behind this curse where the last battle with Apocalypse took place.",
+		"Text_Korean": "분명히 아포칼립스와 마지막 전투를 벌였던 곳에서 저주를 내린 자의 힘이 느껴졌어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4602_Text2",
+		"Text_English": "I wonder who could have cast the curse? Daniel? Ramiel? Or the Absolute Darkness…?",
+		"Text_Korean": "그곳에 있던 저주를 내린 자는 과연 누구일까요? <br>다니엘 님? 라미엘 님? 아니면 절대 어둠…?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4603_Text1",
+		"Text_English": "So the demons have become even stronger... I worry for you, Hero.",
+		"Text_Korean": "악마들은 한층 강력한 저주의 힘을 가졌어요. <br>그대가 걱정되네요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4603_Text2",
+		"Text_English": "You must overcome the power of the curse and become stronger!",
+		"Text_Korean": "저주의 힘을 뿌리치려면, 더 강한 힘이 필요하겠어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4604_Text1",
+		"Text_English": "Do not forget to request Equipment Essences from your guild.",
+		"Text_Korean": "길드에 가입하셨다면 장비 정수 요청을 놓치지 말고 최대로 지원 받으세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4604_Text2",
+		"Text_English": "And be sure to utilize the buffs from your guild to help you on your journey.",
+		"Text_Korean": "길드에서 얻을 수 있는 길드 버프도 잊지 말고 효과를 유지하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4605_Text1",
+		"Text_English": "Darc and the demonic weapon have become stronger, but you must defeat them. We cannot stop here.",
+		"Text_Korean": "악마 병기와 다르크가 한층 강해졌지만 꼭 이겨내세요. <br>여기서 멈출 수 없으니까요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4605_Text2",
+		"Text_English": "Otherwise, we will be forever locked within the Shackles of Time.",
+		"Text_Korean": "이들을 이겨내지 못한다면 지긋지긋한 시간의 굴레에 갇히게 될 거에요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4606_Text1",
+		"Text_English": "I was truly shocked and saddened by Daniel's betrayal. I would never have thought….",
+		"Text_Korean": "저도 다니엘 님의 배신에 크게 놀라고 또 슬펐어요. <br>그 분이 그럴 줄은….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4606_Text2",
+		"Text_English": "Daniel's betrayal was something not even I could foresee.",
+		"Text_Korean": "다니엘 님의 행동은 제가 가진 능력으로도 볼 수 없는 미래였어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4607_Text1",
+		"Text_English": "Daniel must have been desperate to succeed if he was willing to sacrifice his own memories.",
+		"Text_Korean": "자신까지 속이기 위해 기억을 버릴 정도로 다니엘 님은 일을 성공시키고 싶었던 거에요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4607_Text2",
+		"Text_English": "Although Daniel has made the wrong decision, I do share some empathy as I had a similar experience.",
+		"Text_Korean": "다니엘 님의 선택은 옳지 않았지만 마음은 이해가 돼요. <br>저도 비슷한 것을 겪었으니까요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4608_Text1",
+		"Text_English": "There must have been a reason for Daniel to do what he did.",
+		"Text_Korean": "다니엘 님이 그런 행동을 한 것에는 분명 어떤 계기가 있었을 거예요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4608_Text2",
+		"Text_English": "When I think of Daniel, I have no doubt that the Shackles of Time curse must be the work of the Absolute Darkness.",
+		"Text_Korean": "다니엘 님에 대해 생각해보니 시간의 굴레라는 저주는 절대 어둠이 내린 게 분명한 것 같군요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4609_Text1",
+		"Text_English": "Janne is burdened with eternal revenge. It saddens me…",
+		"Text_Korean": "영원히 복수심을 가져야 하는 잔느에게서 애처로움이 느껴지네요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4609_Text2",
+		"Text_English": "I pity her. Janne is only a tool for the recurring curse… just like me…",
+		"Text_Korean": "애석하네요. 잔느는 반복된 저주의 도구일 뿐이고 <br>저도 다르지 않다는 것이…",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4610_Text1",
+		"Text_English": "I am bound to stay here…",
+		"Text_Korean": "저는 이곳에 머무른 존재… 제가 모르는 것을 이미 그대가 알고 있을지도 모르겠군요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4610_Text2",
+		"Text_English": "Will we be able to free ourselves from the power of the one who cast this curse?",
+		"Text_Korean": "정말 이곳을 지나면 저주를 내린 자의 힘에서 벗어날 수 있을까요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4701_Text1",
+		"Text_English": "The repetition within the Shackles of Time does not seem to be a simple curse. There must be a source.",
+		"Text_Korean": "반복되는 시간의 굴레는 단순한 저주가 아닌 것 같아요. <br>분명 만들어 내는 근원이 있을 거예요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4701_Text2",
+		"Text_English": "You may be able to utilize the Shackles of Time to your advantage, Hero.",
+		"Text_Korean": "그대가 마음 먹기에 따라 오히려 시간의 굴레를 이용할 수 있지 않을까요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4702_Text1",
+		"Text_English": "Although the Absolute Darkness is gone, the Shackles of Time remains... There must be another source behind this.",
+		"Text_Korean": "절대 어둠이 사라진 뒤에도 시간의 굴레가 남아있다는 건 저주의 근원이 따로 있다는 뜻이에요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4702_Text2",
+		"Text_English": "We must find the source of this curse. In the meantime, take advantage of these repeated battles as an opportunity to train your skills.",
+		"Text_Korean": "저주의 근원을 찾아야 해요. <br>그리고 그대는 이 상황을 수련의 기회로 이용하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4703_Text1",
+		"Text_English": "Although you have defeated the Absolute Darkness, the power of darkness continues to send enemies to oppose us.",
+		"Text_Korean": "그대가 절대 어둠을 물리쳤지만 남은 어둠의 힘이 적을 계속 만들어 내고 있어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4703_Text2",
+		"Text_English": "It is the duty and burden of the Champion of Light to fight against the everlasting darkness.",
+		"Text_Korean": "사라지지 않는 어둠을 없애기 위해 싸우는 것이 <br>빛의 인도자가 가진 숙명이자 저주군요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4704_Text1",
+		"Text_English": "Though your friends did not express it, they were extremely dismayed to see the Absolute Darkness invade.",
+		"Text_Korean": "친구들은 그대를 위해 내색하지 않았지만 사실 <br>절대 어둠의 침공으로 큰 충격을 받았던 것 같아요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4704_Text2",
+		"Text_English": "Gaius, as well as your friends, are very proud of what you were able to accomplish, Hero.",
+		"Text_Korean": "가이우스는 그대를 아주 자랑스러워 하더군요. <br>친구들은 그대를 돕는 것으로 충격에서 벗어나려 해요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4705_Text1",
+		"Text_English": "Try to obtain a high-grade Ether in order to increase your performance in combat.",
+		"Text_Korean": "등급이 높은 에테르를 획득하세요. <br>등급을 상승하는 방법은 아직 찾지 못했기 때문이에요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4705_Text2",
+		"Text_English": "Be sure to research and utilize the most effective Ether set effect for each enemy.",
+		"Text_Korean": "상대할 적에게 적합한 에테르 세트 효과를 연구해 보세요. <br>훨씬 전투에 이로울 거예요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4706_Text1",
+		"Text_English": "It seems more Shackles of Time have opened. I wonder how many more will follow...",
+		"Text_Korean": "지금도 또 다른 시간의 굴레가 열리고 있어요. <br>얼마나 더 생겨날지 모르겠어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4706_Text2",
+		"Text_English": "With you, Hero, we will find the source of this curse and end the Shackles of Time once and for all.",
+		"Text_Korean": "그대가 잘 싸워준 덕분에 이 시간의 끝에 도달할 때쯤 저주의 근원을 알아낼 수 있을 것 같아요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4707_Text1",
+		"Text_English": "You must continue fighting to become stronger, Hero. Our fate is in your hands.",
+		"Text_Korean": "그대는 계속 싸워야 하니 강해지는 것은 중요해요. <br>그대에게도 우리에게도….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4707_Text2",
+		"Text_English": "Your friends are still researching new techniques and equipment to help you, Hero. Be sure to use them as they appear.",
+		"Text_Korean": "그대의 친구들이 새로운 기술과 장비를 연구하고 있어요. <br>나오는 즉시 놓치지 말고 이용하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4708_Text1",
+		"Text_English": "In the emptiness of space and time, there are holes of darkness. I can feel them expanding.",
+		"Text_Korean": "시공의 틈에서 어둠의 구멍이 생겨나고 있어요. <br>점점 커지고 있는 게 느껴져요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4708_Text2",
+		"Text_English": "When a hole of darkness expands, it seems to disturb the space and time around it. Could that be the Shackles of Time...?",
+		"Text_Korean": "어둠의 구멍이 커지면서 시공에 간섭하는 것으로 변하는 것 같아요. 설마 시간의 굴레는 아닌지….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4709_Text1",
+		"Text_English": "Light and darkness are always in a state of equilibrium. Neither can ever truly disappear.",
+		"Text_Korean": "빛이 강하면 어둠이 약해질 뿐 완전히 사라지지 않아요. <br>어떤 것도 그림자는 있으니까요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4709_Text2",
+		"Text_English": "Knowing that, I fear that the Shackles of Time may have been created by the power of darkness and may exist forever.",
+		"Text_Korean": "시간의 굴레는 어둠의 힘이 만들어내는 것일지도 몰라요. <br>영원히 사라지지 않을지도….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4710_Text1",
+		"Text_English": "We must strengthen the power of light to overcome this darkness.",
+		"Text_Korean": "절대 어둠은 사라졌지만 약해진 빛의 힘을 키워야 해요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4710_Text2",
+		"Text_English": "If the power of light becomes stronger, then the Shackles of Time may not be able to expand.",
+		"Text_Korean": "빛의 힘을 키운다면 어둠의 힘으로 만들어진 시간의 굴레가 더 늘어날 수 없을 거예요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act4710_Text3",
+		"Text_English": "You must strengthen the power of Light, Hero. We will do what we can to help you on this path.",
+		"Text_Korean": "그대의 전투가 빛의 힘을 키울 거예요. <br>우리는 그대가 강해지는 방법을 고민하며 돕겠어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6101_Text1",
+		"Text_English": "You've been promoted so many times now… <br>I was your superior, once upon a time…",
+		"Text_Korean": "지금은 계급이 엄청 높으시겠습니다. <br>처음에는 저보다 낮았었는데….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6101_Text2",
+		"Text_English": "I sometimes participate in Duels without telling anyone, but I haven't won yet….",
+		"Text_Korean": "저는 가끔 남몰래 결투에 도전하고 있습니다. <br>이긴 적은 없지만….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6102_Text1",
+		"Text_English": "You can check the status of the Raid or Siege War from the Lobby.",
+		"Text_Korean": "점령전과 레이드가 가능한 시간인지 알림으로 확인할 수 <br>있는 건 아십니까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6102_Text2",
+		"Text_English": "I keep record of all Raids and Siege Wars.",
+		"Text_Korean": "사실 점령전과 레이드 시간을 체크해서 알림에 기록하는 <br>게 저입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6103_Text1",
+		"Text_English": "I always use my rarest equipment in duels because I want to win.",
+		"Text_Korean": "저는 결투에서 이기고 싶어서 최상급 장비만 찾아 <br>사용하고 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6103_Text2",
+		"Text_English": "I wouldn’t even look at an equipment piece of a lesser grade than my own.",
+		"Text_Korean": "최상급 장비만 찾다보니 상급 이하 태그가 있는 장비는 <br>보지도 않습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6104_Text1",
+		"Text_English": "You can’t roll in succession in any duel arena, so be sure to utilize your roll strategically.",
+		"Text_Korean": "어떤 결투장에서든 구르기를 연속으로 할 수 없으니 <br>전략적으로 사용해야 합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6104_Text2",
+		"Text_English": "There’s a rumor that Sir Gaius won numerous Promotion Stones from duels <br>to become a Commander.",
+		"Text_Korean": "가이우스 님은 일대일 대전에서 수많은 진급석을 모아 <br>총사령관이 되었다는 소문이 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6105_Text1",
+		"Text_English": "Sir Gote and I were like brothers… I miss him dearly.",
+		"Text_Korean": "저는 고트 님을 잘 따랐습니다. <br>우리는 형제처럼 사이가 좋았습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6105_Text2",
+		"Text_English": "I would sometimes dream of serving under Sir Gote with him being a Commander and I his Lieutenant.",
+		"Text_Korean": "총사령관이 된 고트 님과 부관이 된 저를 상상하고는 <br>했습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6106_Text1",
+		"Text_English": "Luemos used to be a peaceful and bright city <br>under Lord Alfrid’s wise ruling.",
+		"Text_Korean": "예전의 루에모스는 현명한 알프리드 영주님의 지도하에 <br>평화롭고 활기찬 도시였습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6106_Text2",
+		"Text_English": "I have immense respect for Sir Gaius. <br>Through his skills and passion, he was admired as a Commander.",
+		"Text_Korean": "저는 가이우스 님을 참 존경합니다. <br>인망과 능력으로 총사령관이 되셨기 때문입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6107_Text1",
+		"Text_English": "The risk is so high after losing two duel, <br>the next fate could decide the fate of your rewards.",
+		"Text_Korean": "결투 참여 중 가장 긴장될 때가 두 번 패배했을 때 입니다. <br>남은 한 번의 결투로 상자가 달라집니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6107_Text2",
+		"Text_English": "Don't even think about trying to pause during a duel, <br>you won't live long enough to see what happens!",
+		"Text_Korean": "대전 중 급하다고 일시 정지 하지 마십시오. <br>중단되지 않기 때문입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6108_Text1",
+		"Text_English": "Don’t be the coward that leaves during a duel. <br>You will be punished.",
+		"Text_Korean": "결투 중에 불리하다고 탈주하는 비겁자가 되지 마십시오. <br>불이익을 받습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6108_Text2",
+		"Text_English": "You must defeat a field boss when you are on adventure, <br>or you will come back with nothing….",
+		"Text_Korean": "모험을 하실 때는 꼭 우두머리를 물리치고 완수하셔야 <br>합니다. 아니면 빈손으로….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6109_Text1",
+		"Text_English": "Is it true that Gladiators launch their enemies and engulf them in flames when tagged?",
+		"Text_Korean": "검투사님이 태그 공격을 하시면 적을 공중에 띄우고 <br>화염에 휩싸이게 한다는 게 사실입니까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6109_Text2",
+		"Text_English": "Is it true that Assassins launch their enemies and slow them when tagged?",
+		"Text_Korean": "암살자님이 태그 공격을 하시면 적을 공중에 띄우고 <br>움직임을 느려지게 한다는 게 사실입니까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6110_Text1",
+		"Text_English": "Is it true that the Sorcereress freeze and stun their enemies when tagged?",
+		"Text_Korean": "마법사님이 태그 공격을 하시면 적을 얼려서 움직이지 <br>못하게 한다는 게 사실입니까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6110_Text2",
+		"Text_English": "Is it true that Fighters stun and cripple their enemies when tagged?",
+		"Text_Korean": "격투가님이 태그 공격을 하시면 적을 기절시켜 움직이지 <br>못하게 한다는 게 사실입니까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6201_Text1",
+		"Text_English": "When I harvested from the forest, I always lacked space in my equipment box. So I expanded it to max slots.",
+		"Text_Korean": "저는 숲에서 많은 것을 채취하면 장비함이 항상 <br>부족했어요. 그래서 최대로 확장했지요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6201_Text2",
+		"Text_English": "I expanded the equipment box to max slots but I realized that the general inventory where I store my harvest has unlimited slots!",
+		"Text_Korean": "장비함을 확장했는데 제가 채취물을 담는 공용함은 <br>무제한이지 뭐에요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6202_Text1",
+		"Text_English": "Did you know? Fairies were the first ones to discover the altar that the god of Counter Dungeon left.",
+		"Text_Korean": "그거 아세요? 반격 던전의 신이 떠난 제단을 가장 먼저 <br>발견한 게 요정들이에요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6202_Text2",
+		"Text_English": "Fairies found out that demons collected Weapon Stones on the altar abandoned by the god.",
+		"Text_Korean": "요정들은 신이 떠난 제단에 악마들이 무기 승급석을 <br>모아놓는다는 사실을 알아냈어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6203_Text1",
+		"Text_English": "After I learned some information from the fairies, I gained courage and found other Counter Dungeons.",
+		"Text_Korean": "요정들에게 정보를 얻은 저는 용기를 내어 다른 <br>반격 던전들을 찾아냈어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6203_Text2",
+		"Text_English": "I found a Counter Dungeon where demons collected Weapon Stones and informed Gaius.",
+		"Text_Korean": "저는 악마들이 승급석을 모아놓은 반격 던전을 찾아내고 <br>가이우스 님께 알려드렸어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6204_Text1",
+		"Text_English": "I was able to join the Magic Council for finding out how to decompose Ether and turn them into Ether Pieces.",
+		"Text_Korean": "에테르를 분해해서 에테르 조각을 만드는 법을 찾아낸 <br>공로로 마법 의회에 가입할 수 있었어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6204_Text2",
+		"Text_English": "Through research with Elisium’s Magic Council, we found out how to upgrade Ether using Ether Pieces.",
+		"Text_Korean": "엘리시움 마법외회와 연구를 통해 에테르 조각으로 <br>에테르를 강화하는 방법을 발견했어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6205_Text1",
+		"Text_English": "The Magic Council, Grachia, and I focused on our research of Ether.",
+		"Text_Korean": "마법의회와 그라치아 님 그리고 저는 에테르의 연구에 <br>집중했어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6205_Text2",
+		"Text_English": "We then invented Ether Slots that could help equip Ether and use its mysterious powers.",
+		"Text_Korean": "에테르에 담긴 신비한 힘을 사용하기 위해 장착이 가능한 <br>에테르 슬롯을 만들어 냈어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6206_Text1",
+		"Text_English": "Upgrading Ether with Ether Pieces brought greater effects. So we classified ranks according to the influence of the effects.",
+		"Text_Korean": "에테르 조각으로 에테르를 강화하면 효과가 높아지더군요. <br>우리는 그에 맞춰 등급을 나눴어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6206_Text2",
+		"Text_English": "We found out that there were powerful Ether and there were synergies between ether of the same type.",
+		"Text_Korean": "발견 때 부터 강력한 에테르도 있었고 유형이 같은 <br>에테르끼리는 시너지가 있다는 걸 알아냈어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6207_Text1",
+		"Text_English": "We also decided on tiers beside the ranks of Ether. Ether with higher tiers have higher set option effects.",
+		"Text_Korean": "우리는 에테르의 등급 외에 티어를 설정했어요. <br>높은 티어의 에테르는 세트 옵션의 성능이 높더군요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6207_Text2",
+		"Text_English": "Each Ether has a different effect and performance so we added a prefix to sort them by category.",
+		"Text_Korean": "에테르 마다 효과와 성능이 다르기에 우리는 다른 <br>접두어를 붙여 종류를 구분하기 시작했어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6208_Text1",
+		"Text_English": "To activate a Set Option, 4 Attack Ether, or 2 Defense Ether have to be collected.",
+		"Text_Korean": "공격 유형 에테르는 4개, 방어 유형 에테르는 2개를 <br>모아야 세트 옵션이 활성화 되더군요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6208_Text2",
+		"Text_English": "The effect of the Attack Set Option is activated when the final attack hits.",
+		"Text_Korean": "공격 세트 옵션은 마지막 공격이 적중할 때 효과가 <br>발동된답니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6209_Text1",
+		"Text_English": "Defense Set Option is activated each time you’re attacked. But I’m sure you’re catching on now.",
+		"Text_Korean": "방어 세트 옵션은 매번 피격 시에 발동해요. <br>이제는 알고 계시지요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6209_Text2",
+		"Text_English": "Ether Pieces rewarded from Team Battle are the result of us decomposing countless Ether in the name of research.",
+		"Text_Korean": "팀대전 보상으로 지급되는 에테르 조각은 저희가 연구를 <br>위해 수많은 에테르를 분해한 결과물이에요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6210_Text1",
+		"Text_English": "There were more Ether Pieces when Ether with higher ranks and upgrade levels were decomposed.",
+		"Text_Korean": "에테르의 등급과 강화 단계가 높을수록 분해했을 때 <br>에테르 조각이 많이 발생하더군요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6210_Text2",
+		"Text_English": "Though they were for experiments, decomposing Ether with high ranks felt like such a waste.",
+		"Text_Korean": "비록 실험이었지만 높은 등급의 강화가 잘된 에테르를 <br>분해할 때는 저도 아깝더라고요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6301_Text1",
+		"Text_English": "Some people believe that I was promoted to commander in chief with Promotion Stones alone, but that's wrong.",
+		"Text_Korean": "내가 일대일 대전에서 모은 진급석으로 총사령관이 <br>되었다는 말은 헛소문일세.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6301_Text2",
+		"Text_English": "It is true that I gathered an enormous amount of Promotion Stones and was called the King of Duels.",
+		"Text_Korean": "내 한 때 별명이 일대일 대전의 제왕이라는 것과 <br>막대한 진급석을 모은 것은 사실이네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6302_Text1",
+		"Text_English": "I could climb the ladder quickly with the Promotion Stones I gathered from the duels, but Ramiel herself appointed me to be a commander in chief.",
+		"Text_Korean": "일대일 대전에서 모은 진급석으로 초고속 승진을 했지만 <br>총사령관은 라미엘 님이 직접 임명하셨네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6302_Text2",
+		"Text_English": "Sorcerer Grachia became a chief of Elisium Counsel of Sorcery with in-depth research and her exceptional abilities.",
+		"Text_Korean": "마법사 그라치아는 심도있는 탐구와 뛰어난 마법 <br>능력으로 엘리시움 마법 의회의 수장이 되었네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6303_Text1",
+		"Text_English": "Have you seen Grachia’s eyes? I almost believed the rumors that she’s not human.",
+		"Text_Korean": "그라치아의 눈을 본 적 있는가? 나도 그걸 보고 <br>인간이 아니라는 소문을 믿을 뻔 했다네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6303_Text2",
+		"Text_English": "I asked Arin to make the colored symbol to represent the guild.",
+		"Text_Korean": "길드의 상징인 문양과 색상은 내가 아린 님에게 부탁해 <br>만든 것이라네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6304_Text1",
+		"Text_English": "Arin is working on this as we speak.",
+		"Text_Korean": "지금도 내 의뢰로 아린 님이 새로운 길드 문양과 색상을 <br>고안하고 있네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6304_Text2",
+		"Text_English": "I set a reward to recapture the Promotion Stone from the Counterattack Dungeon that Bella found.",
+		"Text_Korean": "벨라 님이 발견한 반격 던전에서 승급석을 탈환하기 위해 <br>나는 성공 보상을 걸었다네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6305_Text1",
+		"Text_English": "The powerful magical beast in the middle of the siege war was created by Grachia’s magic.",
+		"Text_Korean": "점령전 중앙의 강력한 마수는 사실 그라치아가 마법으로 <br>만들어 낸 것이라네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6305_Text2",
+		"Text_English": "Grachia was surprised by the beast’s strength, even though he created it himself….",
+		"Text_Korean": "점령전의 마수가 너무 강한 것을 보고 그라치아도 <br>놀랐다네. 자기가 만들어 놓고는….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6306_Text1",
+		"Text_English": "Did you know? Sir Gregor's charming looks were very popular among women when he was alive.",
+		"Text_Korean": "혹시 알고 있나? 그레고르 님은 생전에 뛰어난 외모로 <br>여성들의 인기를 한 몸에 받았다네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6306_Text2",
+		"Text_English": "Sir Gregory always received bonus rewards for achieving the highest contribution in raids.",
+		"Text_Korean": "그레고르 님은 레이드에서 최고 기여도를 달성해 <br>보너스 보상을 거의 놓친 적이 없었다네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6307_Text1",
+		"Text_English": "Sir Gregory always gifted the accessories that he got from raids. I wonder who he gave them to….",
+		"Text_Korean": "그레고르 님은 레이드에서 획득한 장신구를 <br>항상 선물했다는데 과연 누구에게 했는지….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6307_Text2",
+		"Text_English": "Are you using Stationary tag attack and Dash tag attack correctly?",
+		"Text_Korean": "자네 제자리 태그 공격과 대쉬 태그 공격을 용도에 맞게 <br>사용하고 있나?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6308_Text1",
+		"Text_English": "Do you know that Dash tag attack’s effect lasts longer?",
+		"Text_Korean": "대쉬 태그 공격의 효과가 조금 더 오래 유지되는 건 <br>알고 있겠지?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6308_Text2",
+		"Text_English": "Promote yourself steadily. You can raise not only your stats, but your rank too.",
+		"Text_Korean": "진급은 착실히 하게. 계급만이 아니라 자네 능력치를 <br>상승시킬 수 있는 수단이니 말이네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6309_Text1",
+		"Text_English": "You must know the perfect timing for counterattack by now. It’s a great way to change the flow of battle.",
+		"Text_Korean": "지금쯤이면 반격의 정확한 타이밍 정도는 확실히 알겠군. <br>전세를 뒤집을 수 있는 훌륭한 수단이지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6309_Text2",
+		"Text_English": "Use Iron Wall Defense well. It can be used strategically in siege wars.",
+		"Text_Korean": "철벽 방어를 잘 이용하게. 점령전에서 전략적으로 <br>이용할 수 있다네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6310_Text1",
+		"Text_English": "Did you reinforce formations for your team battles? You shouldn’t miss the formation effect.",
+		"Text_Korean": "팀 대전을 할 때 결투 진형에 따라 우선 공격 대상이 <br>달라진다는 것도 알고 있나?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6310_Text2",
+		"Text_English": "Did you know that the priority target changes depending on your formation in a team battle?",
+		"Text_Korean": "팀 대전의 결투 진형은 많이 강화해 놓았나? <br>그래, 진형 효과도 놓쳐서는 안된다네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6401_Text1",
+		"Text_English": "I heard the Assassin lost both her birth parents and foster parents to demons. That breaks my heart.",
+		"Text_Korean": "암살자님은 악마에게 친부모와 양부모를 모두 잃으셨다고 <br>들었어요. 너무 가슴이 아프네요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6401_Text2",
+		"Text_English": "I heard the Assassin learned her skills from her foster parents. They must be proud knowing how strong she’s become.",
+		"Text_Korean": "암살자님의 기술은 양부모님께 배우셨다고 들었는데 <br>지금의 강한 모습을 보면 기뻐하셨을 거에요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6402_Text1",
+		"Text_English": "I heard the Fighter lost his master and pupils to demons but his will is solid and unshaken.",
+		"Text_Korean": "격투가님은 스승님과 동문들을 악마에게 잃었다고 <br>들었는데 흔들리지 않는 모습이 대단하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6402_Text2",
+		"Text_English": "I heard the Gladiator’s kingdom was destroyed by demons. I will pray for those who lost their lives.",
+		"Text_Korean": "검투사님의 왕국이 악마에게 멸망했다던데, <br>제가 희생당한 분들을 위해 열심히 기도드릴게요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6403_Text1",
+		"Text_English": "All of your Skills, Counters, and Tags carry the power of light that gathers power to use Unity Skills.",
+		"Text_Korean": "그대의 모든 기술, 반격, 태그에는 빛의 힘이 실려 있어서 <br>결속 스킬을 사용하는 힘을 모을 수 있어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6403_Text2",
+		"Text_English": "Did you know you can use dash attacks by tagging while using defense skills? Oh my, I should get back to my duties.",
+		"Text_Korean": "방어 유형의 스킬을 사용하고 태그하면 대쉬 공격이 <br>되는 건 아시지요? 어머, 나는 신녀가 아닌가봐.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6404_Text1",
+		"Text_English": "Have you been using the 3x Adventure? Gaius used it whenever he was looking for a certain reward.",
+		"Text_Korean": "세 배 모험은 잘 사용하고 계신가요? 가이우스 님은 찾는 <br>보상이 있는 곳은 무조건 사용하시더라고요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6404_Text2",
+		"Text_English": "Did you reach level 20 attack skill? Wow, your skills must look even more amazing now.",
+		"Text_Korean": "공격 유형의 스킬 레벨은 20까지 달성하셨나요? <br>와, 동작이 늘어나 더 화려하고 강력하겠네요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6405_Text1",
+		"Text_English": "Ramiel’s wings reached maximum evolution and have so many options, I can’t even keep track.",
+		"Text_Korean": "라미엘 님의 날개는 최고로 진화되어 있고 수많은 옵션이 <br>열려 있어서 정보를 다 볼 수 없을 정도래요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6405_Text2",
+		"Text_English": "You need Tears of Wind to upgrade wings and Feather of Archangel to upgrade Wing Elements.",
+		"Text_Korean": "날개를 강화하려면 바람의 눈물이 필요하고 날개 속성을 <br>강화하려면 대천사의 깃털이 필요하군요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6406_Text1",
+		"Text_English": "You need Mana Crystals to evolve wings? Looks like you need a lot of ingredients to make your wings stronger.",
+		"Text_Korean": "날개 진화에는 마력의 결정체가 필요하다고요? <br>날개를 강하게 만들려면 재료가 많이 필요하네요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6406_Text2",
+		"Text_English": "Looking at all those ingredients, you must be envious of Ramiel who was born with powerful wings.",
+		"Text_Korean": "재료를 보고 있으면 태생부터 강력한 날개를 가진 <br>라미엘 님이 부러우시겠어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6407_Text1",
+		"Text_English": "You must join the Guild Battle to get powerful wings. You can get all three ingredients from there.",
+		"Text_Korean": "강한 날개를 위해 길드전을 참여하셔야겠어요. <br>세 가지 재료를 모두 얻을 수 있으니까요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6407_Text2",
+		"Text_English": "I found out that ancient artifacts react to Hero Fragments. All thanks to my curiosity. Heh.",
+		"Text_Korean": "고대 유물이 영웅의 조각에 반응한다는 걸 <br>제가 알아냈어요. 제 멋진 호기심의 결과물이죠. 훗.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6408_Text1",
+		"Text_English": "I think the ancient artifact has powers that react to the power of light and darkness.",
+		"Text_Korean": "고대 유물은 어둠의 힘과 빛의 힘에 모두 반응하는 신비한 <br>존재인 것 같아요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6408_Text2",
+		"Text_English": "Soul Fragments of bosses in each area contain dark power required to upgrade ancient artifacts.",
+		"Text_Korean": "고대 유물을 승급하는데 필요한 각 지역 지배자들의 <br>영혼 조각에는 어둠의 힘이 담겨 있어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6409_Text1",
+		"Text_English": "Hero Fragments required to upgrade ancient artifacts contain the power of light created by Ramiel.",
+		"Text_Korean": "고대 유물을 강화하는데 필요한 영웅의 조각에는 <br>라미엘 님이 만드신 빛의 힘이 담겨 있지요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6409_Text2",
+		"Text_English": "I think you should invest in ancient artifacts that have to do with skills you want to improve on.",
+		"Text_Korean": "그대가 가장 집중하는 분야의 능력치와 관련된 <br>고대 유물에 우선 투자하는 게 좋지 않을까요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6410_Text1",
+		"Text_English": "You can cancel extra motions from skills by rolling. You should use it wisely.",
+		"Text_Korean": "스킬에 추가된 동작을 구르기를 통해 취소하는 건 <br>상황에 맞게 잘 사용해야겠어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6410_Text2",
+		"Text_English": "Repeated Battles and 3x Battles are effective if used well.",
+		"Text_Korean": "반복 전투와 세 배 전투는 잘 이용하면 파급력이 크겠어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6501_Text1",
+		"Text_English": "Gaius was the duelist, Gregor was the raider, and I was the Siege War master.",
+		"Text_Korean": "일대일 대전의 가이우스, 레이드의 그레고르가 있었다면 <br>점령전에는 브로크가 있었지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6501_Text2",
+		"Text_English": "I’m richer than I look. I've never missed the siege battle MVP rewards.",
+		"Text_Korean": "이래뵈도 난 꽤 부자라고. 점령전에서 가장 수훈을 많이 <br>차지해 MVP 상자의 보상을 놓친 적이 없거든.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6502_Text1",
+		"Text_English": "To open a MVP box, you need 3 keys. <br>I worked hard to get MVP.",
+		"Text_Korean": "점령전 MVP 상자는 열쇠 세 개를 모아야 열 수 있잖아? <br>그래서 수훈이 되기 위해 정말 열심히 했어.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6502_Text2",
+		"Text_English": "Be sure to come back and open your reward boxes. <br>This is my small token of gratitude for your service.",
+		"Text_Korean": "장비 상점에서 무료로 상자를 여는 건 잘 이용하고 있지? <br>그대들에게 보답하는 나의 작은 성의야.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6503_Text1",
+		"Text_English": "I will keep up the payments for the boxes. <br>You will be able to open boxes here till I die, haha!",
+		"Text_Korean": "계속 선금과 우정을 넣을 것이니 내가 죽기 전에는 <br>상자 무료 열기가 가능할 거야.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6503_Text2",
+		"Text_English": "The Friendship Equipment box requires a lot of Friendship Points to open. So, it may take up to 72 hours.",
+		"Text_Korean": "우정 장비 상자 10개 무료 소환은 모아야 하는 <br>우정이 많아서 72시간이 걸리니 이해해줘.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6504_Text1",
+		"Text_English": "Don’t you feel accomplished looking at the record book filled with equipment entries? <br>And set piece collections too.",
+		"Text_Korean": "장비의 기록이 많이 남아있는 도감을 보면 뿌듯하지 않나? <br>세트 수집도 그렇고 말이야.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6504_Text2",
+		"Text_English": "The reward jewels when you collect set equipment <br>are funded by the Blacksmith Association.",
+		"Text_Korean": "도감에서 장비 세트를 수집하면 보상으로 지급하는 <br>보석은 우리 대장장이 연합에서 지원한거야.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6505_Text1",
+		"Text_English": "The head of the Blacksmith Association is none other than the glorious and mighty Brock! Yes, that would be me… Hahaha.",
+		"Text_Korean": "대장장이 연합의 회장이 바로 아낌없이 주는 나무인 <br>이 브로크 님이지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6505_Text2",
+		"Text_English": "I’m rich enough to live a life of leisure, but I still work hard. <br>I invented the enhancement set effect.",
+		"Text_Korean": "일을 안해도 먹고 살 수 있지만 열심히 하고 있다고. <br>강화 세트 효과는 내가 발명한 것이야.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6506_Text1",
+		"Text_English": "If you activated the enhancement set effect, then you must have enhanced your equipment quite a bit. <br>I can’t believe you enhanced 6 pieces over level 15….",
+		"Text_Korean": "강화 세트 효과를 발동했다면 자네도 꽤 강화를 많이 했군. <br>15등급 이상을 6개나 착용하다니….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6506_Text2",
+		"Text_English": "Due to my lack of skill, the enhancement set effect is <br>based on the lowest stat. I’m sorry.",
+		"Text_Korean": "내 기술이 부족해서 그런지 강화 세트 효과가 <br>가장 낮은 수치를 기준으로 나오더라고. 미안하네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6507_Text1",
+		"Text_English": "Right now, the equipment level only goes up to level 6, but I am researching ways to go beyond that.",
+		"Text_Korean": "지금까지 만들어 놓은 장비 등급은 총 6단계인데 <br>원한다면 추가로 연구를 해보지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6507_Text2",
+		"Text_English": "Grachia and I researched together to make the Enhancement Scroll… But, in truth, the Advanced Enhancement Scroll was created by chance.",
+		"Text_Korean": "강화주문서는 그라치아와 공동 연구로 만든 건데 <br>사실 고급 강화주문서는 우연의 산물이야.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6508_Text1",
+		"Text_English": "It seems that Grachia casted the wrong spell. The scroll can enhance up to 3 levels at once.",
+		"Text_Korean": "그라치아가 주문을 잘못 걸었는지 강화 레벨이 한 번에 <br>최대 3까지 오르는 주문서가 나왔지 뭐야.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6508_Text2",
+		"Text_English": "Grachia is cunning. He probably attempted to make the advanced enhancement scroll to mock everyone.",
+		"Text_Korean": "속을 알 수 없는 그라치아 녀석, 분명 재미로 주문을 걸어 <br>고급 강화주문서 같은 걸 만들었을 거야.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6509_Text1",
+		"Text_English": "When you change the additional effects of your equipment by using Dark Crystals, make sure to apply it and bind them.",
+		"Text_Korean": "장비의 부가 효과를 다크 크리스탈을 써서 바꿀 때 <br>마음에 드는 게 나오면 적용을 잘 누르고 있겠지?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6509_Text2",
+		"Text_English": "Do you want to know a secret?  I used the central beast as bait, then attacked when the enemy least suspected it.",
+		"Text_Korean": "나는 점령전 중앙의 마수가 나타나면 일단 지켜보고 <br>상대편이 마수를 공격할 때 그 둘을 같이 공격했지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6510_Text1",
+		"Text_English": "With your current progress, you should be spending more time improving your equipment.",
+		"Text_Korean": "높은 등급의 장비일수록 성장시키는 방법이 많기 때문에 <br>장비함을 열고 고민하는 시간이 많겠어.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6510_Text2",
+		"Text_English": "You can enhance equipment up to level 40. Same goes for ascension. I know this, because I’ve done both. Heh.",
+		"Text_Korean": "장비는 최대 40단계까지 강화할 수 있고 <br>초월도 40단계까지 가능해. 내가 다 해봤거든.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6601_Text1",
+		"Text_English": "Don’t tell me you’re not investing in attack, <br>defense and stamina all equally.",
+		"Text_Korean": "자네 혹시 공격, 방어, 체력 중 한 요소만 투자해 권장 전투력을 맞추고 있는 건 아니겠지?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6601_Text2",
+		"Text_English": "You may fail your adventure if you only focus on one stat.",
+		"Text_Korean": "공방체 한 요소만 집중 투자해 권장 전투력을 충족시키면 모험에 실패할 수도 있네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6602_Text1",
+		"Text_English": "Do you know why I hang around the Duel Arena? <br>It's because you can get Promotion Stones.",
+		"Text_Korean": "제가 왜 일대일 대전을 기웃거리는지 아십니까? <br>진급석을 주기 때문입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6602_Text2",
+		"Text_English": "I want to get a lot of Promotion Stones so that I can rank up like you, hero.",
+		"Text_Korean": "저도 진급석을 많이 모아 계급을 빨리 높이고 싶습니다. <br>제발….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6603_Text1",
+		"Text_English": "I was quite discriminated against until I became the Forest Keeper.",
+		"Text_Korean": "저는 숲의 관리자가 되기 전까지 은근히 많은 차별을 받았어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6603_Text2",
+		"Text_English": "But there was no discrimination in the forest. Perhaps discrimination is a concept exclusive to humans.",
+		"Text_Korean": "숲의 친구들의 사전에는 차별이 없더군요. <br>어쩌면 차별은 인간들의 전유물일지도 몰라요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6604_Text1",
+		"Text_English": "Did you know that upgrading a Counter from a skill’s lasting effect will add an extra motion as well?",
+		"Text_Korean": "스킬의 지속 효과에 있는 반격도 강화하면 동작이 추가된다는 건 알고 계시지요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6604_Text2",
+		"Text_English": "Upgrading tags in a lasting effect allows you to use tags even when you’ve been knocked down by the enemy.",
+		"Text_Korean": "지속 효과에 있는 태그를 강화하면 적에게 쓰러졌을 때에도 태그를 사용할 수 있게 되지요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6605_Text1",
+		"Text_English": "Don’t you just love it, when your equipment hits the highest level?",
+		"Text_Korean": "초월할 수 있는 상태 즉, 최고 등급 장비가 최고 레벨이 되었을 때 정말 뿌듯하지 않나?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6605_Text2",
+		"Text_English": "Can I see the transcended form of the final level equipment? <br>Come now, let me see….",
+		"Text_Korean": "최종 등급 장비의 초월 상태 좀 볼 수 있나? <br>야박하게 굴지 말고 좀 보여 주지 그래.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6606_Text1",
+		"Text_English": "Daniel, being half human and half angel, overcame all the challenges and achieved his highly coveted rank… yet, why would he….",
+		"Text_Korean": "천사 다니엘 님은 혼혈로서 받는 차별을 이겨내고 <br>고위 천사가 되었습니다. 그런데 왜….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6606_Text2",
+		"Text_English": "Just looking at what happened to Daniel, angels don't seem too different from humans… Ah - I hope no one overheard that.",
+		"Text_Korean": "다니엘 님의 사례를 보면 천사들도 인간과 다를 바 없어 보입니다. 주변에 아무도 없겠지?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6607_Text1",
+		"Text_English": "To have wings only granted  to angels, you are very special indeed.",
+		"Text_Korean": "천사만이 허락된 날개를 가지시다니 역시 그대는 특별한 존재군요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6607_Text2",
+		"Text_English": "Your wings contain powerful strength, I really envy you for that.",
+		"Text_Korean": "강력한 힘이 담겨 있는 그대의 날개가 한 편으로 정말 부럽네요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6608_Text1",
+		"Text_English": "May the light guide us in this forsaken place….",
+		"Text_Korean": "이 저주 받은 곳에서 빛이 우리를 인도하기를….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6608_Text2",
+		"Text_English": "I can hear filthy demons everywhere, <br>but darkness can never consume light.",
+		"Text_Korean": "더러운 악마들의 소리가 가득하군. 하지만 결코 어둠은 빛을 삼킬 수 없어.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6609_Text1",
+		"Text_English": "I didn't realize how close Janne and Darc were. <br>I didn't expect Janne to feel such vengence for her sister.",
+		"Text_Korean": "잔느와 다르크는 의외로 사이가 좋은 자매였던 모양이야. 복수심에 불타는 잔느의 모습은 예상 밖이었어.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6609_Text2",
+		"Text_English": "I don’t understand why Janne and Darc would help Daniel.",
+		"Text_Korean": "잔느와 다르크는 무슨 목적으로 다니엘을 도왔을까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6610_Text1",
+		"Text_English": "Great evil hides in this place.",
+		"Text_Korean": "이곳에 거대한 악이 웅크리고 있어.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6610_Text2",
+		"Text_English": "I must stop the evil from destroying this world.",
+		"Text_Korean": "사악한 힘이 더 이상 세계를 더럽히지 않도록 막아야 해.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6701_Text1",
+		"Text_English": "It’s like my soul is falling apart. <br>To see this holy place defiled….",
+		"Text_Korean": "버텨오던 마음이 무너지는 것 같아. 이 신성한 장소가 더렵혀진 걸 보게 되다니….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6701_Text2",
+		"Text_English": "Could this place be really the sacred ground of Elisium? All that remains is the stain of death….",
+		"Text_Korean": "여기가 정말 최고의 성역인 엘리시움이 맞는 걸까? 남은 건 죽음의 악취와 잔해 뿐인 것 같아.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6702_Text1",
+		"Text_English": "As I know how difficult it is to enhance equipment, I’ve created the Guardian Crystal.",
+		"Text_Korean": "강화를 내가 해주는 게 아니다 보니 마음에 걸리는 게 많아서 수호의 결정을 만들었어.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6702_Text2",
+		"Text_English": "Making Guardian Crystals costs me a fortune… <br>so I hope you don't mind the hefty price tag.",
+		"Text_Korean": "수호의 결정이 재료도 많이 들고 매우 만들기 어렵더라고. 싸게 하고 싶었지만… 미안하네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6703_Text1",
+		"Text_English": "Azrael was the strongest and most powerful of all the angels, excluding myself.",
+		"Text_Korean": "아즈라엘은 저를 뺀 모든 천사들 중 가장 강한 힘과 전투력을 보유한 자였어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6703_Text2",
+		"Text_English": "Lilith was an angel with great magic and greater love.",
+		"Text_Korean": "릴리스는 강한 포용력과 가장 강한 마법을 가진 천사였어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6704_Text1",
+		"Text_English": "Daniel worked harder than anyone and had endless potential.",
+		"Text_Korean": "다니엘은 노력의 재능과 끝모를 잠재력을 가진 자였어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6704_Text2",
+		"Text_English": "Tabris is the most mysterious angel among the four. He left to find the true meaning of justice and never returned.",
+		"Text_Korean": "타브리스는 네 명의 천사 중 가장 수수께끼가 많은 인물이예요. 그는 정의의 본질을 찾기 위해 떠난 뒤 돌아오지 않았어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6705_Text1",
+		"Text_English": "Brock and Bella have developed battle costumes that boost statuses and can be worn over equipment for an individual flair.",
+		"Text_Korean": "브로크와 벨라가 능력치에 도움이 되고 장비 위에 착용해 멋진 외형을 표현하는 전투 의상을 개발했더군요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6705_Text2",
+		"Text_English": "So it's Brock's sense of beauty and Bella's idea of functionality? How… unexpected.",
+		"Text_Korean": "브로크의 미적 감각과 벨라가 생각하는 성능이 반영되었다고 해요. 조금… 이상하지요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6706_Text1",
+		"Text_English": "I could sense death circling me when I faced Absolute Darkness. The evil almost suffocated me.",
+		"Text_Korean": "사실 절대 어둠과의 전투 때 죽음이 주변을 멤도는 걸 느꼈었지. 숨 막히는 악에 질식할 것 같았어.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6706_Text2",
+		"Text_English": "Absolute Darkness would have brought destruction upon the world if not defeated.",
+		"Text_Korean": "진정한 절대 어둠을 쓰러뜨리지 못했다면 파괴가 세계를 뒤흔들었겠지. 정말 끔찍하군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6707_Text1",
+		"Text_English": "I’m still weak because I have yet to be promoted and cannot raise my combat power.",
+		"Text_Korean": "제가 아직 약한 이유는 진급을 하지 못해 능력치를 올리지 못했기 때문인 것 같습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6707_Text2",
+		"Text_English": "I want to know how it feels to complete all stages of promotion through Promotion Stones… just once!",
+		"Text_Korean": "열심히 모은 진급석으로 열 단계의 과정을 강화해 진급할 때의 그 기분…을 한 번 느껴보고 싶습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6708_Text1",
+		"Text_English": "Nisse, Rio and Pang wanted to repay you for helping them.",
+		"Text_Korean": "니스, 리오, 팡은 자신들을 도와준 그대에게 보답하고 싶어 했어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6708_Text2",
+		"Text_English": "The three fairies can now help you as they wished.",
+		"Text_Korean": "요정 세 친구가 그대를 돕고자 하는 마음을 이루었군요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6709_Text1",
+		"Text_English": "If there was one thing I learned fighting the Absolute Darkness and saving Ramiel, it's that no one can rule over mortal existence.",
+		"Text_Korean": "절대 어둠과 싸우고 라미엘 님을 구하면서 느낀 게 있어. 그 누구도 우리 필멸의 존재들을 지배할 수 없다는 것이지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6709_Text2",
+		"Text_English": "We will find and destroy the remnants of Absolute Darkness so it can never defile our world again, I'm sure of it.",
+		"Text_Korean": "다시는 우리 세계를 더럽히지 못하도록 절대 어둠의 잔재를 찾아 없애겠어. 그리고 우리가 원하는 것을 반드시 이루겠어.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6710_Text1",
+		"Text_English": "Gaius and Grachia are looking for remnants of darkness.There might be still more darkness to drive out.",
+		"Text_Korean": "가이우스와 그라치아가 어둠의 잔재를 찾고 있어요. 어둠의 힘을 몰아낼 기회라고 생각하기 때문이지요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Dialog_Act6710_Text2",
+		"Text_English": "The remnants of darkness may gather to form a new force. We will need your strength then.",
+		"Text_Korean": "남은 어둠의 파편들이 모여 세력을 이루고 있을지도 몰라요. 그 때는 그대의 힘이 필요할 거예요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Tutorial01_Sub01",
+		"Text_English": "The forewarning is over. Prepare for the battle of your destiny.",
+		"Text_Korean": "예고는 끝났소. 운명의 전투를 준비하시오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act01_05_Sub01",
+		"Text_English": "Lord Alfrid, I’ve finally found you…!",
+		"Text_Korean": "알프리드 영주. 드디어 찾았구나!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act01_05_Sub02",
+		"Text_English": "Hell Hounds! Enjoy your meal!",
+		"Text_Korean": "지옥의 파수견들아! 만찬을 즐겨라!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act01_Intro_Sub01",
+		"Text_English": "Ambush!",
+		"Text_Korean": "습격이야!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act01_Intro_Sub02",
+		"Text_English": "I SEE IT!",
+		"Text_Korean": "이런 젠장!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act01_Intro_Sub03",
+		"Text_English": "Ugh… What is…",
+		"Text_Korean": "으으… 이게 무슨….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act01_Intro_Sub04",
+		"Text_English": "What the…",
+		"Text_Korean": "이 빛은 대체….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act02_06_Sub01",
+		"Text_English": "Lilith and I were comrades in battle.",
+		"Text_Korean": "저와 릴리스는 전장을 함께한 전우였죠.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act02_06_Sub02",
+		"Text_English": "Remiel.",
+		"Text_Korean": "라미엘.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act02_06_Sub03",
+		"Text_English": "Take care of Lucci.",
+		"Text_Korean": "루치를 부탁할게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act02_06_Sub04",
+		"Text_English": "Don't be so sad… it's just for now…",
+		"Text_Korean": "슬퍼하지 마…잠시만 헤어지는 거야…",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act02_06_Sub05",
+		"Text_English": "By the sacrifice of Lilith",
+		"Text_Korean": "릴리스의 희생으로",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act02_06_Sub06",
+		"Text_English": "the forest returned to its normal form",
+		"Text_Korean": "숲은 본래의 모습을 되찾았고",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act02_06_Sub07",
+		"Text_English": "and I left there, leaving behind Lilith.",
+		"Text_Korean": "저는 릴리스를 남겨둔 채 그곳을 떠나왔습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act04_06_Sub01",
+		"Text_English": "Who dares to summon me?",
+		"Text_Korean": "네놈들은 누구냐?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act04_06_Sub02",
+		"Text_English": "Ramiel will come soon…",
+		"Text_Korean": "곧 라미엘이 올 것이다….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act04_06_Sub03",
+		"Text_English": "Remiel…",
+		"Text_Korean": "라미엘….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act04_10_Sub01",
+		"Text_English": "What do you wish to protect…?",
+		"Text_Korean": "넌 대체 뭘 지키고 싶은 거냐…?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act05_10_Sub01",
+		"Text_English": "…Remiel!",
+		"Text_Korean": "…라미엘 님!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act06_10_Sub01",
+		"Text_English": "Now, let us get started….",
+		"Text_Korean": "자, 시작하지….",
+		"Text_Other": ""
+	}
+]

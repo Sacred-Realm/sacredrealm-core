@@ -1,0 +1,266 @@
+[
+	{
+		"Name": "Relic_Type1",
+		"Text_English": "Caligula's Crown",
+		"Text_Korean": "칼리굴라의 왕관",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Relic_Type2",
+		"Text_English": "Lilith's Necklace",
+		"Text_Korean": "릴리스의 목걸이",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Relic_Type3",
+		"Text_English": "Beelzebub's Eye",
+		"Text_Korean": "벨제부브의 눈",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Relic_Type4",
+		"Text_English": "Azrael's Blade",
+		"Text_Korean": "아즈라엘의 검",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Relic_Type5",
+		"Text_English": "Nidhogg's Wings",
+		"Text_Korean": "니드호그의 날개",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Relic_Type6",
+		"Text_English": "Apocalypse's Bone",
+		"Text_Korean": "아포칼립스의 뼈조각",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Option_1_1",
+		"Text_English": "Hero's tower AP increase",
+		"Text_Korean": "영웅의 탑 공격력 증가",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Option_1_2",
+		"Text_English": "Hero's tower DP increase",
+		"Text_Korean": "영웅의 탑 방어력 증가",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Option_1_3",
+		"Text_English": "Hero's tower HP increase",
+		"Text_Korean": "영웅의 탑 체력 증가",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Option_2_1",
+		"Text_English": "Tag match AP increase",
+		"Text_Korean": "일대일 대전 공격력 증가",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Option_2_2",
+		"Text_English": "Tag match DP increase",
+		"Text_Korean": "일대일 대전 방어력 증가",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Option_2_3",
+		"Text_English": "Tag match HP increase",
+		"Text_Korean": "일대일 대전 체력 증가",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Option_3_1",
+		"Text_English": "Team control AP increase",
+		"Text_Korean": "점령전 공격력 증가",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Option_3_2",
+		"Text_English": "Team control DP increase",
+		"Text_Korean": "점령전 방어력 증가",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Option_3_3",
+		"Text_English": "Team control HP increase",
+		"Text_Korean": "점령전 체력 증가",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Option_4_1",
+		"Text_English": "Raid AP increase",
+		"Text_Korean": "레이드 공격력 증가",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Option_4_2",
+		"Text_English": "Raid DP increase",
+		"Text_Korean": "레이드 방어력 증가",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Option_4_3",
+		"Text_English": "Raid HP increase",
+		"Text_Korean": "레이드 체력 증가",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Option_5_1",
+		"Text_English": "Team match AP increase",
+		"Text_Korean": "팀 대전 공격력 증가",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Option_5_2",
+		"Text_English": "Team match DP increase",
+		"Text_Korean": "팀 대전 방어력 증가",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Option_5_3",
+		"Text_English": "Team match HP increase",
+		"Text_Korean": "팀 대전 체력 증가",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Option_6_1",
+		"Text_English": "Guild match AP increase",
+		"Text_Korean": "길드 대전 공격력 증가",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Option_6_2",
+		"Text_English": "Guild match DP increase",
+		"Text_Korean": "길드 대전 방어력 증가",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Option_6_3",
+		"Text_English": "Guild match HP increase",
+		"Text_Korean": "길드 대전 체력 증가",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Relic_Piece_ACT1",
+		"Text_English": "Caligula's Shard",
+		"Text_Korean": "칼리굴라의 조각",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Relic_Piece_ACT2",
+		"Text_English": "Lilith's Shard",
+		"Text_Korean": "릴리스의 조각",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Relic_Piece_ACT3",
+		"Text_English": "Beelzebub's Shard",
+		"Text_Korean": "벨제부브의 조각",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Relic_Piece_ACT4",
+		"Text_English": "Azrael's Shard",
+		"Text_Korean": "아즈라엘의 조각",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Relic_Piece_ACT5",
+		"Text_English": "Nidhogg's Shard",
+		"Text_Korean": "니드호그의 조각",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Relic_Piece_ACT6",
+		"Text_English": "Apocalypse's Shard",
+		"Text_Korean": "아포칼립스의 조각",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Relic_PieceInfo_ACT1",
+		"Text_English": "Use to enhance Caligula's Crown",
+		"Text_Korean": "칼리굴라의 왕관을 승급할 때 사용하는 재료입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Relic_PieceInfo_ACT2",
+		"Text_English": "Use to enhance Lilith's Necklace",
+		"Text_Korean": "릴리스의 목걸이를 승급할 때 사용하는 재료입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Relic_PieceInfo_ACT3",
+		"Text_English": "Use to enhance Beelzebub's Eye",
+		"Text_Korean": "벨제부브의 눈을 승급할 때 사용하는 재료입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Relic_PieceInfo_ACT4",
+		"Text_English": "Use to enhance Azrael's Blade",
+		"Text_Korean": "아즈라엘의 검을 승급할 때 사용하는 재료입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Relic_PieceInfo_ACT5",
+		"Text_English": "Use to enhance Nidhogg's Wings",
+		"Text_Korean": "니드호그의 날개를 승급할 때 사용하는 재료입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Relic_PieceInfo_ACT6",
+		"Text_English": "Use to enhance Apocalypse's Bone",
+		"Text_Korean": "아포칼립스의 뼛조각을 승급할 때 사용하는 재료입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Relic_NumberMin",
+		"Text_English": "Min",
+		"Text_Korean": "최소 획득 개수",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Relic_NumberMax",
+		"Text_English": "Max",
+		"Text_Korean": "최대 획득 개수",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Relic_IncreasingAbility",
+		"Text_English": "Stat increase",
+		"Text_Korean": "누적 증가 능력치",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Relic_NormalComplete_Obtain",
+		"Text_English": "Clear {0} normal <br>modes to obtain",
+		"Text_Korean": "일반 {0} 클리어 시 획득",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Relic_HardComplete_Obtain",
+		"Text_English": "Clear {0} hard <br>modes to obtain",
+		"Text_Korean": "어려움 {0} 클리어 시 획득",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Relic_NightmareComplete_Obtain",
+		"Text_English": "Clear {0} nightmare <br>modes to obtain",
+		"Text_Korean": "매우 어려움 {0} 클리어 시 획득",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Relic_HellComplete_Obtain",
+		"Text_English": "Clear {0} hell <br>modes to obtain",
+		"Text_Korean": "지옥 {0} 클리어시 획득",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Relic_EnhanceEffect",
+		"Text_English": "Enhance effect",
+		"Text_Korean": "승급 효과",
+		"Text_Other": ""
+	}
+]

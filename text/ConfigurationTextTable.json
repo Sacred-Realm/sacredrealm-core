@@ -1,0 +1,488 @@
+[
+	{
+		"Name": "Configuration_Setup",
+		"Text_English": "Setup",
+		"Text_Korean": "환경 설정",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_GameTab",
+		"Text_English": "Game",
+		"Text_Korean": "게임",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_AdditionalFunction",
+		"Text_English": "Extra",
+		"Text_Korean": "부가기능",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_AccountTab",
+		"Text_English": "Account",
+		"Text_Korean": "계정 관리",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_Info",
+		"Text_English": "Info",
+		"Text_Korean": "정보",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_Sound",
+		"Text_English": "Sound",
+		"Text_Korean": "사운드",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_GraphicSetUp",
+		"Text_English": "Graphics",
+		"Text_Korean": "그래픽 품질",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_SoundSetUp",
+		"Text_English": "Sound",
+		"Text_Korean": "사운드 설정",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_FrameLimitSetup",
+		"Text_English": "Frame Rate",
+		"Text_Korean": "화면 속도",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_ResolutionAASetup",
+		"Text_English": "Resolution/AA",
+		"Text_Korean": "해상도",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_HighQuality",
+		"Text_English": "High",
+		"Text_Korean": "높음",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_MidQuality",
+		"Text_English": "Normal",
+		"Text_Korean": "보통",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_LowQuality",
+		"Text_English": "Low",
+		"Text_Korean": "낮음",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_BackToSuggested",
+		"Text_English": "Suggested",
+		"Text_Korean": "권장 설정 감지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_FrameLimit_High",
+		"Text_English": "40",
+		"Text_Korean": "40",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_FrameLimit_Mid",
+		"Text_English": "30",
+		"Text_Korean": "30",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_FrameLimit_Low",
+		"Text_English": "25",
+		"Text_Korean": "25",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_ResolutionAA_High",
+		"Text_English": "High",
+		"Text_Korean": "높음",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_ResolutionAA_Mid",
+		"Text_English": "Normal",
+		"Text_Korean": "보통",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_ResolutionAA_Low",
+		"Text_English": "Low",
+		"Text_Korean": "낮음",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_BGM",
+		"Text_English": "BGM",
+		"Text_Korean": "배경음악",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_SFX",
+		"Text_English": "SFX",
+		"Text_Korean": "효과음",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_On",
+		"Text_English": "On",
+		"Text_Korean": "켜짐",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_Off",
+		"Text_English": "Off",
+		"Text_Korean": "꺼짐",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_GuideOnContentScaleChange",
+		"Text_English": "Selected resolution will be applied after the reboot of the App.",
+		"Text_Korean": "선택한 해상도는 앱 재시작 후에 적용됩니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_AllNotice",
+		"Text_English": "General Notice",
+		"Text_Korean": "전체 알림",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_Notice",
+		"Text_English": "Announcement",
+		"Text_Korean": "공지 알림",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_GameNotice",
+		"Text_English": "Game Notice",
+		"Text_Korean": "게임 알림",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_NightNotice",
+		"Text_English": "Night Notice",
+		"Text_Korean": "야간 알림",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_Vibration",
+		"Text_English": "Vibration",
+		"Text_Korean": "진동",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_ScreenOff",
+		"Text_English": "Screen Lock",
+		"Text_Korean": "화면 꺼짐 방지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_PushAgree",
+		"Text_English": "Push notification accepted",
+		"Text_Korean": "푸시 알림 수신 동의가 처리되었습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_PushRefuse",
+		"Text_English": "Push notification rejected",
+		"Text_Korean": "푸시 알림 수신 거부가 처리되었습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_GameAgree",
+		"Text_English": "Game notification accepted",
+		"Text_Korean": "게임 알림 수신 동의가 처리되었습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_GameRefuse",
+		"Text_English": "Game notification rejected",
+		"Text_Korean": "게임 알림 수신 거부가 처리되었습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_NoticeAgree",
+		"Text_English": "Announcement notification accepted",
+		"Text_Korean": "공지 알림 수신 동의가 처리되었습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_NoticeRefuse",
+		"Text_English": "Announcement notification rejected",
+		"Text_Korean": "공지 알림 수신 거부가 처리되었습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_AccountInfo",
+		"Text_English": "Log in to your account to play in different devices!",
+		"Text_Korean": "계정에 연결하고 다양한 기기에서 플레이하세요!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_Copy",
+		"Text_English": "Copy",
+		"Text_Korean": "복사",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_Credit",
+		"Text_English": "Credit",
+		"Text_Korean": "만든 사람들",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_Cafe",
+		"Text_English": "Cafe",
+		"Text_Korean": "공식 카페",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_Guide",
+		"Text_English": "Game Guide",
+		"Text_Korean": "게임 가이드",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_Policy",
+		"Text_English": "Policy",
+		"Text_Korean": "운영 정책",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_Coupon",
+		"Text_English": "Coupon",
+		"Text_Korean": "쿠폰 입력",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_Customer",
+		"Text_English": "Questions?",
+		"Text_Korean": "고객 센터",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_ScenarioVoice",
+		"Text_English": "Scenario voice",
+		"Text_Korean": "시나리오 보이스",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_CanDown",
+		"Text_English": "Download available",
+		"Text_Korean": "다운 가능",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_CompleteDown",
+		"Text_English": "Download complete",
+		"Text_Korean": "다운 완료",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_NoticeTab",
+		"Text_English": "Notice",
+		"Text_Korean": "알림",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_GameVersion",
+		"Text_English": "Game version",
+		"Text_Korean": "게임 버전",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_MemberNumber",
+		"Text_English": "Member no.",
+		"Text_Korean": "게임 회원번호",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_AccessTerms",
+		"Text_English": "Terms of Service",
+		"Text_Korean": "이용 약관",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_PrivacyStatements",
+		"Text_English": "Privacy Statements",
+		"Text_Korean": "개인정보 취급방침",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_InviteMyFriend",
+		"Text_English": "Reject friend invite",
+		"Text_Korean": "내 친구 초대 거부",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_InviteMyGameFriend",
+		"Text_English": "Reject in-game friend invite",
+		"Text_Korean": "게임 친구 초대 거부",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_ShowMyPhoto",
+		"Text_English": "Show picture",
+		"Text_Korean": "내 사진 보이기",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_ShowMyPhotoAll",
+		"Text_English": "All",
+		"Text_Korean": "모두",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_ShowMyPhotoFriend",
+		"Text_English": "Friends only",
+		"Text_Korean": "친구만",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_ShowMyPhotoGameFriend",
+		"Text_English": "In-game friends only",
+		"Text_Korean": "게임 친구만",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_ShowMyPhotoOff",
+		"Text_English": "Private",
+		"Text_Korean": "비공개",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_GameLeave",
+		"Text_English": "Leave game",
+		"Text_Korean": "게임 탈퇴",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_Logout",
+		"Text_English": "Log out",
+		"Text_Korean": "로그아웃",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_GameLeaveQ1",
+		"Text_English": "Leaving the game will result in loss of all game records. <br>A new account can be created after seven days.",
+		"Text_Korean": "게임 탈퇴 시 모든 게임 기록이 삭제되며, 7일 동안<br>동일한 아이디로 계정을 생성할 수 없습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_GameLeaveQ2",
+		"Text_English": "Leave the game?",
+		"Text_Korean": "게임을 탈퇴하시겠습니까? ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_GameLeaveQ3",
+		"Text_English": "Are you sure you want to leave the game?",
+		"Text_Korean": "정말로 게임을 탈퇴하시겠습니까? ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_GameInfoTab",
+		"Text_English": "Game info",
+		"Text_Korean": "게임 정보",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_Note",
+		"Text_English": "Notice",
+		"Text_Korean": "공지 사항",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_IntroMovie",
+		"Text_English": "Intro",
+		"Text_Korean": "인트로 무비",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_CouponInput",
+		"Text_English": "Coupon",
+		"Text_Korean": "쿠폰 번호 입력",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_CouponWrong",
+		"Text_English": "Invalid coupon",
+		"Text_Korean": "유효하지 않은 쿠폰입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_GoogleLogIn",
+		"Text_English": "Google Login",
+		"Text_Korean": "구글  로그인",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_GoogleLogOut",
+		"Text_English": "Google Sign Out",
+		"Text_Korean": "구글 로그아웃",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_AccountLink",
+		"Text_English": "Account linked",
+		"Text_Korean": "계정 전환",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_PushAllAgree",
+		"Text_English": "Blade2 {0} Receive all notifications.",
+		"Text_Korean": "Blade2 {0} 전체 알림 수신 동의가 처리되었습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_PushAlDisagree",
+		"Text_English": "Blade2 {0} Decline all notifications declined.",
+		"Text_Korean": "Blade2 {0} 전체 알림 수신 거부가 처리되었습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_PushGameAgree",
+		"Text_English": "Blade2 {0} Receive all game notifications.",
+		"Text_Korean": "Blade2 {0} 게임 알림 수신 동의가 처리되었습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_PushGameDisagree",
+		"Text_English": "Blade2 {0} Decline all game notifications.",
+		"Text_Korean": "Blade2 {0} 게임 알림 수신 거부가 처리되었습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_PushNotiAgree",
+		"Text_English": "Blade2 {0} Receive all announcement notifications.",
+		"Text_Korean": "Blade2 {0} 공지 알림 수신 동의가 처리되었습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_PushNotiDisagree",
+		"Text_English": "Blade2 {0} Decline all announcement notifications.",
+		"Text_Korean": "Blade2 {0} 공지 알림 수신 거부가 처리되었습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_PushNightAgree",
+		"Text_English": "Blade2 {0} Receive night time notifications.",
+		"Text_Korean": "Blade2 {0} 야간 알림 수신 동의가 처리되었습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Configuration_PushNightDisagree",
+		"Text_English": "Blade2 {0} Decline night time notifications.",
+		"Text_Korean": "Blade2 {0} 야간 알림 수신 거부가 처리되었습니다.",
+		"Text_Other": ""
+	}
+]

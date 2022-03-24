@@ -1,0 +1,1202 @@
+[
+	{
+		"Name": "PCClass_Aslan",
+		"Text_English": "Gladiator",
+		"Text_Korean": "검투사",
+		"Text_Other": ""
+	},
+	{
+		"Name": "PCClass_Assassin",
+		"Text_English": "Assassin",
+		"Text_Korean": "암살자",
+		"Text_Other": ""
+	},
+	{
+		"Name": "PCClass_Fighter",
+		"Text_English": "Fighter",
+		"Text_Korean": "격투가",
+		"Text_Other": ""
+	},
+	{
+		"Name": "PCClass_Gladiator",
+		"Text_English": "Gladiator",
+		"Text_Korean": "검투사",
+		"Text_Other": ""
+	},
+	{
+		"Name": "PCClass_Wizard",
+		"Text_English": "Wizard",
+		"Text_Korean": "마법사",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Lucci",
+		"Text_English": "Lucci",
+		"Text_Korean": "루치",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Remiel",
+		"Text_English": "Remiel",
+		"Text_Korean": "라미엘",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Miracle",
+		"Text_English": "Miracle",
+		"Text_Korean": "고결한 영혼 미라클",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_SaintessOfMystery",
+		"Text_English": "Saint",
+		"Text_Korean": "수수께끼의 성녀",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_IllusionOfSaintess",
+		"Text_English": "Saint's Illusion",
+		"Text_Korean": "성녀의 환영",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_CommanderGaius",
+		"Text_English": "Gaius",
+		"Text_Korean": "총사령관 가이우스",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_SoldierEliteUniqueBoss",
+		"Text_English": "Gote",
+		"Text_Korean": "조종당하는 부관 고트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_SoldierEliteSuperiorBoss",
+		"Text_English": "Corrupt Gote",
+		"Text_Korean": "어둠에 휩싸인 부관 고트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NickName_SoldierElite",
+		"Text_English": "Rachel's Puppet",
+		"Text_Korean": "라헬의 꼭두각시",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Alfrid",
+		"Text_English": "Alfrid",
+		"Text_Korean": "루에모스의 영주 알프리드",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Bella",
+		"Text_English": "Bella",
+		"Text_Korean": "벨라",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_FairyOfForest",
+		"Text_English": "Forest Fairies",
+		"Text_Korean": "숲의 요정들",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_FairyNice",
+		"Text_English": "Nice",
+		"Text_Korean": "숲의 요정 니스",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_FairyRio",
+		"Text_English": "Rio",
+		"Text_Korean": "숲의 요정 리오",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_FairyPan",
+		"Text_English": "Pan",
+		"Text_Korean": "숲의 요정 팡",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Gratia",
+		"Text_English": "Gratia",
+		"Text_Korean": "마법사 그라치아",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_WarriorOfZombie",
+		"Text_English": "Zombie Warrior",
+		"Text_Korean": "정체불명의 좀비전사",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Gregor",
+		"Text_English": "Gregor",
+		"Text_Korean": "영웅 그레고르",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Arin",
+		"Text_English": "Arin",
+		"Text_Korean": "신녀 아린",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_SoulOfBertha",
+		"Text_English": "Bertha",
+		"Text_Korean": "성녀 베르타의 영혼",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Daniel",
+		"Text_English": "Daniel",
+		"Text_Korean": "다니엘",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_SoldierHunt",
+		"Text_English": "Hunt",
+		"Text_Korean": "병사 헌트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Brokk",
+		"Text_English": "Brokk",
+		"Text_Korean": "대장장이 브로크",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_DarkPriest",
+		"Text_English": "Death Priest",
+		"Text_Korean": "죽음의 사제",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_HighDarkPriest",
+		"Text_English": "Death Cleric",
+		"Text_Korean": "고위 죽음의 사제",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Caligula",
+		"Text_English": "Caligula",
+		"Text_Korean": "칼리굴라",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NickName_LordOfGreed",
+		"Text_English": "Lord of Greed",
+		"Text_Korean": "탐욕의 영주",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_CaligulaSuperior",
+		"Text_English": "Caligula",
+		"Text_Korean": "칼리굴라",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_CaligulaUnique",
+		"Text_English": "Caligula",
+		"Text_Korean": "칼리굴라",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_SkellBow",
+		"Text_English": "Bone Archer",
+		"Text_Korean": "해골 궁수",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_SkellSword",
+		"Text_English": "Bone Warrior",
+		"Text_Korean": "해골 전사",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Werewolf",
+		"Text_English": "Werewolf",
+		"Text_Korean": "늑대인간",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_WerewolfUniqueBoss",
+		"Text_English": "Silvermane",
+		"Text_Korean": "외눈의 습격자 은빛갈기",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_WerewolfSuperiorBoss",
+		"Text_English": "Bloodfang",
+		"Text_Korean": "지옥의 이탈자 붉은 이빨",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_SkellBowUniqueBoss",
+		"Text_English": "Archer Captain",
+		"Text_Korean": "어둠의 해골 궁병대장",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_SkellBowSuperiorBoss",
+		"Text_English": "Archer Lord",
+		"Text_Korean": "암흑의 해골 궁병단장",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_SkellSwordUniqueBoss",
+		"Text_English": "Sword Captain",
+		"Text_Korean": "어둠의 해골 기사대장",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_SkellSwordSuperiorBoss",
+		"Text_English": "Sword Master",
+		"Text_Korean": "암흑의 해골 기사단장",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Rachel",
+		"Text_English": "Rachel",
+		"Text_Korean": "어둠의 악녀",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_RachelUniqueBoss",
+		"Text_English": "Dark Rachel",
+		"Text_Korean": "어둠의 악녀 라헬",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_RachelSuperiorBoss",
+		"Text_English": "Hell's Rachel",
+		"Text_Korean": "지옥의 마녀 라헬",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_SoldierCrossbow",
+		"Text_English": "SoldierCrossbow",
+		"Text_Korean": "조종당하는 인간 궁수",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_SoldierCrossbowUniqueBoss",
+		"Text_English": "SoldierCrossbow",
+		"Text_Korean": "조종당하는 인간 궁수",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_SoldierCrossbowSuperiorBoss",
+		"Text_English": "SoldierCrossbow",
+		"Text_Korean": "지옥의 꼭두각시 인간 궁수",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Soldier",
+		"Text_English": "Soldier",
+		"Text_Korean": "조종당하는 인간 병사",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_SoldierUniqueBoss",
+		"Text_English": "Soldier",
+		"Text_Korean": "조종당하는 인간 병사",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_SoldierSuperiorBoss",
+		"Text_English": "Soldier",
+		"Text_Korean": "지옥의 꼭두각시 인간 병사",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_SoldierSword",
+		"Text_English": "SoldierSword",
+		"Text_Korean": "조종당하는 인간 검사",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_SoldierSwordUniqueBoss",
+		"Text_English": "SoldierSword",
+		"Text_Korean": "조종당하는 인간 검사",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_SoldierSwordSuperiorBoss",
+		"Text_English": "SoldierSword",
+		"Text_Korean": "지옥의 꼭두각시 인간 검사",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Dog",
+		"Text_English": "Hell's Hound",
+		"Text_Korean": "지옥의 파수견",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_EvildDogUniqueBoss",
+		"Text_English": "Hell's Hound",
+		"Text_Korean": "지옥의 파수견",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_EvildDogSuperiorBoss",
+		"Text_English": "Hell's Hound",
+		"Text_Korean": "지옥의 수호견",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Lilith",
+		"Text_English": "Lilith",
+		"Text_Korean": "릴리스",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NickName_FallenAngel",
+		"Text_English": "Fallen Angel",
+		"Text_Korean": "타락한 천사",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_LilithSuperior",
+		"Text_English": "Lilith",
+		"Text_Korean": "릴리스",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_LilithUnique",
+		"Text_English": "Lilith",
+		"Text_Korean": "릴리스",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Ghost",
+		"Text_English": "Ghost",
+		"Text_Korean": "고스트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_GhostUniqueBoss",
+		"Text_English": "Corruptor",
+		"Text_Korean": "타락자 고스트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_GhostSuperiorBoss",
+		"Text_English": "Shadow",
+		"Text_Korean": "암흑의 사역자 고스트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_BatUniqueBoss",
+		"Text_English": "Blood Seeker",
+		"Text_Korean": "피의 탐닉자 어둠박쥐",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_BatSuperiorBoss",
+		"Text_English": "Blood Addict",
+		"Text_Korean": "피의 추적자 지옥박쥐",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_MinotaurUniqueBoss",
+		"Text_English": "Minotaur",
+		"Text_Korean": "잔악한 폭력자 미노타우르스",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_MinotaurSuperiorBoss",
+		"Text_English": "Leviathan",
+		"Text_Korean": "지옥의 파괴자 미노타우르스",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_MinotaurControlBattle",
+		"Text_English": "Minotaur",
+		"Text_Korean": "지옥의 마수 미노타우르스",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_MeltSpiderUniqueBoss",
+		"Text_English": "Poison Spider",
+		"Text_Korean": "치명적인 폭격자 맹독거미",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_MeltSpiderSuperiorBoss",
+		"Text_English": "Poison Tarantula",
+		"Text_Korean": "지옥의 독살자 맹독거미",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_SpiderBombUniqueBoss",
+		"Text_English": "Venom Blast",
+		"Text_Korean": "암흑의 폭탄마 자폭거미",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_SpiderBombSuperiorBoss",
+		"Text_English": "Venom Wave",
+		"Text_Korean": "지옥불 학살자 폭발거미",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_DevilNestUniqueBoss",
+		"Text_English": "Devil's Nest",
+		"Text_Korean": "타락을 부르는 악마 둥지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_DevilNestSuperiorBoss",
+		"Text_English": "Devil's Hive",
+		"Text_Korean": "죽음을 부르는 악마 둥지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_RattusUniqueBoss",
+		"Text_English": "Rattus",
+		"Text_Korean": "어둠추적자 래투스",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_RattusSuperiorBoss",
+		"Text_English": "Shadow Rattus",
+		"Text_Korean": "지옥의 기습자 래투스",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Beelzebub",
+		"Text_English": "Beelzebub",
+		"Text_Korean": "벨제부브",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NickName_KingOfTheTomb",
+		"Text_English": "Tomb Keeper",
+		"Text_Korean": "무덤의 왕",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_BeelzebubSuperior",
+		"Text_English": "Beelzebub",
+		"Text_Korean": "벨제부브",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_BeelzebubUnique",
+		"Text_English": "Beelzebub",
+		"Text_Korean": "벨제부브",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Poisoneye",
+		"Text_English": "Poisoneye",
+		"Text_Korean": "맹독의 감시자",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_PoisoneyeUnique",
+		"Text_English": "Poisoneye",
+		"Text_Korean": "맹독의 감시자",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_PoisoneyeSuperior",
+		"Text_English": "Poisoneye",
+		"Text_Korean": "맹독의 감시자",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_ZombieFat",
+		"Text_English": "Glutton",
+		"Text_Korean": "포식자 좀비",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_ZombieFatUniqueBoss",
+		"Text_English": "Gorger",
+		"Text_Korean": "탐욕의 포식자 좀비",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_ZombieFatSuperiorBoss",
+		"Text_English": "Hog",
+		"Text_Korean": "지옥의 인체약탈자 좀비",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_ZombieFemale",
+		"Text_English": "Marauder",
+		"Text_Korean": "습격자 좀비",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_ZombieFemaleUniqueBoss",
+		"Text_English": "Spiteful Marauder",
+		"Text_Korean": "원한의 습격자 좀비",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_ZombieFemaleSuperiorBoss",
+		"Text_English": "Alpha Marauder",
+		"Text_Korean": "지옥의 기습자 좀비",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_ZombieMale",
+		"Text_English": "Drone",
+		"Text_Korean": "일꾼 좀비",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_ZombieMaleUniqueBoss",
+		"Text_English": "Drone Boss",
+		"Text_Korean": "성역파괴자 좀비",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_ZombieMaleSuperiorBoss",
+		"Text_English": "Drone Master",
+		"Text_Korean": "지옥의 사역마 좀비",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_AncientKnight",
+		"Text_English": "Ancient Knight",
+		"Text_Korean": "고대 기사 석상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_AncientKnightUniqueBoss",
+		"Text_English": "Fallen Knight",
+		"Text_Korean": "타락한 고대 기사 석상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_AncientKnightSuperiorBoss",
+		"Text_English": "Demon Knight",
+		"Text_Korean": "지옥의 수호기사 석상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_MimicUniqueBoss",
+		"Text_English": "Mimic",
+		"Text_Korean": "저주받은 거대 보물상자",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_MimicSuperiorBoss",
+		"Text_English": "Hell's Mimic",
+		"Text_Korean": "지옥의 거대 악마상자",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Ghoul",
+		"Text_English": "Ghoul",
+		"Text_Korean": "구울",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_GhoulUniqueBoss",
+		"Text_English": "Ghoul",
+		"Text_Korean": "맹렬한 추격자 구울",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_GhoulSuperiorBoss",
+		"Text_English": "Ghoul",
+		"Text_Korean": "탐욕의 공격자 구울",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_AzraelHorse",
+		"Text_English": "Azrael",
+		"Text_Korean": "아즈라엘",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NickName_ChampionOfImmortality",
+		"Text_English": "Champion",
+		"Text_Korean": "불멸의 투사",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Azrael",
+		"Text_English": "Azrael",
+		"Text_Korean": "아즈라엘",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_AzraelHorseSuperior",
+		"Text_English": "Azrael",
+		"Text_Korean": "아즈라엘",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_AzraelHorseUnique",
+		"Text_English": "Azrael",
+		"Text_Korean": "아즈라엘",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_AzraelSuperior",
+		"Text_English": "Azrael",
+		"Text_Korean": "아즈라엘",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_AzraelUnique",
+		"Text_English": "Azrael",
+		"Text_Korean": "아즈라엘",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Butcher",
+		"Text_English": "Butcher",
+		"Text_Korean": "도살자",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_ButcherUnique",
+		"Text_English": "Butcher",
+		"Text_Korean": "살육의 악마 도살자",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_ButcherSuperior",
+		"Text_English": "Butcher",
+		"Text_Korean": "학살의 악마 도살자",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_ButcherCD",
+		"Text_English": "Butcher Lord",
+		"Text_Korean": "악의 재물 수호자",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NickName_DemonOfTheMassacre",
+		"Text_English": "Massacre Demon",
+		"Text_Korean": "학살의 악마",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_GoblinMagician",
+		"Text_English": "Goblin Magician",
+		"Text_Korean": "고블린 술사",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_GoblinMagicianUniqueBoss",
+		"Text_English": "Goblin Wizard",
+		"Text_Korean": "간사한 고블린 저주술사",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_GoblinMagicianSuperiorBoss",
+		"Text_English": "Goblin Warlock",
+		"Text_Korean": "교활한 고블린 지옥마법사",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_GoblinBoss",
+		"Text_English": "Goblin Dagger",
+		"Text_Korean": "고블린 암살단장",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_GoblinSuperiorBoss",
+		"Text_English": "Goblin Assassin",
+		"Text_Korean": "지옥의 고블린 암살대장",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_GoblinBow",
+		"Text_English": "Goblin Bow",
+		"Text_Korean": "고블린 궁수",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_GoblinBowUniqueBoss",
+		"Text_English": "Goblin Archer",
+		"Text_Korean": "괴팍한 고블린 궁수대장",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_GoblinBowSuperiorBoss",
+		"Text_English": "Goblin Crossbow",
+		"Text_Korean": "고약한 고블린 지옥궁수대장",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_GoblinBowling",
+		"Text_English": "Goblin Raider",
+		"Text_Korean": "고블린 기습대원",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_GoblinBowlingUniqueBoss",
+		"Text_English": "Goblin Raider",
+		"Text_Korean": "고블린 기습대장",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_GoblinBowlingSuperiorBoss",
+		"Text_English": "Goblin Raider",
+		"Text_Korean": "지옥의 고블린 기습대장",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_GoblinSword",
+		"Text_English": "Goblin Sword",
+		"Text_Korean": "고블린 용병",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_GoblinSwordUniqueBoss",
+		"Text_English": "Goblin Captain",
+		"Text_Korean": "포악한 고블린 용병단장",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_GoblinSwordSuperiorBoss",
+		"Text_English": "Goblin Lord",
+		"Text_Korean": "극악한 고블린 지옥용병단장",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_GoblinWolverine",
+		"Text_English": "Wolverine",
+		"Text_Korean": "고블린 암살자",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_GoblinWolverineUniqueBoss",
+		"Text_English": "Shadow Wolverine",
+		"Text_Korean": "잔인한 고블린 암살자",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_GoblinWolverineSuperiorBoss",
+		"Text_English": "Hell's Wolverine",
+		"Text_Korean": "잔혹한 고블린 지옥암살자",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_GoblinKing",
+		"Text_English": "Goblin King",
+		"Text_Korean": "고대 고블린",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_GoblinKingUniqueBoss",
+		"Text_English": "Goblin King",
+		"Text_Korean": "고대 고블린 왕",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_GoblinKingSuperiorBoss",
+		"Text_English": "Goblin King",
+		"Text_Korean": "지옥의 고대 고블린 왕",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_GoblinTreasure",
+		"Text_English": "Goblin Seeker",
+		"Text_Korean": "고블린 도굴꾼",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Gargoyle",
+		"Text_English": "Gargoyle",
+		"Text_Korean": "가고일",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_GargoyleUniqueBoss",
+		"Text_English": "Gargoyle Raider",
+		"Text_Korean": "맹공의 기습자 가고일",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_GargoyleSuperiorBoss",
+		"Text_English": "Gargoyle Marauder",
+		"Text_Korean": "지옥의 습격자 가고일",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Nidhogg",
+		"Text_English": "Nidhogg",
+		"Text_Korean": "니드호그",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NickName_ApostleOfDeath",
+		"Text_English": "Death Follower",
+		"Text_Korean": "죽음의 사도",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_NidhoggSuperior",
+		"Text_English": "Nidhogg",
+		"Text_Korean": "니드호그",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_NidhoggUnique",
+		"Text_English": "Nidhogg",
+		"Text_Korean": "니드호그",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Perez",
+		"Text_English": "Perez",
+		"Text_Korean": "베레스",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NickName_DemonicCommander",
+		"Text_English": "Demon Lord",
+		"Text_Korean": "악마 군단장",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_PerezUnique",
+		"Text_English": "Perez",
+		"Text_Korean": "악마 군단장 베레스",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_PerezSuperior",
+		"Text_English": "Perez",
+		"Text_Korean": "학살의 화신 베레스",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_FighterUniqueBoss",
+		"Text_English": "Jin's Spirit",
+		"Text_Korean": "격투가 진의 영혼",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_FighterSuperiorBoss",
+		"Text_English": "Jin's Soul",
+		"Text_Korean": "지옥에서 부활한 격투가의 영혼",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_AssassinUniqueBoss",
+		"Text_English": "Avelin's Spirit",
+		"Text_Korean": "암살자 아벨린의 영혼",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_AssassinSuperiorBoss",
+		"Text_English": "Avelin's Soul",
+		"Text_Korean": "지옥에서 부활한 암살자의 영혼",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_GladiatorUniqueBoss",
+		"Text_English": "Zic's Spirit",
+		"Text_Korean": "검투사 지크의 영혼",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_GladiatorSuperiorBoss",
+		"Text_English": "Zic's Soul",
+		"Text_Korean": "지옥에서 부활한 검투사의 영혼",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_WizardUniqueBoss",
+		"Text_English": "Vivian's Spirit",
+		"Text_Korean": "마법사 비비안의 영혼",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_WizardSuperiorBoss",
+		"Text_English": "Vivian's Soul",
+		"Text_Korean": "지옥에서 부활한 마법사의 영혼",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Cyclops",
+		"Text_English": "Cyclops",
+		"Text_Korean": "싸이클롭스",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_CyclopsUniqueBoss",
+		"Text_English": "Cyclops",
+		"Text_Korean": "고대 병기 싸이클롭스",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_CyclopsSuperiorBoss",
+		"Text_English": "Cyclops",
+		"Text_Korean": "지옥의 악마 병기 싸이클롭스",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Harang",
+		"Text_English": "Harang",
+		"Text_Korean": "난폭한 하랑",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Sargon",
+		"Text_English": "Sargon",
+		"Text_Korean": "혹한의 사르곤",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Sargon_P2",
+		"Text_English": "Sargon_P2",
+		"Text_Korean": "분노한 혹한의 사르곤",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Butcher_Axe",
+		"Text_English": "Butcher Lord",
+		"Text_Korean": "어둠의 수호자",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Butcher_Axe_Unique",
+		"Text_English": "Butcher Lord",
+		"Text_Korean": "어둠의 수호자",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Butcher_Axe_Superior",
+		"Text_English": "Butcher Lord",
+		"Text_Korean": "어둠의 수호자",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Janne",
+		"Text_English": "Darc",
+		"Text_Korean": "기억을 삼키는 자  다르크",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Darc",
+		"Text_English": "Janne",
+		"Text_Korean": "기억을 빼앗는 자  잔느",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Apocalypse01",
+		"Text_English": "Apocalypse01",
+		"Text_Korean": "아포칼립스",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NickName_Apocalypse01",
+		"Text_English": "Apocalypse01",
+		"Text_Korean": "파멸을 가져오는 자",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Apocalypse02",
+		"Text_English": "Apocalypse02",
+		"Text_Korean": "아포칼립스",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NickName_Apocalypse02",
+		"Text_English": "Apocalypse02",
+		"Text_Korean": "파멸을 가져오는 자",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Apocalypse03",
+		"Text_English": "Apocalypse03",
+		"Text_Korean": "아포칼립스",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NickName_Apocalypse03",
+		"Text_English": "Apocalypse03",
+		"Text_Korean": "새로운 절대 어둠",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Apocalypse04",
+		"Text_English": "Apocalypse04",
+		"Text_Korean": "아포칼립스",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NickName_Apocalypse04",
+		"Text_English": "Apocalypse04",
+		"Text_Korean": "새로운 절대 어둠",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_AngelKnight01",
+		"Text_English": "AngelKnight01",
+		"Text_Korean": "세뇌당한 천사 기사",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_AngelKnight01UniqueBoss",
+		"Text_English": "AngelKnight01",
+		"Text_Korean": "오염된 천사 기사장",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_AngelKnight01SuperiorBoss",
+		"Text_English": "AngelKnight01",
+		"Text_Korean": "타락한 천사 기사단장",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_AngelKnight02",
+		"Text_English": "AngelKnight02",
+		"Text_Korean": "세뇌당한 천사 궁수",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_AngelKnight02UniqueBoss",
+		"Text_English": "AngelKnight02",
+		"Text_Korean": "오염된 천사 궁수장",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_AngelKnight02SuperiorBoss",
+		"Text_English": "AngelKnight02",
+		"Text_Korean": "타락한 천사 궁수대장",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_SoldierElite",
+		"Text_English": "Gote",
+		"Text_Korean": "부관 고트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_CaligulaHell",
+		"Text_English": "Caligula",
+		"Text_Korean": "칼리굴라",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_LilithHell",
+		"Text_English": "Lilith",
+		"Text_Korean": "릴리스",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_BeelzebubHell",
+		"Text_English": "Beelzebub",
+		"Text_Korean": "벨제부브",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_AzraelHorseHell",
+		"Text_English": "Azrael",
+		"Text_Korean": "아즈라엘",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_AzraelHell",
+		"Text_English": "Azrael",
+		"Text_Korean": "아즈라엘",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_NidhoggHell",
+		"Text_English": "Nidhogg",
+		"Text_Korean": "니드호그",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Magnus",
+		"Text_English": "Magnus",
+		"Text_Korean": "매그너스",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NickName_Magnus",
+		"Text_English": "",
+		"Text_Korean": "절대 어둠",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Boss_Daniel",
+		"Text_English": "Daniel",
+		"Text_Korean": "변절한 천사  다니엘",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NickName_Boss_Daniel",
+		"Text_English": "",
+		"Text_Korean": "변절한 천사",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Boss_Remiel",
+		"Text_English": "Remiel",
+		"Text_Korean": "라미엘",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NickName_Boss_Remiel",
+		"Text_English": "",
+		"Text_Korean": "절대 어둠에게 잠식당한",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Brutus",
+		"Text_English": "Brutus",
+		"Text_Korean": "브루투스",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NickName_Magnus_P2",
+		"Text_English": "",
+		"Text_Korean": "궁극의 힘을 끌어낸",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Boss_Daniel_P2",
+		"Text_English": "",
+		"Text_Korean": "스스로 눈을 가린 자  다니엘",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Boss_Remiel_dialog",
+		"Text_English": "",
+		"Text_Korean": "어둠에 잠식된 라미엘",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NickName_Musca",
+		"Text_English": "",
+		"Text_Korean": "균열 수호자",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Musca",
+		"Text_English": "",
+		"Text_Korean": "무스카",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Verace",
+		"Text_English": "",
+		"Text_Korean": "심해의 베라스",
+		"Text_Other": ""
+	},
+	{
+		"Name": "NPCClass_Verace_P2",
+		"Text_English": "",
+		"Text_Korean": "분노한 심해의 베라스",
+		"Text_Other": ""
+	}
+]

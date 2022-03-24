@@ -1,0 +1,1682 @@
+[
+	{
+		"Name": "Act1_1",
+		"Text_English": "Watch out for the charge attack by <br>the sword captain. <br>It will try to quickly approach you.",
+		"Text_Korean": "어둠의 해골 기사 대장에게서 가장 주의할 점은 그의 칼을 <br>피하려고 거리를 벌렸을 때 달려드는 돌진 공격일세.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act1_2",
+		"Text_English": "Watch out for the rapid arrows by <br>the archer captain. <br>Try to avoid then attack.",
+		"Text_Korean": "어둠의 해골 궁병 대장의 연속 발사를 주의해야 하네. <br>하지만 그것을 피한다면 위기를 기회로 만들 수 있지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act1_3",
+		"Text_English": "Rattus likes to ambush from below. <br>Be careful when it goes underground.",
+		"Text_Korean": "어둠 추적자 래투스는 보이지 않는 곳에서 급습한다네. <br>그러니 땅속에 숨는 순간 주의를 기울여야 한다네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act1_4",
+		"Text_English": "I recommended Gote to be my successor. <br>He was the rightful soldier to protect Lord Alfrid. <br>He told me that he knows that I would become lord <br>commander, and that once that happens, he would become one as well.",
+		"Text_Korean": "내가 부관을 그만둘 때 후임으로 고트를 추천했네. <br>고트는 용감해서 알프리드님을 지키는 데 적합했지. <br>그 친구는 내가 총사령관이 될 줄 알았다며 내 뒤를 <br>이어가겠다고 했었다네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act1_5",
+		"Text_English": "Check the position of your enemies <br>when surrounded. <br>Try to pick out ranged enemies first.",
+		"Text_Korean": "포위당했을 때에는 적의 배치를 빠르게 파악해야 하네. <br>원거리 공격형 적을 우선 물리쳐 각개 격파하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act1_6",
+		"Text_English": "Silvermane is a strong melee attacker. <br>Be careful of its charge attacks.",
+		"Text_Korean": "외눈의 습격자 은빛 갈기는 육탄전에 강하며 돌진 공격은 <br>대상을 행동 불가 상태로 만듦으로 주의해야 하네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act1_7",
+		"Text_English": "I recommend Gaius to become <br>an officer of Elysium. <br>Someday, he will be lord commander. <br>[Letter from Alfrid to Remiel]",
+		"Text_Korean": "알프리드 님께서 라미엘 님께 나를 추천해 주셨네. <br>감사하게도 총사령관이 될 수 있는 재목이라며 말이네. <br>알프리드 님께 은혜를 갚기 위해서라도 꼭 구출하고 싶네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act1_8",
+		"Text_English": "Rachel's minions can be an obstacle, <br>but be careful not to get hit <br>by her magic attacks.",
+		"Text_Korean": "어둠의 악녀 라헬이 소환한 해골 병사의 처리도 중요하나 <br>그녀의 강력한 마법 공격은 특히 조심해야 하네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act1_9",
+		"Text_English": "I tried to banish Caligula, but Lord Alfrid <br>did not agree. So I asked Gote to look over him <br>and protect the lord.",
+		"Text_Korean": "칼리굴라에게 나쁜 소문이 돌았을 때 추방하려 했지만 <br>아쉽게도 알프리드님이 그의 능력을 아껴 무산되었지. <br>나는 이런 일에 대비해 고트에게 칼리굴라를 감시하고 <br>알프리드님을 꼭 지켜달라 부탁했다네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act1_10",
+		"Text_English": "Be careful. Gote says that Caligula can summon <br>hell's hounds and use powerful area attacks, <br>throwing away his opponents with his staff.",
+		"Text_Korean": "고트의 정보에 의하면 칼리굴라가 지옥의 파수견을 <br>소환하고 지팡이로 올려쳐 상대를 날려버리며 강력한 <br>광역 공격을 사용한다고 하니 조심하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act2_1",
+		"Text_English": "Don't underestimate the bloodseekers. <br>They can stun and steal life from their prey. <br>Be sure not to get surrounded.",
+		"Text_Korean": "어둠 박쥐들을 무시해서는 안 된다네. 그들은 초음파로 <br>상대를 기절시키고 빠른 공격으로 생명을 빼앗지. <br>포위된다면 죽음을 각오해야 할 것이네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act2_2",
+		"Text_English": "After Lilith's sacrifice, life was blossoming <br>again in the forest of fairies. <br>Nice, Rio, and Pan were faithful to Lilith. <br>What happened…..",
+		"Text_Korean": "릴리스님의 희생으로 요정의 숲이 되살아 난 이후 <br>숲에 생명의 힘이 넘쳐났답니다. <br>니스, 리오, 팡도 릴리스님을 성실히 보필했어요. <br>모두가 회복시킨 숲이 이렇게 되다니….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act2_3",
+		"Text_English": "Don't let your guards down after defeating <br>a venom blast. If you get too close to <br>the corpse, it will explode.",
+		"Text_Korean": "자폭 거미를 쓰러뜨렸다고 방심해서는 안된다네. <br>자폭 거미의 시체 주변에 마음 놓고 있다가는 강력한 <br>폭발에 휘말릴 걸세.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act2_4",
+		"Text_English": "Strange things have been happening in the <br>forest. The fairies were nowhere to be found <br>as well. I was worried and afraid.",
+		"Text_Korean": "언제부터인가 숲에 알 수 없는 일이 일어났어요. <br>생명의 힘이 약해지고 요정들과 교감이 어려워졌지요. <br>릴리스님과 요정들이 걱정됐고 한편으로는 무서웠어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act2_5",
+		"Text_English": "We don't know much about Ghost. <br>Records suggest that it can move fast and use <br>corruption to empower its melee attacks.",
+		"Text_Korean": "고스트에 대한 정보는 적다네. 그나마 기록을 찾아보니 <br>이동이 빠르고 공격이 현란해 반격이 어렵고 타락의 힘을 <br>이용한 근접 공격을 조심해야 한다더군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act2_6",
+		"Text_English": "Devil's nests can summon bats and <br>shoot poison from a distance. Be careful. <br>It also slows down the enemy.",
+		"Text_Korean": "악마 둥지는 박쥐를 소환하며 독을 먼 거리에서부터 발사 <br>할 수 있다네. 게다가 그의 독은 움직임을 느려지게 하니 <br>조심하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act2_7",
+		"Text_English": "Poison spiders evolved into ranged <br>attackers using its venom. <br>Be careful of its slowing-down effects.",
+		"Text_Korean": "맹독 거미는 원거리에서 독 공격이 가능하도록 진화했네. <br>그 독은 피해를 주고 움직임을 무겁게 만드니 주의하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act2_8",
+		"Text_English": "A hundred years ago, Remiel and Lilith fought <br>fiercely against the darkness. Lilith, using her <br>sacred powers, defeated the demons and <br>saved the fairies. I am worried that we might lose her.",
+		"Text_Korean": "백 년 전 라미엘님과 릴리스님의 전투는 강렬했어요. <br>특히 릴리스님은 엄청난 힘으로 악마들을 응징하고 <br>요정들을 구하셨어요. <br>그런 릴리스님을 잃는 것은 아닐까 걱정되네요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act2_9",
+		"Text_English": "Minotaur uses powerful ranged attacks and <br>charges its enemies. <br>Try to avoid being caught in battle.",
+		"Text_Korean": "미노타우루스는 힘이 강력하고 범위 공격과 돌진 공격의 <br>파괴력이 뛰어나므로 치고 빠지는 전술이 유리하다네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act2_10",
+		"Text_English": "Lilith uses powerful magic attacks. <br>She can freeze her enemies and summon <br>reinforcements. Her multiple strike magic <br>is extremely dangerous.",
+		"Text_Korean": "천사였을 때 릴리스님은 강력한 마법 공격을 사용하셨네. <br>근접한 적을 얼리고 동료를 불러내는 힘을 사용하셨지. <br>특히 다중 포격 마법은 강력해서 구역을 초토화했다네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act3_1",
+		"Text_English": "The drone boss always seeks things <br>to destroy and corrupt. <br>Be careful of its ranged corruption attacks. <br>It can quickly melt down your armor.",
+		"Text_Korean": "성역 파괴자 좀비는 파괴와 오염의 임무를 수행한다네. <br>임무를 방해받으면 오염 물질을 쏟아내는 범위 공격을 <br>하니 알아두게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act3_2",
+		"Text_English": "A high demon lord can curse its enemies, <br>siphon strength, and take away memories <br>until they are no longer living nor dead.",
+		"Text_Korean": "고위 악마만이 사용할 수 있는 저주 중 가장 무서운 것은 <br>힘과 기억을 빼앗고 죽지 못하는 상태로 만드는 것이오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act3_3",
+		"Text_English": "Spiteful marauders attack their enemies <br>from a distance. <br>They will drain your health.",
+		"Text_Korean": "원한의 습격자 좀비는 원거리에서 적을 칼로 저격하지. <br>원한이 담긴 그 공격은 생명력을 착취한다네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act3_4",
+		"Text_English": "Powerful attacks by a gorger can knock back <br>whatever it strikes. <br>Its body also explodes, so be careful.",
+		"Text_Korean": "탐욕의 포식자 좀비의 강력한 공격은 상대를 밀어낸다네. <br>탐욕의 집결체인 그 육체는 죽을 때 폭발하니 조심하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act3_5",
+		"Text_English": "Poisoneye is Beelzebub's servant. <br>It likes to ambush and stun its enemies <br>with a cursed blade.",
+		"Text_Korean": "맹독의 감시자는 벨제부브가 만들어 낸 시종일세. <br>숨어있다가 상대를 급습하여 기절시키고 칼날로 빠르게 <br>척살하는 전투 유형이라네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act3_6",
+		"Text_English": "Those who are cursed end up having <br>a purpose. We don't know what that <br>is exactly, but they clearly do whatever <br>they can to fulfill it.",
+		"Text_Korean": "죽지 못하는 저주를 받은 자는 어떤 목적을 가지게 되오. <br>그것을 이루기 위해 수단과 방법을 가리지 않는데 아직 <br>그 목적에 대해서는 밝혀지지 않았소.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act3_7",
+		"Text_English": "Fallen knights used to be sacred <br>guardians. Try to find a weak spot <br>against their powerful melee attacks <br>and defensive skills.",
+		"Text_Korean": "타락한 고대 기사 석상은 본래 성역의 수호자였네. <br>근접 공격이 강력하고 방어가 뛰어나므로 쓰러뜨리려면 <br>그의 공격 시 빈틈을 노려야 하네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act3_8",
+		"Text_English": "It is told that the cursed can finally be dead <br>when it regains its strength and memory. <br>Ironic, don't you think?",
+		"Text_Korean": "죽지 못하는 저주를 받은 대상은 힘과 기억을 되찾고 <br>사명을 다 했을 때 시간의 흐름이 돌아와 비로소 죽는다고 <br>알려졌소. 역설적이지 않소?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act3_9",
+		"Text_English": "Focus on what the mimic takes out <br>from its mouth. <br>If it is a barrel, you need to quickly <br>move away from the area.",
+		"Text_Korean": "저주받은 거대 보물상자와 전투 때 입에서 꺼내는 물건을 <br>주의 깊게 보도록 하게. 나무통을 꺼낼 때는 현 위치에서 <br>빠르게 벗어나야 하니 말일세.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act3_10",
+		"Text_English": "Despite what you think, Beelzebub is <br>a powerful and cunning demon. <br>Be careful of its hit-and-run tactics, <br>falling stones, and feeler attacks.",
+		"Text_Korean": "벨제부브는 외형과 달리 강력함과 계략을 갖춘 악마라네. <br>공격과 도망을 반복하며 발을 굴러 불러내는 낙석은 물론 <br>더듬이를 이용한 전격 공격을 주의해야 하네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act4_1",
+		"Text_English": "Don't be fooled by the looks of the <br>goblin captain. <br>It's slash-and-shield slam can <br>cause great damage.",
+		"Text_Korean": "포악한 고블린 용병단장의 허술한 모습은 위장일세. <br>베기와 방패 밀치기의 조합은 공격력이 뛰어나다네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act4_2",
+		"Text_English": "The girl whom the master brought in had the ability <br>to call upon spirits and glimpse into the future. <br>People, including myself, started to fear her. <br>That girl is now Lady Miracle.",
+		"Text_Korean": "수장께서 데리고 온 소녀는 영혼을 부르는 힘과 선지의 <br>능력을 갖추고 있었어요. 제가 소녀를 돌보게 되었지만 <br>다른 사람들처럼 저 역시 그 힘이 두려웠습니다. <br>그 소녀가 바로 미라클님이었어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act4_3",
+		"Text_English": "The goblin archer's arrow is slow <br>but powerful. <br>It can sometimes cause a knockback, <br>so be careful.",
+		"Text_Korean": "괴팍한 고블린 궁수 대장의 화살은 느리지만 강력하다네. <br>타격 대상을 밀어내기도 하므로 조심해야 할 걸세.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act4_4",
+		"Text_English": "The shadow wolverine is a fast assassin. <br>You need to be on alert as <br>it will quickly reach you.",
+		"Text_Korean": "잔인한 고블린 암살자는 빠르고 날카롭게 공격한다네. <br>순식간에 다가오므로 뛰어난 반응 감각이 필요할 걸세.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act4_5",
+		"Text_English": "The butcher wields a huge mallet that <br>represents brute force. <br>You will not be able to use your <br>counterattack against it, so be careful.",
+		"Text_Korean": "도살자는 힘과 철퇴로 악명이 높다네. 자기 스스로 몸을 <br>가누지 못할 정도로 강력히 휘두르는 철퇴 공격은 반격이 <br>불가능하니 주의하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act4_6",
+		"Text_English": "I remember when Miracle became the new <br>master of Avila. She was so kind to those <br>who feared her, forging all the humiliation <br>that was put up against her.",
+		"Text_Korean": "미라클님이 새로운 영혼의 성 수장으로 등극하셨을 때가 <br>떠오르네요. 차별과 수모를 이기고 그 모든 걸 용서하는 <br>훌륭한 분으로 성장하여 너무도 자랑스러웠답니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act4_7",
+		"Text_English": "The goblin magician is a cunning devil. <br>Being evasive, it uses spirits to attack <br>its enemies.",
+		"Text_Korean": "간사한 고블린 저주술사는 그 이름값에 충실하지. <br>공격과 도망을 반복하며 원혼을 불러내 공격한다네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act4_8",
+		"Text_English": "Miracle used to spend a lot of time with <br>the spirits. She also created memory shards <br>that only I can decipher. I wasn't sure back then, <br>but now I know what to do.",
+		"Text_Korean": "언젠가부터 미라클님이 환영을 많이 사용하셨어요. <br>그리고 저만이 읽을 수 있는 기억의 파편을 만드셨어요. <br>무엇을 준비하시는지 몰라 두려웠지만 이제야 알겠어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act4_9",
+		"Text_English": "A gargoyle raider amplifies its attack <br>with its wings. <br>Its attacks after flying above <br>is very powerful.",
+		"Text_Korean": "맹공의 기습자 가고일은 날개를 이용해 공격력을 극대화 <br>시킨다네. 날아오른 뒤 이어지는 공격은 매우 강력하지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act4_10",
+		"Text_English": "You cannot counterattack Vulcanus, I mean, <br>Azrael's attacks when he is riding a horse. <br>Beware. Once he comes down, <br>the attacks become even stronger.",
+		"Text_Korean": "불카누스 아니 지금의 아즈라엘이 사용하는 지옥마의 <br>추진력과 함께 힘이 실린 공격은 반격이 불가하네. <br>더구나 그가 말에서 내린 뒤 펼치는 공격은 더욱 <br>강력하니 절대로 방심해서는 안 된다네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act5_1",
+		"Text_English": "Everyone was shocked when the Sky Castle <br>appeared with the demons. For some reason, <br>Nidhogg, the master of the castle, <br>has become the apostle of darkness.",
+		"Text_Korean": "악마들과 함께 천공성이 나타났을 때 모두 경악했다네. <br>성의 주인 패배를 모르는 자 니드호그가 어찌 된 일인지 <br>어둠의 사도가 되어 나타났기 때문이었네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act5_2",
+		"Text_English": "Vivian was a great wizard. <br>Not only was she able to wield <br>all kinds of magic, she could also teleport <br>and attack with such speed.",
+		"Text_Korean": "비비안은 대단한 마법사였어. 마법사의 모든 기술을 <br>강력하게 사용할 뿐 아니라 순간이동에 이은 공격을 <br>만들어 냈거든.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act5_3",
+		"Text_English": "Four heroes volunteered to lead <br>the battle against the Sky Castle. <br>We were supposed to follow <br>as soon as possible.",
+		"Text_Korean": "천공성을 막기 위해 네 명의 영웅이 선봉대를 자원했네. <br>우리는 전력이 갖춰지는 대로 뒤를 따르기로 했었지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act5_4",
+		"Text_English": "Avelin was a quick and skillful assassin. <br>No one could escape from her attacks.",
+		"Text_Korean": "아벨린은 움직임이 빠르고 기술에 능숙한 암살자였지. <br>그 누구도 그녀의 공격을 벗어날 수 없었어.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act5_5",
+		"Text_English": "Perez likes to attack its enemies <br>by charging its giant body <br>and using powerful magic. <br>Be careful.",
+		"Text_Korean": "학살자 베레스는 거대한 육체로 돌진해 상대를 박살 내고 <br>강력한 전격 마법을 사용하므로 집중해서 싸워야 하네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act5_6",
+		"Text_English": "By the time we were able to attack <br>the Sky Castle, the four heroes were nowhere <br>to be found. Soon, Nidhogg's counterattack <br>forced us to fall back.",
+		"Text_Korean": "우리는 전력을 갖춰 천공성에 큰 타격을 주었지만 먼저 <br>떠났던 네 명의 영웅을 발견할 수 없었네. 게다가 <br>니드호그의 반격에 우리는 밀릴 수밖에 없었다네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act5_7",
+		"Text_English": "Jin was a truly powerful fighter. <br>His attack was clearly destructive.",
+		"Text_Korean": "진은 정말 강력한 격투가였어. 똑같은 기술도 진이 <br>사용하면 엄청난 파괴력을 보였거든.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act5_8",
+		"Text_English": "Daniel stayed behind so that everyone <br>could safely fall back. The Sky Castle <br>retreated after the campaign, but he <br>did not return just like the four heroes.",
+		"Text_Korean": "모두의 안전한 후퇴를 위해 천사 다니엘이 남아 악마의 <br>공격을 막았네. 피해가 컸던 천공성은 다행스럽게도 <br>물러났지만 다니엘과 네 명의 영웅은 돌아오지 못했네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act5_9",
+		"Text_English": "Zic was a mighty gladiator. With his ability <br>to combine multiple attack patterns, <br>he had all the qualities necessary <br>to become a true battle master.",
+		"Text_Korean": "지크는 참 훌륭한 검투사였어. 검투사의 모든 소양을 <br>갖췄고 한 번의 공격으로 연속 기술을 사용할 수 있었던 <br>전투 전문가였지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act5_10",
+		"Text_English": "Nidhogg embodies fear within its physical <br>body. Its tail slash and body slam wreaks <br>havoc on the ground, and its flame <br>attacks burn down everything on its way.",
+		"Text_Korean": "천공성의 주인이자 공포의 대상인 니드호그는 육체가 <br>무기였네. 꼬리 공격, 비행에 이은 몸통 공격은 모든 것을 <br>파괴했고 화염 폭풍과 불꽃 구슬은 모든 것을 불태웠다네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act6_1",
+		"Text_English": "51 스테이지 설명",
+		"Text_Korean": "타르타로스는 어둠이 시작하고 끝나는 곳이오. <br>악마들에게 우리의 엘리시움 같은 근거지라 할 수 있지. <br>모든 악마들을 상대하게 될 테니 조심하시오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act6_2",
+		"Text_English": "52 스테이지 설명",
+		"Text_Korean": "앞으로 상대할 영웅들의 영혼은 그대가 아는 자들이 <br>아니오. 애석하게도 악마들의 힘으로 소환되어 <br>그들의 조종을 받는 과거 영웅들의 영혼이지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act6_3",
+		"Text_English": "53 스테이지 설명",
+		"Text_Korean": "공처럼 생긴 고블린 기습대원들을 알고 있을 것이오. <br>작은 악마상자들은 그들과 같소. 매우 귀찮지. <br>달라붙으면 피해가 커지니 빨리 처리하시오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act6_4",
+		"Text_English": "54 스테이지 설명",
+		"Text_Korean": "싸이클롭스라 불리는 외눈박이 골렘들을 주의해야 하오. <br>악마들의 병기로 만들어져 강한 힘과 체력으로 천사들에게 <br>큰 피해를 입힌 놈들이기 때문이오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act6_5",
+		"Text_English": "55 스테이지 설명",
+		"Text_Korean": "어둠의 성녀 다르크는 강한 힘과 큰 낫을 사용해 호쾌한 <br>공격을 펼친다오. 특히 몸에 빛을 두르고 재빨리 이동하며 <br>펼치는 공격은 피하기 어렵소.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act6_6",
+		"Text_English": "56 스테이지 설명",
+		"Text_Korean": "지옥의 파수견과 악마의 사냥견은 큰 차이가 없소. <br>악마의 사냥견이 몸집도 더 크고, 공격력도 강하고 <br>공격방법도 더 많지. 그대에게 문제가 되겠소?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act6_7",
+		"Text_English": "57 스테이지 설명",
+		"Text_Korean": "이곳의 고블린 기습대원들을 무시하면 아니 되오. <br>체력을 갉아먹는 정도가 더 빠르고 강하기 때문이오. <br>하지만 여기까지 무난하게 왔다면 무시하시오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act6_8",
+		"Text_English": "58 스테이지 설명",
+		"Text_Korean": "혹시라도 그레고르 님과 싸우게 되면 빠르게 승부를 <br>봐야 하오. 허술해 보이는 동작도 큰 위력을 발휘하고 <br>공격이 끊기지 않는 아머를 쓸 수 있기 때문이오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act6_9",
+		"Text_English": "59 스테이지 설명",
+		"Text_Korean": "어둠의 성녀 잔느는 강력한 마법 공격에 능하오. <br>특히 날아오른 뒤 펼치는 강력한 마법공격과 늪에 <br>몸을 숨겼다가 기습하는 공격을 가장 조심하시오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act6_10",
+		"Text_English": "60 스테이지 설명",
+		"Text_Korean": "파멸을 가져오는 자 아포칼립스와의 대결에서 가장 <br>중요한 것은 체력과 인내심이오. 절대 어둠의 힘으로 <br>변신할 수 있으니 많은 전투를 거쳐야 할 것이오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act7_1",
+		"Text_English": "61 스테이지 설명",
+		"Text_Korean": "서둘러 다니엘 님과 절대 어둠을 따라잡아야 해요. <br>다만 엘리시움의 상황을 알 수 없으니 조심하시고요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act7_2",
+		"Text_English": "62 스테이지 설명",
+		"Text_Korean": "브루투스 님께서 자신들의 동료였던 천사 부대가 <br>세뇌당한 나머지 공격할지도 모른다고 하셨어요. <br>그들은 빛을 담은 창을 던질 수 있으니 조심하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act7_3",
+		"Text_English": "63 스테이지 설명",
+		"Text_Korean": "갈수록 죽음의 포자가 많아지는 것 같아요. <br>때문에 점점 성역에 드리운 어둠이 짙어지고 있어요. <br>더 심해지기 전에 포자가 퍼지는 걸 막아야 해요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act7_4",
+		"Text_English": "64 스테이지 설명",
+		"Text_Korean": "브루투스 님이 걱정되요. 상태가 악화되고 있어요. <br>다니엘 님을 막겠다는 의지로 움직이고 있지만 <br>언제 쓰러져도 이상하지 않은 상태예요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act7_5",
+		"Text_English": "65 스테이지 설명",
+		"Text_Korean": "다니엘 님은 이미 우리가 알던 천사가 아니예요. <br>본래 강한 힘이 있었지만 절대 어둠에게서 받은 <br>숨겨진 힘이 있을 거예요. 조심하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act7_6",
+		"Text_English": "66 스테이지 설명",
+		"Text_Korean": "다니엘 님과 브루투스 님은 안타까운 죽음을 맞았어요. <br>다니엘 님이 받은 상처를 이용한 절대 어둠을 결코 <br>용서해서는 안되요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act7_7",
+		"Text_English": "67 스테이지 설명",
+		"Text_Korean": "엘리시움을 다시 회복시킬 수 있을까 걱정이네요. <br>이토록 파괴되고 더렵혀지다니… 절대 어둠은 <br>빛의 성역을 완전히 없애려고 하고 있어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act7_8",
+		"Text_English": "68 스테이지 설명",
+		"Text_Korean": "이제 모두를 구할 수 있는 전투가 얼마 남지 않았어요. <br>그대가 절대 어둠을 물리친다면 엘리시움을 뒤덮은 <br>죽음의 포자들도 사라질 거예요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act7_9",
+		"Text_English": "69 스테이지 설명",
+		"Text_Korean": "지금 라미엘 님은 절대 어둠과 한 몸인 상태예요. <br>창이 아닌 엄청난 마법의 힘을 사용할 거예요. <br>하지만 완전히 융화되지 않았을테니 빈틈을 노리세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act7_10",
+		"Text_English": "70 스테이지 설명",
+		"Text_Korean": "절대 어둠 매그너스는 어둠과 죽음의 힘을 사용하고 <br>숨겨진 암흑의 무기를 사용할 수 있다고 알려졌어요. <br>긴 전투가 될 테니 다시 한 번 준비하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act21_1",
+		"Text_English": "",
+		"Text_Korean": "신비한 힘을 가진 물질인 에테르가 발견되고 있다네. <br>부활한 악마들은 강력한 힘을 가지고 있기 때문에 <br>에테르가 있다면 그들을 상대하는데 큰 도움이 될 걸세.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act21_2",
+		"Text_English": "",
+		"Text_Korean": "해골 궁수들에게 특별한 힘이 생겼다는 보고를 받았네. <br>그들의 화살에 빙결의 저주가 담겨 있다 하니 조심하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act21_3",
+		"Text_English": "",
+		"Text_Korean": "날렵하게 움직이는 래투스에게 피해반사 능력이 <br>생겼을 줄 예상이나 했나? 하지만 그걸 믿고 <br>달려드는 래투스를 피하지는 말게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act21_4",
+		"Text_English": "",
+		"Text_Korean": "악마들이 부활한 원인을 찾고 있네만 단서가 부족하군. <br>알 수 없는 힘의 파장이 만들어 낸 상황인 것 같네. <br>어쩌면 에테르도 그 힘이 만들어 낸 부산물인 걸까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act21_5",
+		"Text_English": "",
+		"Text_Korean": "악마가 아닌 고트 님이 왜 부활했는지 모르겠습니다. <br>라헬의 저주 때문일까요? 피해 반사능력은 대체 왜…? <br>그분을 다시 쓰러뜨려야 하는 상황이 원망스럽습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act21_6",
+		"Text_English": "",
+		"Text_Korean": "자네를 밀어내고 넘어뜨린 늑대인간의 육탄공격은 여전하지. <br>거기에 더 강력한 힘이 생겼으니 어려운 전투가 될 수 있다네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act21_7",
+		"Text_English": "",
+		"Text_Korean": "에테르에 대해서는 지금도 연구가 진행 중일세. <br>발견하는 에테르마다 효과를 파악해 종류를 구분하고 <br>효과의 강함에 따라 등급과 티어를 설정하고 있다네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act21_8",
+		"Text_English": "",
+		"Text_Korean": "라헬이 그대에게 가진 복수심을 공격에 싣는다더군. <br>방어와 체력을 충분히 갖추어 라헬의 공격력 강화 능력에 <br>대비하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act21_9",
+		"Text_English": "",
+		"Text_Korean": "고트를 다시 쓰러뜨리니 마음이 좋지 않네. <br>하지만 빨리 상황을  파악하고 해결하기 위해서는 <br>그대가 열심히 싸워주어야 하네. 부탁하겠네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act21_10",
+		"Text_English": "",
+		"Text_Korean": "알프리드 님을 제외한 고트와 칼리굴라의 부활은 어둠의 <br>힘에 영향을 받은 자들만 부활했다는 뜻일 지도 모르네. <br>칼리굴라에게 부활이 저주로 느껴지도록 만들어주게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act22_1",
+		"Text_English": "",
+		"Text_Korean": "강력해진 악마들은 특별한 능력을 가지고 있네. <br>지옥 박쥐들은 강력한 흡혈 능력이 있으니 <br>피를 빼앗기지 않도록 조심하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act22_2",
+		"Text_English": "",
+		"Text_Korean": "요정의 숲이 또다시 타락의 힘으로 가득 차다니…. <br>고스트가 다시 부활했기 때문일까요? <br>타락한 모습의 릴리스 님을 마주하게 되면 어쩌지요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act22_3",
+		"Text_English": "",
+		"Text_Korean": "폭발 거미의 모든 것이 강해진 만큼 폭발력도 증가했다네. <br>방어조차 통하지 않지만 방해 때문에 회피하지 못한다면 <br>폭발에 맞춰 반격을 시도해보게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act22_4",
+		"Text_English": "",
+		"Text_Korean": "요정들의 기운이 전혀 느껴지지 않는 이유를 모르겠어요. <br>어쩌면 실종되거나 잡힌 것이 아닌 처음부터 지금의 숲에 <br>존재하지 않았던 것 같은 기분이 들어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act22_5",
+		"Text_English": "",
+		"Text_Korean": "지금의 고스트에게는 피해 반사 능력이 있다네. <br>자네가 강력한 공격력을 갖추었다면 <br>그에 비례하는 강력한 방어력도 갖추길 바라네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act22_6",
+		"Text_English": "",
+		"Text_Korean": "악마 둥지의 독과 그가 만들어 내는 박쥐들도 여전하더군. <br>사각지대의 공격도 달라지지 않았으니 재빠르게 따라붙게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act22_7",
+		"Text_English": "",
+		"Text_Korean": "더 강해진 맹독거미 녀석은 독을 더 많이 사용하는 것 같네. <br>자칫 움직임이 느려진 상태에서 사냥감이 될 수 있으니 <br>자네의 놀라운 움직임을 보여주게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act22_8",
+		"Text_English": "",
+		"Text_Korean": "등급과 티어가 높은 에테르를 찾아내거나 그렇지 않다면 <br>보유한 에테르를 강화해 등급과 티어를 높이기 바라네. <br>그 힘은 자네를 배신하지 않을 걸세.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act22_9",
+		"Text_English": "",
+		"Text_Korean": "강력한 힘과 공격력을 갖춘 미노타우루스에게 피해 감소 <br>능력이 생기다니 무척 힘든 전투가 되겠군. <br>그 이상 가는 강력한 공격력을 갖추도록 하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act22_10",
+		"Text_English": "",
+		"Text_Korean": "타락한 모습의 릴리스 님을 마주할 바에 차라리 그분이 <br>부활하지 않기를 바랐지만 제 뜻은 하늘에 버림받았군요. <br>더욱 강력해진 릴리스 님을 막아주세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act23_1",
+		"Text_English": "",
+		"Text_Korean": "지옥의 사역마 좀비에게 더 강력한 힘이 생겼다네. <br>임무를 방해받으면 공격력이 증가되니 주의하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act23_2",
+		"Text_English": "",
+		"Text_Korean": "에테르는 공격 시 효과가 발동되는 공격 유형과 <br>피격 시 효과가 발동되는 방어 유형으로 구분된다네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act23_3",
+		"Text_English": "",
+		"Text_Korean": "지옥의 기습자 좀비가 피해 반사 능력을 얻었다네. <br>그의 약점을 보완하는 유리한 능력이니 조심하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act23_4",
+		"Text_English": "",
+		"Text_Korean": "공격 유형의 에테르는 4개, 방어 유형의 에테르는 2개를 <br>장착해야 효과가 발동된다는 사실을 알아냈다네. <br>세트 개수를 명심해 그에 맞춰 장착하도록 하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act23_5",
+		"Text_English": "",
+		"Text_Korean": "그토록 수다스러운 벨제부브가 가만히 있는 게 의심스럽군. <br>맹독의 감시자를 없애 자극을 주면 반응이 있지 않을까? <br>반응이 없다면 우리가 모르는 뭔가가 숨겨져 있는 걸세.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act23_6",
+		"Text_English": "",
+		"Text_Korean": "공격 유형의 에테르는 마지막 타격에서 100% 효과가 <br>발동하지만 재사용 대기 시간이 있다네. <br>방어 유형의 에테르는 피격 시 확률에 의해 발동하지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act23_7",
+		"Text_English": "",
+		"Text_Korean": "지옥의 수호기사 석상은 그에 걸맞은 힘을 가지고 있다네. <br>받는 피해를 감소시키는 것이지. 그 방어를 파괴하려면 <br>강력한 공격력을 갖춰야 한다네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act23_8",
+		"Text_English": "",
+		"Text_Korean": "에테르 세트 효과를 발동하기 위해서는 동일한 에테르를<br>개수에 맞게 장착해야 하네. 예를 들어 폭뢰의 에테르 4개를 <br>장착해야 공격 세트 효과가 발동한다는 말일세.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act23_9",
+		"Text_English": "",
+		"Text_Korean": "지옥의 거대 보물상자를 조심하게. <br>그의 모든 공격이 자네를 기절시킬 수 있다네. <br>적당히 회피하며 공격 기회를 엿보도록 하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act23_10",
+		"Text_English": "",
+		"Text_Korean": "자네의 칼 끝이 벨제부브의 눈 앞까지 왔는데도 말 한마디 <br>없다니 정말 이상하군. 강력해진 힘을 믿는 걸까? <br>자네의 매서운 칼을 보고도 아무 말 없는지 한 번 보세.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act24_1",
+		"Text_English": "",
+		"Text_Korean": "우스꽝스러운 고블린들에게도 강한 힘이 부여된 것 같네. <br>지옥용병단의 공격에 화염이 부여되어 화상을 입힌다네. <br>지속적인 피해를 입을 수 있으니 둘러싸이지 말게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act24_2",
+		"Text_English": "",
+		"Text_Korean": "영혼들마저 사라져 텅 비어버린 영혼의 성이라니…. <br>정말 서글프네요. 예전의 모습이 그리워요. <br>신녀와 성녀들이 꼭 방문을 원하는 상징물이었거든요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act24_3",
+		"Text_English": "",
+		"Text_Korean": "고블린 궁수들의 화살에도 힘이 부여되다니 불공평하군. <br>비록 그들의 화살에 화염이 부여되어 있으니 느리다 해도 <br>피하는 것이 좋겠네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act24_4",
+		"Text_English": "",
+		"Text_Korean": "에테르는 같은 종류라도 모양이 전부 다르다네. <br>그래서 슬롯에 모두 장착하려면 최대한 다른 모양의 <br>에테르를 수집해야 한다네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act24_5",
+		"Text_English": "",
+		"Text_Korean": "마치 처음부터 존재하지 않았던 것처럼 영혼들의 흔적을 <br>찾을 수 없군요. 도살자에게 갇힌 걸까요? <br>그가 강력해졌지만 쓰러뜨린다면 확인할 수 있을 거예요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act24_6",
+		"Text_English": "",
+		"Text_Korean": "에테르의 방어 세트 효과는 최대 3개까지 만들 수 있겠군. <br>하지만 실제로 적용할 수 있는 효과는 하나일세. <br>물론 자네가 선택할 수 있지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act24_7",
+		"Text_English": "",
+		"Text_Korean": "고블린 지옥 마법사들이 얻은 힘은 피해 반사 능력이더군. <br>왜 그동안 고블린들과는 다른 힘이 생긴 건지 모르겠네만 <br>조금 골치 아프게 되었군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act24_8",
+		"Text_English": "",
+		"Text_Korean": "등급과 티어가 높은 에테르를 얻는다면 더욱 강해질 수 <br>있다는 뜻일세. 강화를 통해 성장할 수 있는 능력치의 <br>시작점이 높다는 뜻이니 말이네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act24_9",
+		"Text_English": "",
+		"Text_Korean": "고블린들에게는 화염의 축복이 내린 게 틀림없네. <br>고블린 암살자들마저 손톱에 화염이 깃들다니….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act24_10",
+		"Text_English": "",
+		"Text_Korean": "성의 지배자가 아즈라엘 님인지 불카누스인지 모르겠어요. <br>다만 그 자가 강해진 힘으로 우리를 공격할 게 분명해요. <br>그저 하나의 강력한 악마라 생각하고 온 힘을 다해주세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act25_1",
+		"Text_English": "",
+		"Text_Korean": "천공성에서 알 수 없는 거대한 힘이 발생한 뒤 붕괴하는 <br>모습을 보고 니드호그가 죽었다고 생각했었어. <br>하지만 천공성이 멀쩡하게 나타나다니 정말 이상하군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act25_2",
+		"Text_English": "",
+		"Text_Korean": "에테르를 분해해 조각으로 만드는 걸 아까워하지 말게. <br>더욱 강해지기 위한 투자라고 생각하게. <br>물론 나도 분해할 때마다 아까움을 금치 못하지만….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act25_3",
+		"Text_English": "",
+		"Text_Korean": "지금쯤이면 자네도 상대방이 사용하고 있는 스킬을 <br>차단하는 방법쯤은 알고 있겠군. 방어 유형 스킬이나 <br>태그를 사용해 상대방을 적중시키는 것 말이네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act25_4",
+		"Text_English": "",
+		"Text_Korean": "등급과 강화 단계가 높은 에테르를 분해하면 보다 많은 <br>에테르 조각이 발생한다네. 엘리시움 마법 의회의 실험에서 <br>목격했는데 내 것이었다면 정말 아까웠을 것 같네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act25_5",
+		"Text_English": "",
+		"Text_Korean": "이곳이 우리 세계와 전혀 다른 세계라는 게 믿기지 않아. <br>나로서는 정말 혼란스럽지만 명확한 게 하나 있군. <br>이곳의 베레스가 강하다 해도 없애야 한다는 것이지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act25_6",
+		"Text_English": "",
+		"Text_Korean": "듣자 하니 고블린들의 왕은 거대한 고블린 기습 대원처럼 <br>생겼다더군. 게다가 엄청난 재물을 가졌다는 소문이 있네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act25_7",
+		"Text_English": "",
+		"Text_Korean": "헌트가 우쭐해할까 봐 말하지 않으려 했네만 <br>사실 에테르는 헌트가 가장 먼저 발견했다네. <br>악마가 부활한 루에모스를 탐색하다가 발견했지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act25_8",
+		"Text_English": "",
+		"Text_Korean": "이 끝에서 새로운 세계를 열 수 있다고 하니 자네는 <br>반드시 도전하겠군. 설령 이곳보다 더 강한 어둠이 <br>있다 해도 아마 자네는 그곳도 정복할 수 있을 거야.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act25_9",
+		"Text_English": "",
+		"Text_Korean": "엘리시움 마법 의회에서 에테르 강화 실험을 했는데 <br>지금의 기술로는 최대 9단계까지만 가능하다더군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act25_10",
+		"Text_English": "",
+		"Text_Korean": "지금의 니드호그도 공포를 느낄 만큼 충분히 강력하군. <br>하지만 자네는 여기서 멈출 사람이 아니니 승리해서 <br>니드호그보다 더 강한 힘이 기다리는 세계로 나아가게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act26_1",
+		"Text_English": "111 스테이지 설명",
+		"Text_Korean": "아포칼립스는 절대 어둠의 힘을 얻었지만 완벽히 <br>새로운 절대 어둠은 되지 못했어요. 아마 그에게 <br>더 많은 어둠의 힘이 필요했던 것 같아요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act26_2",
+		"Text_English": "112 스테이지 설명",
+		"Text_Korean": "검투사의 영혼들은 상대에게 화상을 입힐 수 있어요. <br>위력의 차이가 있지만 피해가 클 테니 조심하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act26_3",
+		"Text_English": "113 스테이지 설명",
+		"Text_Korean": "마법사의 영혼들은 상대를 빙결시킬 수 있어요. <br>정도의 차이가 있을 뿐이니 발이 묶이지 않도록 <br>조심하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act26_4",
+		"Text_English": "114 스테이지 설명",
+		"Text_Korean": "다르크가 악마병기를 다시 만들어 낸 이후 <br>계속해서 그것을 사용할 수 있게 된 것 같아요. <br>위력을 잘 알고 계시니 주의해서 싸우세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act26_5",
+		"Text_English": "115 스테이지 설명",
+		"Text_Korean": "경험해서 아시겠지만 다르크의 다양한 공격은 원거리, <br>근거리를 가리지 않지요. 그녀의 몸에서 빛이 나면 <br>강력한 공격을 사용한다는 뜻이니 잘 살피세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act26_6",
+		"Text_English": "116 스테이지 설명",
+		"Text_Korean": "암살자의 영혼들은 빠르게 달려와 그대를 넘어 뜨리려 <br>할 거에요. 그들의 공격에는 중독 효과까지 있으니 <br>첫 공격은 피하시는 게 좋겠어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act26_7",
+		"Text_English": "117 스테이지 설명",
+		"Text_Korean": "다니엘 님의 배신은 모두에게 충격이었을 거예요. <br>충만한 어둠이 다니엘 님의 망설임을 지운 걸까요? <br>어둠에 삼켜진다는 것은 비극이예요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act26_8",
+		"Text_English": "118 스테이지 설명",
+		"Text_Korean": "격투가의 영혼들은 상대를 기절 시킬 수 있으니 가장 <br>먼저 쓰러뜨리세요. 그렇지 않으면 그들의 공격에서 <br>벗어나기 어려울 테니까요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act26_9",
+		"Text_English": "119 스테이지 설명",
+		"Text_Korean": "그레고르 님의 근거리와 잔느의 원거리 공격 조합은 <br>강력한 것 같아요. 특히 잔느가 날아올라 모습을 <br>감추면 강력한 폭발이 일어날 테니 조심하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act26_10",
+		"Text_English": "120 스테이지 설명",
+		"Text_Korean": "비록 완벽한 절대 어둠이 되지 못했지만 아포칼립스는 <br>매우 강력한 악마예요. 특히 변신하면 새로운 전투의 <br>시작이니 장기전에 대비하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act27_1",
+		"Text_English": "121 스테이지 설명",
+		"Text_Korean": "죽음의 사제들은 강한 힘을 가지고 있지 않지만 <br>내면의 어둠을 활성화 한다면 고스트 같은 존재로 <br>변신할 수도 있으니 그 전에 물리치도록 하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act27_2",
+		"Text_English": "122 스테이지 설명",
+		"Text_Korean": "강화 전환은 한 장비의 강화 수치를 다른 장비로 <br>옮기는 것이 아니라 서로 교환하는 것이에요. <br>이미 잘 알고 계시리라 믿어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act27_3",
+		"Text_English": "123 스테이지 설명",
+		"Text_Korean": "요정들과 친해지고 가호를 얻었다면 이제부터 <br>장비를 팔기 보다 분해 해보는 게 어떻겠어요? <br>그 재료가 그대의 요정들에게 도움이 될 거예요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act27_4",
+		"Text_English": "124 스테이지 설명",
+		"Text_Korean": "구울들은 재빠르고 잔혹하지요. 순식간에 다가와 <br>그대를 기습할 거예요. 특히 공격력이 강해졌으니 <br>달라붙기 전에 물리치도록 하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act27_5",
+		"Text_English": "125 스테이지 설명",
+		"Text_Korean": "악마의 힘으로 변신한 다니엘과의 싸움이 중요해요. <br>그러니 천사였을 때 다니엘을 최대한 빨리 쓰러뜨리고 <br>변신한 다니엘과의 전투에 더 집중하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act27_6",
+		"Text_English": "126 스테이지 설명",
+		"Text_Korean": "길드 용병들은 계속 늘어날 거예요. 그대와 모험한 <br>강력한 조력자들의 영혼을 불러내어 합류하고 있으니 <br>잘 맞는 동료들을 선택해 육성하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act27_7",
+		"Text_English": "127 스테이지 설명",
+		"Text_Korean": "그대에게 시간의 굴레라는 저주를 내린 건 분명 <br>절대 어둠이에요. 그가 제 몸을 차지했을 때 가진 <br>마음과 생각을 저는 기억하고 있어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act27_8",
+		"Text_English": "128 스테이지 설명",
+		"Text_Korean": "그대 스스로를 강하게 만들기 위한 수단들에 한계가 <br>오면 얼마 가지 않아 그 한계가 열릴 거예요. 계속 <br>강하게 만들 준비를 멈추지 마세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act27_9",
+		"Text_English": "129 스테이지 설명",
+		"Text_Korean": "길드원 모두가 힘을 모아야 성공시킬 수 있는 임무를 <br>잊지 말고 완수하세요. 길드와 그대 모두에게 도움이 <br>될 거예요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act27_10",
+		"Text_English": "130 스테이지 설명",
+		"Text_Korean": "절대 어둠이 펼치는 공격의 대부분은 강력한 광역 <br>공격이에요. 멸망의 암흑검들을 사용할 때는 위력이 <br>더 강하고 범위가 넓으니 공격 시점을 잘 선택하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act41_1",
+		"Text_English": "",
+		"Text_Korean": "이 세계는 정말 위험한 곳일세. 보스로 나올 법한 녀석들이 <br>길목에 그냥 돌아다니더군. 해골 기사 녀석들도 공격력이 <br>증가하는 힘이 있는 것 같으니 조심하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act41_2",
+		"Text_English": "",
+		"Text_Korean": "어둠의 꼭두각시가 된 인간 병사들은 갑옷에 어둠의 힘이 <br>깃들었다네. 그 힘이 받는 피해량을 감소시켜주고 있지. <br>자네는 그 이상의 힘이 있으니 그들을 물리칠 수 있을 걸세.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act41_3",
+		"Text_English": "",
+		"Text_Korean": "특히 더 강한 악마들은 지옥의 불길을 가진 것 같습니다. <br>혹시 불길이 악마들에게 큰 힘을 주고 있는 건 아닐까요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act41_4",
+		"Text_English": "",
+		"Text_Korean": "자네가 많이 강해졌지만 아직 결속 스킬을 얻지 못했다면 <br>그것을 개방하기 위해 노력하는 것이 좋겠네. <br>이 지독한 악마들을 상대하려면 필요할 테니 말이네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act41_5",
+		"Text_English": "",
+		"Text_Korean": "고트와 똑같은 모습의 악마에게 부여된 힘을 알아냈다네. <br>바로 피해 반사 능력인데 항상 유지되는 능력인 것 같으니 <br>방어와 체력을 점검한 뒤 싸우도록 하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act41_6",
+		"Text_English": "",
+		"Text_Korean": "그동안 열심히 달려왔으니 이번 전투를 마치면 시간을 내어 <br>결속 임무들을 살펴보는 게 어떻겠나? 이미 완료했거나 <br>거의 완료할 수 있는 임무들이 있을지도 모른다네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act41_7",
+		"Text_English": "",
+		"Text_Korean": "제 조부께서는 라미엘 님을 따르던 영웅이셨습니다. <br>놀랍게도 조부님의 일기에 이곳에 대한 내용이 있었습니다. <br>이미 이 세계를 찾아온 영웅들이 있었던 겁니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act41_8",
+		"Text_English": "",
+		"Text_Korean": "지옥의 마녀 라헬이 지배하는 이 곳에는 많은 수의 <br>지옥의 이탈자 붉은 이빨이 자네를 기다리고 있네. <br>부디 그들에게 전력을 빼앗기지 말게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act41_9",
+		"Text_English": "",
+		"Text_Korean": "자네 무기를 보지 못해 물어보는 것이네만 몇 등급인가? <br>결속 스킬의 조건 때문에 실례임에도 물어본 것일세. <br>6등급 이상의 무기를 착용해야 사용 가능하기 때문이지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act41_10",
+		"Text_English": "",
+		"Text_Korean": "이제 첫 번째 지옥의 힘 근원지를 파괴할 차례입니다. <br>조부님의 일기에 등장한 영웅들은 성공하지 못했지만 <br>그대는 분명 성공할 수 있을 것입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act42_1",
+		"Text_English": "",
+		"Text_Korean": "그대가 아니었다면 우리의 세계도 이곳처럼 강력한 어둠에 <br>점령당했을 거예요. 이 세계의 모습을 보니 얼마나 소름이 <br>끼치던지요. 그대의 건투를 끝까지 지켜보겠어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act42_2",
+		"Text_English": "",
+		"Text_Korean": "악마의 파수견들이 장소를 가리지 않고 출몰하고 있네. <br>예전에는 하나하나의 힘이 약해 몰려다녔지만 이제는 <br>한 마리의 힘도 강하니 그들의 이빨을 조심하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act42_3",
+		"Text_English": "",
+		"Text_Korean": "고블린 기습 대원들도 쉬어가는 구간이 아닐 것 같네. <br>그들의 공격에 지옥의 화염이 깃들어 지독한 화상을 <br>남기기 때문일세. 공 같은 그 놈들은 단번에 물리치게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act42_4",
+		"Text_English": "",
+		"Text_Korean": "이렇게 강력한 악마들이 판치는 곳에서는 공격 방어 체력, <br>이중 한 요소에만 집중해 전투력을 높이면 곤란하다네. <br>전투력이 충분해도 패배할 수 있기 때문일세.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act42_5",
+		"Text_English": "",
+		"Text_Korean": "고스트만큼은 우리 세계의 존재가 죽은 척 위장한 뒤 <br>우리를 쫓아온 것 같아요. 사실이라면 질긴 악연이지요. <br>고스트의 피해반사 따위는 무시하고 악연을 끊어주세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act42_6",
+		"Text_English": "",
+		"Text_Korean": "자네 전투 도중 고블린 도굴꾼이 나타나는지 잘 살펴보게. <br>그 녀석은 신출귀몰하고 많은 재물을 가지고 다닌다네. <br>잠깐의 무적 시간 후에는 금세 잡을 수 있으니 놓치지 말게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act42_7",
+		"Text_English": "",
+		"Text_Korean": "혹시 자네 지속 효과 중 반격에도 투자하고 있나? <br>충분히 투자했다면 이미 알고 있겠군. <br>등급이 높아지면 반격 동작도 늘어난다네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act42_8",
+		"Text_English": "",
+		"Text_Korean": "새끼 래투스들은 떼 지어 몰려와 새로 얻은 힘인 흡혈로 <br>자네의 피를 훔칠 걸세. 부디 최대한 그 놈들에게 피를 <br>빼앗기지 말게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act42_9",
+		"Text_English": "",
+		"Text_Korean": "그러고 보니 작고 떼 지어 다니는 녀석들은 이제야 한 번에 <br>알려주는 것 같아 미안하네. 작은 악마 상자는 특별한 <br>기술은 없네만 힘이 강해졌으니 최대한 빨리 해치우게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act42_10",
+		"Text_English": "",
+		"Text_Korean": "벨라 님은 그분이 떠올라 마음이 좋지 않은 것 같더군. <br>하지만 성공이 눈 앞이니 악을 물리쳐 어둠을 몰아내고 <br>두 번째 지옥의 힘 근원지를 없애도록 하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act43_1",
+		"Text_English": "",
+		"Text_Korean": "여기까지 오니 여행을 떠난 그라치아가 무척 보고 싶군. <br>내가 그라치아의 힘을 필요로 하는 것처럼 이곳에서 <br>자네가 폭뢰의 에테르를 얻어 힘이 생겼으면 좋겠군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act43_2",
+		"Text_English": "",
+		"Text_Korean": "여기까지 왔다면 자네도 고대 유물들의 등급이 높겠군. <br>진화를 놓치지 않았다면 영구적으로 증가하는 능력치가 <br>이 지옥 같은 곳에서 싸우는데 도움이 되었을 걸세.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act43_3",
+		"Text_English": "",
+		"Text_Korean": "혹시 지속 효과 중 태그에 투자하고 있는가? <br>만약 투자한다면 타격을 받아 밀려나고 있는 상태에서도 <br>태그가 가능하게 되니 투자를 고려해보게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act43_4",
+		"Text_English": "",
+		"Text_Korean": "지옥의 인체 약탈자의 모든 공격에 중독 효과가 생겼다는 <br>정보가 있네. 중독되면 움직임이 느려질 테니 공격과 <br>회피를 번갈아 하는 전법을 구사해야 할 것 같군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act43_5",
+		"Text_English": "",
+		"Text_Korean": "이번 전투에서 지옥의 인체약탈자와 맹독의 감시자를 <br>모두 상대해야 하네. 강력한 자들과 연이어 싸워야 하니 <br>충분히 준비를 한 뒤 전투에 임하도록 하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act43_6",
+		"Text_English": "",
+		"Text_Korean": "전투를 준비하거나 정비할 때마다 도감을 살펴보게. <br>혹시라도 세트를 완성해 보상이 있을지도 모르니 말이네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act43_7",
+		"Text_English": "",
+		"Text_Korean": "정보에 따르면 이곳은 지옥의 이탈자와 지옥의 기습자가 <br>많다고 하네. 빠른 기습과 피해 반사 능력에 대비하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act43_8",
+		"Text_English": "",
+		"Text_Korean": "지옥의 독살자 맹독거미에게 나와 우리 부대가 전멸할 <br>뻔한 적이 있었다네. 겨우 목숨을 건진 난 지금도 그날을 <br>잊지 못한다네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act43_9",
+		"Text_English": "",
+		"Text_Korean": "첩보가 들어왔네. 비록 정찰병은 귀환하지 못했지만…. <br>암흑의 해골 부대와 다수의 좀비, 그리고 어둠의 꼭두각시 <br>병사들이 포진하고 있다 하니 강력한 공격으로 돌파하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act43_10",
+		"Text_English": "",
+		"Text_Korean": "어느덧 지옥의 힘을 얻은 벨제부브의 관문에 도달했군. <br>그동안 키워왔던 총력을 모아 벨제부브를 쓰러뜨리고 <br>세 번째 지옥의 힘 근원지를 파괴하도록 하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act44_1",
+		"Text_English": "",
+		"Text_Korean": "앞의 세 지역이 각각 탐욕, 타락, 원한의 힘으로 가득했다면 <br>영혼의 성에는 증오의 힘이 뒤덮고 있는 것 같아요. <br>여전히 강력한 증오의 힘을 뿜어내는 그를 쓰러뜨려야 해요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act44_2",
+		"Text_English": "",
+		"Text_Korean": "자네도 많은 다크 크리스탈이 필요할 시기가 오겠군. <br>아니면 혹시 이미 온 건가? 많은 업적과 결속 임무를 <br>달성해도 부족하다면 쇼핑을… 흠흠, 아닐세. 미안하네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act44_3",
+		"Text_English": "",
+		"Text_Korean": "라미엘 님의 날개에는 얼마나 많은 힘이 담겨 있을까요? <br>그대의 날개도 라미엘 님 수준으로 발전시킨다면 <br>이 험난한 전장도 우습게 통과할 수 있는 힘이 생길 거예요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act44_4",
+		"Text_English": "",
+		"Text_Korean": "지옥의 마녀 라헬이 만들어 내는 병사들도 무시하기 힘들 걸세. <br>그 병사들에게도 지옥의 힘이 깃들었을 테니 말이네. <br>그 자가 입구부터 나타난다는 정보가 있으니 속히 돌파하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act44_5",
+		"Text_English": "",
+		"Text_Korean": "도살자가 가진 능력은 단순하다네. 강한 힘, 그게 전 부지. <br>그래서 더 위험할 수 있으니 힘으로 붙어 싸우지 말고 <br>반격과 회피를 조합해 싸우게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act44_6",
+		"Text_English": "",
+		"Text_Korean": "영혼조차 사라지고 기능을 상실한 지 오래인 이 세계의 <br>영혼의 성을 보니 남일 같지 않네요. 그대가 없었다면 <br>우리 세계의 영혼의 성도 이런 모습이 되었을 것 같아요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act44_7",
+		"Text_English": "",
+		"Text_Korean": "이곳은 입구에서부터 강력한 녀석들이 반겨준다고 하네. <br>아마 첩보를 보낸 정찰병들은 입구를 넘지 못한 것 같네. <br>입구를 넘지도 못한 채 귀환에도 실패했으니 조심하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act44_8",
+		"Text_English": "",
+		"Text_Korean": "강력한 날개를 만들기 위해 길드전에 열중하시겠군요? <br>재료가 점점 많이 필요하실 테니까요. 지금보다 강해진 <br>날개를 달고 전장을 누비는 모습을 기대할게요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act44_9",
+		"Text_English": "",
+		"Text_Korean": "가고일들은 평상시 석상의 모습으로 있다는 전설이 있네. <br>지옥의 습격자들도 그에 맞게 피해 감소 능력을 얻었다네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act44_10",
+		"Text_English": "",
+		"Text_Korean": "더 이상 최상층에서 기다리고 있는 자가 누구인지는 <br>중요치 않은 것 같아요. 물론 이번 상대는 쉽지 않겠지만 <br>언제나처럼 그대의 칼 끝이 악마의 심장을 꿰뚫기를….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act45_1",
+		"Text_English": "",
+		"Text_Korean": "천공성을 뒤덮은 어둠의 힘은 공포인 것 같아. <br>하지만 공포는 두려워하지 않는 자에게 통하지 않지. <br>그러니 자네에게도 통하지 않겠지? 그럼 천천히 가볼까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act45_2",
+		"Text_English": "",
+		"Text_Korean": "지옥에서 부활한 마법사의 영혼의 공격을 조심하게. <br>그 모든 공격에는 차가운 원한이 서려 있어 닿는 것을 <br>빙결시켜 버린다네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act45_3",
+		"Text_English": "",
+		"Text_Korean": "휴 정말 강력한 놈들이 많군. 장비를 충분히 강화하지 <br>않았다면 매우 힘든 전투가 되겠어. 혹시 강화 세트 효과는 <br>확보했나? 6개의 장비를 15단계 이상 강화하면 된다네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act45_4",
+		"Text_English": "",
+		"Text_Korean": "지옥에서 부활한 암살자의 영혼은 자신에게 매우 유리한 <br>힘을 얻었다네. 모든 공격으로 상대를 중독시키는 것일세. <br>재빠른 자가 상대를 느리게 만들다니… 반드시 경계하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act45_5",
+		"Text_English": "",
+		"Text_Korean": "우리는 항상 베레스를 응징과 분풀이의 대상으로 보았네만 <br>이 세계의 베레스는 진지하게 대해야 할 힘이 있는 것 같네. <br>분풀이는 쓰러뜨린 후 해도 되니 부디 조심하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act45_6",
+		"Text_English": "",
+		"Text_Korean": "각 지역의 지배자들을 조종하는 배후의 존재는 과연 <br>누구일까? 아마 상상하기 힘든 힘을 가졌을 텐데 말이야. <br>두렵군. 설마 절대 어둠인 그 자가…?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act45_7",
+		"Text_English": "",
+		"Text_Korean": "지옥에서 부활한 격투가에게는 상대를 기절시킬만큼 <br>강력한 힘이 부여되었다고 하네. 무작정 맞서 싸우면 <br>정신을 차리지 못할테니 피하며 싸우게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act45_8",
+		"Text_English": "",
+		"Text_Korean": "고블린 지옥 마법사가 지키는 곳이라고 무시하면 안 된다네. <br>인체 약탈자, 지옥의 이탈자와 습격자로 이어지는 포진은 <br>마지막까지 도달하기 어려울 수도 있다네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act45_9",
+		"Text_English": "",
+		"Text_Korean": "지옥에서 부활한 검투사의 영혼에게도 힘이 부여되었네. <br>그의 검에 분노의 불길이 서려 그의 공격을 맞으면 <br>지속적으로 고통을 받을 테니 조심하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act45_10",
+		"Text_English": "",
+		"Text_Korean": "어느덧 여기까지 왔군. 그대는 정말 잘 싸워주었어. 하지만 <br>그대에게는 니드호그조차도 거쳐가는 지점에 불과하겠지. <br>그래, 화려한 승리를 움켜쥐고 또 다른 미래로 나아가게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act46_1",
+		"Text_English": "171 스테이지 설명",
+		"Text_Korean": "여기까지 찾아와 날 만나다니 정말 대단하구려. <br>그대의 강함에 탄복했소. 하지만 이곳은 영원한 <br>시간의 굴레. 계속된 싸움에 대비해야 할 것이오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act46_2",
+		"Text_English": "172 스테이지 설명",
+		"Text_Korean": "시간의 굴레라는 이 저주는 그대를 계속해서 싸우게 <br>만들고 있소. 저주의 힘은 강력하고 또한 무한해서 <br>아직 누구도 해결법을 찾지 못했소.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act46_3",
+		"Text_English": "173 스테이지 설명",
+		"Text_Korean": "부디 길드전은 놓치지 말고 참여하시오. <br>그리고 우위를 점하기 위해서는 모두가 합심해 <br>용병을 영입하고 그들의 능력에 투자하시오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act46_4",
+		"Text_English": "174 스테이지 설명",
+		"Text_Korean": "새로운 에테르가 발견되고 장비가 만들어지고 있소. <br>앞으로의 길은 이것들을 모두 얻고 투자해야 나아갈 <br>수 있을 것이오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act46_5",
+		"Text_English": "175 스테이지 설명",
+		"Text_Korean": "악마 병기와 다르크가 지긋지긋하겠지만 어쩌겠소? <br>그들조차 시간의 굴레를 벗어나지 못하고 반복된 <br>삶과 죽음을 맞고 있는 존재인 것을….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act46_6",
+		"Text_English": "176 스테이지 설명",
+		"Text_Korean": "다니엘 님이 가진 진심과 숨기고 있던 목적은 아무도 <br>알 수 없었을 것이오. 기억을 잠시 지우는 것으로 <br>자기 자신조차 속이고 있었기 때문이오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act46_7",
+		"Text_English": "177 스테이지 설명",
+		"Text_Korean": "혹시 코스튬을 보유하고 있소? 잠재력 개방은? <br>잠재력 개방을 통해 새로운 능력을 얻을 수 있소. <br>소모되는 자원은 넉넉히 준비하는 것이 좋을 것이오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act46_8",
+		"Text_English": "178 스테이지 설명",
+		"Text_Korean": "함께 하는 요정들에게 장비를 아끼지 마시오. <br>그대의 힘에 보탬이 되는 많은 축복을 줄 것이오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act46_9",
+		"Text_English": "179 스테이지 설명",
+		"Text_Korean": "잔느 역시 시간의 굴레에 얽매인 존재다 보니 지긋지긋 <br>하게 나타난다오. 그러다 보니 그레고르 님이 딱하구려. <br>물론 진짜는 아니지만….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act46_10",
+		"Text_English": "180 스테이지 설명",
+		"Text_Korean": "나는 어떤 결론에 도달했소. 혹시 아포칼립스도 이용 <br>당한 것이 아닐까? 더 강력한 절대 어둠을 근원에 <br>담아 진정한 절대 어둠을 부활시키는 재물로 말이오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act47_1",
+		"Text_English": "181 스테이지 설명",
+		"Text_Korean": "강력한 공격력과 힘을 가진 미노타우루스에게 피해 <br>감소 능력까지 있으니 힘든 전투가 될 것 같아요. <br>그 이상 가는 강력한 공격력을 갖추는 게 좋겠어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act47_2",
+		"Text_English": "182 스테이지 설명",
+		"Text_Korean": "지옥에서 부활한 검투사의 영혼은 화염을 얻었어요. <br>그 힘이 그대를 태워버릴 수 있으니 되도록 반격으로 <br>물리치는 게 좋을 것 같아요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act47_3",
+		"Text_English": "183 스테이지 설명",
+		"Text_Korean": "지옥에서 부활한 마법사의 영혼은 냉기의 힘이 특징이지요. <br>모든 공격이 그대를 얼어붙게 만들 수 있으니 <br>곤란해지기 전에 집중 공격하여 쓰러뜨리세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act47_4",
+		"Text_English": "184 스테이지 설명",
+		"Text_Korean": "제가 만든 빛의 제국인 엘리시움이 더렵혀진 모습을 <br>보니 가슴이 아프고 허탈하더군요. 참기 힘든 건 몸을 <br>빼앗겼다해도 제 손으로 한 짓이라는 거예요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act47_5",
+		"Text_English": "185 스테이지 설명",
+		"Text_Korean": "절대 어둠의 힘을 받고 변신한 다니엘의 공격은 <br>야성에 취한 짐승과 같아요. 거칠고 강하고 두려움이 <br>없어요. 느리게 공격하는 시점을 노리도록 하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act47_6",
+		"Text_English": "186 스테이지 설명",
+		"Text_Korean": "지옥에서 부활한 암살자의 영혼은 모든 공격에 <br>독을 담지요. 중독될 확률도 높으니 조심하고 <br>중독되어도 당황하지 말고 침착하게 반격하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act47_7",
+		"Text_English": "187 스테이지 설명",
+		"Text_Korean": "포식자 좀비는 강력한 공격으로 상대를 밀어내지요. <br>죽는 순간에도 상대의 목숨을 빼앗으려 자폭하지만 <br>이미 승리를 거둔 그대라면 괜찮을 것 같군요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act47_8",
+		"Text_English": "188 스테이지 설명",
+		"Text_Korean": "날렵하게 움직이는 래투스에게 피해 반사 능력이 <br>생길 줄은 몰랐지만 그걸 믿고 달려드는 래투스를 <br>그대라면 피할 필요가 없을 것 같아요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act47_9",
+		"Text_English": "189 스테이지 설명",
+		"Text_Korean": "지옥에서 부활한 격투가의 영혼은 강력한 타격으로 <br>그대를 기절시킬 수 있어요. 빠르고 호쾌한 공격을 <br>잘 피하면서 싸우도록 하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act47_10",
+		"Text_English": "190 스테이지 설명",
+		"Text_Korean": "이미 눈치채셨겠지만 그대들이 가진 궁극의 힘을 <br>절대 어둠도 흡사하게 사용할 수 있어요. 기술의 <br>근원이 같기 때문이에요. 부디 반격에 집중하세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act61_1",
+		"Text_English": "",
+		"Text_Korean": "암흑의 해골 기사단장을 이제 무시하기 어려울 것 같네. <br>공격력이 강화되는 그의 능력이 더욱 강해졌으니 말이네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act61_2",
+		"Text_English": "",
+		"Text_Korean": "암흑의 해골 궁병단장의 연사를 피하지 않으면 자네가 <br>얼어붙을지도 모르네. 빙결 확률이 높아지니 주의하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act61_3",
+		"Text_English": "",
+		"Text_Korean": "지옥의 기습자 래투스의 피해 반사 능력이 강해졌다네. <br>자네가 강해졌기 때문일세. 항상 유지되는 능력이니 <br>체력을 관리하며 빠르게 쓰러뜨리게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act61_4",
+		"Text_English": "",
+		"Text_Korean": "뭔가 운명이 자네에게 가혹하게 구는 것 같군. <br>점점 강력한 시련을 주다니 상황이 반복되는 이 차원은 <br>벗어날 수 없는 시간의 굴레 같은 느낌이 드네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act61_5",
+		"Text_English": "",
+		"Text_Korean": "내가 고트에게 가장 중요하다고 가르쳤던 것은 <br>방어였다네. 그런데 피해 반사 능력으로 공격에 <br>치중하게 될 줄이야. 애석하군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act61_6",
+		"Text_English": "",
+		"Text_Korean": "지옥의 이탈자 붉은 이빨은 갇혀있던 지옥에서 <br>탈출할 수 있을 정도로 강력한 힘이 있다네. <br>그의 돌진을 허락해서는 안된다네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act61_7",
+		"Text_English": "",
+		"Text_Korean": "우리가 점점 깊은 수렁에 빠지고 있는 것이라 <br>생각했네만, 마음을 바꿔 먹기로 했네. 우리가 <br>심연의 어둠을 찾아와 무찌르는 것이라 말이네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act61_8",
+		"Text_English": "",
+		"Text_Korean": "지옥의 마녀 라헬은 기본적으로 공격력이 <br>훨씬 강하다네. 항상 유지되는 어둠의 힘을 <br>두르고 있기 때문이니 빠르게 승부를 보게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act61_9",
+		"Text_English": "",
+		"Text_Korean": "어둠의 힘이 이토록 점점 강해진다는 것은 <br>빛의 힘이 약해졌기 때문이라고 생각하네. <br>그대의 승리가 빛을 강하게 만들어 줄 걸세.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act61_10",
+		"Text_English": "",
+		"Text_Korean": "이미 칼리굴라는 완전한 어둠의 힘을 손에 <br>넣은 것 같네. 나조차 몸이 떨릴 만큼 강력한 <br>힘이 느껴지고 있군. 공격 하나하나를 조심하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act62_1",
+		"Text_English": "",
+		"Text_Korean": "피의 추적자 지옥박쥐의 동작을 잘 확인하게. <br>날아 오른 뒤 달려든다면 자네의 피를 착취하려는 <br>것이니 그 때 반격을 하도록 하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act62_2",
+		"Text_English": "",
+		"Text_Korean": "요정이 없는 숲은 어둠이 빨리 퍼지는 것 같아요. <br>이토록 강한 어둠이 깔린 곳은 더욱 그렇지요. <br>요정들을 만날 수 없지만 그대에게 가호가 있기를….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act62_3",
+		"Text_English": "",
+		"Text_Korean": "지옥불 학살자 폭발거미의 폭발력은 매우 강하지. <br>하지만 그것보다 두려운 것은 강력해진 체력과 <br>공격력이라네. 사정없이 달려드니 조심하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act62_4",
+		"Text_English": "",
+		"Text_Korean": "원활한 전투를 위해 악마둥지를 먼저 처리하도록 하게. <br>그렇지 않으면 계속 중독 상태에 빠진 채 수많은 <br>박쥐들의 공격을 받아 낭패를 볼 수 있지.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act62_5",
+		"Text_English": "",
+		"Text_Korean": "암흑의 사역자 고스트는 항상 유지되는 피해 반사 <br>능력이 있다네. 자네도 공격력이 강해졌으니 주의하게. <br>그리고 그가 날아다닐 때 큰 기술을 사용하지 말게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act62_6",
+		"Text_English": "",
+		"Text_Korean": "제가 사랑하던 숲이 시간의 굴레에 삼켜졌다는 게 <br>너무 슬프네요. 숲을 되돌리려 하셨던 릴리스 님께 <br>죄송할 따름이에요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act62_7",
+		"Text_English": "",
+		"Text_Korean": "지옥의 독살자 맹독거미에게 달라진 특징은 없네. <br>다만 더 강한 힘과 체력 그리고 독을 얻었지. <br>음, 이쯤되면 달라지지 않은 게 아니군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act62_8",
+		"Text_English": "",
+		"Text_Korean": "반복되는 이 상황을 보면 고스트가 숲에 올 때 <br>많은 괴물과 악마들을 끌고 온 게 확실한 것 같아요. <br>지옥의 마녀 라헬까지 활개를 치고 있으니까요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act62_9",
+		"Text_English": "",
+		"Text_Korean": "지옥의 파괴자 미노타우르스는 강한 힘에 못지 않은 <br>체력과 튼튼한 육체가 특징일세. 피해 감소 능력이 <br>그걸 부각시켜주니 매우 강한 공격력이 필요하네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act62_10",
+		"Text_English": "",
+		"Text_Korean": "릴리스 님의 힘을 잘 알고 있을 걸세. 하지만 지금의 <br>그 분은 무엇을 생각해도 그 이상으로 강하다네. <br>부디 고통의 늪 위에 서지 않도록 조심하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act63_1",
+		"Text_English": "",
+		"Text_Korean": "지옥의 사역마 좀비는 이제 강력한 공격력을 항상 <br>보유하게 되었다네. 공격이 빠르지 않지만 부하들과 <br>함께 공격하니 그럴 때 주저말고 반격하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act63_2",
+		"Text_English": "",
+		"Text_Korean": "여행에서 잠시 돌아왔소만 내가 알아낸 것 만큼 <br>많은 일이 일어났구려. 난 심상치 않은 공기를 감지했소. <br>어둠의 근거지에서 뭔가 일어나고 있는 것을 말이오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act63_3",
+		"Text_English": "",
+		"Text_Korean": "지옥의 기습자 좀비도 피해 반사 능력이 있으니 <br>강력한 공격력만큼 방어력도 잘 갖춰야 하네. <br>자네의 공격이 스스로를 갉아먹을 수 있으니 말이네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act63_4",
+		"Text_English": "",
+		"Text_Korean": "지옥의 인체약탈자는 훨씬 거칠어졌다네. <br>힘과 생존력이 강해졌지. 느린 것은 여전하지만….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act63_5",
+		"Text_English": "",
+		"Text_Korean": "맹독의 감시자에게 달라진 것이 없다고 생각하면 <br>큰 오산일세. 달라지지 않은 것은 겉모습 뿐 <br>모든 것이 강력해졌다네. 집요하고 비열한 것까지….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act63_6",
+		"Text_English": "",
+		"Text_Korean": "어둠의 근거지는 다른 차원이며 저 깊은 곳에 있소. <br>백 년 전 전쟁 이후 세력을 잃었다고 생각했지만 <br>나타난 새로운 어둠이 그곳까지 부활시킨 것 같소.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act63_7",
+		"Text_English": "",
+		"Text_Korean": "지옥의 수호기사 석상은 이름에 맞게 단단하다는 것을 <br>이미 알고 있을 걸세. 거기에 강한 공격력과 자네를 <br>무력화시키는 기술이 있으니 반격에 신경쓰게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act63_8",
+		"Text_English": "",
+		"Text_Korean": "분명 그대는 내가 발견한 어둠의 근거지로 향하겠지. <br>부디 조심하시오. 그곳에는 위험한 힘을 가진 <br>악마들과 강력한 어둠의 힘을 지닌 자가 있으니 말이오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act63_9",
+		"Text_English": "",
+		"Text_Korean": "지옥의 거대 악마상자의 모든 공격을 조심하게. <br>그 악마의 모든 공격이 자네를 기절시킬 수 있으니…. <br>그리고 공격 횟수가 많으니 더욱 맞지 않도록 하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act63_10",
+		"Text_English": "",
+		"Text_Korean": "벨제부브의 힘은 잘 알고 있겠지만 지금은 좀 다르다네. <br>예전보다 훨씬 강해졌다는 말 밖에는… 그리고 최대한<br>전격에 맞지 말라는 당부 밖에 할 수 없군.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act64_1",
+		"Text_English": "",
+		"Text_Korean": "극악한 고블린 지옥용병단장이 지옥의 불꽃을 얻었다네. <br>그의 공격이 자네에게 화상을 입힐 수 있으니 <br>공격하는 순간 잊지 말고 반격을 가하도록 하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act64_2",
+		"Text_English": "",
+		"Text_Korean": "영혼의 성에도 더 강력한 어둠의 기류가 흐르고 있어요. <br>그대가 경험했거나 어쩌면 경험했을 거대한 사투가 <br>끊이지 않을 것 같아 불안하네요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act64_3",
+		"Text_English": "",
+		"Text_Korean": "고약한 고블린 지옥궁수대장도 지옥의 불꽃이 있다는 건 <br>더 까다로운 전투가 된다는 말일세. 화상을 조심하고 <br>조심하고 그의 연사에 회피와 반격으로 대응하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act64_4",
+		"Text_English": "",
+		"Text_Korean": "아무도 반복되는 시간을 피할 수 없었던 것 같아요. <br>그대만의 저주가 아니라는 뜻이지요. 하지만 함께 <br>해쳐 갈 동료들이 있다는 뜻이니 힘을 내세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act64_5",
+		"Text_English": "",
+		"Text_Korean": "잔혹한 고블린 지옥암살자 마저 지옥의 불꽃을 얻었다니 <br>모든 고블린들이 그대에게 화상을 입힐 수 있다는 뜻이군. <br>보다 거칠게 달려드는 암살자에게 반격을 먹여주게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act64_6",
+		"Text_English": "",
+		"Text_Korean": "광폭한 학살의 악마 도살자는 전보다 거칠고 강한 힘을 <br>가졌다네. 멀리서부터 그대에게 돌진하려 들 것이니 <br>몸의 색이 변하면 조심하도록 하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act64_7",
+		"Text_English": "",
+		"Text_Korean": "미라클 님이 돌아오신다면 해방된 영혼의 성도 활기를 <br>찾을 수 있을 것 같아요. 전 그 날을 기다리고 있어요. <br>부디 그대가 그 날을 가져오기를 바랄게요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act64_8",
+		"Text_English": "",
+		"Text_Korean": "교활한 고블린 지옥마법사는 다른 힘을 얻었더군. <br>이름처럼 교활하게 피해 반사능력을 얻은 모양일세. <br>더 강한 힘과 방어로 그를 눌러주게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act64_9",
+		"Text_English": "",
+		"Text_Korean": "이곳을 지나도 더 어려운 시련이 기다릴지 몰라요. <br>그만큼 그대는 더 많은 걸 갖춰야 해요. 하지만 <br>항상 그대가 증명했던 것 처럼 이겨낼 수 있을 거예요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act64_10",
+		"Text_English": "",
+		"Text_Korean": "아즈라엘을 상대한다는 것은 자네에게 큰 시험이라네. <br>말에서 끌어 내리는 걸 포함해 두 번 온전한 상태를 <br>빠르게 이겨낼 수 있다면 충분히 강하다 할 수 있네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act65_1",
+		"Text_English": "",
+		"Text_Korean": "다니엘조차 보이지 않는 천공성이란 쓸쓸한 싸움터지. <br>게다가 더욱 강력한 적들의 습격이 그대를 배로 힘들게 <br>할 거야. 하지만 부디 이겨내길 바라겠네.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act65_2",
+		"Text_English": "",
+		"Text_Korean": "지옥에서 부활한 마법사의 영혼은 차가운 힘의 상징일세. <br>모든 공격이 자네를 얼어붙게 만들 수 있으니 <br>곤란한 상황에 처하기 전에 집중 공격으로 쓰러뜨리게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act65_3",
+		"Text_English": "",
+		"Text_Korean": "이곳의 강력한 적을 이기기 위해서는 둘 다 강해져야 해. <br>아무리 혼자 강하다 해도 함께 하는 친구가 약하다면 <br>힘이 반감되니 말이야.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act65_4",
+		"Text_English": "",
+		"Text_Korean": "지옥에서 부활한 암살자의 영혼의 모든 공격에 <br>독이 있다네. 중독될 확률도 높으니 조심하고 <br>중독되어도 당황하지 말고 침착하게 반격하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act65_5",
+		"Text_English": "",
+		"Text_Korean": "베레스 같은 야비하고 교활한 학살마는 다시 만나고 <br>싶지 않겠지만 그 자가 자네의 앞을 막고 있으니 <br>온 힘을 다해 치워버리도록 하게. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act65_6",
+		"Text_English": "",
+		"Text_Korean": "장비를 개발한다는 것은 쉽지 않은 일이야. 하지만 <br>고생하고 있는 자네를 위해 열심히 노력하고 있으니 <br>부디 더 힘을 내어줘.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act65_7",
+		"Text_English": "",
+		"Text_Korean": "지옥에서 부활한 격투가의 영혼은 모든 타격이 강력해 <br>자네를 기절시킬 수 있다네. 그 빠르고 호쾌한 공격을 <br>잘 피하며 공략하도록 하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act65_8",
+		"Text_English": "",
+		"Text_Korean": "행방불명된 천사들이 언제 돌아올 수 있을지 모르겠군. <br>어쩌면 그들은 자네를 기다리고 있을지도 몰라. <br>어서 이곳을 벗어나 그들을 구하러 가줘.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act65_9",
+		"Text_English": "",
+		"Text_Korean": "지옥에서 부활한 검투사의 영혼은 화염을 둘렀다네. <br>그 힘이 자네를 태워버릴 수 있으니 되도록 반격으로 <br>물리치도록 하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act65_10",
+		"Text_English": "",
+		"Text_Korean": "예전의 니드호그를 생각하면 큰 오산이라네. <br>게다가 그의 부하들이 멀리 떨어져 공격하니 <br>거점을 이동하며 하나씩 공략해 쓰러뜨리도록 하게.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act66_1",
+		"Text_English": "",
+		"Text_Korean": "여기서부터는 더 조심해야 하오. <br>악마들의 등급부터가 다르기 때문이오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act66_2",
+		"Text_English": "",
+		"Text_Korean": "지금은 모든 요정들이 함께 있겠구려. 그렇다면 원하는 <br>축복을 지닌 요정의 레벨을 먼저 높이는 게 좋겠소.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act66_3",
+		"Text_English": "",
+		"Text_Korean": "각 요정들이 지닌 축복은 겹치는 것이 없고 <br>각 요정들로부터 선택한 축복 효과를 동시에 <br>얻을 수 있으니 잊지 말고 모두 선택하시오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act66_4",
+		"Text_English": "",
+		"Text_Korean": "빛과 어둠은 동전의 양면과 같소. 항상 함께 하는 <br>존재라는 뜻이지. 한 쪽이 강해지면 다른 한 쪽은 <br>작아질 뿐 사라지는 것은 아니오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act66_5",
+		"Text_English": "",
+		"Text_Korean": "다르크가 거칠어 보여도 아포칼립스에게는 상냥한 <br>모습을 보였다고 하오. 하지만 이곳에서는 더 강한 <br>힘으로 과격하게 나올 것이오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act66_6",
+		"Text_English": "",
+		"Text_Korean": "영원한 시간의 굴레도 힘의 근원이 있을 것이라 <br>추측하고 있소. 모든 시간의 끝에 강력한 어둠의 <br>힘이 느껴지기 때문이오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act66_7",
+		"Text_English": "",
+		"Text_Korean": "코스튬에 관련된 던전에 대해 들어봤소? <br>나는 아직 가보지 못해서 잘 모른다오. <br>그대는 잊지 말고 찾도록 하시오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act66_8",
+		"Text_English": "",
+		"Text_Korean": "악마들은 무엇이든 방법을 알게 되면 불쾌하게도 <br>계속 활용하고 있소. 그래서 영웅들의 영혼을 계속 <br>조종하며 농락하는 것이 참 불쾌하오.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act66_9",
+		"Text_English": "",
+		"Text_Korean": "잔느가 왜 그레고르 님을 만들어 냈을까 생각해 봤소. <br>아마 그대에게 그 분과의 모험이 큰 기억으로 자리 <br>잡았나 보오. 살아있을 것이라는 기대를 가졌거나….",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act66_10",
+		"Text_English": "",
+		"Text_Korean": "언제 다시 만날지 모르겠지만 부디 이 영원한 <br>고난에서 벗어나길 바라오. 이 시간의 끝에서 <br>뭐든 얻었으면 좋겠구려.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act67_1",
+		"Text_English": "",
+		"Text_Korean": "모든 비극의 시작이 제 과오에서 발생한 것 같아 <br>마음이 항상 무거웠어요. 다행히 그대가 기회를 <br>만들어 줬으니 속죄의 마음으로 미래를 만들겠어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act67_2",
+		"Text_English": "",
+		"Text_Korean": "미라클은 자신의 사명을 언제부터 알았을까요? <br>가혹하고 슬픈 운명을 이겨내고 우리를 구한 <br>그녀는 신이 내려준 구원의 선물인 것 같아요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act67_3",
+		"Text_English": "",
+		"Text_Korean": "브루투스는 저도 잘 알고 있는 천사예요. 그는 <br>강직하고 보이는 것과 달리 정이 많은 자였지요. <br>안타까운 그의 죽음은 저에게 큰 책임을 남겼어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act67_4",
+		"Text_English": "",
+		"Text_Korean": "그동안의 싸움을 정리하면 강력한 수많은 적들과 <br>치열하게 싸웠어요. 그들의 모습이 새삼 스쳐가네요. <br>그대도 저와 같으리라 생각해요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act67_5",
+		"Text_English": "",
+		"Text_Korean": "다니엘이 어둠의 힘을 선택한 것에는 저에게도 <br>잘못이 있어요. 시간을 되돌릴 수 없지만 다시는 <br>누구도 다니엘처럼 상처받지 않도록 노력하겠어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act67_6",
+		"Text_English": "",
+		"Text_Korean": "다행히 엘리시움에서 그대가 머물던 인간들의 <br>지역은 무사하다고 해요. 저는 반드시 이 천상의 <br>영역을 예전의 모습 이상으로 재건해 내겠어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act67_7",
+		"Text_English": "",
+		"Text_Korean": "새삼 그대의 모습이 너무도 다르게 느껴지네요. <br>처음 만났을 때보다 강한 기운을 뿜어내고 있어요. <br>그러고보니 그때도 지금처럼 저를 구하셨군요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act67_8",
+		"Text_English": "",
+		"Text_Korean": "저를 도와주었던 많은 이들의 얼굴이 떠올라요. <br>지금 느끼고 있는 이 고마움을 어떻게 갚아야 할까요? <br>그대도 많은 얼굴들이 떠오르고 있지 않나요?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act67_9",
+		"Text_English": "",
+		"Text_Korean": "어쩌면 언젠가 다시 시작될지 모르지만 제가 끝내지 <br>못했던 거대한 전쟁을 그대가 마무리 지었군요. <br>그대는 진정 우리를 빛으로 인도했어요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Act67_10",
+		"Text_English": "",
+		"Text_Korean": "어둠의 크기가 곧 절대 어둠이 부활하는 힘이 되지요. <br>우리와 그대의 임무는 그가 돌아올 수 있을만큼 <br>거대한 어둠이 드리우지 않도록 막는 것이에요.",
+		"Text_Other": ""
+	}
+]

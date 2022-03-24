@@ -1,0 +1,362 @@
+[
+	{
+		"Name": "1",
+		"TextDataType": "NPCName",
+		"NPCID": 10001,
+		"Text_English": "",
+		"Text_Korean": "수호기사",
+		"Text_Other": ""
+	},
+	{
+		"Name": "2",
+		"TextDataType": "NPCName",
+		"NPCID": 10002,
+		"Text_English": "",
+		"Text_Korean": "창병",
+		"Text_Other": ""
+	},
+	{
+		"Name": "3",
+		"TextDataType": "NPCName",
+		"NPCID": 10003,
+		"Text_English": "",
+		"Text_Korean": "궁수",
+		"Text_Other": ""
+	},
+	{
+		"Name": "4",
+		"TextDataType": "NPCNameDesc",
+		"NPCID": 10001,
+		"Text_English": "",
+		"Text_Korean": "루에모스를 지키는 수호기사는<br>병사들 중 가장 방어능력이 특화되어 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "5",
+		"TextDataType": "NPCNameDesc",
+		"NPCID": 10002,
+		"Text_English": "",
+		"Text_Korean": "루에모스를 지키는 창병은<br>균형잡힌 공격과 방어 능력을 보유하고 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "6",
+		"TextDataType": "NPCNameDesc",
+		"NPCID": 10003,
+		"Text_English": "",
+		"Text_Korean": "루에모스를 지키는 궁병은<br>중독 공격으로 적들을 무력화 시킵니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "7",
+		"TextDataType": "SpecialSkillName1",
+		"NPCID": 10001,
+		"Text_English": "",
+		"Text_Korean": "근성",
+		"Text_Other": ""
+	},
+	{
+		"Name": "8",
+		"TextDataType": "SpecialSkillNameDesc1",
+		"NPCID": 10001,
+		"Text_English": "",
+		"Text_Korean": "수호기사의 전문 능력<br>다른 병사들 보다 적들의 공격에<br>좀 더 버틸 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "9",
+		"TextDataType": "SpecialSkillName1",
+		"NPCID": 10002,
+		"Text_English": "",
+		"Text_Korean": "위협",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10",
+		"TextDataType": "SpecialSkillNameDesc1",
+		"NPCID": 10002,
+		"Text_English": "",
+		"Text_Korean": "창병의 전문 능력<br>긴 창을 이용해서 위협적인 공격을 할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "11",
+		"TextDataType": "SpecialSkillName2",
+		"NPCID": 10002,
+		"Text_English": "",
+		"Text_Korean": "수비",
+		"Text_Other": ""
+	},
+	{
+		"Name": "12",
+		"TextDataType": "SpecialSkillNameDesc2",
+		"NPCID": 10002,
+		"Text_English": "",
+		"Text_Korean": "창병의 전문 능력<br>강력하지는 않지만 긴 창을 이용해 어느 정도 <br>방어가 가능합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "13",
+		"TextDataType": "SpecialSkillName1",
+		"NPCID": 10003,
+		"Text_English": "",
+		"Text_Korean": "파괴 사격",
+		"Text_Other": ""
+	},
+	{
+		"Name": "14",
+		"TextDataType": "SpecialSkillNameDesc1",
+		"NPCID": 10003,
+		"Text_English": "",
+		"Text_Korean": "궁병의 전문 능력<br>병사들 중 가장 강력한<br>공격능력을 가지고 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "15",
+		"TextDataType": "SpecialSkillOption1",
+		"NPCID": 10001,
+		"Text_English": "",
+		"Text_Korean": "피해량 {0}% 감소",
+		"Text_Other": ""
+	},
+	{
+		"Name": "16",
+		"TextDataType": "SpecialSkillOption1",
+		"NPCID": 10002,
+		"Text_English": "",
+		"Text_Korean": "피해량 {0}% 증가",
+		"Text_Other": ""
+	},
+	{
+		"Name": "17",
+		"TextDataType": "SpecialSkillOption2",
+		"NPCID": 10002,
+		"Text_English": "",
+		"Text_Korean": "피해량 {0}% 감소",
+		"Text_Other": ""
+	},
+	{
+		"Name": "18",
+		"TextDataType": "SpecialSkillOption1",
+		"NPCID": 10003,
+		"Text_English": "",
+		"Text_Korean": "피해량 {0}% 증가",
+		"Text_Other": ""
+	},
+	{
+		"Name": "19",
+		"TextDataType": "NPCName",
+		"NPCID": 10004,
+		"Text_English": "",
+		"Text_Korean": "고트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "20",
+		"TextDataType": "NPCNameDesc",
+		"NPCID": 10004,
+		"Text_English": "",
+		"Text_Korean": "루에모스의 병사들을 통솔하는 고트는<br>훌륭한 리더쉽으로 자신의 팀에게 활력을 주는 능력이 뛰어납니다.  ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "21",
+		"TextDataType": "SpecialSkillName1",
+		"NPCID": 10004,
+		"Text_English": "",
+		"Text_Korean": "활력",
+		"Text_Other": ""
+	},
+	{
+		"Name": "22",
+		"TextDataType": "SpecialSkillName2",
+		"NPCID": 10004,
+		"Text_English": "",
+		"Text_Korean": "리더쉽",
+		"Text_Other": ""
+	},
+	{
+		"Name": "23",
+		"TextDataType": "SpecialSkillName3",
+		"NPCID": 10004,
+		"Text_English": "",
+		"Text_Korean": "파괴",
+		"Text_Other": ""
+	},
+	{
+		"Name": "24",
+		"TextDataType": "SpecialSkillNameDesc1",
+		"NPCID": 10004,
+		"Text_English": "",
+		"Text_Korean": "고트의 전문능력 <br>고트가 주는 활력의 힘을 오래 유지할 수 있게 해줍니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "25",
+		"TextDataType": "SpecialSkillNameDesc2",
+		"NPCID": 10004,
+		"Text_English": "",
+		"Text_Korean": "고트의 전문능력 <br>고트가 주는 활력의 힘을 많은 이에게 줄 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "26",
+		"TextDataType": "SpecialSkillNameDesc3",
+		"NPCID": 10004,
+		"Text_English": "",
+		"Text_Korean": "고트의 전문능력 <br>고트의 오래된 검술은 화려하지 않아도<br>강력한 공격을 합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "27",
+		"TextDataType": "SpecialSkillOption1",
+		"NPCID": 10004,
+		"Text_English": "",
+		"Text_Korean": "버프 시간 {0}초 증가",
+		"Text_Other": ""
+	},
+	{
+		"Name": "28",
+		"TextDataType": "SpecialSkillOption2",
+		"NPCID": 10004,
+		"Text_English": "",
+		"Text_Korean": "버프 효과 {0}명 증가",
+		"Text_Other": ""
+	},
+	{
+		"Name": "29",
+		"TextDataType": "SpecialSkillOption3",
+		"NPCID": 10004,
+		"Text_English": "",
+		"Text_Korean": "스킬 피해량 {0}% 증가",
+		"Text_Other": ""
+	},
+	{
+		"Name": "30",
+		"TextDataType": "NPCName",
+		"NPCID": 10005,
+		"Text_English": "",
+		"Text_Korean": "그레고르",
+		"Text_Other": ""
+	},
+	{
+		"Name": "31",
+		"TextDataType": "NPCNameDesc",
+		"NPCID": 10005,
+		"Text_English": "",
+		"Text_Korean": "벨제부브를 봉인한 영웅 그레고르는 <br> 유쾌한 모습뒤에 용맹하고 강한 봉인의 힘을 가지고 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "32",
+		"TextDataType": "SpecialSkillName1",
+		"NPCID": 10005,
+		"Text_English": "",
+		"Text_Korean": "살아난다~",
+		"Text_Other": ""
+	},
+	{
+		"Name": "33",
+		"TextDataType": "SpecialSkillName2",
+		"NPCID": 10005,
+		"Text_English": "",
+		"Text_Korean": "흡혈한다~",
+		"Text_Other": ""
+	},
+	{
+		"Name": "34",
+		"TextDataType": "SpecialSkillNameDesc1",
+		"NPCID": 10005,
+		"Text_English": "",
+		"Text_Korean": "그레고르의 전문 능력<br>그레고르는 불가사의한 힘으로 자신의 HP를 회복합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "35",
+		"TextDataType": "SpecialSkillNameDesc2",
+		"NPCID": 10005,
+		"Text_English": "",
+		"Text_Korean": "그레고르의 전문 능력<br>그레고르의 불가사의한 힘은 팀원들에게도 많은 활력을 줍니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "36",
+		"TextDataType": "SpecialSkillOption1",
+		"NPCID": 10005,
+		"Text_English": "",
+		"Text_Korean": "HP가 50%이하 될 시 3초동안 {0}% HP회복이 됩니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "37",
+		"TextDataType": "SpecialSkillOption2",
+		"NPCID": 10005,
+		"Text_English": "",
+		"Text_Korean": "그레고르를 착용한 팀의 체력흡혈 {0}% 증가",
+		"Text_Other": ""
+	},
+	{
+		"Name": "38",
+		"TextDataType": "NPCName",
+		"NPCID": 10006,
+		"Text_English": "",
+		"Text_Korean": "베르타",
+		"Text_Other": ""
+	},
+	{
+		"Name": "39",
+		"TextDataType": "NPCNameDesc",
+		"NPCID": 10006,
+		"Text_English": "",
+		"Text_Korean": "미라클을 모시던 성녀 베르타는<br> 강력한 속박과 해로운 것들을 풀어 주는것에 능합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "40",
+		"TextDataType": "SpecialSkillName1",
+		"NPCID": 10006,
+		"Text_English": "",
+		"Text_Korean": "강인한 정신",
+		"Text_Other": ""
+	},
+	{
+		"Name": "41",
+		"TextDataType": "SpecialSkillName2",
+		"NPCID": 10006,
+		"Text_English": "",
+		"Text_Korean": "고귀한 영혼",
+		"Text_Other": ""
+	},
+	{
+		"Name": "42",
+		"TextDataType": "SpecialSkillNameDesc1",
+		"NPCID": 10006,
+		"Text_English": "",
+		"Text_Korean": "베르타의 전문 능력<br>베르타의 강인한 정신은 어떠한 방해도 받지 않습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "43",
+		"TextDataType": "SpecialSkillNameDesc2",
+		"NPCID": 10006,
+		"Text_English": "",
+		"Text_Korean": "베르타의 전문 능력<br>베르타의 고귀한 영혼은 아무도 건들 수 없습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "44",
+		"TextDataType": "SpecialSkillOption1",
+		"NPCID": 10006,
+		"Text_English": "",
+		"Text_Korean": "{0}초간 모든 상태 이상 면역",
+		"Text_Other": ""
+	},
+	{
+		"Name": "45",
+		"TextDataType": "SpecialSkillOption2",
+		"NPCID": 10006,
+		"Text_English": "",
+		"Text_Korean": "{0}초간 무적 상태 유지",
+		"Text_Other": ""
+	}
+]

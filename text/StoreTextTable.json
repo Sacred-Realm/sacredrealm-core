@@ -1,0 +1,2036 @@
+[
+	{
+		"Name": "Store_GeneralStore",
+		"Text_English": "Store",
+		"Text_Korean": "장비 상점",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_GoodsStore",
+		"Text_English": "Goods",
+		"Text_Korean": "재화 상점",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_SummonItem",
+		"Text_English": "Items",
+		"Text_Korean": "장비 상점",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_SummonItem_GemBox",
+		"Text_English": "Gems",
+		"Text_Korean": "보석 장비 상자",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_SummonItem_FriendShipBox",
+		"Text_English": "FP Box",
+		"Text_Korean": "우정 장비 상자",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_SummonItem_Weapon",
+		"Text_English": "Weapon",
+		"Text_Korean": "무기",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_SummonItem_Armor",
+		"Text_English": "Armor",
+		"Text_Korean": "방어구",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_SummonItem_Accessory",
+		"Text_English": "Trinket",
+		"Text_Korean": "장신구",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_SummonItem_Costume",
+		"Text_English": "Costume",
+		"Text_Korean": "코스튬",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_SummonItem_SummonGem",
+		"Text_English": "{0} gem item boxes",
+		"Text_Korean": "보석 장비 상자 {0}개",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_SummonItem_SummonFriendShip",
+		"Text_English": "{0} FP boxes",
+		"Text_Korean": "우정 장비 상자 {0}개",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_SummonItem_OneMore",
+		"Text_English": "One more",
+		"Text_Korean": "한번 더",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_SummonItem_FlipAll",
+		"Text_English": "Open all",
+		"Text_Korean": "모두 열기",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_FreeSummonItem_InLobby",
+		"Text_English": "Free gift!",
+		"Text_Korean": "무료 선물!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Bonus_Product",
+		"Text_English": "{0} <br>Bonus!",
+		"Text_Korean": "{0}<br>추가지급!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_SummonItem_DifficultyNormal",
+		"Text_English": "Normal",
+		"Text_Korean": "보통",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_SummonItem_DifficultyHard",
+		"Text_English": "Hard",
+		"Text_Korean": "어려움",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_SummonItem_DifficultyVeryHard",
+		"Text_English": "Nightmare",
+		"Text_Korean": "매우 어려움",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_SummonItem_SummonDescription_Free",
+		"Text_English": "Free summon available",
+		"Text_Korean": "무료 소환 가능",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_SummonItem_SummonDescription_Time",
+		"Text_English": "Free summon after {0}",
+		"Text_Korean": "{0}후, 무료 소환",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_SummonItem_SummonDescription_Grade",
+		"Text_English": "At least one <span color=\"#7eff00\">★{0}</> guaranteed",
+		"Text_Korean": "최소 1개 <span color=\"#7eff00\">★{0}</> 확정",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_SummonItem_FreeToSummon",
+		"Text_English": "Free summon",
+		"Text_Korean": "무료 소환",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_SummonItem_SelectCharacter_Title",
+		"Text_English": "Select Character",
+		"Text_Korean": "캐릭터 선택",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_SummonItem_SelectCharacter_FullText",
+		"Text_English": "Select a character to choose an item.",
+		"Text_Korean": "장비를 사용할 캐릭터를 선택해 주세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_SummonItem_ConfirmQuestion",
+		"Text_English": "Purchase {0} character item?",
+		"Text_Korean": "{0} 캐릭터 장비를 구매하시겠습니까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_ItemNameAndCountToBuy",
+		"Text_English": "{0} {1}",
+		"Text_Korean": "{0} {1}개",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Mileage_BClass",
+		"Text_English": "Silver Grade",
+		"Text_Korean": "브론즈 등급",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Mileage_AClass",
+		"Text_English": "Gold Grade",
+		"Text_Korean": "실버 등급",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Mileage_SClass",
+		"Text_English": "Dia Grade",
+		"Text_Korean": "골드 등급",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Mileage_RewardTitle",
+		"Text_English": "{0} reward",
+		"Text_Korean": "{0} 보상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Mileage_Text",
+		"Text_English": "Purchase mileage",
+		"Text_Korean": "구매 마일리지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Product_Package_01",
+		"Text_English": "Package bundle 1",
+		"Text_Korean": "패키지상품01",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Product_Package_02",
+		"Text_English": "Package bundle 2",
+		"Text_Korean": "패키지상품02",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Confirm_Buy_Item",
+		"Text_English": "Purchase <span color=\"#eec178\">{0}</> <span color=\"#eec178\">{1}</>?",
+		"Text_Korean": "<span color=\"#eec178\">{0}</> <span color=\"#eec178\">{1}</> 개를 구매하시겠습니까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Terms_Text",
+		"Text_English": "If 7days have passed since purchase, or the product is used or opened from the inbox, refund is unavailable. <br>Unauthorized purchase by a minor can be canceled.",
+		"Text_Korean": "- 구매 후 7일이 경과했거나 우편함에서 상품 수령, 혹은 사용 시 청약 철회가 불가능한 상품입니다. <br>- 법정 대리인의 동의를 받지 않은 미성년자의 결제는 취소할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Bought_Product",
+		"Text_English": "Your purchase is complete.",
+		"Text_Korean": "구매를 완료하였습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Bonus_Notification",
+		"Text_English": "{0} <span color=\"#eeff00\">{1}</> bonus acquired",
+		"Text_Korean": "보너스 <span color=\"#eeff00\">{0}</> {1}개 획득",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_MileageGuide_Title",
+		"Text_English": "Mileage Reward",
+		"Text_Korean": "마일리지 보상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_MileageGuide_GuideTitle",
+		"Text_English": "Instructions",
+		"Text_Korean": "상점 마일리지 획득 방법 및 보상 확인",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_MileageGuide_Guide01",
+		"Text_English": " - Mileage is incurred when a player purchase gems or items from the store.",
+		"Text_Korean": "- 상점에서 보석을 사용하거나 상품 구입 시 마일리지가 적립됩니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_MileageGuide_Guide02",
+		"Text_English": "",
+		"Text_Korean": "브론즈 등급, 실버 등급, 골드 등급을 달성할 때마다 각각의 보상을 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_MileageGuide_Guide03",
+		"Text_English": " - The reward content can be examined by tapping the reward box icon.",
+		"Text_Korean": "- 보상 상자 아이콘을 클릭하면 보상 내용을 확인할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_MileageGuide_Caution",
+		"Text_English": "※ Notes",
+		"Text_Korean": "※ 주의사항",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_MileageGuide_Caution01",
+		"Text_English": " - Additional mileage is no longer incurred after achieving grade S.",
+		"Text_Korean": "- 골드 등급 달성 후 마일리지는 추가로 적립되지 않습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_MileageGuide_Caution02",
+		"Text_English": " - Rewards after grade S will reset the mileage.",
+		"Text_Korean": "- 골드 등급 달성 후 보상을 받게 되면 마일리지는 초기화되며 다시 적립됩니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_Buy",
+		"Text_English": "Purchase",
+		"Text_Korean": "구 매",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_TabCategory_SoulBlade",
+		"Text_English": "Blade Point",
+		"Text_Korean": "영혼검",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_TabCategory_Gem",
+		"Text_English": "Gems",
+		"Text_Korean": "보석",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_TabCategory_Gold",
+		"Text_English": "Gold",
+		"Text_Korean": "골드",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_TabCategory_DarkCrystal",
+		"Text_English": "Dark Crystal",
+		"Text_Korean": "다크 크리스탈",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_TabCategory_Package",
+		"Text_English": "Package",
+		"Text_Korean": "패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_BuyCount",
+		"Text_English": "({0}/{1})",
+		"Text_Korean": "({0}/{1})",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_BuyError",
+		"Text_English": "You cannot make a purchase anymore.",
+		"Text_Korean": "일일 뽑기 횟수를 초과했습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_BuyBonusDarkCrystal",
+		"Text_English": "<Obtained Dark Crystal {0}Bonus>",
+		"Text_Korean": "<다크 크리스탈 {0}개 보너스 획득>",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Restrict_Daily",
+		"Text_English": "",
+		"Text_Korean": "일일 한정",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Restrict_Weekly",
+		"Text_English": "",
+		"Text_Korean": "주간 한정",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Restrict_Monthly",
+		"Text_English": "",
+		"Text_Korean": "월간 한정",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Restrict_Number",
+		"Text_English": "",
+		"Text_Korean": "구매 한정",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Restrict_Count",
+		"Text_English": "",
+		"Text_Korean": "({0}/{1})",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Mileage_Value",
+		"Text_English": "",
+		"Text_Korean": "({0}/{1})",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Restrict_Complete",
+		"Text_English": "",
+		"Text_Korean": "구매 완료",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_1",
+		"Text_English": "",
+		"Text_Korean": "추천 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_2",
+		"Text_English": "",
+		"Text_Korean": "장비 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_3",
+		"Text_English": "",
+		"Text_Korean": "성장 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_4",
+		"Text_English": "",
+		"Text_Korean": "영웅 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_5",
+		"Text_English": "",
+		"Text_Korean": "부스트 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_6",
+		"Text_English": "",
+		"Text_Korean": "레벨업 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_7",
+		"Text_English": "",
+		"Text_Korean": "매일 혜택 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_9",
+		"Text_English": "",
+		"Text_Korean": "장비 향상 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_10",
+		"Text_English": "",
+		"Text_Korean": "한정 판매 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_SummonItem_EnableGrade",
+		"Text_English": "",
+		"Text_Korean": "장비 획득 가능",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_SummonItem_EnableMileage",
+		"Text_English": "",
+		"Text_Korean": "구매 마일리지 적립",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_SummonItem_TenSummonDesc",
+		"Text_English": "",
+		"Text_Korean": "10회 소환 시 4성 이상 장비 1개 확정",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_SummonItem_TenSummon",
+		"Text_English": "",
+		"Text_Korean": "10회 소환",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_SummonItem_OneSummon",
+		"Text_English": "",
+		"Text_Korean": "1회 소환",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_1",
+		"Text_English": "",
+		"Text_Korean": "스타팅 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_2",
+		"Text_English": "",
+		"Text_Korean": "골드 패키지 II",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_3",
+		"Text_English": "",
+		"Text_Korean": "영혼검 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_4",
+		"Text_English": "",
+		"Text_Korean": "타임 부스트 패키지 II",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_100",
+		"Text_English": "",
+		"Text_Korean": "4~6성 무기 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_101",
+		"Text_English": "",
+		"Text_Korean": "4~6성 방어구 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_102",
+		"Text_English": "",
+		"Text_Korean": "4~6성 장신구 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_200",
+		"Text_English": "",
+		"Text_Korean": "유물 조각 패키지 II",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_201",
+		"Text_English": "",
+		"Text_Korean": "영웅 성장 패키지 II",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_202",
+		"Text_English": "",
+		"Text_Korean": "날개 성장 패키지 II",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_203",
+		"Text_English": "",
+		"Text_Korean": "승급석 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_204",
+		"Text_English": "",
+		"Text_Korean": "고급 강화서 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_205",
+		"Text_English": "",
+		"Text_Korean": "유물 조각 패키지 III",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_206",
+		"Text_English": "",
+		"Text_Korean": "영웅 성장 패키지 III",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_207",
+		"Text_English": "",
+		"Text_Korean": "날개 성장 패키지 III",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_300",
+		"Text_English": "",
+		"Text_Korean": "초보자 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_301",
+		"Text_English": "",
+		"Text_Korean": "중급자 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_302",
+		"Text_English": "",
+		"Text_Korean": "상급자 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_400",
+		"Text_English": "",
+		"Text_Korean": "골드 부스트팩",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_401",
+		"Text_English": "",
+		"Text_Korean": "영혼검 부스트팩",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_402",
+		"Text_English": "",
+		"Text_Korean": "경험치 부스트팩",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_403",
+		"Text_English": "",
+		"Text_Korean": "타임 부스트팩",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_500",
+		"Text_English": "",
+		"Text_Korean": "주간 매일 혜택",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_501",
+		"Text_English": "",
+		"Text_Korean": "월간 매일 혜택 I",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_600",
+		"Text_English": "",
+		"Text_Korean": "검투사 레벨업 패키지 I",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_601",
+		"Text_English": "",
+		"Text_Korean": "검투사 레벨업 패키지 II",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_602",
+		"Text_English": "",
+		"Text_Korean": "검투사 레벨업 패키지 III",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_620",
+		"Text_English": "",
+		"Text_Korean": "암살자 레벨업 패키지 I",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_621",
+		"Text_English": "",
+		"Text_Korean": "암살자 레벨업 패키지 II",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_622",
+		"Text_English": "",
+		"Text_Korean": "암살자 레벨업 패키지 III",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_640",
+		"Text_English": "",
+		"Text_Korean": "마법사 레벨업 패키지 I",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_641",
+		"Text_English": "",
+		"Text_Korean": "마법사 레벨업 패키지 II",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_642",
+		"Text_English": "",
+		"Text_Korean": "마법사 레벨업 패키지 III",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_660",
+		"Text_English": "",
+		"Text_Korean": "격투가 레벨업 패키지 I",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_661",
+		"Text_English": "",
+		"Text_Korean": "격투가 레벨업 패키지 II",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_662",
+		"Text_English": "",
+		"Text_Korean": "격투가 레벨업 패키지 III",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_700",
+		"Text_English": "",
+		"Text_Korean": "검투사 레벨 계약 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_710",
+		"Text_English": "",
+		"Text_Korean": "암살자 레벨 계약 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_720",
+		"Text_English": "",
+		"Text_Korean": "마법사 레벨 계약 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_730",
+		"Text_English": "",
+		"Text_Korean": "격투가 레벨 계약 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_SummonItem_Free_Sec",
+		"Text_English": "",
+		"Text_Korean": "{0}초 후 무료",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_SummonItem_Free_MinSec",
+		"Text_English": "",
+		"Text_Korean": "{0}분 {1}초 후 무료",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_SummonItem_Free_HourMinSec",
+		"Text_English": "",
+		"Text_Korean": "{0}시간 {1}분 {2}초 후 무료",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_SummonItem_Free_DayHourMin",
+		"Text_English": "",
+		"Text_Korean": "{0}일 {1}시간 {2}분 후 무료",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_SummonItem_Chance",
+		"Text_English": "",
+		"Text_Korean": "뽑기 확률",
+		"Text_Other": ""
+	},
+	{
+		"Name": "ChanceURL",
+		"Text_English": "",
+		"Text_Korean": "https://playgame.kakao.com/blade2/boards/2EpqEy7AR",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_EventLabel_Sale",
+		"Text_English": "",
+		"Text_Korean": "SALE",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_EventLabel_Hit",
+		"Text_English": "",
+		"Text_Korean": "HIT",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_EventLabel_Hot",
+		"Text_English": "",
+		"Text_Korean": "HOT",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_EventLabel_New",
+		"Text_English": "",
+		"Text_Korean": "NEW",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageText1",
+		"Text_English": "",
+		"Text_Korean": "구성 아이템",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageText2",
+		"Text_English": "",
+		"Text_Korean": "자세히 보기",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageText3",
+		"Text_English": "",
+		"Text_Korean": "매일 지급",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageText4",
+		"Text_English": "",
+		"Text_Korean": "패키지 구매",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageText5",
+		"Text_English": "",
+		"Text_Korean": "매일 받는 경험치 부스트 선물 ({0}일)",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageText6",
+		"Text_English": "",
+		"Text_Korean": "총 {0}개 경험치 부스트 + 총 {1}개 보석!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_TermsURL",
+		"Text_English": "",
+		"Text_Korean": "https://playgame.kakao.com/blade2/boards/2EpqEy7AR",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_EventLabel_Event",
+		"Text_English": "",
+		"Text_Korean": "EVENT",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_BoostPackage_Desc400",
+		"Text_English": "",
+		"Text_Korean": "매일 받는 골드 부스트 선물(28)일 <br>총 {0}개 골드 버프 티켓 + 총 {1}개 보석!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_BoostPackage_Desc401",
+		"Text_English": "",
+		"Text_Korean": "매일 받는 영혼검 부스트 선물(28)일 <br>총 {0}개 영혼검 + 총 {1}개 보석!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_BoostPackage_Desc402",
+		"Text_English": "",
+		"Text_Korean": "매일 받는 경험치 부스트 선물(28)일 <br>총 {0}개 경험치 버프 티켓 + 총 {1}개 보석!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_BoostPackage_Desc403",
+		"Text_English": "",
+		"Text_Korean": "매일 받는 모험 부스트 선물(28)일 <br>총 {0}개 3배 모험권 티켓 + 총 {1}개 보석!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_EventLabel_Bonus",
+		"Text_English": "",
+		"Text_Korean": "BONUS",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_Levelup_Gladiator",
+		"Text_English": "",
+		"Text_Korean": "검투사 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_Levelup_Assassin",
+		"Text_English": "",
+		"Text_Korean": "암살자 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_Levelup_Wizard",
+		"Text_English": "",
+		"Text_Korean": "마법사 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_Levelup_Fighter",
+		"Text_English": "",
+		"Text_Korean": "격투가 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_600",
+		"Text_English": "",
+		"Text_Korean": "검투사 레벨업 패키지 I",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_601",
+		"Text_English": "",
+		"Text_Korean": "검투사 레벨업 패키지 II",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_602",
+		"Text_English": "",
+		"Text_Korean": "검투사 레벨업 패키지 III",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_620",
+		"Text_English": "",
+		"Text_Korean": "암살자 레벨업 패키지 I",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_621",
+		"Text_English": "",
+		"Text_Korean": "암살자 레벨업 패키지 II",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_622",
+		"Text_English": "",
+		"Text_Korean": "암살자 레벨업 패키지 III",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_640",
+		"Text_English": "",
+		"Text_Korean": "마법사 레벨업 패키지 I",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_641",
+		"Text_English": "",
+		"Text_Korean": "마법사 레벨업 패키지 II",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_642",
+		"Text_English": "",
+		"Text_Korean": "마법사 레벨업 패키지 III",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_660",
+		"Text_English": "",
+		"Text_Korean": "격투가 레벨업 패키지 I",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_661",
+		"Text_English": "",
+		"Text_Korean": "격투가 레벨업 패키지 II",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_662",
+		"Text_English": "",
+		"Text_Korean": "격투가 레벨업 패키지 III",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_700",
+		"Text_English": "",
+		"Text_Korean": "레벨 달성 계약 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_710",
+		"Text_English": "",
+		"Text_Korean": "레벨 달성 계약 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_720",
+		"Text_English": "",
+		"Text_Korean": "레벨 달성 계약 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_730",
+		"Text_English": "Store_PackageTab_730",
+		"Text_Korean": "레벨 달성 계약 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_LevelupDesc",
+		"Text_English": "",
+		"Text_Korean": "{0} 구매 시 총 <span color=\"#eec178\">{1} 보석</>을 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_LevelupBuyDesc",
+		"Text_English": "",
+		"Text_Korean": "상품 구매 후 수령 가능",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_EventLabel_DiscountRate",
+		"Text_English": "",
+		"Text_Korean": "{0}%",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_EventLabel_IncreaseRate",
+		"Text_English": "",
+		"Text_Korean": "{0}%",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackagePeriod",
+		"Text_English": "",
+		"Text_Korean": "남은 혜택 기간 : {0}일",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Acquired",
+		"Text_English": "",
+		"Text_Korean": "Complete",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PossibleAcquire",
+		"Text_English": "",
+		"Text_Korean": "획득 가능",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Failed_Product",
+		"Text_English": "",
+		"Text_Korean": "구매에 실패했습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_Flatrate_Title",
+		"Text_English": "",
+		"Text_Korean": "추가 혜택",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_Flatrate_Desc",
+		"Text_English": "",
+		"Text_Korean": "주간 매일 혜택 상품과 월간 매일 혜택 상품을 모두 구매하시면 보석 1,000개를 즉시 획득할 수 있습니다. (최초 1회 한정)",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_Flatrate_Complete",
+		"Text_English": "",
+		"Text_Korean": "보상받기",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_Flatrate_Summary",
+		"Text_English": "",
+		"Text_Korean": "- 구매 후 7일이 경과했거나 우편함에서 상품 수령, 혹은 사용 시 청약 철회가 불가능한 상품입니다. <br>- 법정 대리인의 동의를 받지 않은 미성년자의 결제는 취소할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_Flatrate_Detail",
+		"Text_English": "",
+		"Text_Korean": "자세히 보기",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_FlatrateItem_All",
+		"Text_English": "",
+		"Text_Korean": "총 {0}개 {1} 획득!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_FlatrateItem_Day",
+		"Text_English": "",
+		"Text_Korean": "매일 받는 {0} 혜택 ({1}일)",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_Monthly_Incomplete",
+		"Text_English": "",
+		"Text_Korean": "월간 매일 혜택 구매 미 완료",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_Monthly_Complete",
+		"Text_English": "",
+		"Text_Korean": "월간 매일 혜택 구매 완료",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_FlatrateItem_Title_Weeckly",
+		"Text_English": "",
+		"Text_Korean": "주간 매일 혜택 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_FlatrateItem_Title_Monthly",
+		"Text_English": "",
+		"Text_Korean": "월간 매일 혜택 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_Weekly_Incomplete",
+		"Text_English": "",
+		"Text_Korean": "주간 매일 혜택 구매 미 완료",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_Weekly_Complete",
+		"Text_English": "",
+		"Text_Korean": "주간 매일 혜택 구매 완료",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_FlatrateBonus_Complete",
+		"Text_English": "",
+		"Text_Korean": "보상 완료",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_Weekly",
+		"Text_English": "",
+		"Text_Korean": "주간 매일 혜택",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_Monthly",
+		"Text_English": "",
+		"Text_Korean": "월간 매일 혜택 I",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_Complete",
+		"Text_English": "",
+		"Text_Korean": "구매 완료",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_InComplete",
+		"Text_English": "",
+		"Text_Korean": "구매 미 완료",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_Reach_Title",
+		"Text_English": "",
+		"Text_Korean": "즉시 우편 지급",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_Mission_Title",
+		"Text_English": "",
+		"Text_Korean": "미션 달성 지급",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_LimitLevel",
+		"Text_English": "",
+		"Text_Korean": "구매 가능 레벨 :",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_Reach_Warning",
+		"Text_English": "",
+		"Text_Korean": "구매 후 {0}일 이내에 {1}캐릭터 {2}레벨 달성 시 크리스탈 {3}개 지급! <br>주의 : 미션 실패 시 미션 보상은 지급되지 않으니 기간 내에 미션을 꼭 달성해 주세요!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_Mission_Complete",
+		"Text_English": "",
+		"Text_Korean": "미션 완료",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_Mission_InComplete",
+		"Text_English": "",
+		"Text_Korean": "미션 달성 종료",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_NotPurchase",
+		"Text_English": "",
+		"Text_Korean": "해당 패키지 상품은 {0} {1}레벨 <br>이하인 경우에만 구매 가능합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_Reach_LimitLevel",
+		"Text_English": "",
+		"Text_Korean": "{0} {1}레벨 이하",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_EventLabel_LimitLevel",
+		"Text_English": "",
+		"Text_Korean": "구매 레벨 제한",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackagePeriod_Hour",
+		"Text_English": "",
+		"Text_Korean": "남은 혜택 기간 : {0}시간 {1}분",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackagePeriod_Minute",
+		"Text_English": "",
+		"Text_Korean": "남은 혜택 기간 : {0}분",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackagePeriod_Second",
+		"Text_English": "",
+		"Text_Korean": "남은 혜택 기간 : 1분 미만",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Currency_Cost",
+		"Text_English": "",
+		"Text_Korean": "{0} {1}",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_5",
+		"Text_English": "",
+		"Text_Korean": "7일 장비 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_TabCategory_Item",
+		"Text_English": "",
+		"Text_Korean": "재화 아이템",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_BoostPackage_Desc5",
+		"Text_English": "",
+		"Text_Korean": "7일간 매일매일 장비 10회 소환 티켓 1장 지급!<br>7일간 티켓을 모두 획득하면 보너스 티켓 추가 지급!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_BoostPackage_BonusDesc",
+		"Text_English": "",
+		"Text_Korean": "7일 동안 지급 상품 모두 <br>획득 시 보너스로 추가 지급!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_BonusGoods",
+		"Text_English": "",
+		"Text_Korean": "보너스 상품!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_GuestWarning_Content",
+		"Text_English": "",
+		"Text_Korean": "현재 계정 연동이 되어 있지 않습니다. 게스트 계정으로 상품 구매 시 <br>게임 삭제나, 기기 변동, 휴대폰 초기화 시 구매 데이터가 사라질 수 있습니다. <br>다른 기기에서도 서비스를 이용하려면 계정 연동을 해야 합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_GuestWarning_Switch",
+		"Text_English": "",
+		"Text_Korean": "계정 전환",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Mini_title",
+		"Text_English": "",
+		"Text_Korean": "보석 구매",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_Used_SummonItem",
+		"Text_English": "",
+		"Text_Korean": "※1일 이상 미 접속 시 보너스 티켓은 지급되지 않습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_WarningSummury",
+		"Text_English": "",
+		"Text_Korean": "- 상품 구매 후 미접속 시 해당 일차의 상품은 지급되지 않습니다. 상품은 우편함에서 수령 가능합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_Used_HotTimeBuff",
+		"Text_English": "",
+		"Text_Korean": "버프 티켓은 핫 타임&버프 메뉴에서 사용 가능합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_Receive_Mail",
+		"Text_English": "",
+		"Text_Korean": "- 상품은 우편함에서 수령 가능합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Package_Receive_Immediately",
+		"Text_English": "",
+		"Text_Korean": "상품은 목표 레벨 달성 시 즉시 지급됩니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Bought_MailProduct",
+		"Text_English": "",
+		"Text_Korean": "구매를 완료하였습니다. <br>상품은 우편함에서 수령 가능합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageMission",
+		"Text_English": "",
+		"Text_Korean": "남은 기간 : {0}일",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageMission_Hour",
+		"Text_English": "",
+		"Text_Korean": "남은 기간 : {0}시간 {1}분",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageMission_Minute",
+		"Text_English": "",
+		"Text_Korean": "남은 기간 : {0}분",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageMission_Second",
+		"Text_English": "",
+		"Text_Korean": "남은 기간 : 1분 미만",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_MagicStore_RemainTitle",
+		"Text_English": "",
+		"Text_Korean": "마법 상점 갱신까지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_MagicStore_Refresh",
+		"Text_English": "",
+		"Text_Korean": "즉시 갱신",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_MagicStore_Banner",
+		"Text_English": "",
+		"Text_Korean": "매일 매일 바뀌는 <br>신비의 마법 상점!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_MagicStore_RefreshDesc",
+		"Text_English": "",
+		"Text_Korean": "상품을 갱신하시겠습니까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_MagicStore_RefreshCount",
+		"Text_English": "",
+		"Text_Korean": "(오늘 남은 횟수 : {0}/{1})",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_MagicStore_RefreshTime",
+		"Text_English": "",
+		"Text_Korean": "{0}시간 {1}분 남음",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_MagicStore_BuyItem",
+		"Text_English": "",
+		"Text_Korean": "아이템 <span color=\"#eec178\">{0}개</>를 구매하시겠습니까?",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_MagicStore_EndTime",
+		"Text_English": "",
+		"Text_Korean": "해당 상품 구매 시간이 지났습니다. <br>갱신된 새로운 상품 목록을 확인해주세요.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_MagicStore_EndRefresh",
+		"Text_English": "",
+		"Text_Korean": "금일 사용 가능한 즉시 갱신 횟수를 <br>모두 소진하였습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_MagicStore_RefreshTimeSecond",
+		"Text_English": "",
+		"Text_Korean": "{0}초 남음",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_MagicStore_RefreshInit",
+		"Text_English": "",
+		"Text_Korean": "상품 목록 및 즉시 갱신 횟수가 초기화 되었습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_EventLabel_SaleForSummon",
+		"Text_English": "",
+		"Text_Korean": "Sale!",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_303",
+		"Text_English": "",
+		"Text_Korean": "초심 패키지I",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_304",
+		"Text_English": "",
+		"Text_Korean": "초심 패키지II",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_305",
+		"Text_English": "",
+		"Text_Korean": "초심 패키지III",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_SummonItem_ExceptionItem",
+		"Text_English": "",
+		"Text_Korean": "※성장의, 천상의 장비 제외",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_603",
+		"Text_English": "",
+		"Text_Korean": "검투사 레벨업 패키지 IV",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_623",
+		"Text_English": "",
+		"Text_Korean": "암살자 레벨업 패키지 IV",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_643",
+		"Text_English": "",
+		"Text_Korean": "마법사 레벨업 패키지 IV",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_663",
+		"Text_English": "",
+		"Text_Korean": "격투가 레벨업 패키지 IV",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_603",
+		"Text_English": "",
+		"Text_Korean": "검투사 레벨업 패키지 IV",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_623",
+		"Text_English": "",
+		"Text_Korean": "암살자 레벨업 패키지 IV",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_643",
+		"Text_English": "",
+		"Text_Korean": "마법사 레벨업 패키지 IV",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_663",
+		"Text_English": "",
+		"Text_Korean": "격투가 레벨업 패키지 IV",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Possession",
+		"Text_English": "",
+		"Text_Korean": "보유중",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Costume_Guide",
+		"Text_English": "",
+		"Text_Korean": "구입한 상품은 즉시 지급되며 옷장에서 장착할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Bought_ClosetProduct",
+		"Text_English": "",
+		"Text_Korean": "구매를 완료하였습니다.<br>상품은 코스튬 옷장으로 지급됩니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_502",
+		"Text_English": "",
+		"Text_Korean": "월간 매일 혜택 II",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_6",
+		"Text_English": "",
+		"Text_Korean": "모험 소탕 패키지 II",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_Limited",
+		"Text_English": "",
+		"Text_Korean": "Limited",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageBuyDescription",
+		"Text_English": "",
+		"Text_Korean": "- 구입한 상품은 즉시 지급되며 코스튬 메뉴에서 장착할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_800",
+		"Text_English": "",
+		"Text_Korean": "검투사의 새해 한복",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_801",
+		"Text_English": "",
+		"Text_Korean": "암살자의 새해 한복",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_802",
+		"Text_English": "",
+		"Text_Korean": "마법사의 새해 한복",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_803",
+		"Text_English": "",
+		"Text_Korean": "격투가의 새해 한복",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_804",
+		"Text_English": "",
+		"Text_Korean": "검투사의 사르곤 세트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_805",
+		"Text_English": "",
+		"Text_Korean": "암살자의 사르곤 세트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_806",
+		"Text_English": "",
+		"Text_Korean": "마법사의 사르곤 세트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_807",
+		"Text_English": "",
+		"Text_Korean": "격투가의 사르곤 세트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_808",
+		"Text_English": "",
+		"Text_Korean": "검투사의 하랑 세트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_809",
+		"Text_English": "",
+		"Text_Korean": "암살자의 하랑 세트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_810",
+		"Text_English": "",
+		"Text_Korean": "마법사의 하랑 세트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_811",
+		"Text_English": "",
+		"Text_Korean": "격투가의 하랑 세트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_812",
+		"Text_English": "",
+		"Text_Korean": "검투사의 사르곤 세트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_813",
+		"Text_English": "",
+		"Text_Korean": "암살자의 사르곤 세트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_814",
+		"Text_English": "",
+		"Text_Korean": "마법사의 사르곤 세트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_815",
+		"Text_English": "",
+		"Text_Korean": "격투가의 사르곤 세트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_816",
+		"Text_English": "",
+		"Text_Korean": "검투사의 하랑 세트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_817",
+		"Text_English": "",
+		"Text_Korean": "암살자의 하랑 세트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_818",
+		"Text_English": "",
+		"Text_Korean": "마법사의 하랑 세트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_819",
+		"Text_English": "",
+		"Text_Korean": "격투가의 하랑 세트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_820",
+		"Text_English": "",
+		"Text_Korean": "검투사의 한복 세트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_821",
+		"Text_English": "",
+		"Text_Korean": "암살자의 한복 세트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_822",
+		"Text_English": "",
+		"Text_Korean": "마법사의 한복 세트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_823",
+		"Text_English": "",
+		"Text_Korean": "격투가의 한복 세트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_824",
+		"Text_English": "",
+		"Text_Korean": "검투사의 할로윈 세트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_825",
+		"Text_English": "",
+		"Text_Korean": "암살자의 할로윈 세트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_826",
+		"Text_English": "",
+		"Text_Korean": "마법사의 할로윈 세트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_827",
+		"Text_English": "",
+		"Text_Korean": "격투가의 할로윈 세트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageDescription_800",
+		"Text_English": "",
+		"Text_Korean": "2019 설맞이 기념 의상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageDescription_801",
+		"Text_English": "",
+		"Text_Korean": "2019 설맞이 기념 의상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageDescription_802",
+		"Text_English": "",
+		"Text_Korean": "2019 설맞이 기념 의상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageDescription_803",
+		"Text_English": "",
+		"Text_Korean": "2019 설맞이 기념 의상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageDescription_804",
+		"Text_English": "",
+		"Text_Korean": "냉혹한 추위의 얼음지대 니펠하임에 사는 호수의 용 사르곤 컨셉 의상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageDescription_805",
+		"Text_English": "",
+		"Text_Korean": "냉혹한 추위의 얼음지대 니펠하임에 사는 호수의 용 사르곤 컨셉 의상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageDescription_806",
+		"Text_English": "",
+		"Text_Korean": "냉혹한 추위의 얼음지대 니펠하임에 사는 호수의 용 사르곤 컨셉 의상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageDescription_807",
+		"Text_English": "",
+		"Text_Korean": "냉혹한 추위의 얼음지대 니펠하임에 사는 호수의 용 사르곤 컨셉 의상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageDescription_808",
+		"Text_English": "",
+		"Text_Korean": "영혼을 팔아넘긴 타락한 신녀, 하랑의 컨셉 의상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageDescription_809",
+		"Text_English": "",
+		"Text_Korean": "영혼을 팔아넘긴 타락한 신녀, 하랑의 컨셉 의상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageDescription_810",
+		"Text_English": "",
+		"Text_Korean": "영혼을 팔아넘긴 타락한 신녀, 하랑의 컨셉 의상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageDescription_811",
+		"Text_English": "",
+		"Text_Korean": "영혼을 팔아넘긴 타락한 신녀, 하랑의 컨셉 의상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageDescription_812",
+		"Text_English": "",
+		"Text_Korean": "냉혹한 추위의 얼음지대 니펠하임에 사는 호수의 용 사르곤 컨셉 의상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageDescription_813",
+		"Text_English": "",
+		"Text_Korean": "냉혹한 추위의 얼음지대 니펠하임에 사는 호수의 용 사르곤 컨셉 의상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageDescription_814",
+		"Text_English": "",
+		"Text_Korean": "냉혹한 추위의 얼음지대 니펠하임에 사는 호수의 용 사르곤 컨셉 의상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageDescription_815",
+		"Text_English": "",
+		"Text_Korean": "냉혹한 추위의 얼음지대 니펠하임에 사는 호수의 용 사르곤 컨셉 의상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageDescription_816",
+		"Text_English": "",
+		"Text_Korean": "영혼을 팔아넘긴 타락한 신녀, 하랑의 컨셉 의상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageDescription_817",
+		"Text_English": "",
+		"Text_Korean": "영혼을 팔아넘긴 타락한 신녀, 하랑의 컨셉 의상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageDescription_818",
+		"Text_English": "",
+		"Text_Korean": "영혼을 팔아넘긴 타락한 신녀, 하랑의 컨셉 의상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageDescription_819",
+		"Text_English": "",
+		"Text_Korean": "영혼을 팔아넘긴 타락한 신녀, 하랑의 컨셉 의상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageDescription_820",
+		"Text_English": "",
+		"Text_Korean": "동방의 명절 기념 의상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageDescription_821",
+		"Text_English": "",
+		"Text_Korean": "동방의 명절 기념 의상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageDescription_822",
+		"Text_English": "",
+		"Text_Korean": "동방의 명절 기념 의상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageDescription_823",
+		"Text_English": "",
+		"Text_Korean": "동방의 명절 기념 의상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageDescription_824",
+		"Text_English": "",
+		"Text_Korean": "기괴하고 으스스한 할로윈 컨셉 의상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageDescription_825",
+		"Text_English": "",
+		"Text_Korean": "기괴하고 으스스한 할로윈 컨셉 의상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageDescription_826",
+		"Text_English": "",
+		"Text_Korean": "기괴하고 으스스한 할로윈 컨셉 의상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageDescription_827",
+		"Text_English": "",
+		"Text_Korean": "기괴하고 으스스한 할로윈 컨셉 의상",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_CostumeDetail",
+		"Text_English": "",
+		"Text_Korean": "코스튬 정보",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_604",
+		"Text_English": "",
+		"Text_Korean": "검투사 레벨업 패키지 V",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_624",
+		"Text_English": "",
+		"Text_Korean": "암살자 레벨업 패키지 V",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_644",
+		"Text_English": "",
+		"Text_Korean": "마법사 레벨업 패키지 V",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_664",
+		"Text_English": "",
+		"Text_Korean": "격투가 레벨업 패키지 V",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_604",
+		"Text_English": "",
+		"Text_Korean": "검투사 레벨업 패키지 V",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_624",
+		"Text_English": "",
+		"Text_Korean": "암살자 레벨업 패키지 V",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_644",
+		"Text_English": "",
+		"Text_Korean": "마법사 레벨업 패키지 V",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_664",
+		"Text_English": "",
+		"Text_Korean": "격투가 레벨업 패키지 V",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_7",
+		"Text_English": "",
+		"Text_Korean": "골드 패키지 III",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_8",
+		"Text_English": "",
+		"Text_Korean": "이름변경권 패키지",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_MaterialTrade",
+		"Text_English": "",
+		"Text_Korean": "재료 교환",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_605",
+		"Text_English": "",
+		"Text_Korean": "검투사 레벨업 패키지 VI",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_625",
+		"Text_English": "",
+		"Text_Korean": "암살자 레벨업 패키지 VI",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_645",
+		"Text_English": "",
+		"Text_Korean": "마법사 레벨업 패키지 VI",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_665",
+		"Text_English": "",
+		"Text_Korean": "격투가 레벨업 패키지 VI",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_605",
+		"Text_English": "",
+		"Text_Korean": "검투사 레벨업 패키지 VI",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_625",
+		"Text_English": "",
+		"Text_Korean": "암살자 레벨업 패키지 VI",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_645",
+		"Text_English": "",
+		"Text_Korean": "마법사 레벨업 패키지 VI",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_665",
+		"Text_English": "",
+		"Text_Korean": "격투가 레벨업 패키지 VI",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_606",
+		"Text_English": "",
+		"Text_Korean": "검투사 레벨업 패키지 VII",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_626",
+		"Text_English": "",
+		"Text_Korean": "암살자 레벨업 패키지 VII",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_646",
+		"Text_English": "",
+		"Text_Korean": "마법사 레벨업 패키지 VII",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_666",
+		"Text_English": "",
+		"Text_Korean": "격투가 레벨업 패키지 VII",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_606",
+		"Text_English": "",
+		"Text_Korean": "검투사 레벨업 패키지 VII",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_626",
+		"Text_English": "",
+		"Text_Korean": "암살자 레벨업 패키지 VII",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_646",
+		"Text_English": "",
+		"Text_Korean": "마법사 레벨업 패키지 VII",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageTab_666",
+		"Text_English": "",
+		"Text_Korean": "격투가 레벨업 패키지 VII",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_503",
+		"Text_English": "",
+		"Text_Korean": "월간 매일 혜택 Ⅲ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_504",
+		"Text_English": "",
+		"Text_Korean": "월간 매일 혜택 Ⅳ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_306",
+		"Text_English": "",
+		"Text_Korean": "강철 망치 패키지 I",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_307",
+		"Text_English": "",
+		"Text_Korean": "백금 망치 패키지 I",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_308",
+		"Text_English": "",
+		"Text_Korean": "빛나는 강철 망치 패키지I",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_309",
+		"Text_English": "",
+		"Text_Korean": "빛나는 백금 망치 패키지I",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_310",
+		"Text_English": "",
+		"Text_Korean": "영원의 결정체 패키지I",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_311",
+		"Text_English": "",
+		"Text_Korean": "제작 패키지I",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Store_PackageName_312",
+		"Text_English": "",
+		"Text_Korean": "고급 제작 패키지I",
+		"Text_Other": ""
+	}
+]

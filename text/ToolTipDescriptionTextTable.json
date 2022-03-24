@@ -1,0 +1,2954 @@
+[
+	{
+		"Name": "0",
+		"Text_English": "None",
+		"Text_Korean": "없음",
+		"Text_Other": ""
+	},
+	{
+		"Name": "1",
+		"Text_English": "Use to purchase items from the store.(Max: 2,100,000,000",
+		"Text_Korean": "상품 구매 시 사용되는 재화입니다.(최대 보유량:2,100,000,000)",
+		"Text_Other": ""
+	},
+	{
+		"Name": "2",
+		"Text_English": "Earn by completing achievements.",
+		"Text_Korean": "업적 달성을 통해 획득할 수 있는 점수입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "3",
+		"Text_English": "Use to continue adventure.",
+		"Text_Korean": "모험을 진행할 때 사용하는 행동력입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "4",
+		"Text_English": "Use to upgrade a weapon.",
+		"Text_Korean": "무기를 한 단계 높은 등급으로 변환시킬 때 사용됩니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "5",
+		"Text_English": "Use to upgrade an armor.",
+		"Text_Korean": "방어구를 한 단계 높은 등급으로 변환시킬 때 사용됩니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "6",
+		"Text_English": "Use to upgrade a trinket.",
+		"Text_Korean": "장신구를 한 단계 높은 등급으로 변환시킬 때 사용됩니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "7",
+		"Text_English": "Use to upgrade wings.",
+		"Text_Korean": "날개 강화에 쓰이는 재료입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "8",
+		"Text_English": "Use to evolve wings.",
+		"Text_Korean": "날개 진화에 쓰이는 재료입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "9",
+		"Text_English": "Use to upgrade wings option.",
+		"Text_Korean": "날개의 속성 옵션 강화에 쓰이는 재료입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10",
+		"Text_English": "Use to reach a higher rank.",
+		"Text_Korean": "계급의 진급 강화에 쓰이는 재료입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "11",
+		"Text_English": "Use to upgrade a relic.",
+		"Text_Korean": "고대 유물 강화에 쓰이는 재료입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "12",
+		"Text_English": "Use to purchase items from the store.",
+		"Text_Korean": "상점에서 아이템 구매 시 필요한 재화입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "13",
+		"Text_English": "This item can use enhancement stones.",
+		"Text_Korean": "승급석을 선택할 수 있는 아이템입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "14",
+		"Text_English": "Use to increase the character's level.",
+		"Text_Korean": "캐릭터의 레벨 성장에 필요한 경험치입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "15",
+		"Text_English": "Acquire a weapon of one- to three-star quality.",
+		"Text_Korean": "1~3성 무기 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "16",
+		"Text_English": "Acquire an armor of one- to three-star quality.",
+		"Text_Korean": "1~3성 방어구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "17",
+		"Text_English": "Acquire a trinket of one- to three-star quality.",
+		"Text_Korean": "1~3성 장신구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "18",
+		"Text_English": "Acquire a wizard's weapon of one- to three-star quality.",
+		"Text_Korean": "1~3성 마법사 무기 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "19",
+		"Text_English": "Acquire an assassin's weapon of one- to three-star quality.",
+		"Text_Korean": "1~3성 암살자 무기 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "20",
+		"Text_English": "Acquire a fighter's weapon of one- to three-star quality.",
+		"Text_Korean": "1~3성 격투가 무기 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "21",
+		"Text_English": "Acquire a gladiator's weapon of one- to three-star quality.",
+		"Text_Korean": "1~3성 검투사 무기 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "22",
+		"Text_English": "Acquire a wizard's armor of one- to three-star quality.",
+		"Text_Korean": "1~3성 마법사 방어구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "23",
+		"Text_English": "Acquire an assassin's armor of one- to three-star quality.",
+		"Text_Korean": "1~3성 암살자 방어구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "24",
+		"Text_English": "Acquire a fighter's armor of one- to three-star quality.",
+		"Text_Korean": "1~3성 격투가 방어구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "25",
+		"Text_English": "Acquire a gladiator's armor of one- to three-star quality.",
+		"Text_Korean": "1~3성 검투사 방어구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "26",
+		"Text_English": "Acquire a wizard's trinket of one- to three-star quality.",
+		"Text_Korean": "1~3성 마법사 장신구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "27",
+		"Text_English": "Acquire an assassin's trinket of one- to three-star quality.",
+		"Text_Korean": "1~3성 암살자 장신구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "28",
+		"Text_English": "Acquire a fighter's trinket of one- to three-star quality.",
+		"Text_Korean": "1~3성 격투가 장신구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "29",
+		"Text_English": "Acquire a gladiator's trinket of one- to three-star quality.",
+		"Text_Korean": "1~3성 검투사 장신구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "30",
+		"Text_English": "Acquire a weapon of two- to four-star quality.",
+		"Text_Korean": "2~4성 무기 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "31",
+		"Text_English": "Acquire an armor of two- to four-star quality.",
+		"Text_Korean": "2~4성 방어구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "32",
+		"Text_English": "Acquire a trinket of two- to four-star quality.",
+		"Text_Korean": "2~4성 장신구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "33",
+		"Text_English": "Acquire a wizard's weapon of two- to four-star quality.",
+		"Text_Korean": "2~4성 마법사 무기 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "34",
+		"Text_English": "Acquire an assassin's weapon of two- to four-star quality.",
+		"Text_Korean": "2~4성 암살자 무기 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "35",
+		"Text_English": "Acquire a fighter's weapon of two- to four-star quality.",
+		"Text_Korean": "2~4성 격투가 무기 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "36",
+		"Text_English": "Acquire a gladiator's weapon of two- to four-star quality.",
+		"Text_Korean": "2~4성 검투사 무기 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "37",
+		"Text_English": "Acquire a wizard's armor of two- to four-star quality.",
+		"Text_Korean": "2~4성 마법사 방어구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "38",
+		"Text_English": "Acquire an assassin's armor of two- to four-star quality.",
+		"Text_Korean": "2~4성 암살자 방어구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "39",
+		"Text_English": "Acquire a fighter's armor of two- to four-star quality.",
+		"Text_Korean": "2~4성 격투가 방어구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "40",
+		"Text_English": "Acquire a gladiator's armor of two- to four-star quality.",
+		"Text_Korean": "2~4성 검투사 방어구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "41",
+		"Text_English": "Acquire a wizard's trinket of two- to four-star quality.",
+		"Text_Korean": "2~4성 마법사 장신구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "42",
+		"Text_English": "Acquire an assassin's trinket of two- to four-star quality.",
+		"Text_Korean": "2~4성 암살자 장신구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "43",
+		"Text_English": "Acquire a fighter's trinket of two- to four-star quality.",
+		"Text_Korean": "2~4성 격투가 장신구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "44",
+		"Text_English": "Acquire a gladiator's trinket of two- to four-star quality.",
+		"Text_Korean": "2~4성 검투사 장신구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "45",
+		"Text_English": "Acquire a weapon of three- to five-star quality.",
+		"Text_Korean": "3~5성 무기 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "46",
+		"Text_English": "Acquire an armor of three- to five-star quality.",
+		"Text_Korean": "3~5성 방어구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "47",
+		"Text_English": "Acquire a trinket of three- to five-star quality.",
+		"Text_Korean": "3~5성 장신구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "48",
+		"Text_English": "Acquire a wizard's weapon of three- to five-star quality.",
+		"Text_Korean": "3~5성 마법사 무기 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "49",
+		"Text_English": "Acquire an assassin's weapon of three- to five-star quality.",
+		"Text_Korean": "3~5성 암살자 무기 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "50",
+		"Text_English": "Acquire a fighter's weapon of three- to five-star quality.",
+		"Text_Korean": "3~5성 격투가 무기 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "51",
+		"Text_English": "Acquire a gladiator's weapon of three- to five-star quality.",
+		"Text_Korean": "3~5성 검투사 무기 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "52",
+		"Text_English": "Acquire a wizard's armor of three- to five-star quality.",
+		"Text_Korean": "3~5성 마법사 방어구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "53",
+		"Text_English": "Acquire an assassin's armor of three- to five-star quality.",
+		"Text_Korean": "3~5성 암살자 방어구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "54",
+		"Text_English": "Acquire a fighter's armor of three- to five-star quality.",
+		"Text_Korean": "3~5성 격투가 방어구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "55",
+		"Text_English": "Acquire a gladiator's armor of three- to five-star quality.",
+		"Text_Korean": "3~5성 검투사 방어구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "56",
+		"Text_English": "Acquire a wizard's trinket of three- to five-star quality.",
+		"Text_Korean": "3~5성 마법사 장신구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "57",
+		"Text_English": "Acquire an assassin's trinket of three- to five-star quality.",
+		"Text_Korean": "3~5성 암살자 장신구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "58",
+		"Text_English": "Acquire a fighter's trinket of three- to five-star quality.",
+		"Text_Korean": "3~5성 격투가 장신구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "59",
+		"Text_English": "Acquire a gladiator's trinket of three- to five-star quality.",
+		"Text_Korean": "3~5성 검투사 장신구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "60",
+		"Text_English": "Acquire a weapon of four- to six-star quality.",
+		"Text_Korean": "4~6성 무기 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "61",
+		"Text_English": "Acquire an armor of four- to six-star quality.",
+		"Text_Korean": "4~6성 방어구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "62",
+		"Text_English": "Acquire a trinket of four- to six-star quality.",
+		"Text_Korean": "4~6성 장신구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "63",
+		"Text_English": "Acquire a wizard's weapon of four- to six-star quality.",
+		"Text_Korean": "4~6성 마법사 무기 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "64",
+		"Text_English": "Acquire an assassin's weapon of four- to six-star quality.",
+		"Text_Korean": "4~6성 암살자 무기 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "65",
+		"Text_English": "Acquire a fighter's weapon of four- to six-star quality.",
+		"Text_Korean": "4~6성 격투가 무기 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "66",
+		"Text_English": "Acquire a gladiator's weapon of four- to six-star quality.",
+		"Text_Korean": "4~6성 검투사 무기 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "67",
+		"Text_English": "Acquire a wizard's armor of four- to six-star quality.",
+		"Text_Korean": "4~6성 마법사 방어구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "68",
+		"Text_English": "Acquire an assassin's armor of four- to six-star quality.",
+		"Text_Korean": "4~6성 암살자 방어구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "69",
+		"Text_English": "Acquire a fighter's armor of four- to six-star quality.",
+		"Text_Korean": "4~6성 격투가 방어구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "70",
+		"Text_English": "Acquire a gladiator's armor of four- to six-star quality.",
+		"Text_Korean": "4~6성 검투사 방어구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "71",
+		"Text_English": "Acquire a wizard's trinket of four- to six-star quality.",
+		"Text_Korean": "4~6성 마법사 장신구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "72",
+		"Text_English": "Acquire an assassin's trinket of four- to six-star quality.",
+		"Text_Korean": "4~6성 암살자 장신구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "73",
+		"Text_English": "Acquire a fighter's trinket of four- to six-star quality.",
+		"Text_Korean": "4~6성 격투가 장신구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "74",
+		"Text_English": "Acquire a gladiator's trinket of four- to six-star quality.",
+		"Text_Korean": "4~6성 검투사 장신구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "75",
+		"Text_English": "It can select a gladiator's weapon of four-star quality.",
+		"Text_Korean": "4성 검투사 무기 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "76",
+		"Text_English": "It can select a gladiator's armor of four-star quality.",
+		"Text_Korean": "4성 검투사 방어구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "77",
+		"Text_English": "It can select a gladiator's trinket of four-star quality.",
+		"Text_Korean": "4성 검투사 장신구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "78",
+		"Text_English": "It can select an assassin's weapon of four-star quality.",
+		"Text_Korean": "4성 암살자 무기 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "79",
+		"Text_English": "It can select an assassin's armor of four-star quality.",
+		"Text_Korean": "4성 암살자 방어구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "80",
+		"Text_English": "It can select an assassin's trinket of four-star quality.",
+		"Text_Korean": "4성 암살자 장신구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "81",
+		"Text_English": "It can select a wizard's weapon of four-star quality.",
+		"Text_Korean": "4성 마법사 무기 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "82",
+		"Text_English": "It can select a wizard's armor of four-star quality.",
+		"Text_Korean": "4성 마법사 방어구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "83",
+		"Text_English": "It can select a wizard's trinket of four-star quality.",
+		"Text_Korean": "4성 마법사 장신구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "84",
+		"Text_English": "It can select a fighter's weapon of four-star quality.",
+		"Text_Korean": "4성 격투가 무기 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "85",
+		"Text_English": "It can select a fighter's armor of four-star quality.",
+		"Text_Korean": "4성 격투가 방어구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "86",
+		"Text_English": "It can select a fighter's trinket of four-star quality.",
+		"Text_Korean": "4성 격투가 장신구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "87",
+		"Text_English": "It can select a gladiator's weapon of five-star quality.",
+		"Text_Korean": "5성 검투사 무기 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "88",
+		"Text_English": "It can select a gladiator's armor of five-star quality.",
+		"Text_Korean": "5성 검투사 방어구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "89",
+		"Text_English": "It can select a gladiator's trinket of five-star quality.",
+		"Text_Korean": "5성 검투사 장신구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "90",
+		"Text_English": "It can select an assassin's weapon of five-star quality.",
+		"Text_Korean": "5성 암살자 무기 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "91",
+		"Text_English": "It can select an assassin's armor of five-star quality.",
+		"Text_Korean": "5성 암살자 방어구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "92",
+		"Text_English": "It can select an assassin's trinket of five-star quality.",
+		"Text_Korean": "5성 암살자 장신구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "93",
+		"Text_English": "It can select a wizard's weapon of five-star quality.",
+		"Text_Korean": "5성 마법사 무기 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "94",
+		"Text_English": "It can select a wizard's armor of five-star quality.",
+		"Text_Korean": "5성 마법사 방어구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "95",
+		"Text_English": "It can select a wizard's trinket of five-star quality.",
+		"Text_Korean": "5성 마법사 장신구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "96",
+		"Text_English": "It can select a fighter's weapon of five-star quality.",
+		"Text_Korean": "5성 격투가 무기 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "97",
+		"Text_English": "It can select a fighter's armor of five-star quality.",
+		"Text_Korean": "5성 격투가 방어구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "98",
+		"Text_English": "It can select a fighter's trinket of five-star quality.",
+		"Text_Korean": "5성 격투가 장신구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "99",
+		"Text_English": "It can select a gladiator's weapon of six-star quality.",
+		"Text_Korean": "6성 검투사 무기 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100",
+		"Text_English": "It can select a gladiator's armor of six-star quality.",
+		"Text_Korean": "6성 검투사 방어구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "101",
+		"Text_English": "It can select a gladiator's trinket of six-star quality.",
+		"Text_Korean": "6성 검투사 장신구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "102",
+		"Text_English": "It can select an assassin's weapon of six-star quality.",
+		"Text_Korean": "6성 암살자 무기 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "103",
+		"Text_English": "It can select an assassin's armor of six-star quality.",
+		"Text_Korean": "6성 암살자 방어구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "104",
+		"Text_English": "It can select an assassin's trinket of six-star quality.",
+		"Text_Korean": "6성 암살자 장신구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "105",
+		"Text_English": "It can select a wizard's weapon of six-star quality.",
+		"Text_Korean": "6성 마법사 무기 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "106",
+		"Text_English": "It can select a wizard's armor of six-star quality.",
+		"Text_Korean": "6성 마법사 방어구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "107",
+		"Text_English": "It can select a wizard's trinket of six-star quality.",
+		"Text_Korean": "6성 마법사 장신구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "108",
+		"Text_English": "It can select a fighter's weapon of six-star quality.",
+		"Text_Korean": "6성 격투가 무기 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "109",
+		"Text_English": "It can select a fighter's armor of six-star quality.",
+		"Text_Korean": "6성 격투가 방어구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "110",
+		"Text_English": "It can select a fighter's trinket of six-star quality.",
+		"Text_Korean": "6성 격투가 장신구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "111",
+		"Text_English": "Use to purchase items from the store.",
+		"Text_Korean": "상점에서 아이템 구매 시 필요한 재화입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "112",
+		"Text_English": "Use to upgrade a weapon.",
+		"Text_Korean": "무기 강화에 필요한 아이템입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "113",
+		"Text_English": "Use to upgrade an armor.",
+		"Text_Korean": "방어구 강화에 필요한 아이템입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "114",
+		"Text_English": "Use to upgrade a trinket.",
+		"Text_Korean": "장신구 강화에 필요한 아이템입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "115",
+		"Text_English": "Acquire a random upgrade scroll.",
+		"Text_Korean": "일반 및 고급 무기, 방어구, 장신구 강화서 중 랜덤으로 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "116",
+		"Text_English": "Use to open an MVP box.",
+		"Text_Korean": "MVP 상자 개봉에 쓰이는 아이템입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "117",
+		"Text_English": "Use to enhance Caligula's Crown.",
+		"Text_Korean": "고대 유물 칼리굴라의 왕관 승급에 쓰이는 재료입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "118",
+		"Text_English": "Use to enhance Lilith's Necklace.",
+		"Text_Korean": "고대 유물 릴리스의 목걸이 승급에 쓰이는 재료입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "119",
+		"Text_English": "Use to enhance Beelzebub's Eye.",
+		"Text_Korean": "고대 유물 벨제부브의 눈 승급에 쓰이는 재료입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "120",
+		"Text_English": "Use to enhance Azrael's Blade.",
+		"Text_Korean": "고대 유물 아즈라엘의 검 승급에 쓰이는 재료입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "121",
+		"Text_English": "Use to enhance Nidhogg's Wings.",
+		"Text_Korean": "고대 유물 니드호그 날개의 승급에 쓰이는 재료입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "122",
+		"Text_English": "Use to level up a weapon.",
+		"Text_Korean": "무기 장비의 레벨업에 쓰이는 재료입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "123",
+		"Text_English": "Use to level up an armor.",
+		"Text_Korean": "방어구 장비의 레벨업에 쓰이는 재료입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "124",
+		"Text_English": "Use to level up a trinket.",
+		"Text_Korean": "장신구 장비의 레벨업에 쓰이는 재료입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "125",
+		"Text_English": "Use to ether enhancement.",
+		"Text_Korean": "에테르의 강화에 쓰이는 재료입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "126",
+		"Text_English": "Acquire a 2 - 4 star weapon essence.",
+		"Text_Korean": "2~4성 무기 정수 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "127",
+		"Text_English": "Acquire a 2 - 4 star armor essence.",
+		"Text_Korean": "2~4성 방어구 정수 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "128",
+		"Text_English": "Acquire a 2 - 4 star trinket essence.",
+		"Text_Korean": "2~4성 장신구 정수 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "129",
+		"Text_English": "Acquire a 3 - 5 star weapon essence.",
+		"Text_Korean": "3~5성 무기 정수 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "130",
+		"Text_English": "Acquire a 3 - 5 star armor essence.",
+		"Text_Korean": "3~5성 방어구 정수 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "131",
+		"Text_English": "Acquire a 3 - 5 star trinket essence.",
+		"Text_Korean": "3~5성 장신구 정수 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "132",
+		"Text_English": "Acquire a 4 - 5 star weapon essence.",
+		"Text_Korean": "4~5성 무기 정수 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "133",
+		"Text_English": "Acquire a 4 - 5 star armor essence.",
+		"Text_Korean": "4~5성 방어구 정수 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "134",
+		"Text_English": "Acquire a 4 - 5 star trinket essence.",
+		"Text_Korean": "4~5성 장신구 정수 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "135",
+		"Text_English": "Acquire a 2-star weapon essence.",
+		"Text_Korean": "2성 무기 정수 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "136",
+		"Text_English": "Acquire a 2-star armor essence.",
+		"Text_Korean": "2성 방어구 정수 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "137",
+		"Text_English": "Acquire a 2-star trinket essence.",
+		"Text_Korean": "2성 장신구 정수 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "138",
+		"Text_English": "Acquire a 3-star weapon essence.",
+		"Text_Korean": "3성 무기 정수 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "139",
+		"Text_English": "Acquire a 3-star armor essence.",
+		"Text_Korean": "3성 방어구 정수 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "140",
+		"Text_English": "Acquire a 3-star trinket essence.",
+		"Text_Korean": "3성 장신구 정수 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "141",
+		"Text_English": "Acquire a 4-star weapon essence.",
+		"Text_Korean": "4성 무기 정수 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "142",
+		"Text_English": "Acquire a 4-star armor essence.",
+		"Text_Korean": "4성 방어구 정수 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "143",
+		"Text_English": "Acquire a 4-star trinket essence.",
+		"Text_Korean": "4성 장신구 정수 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "144",
+		"Text_English": "Acquire a 5-star weapon essence.",
+		"Text_Korean": "5성 무기 정수 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "145",
+		"Text_English": "Acquire a 5-star armor essence.",
+		"Text_Korean": "5성 방어구 정수 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "146",
+		"Text_English": "Acquire a 5-star trinket essence.",
+		"Text_Korean": "5성 장신구 정수 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "147",
+		"Text_English": "Acquire 3 times Reward in Adventure.",
+		"Text_Korean": "3배 모험 진행에 쓰이는 아이템입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "148",
+		"Text_English": "This item is used for gold buffs.",
+		"Text_Korean": "골드 버프 이용에 쓰이는 아이템입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "149",
+		"Text_English": "It is an item used for buffing experiences.",
+		"Text_Korean": "경험치 버프 이용에 쓰이는 아이템입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "150",
+		"Text_English": "You can earn bonus rewards based on your contribution.",
+		"Text_Korean": "기여도에 따라 보너스 보상을 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "151",
+		"Text_English": "Depending on the difficulty level, you can get a high grade of jewelry.",
+		"Text_Korean": "난이도에 따라 높은 등급의 장신구를 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "152",
+		"Text_English": "Depending on the difficulty level, you can obtain a high grade of jewelry integer.",
+		"Text_Korean": "난이도에 따라 높은 등급의 장신구 정수를 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "153",
+		"Text_English": "It is an item that can be used with 10 summons from the equipment store.",
+		"Text_Korean": "장비 상점의 10회 소환으로 사용할 수 있는 아이템입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "154",
+		"Text_English": "These are the goods that can be obtained from the Hall of Heroes.",
+		"Text_Korean": "영웅의 전당에서 획득할 수 있는 재화입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "155",
+		"Text_English": "You get one of 5~6 those weapons.",
+		"Text_Korean": "5~6성 무기 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "156",
+		"Text_English": "You get one of the 5~6star defenses.",
+		"Text_Korean": "5~6성 방어구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "157",
+		"Text_English": "You get one of the five to six star accessories.",
+		"Text_Korean": "5~6성 장신구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "158",
+		"Text_English": "You can choose one of the five star weapons.",
+		"Text_Korean": "5성 무기 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "159",
+		"Text_English": "You can choose one of the five-star defenses.",
+		"Text_Korean": "5성 방어구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "160",
+		"Text_English": "You can choose one of the five-star accessories.",
+		"Text_Korean": "5성 장신구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "161",
+		"Text_English": "You can choose one of the six-star weapons.",
+		"Text_Korean": "6성 무기 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "162",
+		"Text_English": "You can choose one of the six-star defenses.",
+		"Text_Korean": "6성 방어구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "163",
+		"Text_English": "You can choose one of the six-star accessories.",
+		"Text_Korean": "6성 장신구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "164",
+		"Text_English": "You can choose one of the four-star weapons.",
+		"Text_Korean": "4성 무기 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "165",
+		"Text_English": "You can choose one of the four-star defenses.",
+		"Text_Korean": "4성 방어구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "166",
+		"Text_English": "You can choose one of the four-star accessories.",
+		"Text_Korean": "4성 장신구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "167",
+		"Text_English": "You can choose between one star and one tier ether.",
+		"Text_Korean": "1성 1티어 에테르 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "168",
+		"Text_English": "You can choose between one star and two tier ethers.",
+		"Text_Korean": "1성 2티어 에테르 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "169",
+		"Text_English": "You can choose between one star and three tier ethers.",
+		"Text_Korean": "1성 3티어 에테르 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "170",
+		"Text_English": "You can choose one of the four tier ethers.",
+		"Text_Korean": "1성 4티어 에테르 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "171",
+		"Text_English": "You can choose between two-star one-tier ether.",
+		"Text_Korean": "2성 1티어 에테르 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "172",
+		"Text_English": "You can choose between two-star two-tier ethers.",
+		"Text_Korean": "2성 2티어 에테르 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "173",
+		"Text_English": "You can choose one of the two-star three-tier ethers",
+		"Text_Korean": "2성 3티어 에테르 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "174",
+		"Text_English": "You can choose between two-star four-tier ethers.",
+		"Text_Korean": "2성 4티어 에테르 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "175",
+		"Text_English": "You can choose one of the three-star 1 tier ethers.",
+		"Text_Korean": "3성 1티어 에테르 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "176",
+		"Text_English": "You can choose one of the three-star two-tier ethers.",
+		"Text_Korean": "3성 2티어 에테르 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "177",
+		"Text_English": "You can choose one of the three-star three-tier ethers.",
+		"Text_Korean": "3성 3티어 에테르 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "178",
+		"Text_English": "You can choose one of the three-star four-tier ethers.",
+		"Text_Korean": "3성 4티어 에테르 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "179",
+		"Text_English": "You can choose one of the four-star one-tier ethers.",
+		"Text_Korean": "4성 1티어 에테르 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "180",
+		"Text_English": "You can choose one of the four-star two-tier ethers.",
+		"Text_Korean": "4성 2티어 에테르 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "181",
+		"Text_English": "You can choose one of the four-star three-tier ethers.",
+		"Text_Korean": "4성 3티어 에테르 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "182",
+		"Text_English": "You can choose one of the four-star four-tier ethers.",
+		"Text_Korean": "4성 4티어 에테르 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "183",
+		"Text_English": "You can choose one of the five star 1 tier ethers.",
+		"Text_Korean": "5성 1티어 에테르 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "184",
+		"Text_English": "You can choose one of the five-star two-tier ethers.",
+		"Text_Korean": "5성 2티어 에테르 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "185",
+		"Text_English": "You can choose one of the five-star three-tier ethers.",
+		"Text_Korean": "5성 3티어 에테르 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "186",
+		"Text_English": "You can choose one of the five-star four-tier ethers.",
+		"Text_Korean": "5성 4티어 에테르 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "187",
+		"Text_English": "You can choose one of the six-star 1 tier ethers.",
+		"Text_Korean": "6성 1티어 에테르 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "188",
+		"Text_English": "You can choose one of the six-star two-tier ethers.",
+		"Text_Korean": "6성 2티어 에테르 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "189",
+		"Text_English": "You can choose one of the six-star three-tier ethers.",
+		"Text_Korean": "6성 3티어 에테르 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "190",
+		"Text_English": "You can choose one of the six-star four-tier ethers.",
+		"Text_Korean": "6성 4티어 에테르 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "191",
+		"Text_English": "The failure of reinforcement is prevented from falling.",
+		"Text_Korean": "강화 실패 하락이 방지됩니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "192",
+		"Text_English": "You can choose one of the four-star growth ornaments.",
+		"Text_Korean": "4성 성장의 장신구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "193",
+		"Text_English": "You can choose one of the five-star growth ornaments.",
+		"Text_Korean": "5성 성장의 장신구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "194",
+		"Text_English": "You can choose one of the six-star growth ornaments.",
+		"Text_Korean": "6성 성장의 장신구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "195",
+		"Text_English": "It is a material used to promote bone fragments of the ancient relic Apocalypse.",
+		"Text_Korean": "고대유물 아포칼립스의 뼈조각 승급에 쓰이는 재료입니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "196",
+		"Text_English": "This material is used to level up the pair.",
+		"Text_Korean": "페어리 레벨업에 쓰이는 재료입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "197",
+		"Text_English": "You can choose one of the seven-star weapons.",
+		"Text_Korean": "7성 무기 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "198",
+		"Text_English": "You can choose one of the seven-star defenses.",
+		"Text_Korean": "7성 방어구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "199",
+		"Text_English": "You can choose one of the seven-star accessories.",
+		"Text_Korean": "7성 장신구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "200",
+		"Text_English": "You can choose one of the four-star duel ornaments.",
+		"Text_Korean": "4성 결투의 장신구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "201",
+		"Text_English": "You can choose one of the five-star duel ornaments.",
+		"Text_Korean": "5성 결투의 장신구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "202",
+		"Text_English": "You can choose one of the six-star duel accessories.",
+		"Text_Korean": "6성 결투의 장신구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "203",
+		"Text_English": "It is an item that immediately completes the adventure dungeon without consuming the soul sword.",
+		"Text_Korean": "영혼검 소비 없이 모험 던전을 즉시 완료시켜주는 아이템입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "204",
+		"Text_English": "You can choose one of the seven-star growth ornaments.",
+		"Text_Korean": "7성 성장의 장신구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "205",
+		"Text_English": "You can choose one of the seven-star duel ornaments.",
+		"Text_Korean": "7성 결투의 장신구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "206",
+		"Text_English": "You can choose one of the eight-star weapons.",
+		"Text_Korean": "8성 무기 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "207",
+		"Text_English": "You can choose one of the eight-star defenses.",
+		"Text_Korean": "8성 방어구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "208",
+		"Text_English": "You can choose one of the eight-star accessories.",
+		"Text_Korean": "8성 장신구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "209",
+		"Text_English": "You can choose one of the eight-star growth ornaments.",
+		"Text_Korean": "8성 성장의 장신구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "210",
+		"Text_English": "You can choose one of the eight-star duel ornaments.",
+		"Text_Korean": "8성 결투의 장신구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "211",
+		"Text_English": "You can choose one of the nine-star heavenly weapons.",
+		"Text_Korean": "9성 천상의 무기 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "212",
+		"Text_English": "You can choose one of the nine-star heavenly defenses.",
+		"Text_Korean": "9성 천상의 방어구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "213",
+		"Text_English": "You can choose one of the nine-star heavenly ornaments.",
+		"Text_Korean": "9성 천상의 장신구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "214",
+		"Text_English": "You can choose one of the nine-star growth ornaments.",
+		"Text_Korean": "9성 성장의 장신구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "215",
+		"Text_English": "You can choose one of the accessories of the nine-star duel.",
+		"Text_Korean": "9성 결투의 장신구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "216",
+		"Text_English": "You can choose one of the nine-star weapons.",
+		"Text_Korean": "9성 무기 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "217",
+		"Text_English": "You can choose one of the nine-star defenses.",
+		"Text_Korean": "9성 방어구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "218",
+		"Text_English": "You can choose one of the nine-star accessories.",
+		"Text_Korean": "9성 장신구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "219",
+		"Text_English": "You can use it to change the name.",
+		"Text_Korean": "사용하면 이름을 변경할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "220",
+		"Text_English": "You can choose one of the New Year's costume weapons.",
+		"Text_Korean": "새해의 코스튬 무기 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "221",
+		"Text_English": "You can choose one of the New Year's costume hats.",
+		"Text_Korean": "새해의 코스튬 모자 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "222",
+		"Text_English": "You can choose one of the costumes for the New Year.",
+		"Text_Korean": "새해의 코스튬 의상 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "223",
+		"Text_English": "You can choose one of the worst costume weapons.",
+		"Text_Korean": "혹한의 코스튬 무기 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "224",
+		"Text_English": "You can choose one of the worst-ever costume hats.",
+		"Text_Korean": "혹한의 코스튬 모자 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "225",
+		"Text_English": "You can choose one of the costumes in the freezing cold.",
+		"Text_Korean": "혹한의 코스튬 의상 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "226",
+		"Text_English": "You can choose one of the costume weapons of corruption.",
+		"Text_Korean": "타락의 코스튬 무기 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "227",
+		"Text_English": "You can choose one of the depraved costume hats.",
+		"Text_Korean": "타락의 코스튬 모자 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "228",
+		"Text_English": "You can choose one of the costumes of corruption.",
+		"Text_Korean": "타락의 코스튬 의상 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "231",
+		"Text_English": "You can choose one of the seven-star 1 tier ethers.",
+		"Text_Korean": "7성 1티어 에테르 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "232",
+		"Text_English": "You can choose one of the seven-star two-tier ethers.",
+		"Text_Korean": "7성 2티어 에테르 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "233",
+		"Text_English": "You can choose one of the seven-star three-tier ethers.",
+		"Text_Korean": "7성 3티어 에테르 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "234",
+		"Text_English": "You can choose one of the seven-star four-tier ethers.",
+		"Text_Korean": "7성 4티어 에테르 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "235",
+		"Text_English": "You can choose one of the costume weapons on the beach.",
+		"Text_Korean": "해변의 코스튬 무기 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "236",
+		"Text_English": "You can choose one of the beach costume hats.",
+		"Text_Korean": "해변의 코스튬 모자 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "237",
+		"Text_English": "You can choose one of the costumes on the beach.",
+		"Text_Korean": "해변의 코스튬 의상 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "238",
+		"Text_English": "This item is necessary for totem smelting.",
+		"Text_Korean": "토템 제련에 필요한 아이템입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "239",
+		"Text_English": "Get one totem of normal grade.",
+		"Text_Korean": "일반 등급의 토템 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "240",
+		"Text_English": "Get a magic grade totem.",
+		"Text_Korean": "마법 등급의 토템 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "241",
+		"Text_English": "You get a rare totem.",
+		"Text_Korean": "희귀 등급의 토템 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "242",
+		"Text_English": "Win a hero-level totem.",
+		"Text_Korean": "영웅 등급의 토템 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "243",
+		"Text_English": "Get a legendary totem.",
+		"Text_Korean": "전설 등급의 토템 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "244",
+		"Text_English": "You get a totem of relic grade.",
+		"Text_Korean": "유물 등급의 토템 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "245",
+		"Text_English": "It is a mysterious item that increases or decreases the ability value according to smelting.",
+		"Text_Korean": "제련에 따라 능력치를 상승 또는 감소 시키는 신비로운 아이템 입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "246",
+		"Text_English": "It is a mysterious totem that exudes valor.",
+		"Text_Korean": "용맹한 기운을 내뿜는 신비로운 토템입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "247",
+		"Text_English": "It is a mysterious totem that gives off the energy of SUHO.",
+		"Text_Korean": "수호의 기운을 내뿜는 신비로운 토템입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "248",
+		"Text_English": "It is a mysterious totem that exudes vitality.",
+		"Text_Korean": "활력의 기운을 내뿜는 신비로운 토템입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "249",
+		"Text_English": "Acquire a 6-star weapon essence.",
+		"Text_Korean": "6성 무기 정수 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "250",
+		"Text_English": "Acquire a 6-star armor essence.",
+		"Text_Korean": "6성 방어구 정수 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "251",
+		"Text_English": "Acquire a 6-star trinket essence.",
+		"Text_Korean": "6성 장신구 정수 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "252",
+		"Text_English": "Acquire a 7-star weapon essence.",
+		"Text_Korean": "7성 무기 정수 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "253",
+		"Text_English": "Acquire a 7-star armor essence.",
+		"Text_Korean": "7성 방어구 정수 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "254",
+		"Text_English": "Acquire a 7-star trinket essence.",
+		"Text_Korean": "7성 장신구 정수 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "255",
+		"Text_English": "Acquire a 8-star weapon essence.",
+		"Text_Korean": "8성 무기 정수 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "256",
+		"Text_English": "Acquire a 8-star armor essence.",
+		"Text_Korean": "8성 방어구 정수 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "257",
+		"Text_English": "Acquire a 8-star trinket essence.",
+		"Text_Korean": "8성 장신구 정수 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "258",
+		"Text_English": "Acquire a 9-star weapon essence.",
+		"Text_Korean": "9성 무기 정수 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "259",
+		"Text_English": "Acquire a 9-star armor essence.",
+		"Text_Korean": "9성 방어구 정수 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "260",
+		"Text_English": "Acquire a 9-star trinket essence.",
+		"Text_Korean": "9성 장신구 정수 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "346",
+		"Text_English": "Insufficient.",
+		"Text_Korean": "부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "347",
+		"Text_English": "Insufficient gold.",
+		"Text_Korean": "골드가 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "348",
+		"Text_English": "Insufficient gems.",
+		"Text_Korean": "보석이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "349",
+		"Text_English": "It is a material used to strengthen costume weapons.",
+		"Text_Korean": "코스튬 무기 강화에 쓰이는 재료입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "350",
+		"Text_English": "It is a material used to strengthen costume defenses.",
+		"Text_Korean": "코스튬 방어구 강화에 쓰이는 재료입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "351",
+		"Text_English": "You can choose one of the 10 star heavenly weapons.",
+		"Text_Korean": "10성 천상의 무기 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "352",
+		"Text_English": "You can choose one of the 10-star heavenly defenses.",
+		"Text_Korean": "10성 천상의 방어구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "353",
+		"Text_English": "You can choose one of the 10 star heavenly ornaments.",
+		"Text_Korean": "10성 천상의 장신구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "354",
+		"Text_English": "You can choose one of the 10 star growth ornaments.",
+		"Text_Korean": "10성 성장의 장신구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "355",
+		"Text_English": "You can choose one of the 10 star duel ornaments.",
+		"Text_Korean": "10성 결투의 장신구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "356",
+		"Text_English": "You can choose one of the 10 star weapons.",
+		"Text_Korean": "10성 무기 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "357",
+		"Text_English": "You can choose one of the 10-star defenses.",
+		"Text_Korean": "10성 방어구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "358",
+		"Text_English": "You can choose one of the 10 star accessories.",
+		"Text_Korean": "10성 장신구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "359",
+		"Text_English": "You can choose one of the horror costume weapons.",
+		"Text_Korean": "공포의 코스튬 무기 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "360",
+		"Text_English": "You can choose one of the horror costume hats.",
+		"Text_Korean": "공포의 코스튬 모자 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "361",
+		"Text_English": "You can choose one of the costumes of horror.",
+		"Text_Korean": "공포의 코스튬 의상 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10003",
+		"Text_English": "Insufficient achievement points.",
+		"Text_Korean": "업적 달성 점수가 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10004",
+		"Text_English": "Insufficient BP.",
+		"Text_Korean": "영혼검이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10005",
+		"Text_English": "Insufficient weapon enhance stones.",
+		"Text_Korean": "무기 승급석이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10006",
+		"Text_English": "Insufficient armor enhance stones.",
+		"Text_Korean": "방어구 승급석이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10007",
+		"Text_English": "Insufficient trinket enhance stones.",
+		"Text_Korean": "장신구 승급석이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10008",
+		"Text_English": "Insufficient wings upgrade stones.",
+		"Text_Korean": "날개 강화석이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10009",
+		"Text_English": "Insufficient wings evolution stones.",
+		"Text_Korean": "날개 진화석이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10010",
+		"Text_English": "Insufficient wings option upgrade stones.",
+		"Text_Korean": "날개 속성 옵션 강화석이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10011",
+		"Text_English": "Insufficient promotion stones.",
+		"Text_Korean": "진급석이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10012",
+		"Text_English": "Insufficient soul shards.",
+		"Text_Korean": "영웅의 조각이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10013",
+		"Text_English": "Insufficient FP.",
+		"Text_Korean": "우정 포인트가 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10014",
+		"Text_English": "Insufficient enhance stone choice ticket.",
+		"Text_Korean": "승급석 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10015",
+		"Text_English": "Insufficient exp items.",
+		"Text_Korean": "경험치 아이템이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10016",
+		"Text_English": "Insufficient normal weapon raffle ticket.",
+		"Text_Korean": "일반 무기 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10017",
+		"Text_English": "Insufficient normal armor raffle ticket.",
+		"Text_Korean": "일반 방어구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10018",
+		"Text_English": "Insufficient normal trinket raffle ticket.",
+		"Text_Korean": "일반 장신구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10019",
+		"Text_English": "Insufficient normal wizard's weapon raffle ticket.",
+		"Text_Korean": "일반 마법사 무기 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10020",
+		"Text_English": "Insufficient normal assassin's weapon raffle ticket.",
+		"Text_Korean": "일반 암살자 무기 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10021",
+		"Text_English": "Insufficient normal fighter's weapon raffle ticket.",
+		"Text_Korean": "일반 격투가 무기 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10022",
+		"Text_English": "Insufficient normal gladiator's weapon raffle ticket.",
+		"Text_Korean": "일반 검투사 무기 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10023",
+		"Text_English": "Insufficient normal wizard's armor raffle ticket.",
+		"Text_Korean": "일반 마법사 방어구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10024",
+		"Text_English": "Insufficient normal assassin's armor raffle ticket.",
+		"Text_Korean": "일반 암살자 방어구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10025",
+		"Text_English": "Insufficient normal fighter's armor raffle ticket.",
+		"Text_Korean": "일반 격투가 방어구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10026",
+		"Text_English": "Insufficient normal gladiator's armor raffle ticket.",
+		"Text_Korean": "일반 검투사 무기 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10027",
+		"Text_English": "Insufficient normal wizard's trinket raffle ticket.",
+		"Text_Korean": "일반 마법사 장신구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10028",
+		"Text_English": "Insufficient normal assassin's trinket raffle ticket.",
+		"Text_Korean": "일반 암살자 장신구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10029",
+		"Text_English": "Insufficient normal fighter's trinket raffle ticket.",
+		"Text_Korean": "일반 격투가 장신구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10030",
+		"Text_English": "Insufficient normal gladiator's trinket raffle ticket.",
+		"Text_Korean": "일반 검투사 장신구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10031",
+		"Text_English": "Insufficient special weapon raffle ticket.",
+		"Text_Korean": "스페셜 무기 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10032",
+		"Text_English": "Insufficient special armor raffle ticket.",
+		"Text_Korean": "스페셜 방어구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10033",
+		"Text_English": "Insufficient special trinket raffle ticket.",
+		"Text_Korean": "스페셜 장신구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10034",
+		"Text_English": "Insufficient special wizard's weapon raffle ticket.",
+		"Text_Korean": "스페셜 마법사 무기 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10035",
+		"Text_English": "Insufficient special assassin's weapon raffle ticket.",
+		"Text_Korean": "스페셜 암살자 무기 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10036",
+		"Text_English": "Insufficient special fighter's weapon raffle ticket.",
+		"Text_Korean": "스페셜 격투가 무기 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10037",
+		"Text_English": "Insufficient special gladiator's weapon raffle ticket.",
+		"Text_Korean": "스페셜 검투사 무기 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10038",
+		"Text_English": "Insufficient special wizard's armor raffle ticket.",
+		"Text_Korean": "스페셜 마법사 방어구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10039",
+		"Text_English": "Insufficient special assassin's armor raffle ticket.",
+		"Text_Korean": "스페셜 암살자 방어구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10040",
+		"Text_English": "Insufficient special fighter's armor raffle ticket.",
+		"Text_Korean": "스페셜 격투가 방어구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10041",
+		"Text_English": "Insufficient special gladiator's armor raffle ticket.",
+		"Text_Korean": "스페셜 검투사 방어구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10042",
+		"Text_English": "Insufficient special wizard's trinket raffle ticket.",
+		"Text_Korean": "스페셜 마법사 장신구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10043",
+		"Text_English": "Insufficient special assassin's trinket raffle ticket.",
+		"Text_Korean": "스페셜 암살자 장신구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10044",
+		"Text_English": "Insufficient special fighter's trinket raffle ticket.",
+		"Text_Korean": "스페셜 격투가 장신구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10045",
+		"Text_English": "Insufficient special gladiator's trinket raffle ticket.",
+		"Text_Korean": "스페셜 검투사 장신구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10046",
+		"Text_English": "Insufficient premium weapon raffle ticket.",
+		"Text_Korean": "프리미엄 무기 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10047",
+		"Text_English": "Insufficient premium armor raffle ticket.",
+		"Text_Korean": "프리미엄 방어구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10048",
+		"Text_English": "Insufficient premium trinket raffle ticket.",
+		"Text_Korean": "프리미엄 장신구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10049",
+		"Text_English": "Insufficient premium wizard's weapon raffle ticket.",
+		"Text_Korean": "프리미엄 마법사 무기 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10050",
+		"Text_English": "Insufficient premium assassin's weapon raffle ticket.",
+		"Text_Korean": "프리미엄 암살자 무기 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10051",
+		"Text_English": "Insufficient premium fighter's weapon raffle ticket.",
+		"Text_Korean": "프리미엄 격투가 무기 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10052",
+		"Text_English": "Insufficient premium gladiator's weapon raffle ticket.",
+		"Text_Korean": "프리미엄 검투사 무기 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10053",
+		"Text_English": "Insufficient premium wizard's armor raffle ticket.",
+		"Text_Korean": "프리미엄 마법사 방어구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10054",
+		"Text_English": "Insufficient premium assassin's armor raffle ticket.",
+		"Text_Korean": "프리미엄 암살자 방어구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10055",
+		"Text_English": "Insufficient premium fighter's armor raffle ticket.",
+		"Text_Korean": "프리미엄 격투가 방어구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10056",
+		"Text_English": "Insufficient premium gladiator's armor raffle ticket.",
+		"Text_Korean": "프리미엄 검투사 방어구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10057",
+		"Text_English": "Insufficient premium wizard's trinket raffle ticket.",
+		"Text_Korean": "프리미엄 마법사 장신구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10058",
+		"Text_English": "Insufficient premium assassin's trinket raffle ticket.",
+		"Text_Korean": "프리미엄 암살자 장신구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10059",
+		"Text_English": "Insufficient premium fighter's trinket raffle ticket.",
+		"Text_Korean": "프리미엄 격투가 장신구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10060",
+		"Text_English": "Insufficient premium gladiator's trinket raffle ticket.",
+		"Text_Korean": "프리미엄 검투사 장신구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10061",
+		"Text_English": "Insufficient signature weapon raffle ticket.",
+		"Text_Korean": "시그니처 무기 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10062",
+		"Text_English": "Insufficient signature armor raffle ticket.",
+		"Text_Korean": "시그니처 방어구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10063",
+		"Text_English": "Insufficient signature trinket raffle ticket.",
+		"Text_Korean": "시그니처 장신구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10064",
+		"Text_English": "Insufficient signature wizard's weapon raffle ticket.",
+		"Text_Korean": "시그니처 마법사 무기 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10065",
+		"Text_English": "Insufficient signature assassin's weapon raffle ticket.",
+		"Text_Korean": "시그니처 암살자 무기 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10066",
+		"Text_English": "Insufficient signature fighter's weapon raffle ticket.",
+		"Text_Korean": "시그니처 격투가 무기 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10067",
+		"Text_English": "Insufficient signature gladiator's weapon raffle ticket.",
+		"Text_Korean": "시그니처 검투사 무기 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10068",
+		"Text_English": "Insufficient signature wizard's armor raffle ticket.",
+		"Text_Korean": "시그니처 마법사 방어구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10069",
+		"Text_English": "Insufficient signature assassin's armor raffle ticket.",
+		"Text_Korean": "시그니처 암살자 방어구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10070",
+		"Text_English": "Insufficient signature fighter's armor raffle ticket.",
+		"Text_Korean": "시그니처 격투가 방어구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10071",
+		"Text_English": "Insufficient signature gladiator's armor raffle ticket.",
+		"Text_Korean": "시그니처 검투사 방어구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10072",
+		"Text_English": "Insufficient signature wizard's trinket raffle ticket.",
+		"Text_Korean": "시그니처 마법사 장신구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10073",
+		"Text_English": "Insufficient signature assassin's trinket raffle ticket.",
+		"Text_Korean": "시그니처 암살자 장신구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10074",
+		"Text_English": "Insufficient signature fighter's trinket raffle ticket.",
+		"Text_Korean": "시그니처 격투가 장신구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10075",
+		"Text_English": "Insufficient signature gladiator's trinket raffle ticket.",
+		"Text_Korean": "시그니처 검투사 장신구 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10076",
+		"Text_English": "Insufficient gladiator's 4-star weapon choice raffle ticket.",
+		"Text_Korean": "4성 검투사 무기 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10077",
+		"Text_English": "Insufficient gladiator's 4-star armor choice raffle ticket.",
+		"Text_Korean": "4성 검투사 방어구 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10078",
+		"Text_English": "Insufficient gladiator's 4-star trinket choice raffle ticket.",
+		"Text_Korean": "4성 검투사 장신구 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10079",
+		"Text_English": "Insufficient assassin's 4-star weapon choice raffle ticket.",
+		"Text_Korean": "4성 암살자 무기 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10080",
+		"Text_English": "Insufficient assassin's 4-star armor choice raffle ticket.",
+		"Text_Korean": "4성 암살자 방어구 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10081",
+		"Text_English": "Insufficient assassin's 4-star trinket choice raffle ticket.",
+		"Text_Korean": "4성 암살자 장신구 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10082",
+		"Text_English": "Insufficient wizard's 4-star weapon choice raffle ticket.",
+		"Text_Korean": "4성 마법사 무기 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10083",
+		"Text_English": "Insufficient wizard's 4-star armor choice raffle ticket.",
+		"Text_Korean": "4성 마법사 방어구 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10084",
+		"Text_English": "Insufficient wizard's 4-star trinket choice raffle ticket.",
+		"Text_Korean": "4성 마법사 장신구 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10085",
+		"Text_English": "Insufficient fighter's 4-star weapon choice raffle ticket.",
+		"Text_Korean": "4성 격투가 무기 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10086",
+		"Text_English": "Insufficient fighter's 4-star armor choice raffle ticket.",
+		"Text_Korean": "4성 격투가 방어구 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10087",
+		"Text_English": "Insufficient fighter's 4-star trinket choice raffle ticket.",
+		"Text_Korean": "4성 격투가 장신구 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10088",
+		"Text_English": "Insufficient gladiator's 5-star weapon choice raffle ticket.",
+		"Text_Korean": "5성 검투사 무기 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10089",
+		"Text_English": "Insufficient gladiator's 5-star armor choice raffle ticket.",
+		"Text_Korean": "5성 검투사 방어구 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10090",
+		"Text_English": "Insufficient gladiator's 5-star trinket choice raffle ticket.",
+		"Text_Korean": "5성 검투사 장신구 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10091",
+		"Text_English": "Insufficient assassin's 5-star weapon choice raffle ticket.",
+		"Text_Korean": "5성 암살자 무기 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10092",
+		"Text_English": "Insufficient assassin's 5-star armor choice raffle ticket.",
+		"Text_Korean": "5성 암살자 방어구 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10093",
+		"Text_English": "Insufficient assassin's 5-star trinket choice raffle ticket.",
+		"Text_Korean": "5성 암살자 장신구 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10094",
+		"Text_English": "Insufficient wizard's 5-star weapon choice raffle ticket.",
+		"Text_Korean": "5성 마법사 무기 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10095",
+		"Text_English": "Insufficient wizard's 5-star armor choice raffle ticket.",
+		"Text_Korean": "5성 마법사 방어구 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10096",
+		"Text_English": "Insufficient wizard's 5-star trinket choice raffle ticket.",
+		"Text_Korean": "5성 마법사 장신구 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10097",
+		"Text_English": "Insufficient fighter's 5-star weapon choice raffle ticket.",
+		"Text_Korean": "5성 격투가 무기 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10098",
+		"Text_English": "Insufficient fighter's 5-star armor choice raffle ticket.",
+		"Text_Korean": "5성 격투가 방어구 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10099",
+		"Text_English": "Insufficient fighter's 5-star trinket choice raffle ticket.",
+		"Text_Korean": "5성 격투가 장신구 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10100",
+		"Text_English": "Insufficient gladiator's 6-star weapon choice raffle ticket.",
+		"Text_Korean": "6성 검투사 무기 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10101",
+		"Text_English": "Insufficient gladiator's 6-star armor choice raffle ticket.",
+		"Text_Korean": "6성 검투사 방어구 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10102",
+		"Text_English": "Insufficient gladiator's 6-star trinket choice raffle ticket.",
+		"Text_Korean": "6성 검투사 장신구 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10103",
+		"Text_English": "Insufficient assassin's 6-star weapon choice raffle ticket.",
+		"Text_Korean": "6성 암살자 무기 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10104",
+		"Text_English": "Insufficient assassin's 6-star armor choice raffle ticket.",
+		"Text_Korean": "6성 암살자 방어구 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10105",
+		"Text_English": "Insufficient assassin's 6-star trinket choice raffle ticket.",
+		"Text_Korean": "6성 암살자 장신구 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10106",
+		"Text_English": "Insufficient wizard's 6-star weapon choice raffle ticket.",
+		"Text_Korean": "6성 마법사 무기 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10107",
+		"Text_English": "Insufficient wizard's 6-star armor choice raffle ticket.",
+		"Text_Korean": "6성 마법사 방어구 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10108",
+		"Text_English": "Insufficient wizard's 6-star trinket choice raffle ticket.",
+		"Text_Korean": "6성 마법사 장신구 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10109",
+		"Text_English": "Insufficient fighter's 6-star weapon choice raffle ticket.",
+		"Text_Korean": "6성 격투가 무기 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10110",
+		"Text_English": "Insufficient fighter's 6-star armor choice raffle ticket.",
+		"Text_Korean": "6성 격투가 방어구 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10111",
+		"Text_English": "Insufficient fighter's 6-star trinket choice raffle ticket.",
+		"Text_Korean": "6성 격투가 장신구 선택 뽑기권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10112",
+		"Text_English": "Insufficient dark crystals.",
+		"Text_Korean": "다크크리스탈이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10113",
+		"Text_English": "Insufficient weapon upgrade scrolls.",
+		"Text_Korean": "무기 강화서가 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10114",
+		"Text_English": "Insufficient armor upgrade scrolls.",
+		"Text_Korean": "방어구 강화서가 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10115",
+		"Text_English": "Insufficient trinket upgrade scrolls.",
+		"Text_Korean": "장신구 강화서가 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10116",
+		"Text_English": "Insufficient shards.",
+		"Text_Korean": "조각이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10117",
+		"Text_English": "Insufficient ether shards.",
+		"Text_Korean": "에테르 조각이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10118",
+		"Text_English": "Adventure ticket is Insufficient.",
+		"Text_Korean": "3배 모험권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10119",
+		"Text_English": "I'm short of hero coins.",
+		"Text_Korean": "영웅 주화가 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10120",
+		"Text_English": "There is a lack of light that does not go out.",
+		"Text_Korean": "꺼지지 않는 빛이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10121",
+		"Text_English": "",
+		"Text_Korean": "모험 소탕권이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10122",
+		"Text_English": "",
+		"Text_Korean": "차원의 균열 조각이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10123",
+		"Text_English": "",
+		"Text_Korean": "마법의 광물이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10124",
+		"Text_English": "",
+		"Text_Korean": "마법의 실타래가 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100000",
+		"Text_English": "Purchase available.",
+		"Text_Korean": "구매가능합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100001",
+		"Text_English": "Can purchase from store.",
+		"Text_Korean": "상점에서 구매할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100002",
+		"Text_English": "Acquire by completing achievements.",
+		"Text_Korean": "업적 달성으로 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100003",
+		"Text_English": "Acquire from counter dungeons.",
+		"Text_Korean": "반격 던전에서 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100004",
+		"Text_English": "Acquire from guild matches.",
+		"Text_Korean": "길드전에서 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100005",
+		"Text_English": "Acquire from PvP matches.",
+		"Text_Korean": "일대일 대전에서 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100006",
+		"Text_English": "Acquire from hero's tower",
+		"Text_Korean": "영웅의 탑에서 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100007",
+		"Text_English": "Acquire by friendship activities.",
+		"Text_Korean": "친구와의 교류를 통해 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100008",
+		"Text_English": "Acquire from battles.",
+		"Text_Korean": "모험에서 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100009",
+		"Text_English": "Acquire from team control victory reward.",
+		"Text_Korean": "점령전 승리 보상으로 획득 가능합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100010",
+		"Text_English": "Acquire from team control MVP reward.",
+		"Text_Korean": "점령전 MVP 보상으로 획득 가능합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100011",
+		"Text_English": "Acquire from normal mode stage 10 battle.",
+		"Text_Korean": "모험 일반 1-10 스테이지에서 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100012",
+		"Text_English": "Acquire from hard mode stage 10 battle.",
+		"Text_Korean": "모험 정예 1-10 스테이지에서 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100013",
+		"Text_English": "Acquire from nightmare mode stage 10 battle.",
+		"Text_Korean": "모험 악몽 1-10 스테이지에서 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100014",
+		"Text_English": "Acquire from normal mode stage 20 battle.",
+		"Text_Korean": "모험 일반 2-10 스테이지에서 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100015",
+		"Text_English": "Acquire from hard mode stage 20 battle.",
+		"Text_Korean": "모험 정예 2-10 스테이지에서 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100016",
+		"Text_English": "Acquire from nightmare mode stage 20 battle.",
+		"Text_Korean": "모험 악몽 2-10 스테이지에서 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100017",
+		"Text_English": "Acquire from normal mode stage 30 battle.",
+		"Text_Korean": "모험 일반 3-10 스테이지에서 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100018",
+		"Text_English": "Acquire from hard mode stage 30 battle.",
+		"Text_Korean": "모험 정예 3-10 스테이지에서 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100019",
+		"Text_English": "Acquire from nightmare mode stage 30 battle.",
+		"Text_Korean": "모험 악몽 3-10 스테이지에서 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100020",
+		"Text_English": "Acquire from normal mode stage 40 battle.",
+		"Text_Korean": "모험 일반 4-10 스테이지에서 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100021",
+		"Text_English": "Acquire from hard mode stage 40 battle.",
+		"Text_Korean": "모험 정예 4-10 스테이지에서 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100022",
+		"Text_English": "Acquire from nightmare mode stage 40 battle.",
+		"Text_Korean": "모험 악몽 4-10 스테이지에서 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100023",
+		"Text_English": "Acquire from normal mode stage 50 battle.",
+		"Text_Korean": "모험 일반 5-10 스테이지에서 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100024",
+		"Text_English": "Acquire from hard mode stage 50 battle.",
+		"Text_Korean": "모험 정예 5-10 스테이지에서 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100025",
+		"Text_English": "Acquire from nightmare mode stage 50 battle.",
+		"Text_Korean": "모험 악몽 5-10 스테이지에서 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100026",
+		"Text_English": "Acquire from team matche.",
+		"Text_Korean": "팀 대전에서 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100027",
+		"Text_English": "",
+		"Text_Korean": "모험 지옥 1-10 스테이지에서 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100028",
+		"Text_English": "",
+		"Text_Korean": "모험 지옥 2-10 스테이지에서 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100029",
+		"Text_English": "",
+		"Text_Korean": "모험 지옥 3-10 스테이지에서 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100030",
+		"Text_English": "",
+		"Text_Korean": "모험 지옥 4-10 스테이지에서 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100031",
+		"Text_English": "",
+		"Text_Korean": "모험 지옥 5-10 스테이지에서 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100032",
+		"Text_English": "",
+		"Text_Korean": "영웅의 전당에서 경배 시 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100033",
+		"Text_English": "",
+		"Text_Korean": "레이드에서 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100034",
+		"Text_English": "",
+		"Text_Korean": "모험 일반 6-10 스테이지에서 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100035",
+		"Text_English": "",
+		"Text_Korean": "모험 정예 6-10 스테이지에서 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100036",
+		"Text_English": "",
+		"Text_Korean": "모험 악몽 6-10 스테이지에서 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100037",
+		"Text_English": "",
+		"Text_Korean": "모험 지옥 6-10 스테이지에서 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100038",
+		"Text_English": "",
+		"Text_Korean": "장비 분해 시 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100039",
+		"Text_English": "",
+		"Text_Korean": "차원의 균열에서 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "100040",
+		"Text_English": "",
+		"Text_Korean": "코스튬 분해로 획득할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10000",
+		"Text_English": "Insufficient.",
+		"Text_Korean": "부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10001",
+		"Text_English": "Insufficient gold.",
+		"Text_Korean": "골드가 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10002",
+		"Text_English": "Insufficient gems.",
+		"Text_Korean": "보석이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "362",
+		"Text_English": "",
+		"Text_Korean": "천상의 무기 황금 모루 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "363",
+		"Text_English": "",
+		"Text_Korean": "천상의 방어구 황금 모루 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "364",
+		"Text_English": "",
+		"Text_Korean": "천상의 장신구 황금 모루 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "365",
+		"Text_English": "",
+		"Text_Korean": "11성 무기 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "366",
+		"Text_English": "",
+		"Text_Korean": "11성 방어구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "367",
+		"Text_English": "",
+		"Text_Korean": "11성 장신구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "368",
+		"Text_English": "",
+		"Text_Korean": "11성 천상의 무기 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "369",
+		"Text_English": "",
+		"Text_Korean": "11성 천상의 방어구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "370",
+		"Text_English": "",
+		"Text_Korean": "11성 천상의 장신구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "371",
+		"Text_English": "",
+		"Text_Korean": "11성 성장의 장신구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "372",
+		"Text_English": "",
+		"Text_Korean": "11성 결투의 장신구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "380",
+		"Text_English": "",
+		"Text_Korean": "11성 영원의 장신구 중 하나를 선택할 수 있습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "381",
+		"Text_English": "",
+		"Text_Korean": "9성 신성한 무기 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "382",
+		"Text_English": "",
+		"Text_Korean": "9성 신성한 방어구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "383",
+		"Text_English": "",
+		"Text_Korean": "9성 신성한 장신구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "384",
+		"Text_English": "",
+		"Text_Korean": "8성 신성한 무기 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "385",
+		"Text_English": "",
+		"Text_Korean": "8성 신성한 방어구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "386",
+		"Text_English": "",
+		"Text_Korean": "8성 신성한 장신구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "387",
+		"Text_English": "",
+		"Text_Korean": "9성 신성한 무기 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "388",
+		"Text_English": "",
+		"Text_Korean": "9성 신성한 방어구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "389",
+		"Text_English": "",
+		"Text_Korean": "9성 신성한 장신구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "390",
+		"Text_English": "",
+		"Text_Korean": "10성 신성한 무기 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "391",
+		"Text_English": "",
+		"Text_Korean": "10성 신성한 방어구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "392",
+		"Text_English": "",
+		"Text_Korean": "10성 신성한 장신구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "393",
+		"Text_English": "",
+		"Text_Korean": "11성 신성한 무기 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "394",
+		"Text_English": "",
+		"Text_Korean": "11성 신성한 방어구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "395",
+		"Text_English": "",
+		"Text_Korean": "11성 신성한 장신구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "373",
+		"Text_English": "",
+		"Text_Korean": "10성 이상 무기를 한 단계 높은 등급으로 변환시킬 때 사용됩니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "374",
+		"Text_English": "",
+		"Text_Korean": "10성 이상 방어구를 한 단계 높은 등급으로 변환시킬 때 사용됩니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "375",
+		"Text_English": "",
+		"Text_Korean": "10성 이상 장신구를 한 단계 높은 등급으로 변환시킬 때 사용됩니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10125",
+		"Text_English": "",
+		"Text_Korean": "고급 무기 승급석이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10126",
+		"Text_English": "",
+		"Text_Korean": "고급 방어구 승급석이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10127",
+		"Text_English": "",
+		"Text_Korean": "고급 장신구 승급석이 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "376",
+		"Text_English": "",
+		"Text_Korean": "고급 승급석을 선택할 수 있는 아이템입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "377",
+		"Text_English": "",
+		"Text_Korean": "4~10성 무기 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "378",
+		"Text_English": "",
+		"Text_Korean": "4~10성 방어구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "379",
+		"Text_English": "",
+		"Text_Korean": "4~10성 장신구 중 하나를 획득합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "396",
+		"Text_English": "",
+		"Text_Korean": "품질 변경에 사용되는 강철 망치, 품질이 일반 ~ 최상급으로 변경됩니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "397",
+		"Text_English": "",
+		"Text_Korean": "품질 변경에 사용되는 빛나는 강철 망치, 품질이 최상급으로 변경됩니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "398",
+		"Text_English": "",
+		"Text_Korean": "품질 변경에 사용되는 백금 망치, 품질이 최상급 ~ 특급으로 변경됩니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "399",
+		"Text_English": "",
+		"Text_Korean": "품질 변경에 사용되는 빛나는 백금 망치, 품질이 특급으로 변경됩니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10128",
+		"Text_English": "",
+		"Text_Korean": "강철 망치가 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10129",
+		"Text_English": "",
+		"Text_Korean": "빛나는 강철 망치가 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10130",
+		"Text_English": "",
+		"Text_Korean": "백금 망치가 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "10131",
+		"Text_English": "",
+		"Text_Korean": "빛나는 백금 망치가 부족합니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "400",
+		"Text_English": "",
+		"Text_Korean": "아이템 제작, 업그레이드에 사용되는 하급 재료 아이템입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "401",
+		"Text_English": "",
+		"Text_Korean": "아이템 제작, 업그레이드에 사용되는 중급 재료 아이템입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "402",
+		"Text_English": "",
+		"Text_Korean": "아이템 제작, 업그레이드에 사용되는 상급 재료 아이템입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "403",
+		"Text_English": "",
+		"Text_Korean": "영원의 심판자 장비 업그레이드에 사용되는 아이템입니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "404",
+		"Text_English": "",
+		"Text_Korean": "11성 영원의 무기 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "405",
+		"Text_English": "",
+		"Text_Korean": "11성 영원의 방어구 중 하나를 선택할 수 있습니다. ",
+		"Text_Other": ""
+	}
+]

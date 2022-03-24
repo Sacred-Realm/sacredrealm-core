@@ -1,0 +1,230 @@
+[
+	{
+		"Name": "Weapon_0",
+		"Text_English": "Attack Speed, Critical Hit Probability, Critical Damage Balance Development",
+		"Text_Korean": "고대 왕들의 위엄이 깃든 신성한 무기",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Weapon_1",
+		"Text_English": "Critical Probability Specialization",
+		"Text_Korean": "미지의 마력이 봉인된 신비의 무기",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Weapon_2",
+		"Text_English": "Critical Damage Specialization",
+		"Text_Korean": "브로크의 집념으로 제련된 강철의 무기",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Weapon_3",
+		"Text_English": "Specialized attack speed",
+		"Text_Korean": "악령의 기운이 서린 침묵의 무기",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Weapon_10",
+		"Text_English": "Flaming",
+		"Text_Korean": "불타는",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Weapon_11",
+		"Text_English": "Soul",
+		"Text_Korean": "영혼의",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Armor_0",
+		"Text_English": "Increased critical chance",
+		"Text_Korean": "고대 왕들의 위엄이 깃든 신성한 방어구",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Armor_1",
+		"Text_English": "Increased physical strength",
+		"Text_Korean": "미지의 마력이 봉인된 신비의 방어구",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Armor_2",
+		"Text_English": "Reduced skill cooldown time",
+		"Text_Korean": "브로크의 집념으로 제련된 강철의 방어구",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Armor_3",
+		"Text_English": "Local damage reduction",
+		"Text_Korean": "악령의 기운이 서린 침묵의 방어구",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Armor_10",
+		"Text_English": "Boss damage reduction",
+		"Text_Korean": "보스 피해량 감소",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Armor_11",
+		"Text_English": "Critical Probability Resistance",
+		"Text_Korean": "치명타 확률 저항",
+		"Text_Other": ""
+	},
+	{
+		"Name": "PreWeapon_1",
+		"Text_English": "Attack Speed, Critical Hit Probability, Critical Damage Balance Development",
+		"Text_Korean": "고대 왕들의 위엄이 깃든 신성한 무기",
+		"Text_Other": ""
+	},
+	{
+		"Name": "PreWeapon_2",
+		"Text_English": "Critical Probability Specialization",
+		"Text_Korean": "미지의 마력이 봉인된 신비의 무기",
+		"Text_Other": ""
+	},
+	{
+		"Name": "PreWeapon_3",
+		"Text_English": "Critical Damage Specialization",
+		"Text_Korean": "브로크의 집념으로 제련된 강철의 무기",
+		"Text_Other": ""
+	},
+	{
+		"Name": "PreWeapon_4",
+		"Text_English": "Specialized attack speed",
+		"Text_Korean": "악령의 기운이 서린 침묵의 무기",
+		"Text_Other": ""
+	},
+	{
+		"Name": "PreArmor_1",
+		"Text_English": "Increased critical chance",
+		"Text_Korean": "고대 왕들의 위엄이 깃든 신성한 방어구",
+		"Text_Other": ""
+	},
+	{
+		"Name": "PreArmor_2",
+		"Text_English": "Increased HP strength",
+		"Text_Korean": "미지의 마력이 봉인된 신비의 방어구",
+		"Text_Other": ""
+	},
+	{
+		"Name": "PreArmor_3",
+		"Text_English": "Reduced skill cooldown time",
+		"Text_Korean": "브로크의 집념으로 제련된 강철의 방어구",
+		"Text_Other": ""
+	},
+	{
+		"Name": "PreArmor_4",
+		"Text_English": "Local damage reduction",
+		"Text_Korean": "악령의 기운이 서린 침묵의 방어구",
+		"Text_Other": ""
+	},
+	{
+		"Name": "PreArmor_5",
+		"Text_English": "Boss damage reduction",
+		"Text_Korean": "보스 피해량 감소",
+		"Text_Other": ""
+	},
+	{
+		"Name": "PreArmor_6",
+		"Text_English": "Critical Probability Resistance",
+		"Text_Korean": "치명타 확률 저항",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Prefix_0",
+		"Text_English": "Scared",
+		"Text_Korean": "신성한",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Prefix_1",
+		"Text_English": "Mysteries",
+		"Text_Korean": "신비의",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Prefix_2",
+		"Text_English": "Iron",
+		"Text_Korean": "강철의",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Prefix_3",
+		"Text_English": "Silence",
+		"Text_Korean": "침묵의",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Prefix_4",
+		"Text_English": "",
+		"Text_Korean": "성장의",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Prefix_5",
+		"Text_English": "",
+		"Text_Korean": "결투의",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Prefix_6",
+		"Text_English": "",
+		"Text_Korean": "천상의",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Prefix_7",
+		"Text_English": "Eternal",
+		"Text_Korean": "영원의",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Prefix_10",
+		"Text_English": "",
+		"Text_Korean": "혹한의",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Prefix_11",
+		"Text_English": "",
+		"Text_Korean": "타락의",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Prefix_12",
+		"Text_English": "",
+		"Text_Korean": "태양의",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Prefix_13",
+		"Text_English": "",
+		"Text_Korean": "해변의",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Prefix_14",
+		"Text_English": "",
+		"Text_Korean": "면학의",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Prefix_15",
+		"Text_English": "",
+		"Text_Korean": "성탄의",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Prefix_16",
+		"Text_English": "",
+		"Text_Korean": "새해의",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Prefix_17",
+		"Text_English": "",
+		"Text_Korean": "공포의",
+		"Text_Other": ""
+	}
+]

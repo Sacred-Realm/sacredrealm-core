@@ -1,0 +1,728 @@
+[
+	{
+		"Name": "LimitType_Unlimitted",
+		"Text_English": "",
+		"Text_Korean": "제작 횟수 : ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "LimitType_UnlimittedCount",
+		"Text_English": "",
+		"Text_Korean": "무제한",
+		"Text_Other": ""
+	},
+	{
+		"Name": "LimitType_Success_Day",
+		"Text_English": "",
+		"Text_Korean": "일일 제작 횟수 : ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "LimitType_Try_Day",
+		"Text_English": "",
+		"Text_Korean": "일일 시도 횟수 : ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "LimitType_Success_Week",
+		"Text_English": "",
+		"Text_Korean": "주간 제작 횟수 : ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "LimitType_Try_Week",
+		"Text_English": "",
+		"Text_Korean": "주간 시도 횟수 : ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "LimitType_Success_Month",
+		"Text_English": "",
+		"Text_Korean": "월간 제작 횟수 : ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "LimitType_Try_Month",
+		"Text_English": "",
+		"Text_Korean": "월간 시도 횟수 : ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "LimitType_Success_Once",
+		"Text_English": "",
+		"Text_Korean": "제작 횟수 : ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "LimitType_Try_Once",
+		"Text_English": "",
+		"Text_Korean": "시도 횟수 : ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "IngredientTitle_1",
+		"Text_English": "",
+		"Text_Korean": "주 재료",
+		"Text_Other": ""
+	},
+	{
+		"Name": "IngredientTitle_2",
+		"Text_English": "",
+		"Text_Korean": "재료",
+		"Text_Other": ""
+	},
+	{
+		"Name": "TabID_1",
+		"Text_English": "",
+		"Text_Korean": "무기",
+		"Text_Other": ""
+	},
+	{
+		"Name": "TabID_2",
+		"Text_English": "",
+		"Text_Korean": "방어구",
+		"Text_Other": ""
+	},
+	{
+		"Name": "TabID_3",
+		"Text_English": "",
+		"Text_Korean": "장신구",
+		"Text_Other": ""
+	},
+	{
+		"Name": "TabID_4",
+		"Text_English": "",
+		"Text_Korean": "아이템",
+		"Text_Other": ""
+	},
+	{
+		"Name": "TabID_5",
+		"Text_English": "",
+		"Text_Korean": "고급 아이템",
+		"Text_Other": ""
+	},
+	{
+		"Name": "TabID_6",
+		"Text_English": "",
+		"Text_Korean": "기간 제작",
+		"Text_Other": ""
+	},
+	{
+		"Name": "TabID_7",
+		"Text_English": "",
+		"Text_Korean": "이벤트",
+		"Text_Other": ""
+	},
+	{
+		"Name": "GroupID_10001",
+		"Text_English": "",
+		"Text_Korean": "고급 승급석 - 골드소모Ⅰ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "GroupID_10002",
+		"Text_English": "",
+		"Text_Korean": "고급 승급석 - 골드소모Ⅱ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "GroupID_10003",
+		"Text_English": "",
+		"Text_Korean": "고급 승급석 - 골드소모Ⅲ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "GroupID_10004",
+		"Text_English": "",
+		"Text_Korean": "고급 승급석 - 보석소모Ⅰ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "GroupID_10005",
+		"Text_English": "",
+		"Text_Korean": "고급 승급석 - 보석소모Ⅱ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "GroupID_10006",
+		"Text_English": "",
+		"Text_Korean": "고급 승급석 - 보석소모Ⅲ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "GroupID_10007",
+		"Text_English": "",
+		"Text_Korean": "고급 승급석 - 보석소모Ⅳ",
+		"Text_Other": ""
+	},
+	{
+		"Name": "GroupID_10009",
+		"Text_English": "",
+		"Text_Korean": "제작 재료",
+		"Text_Other": ""
+	},
+	{
+		"Name": "GroupID_10010",
+		"Text_English": "",
+		"Text_Korean": "영원의 심판자 업그레이드",
+		"Text_Other": ""
+	},
+	{
+		"Name": "GroupID_10011",
+		"Text_English": "",
+		"Text_Korean": "일일 제작",
+		"Text_Other": ""
+	},
+	{
+		"Name": "GroupID_10012",
+		"Text_English": "",
+		"Text_Korean": "주간 제작",
+		"Text_Other": ""
+	},
+	{
+		"Name": "GroupID_501",
+		"Text_English": "",
+		"Text_Korean": "영원의 심판자",
+		"Text_Other": ""
+	},
+	{
+		"Name": "GroupID_10013",
+		"Text_English": "",
+		"Text_Korean": "월간 제작",
+		"Text_Other": ""
+	},
+	{
+		"Name": "GroupID_10100",
+		"Text_English": "",
+		"Text_Korean": "신성한",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_1",
+		"Text_English": "",
+		"Text_Korean": "고급 무기 승급석",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_2",
+		"Text_English": "",
+		"Text_Korean": "고급 무기 승급석",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_3",
+		"Text_English": "",
+		"Text_Korean": "고급 무기 승급석",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_4",
+		"Text_English": "",
+		"Text_Korean": "고급 무기 승급석",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_5",
+		"Text_English": "",
+		"Text_Korean": "고급 무기 승급석",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_6",
+		"Text_English": "",
+		"Text_Korean": "고급 무기 승급석",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_7",
+		"Text_English": "",
+		"Text_Korean": "고급 방어구 승급석",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_8",
+		"Text_English": "",
+		"Text_Korean": "고급 방어구 승급석",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_9",
+		"Text_English": "",
+		"Text_Korean": "고급 방어구 승급석",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_10",
+		"Text_English": "",
+		"Text_Korean": "고급 방어구 승급석",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_11",
+		"Text_English": "",
+		"Text_Korean": "고급 방어구 승급석",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_12",
+		"Text_English": "",
+		"Text_Korean": "고급 방어구 승급석",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_13",
+		"Text_English": "",
+		"Text_Korean": "고급 장신구 승급석",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_14",
+		"Text_English": "",
+		"Text_Korean": "고급 장신구 승급석",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_15",
+		"Text_English": "",
+		"Text_Korean": "고급 장신구 승급석",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_16",
+		"Text_English": "",
+		"Text_Korean": "고급 장신구 승급석",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_17",
+		"Text_English": "",
+		"Text_Korean": "고급 장신구 승급석",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_18",
+		"Text_English": "",
+		"Text_Korean": "고급 장신구 승급석",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_20",
+		"Text_English": "",
+		"Text_Korean": "고급 무기 승급석",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_21",
+		"Text_English": "",
+		"Text_Korean": "고급 방어구 승급석",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_22",
+		"Text_English": "",
+		"Text_Korean": "고급 장신구 승급석",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_1001",
+		"Text_English": "",
+		"Text_Korean": "붉은 결정 파편",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_1002",
+		"Text_English": "",
+		"Text_Korean": "붉은 결정체 - 골드",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_1003",
+		"Text_English": "",
+		"Text_Korean": "붉은 결정체",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_1004",
+		"Text_English": "",
+		"Text_Korean": "응축된 붉은 결정체",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_1005",
+		"Text_English": "",
+		"Text_Korean": "영원의 결정체(확률)",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_1006",
+		"Text_English": "",
+		"Text_Korean": "고급 무기 강화서",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_1007",
+		"Text_English": "",
+		"Text_Korean": "고급 방어구 강화서",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_1008",
+		"Text_English": "",
+		"Text_Korean": "고급 장신구 강화서",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_1009",
+		"Text_English": "",
+		"Text_Korean": "수호의 결정체",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_10001",
+		"Text_English": "",
+		"Text_Korean": "영원의 심판자 검",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_10002",
+		"Text_English": "",
+		"Text_Korean": "영원의 심판자 투구",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_10003",
+		"Text_English": "",
+		"Text_Korean": "영원의 심판자 갑옷",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_10004",
+		"Text_English": "",
+		"Text_Korean": "영원의 심판자 장갑",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_10005",
+		"Text_English": "",
+		"Text_Korean": "영원의 심판자 신발",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_10006",
+		"Text_English": "",
+		"Text_Korean": "영원의 심판자 단검",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_10007",
+		"Text_English": "",
+		"Text_Korean": "영원의 심판자 투구",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_10008",
+		"Text_English": "",
+		"Text_Korean": "영원의 심판자 갑옷",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_10009",
+		"Text_English": "",
+		"Text_Korean": "영원의 심판자 장갑",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_10010",
+		"Text_English": "",
+		"Text_Korean": "영원의 심판자 신발",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_10011",
+		"Text_English": "",
+		"Text_Korean": "영원의 마법 고리",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_10012",
+		"Text_English": "",
+		"Text_Korean": "영원의 심판자 투구",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_10013",
+		"Text_English": "",
+		"Text_Korean": "영원의 심판자 갑옷",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_10014",
+		"Text_English": "",
+		"Text_Korean": "영원의 심판자 장갑",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_10015",
+		"Text_English": "",
+		"Text_Korean": "영원의 심판자 신발",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_10016",
+		"Text_English": "",
+		"Text_Korean": "영원의 심판자 주먹",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_10017",
+		"Text_English": "",
+		"Text_Korean": "영원의 심판자 투구",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_10018",
+		"Text_English": "",
+		"Text_Korean": "영원의 심판자 갑옷",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_10019",
+		"Text_English": "",
+		"Text_Korean": "영원의 심판자 장갑",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_10020",
+		"Text_English": "",
+		"Text_Korean": "영원의 심판자 신발",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_1000",
+		"Text_English": "",
+		"Text_Korean": "붉은 결정체 - 보석",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_1010",
+		"Text_English": "",
+		"Text_Korean": "강철 망치",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_1011",
+		"Text_English": "",
+		"Text_Korean": "백금 망치",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_2001",
+		"Text_English": "",
+		"Text_Korean": "고급 무기 강화서",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_2002",
+		"Text_English": "",
+		"Text_Korean": "고급 방어구 강화서",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_2003",
+		"Text_English": "",
+		"Text_Korean": "고급 장신구 강화서",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_2004",
+		"Text_English": "",
+		"Text_Korean": "수호의 결정체",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_2005",
+		"Text_English": "",
+		"Text_Korean": "강철 망치",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_2006",
+		"Text_English": "",
+		"Text_Korean": "백금 망치",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_3001",
+		"Text_English": "",
+		"Text_Korean": "고급 무기 강화서",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_3002",
+		"Text_English": "",
+		"Text_Korean": "고급 방어구 강화서",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_3003",
+		"Text_English": "",
+		"Text_Korean": "고급 장신구 강화서",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_3004",
+		"Text_English": "",
+		"Text_Korean": "수호의 결정체",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_3005",
+		"Text_English": "",
+		"Text_Korean": "강철 망치",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_3006",
+		"Text_English": "",
+		"Text_Korean": "백금 망치",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_3007",
+		"Text_English": "",
+		"Text_Korean": "빛나는 강철 망치",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_999",
+		"Text_English": "",
+		"Text_Korean": "붉은 결정체 - 환원",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_998",
+		"Text_English": "",
+		"Text_Korean": "붉은 결정 파편(10)",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_9501",
+		"Text_English": "",
+		"Text_Korean": "신성한 빛의 대검",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_9502",
+		"Text_English": "",
+		"Text_Korean": "신성한 빛의 투구",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_9503",
+		"Text_English": "",
+		"Text_Korean": "신성한 빛의 갑옷",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_9504",
+		"Text_English": "",
+		"Text_Korean": "신성한 빛의 장갑",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_9505",
+		"Text_English": "",
+		"Text_Korean": "신성한 빛의 신발",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_9511",
+		"Text_English": "",
+		"Text_Korean": "신성한 빛의 단검",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_9512",
+		"Text_English": "",
+		"Text_Korean": "신성한 빛의 투구",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_9513",
+		"Text_English": "",
+		"Text_Korean": "신성한 빛의 갑옷",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_9514",
+		"Text_English": "",
+		"Text_Korean": "신성한 빛의 장갑",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_9515",
+		"Text_English": "",
+		"Text_Korean": "신성한 빛의 신발",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_9521",
+		"Text_English": "",
+		"Text_Korean": "신성한 마법 고리",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_9522",
+		"Text_English": "",
+		"Text_Korean": "신성한 빛의 투구",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_9523",
+		"Text_English": "",
+		"Text_Korean": "신성한 빛의 갑옷",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_9524",
+		"Text_English": "",
+		"Text_Korean": "신성한 빛의 장갑",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_9525",
+		"Text_English": "",
+		"Text_Korean": "신성한 빛의 신발",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_9531",
+		"Text_English": "",
+		"Text_Korean": "신성한 빛의 주먹",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_9532",
+		"Text_English": "",
+		"Text_Korean": "신성한 빛의 투구",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_9533",
+		"Text_English": "",
+		"Text_Korean": "신성한 빛의 갑옷",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_9534",
+		"Text_English": "",
+		"Text_Korean": "신성한 빛의 장갑",
+		"Text_Other": ""
+	},
+	{
+		"Name": "FactoryID_9535",
+		"Text_English": "",
+		"Text_Korean": "신성한 빛의 신발",
+		"Text_Other": ""
+	}
+]

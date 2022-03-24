@@ -1,0 +1,14 @@
+[
+	{
+		"Name": "Title_RestPoint",
+		"Text_English": "The resting point is full!",
+		"Text_Korean": "휴식 포인트가 가득 찼습니다.",
+		"Text_Other": ""
+	},
+	{
+		"Name": "Body_RestPoint",
+		"Text_English": "Get Blade II and be rewarded now!",
+		"Text_Korean": "지금 휴식 포인트 보상받으러 고고!!",
+		"Text_Other": ""
+	}
+]

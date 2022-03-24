@@ -1,0 +1,98 @@
+[
+	{
+		"Name": "101",
+		"Text_English": "Use of abnormal programs",
+		"Text_Korean": "비 정상적인 프로그램 사용",
+		"Text_Other": ""
+	},
+	{
+		"Name": "102",
+		"Text_English": "Deliberate obstruction",
+		"Text_Korean": "고의적인 방해 행위",
+		"Text_Other": ""
+	},
+	{
+		"Name": "103",
+		"Text_English": "Bug abuse",
+		"Text_Korean": "버그 악용",
+		"Text_Other": ""
+	},
+	{
+		"Name": "104",
+		"Text_English": "Invincible (no damage)",
+		"Text_Korean": "무적 (대미지가 안들어감)",
+		"Text_Other": ""
+	},
+	{
+		"Name": "105",
+		"Text_English": "Other (enter the contents of the report)",
+		"Text_Korean": "기타 (신고 내용 입력)",
+		"Text_Other": ""
+	},
+	{
+		"Name": "110",
+		"Text_English": "5",
+		"Text_Korean": "5",
+		"Text_Other": ""
+	},
+	{
+		"Name": "201",
+		"Text_English": "Abnormal use of programs",
+		"Text_Korean": "비 정상적인 프로그램 사용",
+		"Text_Other": ""
+	},
+	{
+		"Name": "202",
+		"Text_English": "Deliberate obstruction",
+		"Text_Korean": "고의적인 방해 행위",
+		"Text_Other": ""
+	},
+	{
+		"Name": "203",
+		"Text_English": "Bug abuse",
+		"Text_Korean": "버그 악용",
+		"Text_Other": ""
+	},
+	{
+		"Name": "204",
+		"Text_English": "Other (input report)",
+		"Text_Korean": "기타(신고 입력)",
+		"Text_Other": ""
+	},
+	{
+		"Name": "210",
+		"Text_English": "4",
+		"Text_Korean": "4",
+		"Text_Other": ""
+	},
+	{
+		"Name": "301",
+		"Text_English": "Abnormal use of programs",
+		"Text_Korean": "비 정상적인 프로그램 사용",
+		"Text_Other": ""
+	},
+	{
+		"Name": "302",
+		"Text_English": "Deliberate obstruction",
+		"Text_Korean": "고의적인 방해 행위",
+		"Text_Other": ""
+	},
+	{
+		"Name": "303",
+		"Text_English": "Bug abuse",
+		"Text_Korean": "버그 악용",
+		"Text_Other": ""
+	},
+	{
+		"Name": "304",
+		"Text_English": "Other (input report)",
+		"Text_Korean": "기타(신고 입력)",
+		"Text_Other": ""
+	},
+	{
+		"Name": "310",
+		"Text_English": "4",
+		"Text_Korean": "4",
+		"Text_Other": ""
+	}
+]
