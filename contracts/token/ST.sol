@@ -5,11 +5,11 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/access/AccessControlEnumerable.sol";
 
 /**
- * @title Sacred Realm
+ * @title Sealem Token
  * @author SEALEM-LAB
- * @notice Contract to supply SR
+ * @notice Contract to supply ST
  */
-contract SR is ERC20, AccessControlEnumerable {
+contract ST is ERC20, AccessControlEnumerable {
     using EnumerableSet for EnumerableSet.AddressSet;
 
     bytes32 public constant MANAGER_ROLE = keccak256("MANAGER_ROLE");
@@ -18,7 +18,7 @@ contract SR is ERC20, AccessControlEnumerable {
      * @param manager Initialize Manager Role
      */
     constructor(address manager)
-        ERC20("Sacred Realm", "SR")
+        ERC20("Sealem Token", "ST")
     {
         _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
         _setupRole(MANAGER_ROLE, manager);

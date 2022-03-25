@@ -4,10 +4,10 @@ pragma solidity >=0.8.13;
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 /**
- * @title SR Interface
+ * @title ST Interface
  * @author SEALEM-LAB
- * @notice Interface of the SR
+ * @notice Interface of the ST
  */
-interface ISR is IERC20 {
+interface IST is IERC20 {
     
 }
