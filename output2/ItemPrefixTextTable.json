@@ -1,0 +1,230 @@
+[
+  {
+    "Name": "Weapon_0",
+    "Text_English": "Attack Speed, Critical Hit Probability, Critical Damage Balance Development",
+    "Text_Korean": "古代帝王威嚴的聖器",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Weapon_1",
+    "Text_English": "Critical Probability Specialization",
+    "Text_Korean": "被未知魔法封印的神秘武器",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Weapon_2",
+    "Text_English": "Critical Damage Specialization",
+    "Text_Korean": "被布洛克的堅韌所熔煉的鋼鐵武器",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Weapon_3",
+    "Text_English": "Specialized attack speed",
+    "Text_Korean": "充滿邪靈的沉默武器",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Weapon_10",
+    "Text_English": "Flaming",
+    "Text_Korean": "熾盛",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Weapon_11",
+    "Text_English": "Soul",
+    "Text_Korean": "靈魂的",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Armor_0",
+    "Text_English": "Increased critical chance",
+    "Text_Korean": "古代君王威嚴的聖甲",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Armor_1",
+    "Text_English": "Increased physical strength",
+    "Text_Korean": "封印著未知魔法的神秘盔甲",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Armor_2",
+    "Text_English": "Reduced skill cooldown time",
+    "Text_Korean": "被布洛克的堅韌熔煉的鋼鐵鎧甲",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Armor_3",
+    "Text_English": "Local damage reduction",
+    "Text_Korean": "充滿邪惡靈魂的沉默盔甲",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Armor_10",
+    "Text_English": "Boss damage reduction",
+    "Text_Korean": "BOSS傷害減免",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Armor_11",
+    "Text_English": "Critical Probability Resistance",
+    "Text_Korean": "暴擊抗性",
+    "Text_Other": ""
+  },
+  {
+    "Name": "PreWeapon_1",
+    "Text_English": "Attack Speed, Critical Hit Probability, Critical Damage Balance Development",
+    "Text_Korean": "古代帝王威嚴的聖器",
+    "Text_Other": ""
+  },
+  {
+    "Name": "PreWeapon_2",
+    "Text_English": "Critical Probability Specialization",
+    "Text_Korean": "被未知魔法封印的神秘武器",
+    "Text_Other": ""
+  },
+  {
+    "Name": "PreWeapon_3",
+    "Text_English": "Critical Damage Specialization",
+    "Text_Korean": "被布洛克的堅韌所熔煉的鋼鐵武器",
+    "Text_Other": ""
+  },
+  {
+    "Name": "PreWeapon_4",
+    "Text_English": "Specialized attack speed",
+    "Text_Korean": "充滿邪靈的沉默武器",
+    "Text_Other": ""
+  },
+  {
+    "Name": "PreArmor_1",
+    "Text_English": "Increased critical chance",
+    "Text_Korean": "古代君王威嚴的聖甲",
+    "Text_Other": ""
+  },
+  {
+    "Name": "PreArmor_2",
+    "Text_English": "Increased HP strength",
+    "Text_Korean": "封印著未知魔法的神秘盔甲",
+    "Text_Other": ""
+  },
+  {
+    "Name": "PreArmor_3",
+    "Text_English": "Reduced skill cooldown time",
+    "Text_Korean": "被布洛克的堅韌熔煉的鋼鐵鎧甲",
+    "Text_Other": ""
+  },
+  {
+    "Name": "PreArmor_4",
+    "Text_English": "Local damage reduction",
+    "Text_Korean": "充滿邪惡靈魂的沉默盔甲",
+    "Text_Other": ""
+  },
+  {
+    "Name": "PreArmor_5",
+    "Text_English": "Boss damage reduction",
+    "Text_Korean": "BOSS傷害減免",
+    "Text_Other": ""
+  },
+  {
+    "Name": "PreArmor_6",
+    "Text_English": "Critical Probability Resistance",
+    "Text_Korean": "暴擊抗性",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Prefix_0",
+    "Text_English": "Scared",
+    "Text_Korean": "神聖",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Prefix_1",
+    "Text_English": "Mysteries",
+    "Text_Korean": "神秘",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Prefix_2",
+    "Text_English": "Iron",
+    "Text_Korean": "鋼",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Prefix_3",
+    "Text_English": "Silence",
+    "Text_Korean": "無聲",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Prefix_4",
+    "Text_English": "of growth",
+    "Text_Korean": "成長的",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Prefix_5",
+    "Text_English": "dueling",
+    "Text_Korean": "決鬥",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Prefix_6",
+    "Text_English": "heavenly",
+    "Text_Korean": "天上",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Prefix_7",
+    "Text_English": "Eternal",
+    "Text_Korean": "永恆",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Prefix_10",
+    "Text_English": "frigid",
+    "Text_Korean": "寒冷",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Prefix_11",
+    "Text_English": "depraved",
+    "Text_Korean": "墮落的",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Prefix_12",
+    "Text_English": "solar",
+    "Text_Korean": "太陽的",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Prefix_13",
+    "Text_English": "seaside",
+    "Text_Korean": "海濱",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Prefix_14",
+    "Text_English": "academic",
+    "Text_Korean": "學術的",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Prefix_15",
+    "Text_English": "nativity",
+    "Text_Korean": "耶穌誕生",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Prefix_16",
+    "Text_English": "new year's",
+    "Text_Korean": "新年",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Prefix_17",
+    "Text_English": "terrifying",
+    "Text_Korean": "可怕的",
+    "Text_Other": ""
+  }
+]

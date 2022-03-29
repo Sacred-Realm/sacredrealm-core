@@ -1,0 +1,194 @@
+[
+  {
+    "Name": "1",
+    "TextDataType": "SkillName",
+    "SkillID": 1,
+    "Text_English": "Shield of Retribution",
+    "Text_Korean": "懲罰之盾",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2",
+    "TextDataType": "SkillNameDesc",
+    "SkillID": 1,
+    "Text_English": "A shield attack knocks back targets within range.",
+    "Text_Korean": "盾牌攻擊擊退範圍內的目標。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "3",
+    "TextDataType": "SkillName",
+    "SkillID": 2,
+    "Text_English": "collapse",
+    "Text_Korean": "坍塌",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4",
+    "TextDataType": "SkillNameDesc",
+    "SkillID": 2,
+    "Text_English": "After gathering strength, slam the ground to launch the target.",
+    "Text_Korean": "凝聚力量後，猛擊地面發射目標。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5",
+    "TextDataType": "SkillName",
+    "SkillID": 3,
+    "Text_English": "piercing window",
+    "Text_Korean": "穿孔窗",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6",
+    "TextDataType": "SkillNameDesc",
+    "SkillID": 3,
+    "Text_English": "After gathering strength, it attacks with a stabbing attack.",
+    "Text_Korean": "積蓄力量後，以刺擊攻擊。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7",
+    "TextDataType": "SkillName",
+    "SkillID": 4,
+    "Text_English": "Doom Strike",
+    "Text_Korean": "末日打擊",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8",
+    "TextDataType": "SkillNameDesc",
+    "SkillID": 4,
+    "Text_English": "Launches the target with a powerful slash attack.",
+    "Text_Korean": "用強力的斬擊攻擊目標。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "9",
+    "TextDataType": "SkillName",
+    "SkillID": 5,
+    "Text_English": "penetrating shot",
+    "Text_Korean": "穿透射門",
+    "Text_Other": ""
+  },
+  {
+    "Name": "10",
+    "TextDataType": "SkillNameDesc",
+    "SkillID": 5,
+    "Text_English": "After gathering power, it fires a poison arrow that pierces head-on.",
+    "Text_Korean": "集結力量後，會發射出正面刺穿的毒箭。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "11",
+    "TextDataType": "SkillName",
+    "SkillID": 6,
+    "Text_English": "arrow heavy rain",
+    "Text_Korean": "箭頭大雨",
+    "Text_Other": ""
+  },
+  {
+    "Name": "12",
+    "TextDataType": "SkillNameDesc",
+    "SkillID": 6,
+    "Text_English": "Hurls arrows into the air, dealing poison damage.",
+    "Text_Korean": "向空中投擲箭矢，造成毒傷害。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "13",
+    "TextDataType": "SkillName",
+    "SkillID": 7,
+    "Text_English": "Commander's Shout",
+    "Text_Korean": "指揮官的吶喊",
+    "Text_Other": ""
+  },
+  {
+    "Name": "14",
+    "TextDataType": "SkillNameDesc",
+    "SkillID": 7,
+    "Text_English": "Inflicts damage increase and damage reduction buffs on self.",
+    "Text_Korean": "對自身造成傷害增加和傷害減少增益。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "15",
+    "TextDataType": "SkillName",
+    "SkillID": 8,
+    "Text_English": "commander's sword",
+    "Text_Korean": "指揮官的劍",
+    "Text_Other": ""
+  },
+  {
+    "Name": "16",
+    "TextDataType": "SkillNameDesc",
+    "SkillID": 8,
+    "Text_English": "Swings the sword forward to stun the target within range.",
+    "Text_Korean": "向前揮劍擊暈範圍內的目標。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "17",
+    "TextDataType": "SkillName",
+    "SkillID": 9,
+    "Text_English": "Sealing Sword",
+    "Text_Korean": "封印劍",
+    "Text_Other": ""
+  },
+  {
+    "Name": "19",
+    "TextDataType": "SkillNameDesc",
+    "SkillID": 9,
+    "Text_English": "Slams the sword in front to seal it so that it cannot move.",
+    "Text_Korean": "猛擊前方的劍，將其封印，使其無法移動。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "20",
+    "TextDataType": "SkillName",
+    "SkillID": 10,
+    "Text_English": "taunt",
+    "Text_Korean": "嘲諷",
+    "Text_Other": ""
+  },
+  {
+    "Name": "21",
+    "TextDataType": "SkillNameDesc",
+    "SkillID": 10,
+    "Text_English": "Taunt your opponent, causing all enemies to attack you and run away.",
+    "Text_Korean": "嘲諷你的對手，讓所有敵人攻擊你並逃跑。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "22",
+    "TextDataType": "SkillName",
+    "SkillID": 11,
+    "Text_English": "bondage of the soul",
+    "Text_Korean": "靈魂的束縛",
+    "Text_Other": ""
+  },
+  {
+    "Name": "23",
+    "TextDataType": "SkillNameDesc",
+    "SkillID": 11,
+    "Text_English": "Summons a magic circle in front to freeze all heroes and mercenaries in the range.",
+    "Text_Korean": "在前方召喚一個魔法陣，凍結範圍內的所有英雄和傭兵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "24",
+    "TextDataType": "SkillName",
+    "SkillID": 12,
+    "Text_English": "Dispel",
+    "Text_Korean": "打消",
+    "Text_Other": ""
+  },
+  {
+    "Name": "25",
+    "TextDataType": "SkillNameDesc",
+    "SkillID": 12,
+    "Text_English": "Removes all harmful buffs on allies.",
+    "Text_Korean": "移除盟友身上的所有有害增益。",
+    "Text_Other": ""
+  }
+]

@@ -1,0 +1,728 @@
+[
+  {
+    "Name": "LimitType_Unlimitted",
+    "Text_English": "Number of productions:",
+    "Text_Korean": "製作數量：",
+    "Text_Other": ""
+  },
+  {
+    "Name": "LimitType_UnlimittedCount",
+    "Text_English": "unlimited",
+    "Text_Korean": "無限",
+    "Text_Other": ""
+  },
+  {
+    "Name": "LimitType_Success_Day",
+    "Text_English": "Number of productions per day:",
+    "Text_Korean": "每天生產數量：",
+    "Text_Other": ""
+  },
+  {
+    "Name": "LimitType_Try_Day",
+    "Text_English": "Number of attempts per day:",
+    "Text_Korean": "每天嘗試次數：",
+    "Text_Other": ""
+  },
+  {
+    "Name": "LimitType_Success_Week",
+    "Text_English": "Weekly Crafts:",
+    "Text_Korean": "每週工藝品：",
+    "Text_Other": ""
+  },
+  {
+    "Name": "LimitType_Try_Week",
+    "Text_English": "Number of attempts per week:",
+    "Text_Korean": "每週嘗試次數：",
+    "Text_Other": ""
+  },
+  {
+    "Name": "LimitType_Success_Month",
+    "Text_English": "Number of productions per month:",
+    "Text_Korean": "每月生產數量：",
+    "Text_Other": ""
+  },
+  {
+    "Name": "LimitType_Try_Month",
+    "Text_English": "Number of attempts per month:",
+    "Text_Korean": "每月嘗試次數：",
+    "Text_Other": ""
+  },
+  {
+    "Name": "LimitType_Success_Once",
+    "Text_English": "Number of productions:",
+    "Text_Korean": "生產數量：",
+    "Text_Other": ""
+  },
+  {
+    "Name": "LimitType_Try_Once",
+    "Text_English": "Number of attempts:",
+    "Text_Korean": "嘗試次數：",
+    "Text_Other": ""
+  },
+  {
+    "Name": "IngredientTitle_1",
+    "Text_English": "main material",
+    "Text_Korean": "主要成分",
+    "Text_Other": ""
+  },
+  {
+    "Name": "IngredientTitle_2",
+    "Text_English": "material",
+    "Text_Korean": "材料",
+    "Text_Other": ""
+  },
+  {
+    "Name": "TabID_1",
+    "Text_English": "weapon",
+    "Text_Korean": "武器",
+    "Text_Other": ""
+  },
+  {
+    "Name": "TabID_2",
+    "Text_English": "armor",
+    "Text_Korean": "盔甲",
+    "Text_Other": ""
+  },
+  {
+    "Name": "TabID_3",
+    "Text_English": "accessories",
+    "Text_Korean": "配件",
+    "Text_Other": ""
+  },
+  {
+    "Name": "TabID_4",
+    "Text_English": "item",
+    "Text_Korean": "物品",
+    "Text_Other": ""
+  },
+  {
+    "Name": "TabID_5",
+    "Text_English": "luxury item",
+    "Text_Korean": "奢侈品",
+    "Text_Other": ""
+  },
+  {
+    "Name": "TabID_6",
+    "Text_English": "period production",
+    "Text_Korean": "期間生產",
+    "Text_Other": ""
+  },
+  {
+    "Name": "TabID_7",
+    "Text_English": "event",
+    "Text_Korean": "事件",
+    "Text_Other": ""
+  },
+  {
+    "Name": "GroupID_10001",
+    "Text_English": "Advanced Upgrade Seats - Gold Consumption Ⅰ",
+    "Text_Korean": "高級升級座位-金幣消費Ⅰ",
+    "Text_Other": ""
+  },
+  {
+    "Name": "GroupID_10002",
+    "Text_English": "Advanced Upgrade Seats - Gold Consumption Ⅱ",
+    "Text_Korean": "高級升級座位-金幣消費Ⅱ",
+    "Text_Other": ""
+  },
+  {
+    "Name": "GroupID_10003",
+    "Text_English": "Advanced Upgrade Seats - Gold Consumption III",
+    "Text_Korean": "高級升級座位-金幣消耗III",
+    "Text_Other": ""
+  },
+  {
+    "Name": "GroupID_10004",
+    "Text_English": "Advanced Upgrade Seats - Jewel Consumption Ⅰ",
+    "Text_Korean": "高級升級座位-寶石消費Ⅰ",
+    "Text_Other": ""
+  },
+  {
+    "Name": "GroupID_10005",
+    "Text_English": "Advanced Upgrade Seats - Jewel Consumption Ⅱ",
+    "Text_Korean": "高級升級座椅-寶石消費Ⅱ",
+    "Text_Other": ""
+  },
+  {
+    "Name": "GroupID_10006",
+    "Text_English": "Advanced Upgrade Seats - Jewel Consumption Ⅲ",
+    "Text_Korean": "高級升級座椅-寶石消耗Ⅲ",
+    "Text_Other": ""
+  },
+  {
+    "Name": "GroupID_10007",
+    "Text_English": "Advanced Upgrade Seats - Jewel Consumption IV",
+    "Text_Korean": "高級升級座位-寶石消耗IV",
+    "Text_Other": ""
+  },
+  {
+    "Name": "GroupID_10009",
+    "Text_English": "crafting material",
+    "Text_Korean": "製作材料",
+    "Text_Other": ""
+  },
+  {
+    "Name": "GroupID_10010",
+    "Text_English": "Eternal Judgment Upgrade",
+    "Text_Korean": "永恆審判升級",
+    "Text_Other": ""
+  },
+  {
+    "Name": "GroupID_10011",
+    "Text_English": "daily production",
+    "Text_Korean": "日常生產",
+    "Text_Other": ""
+  },
+  {
+    "Name": "GroupID_10012",
+    "Text_English": "weekly production",
+    "Text_Korean": "每週生產",
+    "Text_Other": ""
+  },
+  {
+    "Name": "GroupID_501",
+    "Text_English": "Eternal Judge",
+    "Text_Korean": "永恆的審判者",
+    "Text_Other": ""
+  },
+  {
+    "Name": "GroupID_10013",
+    "Text_English": "monthly production",
+    "Text_Korean": "月產量",
+    "Text_Other": ""
+  },
+  {
+    "Name": "GroupID_10100",
+    "Text_English": "sacred",
+    "Text_Korean": "神聖",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_1",
+    "Text_English": "Advanced Weapon Upgrade Seat",
+    "Text_Korean": "高級武器升級座椅",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_2",
+    "Text_English": "Advanced Weapon Upgrade Seat",
+    "Text_Korean": "高級武器升級座椅",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_3",
+    "Text_English": "Advanced Weapon Upgrade Seat",
+    "Text_Korean": "高級武器升級座椅",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_4",
+    "Text_English": "Advanced Weapon Upgrade Seat",
+    "Text_Korean": "高級武器升級座椅",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_5",
+    "Text_English": "Advanced Weapon Upgrade Seat",
+    "Text_Korean": "高級武器升級座椅",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_6",
+    "Text_English": "Advanced Weapon Upgrade Seat",
+    "Text_Korean": "高級武器升級座椅",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_7",
+    "Text_English": "Advanced Armor Upgrade Seat",
+    "Text_Korean": "高級裝甲升級座椅",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_8",
+    "Text_English": "Advanced Armor Upgrade Seat",
+    "Text_Korean": "高級裝甲升級座椅",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_9",
+    "Text_English": "Advanced Armor Upgrade Seat",
+    "Text_Korean": "高級裝甲升級座椅",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_10",
+    "Text_English": "Advanced Armor Upgrade Seat",
+    "Text_Korean": "高級裝甲升級座椅",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_11",
+    "Text_English": "Advanced Armor Upgrade Seat",
+    "Text_Korean": "高級裝甲升級座椅",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_12",
+    "Text_English": "Advanced Armor Upgrade Seat",
+    "Text_Korean": "高級裝甲升級座椅",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_13",
+    "Text_English": "luxury jewelery class",
+    "Text_Korean": "高級珠寶類",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_14",
+    "Text_English": "luxury jewelery class",
+    "Text_Korean": "高級珠寶類",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_15",
+    "Text_English": "luxury jewelery class",
+    "Text_Korean": "高級珠寶類",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_16",
+    "Text_English": "luxury jewelery class",
+    "Text_Korean": "高級珠寶類",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_17",
+    "Text_English": "luxury jewelery class",
+    "Text_Korean": "高級珠寶類",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_18",
+    "Text_English": "luxury jewelery class",
+    "Text_Korean": "高級珠寶類",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_20",
+    "Text_English": "Advanced Weapon Upgrade Seat",
+    "Text_Korean": "高級武器升級座椅",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_21",
+    "Text_English": "Advanced Armor Upgrade Seat",
+    "Text_Korean": "高級裝甲升級座椅",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_22",
+    "Text_English": "luxury jewelery class",
+    "Text_Korean": "高級珠寶類",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_1001",
+    "Text_English": "red crystal shards",
+    "Text_Korean": "紅色水晶碎片",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_1002",
+    "Text_English": "red crystals - gold",
+    "Text_Korean": "紅色水晶 - 金",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_1003",
+    "Text_English": "red crystal",
+    "Text_Korean": "紅色水晶",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_1004",
+    "Text_English": "condensed red crystals",
+    "Text_Korean": "凝聚的紅色晶體",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_1005",
+    "Text_English": "Eternal Crystal (Probability)",
+    "Text_Korean": "永恆水晶（概率）",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_1006",
+    "Text_English": "Advanced Weapon Enhancement Book",
+    "Text_Korean": "進階武器強化書",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_1007",
+    "Text_English": "Advanced Armor Enhancement Scroll",
+    "Text_Korean": "高級護甲強化捲軸",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_1008",
+    "Text_English": "Fine Accessory Reinforcement",
+    "Text_Korean": "精細附件加固",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_1009",
+    "Text_English": "crystal of protection",
+    "Text_Korean": "保護水晶",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_10001",
+    "Text_English": "Eternal Judge's Sword",
+    "Text_Korean": "永恆審判者之劍",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_10002",
+    "Text_English": "Eternal Judge's Helm",
+    "Text_Korean": "永恆審判者頭盔",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_10003",
+    "Text_English": "Eternal Judge's Armor",
+    "Text_Korean": "永恆審判者盔甲",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_10004",
+    "Text_English": "Eternal Judge's Gloves",
+    "Text_Korean": "永恆審判者手套",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_10005",
+    "Text_English": "Eternal Judge's Shoes",
+    "Text_Korean": "永恆審判者之鞋",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_10006",
+    "Text_English": "Eternal Judge Dagger",
+    "Text_Korean": "永恆審判者匕首",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_10007",
+    "Text_English": "Eternal Judge's Helm",
+    "Text_Korean": "永恆審判者頭盔",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_10008",
+    "Text_English": "Eternal Judge's Armor",
+    "Text_Korean": "永恆審判者盔甲",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_10009",
+    "Text_English": "Eternal Judge's Gloves",
+    "Text_Korean": "永恆審判者手套",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_10010",
+    "Text_English": "Eternal Judge's Shoes",
+    "Text_Korean": "永恆審判者之鞋",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_10011",
+    "Text_English": "Eternal Magic Ring",
+    "Text_Korean": "永恆魔戒",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_10012",
+    "Text_English": "Eternal Judge's Helm",
+    "Text_Korean": "永恆審判者頭盔",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_10013",
+    "Text_English": "Eternal Judge's Armor",
+    "Text_Korean": "永恆審判者盔甲",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_10014",
+    "Text_English": "Eternal Judge's Gloves",
+    "Text_Korean": "永恆審判者手套",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_10015",
+    "Text_English": "Eternal Judge's Shoes",
+    "Text_Korean": "永恆審判者之鞋",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_10016",
+    "Text_English": "Eternal Judge's Fist",
+    "Text_Korean": "永恆審判者之拳",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_10017",
+    "Text_English": "Eternal Judge's Helm",
+    "Text_Korean": "永恆審判者頭盔",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_10018",
+    "Text_English": "Eternal Judge's Armor",
+    "Text_Korean": "永恆審判者盔甲",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_10019",
+    "Text_English": "Eternal Judge's Gloves",
+    "Text_Korean": "永恆審判者手套",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_10020",
+    "Text_English": "Eternal Judge's Shoes",
+    "Text_Korean": "永恆審判者之鞋",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_1000",
+    "Text_English": "red crystals - gems",
+    "Text_Korean": "紅色水晶——寶石",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_1010",
+    "Text_English": "steel hammer",
+    "Text_Korean": "鋼錘",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_1011",
+    "Text_English": "platinum hammer",
+    "Text_Korean": "鉑金鎚",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_2001",
+    "Text_English": "Advanced Weapon Enhancement Book",
+    "Text_Korean": "進階武器強化書",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_2002",
+    "Text_English": "Advanced Armor Enhancement Scroll",
+    "Text_Korean": "高級護甲強化捲軸",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_2003",
+    "Text_English": "Fine Accessory Reinforcement",
+    "Text_Korean": "精細附件加固",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_2004",
+    "Text_English": "crystal of protection",
+    "Text_Korean": "保護水晶",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_2005",
+    "Text_English": "steel hammer",
+    "Text_Korean": "鋼錘",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_2006",
+    "Text_English": "platinum hammer",
+    "Text_Korean": "鉑金鎚",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_3001",
+    "Text_English": "Advanced Weapon Enhancement Book",
+    "Text_Korean": "進階武器強化書",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_3002",
+    "Text_English": "Advanced Armor Enhancement Scroll",
+    "Text_Korean": "高級護甲強化捲軸",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_3003",
+    "Text_English": "Fine Accessory Reinforcement",
+    "Text_Korean": "精細附件加固",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_3004",
+    "Text_English": "crystal of protection",
+    "Text_Korean": "保護水晶",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_3005",
+    "Text_English": "steel hammer",
+    "Text_Korean": "鋼錘",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_3006",
+    "Text_English": "platinum hammer",
+    "Text_Korean": "鉑金鎚",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_3007",
+    "Text_English": "shiny steel hammer",
+    "Text_Korean": "閃亮的鋼錘",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_999",
+    "Text_English": "red crystals - reduction",
+    "Text_Korean": "紅色晶體 - 還原",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_998",
+    "Text_English": "Red Crystal Shard (10)",
+    "Text_Korean": "紅水晶碎片 (10)",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_9501",
+    "Text_English": "Greatsword of Holy Light",
+    "Text_Korean": "聖光巨劍",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_9502",
+    "Text_English": "Helm of Holy Light",
+    "Text_Korean": "聖光頭盔",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_9503",
+    "Text_English": "Armor of Divine Light",
+    "Text_Korean": "神光鎧甲",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_9504",
+    "Text_English": "Gloves of Divine Light",
+    "Text_Korean": "神聖之光手套",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_9505",
+    "Text_English": "shoes of divine light",
+    "Text_Korean": "神光之鞋",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_9511",
+    "Text_English": "Dagger of Divine Light",
+    "Text_Korean": "神光匕首",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_9512",
+    "Text_English": "Helm of Holy Light",
+    "Text_Korean": "聖光頭盔",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_9513",
+    "Text_English": "Armor of Divine Light",
+    "Text_Korean": "神光鎧甲",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_9514",
+    "Text_English": "Gloves of Divine Light",
+    "Text_Korean": "神聖之光手套",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_9515",
+    "Text_English": "shoes of divine light",
+    "Text_Korean": "神光之鞋",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_9521",
+    "Text_English": "sacred magic ring",
+    "Text_Korean": "神聖的魔法戒指",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_9522",
+    "Text_English": "Helm of Holy Light",
+    "Text_Korean": "聖光頭盔",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_9523",
+    "Text_English": "Armor of Divine Light",
+    "Text_Korean": "神光鎧甲",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_9524",
+    "Text_English": "Gloves of Divine Light",
+    "Text_Korean": "神聖之光手套",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_9525",
+    "Text_English": "shoes of divine light",
+    "Text_Korean": "神光之鞋",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_9531",
+    "Text_English": "Fist of Divine Light",
+    "Text_Korean": "神光拳",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_9532",
+    "Text_English": "Helm of Holy Light",
+    "Text_Korean": "聖光頭盔",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_9533",
+    "Text_English": "Armor of Divine Light",
+    "Text_Korean": "神光鎧甲",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_9534",
+    "Text_English": "Gloves of Divine Light",
+    "Text_Korean": "神聖之光手套",
+    "Text_Other": ""
+  },
+  {
+    "Name": "FactoryID_9535",
+    "Text_English": "shoes of divine light",
+    "Text_Korean": "神光之鞋",
+    "Text_Other": ""
+  }
+]

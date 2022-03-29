@@ -1,0 +1,6662 @@
+[
+  {
+    "Name": "0",
+    "Text_English": "Approved",
+    "Text_Korean": "批准。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1",
+    "Text_English": "New account created",
+    "Text_Korean": "已創建一個新帳戶。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2",
+    "Text_English": "New record achieved",
+    "Text_Korean": "你成功地創造了新紀錄。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "10",
+    "Text_English": "Internal server error",
+    "Text_Korean": "這是一個內部服務器錯誤。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "11",
+    "Text_English": "Internal server DB error",
+    "Text_Korean": "服務器內部數據庫錯誤。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "12",
+    "Text_English": "Please try again later.",
+    "Text_Korean": "請稍後再試。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "13",
+    "Text_English": "Cannot find the master data",
+    "Text_Korean": "未找到主數據。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "14",
+    "Text_English": "Invalid market information.",
+    "Text_Korean": "無效的市場信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "15",
+    "Text_English": "Invalid parameter information.",
+    "Text_Korean": "參數信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "16",
+    "Text_English": "Invalid parameter sum information.",
+    "Text_Korean": "參數和信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "17",
+    "Text_English": "Invalid probability failure count information.",
+    "Text_Korean": "無效的概率故障計數信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "18",
+    "Text_English": "Failed to update probability failure count information.",
+    "Text_Korean": "更新概率失敗計數信息失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "19",
+    "Text_English": "Invalid connection information.",
+    "Text_Korean": "無效的連接信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "20",
+    "Text_English": "Platform server API processing error",
+    "Text_Korean": "平台服務器 API 處理錯誤",
+    "Text_Other": ""
+  },
+  {
+    "Name": "21",
+    "Text_English": "Platform server API processing error, caused invalid requesting",
+    "Text_Korean": "由於平台服務器 API 處理錯誤，請求無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "22",
+    "Text_English": "Platform server API processing error, caused a server-side problem",
+    "Text_Korean": "由於平台服務器 API 處理錯誤導致的服務器問題。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "23",
+    "Text_English": "Request not allowed for the platform",
+    "Text_Korean": "平台請求無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "100",
+    "Text_English": "User already exists.",
+    "Text_Korean": "用戶已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "101",
+    "Text_English": "Account already exists.",
+    "Text_Korean": "已存在的帳戶名稱。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "102",
+    "Text_English": "User information not found",
+    "Text_Korean": "未找到用戶信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "103",
+    "Text_English": "Account name does not exist.",
+    "Text_Korean": "帳戶名不存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "110",
+    "Text_English": "Session token not found.",
+    "Text_Korean": "未找到會話令牌。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "111",
+    "Text_English": "Session token mismatch.",
+    "Text_Korean": "會話令牌不匹配。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "112",
+    "Text_English": "Duplicate session token.",
+    "Text_Korean": "重複的會話令牌。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "113",
+    "Text_English": "Too many characters",
+    "Text_Korean": "已超出名稱允許的字符數。 （最多 8 個字符）",
+    "Text_Other": ""
+  },
+  {
+    "Name": "114",
+    "Text_English": "Disapproved account, withdrawing",
+    "Text_Korean": "這是一個未經授權的帳戶。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "115",
+    "Text_English": "Blocked account",
+    "Text_Korean": "您的帳戶已被阻止。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "116",
+    "Text_English": "Your account information has been withdrawn.",
+    "Text_Korean": "您的帳戶信息已被撤回。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "400",
+    "Text_English": "Cannot find the master data",
+    "Text_Korean": "未找到主數據。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "401",
+    "Text_English": "Master data key already exists.",
+    "Text_Korean": "主數據鍵已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "408",
+    "Text_English": "Seal cost key already exists.",
+    "Text_Korean": "雕刻成本鍵已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "409",
+    "Text_English": "Seal cost does not exist.",
+    "Text_Korean": "不存在雕刻成本信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "410",
+    "Text_English": "The item disassembly information key already exists.",
+    "Text_Korean": "項目拆解信息鍵已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "411",
+    "Text_English": "Non-existent item disassembly information.",
+    "Text_Korean": "不存在的物品拆解信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "412",
+    "Text_English": "Fairy information key already exists.",
+    "Text_Korean": "仙女信息鍵已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "413",
+    "Text_English": "Fairy information that does not exist.",
+    "Text_Korean": "不存在的童話信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "414",
+    "Text_English": "Fairy level up cost key already exists.",
+    "Text_Korean": "仙女升級費用鍵已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "415",
+    "Text_English": "Fairy level-up cost information that does not exist.",
+    "Text_Korean": "不存在的仙女升級費用信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "416",
+    "Text_English": "The Fairy Open Information Key already exists.",
+    "Text_Korean": "Fairy Open Information Key 已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "417",
+    "Text_English": "Fairy open information that does not exist.",
+    "Text_Korean": "童話般的開放信息，不存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "418",
+    "Text_English": "Master data key already exists.",
+    "Text_Korean": "主數據鍵已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "419",
+    "Text_English": "Master data not found.",
+    "Text_Korean": "未找到主數據。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "420",
+    "Text_English": "Master data is invalid.",
+    "Text_Korean": "主數據無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "426",
+    "Text_English": "md_fairy_gift_info key already exists.",
+    "Text_Korean": "仙女禮物信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "427",
+    "Text_English": "not exist md_fairy_gift_info.",
+    "Text_Korean": "仙女禮物信息不存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "429",
+    "Text_English": "The stage material drop key already exists.",
+    "Text_Korean": "舞台材料掉落鍵已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "430",
+    "Text_English": "Non-existent stage material drop information.",
+    "Text_Korean": "不存在的階段材料掉落信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "431",
+    "Text_English": "The web address key already exists.",
+    "Text_Korean": "網址鍵已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "432",
+    "Text_English": "A non-existent web address.",
+    "Text_Korean": "一個不存在的網址。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "433",
+    "Text_English": "Item quality information already exists.",
+    "Text_Korean": "項目質量信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "434",
+    "Text_English": "Non-existent item quality information.",
+    "Text_Korean": "不存在的項目質量信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "435",
+    "Text_English": "Market product information already exists.",
+    "Text_Korean": "市場產品信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "436",
+    "Text_English": "This is market product information that does not exist.",
+    "Text_Korean": "這是不存在的市場產品信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "437",
+    "Text_English": "Equipment synthesis quality probability information already exists.",
+    "Text_Korean": "裝備合成質量概率信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "438",
+    "Text_English": "Non-existent equipment synthesis quality probability information.",
+    "Text_Korean": "不存在的設備合成質量概率信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "439",
+    "Text_English": "Equipment summon sale information already exists.",
+    "Text_Korean": "裝備召喚銷售信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "440",
+    "Text_English": "This is equipment summon sale information that does not exist.",
+    "Text_Korean": "這是不存在的裝備召喚銷售信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "441",
+    "Text_English": "Information on increasing commodity product bonuses already exists.",
+    "Text_Korean": "關於增加商品產品獎金的信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "442",
+    "Text_English": "Non-existent Goods Product bonus increase information.",
+    "Text_Korean": "不存在的商品產品獎金增加信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "443",
+    "Text_English": "Merchandise sale information already exists.",
+    "Text_Korean": "商品銷售信息已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "444",
+    "Text_English": "Non-existent Goods Product sales information.",
+    "Text_Korean": "這是不存在的產品銷售信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "445",
+    "Text_English": "Hot time information already exists.",
+    "Text_Korean": "熱時間信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "446",
+    "Text_English": "Non-existent hot time information.",
+    "Text_Korean": "不存在的熱時間信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "447",
+    "Text_English": "Kakao Friends Rewards already exist.",
+    "Text_Korean": "Kakao Friends Rewards 已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "448",
+    "Text_English": "This is a non-existent Kakao friend reward.",
+    "Text_Korean": "這是一個不存在的Kakao好友獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "449",
+    "Text_English": "Guild war match ranking key already exists.",
+    "Text_Korean": "公會比賽排名密鑰已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "450",
+    "Text_English": "This guild war match ranking does not exist.",
+    "Text_Korean": "這是不存在的公會戰比賽排名。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "451",
+    "Text_English": "Guild mercenaries skill key already exists.",
+    "Text_Korean": "公會傭兵技能鍵已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "452",
+    "Text_English": "This guild mercenaries skill does not exist.",
+    "Text_Korean": "這是一個不存在的佣兵技能。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "453",
+    "Text_English": "Guild mercenaries skill key already exists.",
+    "Text_Korean": "公會傭兵技能鍵已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "454",
+    "Text_English": "This guild mercenaries stat does not exist.",
+    "Text_Korean": "這是一個不存在的公會僱傭兵數據。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "455",
+    "Text_English": "Mercenaries donation info key already exists.",
+    "Text_Korean": "傭兵捐贈信息密鑰已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "456",
+    "Text_English": "Mercenaries donation info does not exist.",
+    "Text_Korean": "不存在的佣兵捐贈信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "457",
+    "Text_English": "Mercenaries info key already exists.",
+    "Text_Korean": "傭兵信息鑰匙已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "458",
+    "Text_English": "Mercenaries info does not exist.",
+    "Text_Korean": "不存在的佣兵情報。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "459",
+    "Text_English": "Guild war participation reward info already exists.",
+    "Text_Korean": "公會戰參與獎勵信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "460",
+    "Text_English": "Guild war participation reward does not exist.",
+    "Text_Korean": "這是參加不存在的公會戰的獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "461",
+    "Text_English": "Ether set option info already exists.",
+    "Text_Korean": "以太集選項信息已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "462",
+    "Text_English": "Ether set option does not exist.",
+    "Text_Korean": "不存在的以太套裝選項。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "463",
+    "Text_English": "Guild support item does not exist.",
+    "Text_Korean": "不存在的公會支持項目信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "464",
+    "Text_English": "Guild support item info already exists.",
+    "Text_Korean": "公會支持項目信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "465",
+    "Text_English": "Incorrect ether reward information",
+    "Text_Korean": "以太獎勵信息不正確。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "466",
+    "Text_English": "Ether slot information already exists.",
+    "Text_Korean": "以太槽信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "467",
+    "Text_English": "Incorrect ether slot information",
+    "Text_Korean": "無效的以太槽信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "468",
+    "Text_English": "Ether option information already exists.",
+    "Text_Korean": "以太期權信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "469",
+    "Text_English": "Incorrect ether option information",
+    "Text_Korean": "無效的以太選項信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "470",
+    "Text_English": "Ether upgrade information already exists.",
+    "Text_Korean": "以太增強信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "471",
+    "Text_English": "Incorrect ether upgrade information",
+    "Text_Korean": "不正確的以太增強信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "472",
+    "Text_English": "Ether upgrade option information already exists.",
+    "Text_Korean": "以太增強選項信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "473",
+    "Text_English": "Incorrect ether upgrade option information",
+    "Text_Korean": "以太增強選項信息不正確。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "474",
+    "Text_English": "Incorrect login reward information",
+    "Text_Korean": "連接獎勵信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "475",
+    "Text_English": "Login reward data key already exists.",
+    "Text_Korean": "連接獎勵數據已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "476",
+    "Text_English": "Incorrect event reward information",
+    "Text_Korean": "活動出席獎勵信息不正確",
+    "Text_Other": ""
+  },
+  {
+    "Name": "477",
+    "Text_English": "Event reward key already exists.",
+    "Text_Korean": "活動出席獎勵信息已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "478",
+    "Text_English": "Incorrect event login information",
+    "Text_Korean": "活動出席獎勵已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "479",
+    "Text_English": "Event login data key already exists.",
+    "Text_Korean": "活動出席信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "480",
+    "Text_English": "Reward box information key already exists.",
+    "Text_Korean": "活動出席數據已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "481",
+    "Text_English": "Incorrect reward box information",
+    "Text_Korean": "獎勵箱信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "482",
+    "Text_English": "Random reward rate key already exists.",
+    "Text_Korean": "獎勵箱信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "483",
+    "Text_English": "Incorrect random reward rate",
+    "Text_Korean": "隨機獎勵概率已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "484",
+    "Text_English": "Dungeon drop key already exists.",
+    "Text_Korean": "錯誤的隨機獎勵概率。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "485",
+    "Text_English": "Incorrect dungeon drop information",
+    "Text_Korean": "地下城掉落信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "486",
+    "Text_English": "Guild exp key already exists.",
+    "Text_Korean": "地下城掉落信息不正確。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "487",
+    "Text_English": "Incorrect guild exp",
+    "Text_Korean": "公會經驗已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "488",
+    "Text_English": "Guild skill key already exists.",
+    "Text_Korean": "錯誤的公會經驗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "489",
+    "Text_English": "Incorrect guild skill key information",
+    "Text_Korean": "公會技能已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "490",
+    "Text_English": "Guild match schedule key already exists.",
+    "Text_Korean": "公會技能信息不正確。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "491",
+    "Text_English": "Incorrect guild match schedule",
+    "Text_Korean": "公會戰鬥日程已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "492",
+    "Text_English": "The gem consumption event key already exists.",
+    "Text_Korean": "寶石消費事件鍵已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "494",
+    "Text_English": "Guild match reward key already exists.",
+    "Text_Korean": "公會戰配置不正確。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "495",
+    "Text_English": "Incorrect guild match reward",
+    "Text_Korean": "公會戰獎勵已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "496",
+    "Text_English": "Guild match season reward key already exists.",
+    "Text_Korean": "錯誤的公會戰獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "497",
+    "Text_English": "Incorrect guild match season reward",
+    "Text_Korean": "公會戰爭賽季獎勵已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "498",
+    "Text_English": "The item level-up factor information key already exists.",
+    "Text_Korean": "項目升級因素信息鍵已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "499",
+    "Text_English": "Level-up factor information that does not exist.",
+    "Text_Korean": "不存在的升級因子信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "500",
+    "Text_English": "Item information ID already exists.",
+    "Text_Korean": "這是一個不存在的公會戰爭賽季獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "501",
+    "Text_English": "Item information unavailable",
+    "Text_Korean": "項目信息 ID 已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "502",
+    "Text_English": "Invalid item type",
+    "Text_Korean": "不存在的項目信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "503",
+    "Text_English": "Item information exceeded the maximum.",
+    "Text_Korean": "無效的項目類型。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "506",
+    "Text_English": "not exist md_totem_prefix_lottery.",
+    "Text_Korean": "不存在的圖騰前綴抽獎券。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "508",
+    "Text_English": "Transcendence cost information Key already exists.",
+    "Text_Korean": "超越成本信息Key已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "509",
+    "Text_English": "Non-existent transcendental cost information.",
+    "Text_Korean": "不存在的超驗成本信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "510",
+    "Text_English": "Item option ID already exists.",
+    "Text_Korean": "項目選項 ID 已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "511",
+    "Text_English": "Incorrect item option",
+    "Text_Korean": "不存在的項目選項。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "512",
+    "Text_English": "Item Transcendence Level Key already exists.",
+    "Text_Korean": "物品超越等級鑰匙已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "513",
+    "Text_English": "Transcendence level information that does not exist.",
+    "Text_Korean": "不存在的超越級信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "514",
+    "Text_English": "The Aether Selection Draw Ticket information already exists.",
+    "Text_Korean": "Aether Selection Draw Ticket 信息已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "515",
+    "Text_English": "Information on the non-existent Aether Selection Draw Ticket.",
+    "Text_Korean": "關於不存在的以太選擇抽獎券的信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "516",
+    "Text_English": "Invalid Ether Selection Draw Ticket tier information.",
+    "Text_Korean": "無效的 Ether Selection Draw Ticket 等級信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "517",
+    "Text_English": "The information on the selection lottery ticket already exists.",
+    "Text_Korean": "選擇彩票上的信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "518",
+    "Text_English": "Non-existent selection lottery ticket information.",
+    "Text_Korean": "不存在的選擇彩票信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "519",
+    "Text_English": "Invalid selection lottery ticket group information.",
+    "Text_Korean": "選擇彩票組信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "520",
+    "Text_English": "Item set ID already exists.",
+    "Text_Korean": "項目集 ID 已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "521",
+    "Text_English": "Incorrect item set ID",
+    "Text_Korean": "不存在的套裝項目信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "522",
+    "Text_English": "Dice event key already exists.",
+    "Text_Korean": "骰子事件鍵已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "523",
+    "Text_English": "The dice event board information key already exists.",
+    "Text_Korean": "骰子事件板信息鍵已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "524",
+    "Text_English": "The dice event completion reward key already exists.",
+    "Text_Korean": "骰子事件完成獎勵密鑰已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "525",
+    "Text_English": "Dice event information that does not exist.",
+    "Text_Korean": "不存在的骰子事件信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "530",
+    "Text_English": "Composition key already exists.",
+    "Text_Korean": "配置信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "531",
+    "Text_English": "Incorrect composition key",
+    "Text_Korean": "無效的配置。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "532",
+    "Text_English": "Package tab information already exists.",
+    "Text_Korean": "包選項卡信息已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "540",
+    "Text_English": "Item upgrade level key already exists.",
+    "Text_Korean": "物品增強等級信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "541",
+    "Text_English": "Incorrect item upgrade level key",
+    "Text_Korean": "錯誤的項目增強級別。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "550",
+    "Text_English": "Item upgrade cost key already exists.",
+    "Text_Korean": "項目增強成本信息已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "551",
+    "Text_English": "Incorrect item upgrade cost",
+    "Text_Korean": "錯誤的物品強化費用。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "560",
+    "Text_English": "Item enhancement cost key already exists.",
+    "Text_Korean": "物品升級費用信息已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "561",
+    "Text_English": "Incorrect item enhancement cost",
+    "Text_Korean": "錯誤的物品升級費用。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "562",
+    "Text_English": "Raid reward equipment quality information already exists.",
+    "Text_Korean": "突襲獎勵裝備質量信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "570",
+    "Text_English": "Item infusion key already exists.",
+    "Text_Korean": "項目組成信息已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "571",
+    "Text_English": "Incorrect item infusion key",
+    "Text_Korean": "物品合成費用無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "572",
+    "Text_English": "Item upgrade cost key already exists.",
+    "Text_Korean": "項目增強成本信息已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "573",
+    "Text_English": "Incorrect item upgrade cost",
+    "Text_Korean": "錯誤的物品強化費用。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "574",
+    "Text_English": "Item upgrade effect information key already exists.",
+    "Text_Korean": "物品增益信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "575",
+    "Text_English": "Incorrect item upgrade effect information",
+    "Text_Korean": "不正確的物品增益信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "576",
+    "Text_English": "Item upgrade scroll key already exists.",
+    "Text_Korean": "物品強化捲軸已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "577",
+    "Text_English": "Incorrect item upgrade scroll information",
+    "Text_Korean": "不正確的項目增強訂單信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "578",
+    "Text_English": "Binding skill option information that does not exist.",
+    "Text_Korean": "綁定不存在的技能選項信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "580",
+    "Text_English": "Character exp info key already exists.",
+    "Text_Korean": "角色體驗信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "581",
+    "Text_English": "Incorrect character exp information",
+    "Text_Korean": "角色體驗信息不正確。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "590",
+    "Text_English": "Stage information key already exists.",
+    "Text_Korean": "階段信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "591",
+    "Text_English": "Incorrect stage information",
+    "Text_Korean": "不存在的階段信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "600",
+    "Text_English": "Stage gold information key already exists.",
+    "Text_Korean": "階段黃金信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "601",
+    "Text_English": "Incorrect stage gold information",
+    "Text_Korean": "階段金幣信息不正確。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "602",
+    "Text_English": "Worship ranking ranking reward information already exists.",
+    "Text_Korean": "崇拜排名排名獎勵信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "603",
+    "Text_English": "This is worship ranking ranking reward information that does not exist.",
+    "Text_Korean": "這是不存在的崇拜排名排名獎勵信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "604",
+    "Text_English": "Worship reward information already exists.",
+    "Text_Korean": "崇拜獎勵信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "605",
+    "Text_English": "This is worship reward information that does not exist.",
+    "Text_Korean": "這是不存在的崇拜獎勵信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "606",
+    "Text_English": "The Hall of Heroes ranking achievement information already exists.",
+    "Text_Korean": "英雄殿排名成就信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "607",
+    "Text_English": "This is information on rewards for achieving rankings in the Hall of Heroes that do not exist.",
+    "Text_Korean": "這是關於在不存在的英雄殿堂中獲得排名的獎勵信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "610",
+    "Text_English": "Item drop information key already exists.",
+    "Text_Korean": "物品掉落信息已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "611",
+    "Text_English": "Incorrect item drop information",
+    "Text_Korean": "物品掉落信息不正確。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "613",
+    "Text_English": "Dice event mileage information that does not exist.",
+    "Text_Korean": "不存在的骰子事件里程信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "614",
+    "Text_English": "Magic shop update cost information already exists.",
+    "Text_Korean": "魔法商店更新費用信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "615",
+    "Text_English": "Non-existent magic shop cost information.",
+    "Text_Korean": "不存在的魔法商店費用信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "616",
+    "Text_English": "Equipment 10 summon event information already exists.",
+    "Text_Korean": "裝備10的召喚事件信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "617",
+    "Text_English": "The Event Dice Purchase Point Key already exists.",
+    "Text_Korean": "事件骰子購買點密鑰已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "618",
+    "Text_English": "The event die mileage key already exists.",
+    "Text_Korean": "事件死亡里程鍵已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "620",
+    "Text_English": "Reward item information key already exists.",
+    "Text_Korean": "獎勵項目信息已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "621",
+    "Text_English": "Incorrect reward item information",
+    "Text_Korean": "獎勵項目信息不正確。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "622",
+    "Text_English": "Package bonus information already exists.",
+    "Text_Korean": "套餐獎勵信息已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "623",
+    "Text_English": "Invalid raid information.",
+    "Text_Korean": "無效的突襲信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "624",
+    "Text_English": "Invalid raid type.",
+    "Text_Korean": "無效的突襲類型。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "625",
+    "Text_English": "Invalid magic shop product type.",
+    "Text_Korean": "無效的魔法商店產品類型。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "626",
+    "Text_English": "Magic shop product information already exists.",
+    "Text_Korean": "魔術店產品信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "627",
+    "Text_English": "Non-existent magic shop product information.",
+    "Text_Korean": "不存在的魔法商店產品信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "628",
+    "Text_English": "The magic shop group information already exists.",
+    "Text_Korean": "魔法店群信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "629",
+    "Text_English": "Non-existent magic shop group information.",
+    "Text_Korean": "不存在的魔法商店集團信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "630",
+    "Text_English": "Act clear reward information key already exists.",
+    "Text_Korean": "劇情完成獎勵信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "631",
+    "Text_English": "Incorrect act clear reward information",
+    "Text_Korean": "動作完成獎勵信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "632",
+    "Text_English": "Rest reward information already exists.",
+    "Text_Korean": "休息獎勵信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "633",
+    "Text_English": "Non-existent level achievement contract package information.",
+    "Text_Korean": "不存在的關卡成就契約包信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "634",
+    "Text_English": "Event information already exists.",
+    "Text_Korean": "事件信息已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "635",
+    "Text_English": "Seasonal event information already exists.",
+    "Text_Korean": "季節性事件信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "636",
+    "Text_English": "Package product information already exists.",
+    "Text_Korean": "包裝產品信息已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "637",
+    "Text_English": "Level-up package information already exists.",
+    "Text_Korean": "升級包信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "638",
+    "Text_English": "The level achievement contract package information already exists.",
+    "Text_Korean": "等級達成契約包信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "639",
+    "Text_English": "Level-up package information that does not exist.",
+    "Text_Korean": "不存在的升級包信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "640",
+    "Text_English": "Act repeat reward key already exists.",
+    "Text_Korean": "行為重複獎勵已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "641",
+    "Text_English": "Incorrect act repeat reward information",
+    "Text_Korean": "無效的行為重複獎勵信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "643",
+    "Text_English": "Invalid quest reward type",
+    "Text_Korean": "無效的任務獎勵類型。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "644",
+    "Text_English": "Main quest information already exists.",
+    "Text_Korean": "主線任務信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "645",
+    "Text_English": "Daily quest information already exists.",
+    "Text_Korean": "每日任務信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "646",
+    "Text_English": "Quest reward information already exists.",
+    "Text_Korean": "任務獎勵信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "647",
+    "Text_English": "Incorrect main quest information",
+    "Text_Korean": "不存在的主線任務信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "648",
+    "Text_English": "Incorrect daily quest information",
+    "Text_Korean": "不存在的每日任務信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "649",
+    "Text_English": "Invalid event type",
+    "Text_Korean": "事件類型無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "650",
+    "Text_English": "Skill information key already exists.",
+    "Text_Korean": "技能信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "651",
+    "Text_English": "Incorrect skill information",
+    "Text_Korean": "技能信息不正確。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "660",
+    "Text_English": "Skill option key already exists.",
+    "Text_Korean": "技能選項信息已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "661",
+    "Text_English": "Incorrect skill option",
+    "Text_Korean": "技能選項錯誤。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "662",
+    "Text_English": "The skill level up key already exists.",
+    "Text_Korean": "技能升級鍵已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "663",
+    "Text_English": "This is skill level-up information that does not exist.",
+    "Text_Korean": "這是不存在的技能升級信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "664",
+    "Text_English": "Match Key already exists.",
+    "Text_Korean": "匹配鍵已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "665",
+    "Text_English": "Non-existent match information.",
+    "Text_Korean": "不存在的匹配信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "666",
+    "Text_English": "Duel mode schedule key already exists.",
+    "Text_Korean": "決鬥模式調度鍵已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "667",
+    "Text_English": "Duel mode schedule information that does not exist.",
+    "Text_Korean": "不存在的決鬥模式日程信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "670",
+    "Text_English": "Revive information key already exists.",
+    "Text_Korean": "復活信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "671",
+    "Text_English": "Incorrect revive information",
+    "Text_Korean": "復活信息不正確。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "680",
+    "Text_English": "Invalid revive type",
+    "Text_Korean": "復活類型無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "681",
+    "Text_English": "Invalid revive buff",
+    "Text_Korean": "無效的複活buff。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "690",
+    "Text_English": "Team match roster key already exists.",
+    "Text_Korean": "團隊匹配配置信息已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "691",
+    "Text_English": "Incorrect team match roster",
+    "Text_Korean": "團隊匹配配置不正確。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "692",
+    "Text_English": "Invalid team match roster type",
+    "Text_Korean": "無效的團隊匹配配置類型。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "693",
+    "Text_English": "Invalid team match buff type",
+    "Text_Korean": "無效的團戰增益類型。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "698",
+    "Text_English": "Equipment essence raffle ticket info does not exist.",
+    "Text_Korean": "不存在的裝備精華抽獎券信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "699",
+    "Text_English": "Equipment essence raffle ticket info already exists.",
+    "Text_Korean": "裝備精華抽獎券信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "700",
+    "Text_English": "Rank information key already exists.",
+    "Text_Korean": "排名信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "701",
+    "Text_English": "Rank information does not exist.",
+    "Text_Korean": "這是不存在的排名信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "702",
+    "Text_English": "Invalid rank type",
+    "Text_Korean": "排名類型無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "703",
+    "Text_English": "Invalid rank",
+    "Text_Korean": "無效的等級狀態。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "705",
+    "Text_English": "Regular raffle information already exists.",
+    "Text_Korean": "一般彩票的信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "706",
+    "Text_English": "Invalid raffle type",
+    "Text_Korean": "彩票排名無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "707",
+    "Text_English": "Invalid item raffle",
+    "Text_Korean": "這是一張無效的裝備抽獎券。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "708",
+    "Text_English": "Raffle information already exists.",
+    "Text_Korean": "彩票上的信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "709",
+    "Text_English": "Raffle grade information already exists.",
+    "Text_Korean": "彩票的評級概率信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "710",
+    "Text_English": "Raffle lot information already exists.",
+    "Text_Korean": "彩票的部分概率信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "711",
+    "Text_English": "Raffle type information already exists.",
+    "Text_Korean": "關於彩票類型的信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "712",
+    "Text_English": "Raffle quality information already exists.",
+    "Text_Korean": "彩票的質量概率信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "713",
+    "Text_English": "Incorrect raffle information",
+    "Text_Korean": "這是不存在的一般彩票信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "714",
+    "Text_English": "Incorrect raffle choice information",
+    "Text_Korean": "不存在的選擇彩票信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "715",
+    "Text_English": "PvP rank reward key already exists.",
+    "Text_Korean": "一對一排名獎勵信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "716",
+    "Text_English": "Incorrect PvP rank reward",
+    "Text_Korean": "這是不存在的一對一排名獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "717",
+    "Text_English": "Team match rank reward key already exists.",
+    "Text_Korean": "團隊比賽排名獎勵已經可用。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "718",
+    "Text_English": "Incorrect team match rank reward",
+    "Text_Korean": "這是一個不存在的團隊比賽排名獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "719",
+    "Text_English": "Daily reward key already exists.",
+    "Text_Korean": "每日參與獎勵已經有了。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "720",
+    "Text_English": "Incorrect daily reward",
+    "Text_Korean": "不存在的每日參與獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "721",
+    "Text_English": "Counter dungeon information key already exists.",
+    "Text_Korean": "反拋信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "722",
+    "Text_English": "Incorrect counter dungeon information",
+    "Text_Korean": "反擊拋出的信息不存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "723",
+    "Text_English": "Weekly counter dungeon reward key already exists.",
+    "Text_Korean": "Counter-Throwing 的每週獎勵已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "724",
+    "Text_English": "Incorrect weekly counter dungeon reward",
+    "Text_Korean": "不存在的反擊投擲每週獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "725",
+    "Text_English": "Counter dungeon day key already exists.",
+    "Text_Korean": "已經有關於發起反擊的星期幾的信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "726",
+    "Text_English": "Incorrect counter dungeon day",
+    "Text_Korean": "反擊拋出的信息不存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "727",
+    "Text_English": "Invalid day",
+    "Text_Korean": "一周中的無效日期。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "728",
+    "Text_English": "Daily quest list-type information already exists.",
+    "Text_Korean": "每日任務列表類型信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "729",
+    "Text_English": "Counter dungeon entry cost key already exists.",
+    "Text_Korean": "反投進入成本已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "730",
+    "Text_English": "Incorrect counter dungeon entry cost",
+    "Text_Korean": "不存在反擊投擲入場費用。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "731",
+    "Text_English": "Daily quest list type already exists.",
+    "Text_Korean": "每日任務列表類型已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "732",
+    "Text_English": "Incorrect mission type",
+    "Text_Korean": "任務類型無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "733",
+    "Text_English": "Failure due to incorrect weekly achievement information",
+    "Text_Korean": "周成績信息不存在處理失敗",
+    "Text_Other": ""
+  },
+  {
+    "Name": "734",
+    "Text_English": "Failure due to incorrect daily achievement information",
+    "Text_Korean": "處理每日成就信息不存在導致的失敗",
+    "Text_Other": ""
+  },
+  {
+    "Name": "735",
+    "Text_English": "Failure due to incorrect achievement score information",
+    "Text_Korean": "因成績分數信息不存在而處理失敗",
+    "Text_Other": ""
+  },
+  {
+    "Name": "736",
+    "Text_English": "Wings upgrade key already exists.",
+    "Text_Korean": "機翼增強信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "737",
+    "Text_English": "Wings evolution key already exists.",
+    "Text_Korean": "翼進化信息已經有了。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "738",
+    "Text_English": "Wings option key already exists.",
+    "Text_Korean": "機翼的屬性選項數字信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "739",
+    "Text_English": "Wings option unlock condition key already exists.",
+    "Text_Korean": "已經有關於獲取機翼屬性選項的脫離條件的信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "740",
+    "Text_English": "Wings option maximum level key already exists.",
+    "Text_Korean": "已經有一個機翼屬性選項最高級別鍵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "741",
+    "Text_English": "Incorrect wings upgrade information",
+    "Text_Korean": "不存在機翼增強信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "742",
+    "Text_English": "Incorrect wings evolution information",
+    "Text_Korean": "不存在的機翼進化信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "743",
+    "Text_English": "Incorrect wings option max level information",
+    "Text_Korean": "不存在的翅膀的屬性選項最高級別信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "744",
+    "Text_English": "Incorrect wings option stats information",
+    "Text_Korean": "不存在的機翼屬性選項的數值信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "745",
+    "Text_English": "Invalid option type",
+    "Text_Korean": "無效的選項類型。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "746",
+    "Text_English": "Incorrect wings option unlock information",
+    "Text_Korean": "不存在的翅膀的屬性選項解鎖信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "747",
+    "Text_English": "Invalid relic option type",
+    "Text_Korean": "無效的古物選項類型。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "748",
+    "Text_English": "Invalid relic option information",
+    "Text_Korean": "Antiquities mod 選項信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "750",
+    "Text_English": "Hero's tower floor information already exists.",
+    "Text_Korean": "英雄的塔樓信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "751",
+    "Text_English": "Incorrect hero's tower floor information",
+    "Text_Korean": "英雄的塔樓信息不正確。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "752",
+    "Text_English": "Weekly hero's tower reward already exists.",
+    "Text_Korean": "英雄之塔每週獎勵已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "753",
+    "Text_English": "Incorrect hero's tower weekly reward",
+    "Text_Korean": "不存在的英雄塔每週獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "754",
+    "Text_English": "Relic information already exists.",
+    "Text_Korean": "古物信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "755",
+    "Text_English": "Incorrect relic information",
+    "Text_Korean": "不存在的古代神器信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "756",
+    "Text_English": "Relic upgrade information already exists.",
+    "Text_Korean": "遠古神器強化信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "757",
+    "Text_English": "Incorrect relic upgrade information",
+    "Text_Korean": "不存在的上古神器強化信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "758",
+    "Text_English": "Relic level information already exists.",
+    "Text_Korean": "古物級信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "759",
+    "Text_English": "Incorrect relic level information",
+    "Text_Korean": "不存在的上古神器等級信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "762",
+    "Text_English": "Invalid store price type",
+    "Text_Korean": "商店價格類型無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "763",
+    "Text_English": "Invalid stage difficulty type",
+    "Text_Korean": "階段難度類型無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "764",
+    "Text_English": "Invalid product type",
+    "Text_Korean": "產品類型無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "765",
+    "Text_English": "Invalid store price information",
+    "Text_Korean": "商店價格信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "766",
+    "Text_English": "Invalid mileage information",
+    "Text_Korean": "里程信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "767",
+    "Text_English": "Item price information already exists.",
+    "Text_Korean": "裝備召喚價格信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "768",
+    "Text_English": "Item grade information already exists.",
+    "Text_Korean": "裝備召喚等級概率信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "769",
+    "Text_English": "Item lot information already exists.",
+    "Text_Korean": "每個裝備召喚部分的概率信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "770",
+    "Text_English": "Item type information already exists.",
+    "Text_Korean": "裝備召喚物品類型概率信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "771",
+    "Text_English": "Item quality information already exists.",
+    "Text_Korean": "裝備召喚物品品質概率信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "772",
+    "Text_English": "Store item information already exists.",
+    "Text_Korean": "商店的產品信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "773",
+    "Text_English": "Store mileage information already exists.",
+    "Text_Korean": "商店的里程信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "774",
+    "Text_English": "Free item raffle time information already exists.",
+    "Text_Korean": "裝備召喚的免費抽獎時間信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "775",
+    "Text_English": "Incorrect free item raffle time information",
+    "Text_Korean": "不存在的召喚裝備的免費繪製時間信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "776",
+    "Text_English": "Incorrect item price information",
+    "Text_Korean": "這是不存在的裝備召喚價格信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "777",
+    "Text_English": "Invalid special raffle price information",
+    "Text_Korean": "特殊扭蛋價格信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "778",
+    "Text_English": "Incorrect mileage reward information",
+    "Text_Korean": "這是不存在的里程補償信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "779",
+    "Text_English": "Package goods information already exists.",
+    "Text_Korean": "包裝產品信息已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "780",
+    "Text_English": "Incorrect goods information",
+    "Text_Korean": "不存在的產品信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "781",
+    "Text_English": "Incorrect package information",
+    "Text_Korean": "不存在的包裹信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "782",
+    "Text_English": "Guidebook reward information already exists.",
+    "Text_Korean": "圖書獎勵信息已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "783",
+    "Text_English": "Incorrect guidebook reward information",
+    "Text_Korean": "這是不存在的圖書獎勵信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "784",
+    "Text_English": "Incorrect raid item problem",
+    "Text_Korean": "錯誤的raid裝備概率。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "785",
+    "Text_English": "Incorrect raid item count",
+    "Text_Korean": "突襲裝備數量錯誤。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "786",
+    "Text_English": "Daily check-in information already exists.",
+    "Text_Korean": "每日考勤信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "787",
+    "Text_English": "Incorrect check-in information",
+    "Text_Korean": "出勤信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "788",
+    "Text_English": "Raid information already exists.",
+    "Text_Korean": "突襲信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "789",
+    "Text_English": "Monster information already exists.",
+    "Text_Korean": "怪物信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "790",
+    "Text_English": "Choice raffle information already exists.",
+    "Text_Korean": "選擇彩票上的信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "791",
+    "Text_English": "Additional match cost already exists.",
+    "Text_Korean": "額外的比賽費用已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "792",
+    "Text_English": "Team control rank reward key already exists.",
+    "Text_Korean": "征服前排名獎勵鑰匙已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "793",
+    "Text_English": "Team control period key already exists.",
+    "Text_Korean": "佔用期間密鑰已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "794",
+    "Text_English": "Raid period key already exists.",
+    "Text_Korean": "raid period 密鑰已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "795",
+    "Text_English": "Team control victory reward information already exists.",
+    "Text_Korean": "征服戰爭中的勝利獎勵信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "796",
+    "Text_English": "Team control MVP reward information already exists.",
+    "Text_Korean": "職業之前的MVP獎勵信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "797",
+    "Text_English": "Duel mode exp reward already exists.",
+    "Text_Korean": "決鬥模式經驗獎勵已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "798",
+    "Text_English": "Raid exp reward already exists.",
+    "Text_Korean": "團隊經驗獎勵已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "799",
+    "Text_English": "Confirmation failure",
+    "Text_Korean": "驗證結果失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "800",
+    "Text_English": "Incorrect results",
+    "Text_Korean": "結果信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "801",
+    "Text_English": "Invalid variable information omitted",
+    "Text_Korean": "有異常的無效變量信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "803",
+    "Text_English": "Failed to update login info.",
+    "Text_Korean": "更新登錄信息失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "810",
+    "Text_English": "You cannot enter 30 minutes before the ranking settlement. <br>Please use it after ranking settlement.",
+    "Text_Korean": "您不能在排名結算前 30 分鐘進入。 <br>請在排名結算後使用。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "811",
+    "Text_English": "Ranking settlement is in progress. <br>Information in progress may not be reflected. <br>Please use it after ranking settlement.",
+    "Text_Korean": "排名結算正在進行中。 <br>進行中的信息可能無法反映。 <br>請在排名結算後使用。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "812",
+    "Text_English": "We ask for your understanding as the use of some contents is temporarily suspended due to system maintenance. <br>Please check the Blade II Cafe for details.",
+    "Text_Korean": "由於系統維護，部分內容的使用暫時中止，敬請諒解。 <br>請查看 Blade II Cafe 了解詳情。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "813",
+    "Text_English": "Unavailable content mode.",
+    "Text_Korean": "內容模式不可用。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "895",
+    "Text_English": "Cannot use that guild name.",
+    "Text_Korean": "不允許使用空格和特殊符號。 <br>有些詞可能不可用。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "896",
+    "Text_English": "Name is too short.",
+    "Text_Korean": "你的名字太短了。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "897",
+    "Text_English": "Name is too long.",
+    "Text_Korean": "名字太長了。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "898",
+    "Text_English": "Cannot use that guild name.",
+    "Text_Korean": "包含無效詞。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "899",
+    "Text_English": "Name includes prohibited words.",
+    "Text_Korean": "該名稱包含一個禁用詞。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "900",
+    "Text_English": "Account info already exists.",
+    "Text_Korean": "您的帳戶信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "901",
+    "Text_English": "Account does not exist.",
+    "Text_Korean": "此帳戶不存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "902",
+    "Text_English": "Account is deleted.",
+    "Text_Korean": "此帳戶已被刪除。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "903",
+    "Text_English": "Account build is not complete.",
+    "Text_Korean": "帳戶創建不完整。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "904",
+    "Text_English": "Build already complete.",
+    "Text_Korean": "此構建已經完成。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "905",
+    "Text_English": "Cannot find platform account info.",
+    "Text_Korean": "找不到平台賬戶信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "909",
+    "Text_English": "Money is over maximum.",
+    "Text_Korean": "已超過黃金限額。 <br>（您最多可以持有 21 億。）",
+    "Text_Other": ""
+  },
+  {
+    "Name": "910",
+    "Text_English": "Insufficient gems",
+    "Text_Korean": "寶石不夠。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "911",
+    "Text_English": "Insufficient gold",
+    "Text_Korean": "金幣不夠。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "913",
+    "Text_English": "Insufficient blade points",
+    "Text_Korean": "魂劍不夠。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "914",
+    "Text_English": "Insufficient friendship points",
+    "Text_Korean": "友情點不夠。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "915",
+    "Text_English": "Friendship points full",
+    "Text_Korean": "您的友誼積分已滿。 <br>請在好友積分用完後領取。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "916",
+    "Text_English": "You have used all of your raid challenges.",
+    "Text_Korean": "突襲參與人數已用完。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "917",
+    "Text_English": "PvP Match Point is underflow",
+    "Text_Korean": "沒有足夠的積分進入一對一的戰鬥。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "918",
+    "Text_English": "Invalid team match score",
+    "Text_Korean": "無效的團隊比賽比賽得分。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "919",
+    "Text_English": "Insufficient dark crystals",
+    "Text_Korean": "缺少深色水晶。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "920",
+    "Text_English": "Invalid dark crystal information",
+    "Text_Korean": "無效的暗水晶信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "921",
+    "Text_English": "Invalid cache information",
+    "Text_Korean": "緩存信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "922",
+    "Text_English": "Invalid cache information",
+    "Text_Korean": "緩存信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "923",
+    "Text_English": "Invalid cache information",
+    "Text_Korean": "緩存信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "924",
+    "Text_English": "Invalid dark crystal information",
+    "Text_Korean": "無效的暗水晶信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "925",
+    "Text_English": "Invalid dark crystal information",
+    "Text_Korean": "無效的暗水晶信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "926",
+    "Text_English": "Invalid hot time gold buff information.",
+    "Text_Korean": "無效的熱時間黃金增益信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "927",
+    "Text_English": "Invalid hot time experience buff information.",
+    "Text_Korean": "無效的熱時間經驗增益信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "928",
+    "Text_English": "Invalid gold buff item information.",
+    "Text_Korean": "無效的黃金增益物品信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "929",
+    "Text_English": "Invalid experience buff item information.",
+    "Text_Korean": "經驗增益物品信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "930",
+    "Text_English": "Invalid gold buff item information.",
+    "Text_Korean": "無效的黃金增益物品信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "931",
+    "Text_English": "Invalid experience buff item information.",
+    "Text_Korean": "經驗增益物品信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "932",
+    "Text_English": "You are running out of Hero Coins.",
+    "Text_Korean": "你的英雄幣快用完了。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1000",
+    "Text_English": "Character name already exists.",
+    "Text_Korean": "角色名稱已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1001",
+    "Text_English": "Character does not exist.",
+    "Text_Korean": "一個不存在的角色。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1002",
+    "Text_English": "Character has been deleted.",
+    "Text_Korean": "此角色已被刪除。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1003",
+    "Text_English": "Invalid character exp",
+    "Text_Korean": "角色經驗值無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1004",
+    "Text_English": "Invalid character type",
+    "Text_Korean": "無效的字符類型。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1010",
+    "Text_English": "Character name is too short.",
+    "Text_Korean": "角色名稱太短。 （2個或更多字符）",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1011",
+    "Text_English": "Character name is too long.",
+    "Text_Korean": "角色名稱太長。 （8 個字符或更少）",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1012",
+    "Text_English": "Invalid character name",
+    "Text_Korean": "角色名稱無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1021",
+    "Text_English": "Character has reached the maximum level.",
+    "Text_Korean": "角色等級已達到最高等級。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1031",
+    "Text_English": "Skill points full",
+    "Text_Korean": "您已達到最高技能點。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1032",
+    "Text_English": "Insufficient skill points",
+    "Text_Korean": "技能點不夠。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1033",
+    "Text_English": "Maximum SP purchase reached",
+    "Text_Korean": "您已達到可以購買的最大技能點數。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1040",
+    "Text_English": "Ether inventory count is full.",
+    "Text_Korean": "已達到以太緩存的最大數量。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1041",
+    "Text_English": "Weapons inventory count full",
+    "Text_Korean": "已達到武器儲物櫃的最大數量。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1044",
+    "Text_English": "Invalid inventory type",
+    "Text_Korean": "庫類型無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1051",
+    "Text_English": "All tutorials are open.",
+    "Text_Korean": "所有教程都是開放的。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1052",
+    "Text_English": "Invalid tutorial information",
+    "Text_Korean": "教程信息不正確。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1053",
+    "Text_English": "Character level is lower than the data.",
+    "Text_Korean": "字符級別小於數據信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1054",
+    "Text_English": "Act clear information is lower than the data.",
+    "Text_Korean": "行為明確的信息少於數據信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1055",
+    "Text_English": "The current tutorial is incomplete.",
+    "Text_Korean": "當前教程不完整。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1056",
+    "Text_English": "Tutorial items are not provided.",
+    "Text_Korean": "未提供教程所需的項目。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1057",
+    "Text_English": "Tutorial items already provided.",
+    "Text_Korean": "教程所需的物品已經支付。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1058",
+    "Text_English": "Invalid stage information",
+    "Text_Korean": "階段信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1059",
+    "Text_English": "Invalid character level and act clear information",
+    "Text_Korean": "角色等級和動作完成信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1060",
+    "Text_English": "Invalid tutorial raffle information",
+    "Text_Korean": "教程繪製信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1061",
+    "Text_English": "The tutorial has already ended.",
+    "Text_Korean": "本教程已經結束。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1062",
+    "Text_English": "Cannot find the tutorial progress information.",
+    "Text_Korean": "找不到教程進度信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1063",
+    "Text_English": "Cannot find the feature unlock info needed for the tutorial.",
+    "Text_Korean": "我找不到教程所需的內容打開信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1064",
+    "Text_English": "Cannot find the item info needed for the tutorial.",
+    "Text_Korean": "我找不到教程所需的項目信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1065",
+    "Text_English": "Invalid content open information.",
+    "Text_Korean": "無效的內容打開信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1071",
+    "Text_English": "Incorrect character CP info.",
+    "Text_Korean": "角色戰力信息不正確。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1072",
+    "Text_English": "Incorrect character CP info.",
+    "Text_Korean": "角色戰力信息不正確。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1073",
+    "Text_English": "Failed to update character CP.",
+    "Text_Korean": "人物能力更新失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1074",
+    "Text_English": "Failed to update character CP.",
+    "Text_Korean": "人物能力更新失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "1075",
+    "Text_English": "Failed to update character AP.",
+    "Text_Korean": "人物能力更新失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2000",
+    "Text_English": "Item ID already exists.",
+    "Text_Korean": "已存在的項目 ID。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2001",
+    "Text_English": "Item does not exist.",
+    "Text_Korean": "該項目不存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2002",
+    "Text_English": "Item ingredient does not exist.",
+    "Text_Korean": "這是一個不存在的材料項目。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2004",
+    "Text_English": "Item is locked.",
+    "Text_Korean": "項目已鎖定。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2005",
+    "Text_English": "Insufficient upgrade ingredients",
+    "Text_Korean": "增強所需的材料項目不足。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2006",
+    "Text_English": "Selected ingredients will be used for maximum upgrade.",
+    "Text_Korean": "使用已選擇的材料將其增強到最大水平。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2007",
+    "Text_English": "Equipped item cannot be used as an ingredient.",
+    "Text_Korean": "裝備的裝備不能作為物品材料使用。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2008",
+    "Text_English": "Upgrade failure due to incorrect character information",
+    "Text_Korean": "字符信息錯誤導致加固失敗的處理",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2009",
+    "Text_English": "Upgrade failure due to incorrect inventory information",
+    "Text_Korean": "處理因庫存信息不正確導致的增強失敗",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2010",
+    "Text_English": "Cannot equip that item",
+    "Text_Korean": "該物品無法裝備。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2011",
+    "Text_English": "Maximum transcendence",
+    "Text_Korean": "已達到最大超越次數。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2012",
+    "Text_English": "Only six-star items can be transcended.",
+    "Text_Korean": "只能超越6星裝備。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2013",
+    "Text_English": "Only fully upgraded items can be transcended.",
+    "Text_Korean": "只有達到最高強化等級的裝備才能超越。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2014",
+    "Text_English": "Needs the same six-star item to transcend",
+    "Text_Korean": "要超越，您需要相同的 6 星裝備。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2015",
+    "Text_English": "Maximum item grade",
+    "Text_Korean": "設備已達到最大額定值。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2016",
+    "Text_English": "Only fully upgraded items can be enhanced.",
+    "Text_Korean": "只有達到最高強化等級的裝備才能升級。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2017",
+    "Text_English": "Maximum item grade",
+    "Text_Korean": "設備已達到最大額定值。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2018",
+    "Text_English": "Insufficient enhancement stones",
+    "Text_Korean": "沒有足夠的升級座位。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2019",
+    "Text_English": "Insufficient items",
+    "Text_Korean": "項目數量不足。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2020",
+    "Text_English": "Maximum number of items",
+    "Text_Korean": "這些項目的數量已達到最大值。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2021",
+    "Text_English": "Item option calculation failure",
+    "Text_Korean": "項目選項計算失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2022",
+    "Text_English": "Only fully upgraded items can be infused.",
+    "Text_Korean": "只有達到最高強化等級的裝備才能合成。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2023",
+    "Text_English": "Infusion requires the same item type.",
+    "Text_Korean": "只能合成同類型的裝備。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2024",
+    "Text_English": "Infusion requires the same item grade.",
+    "Text_Korean": "只能合成同等級的裝備。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2025",
+    "Text_English": "Cannot infuse equipped items",
+    "Text_Korean": "您所穿的設備不能與合成材料一起使用。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2030",
+    "Text_English": "Invalid transcendence item material.",
+    "Text_Korean": "無效的超越物品材料。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2100",
+    "Text_English": "Item stats calculation failure",
+    "Text_Korean": "無法計算項目統計值。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2200",
+    "Text_English": "Cannot create more equipment",
+    "Text_Korean": "您不能再製造設備。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2201",
+    "Text_English": "Cannot create more items",
+    "Text_Korean": "您不能再創建項目。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2210",
+    "Text_English": "Insufficient items",
+    "Text_Korean": "項目數量不足。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2211",
+    "Text_English": "Equip slot full or does not exist",
+    "Text_Korean": "沒有安裝槽或庫存空間不足。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2212",
+    "Text_English": "Incorrect item option information",
+    "Text_Korean": "不存在的項目選項信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2213",
+    "Text_English": "Cannot change option for this item",
+    "Text_Korean": "這是一個無法更改的成績項目。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2214",
+    "Text_English": "Invalid option change grade",
+    "Text_Korean": "無效的選項更改等級。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2215",
+    "Text_English": "Incorrect option change cost",
+    "Text_Korean": "更改錯誤選項的成本。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2216",
+    "Text_English": "Invalid item option information",
+    "Text_Korean": "無效的項目選項信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2217",
+    "Text_English": "This item option information no longer exists.",
+    "Text_Korean": "已刪除的項目 項目選項信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2218",
+    "Text_English": "Invalid item option count",
+    "Text_Korean": "無效項目選項的數量。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2219",
+    "Text_English": "Invalid item option range",
+    "Text_Korean": "項目選項範圍值無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2220",
+    "Text_English": "Invalid option change goods.",
+    "Text_Korean": "無效的選項更改商品。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2300",
+    "Text_English": "Insufficient upgrade scroll",
+    "Text_Korean": "裝備升級不夠。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2301",
+    "Text_English": "Insufficient guardian crystal",
+    "Text_Korean": "缺乏水晶。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2302",
+    "Text_English": "Invalid guardian crystal information",
+    "Text_Korean": "無效的守護水晶信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2303",
+    "Text_English": "Incorrect maximum upgrade level",
+    "Text_Korean": "錯誤的項目最大增強等級。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2304",
+    "Text_English": "Incorrect minimum upgrade level",
+    "Text_Korean": "物品最低強化等級無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2305",
+    "Text_English": "Incorrect item information",
+    "Text_Korean": "不存在的項目信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2306",
+    "Text_English": "Inventory type does not match the item.",
+    "Text_Korean": "此商品屬於錯誤的庫存類型。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2307",
+    "Text_English": "Not enough consumables.",
+    "Text_Korean": "消耗品不足。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2308",
+    "Text_English": "You have exceeded the maximum item sales.",
+    "Text_Korean": "您已超過最大商品銷售額。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2309",
+    "Text_English": "There are no items available for sale.",
+    "Text_Korean": "沒有可供出售的物品。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2310",
+    "Text_English": "Equip failed",
+    "Text_Korean": "安裝失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2311",
+    "Text_English": "Unequip failed",
+    "Text_Korean": "卸載失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2312",
+    "Text_English": "Invalid item equip information",
+    "Text_Korean": "無效的項目安裝信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2313",
+    "Text_English": "Guardian Crystals cannot be used.",
+    "Text_Korean": "不能使用守護水晶。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2314",
+    "Text_English": "There are too many items to disassemble.",
+    "Text_Korean": "要拆的東西太多了。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2315",
+    "Text_English": "The decomposition list information is empty.",
+    "Text_Korean": "分解列表信息為空。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2320",
+    "Text_English": "Cannot use item lock",
+    "Text_Korean": "物品鎖不可用。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2321",
+    "Text_English": "Item stock full",
+    "Text_Korean": "您已超過存儲項目的最大數量。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2322",
+    "Text_English": "Cannot sell item",
+    "Text_Korean": "物品不能出售。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2323",
+    "Text_English": "Cannot equip item",
+    "Text_Korean": "無法裝備物品。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2324",
+    "Text_English": "Cannot level up item",
+    "Text_Korean": "物品不能升級。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2325",
+    "Text_English": "Cannot upgrade item",
+    "Text_Korean": "物品無法強化。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2326",
+    "Text_English": "Cannot enhance item",
+    "Text_Korean": "您不能升級項目。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2327",
+    "Text_English": "Cannot infuse item",
+    "Text_Korean": "無法合成物品。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2328",
+    "Text_English": "Cannot transcend item",
+    "Text_Korean": "你不能超越物品。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2329",
+    "Text_English": "Cannot sell consumable item.",
+    "Text_Korean": "不能出售消耗品。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2330",
+    "Text_English": "Cannot sell equipped item.",
+    "Text_Korean": "裝備物品不能出售。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2331",
+    "Text_English": "The maximum enhancement level has been exceeded.",
+    "Text_Korean": "已超過最大增強等級。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2332",
+    "Text_English": "Helmet hide info failed.",
+    "Text_Korean": "頭盔隱藏信息失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2333",
+    "Text_English": "Failed to update item enhancement level information.",
+    "Text_Korean": "更新物品強化等級信息失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2334",
+    "Text_English": "The same character type information is required.",
+    "Text_Korean": "需要相同的字符類型信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2335",
+    "Text_English": "The same equipment box type information is required.",
+    "Text_Korean": "需要相同的設備箱類型信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2336",
+    "Text_English": "Other item enhancement level information is required.",
+    "Text_Korean": "需要其他項目增強級別信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2337",
+    "Text_English": "Invalid enhancement level target.",
+    "Text_Korean": "無效的增強級別目標。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2400",
+    "Text_English": "Cannot use item",
+    "Text_Korean": "物品不能使用。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2401",
+    "Text_English": "Invalid item creation",
+    "Text_Korean": "對項目創建無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2402",
+    "Text_English": "Failed to load account item info.",
+    "Text_Korean": "獲取賬戶項目信息失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2403",
+    "Text_English": "Failed to increase the number of items.",
+    "Text_Korean": "無法增加項目數。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2404",
+    "Text_English": "Failed to reduce the number of items.",
+    "Text_Korean": "未能減少項目數量。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2405",
+    "Text_English": "Failed to update item enhancement failure count.",
+    "Text_Korean": "未能更新項目增強失敗計數。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2410",
+    "Text_English": "Unable to seal item.",
+    "Text_Korean": "這是不能使用的雕刻品。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2411",
+    "Text_English": "Seal slot count is overflow.",
+    "Text_Korean": "超過雕刻槽數。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2412",
+    "Text_English": "Invalid opened seal slot count.",
+    "Text_Korean": "印記的空位數量錯誤。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2413",
+    "Text_English": "Can't open seal slot.",
+    "Text_Korean": "雕刻槽無法打開。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2414",
+    "Text_English": "fail increase seal slot count.",
+    "Text_Korean": "打開雕刻槽失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2500",
+    "Text_English": "Invalid item type.",
+    "Text_Korean": "無效的項目類型。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2501",
+    "Text_English": "You can only purchase one costume item at a time.",
+    "Text_Korean": "您一次只能購買一件服裝物品。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2502",
+    "Text_English": "This is a costume that has already been worn on other parts of the body.",
+    "Text_Korean": "這是一件已經穿在身體其他部位的服裝。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2503",
+    "Text_English": "The costume does not exist.",
+    "Text_Korean": "服裝不存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2504",
+    "Text_English": "Costumes cannot be worn.",
+    "Text_Korean": "服裝不能穿。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2506",
+    "Text_English": "The costume cannot be unlocked.",
+    "Text_Korean": "服裝無法解鎖。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2507",
+    "Text_English": "You are wearing a different costume.",
+    "Text_Korean": "你穿著不同的服裝。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2511",
+    "Text_English": "Your costume wardrobe is already full.",
+    "Text_Korean": "你的服裝衣櫃已經滿了。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2517",
+    "Text_English": "Not exist md_item(costume).",
+    "Text_Korean": "服裝不存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2518",
+    "Text_English": "Unable to enhance costume.",
+    "Text_Korean": "服裝無法升級。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2519",
+    "Text_English": "Overflow costume enhance level.",
+    "Text_Korean": "已超過服裝強化等級。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2520",
+    "Text_English": "Invalid costume enhance level.",
+    "Text_Korean": "服裝強化等級信息不正確。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2600",
+    "Text_English": "Ether information already exists.",
+    "Text_Korean": "以太信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2601",
+    "Text_English": "Incorrect ether information",
+    "Text_Korean": "錯誤的乙醚。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2602",
+    "Text_English": "Ether is locked.",
+    "Text_Korean": "以太被鎖定。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2603",
+    "Text_English": "Invalid ether grade information",
+    "Text_Korean": "無效的以太等級信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2604",
+    "Text_English": "Cannot equip redundant slot",
+    "Text_Korean": "不能裝備重複的插槽。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2605",
+    "Text_English": "Equip failed",
+    "Text_Korean": "安裝失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2606",
+    "Text_English": "Unequip failed",
+    "Text_Korean": "卸載失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2607",
+    "Text_English": "Invalid ether equip information",
+    "Text_Korean": "無效的以太裝備信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2608",
+    "Text_English": "Ether slot information already exists.",
+    "Text_Korean": "以太槽信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2609",
+    "Text_English": "Ether already equipped",
+    "Text_Korean": "以太已經裝備好了。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2610",
+    "Text_English": "Equip information is empty.",
+    "Text_Korean": "安裝信息為空白。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2611",
+    "Text_English": "Unequip information is empty.",
+    "Text_Korean": "沒有卸載信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2612",
+    "Text_English": "Invalid ether decomposition info.",
+    "Text_Korean": "無效的以太分解列表。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2613",
+    "Text_English": "Failed to decompose ether.",
+    "Text_Korean": "以太分解失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2614",
+    "Text_English": "Set option does not exist.",
+    "Text_Korean": "一個不存在的設置選項。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2615",
+    "Text_English": "Invalid ether decomposition info.",
+    "Text_Korean": "無效的以太分解信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2616",
+    "Text_English": "FAILURE_SELL_AETHER_LIST_EMPTY",
+    "Text_Korean": "你的以太幣庫存是空的。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2617",
+    "Text_English": "FAILURE_TOO_MANY_AETHER_FOR_SELL",
+    "Text_Korean": "已超過銷售申請的數量。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2618",
+    "Text_English": "FAILURE_SELL_MOUNTED_AETHER",
+    "Text_Korean": "裝備的以太不出售。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2630",
+    "Text_English": "Ether shards required.",
+    "Text_Korean": "需要以太碎片。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2631",
+    "Text_English": "Invalid ether upgrade info.",
+    "Text_Korean": "無效的以太增強等級。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2632",
+    "Text_English": "Invalid number of ether options.",
+    "Text_Korean": "無效以太選項的數量。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2633",
+    "Text_English": "Invalid ether option info.",
+    "Text_Korean": "無效的以太選項信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2634",
+    "Text_English": "Invalid ether option information.",
+    "Text_Korean": "無效的以太選項信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2700",
+    "Text_English": "Invalid ether stats information",
+    "Text_Korean": "無效的以太統計信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "3000",
+    "Text_English": "Skill already exists.",
+    "Text_Korean": "這個技能已經存在了。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "3001",
+    "Text_English": "Skill does not exist.",
+    "Text_Korean": "沒有這個技能。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "3002",
+    "Text_English": "Skill has been deleted.",
+    "Text_Korean": "該技能已被刪除。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "3003",
+    "Text_English": "Maximum skill level reached",
+    "Text_Korean": "您的技能等級已達到最高水平。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "3004",
+    "Text_English": "Skill config already exists.",
+    "Text_Korean": "技能已經設置好了。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "3005",
+    "Text_English": "Incorrect skill config",
+    "Text_Korean": "此技能設置不存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "3006",
+    "Text_English": "Insufficient skill points",
+    "Text_Korean": "你沒有足夠的技能點。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "3007",
+    "Text_English": "Maximum skill level reached",
+    "Text_Korean": "技能等級最高。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "3008",
+    "Text_English": "Character level too low to learn that skill",
+    "Text_Korean": "您無法學習此技能，因為您的角色等級低。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "3009",
+    "Text_English": "Cannot use that character type",
+    "Text_Korean": "不可用的字符類型。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "3010",
+    "Text_English": "SP purchase amount full",
+    "Text_Korean": "已超過技能點購買次數。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "3011",
+    "Text_English": "Incorrect skill type",
+    "Text_Korean": "技能類型錯誤。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "3012",
+    "Text_English": "Insufficient skill points",
+    "Text_Korean": "技能點不夠。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "3013",
+    "Text_English": "Incorrect skill level",
+    "Text_Korean": "技能等級錯誤。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "3014",
+    "Text_English": "Invalid skill equip information",
+    "Text_Korean": "技能安裝信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "3999",
+    "Text_English": "Invalid continuous battle difficulty information.",
+    "Text_Korean": "連續戰鬥難度信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4000",
+    "Text_English": "Incorrect stage information",
+    "Text_Korean": "階段信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4001",
+    "Text_English": "Act reward information already exists.",
+    "Text_Korean": "行為獎勵信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4002",
+    "Text_English": "Stage already complete",
+    "Text_Korean": "這個階段已經完成。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4003",
+    "Text_English": "Stage clear information does not exist.",
+    "Text_Korean": "沒有完整的階段信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4010",
+    "Text_English": "Maximum revive reached",
+    "Text_Korean": "已達到最大復活次數。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4011",
+    "Text_English": "Invalid battle information",
+    "Text_Korean": "冒險信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4013",
+    "Text_English": "Invalid stage clear information",
+    "Text_Korean": "階段完成信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4014",
+    "Text_English": "Act reward information does not exist.",
+    "Text_Korean": "行為獎勵信息不存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4015",
+    "Text_English": "Inventory full",
+    "Text_Korean": "您的庫存已滿。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4016",
+    "Text_English": "Incorrect stage clear information",
+    "Text_Korean": "階段完成信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4017",
+    "Text_English": "Need to clear the stage with three stars",
+    "Text_Korean": "每個階段需要完成 3 次。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4018",
+    "Text_English": "You have used all of your 3× battle modes.",
+    "Text_Korean": "您已經使用了所有 3x 冒險。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4019",
+    "Text_English": "Incorrect act reward information",
+    "Text_Korean": "行為獎勵信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4020",
+    "Text_English": "Incorrect stage clear information",
+    "Text_Korean": "階段完成信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4021",
+    "Text_English": "Token information is not the same.",
+    "Text_Korean": "它不是相同的令牌信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4022",
+    "Text_English": "Incorrect character information",
+    "Text_Korean": "字符信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4023",
+    "Text_English": "Invalid drop item",
+    "Text_Korean": "無效的掉落物品。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4030",
+    "Text_English": "Not enough ether slots.",
+    "Text_Korean": "沒有足夠的以太插槽。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4031",
+    "Text_English": "Invalid adventure start information.",
+    "Text_Korean": "冒險開始信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4032",
+    "Text_English": "You don't have enough adventure vouchers.",
+    "Text_Korean": "你沒有足夠的冒險券。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4040",
+    "Text_English": "Insufficient exp buff",
+    "Text_Korean": "沒有足夠的經驗增加buff項目。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4041",
+    "Text_English": "Insufficient gold increase buff",
+    "Text_Korean": "沒有足夠的金幣增加增益物品。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4042",
+    "Text_English": "Insufficient auto skill buff",
+    "Text_Korean": "沒有足夠的自動技能增益項目。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4043",
+    "Text_English": "Insufficient quick play buff",
+    "Text_Korean": "沒有足夠的快速播放增益項目。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4100",
+    "Text_English": "Counter dungeon information does not exist.",
+    "Text_Korean": "反擊地下城信息不存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4101",
+    "Text_English": "Failed to enter the counter dungeon",
+    "Text_Korean": "進入反擊副本失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4102",
+    "Text_English": "Insufficient counter dungeon challenge chance",
+    "Text_Korean": "進入反擊副本的次數不足。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4103",
+    "Text_English": "Invalid counter dungeon information",
+    "Text_Korean": "無效的反擊地下城信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4104",
+    "Text_English": "Token information is not the same.",
+    "Text_Korean": "不一樣的信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4105",
+    "Text_English": "Maximum counter dungeon challenge purchase reached",
+    "Text_Korean": "已超過逆襲副本進入購買次數。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4106",
+    "Text_English": "Incorrect entry count",
+    "Text_Korean": "無效的條目計數。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4107",
+    "Text_English": "Invalid counter dungeon clear count",
+    "Text_Korean": "無效反擊副本完成次數。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4108",
+    "Text_English": "Counter dungeon reward already acquired",
+    "Text_Korean": "您已經獲得了反擊地下城獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4109",
+    "Text_English": "You have not received a reward in the previous dungeon.",
+    "Text_Korean": "這是一個半格斗地下城，之前沒有收到過獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4110",
+    "Text_English": "Invalid counter dungeon reward",
+    "Text_Korean": "這是無效的反擊副本獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4111",
+    "Text_English": "Character cannot enter the counter dungeon.",
+    "Text_Korean": "此角色無法進入反擊副本。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4112",
+    "Text_English": "Invalid clearing information.",
+    "Text_Korean": "無效的掃描信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4113",
+    "Text_English": "You have renewed the best record of counterattack dungeon.",
+    "Text_Korean": "你打破了反擊地下城的記錄。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4160",
+    "Text_English": "Not exist dimension totem drop info.",
+    "Text_Korean": "圖騰掉落信息不存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4200",
+    "Text_English": "Hero's tower information does not exist.",
+    "Text_Korean": "這是關於一個不存在的英雄的塔的信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4201",
+    "Text_English": "Hero's tower challenge chance is reset.",
+    "Text_Korean": "參加英雄塔的次數已重置。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4203",
+    "Text_English": "Invalid hero's tower challenge",
+    "Text_Korean": "英雄之塔挑戰無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4204",
+    "Text_English": "Invalid hero's tower information",
+    "Text_Korean": "英雄塔信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4205",
+    "Text_English": "Incorrect hero's tower entry information",
+    "Text_Korean": "英雄之塔入口信息不正確。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4206",
+    "Text_English": "Failed to enter the hero's tower",
+    "Text_Korean": "進入英雄塔失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4207",
+    "Text_English": "Insufficient heroic shards",
+    "Text_Korean": "沒有足夠的英雄碎片。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4208",
+    "Text_English": "Failed to clear the hero's tower",
+    "Text_Korean": "未能完成英雄塔。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4209",
+    "Text_English": "Failed to clear the hero's tower",
+    "Text_Korean": "未能完成英雄塔。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4211",
+    "Text_English": "Maximum challenge chance reached",
+    "Text_Korean": "你已經超過了英雄坐騎挑戰的數量。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4212",
+    "Text_English": "Sweep reward already acquired",
+    "Text_Korean": "您已經獲得了掃蕩獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4213",
+    "Text_English": "Need to clear at least one level in the hero's tower <br>to use sweep",
+    "Text_Korean": "要使用掃蕩，您必須至少完成一層英雄之塔。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4214",
+    "Text_English": "Cannot execute sweep. <br>Please try again.",
+    "Text_Korean": "掃描無法繼續。 <br>請重試。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4215",
+    "Text_English": "Temporary error. <br>Please try again.",
+    "Text_Korean": "出現臨時錯誤。 <br>請重試。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4300",
+    "Text_English": "Relic information does not exist.",
+    "Text_Korean": "不存在的古代神器信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4301",
+    "Text_English": "The higher you reach, <br>the more you can upgrade your relic. <br> Challenge yourself at the hero's tower!",
+    "Text_Korean": "等級越高，神器的強化上限就越高。 <br>挑戰英雄塔頂層！",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4302",
+    "Text_English": "Relic upgrade canceled",
+    "Text_Korean": "古代神器強化已被取消。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4303",
+    "Text_English": "Maximum relic upgrade reached. <br> Increase the upgrade cap <br>by reaching higher levels at the hero's tower.",
+    "Text_Korean": "神器的所有能力都被提升到了最大值<br>英雄之塔越高，神器的最大強化上限就越高。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4304",
+    "Text_English": "Incorrect relic upgrade information",
+    "Text_Korean": "古代神器強化信息不正確。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4305",
+    "Text_English": "Invalid stat information",
+    "Text_Korean": "無效的統計信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4306",
+    "Text_English": "Relic information already exists.",
+    "Text_Korean": "古物信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4307",
+    "Text_English": "Relic stats do not match.",
+    "Text_Korean": "古物統計數據與以前不同。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4308",
+    "Text_English": "Maximum upgrade level condition not satisfied",
+    "Text_Korean": "你不滿足達到最大增強等級的條件。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4309",
+    "Text_English": "Insufficient boss shards",
+    "Text_Korean": "沒有足夠的boss碎片。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5000",
+    "Text_English": "Guild ID already exists.",
+    "Text_Korean": "已經存在的公會ID。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5001",
+    "Text_English": "Guild name already exists.",
+    "Text_Korean": "已經存在的公會名稱。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5002",
+    "Text_English": "Account ID is already a member of this guild.",
+    "Text_Korean": "已經加入公會的ID。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5003",
+    "Text_English": "Incorrect guild ID",
+    "Text_Korean": "公會ID不存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5004",
+    "Text_English": "Guild master ID already exists.",
+    "Text_Korean": "重複的公會領袖 ID。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5005",
+    "Text_English": "Account already invited",
+    "Text_Korean": "此帳號已被邀請。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5006",
+    "Text_English": "Already a member of the guild",
+    "Text_Korean": "你已經是公會的成員了。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5007",
+    "Text_English": "Maximum guild invitation reached",
+    "Text_Korean": "你已經超過了公會邀請的數量。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5008",
+    "Text_English": "Maximum number of guild members reached",
+    "Text_Korean": "公會數量已超過最大值。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5009",
+    "Text_English": "Please set a guild ID that does not overlap.",
+    "Text_Korean": "請將其設置為不重複的公會 ID。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5010",
+    "Text_English": "Only the guild master and deputies can send guild invites.",
+    "Text_Korean": "只有公會會長和副會長可以邀請公會成員。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5011",
+    "Text_English": "Did not receive a guild invite",
+    "Text_Korean": "我沒有收到公會邀請。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5012",
+    "Text_English": "Guild name does not exist.",
+    "Text_Korean": "公會名稱不存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5014",
+    "Text_English": "Need more time to gain guild membership",
+    "Text_Korean": "你需要更多的時間來加入公會。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5015",
+    "Text_English": "Guild member does not exist.",
+    "Text_Korean": "公會成員不存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5016",
+    "Text_English": "Only the guild master can disband the guild.",
+    "Text_Korean": "只有公會會長才能解散公會。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5017",
+    "Text_English": "Only the guild master can appoint deputies.",
+    "Text_Korean": "只有公會會長可以任命副會長。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5018",
+    "Text_English": "Only the guild master can remove deputies.",
+    "Text_Korean": "只有公會會長可以解僱副會長。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5019",
+    "Text_English": "Overlapping title",
+    "Text_Korean": "重複位置。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5020",
+    "Text_English": "Title already exists.",
+    "Text_Korean": "我已經擔任那個職位了。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5021",
+    "Text_English": "Not the same guild",
+    "Text_Korean": "不是同一個公會。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5022",
+    "Text_English": "Only the guild master can remove deputies.",
+    "Text_Korean": "只有公會會長可以解僱副會長。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5023",
+    "Text_English": "Only the guild master and deputies can remove guild members.",
+    "Text_Korean": "公會會長和分會會長可以開除公會成員。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5024",
+    "Text_English": "Invalid guild request information",
+    "Text_Korean": "無效的公會請求信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5025",
+    "Text_English": "Only the guild master and deputies can edit guild information.",
+    "Text_Korean": "只有公會會長和副會長可以編輯公會信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5026",
+    "Text_English": "Only the guild master and deputies can edit guild announcements.",
+    "Text_Korean": "只有公會會長和副會長可以編輯公會通知。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5027",
+    "Text_English": "Guild announcement has not been updated.",
+    "Text_Korean": "公會通知已過時。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5028",
+    "Text_English": "Announcement already updated",
+    "Text_Korean": "此通知已更改。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5029",
+    "Text_English": "Only a deputy can be appointed as a guild master.",
+    "Text_Korean": "只有副會長可以被委派為會長。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5030",
+    "Text_English": "Cannot receive the guild master position",
+    "Text_Korean": "公會領袖不能被委派。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5031",
+    "Text_English": "Required higher guild member rank.",
+    "Text_Korean": "需要更高的公會等級。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5032",
+    "Text_English": "The guild master candidate's condition has been violated for access time.",
+    "Text_Korean": "會長申請者的條件違反了審批時間。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5033",
+    "Text_English": "Failed updating guild master.",
+    "Text_Korean": "更新公會會長失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5034",
+    "Text_English": "Need more time to hand over guild master.",
+    "Text_Korean": "交出會長需要更多時間。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5035",
+    "Text_English": "Target member can not be oneself.",
+    "Text_Korean": "你不能自己做。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5050",
+    "Text_English": "Guild support info already exists.",
+    "Text_Korean": "公會支持信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5051",
+    "Text_English": "Cool time is not complete yet.",
+    "Text_Korean": "冷卻時間尚未完成。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5052",
+    "Text_English": "Guild support info does not exist.",
+    "Text_Korean": "公會支持信息不存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5053",
+    "Text_English": "Max guild support reached.",
+    "Text_Korean": "公會支持的數量已超過。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5054",
+    "Text_English": "Not enough items required to support the guild.",
+    "Text_Korean": "沒有足夠的物品來支持公會。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5055",
+    "Text_English": "Failed to update guild support info.",
+    "Text_Korean": "更新公會支持信息失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5056",
+    "Text_English": "Invalid guild war target info.",
+    "Text_Korean": "公會戰目標信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5057",
+    "Text_English": "Invalid guild war target info.",
+    "Text_Korean": "公會戰目標信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5058",
+    "Text_English": "If you request more than the number of times",
+    "Text_Korean": "如果您在超過次數時請求",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5059",
+    "Text_English": "After the expiration time has passed",
+    "Text_Korean": "如果到期時間已過，如果您要求",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5070",
+    "Text_English": "Max guild mercenaries donations reached.",
+    "Text_Korean": "公會傭兵捐贈數量已超標。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5071",
+    "Text_English": "Failed to increase mercenaries exp.",
+    "Text_Korean": "增加傭兵經驗失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5072",
+    "Text_English": "Max mercenary level reached.",
+    "Text_Korean": "傭兵已經滿級了。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5101",
+    "Text_English": "Cannot use work order",
+    "Text_Korean": "它不適用於執行任務。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5102",
+    "Text_English": "Guild match status is the same.",
+    "Text_Korean": "公會戰狀態沒有改變。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5103",
+    "Text_English": "Invalid status",
+    "Text_Korean": "無效狀態。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5104",
+    "Text_English": "Name change information already exists.",
+    "Text_Korean": "重命名信息已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5105",
+    "Text_English": "Table type cannot use backup and snap.",
+    "Text_Korean": "無法備份和快照的表類型。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5106",
+    "Text_English": "Cannot backup the table type",
+    "Text_Korean": "無法備份的表類型。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5107",
+    "Text_English": "Guild information already updated",
+    "Text_Korean": "公會信息已經更新。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5108",
+    "Text_English": "Need to configure the reward",
+    "Text_Korean": "需要進行補償設置。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5109",
+    "Text_English": "Need to configure the season reward",
+    "Text_Korean": "需要設置季節性獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5110",
+    "Text_English": "Table information already exists.",
+    "Text_Korean": "表信息已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5111",
+    "Text_English": "Invalid active status",
+    "Text_Korean": "公會戰進度已更改。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5112",
+    "Text_English": "Only the guild master and deputies can initiate a guild match.",
+    "Text_Korean": "只有公會會長和副會長可以申請公會戰備。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5113",
+    "Text_English": "Insufficient number of guild members for a guild match",
+    "Text_Korean": "公會戰所需的人數不足。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5114",
+    "Text_English": "Already in a guild match",
+    "Text_Korean": "你已經參加了一場公會戰。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5115",
+    "Text_English": "Guild does not exist.",
+    "Text_Korean": "公會不存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5116",
+    "Text_English": "Guild member does not exist.",
+    "Text_Korean": "公會成員不存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5117",
+    "Text_English": "My guild member does not exist.",
+    "Text_Korean": "我的公會成員不存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5118",
+    "Text_English": "Insufficient attack count",
+    "Text_Korean": "攻擊次數不足。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5119",
+    "Text_English": "Insufficient medal count",
+    "Text_Korean": "獎牌不夠。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5120",
+    "Text_English": "Attack has already been carried out.",
+    "Text_Korean": "與其他用戶的決鬥正在進行中。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5121",
+    "Text_English": "Guild match token information is not the same.",
+    "Text_Korean": "這不是同一個公會戰信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5122",
+    "Text_English": "Account is not the same.",
+    "Text_Korean": "不是同一個目標賬戶。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5123",
+    "Text_English": "Already an attack target",
+    "Text_Korean": "它已經受到攻擊。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5124",
+    "Text_English": "Invalid guild battle round win information.",
+    "Text_Korean": "公會戰鬥回合勝利信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5125",
+    "Text_English": "You cannot cancel the guild while the guild battle is in progress.",
+    "Text_Korean": "公會戰進行中無法取消公會。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5126",
+    "Text_English": "This user cannot attack.",
+    "Text_Korean": "該用戶無法攻擊。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5127",
+    "Text_English": "Guild members cannot be expelled after the guild battle is in progress.",
+    "Text_Korean": "公會戰進行後，無法驅逐公會成員。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5128",
+    "Text_English": "Invalid completion value",
+    "Text_Korean": "退出結果無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5129",
+    "Text_English": "Completion reward already acquired",
+    "Text_Korean": "你已經獲得了最終獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5130",
+    "Text_English": "Season rank information does not exist.",
+    "Text_Korean": "沒有賽季排名信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5131",
+    "Text_English": "Season reward already acquired",
+    "Text_Korean": "您已經獲得了賽季獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5132",
+    "Text_English": "Guild match time limit exceeded",
+    "Text_Korean": "公會戰鬥時間已超過。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5150",
+    "Text_English": "Cannot increase the guild exp further",
+    "Text_Korean": "你不能再增加公會經驗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5160",
+    "Text_English": "Guild skill already reached the maximum level.",
+    "Text_Korean": "公會技能已經達到了最高等級。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5161",
+    "Text_English": "Guild level is too low.",
+    "Text_Korean": "公會等級低。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5162",
+    "Text_English": "Guild skill level-up failed",
+    "Text_Korean": "公會技能升級失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5165",
+    "Text_English": "Guild skill has not been activated.",
+    "Text_Korean": "這是一個不活躍的公會技能。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5166",
+    "Text_English": "Guild skill has not been acquired.",
+    "Text_Korean": "這是一個公會技能，還沒有習得。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5167",
+    "Text_English": "Guild skill purchase failed",
+    "Text_Korean": "購買公會技能失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5171",
+    "Text_English": "Incorrect guild war entry count info.",
+    "Text_Korean": "不正確的激戰進入計數信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5172",
+    "Text_English": "Incorrect guild war slot info.",
+    "Text_Korean": "公會戰插槽信息不正確。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5173",
+    "Text_English": "Incorrect guild war coin info.",
+    "Text_Korean": "公會戰代碼信息不正確。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5174",
+    "Text_English": "Cannot use guild war mercenary.",
+    "Text_Korean": "你不能在公會戰中使用僱傭兵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5175",
+    "Text_English": "Duplicate guild war character info.",
+    "Text_Korean": "公會戰角色信息被複製。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5176",
+    "Text_English": "Reached max guild war mercenary use count.",
+    "Text_Korean": "公會戰中使用的僱傭兵數量已經超過。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5177",
+    "Text_English": "Incorrect guild war team entry count info.",
+    "Text_Korean": "激戰隊參賽人數信息不正確。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5178",
+    "Text_English": "Failed to update guild war entry.",
+    "Text_Korean": "無法更新公會戰條目。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5500",
+    "Text_English": "Friend already exists.",
+    "Text_Korean": "朋友已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5501",
+    "Text_English": "Friend does not exist.",
+    "Text_Korean": "一個不存在的朋友。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5502",
+    "Text_English": "Friend list full",
+    "Text_Korean": "您的好友列表已滿。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5503",
+    "Text_English": "Friend request already sent",
+    "Text_Korean": "您已經提出了好友請求。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5504",
+    "Text_English": "Sent request full",
+    "Text_Korean": "已發送申請列表已滿。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5505",
+    "Text_English": "Already received a friend request",
+    "Text_Korean": "我已經收到了好友請求。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5506",
+    "Text_English": "Received friend requests full",
+    "Text_Korean": "您收到的好友請求列表已滿。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5507",
+    "Text_English": "Already friends",
+    "Text_Korean": "已經朋友。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5508",
+    "Text_English": "No friend requests received",
+    "Text_Korean": "未收到好友請求。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5509",
+    "Text_English": "No friend requests sent",
+    "Text_Korean": "未發送好友請求。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5510",
+    "Text_English": "Cannot delete anymore",
+    "Text_Korean": "您今天不能再刪除它。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5511",
+    "Text_English": "Cannot send FP yet",
+    "Text_Korean": "還不能發送友誼積分。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5512",
+    "Text_English": "Cannot search own name",
+    "Text_Korean": "您無法搜索自己的姓名。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5513",
+    "Text_English": "The opponent can no longer accept friends.",
+    "Text_Korean": "對方不能再接受朋友了。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5514",
+    "Text_English": "Non-existent friend invitation reward information.",
+    "Text_Korean": "不存在的好友邀請獎勵信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5515",
+    "Text_English": "Invalid friend invitation reward information.",
+    "Text_Korean": "好友邀請獎勵信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5516",
+    "Text_English": "Invalid friend invitation reward information.",
+    "Text_Korean": "好友邀請獎勵信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5517",
+    "Text_English": "Unsupported friend information.",
+    "Text_Korean": "不支持的朋友信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5518",
+    "Text_English": "Invalid invitation reward type.",
+    "Text_Korean": "邀請獎勵類型無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5519",
+    "Text_English": "You have already received your friend invitation reward.",
+    "Text_Korean": "您已經收到好友邀請獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5520",
+    "Text_English": "Insufficient number of invitations to receive rewards.",
+    "Text_Korean": "接收獎勵的邀請數量不足。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6000",
+    "Text_English": "Mail does not exist.",
+    "Text_Korean": "郵件不存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6001",
+    "Text_English": "Mail has expired.",
+    "Text_Korean": "過期郵件。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6002",
+    "Text_English": "Mail open failed",
+    "Text_Korean": "獲取郵件失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6003",
+    "Text_English": "Invalid raffle information",
+    "Text_Korean": "您的彩票信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6004",
+    "Text_English": "Invalid mail information",
+    "Text_Korean": "您的郵政信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6005",
+    "Text_English": "Incorrect mail menu position",
+    "Text_Korean": "郵箱中的菜單位置錯誤。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6006",
+    "Text_English": "Invalid raffle information",
+    "Text_Korean": "您的彩票信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6007",
+    "Text_English": "Invalid raffle information",
+    "Text_Korean": "您的彩票信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6008",
+    "Text_English": "Mail creation failed",
+    "Text_Korean": "創建郵件失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6009",
+    "Text_English": "Max number of messages reached in mailbox.",
+    "Text_Korean": "您已超過郵箱的最大數量。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6010",
+    "Text_English": "Invalid mail info.",
+    "Text_Korean": "郵件信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6100",
+    "Text_English": "Invalid repeat mission reward information",
+    "Text_Korean": "重複任務獎勵信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6101",
+    "Text_English": "Invalid repeat mission clear number",
+    "Text_Korean": "重複任務完成計數無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6102",
+    "Text_English": "Failed to update repeat mission information",
+    "Text_Korean": "無法更新重複任務信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6120",
+    "Text_English": "Invalid reward box",
+    "Text_Korean": "無效的獎勵箱。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6121",
+    "Text_English": "Reward information does not exist.",
+    "Text_Korean": "不存在的補償信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6122",
+    "Text_English": "Unopened reward box",
+    "Text_Korean": "這是一個未打開的獎勵箱。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6123",
+    "Text_English": "Reward box does not exist",
+    "Text_Korean": "這是一個不存在的獎勵箱。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6124",
+    "Text_English": "Invalid duel information",
+    "Text_Korean": "決鬥模式信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6125",
+    "Text_English": "Failed to update duel reward information",
+    "Text_Korean": "決鬥寶箱獎勵信息更新失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6126",
+    "Text_English": "Invalid duel chest rating.",
+    "Text_Korean": "決鬥寶箱評級無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6300",
+    "Text_English": "Reward already acquired",
+    "Text_Korean": "已經獲得的完成獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6301",
+    "Text_English": "Inadequate reward count",
+    "Text_Korean": "未達到完成獎勵的數量。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6500",
+    "Text_English": "Incorrect team match roster",
+    "Text_Korean": "團隊匹配配置不正確。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6501",
+    "Text_English": "Invalid team match roster level",
+    "Text_Korean": "無效的團隊比賽組成級別。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6502",
+    "Text_English": "Incorrect team match information",
+    "Text_Korean": "不存在的球隊比賽信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6503",
+    "Text_English": "Incorrect team match roster",
+    "Text_Korean": "這是一個不存在的團隊匹配配置。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6504",
+    "Text_English": "Character already exists.",
+    "Text_Korean": "存在相同的字符。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6505",
+    "Text_English": "Level is not the same.",
+    "Text_Korean": "不同的配置級別狀態。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6506",
+    "Text_English": "Cannot begin match",
+    "Text_Korean": "比賽無法開始。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6507",
+    "Text_English": "No matching information",
+    "Text_Korean": "沒有匹配的信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6508",
+    "Text_English": "Match token information is not the same.",
+    "Text_Korean": "不一樣的匹配信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6509",
+    "Text_English": "Team match status does not exist.",
+    "Text_Korean": "這是一場不存在的團隊比賽。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6510",
+    "Text_English": "Reward already acquired",
+    "Text_Korean": "您已經獲得了獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6511",
+    "Text_English": "Not on the ranking list",
+    "Text_Korean": "它不存在於排名列表中。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6512",
+    "Text_English": "Rank reward data do not exist.",
+    "Text_Korean": "沒有排名獎勵數據。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6513",
+    "Text_English": "Cannot use the PvP rank reward data",
+    "Text_Korean": "PVP排名獎勵數據不可用。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6514",
+    "Text_English": "Cannot use the team match rank reward data",
+    "Text_Korean": "團隊比賽排名獎勵數據不可用。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6515",
+    "Text_English": "Insufficient team match points",
+    "Text_Korean": "沒有足夠的積分進入團隊比賽。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6516",
+    "Text_English": "Invalid entry information",
+    "Text_Korean": "無效的附加條目信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6517",
+    "Text_English": "Incorrect account information",
+    "Text_Korean": "無效的帳戶信息狀態。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6518",
+    "Text_English": "Invalid team control rank reward data",
+    "Text_Korean": "這是職業前的排名獎勵數據，無法使用。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6519",
+    "Text_English": "Incorrect PvP match level",
+    "Text_Korean": "無效的一對一比賽評分。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6520",
+    "Text_English": "Incorrect team control match level",
+    "Text_Korean": "錯誤的征服前比賽評級。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6521",
+    "Text_English": "Cannot use team control victory reward information",
+    "Text_Korean": "征服勝利獎勵信息不可用。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6522",
+    "Text_English": "Cannot use team match MVP reward information",
+    "Text_Korean": "職業前MVP獎勵信息不可用。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6523",
+    "Text_English": "Insufficient MVP keys",
+    "Text_Korean": "您用完了 MVP 密鑰。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6524",
+    "Text_English": "Failed to process Team Control defeat info.",
+    "Text_Korean": "佔領前未能處理失敗信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6525",
+    "Text_English": "Team match reward info does not exist.",
+    "Text_Korean": "這是不存在的團隊比賽獎勵信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6526",
+    "Text_English": "1vs1 match reward info does not exist.",
+    "Text_Korean": "這是不存在的一對一比賽獎勵信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6527",
+    "Text_English": "Team Control reward info does not exist.",
+    "Text_Korean": "這是不存在的征服前獎勵信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6528",
+    "Text_English": "Team match opponent does not exist.",
+    "Text_Korean": "一個不存在的團隊對手。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6550",
+    "Text_English": "You have already earned the Hall of Heroes ranking reward.",
+    "Text_Korean": "您已經獲得英雄殿排名獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6551",
+    "Text_English": "You cannot worship yourself.",
+    "Text_Korean": "你不能崇拜自己。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6552",
+    "Text_English": "It is an object of worship that does not exist.",
+    "Text_Korean": "這是一個不存在的崇拜對象。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6553",
+    "Text_English": "Worship count not reset.",
+    "Text_Korean": "崇拜計數未重置。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6554",
+    "Text_English": "Invalid duel mode worship information.",
+    "Text_Korean": "無效的決鬥模式崇拜信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6555",
+    "Text_English": "Exceeded daily worship count.",
+    "Text_Korean": "超過每日敬拜次數。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6556",
+    "Text_English": "The number of worships did not increase.",
+    "Text_Korean": "崇拜的次數沒有增加。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6600",
+    "Text_English": "Insufficient promotion stones",
+    "Text_Korean": "晉升強化所需的晉升石不足。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6601",
+    "Text_English": "Maximum upgrade reached",
+    "Text_Korean": "你已經達到了最高強化等級。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6602",
+    "Text_English": "Required stage is not yet cleared.",
+    "Text_Korean": "無法完成解鎖所需的相應階段。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6603",
+    "Text_English": "Promotion already active",
+    "Text_Korean": "這是一個已經很活躍的促銷活動。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6604",
+    "Text_English": "Rank information does not exist.",
+    "Text_Korean": "這是不存在的排名信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6605",
+    "Text_English": "Invalid promotion upgrade status",
+    "Text_Korean": "增強促銷狀態無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6607",
+    "Text_English": "Did not reach the unlock level",
+    "Text_Korean": "無法達到解鎖等級條件。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6608",
+    "Text_English": "Promotion stone increase failed",
+    "Text_Korean": "無法增加晉升石。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6700",
+    "Text_English": "Quest reward prep failed",
+    "Text_Korean": "準備任務獎勵失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6701",
+    "Text_English": "Daily quest count exceeded",
+    "Text_Korean": "已超過每日任務數量。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6702",
+    "Text_English": "Quest data do not exist.",
+    "Text_Korean": "不存在的任務數據。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6703",
+    "Text_English": "Invalid quest reward information",
+    "Text_Korean": "任務獎勵信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6704",
+    "Text_English": "Quest information already exists.",
+    "Text_Korean": "已經存在的任務信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6705",
+    "Text_English": "Quest reset failed",
+    "Text_Korean": "更新任務計數失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6706",
+    "Text_English": "Invalid quest type",
+    "Text_Korean": "無效的任務類型。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6707",
+    "Text_English": "Main quest creation failed",
+    "Text_Korean": "創建主線任務失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6708",
+    "Text_English": "Quest failed due to invalid quest type",
+    "Text_Korean": "由於任務類型無效，任務失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6709",
+    "Text_English": "Invalid quest type",
+    "Text_Korean": "無效的任務類型。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6710",
+    "Text_English": "Invalid quest status",
+    "Text_Korean": "無效的任務狀態。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6711",
+    "Text_English": "Invalid daily quest info.",
+    "Text_Korean": "每日任務信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6712",
+    "Text_English": "Failed to refresh daily quest info.",
+    "Text_Korean": "每日任務信息更新失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6713",
+    "Text_English": "It is impossible to give up on a quest that has already been completed.",
+    "Text_Korean": "不可能放棄已經完成的任務。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6714",
+    "Text_English": "Invalid quest information.",
+    "Text_Korean": "無效的任務信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6800",
+    "Text_English": "Invalid donation status.",
+    "Text_Korean": "捐贈狀態無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6801",
+    "Text_English": "Donation status is already active.",
+    "Text_Korean": "捐贈狀態已激活。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6802",
+    "Text_English": "Invalid free donation status.",
+    "Text_Korean": "免費捐贈狀態無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6803",
+    "Text_English": "It doesn't match the last donated key value.",
+    "Text_Korean": "已經存在的公會名稱。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6804",
+    "Text_English": "Failed to renew free counts per day.",
+    "Text_Korean": "已經加入公會的ID。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6805",
+    "Text_English": "Failed to renew donation points.",
+    "Text_Korean": "公會ID不存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6806",
+    "Text_English": "Failed to update last donation key value.",
+    "Text_Korean": "重複的公會領袖 ID。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6807",
+    "Text_English": "The event has expired and you cannot obtain a gift.",
+    "Text_Korean": "此帳號已被邀請。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6808",
+    "Text_English": "You have already earned donation points rewards.",
+    "Text_Korean": "你已經是公會的成員了。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6809",
+    "Text_English": "Failed to update donation point reward status.",
+    "Text_Korean": "你已經超過了公會邀請的數量。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6810",
+    "Text_English": "You don't have enough points to earn rewards.",
+    "Text_Korean": "公會數量已超過最大值。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6811",
+    "Text_English": "Invalid donation ranking information.",
+    "Text_Korean": "請將其設置為不重複的公會 ID。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6812",
+    "Text_English": "It does not match donation ranking information.",
+    "Text_Korean": "只有公會會長和副會長可以邀請公會成員。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6813",
+    "Text_English": "Invalid donation event status.",
+    "Text_Korean": "我沒有收到公會邀請。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6814",
+    "Text_English": "There are still free donations left.",
+    "Text_Korean": "公會名稱不存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6815",
+    "Text_English": "Event time has expired and can no longer proceed",
+    "Text_Korean": "你需要更多的時間來加入公會。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6816",
+    "Text_English": "FAILURE_DONATION_EVENT_TIME_TABLE_WRONG",
+    "Text_Korean": "公會成員不存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6817",
+    "Text_English": "FAILURE_NOT_EXIST_DONATION_EVENT",
+    "Text_Korean": "只有公會會長才能解散公會。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6818",
+    "Text_English": "FAILURE_DONATION_EVENT_DELETE_TIME_PASSED",
+    "Text_Korean": "只有公會會長可以任命副會長。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6819",
+    "Text_English": "FAILURE_NOT_EXIST_DONATION_EVENT_SETTLE_STATE",
+    "Text_Korean": "只有公會會長可以解僱副會長。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6820",
+    "Text_English": "Invalid donation event status.",
+    "Text_Korean": "重複位置。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6821",
+    "Text_English": "Invalid donation event status.",
+    "Text_Korean": "我已經擔任那個職位了。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6900",
+    "Text_English": "FAILURE_CALCULATE_TOTEM_VALUES",
+    "Text_Korean": "不是同一個公會。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6901",
+    "Text_English": "FAILURE_DUPLICATED_TOTEM",
+    "Text_Korean": "只有公會會長可以解僱副會長。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6902",
+    "Text_English": "FAILURE_NOT_EXIST_TOTEM",
+    "Text_Korean": "公會會長和分會會長可以開除公會成員。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6903",
+    "Text_English": "FAILURE_LOCKED_TOTEM",
+    "Text_Korean": "無效的公會請求信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6904",
+    "Text_English": "FAILURE_TOO_MANY_TOTEM_FOR_DISMANTLE",
+    "Text_Korean": "只有公會會長和副會長可以編輯公會信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6905",
+    "Text_English": "FAILURE_DISMANTLE_TOTEM_LIST_EMPTY",
+    "Text_Korean": "只有公會會長和副會長可以編輯公會通知。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6906",
+    "Text_English": "FAILURE_ALREADY_EQUIPPED_TOTEM",
+    "Text_Korean": "公會通知已過時。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6907",
+    "Text_English": "FAILURE_EQUIP_TOTEM",
+    "Text_Korean": "此通知已更改。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6908",
+    "Text_English": "FAILURE_UNEQUIP_TOTEM",
+    "Text_Korean": "只有副會長可以被委派為會長。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6909",
+    "Text_English": "FAILURE_ALREADY_EXISTS_TOTEM_TARGET_SLOT",
+    "Text_Korean": "公會領袖不能被委派。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6910",
+    "Text_English": "FAILURE_NOT_OPEN_TOTEM_SLOT",
+    "Text_Korean": "需要更高的公會等級。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6911",
+    "Text_English": "FAILURE_OVERFLOW_TOTEM_REFINE_CHANCE",
+    "Text_Korean": "會長申請者的條件違反了審批時間。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6912",
+    "Text_English": "FAILURE_NEED_MORE_DIMENSIONAL_PIECE",
+    "Text_Korean": "更新公會會長失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6913",
+    "Text_English": "FAILURE_UPDATE_REFINE_TOTEM",
+    "Text_Korean": "交出會長需要更多時間。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6914",
+    "Text_English": "FAILURE_OVERFLOW_TOTEM_REFINE_LIMIT_COUNT",
+    "Text_Korean": "你不能自己做。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6915",
+    "Text_English": "FAILURE_INVALID_REFINE_TOTEM_OPTION_ID",
+    "Text_Korean": "公會支持信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6916",
+    "Text_English": "FAILURE_TOO_MANY_TOTEM_FOR_SELL",
+    "Text_Korean": "冷卻時間尚未完成。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6917",
+    "Text_English": "FAILURE_SELL_TOTEM_LIST_EMPTY",
+    "Text_Korean": "公會支持信息不存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6918",
+    "Text_English": "FAILURE_SELL_EQUIPPED_TOTEM",
+    "Text_Korean": "公會支持的數量已超過。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6919",
+    "Text_English": "FAILURE_NOT_ENOUGH_TOTEM_INVENTORY_LEFT_SLOT",
+    "Text_Korean": "沒有足夠的物品來支持公會。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6920",
+    "Text_English": "FAILURE_EQUIP_DUPLICATED_SLOT_TOTEM",
+    "Text_Korean": "更新公會支持信息失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6921",
+    "Text_English": "FAILURE_TOTEM_EQUIP_LIST_EMPTY",
+    "Text_Korean": "公會戰目標信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6922",
+    "Text_English": "FAILURE_NOT_REACHED_REFINE_CHANCE",
+    "Text_Korean": "公會戰目標信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7000",
+    "Text_English": "Failed to acquire reward due to incomplete achievement",
+    "Text_Korean": "如果您在超過次數時請求",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7001",
+    "Text_English": "Achievement reward already acquired",
+    "Text_Korean": "如果到期時間已過，如果您要求",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7002",
+    "Text_English": "Achievement reward does not exist.",
+    "Text_Korean": "公會傭兵捐贈數量已超標。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7003",
+    "Text_English": "Achievement does not exist.",
+    "Text_Korean": "增加傭兵經驗失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7004",
+    "Text_English": "Failed to update the achievement score",
+    "Text_Korean": "傭兵已經滿級了。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7005",
+    "Text_English": "Failed to update the achievement",
+    "Text_Korean": "它不適用於執行任務。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7006",
+    "Text_English": "Incorrect achievement status",
+    "Text_Korean": "公會戰狀態沒有改變。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7007",
+    "Text_English": "Failed to update the achievement",
+    "Text_Korean": "無效狀態。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7008",
+    "Text_English": "Achievement score data do not exist.",
+    "Text_Korean": "重命名信息已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7009",
+    "Text_English": "Achievement score data do not exist.",
+    "Text_Korean": "無法備份和快照的表類型。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7010",
+    "Text_English": "Failed to update the achievement score",
+    "Text_Korean": "無法備份的表類型。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7011",
+    "Text_English": "Failed to update the daily achievement",
+    "Text_Korean": "公會信息已經更新。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7012",
+    "Text_English": "Invalid achievement type",
+    "Text_Korean": "需要進行補償設置。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7013",
+    "Text_English": "Incorrect achievement reset",
+    "Text_Korean": "需要設置季節性獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7014",
+    "Text_English": "Failed to update the achievement reset",
+    "Text_Korean": "表信息已存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7015",
+    "Text_English": "Failed to update the achievement score list",
+    "Text_Korean": "公會戰進度已更改。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7016",
+    "Text_English": "Failed to update the daily achievement reset",
+    "Text_Korean": "只有公會會長和副會長可以申請公會戰備。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7017",
+    "Text_English": "Failed to update the weekly achievement reset",
+    "Text_Korean": "公會戰所需的人數不足。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7018",
+    "Text_English": "Failed to update the monthly achievement reset",
+    "Text_Korean": "你已經參加了一場公會戰。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7019",
+    "Text_English": "Insufficient general achievement completion",
+    "Text_Korean": "公會不存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7020",
+    "Text_English": "Failed to acquire the achievement score",
+    "Text_Korean": "公會成員不存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7021",
+    "Text_English": "Invalid reward information",
+    "Text_Korean": "我的公會成員不存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7022",
+    "Text_English": "Achievement information does not exist.",
+    "Text_Korean": "攻擊次數不足。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7023",
+    "Text_English": "This achievement type does not give rewards.",
+    "Text_Korean": "獎牌不夠。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7024",
+    "Text_English": "Invalid mission type.",
+    "Text_Korean": "與其他用戶的決鬥正在進行中。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7100",
+    "Text_English": "Maximum wings upgrade level reached",
+    "Text_Korean": "這不是同一個公會戰信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7101",
+    "Text_English": "Maximum wings evolution level reached",
+    "Text_Korean": "不是同一個目標賬戶。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7102",
+    "Text_English": "Insufficient wings grade for evolution",
+    "Text_Korean": "它已經受到攻擊。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7103",
+    "Text_English": "Maximum wings option level reached",
+    "Text_Korean": "公會戰鬥回合勝利信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7104",
+    "Text_English": "Failed to increase wings upgrade points",
+    "Text_Korean": "公會戰進行中無法取消公會。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7105",
+    "Text_English": "Failed to update wings upgrade points",
+    "Text_Korean": "該用戶無法攻擊。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7106",
+    "Text_English": "Failed to increase the wings upgrade level",
+    "Text_Korean": "公會戰進行後，無法驅逐公會成員。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7107",
+    "Text_English": "Failed to increase the wings upgrade level",
+    "Text_Korean": "退出結果無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7108",
+    "Text_English": "Failed to update the wings evolution status",
+    "Text_Korean": "你已經獲得了最終獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7109",
+    "Text_English": "Failed to increase wings evolution points",
+    "Text_Korean": "沒有賽季排名信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7110",
+    "Text_English": "Failed to update wings evolution points",
+    "Text_Korean": "您已經獲得了賽季獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7111",
+    "Text_English": "Maximum wings level reached",
+    "Text_Korean": "公會戰鬥時間已超過。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7112",
+    "Text_English": "Failed to update the wings level",
+    "Text_Korean": "你不能再增加公會經驗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7113",
+    "Text_English": "Overlapping wings option data",
+    "Text_Korean": "公會技能已經達到了最高等級。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7114",
+    "Text_English": "Wings option does not exist.",
+    "Text_Korean": "公會等級低。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7115",
+    "Text_English": "Failed to update the wings option level",
+    "Text_Korean": "公會技能升級失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7116",
+    "Text_English": "Invalid wings display",
+    "Text_Korean": "這是一個不活躍的公會技能。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7151",
+    "Text_English": "Duplicate Fairy stat data.",
+    "Text_Korean": "這是一個公會技能，還沒有習得。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7152",
+    "Text_English": "Fairy stat data that does not exist.",
+    "Text_Korean": "購買公會技能失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7153",
+    "Text_English": "Invalid fairy blessing information.",
+    "Text_Korean": "不正確的激戰進入計數信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7154",
+    "Text_English": "Fairy information that does not exist.",
+    "Text_Korean": "公會戰插槽信息不正確。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7155",
+    "Text_English": "Invalid fairy enhancement level.",
+    "Text_Korean": "公會戰代碼信息不正確。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7156",
+    "Text_English": "You have exceeded the Fairy Normal Level.",
+    "Text_Korean": "你不能在公會戰中使用僱傭兵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7157",
+    "Text_English": "not passed fairy gift time.",
+    "Text_Korean": "公會戰角色信息被複製。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7158",
+    "Text_English": "failed load fairy gift status.",
+    "Text_Korean": "公會戰中使用的僱傭兵數量已經超過。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7159",
+    "Text_English": "not open fairy gift contents.",
+    "Text_Korean": "激戰隊參賽人數信息不正確。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7200",
+    "Text_English": "Invalid store price",
+    "Text_Korean": "無法更新公會戰條目。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7201",
+    "Text_English": "Store mileage does not exist.",
+    "Text_Korean": "朋友已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7202",
+    "Text_English": "Insufficient store mileage",
+    "Text_Korean": "一個不存在的朋友。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7203",
+    "Text_English": "Failed to update the store mileage",
+    "Text_Korean": "您的好友列表已滿。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7204",
+    "Text_English": "Store mileage reward list",
+    "Text_Korean": "您已經提出了好友請求。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7205",
+    "Text_English": "Incorrect item status",
+    "Text_Korean": "已發送申請列表已滿。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7206",
+    "Text_English": "Incorrect free item status",
+    "Text_Korean": "我已經收到了好友請求。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7207",
+    "Text_English": "Failed to update the free item status",
+    "Text_Korean": "您收到的好友請求列表已滿。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7208",
+    "Text_English": "Invalid store price",
+    "Text_Korean": "已經朋友。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7209",
+    "Text_English": "Invalid store package information",
+    "Text_Korean": "未收到好友請求。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7210",
+    "Text_English": "Incorrect store mileage reward",
+    "Text_Korean": "未發送好友請求。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7211",
+    "Text_English": "failed exceed daily lottery count",
+    "Text_Korean": "您今天不能再刪除它。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7212",
+    "Text_English": "It is no longer available for purchase.",
+    "Text_Korean": "還不能發送友誼積分。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7213",
+    "Text_English": "Failed to reset store purchase count.",
+    "Text_Korean": "您無法搜索自己的姓名。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7214",
+    "Text_English": "Failed to increase the number of shop purchases.",
+    "Text_Korean": "對方不能再接受朋友了。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7215",
+    "Text_English": "Invalid buff time.",
+    "Text_Korean": "不存在的好友邀請獎勵信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7216",
+    "Text_English": "Invalid discount product information.",
+    "Text_Korean": "好友邀請獎勵信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7217",
+    "Text_English": "Invalid bonus increment information.",
+    "Text_Korean": "好友邀請獎勵信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7218",
+    "Text_English": "This product has already been purchased.",
+    "Text_Korean": "不支持的朋友信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7219",
+    "Text_English": "Invalid package purchase limit information.",
+    "Text_Korean": "邀請獎勵類型無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7220",
+    "Text_English": "Invalid package purchase limit information.",
+    "Text_Korean": "您已經收到好友邀請獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7221",
+    "Text_English": "You have already received your bonus reward.",
+    "Text_Korean": "接收獎勵的邀請數量不足。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7222",
+    "Text_English": "Invalid package purchase count information.",
+    "Text_Korean": "郵件不存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7223",
+    "Text_English": "Invalid package reward information.",
+    "Text_Korean": "過期郵件。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7224",
+    "Text_English": "Invalid level-up package reward information.",
+    "Text_Korean": "獲取郵件失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7225",
+    "Text_English": "Invalid package mission reward information.",
+    "Text_Korean": "您的彩票信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7226",
+    "Text_English": "These are package mission rewards that have already been acquired.",
+    "Text_Korean": "您的郵政信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7227",
+    "Text_English": "Invalid level achievement contract package information.",
+    "Text_Korean": "郵箱中的菜單位置錯誤。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7228",
+    "Text_English": "Character level that does not meet the purchase conditions.",
+    "Text_Korean": "您的彩票信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7229",
+    "Text_English": "The package mission completion period has expired.",
+    "Text_Korean": "您的彩票信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7230",
+    "Text_English": "Failed to update level up package mission.",
+    "Text_Korean": "創建郵件失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7231",
+    "Text_English": "Failed to update level achievement contract package mission.",
+    "Text_Korean": "您已超過郵箱的最大數量。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7232",
+    "Text_English": "Invalid equipment summon ticket information.",
+    "Text_Korean": "郵件信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7233",
+    "Text_English": "Not enough equipment summon tickets.",
+    "Text_Korean": "重複任務獎勵信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7234",
+    "Text_English": "Invalid lottery ticket ID information.",
+    "Text_Korean": "重複任務完成計數無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7235",
+    "Text_English": "Failed to update lottery ID information.",
+    "Text_Korean": "無法更新重複任務信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7236",
+    "Text_English": "Invalid package information.",
+    "Text_Korean": "無效的獎勵箱。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7237",
+    "Text_English": "Invalid free lottery information.",
+    "Text_Korean": "不存在的補償信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7250",
+    "Text_English": "Product purchase information already exists.",
+    "Text_Korean": "這是一個未打開的獎勵箱。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7251",
+    "Text_English": "Invalid product purchase information.",
+    "Text_Korean": "這是一個不存在的獎勵箱。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7252",
+    "Text_English": "Invalid product ID information.",
+    "Text_Korean": "決鬥模式信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7253",
+    "Text_English": "Non-existent market purchase information.",
+    "Text_Korean": "決鬥寶箱獎勵信息更新失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7254",
+    "Text_English": "Invalid market purchase information.",
+    "Text_Korean": "決鬥寶箱評級無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7255",
+    "Text_English": "Invalid market information.",
+    "Text_Korean": "已經獲得的完成獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7256",
+    "Text_English": "Market purchase information is already complete.",
+    "Text_Korean": "未達到完成獎勵的數量。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7257",
+    "Text_English": "Invalid receipt confirmation information.",
+    "Text_Korean": "團隊匹配配置不正確。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7258",
+    "Text_English": "Invalid purchase receipt information.",
+    "Text_Korean": "無效的團隊比賽組成級別。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7259",
+    "Text_English": "Invalid product receipt and purchase information.",
+    "Text_Korean": "不存在的球隊比賽信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7260",
+    "Text_English": "There is no receipt information for that app.",
+    "Text_Korean": "這是一個不存在的團隊匹配配置。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7261",
+    "Text_English": "Invalid receipt information.",
+    "Text_Korean": "存在相同的字符。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7262",
+    "Text_English": "Please confirm receipt after a while.",
+    "Text_Korean": "不同的配置級別狀態。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7263",
+    "Text_English": "Purchase processing has already been applied.",
+    "Text_Korean": "比賽無法開始。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7264",
+    "Text_English": "Invalid market purchase information.",
+    "Text_Korean": "沒有匹配的信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7280",
+    "Text_English": "Invalid number of products.",
+    "Text_Korean": "不一樣的匹配信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7281",
+    "Text_English": "Invalid product update information.",
+    "Text_Korean": "這是一場不存在的團隊比賽。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7282",
+    "Text_English": "The maximum number of updates has been exceeded.",
+    "Text_Korean": "您已經獲得了獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7283",
+    "Text_English": "Invalid product purchase information.",
+    "Text_Korean": "它不存在於排名列表中。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7284",
+    "Text_English": "Non-existent magic shop information.",
+    "Text_Korean": "沒有排名獎勵數據。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7285",
+    "Text_English": "This product has already been purchased.",
+    "Text_Korean": "PVP排名獎勵數據不可用。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7300",
+    "Text_English": "Insufficient set list",
+    "Text_Korean": "團隊比賽排名獎勵數據不可用。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7301",
+    "Text_English": "Set reward already acquired",
+    "Text_Korean": "沒有足夠的積分進入團隊比賽。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7302",
+    "Text_English": "Invalid set reward",
+    "Text_Korean": "無效的附加條目信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7303",
+    "Text_English": "Overlapping item",
+    "Text_Korean": "無效的帳戶信息狀態。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7304",
+    "Text_English": "Overlapping set item",
+    "Text_Korean": "這是職業前的排名獎勵數據，無法使用。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7305",
+    "Text_English": "Failed to update the set reward",
+    "Text_Korean": "無效的一對一比賽評分。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7306",
+    "Text_English": "Failed to update the item status",
+    "Text_Korean": "錯誤的征服前比賽評級。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7400",
+    "Text_English": "Invalid battle map",
+    "Text_Korean": "征服勝利獎勵信息不可用。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7401",
+    "Text_English": "Invalid difficulty",
+    "Text_Korean": "職業前MVP獎勵信息不可用。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7402",
+    "Text_English": "Raid reward information does not exist.",
+    "Text_Korean": "您用完了 MVP 密鑰。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7403",
+    "Text_English": "Incorrect raid reward count",
+    "Text_Korean": "佔領前未能處理失敗信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7404",
+    "Text_English": "Raid information does not exist.",
+    "Text_Korean": "這是不存在的團隊比賽獎勵信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7405",
+    "Text_English": "Raid reward already acquired",
+    "Text_Korean": "這是不存在的一對一比賽獎勵信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7406",
+    "Text_English": "Failed to select the raid reward",
+    "Text_Korean": "這是不存在的征服前獎勵信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7407",
+    "Text_English": "You have used all of your raid challenges.",
+    "Text_Korean": "一個不存在的團隊對手。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7408",
+    "Text_English": "Maximum revive reached",
+    "Text_Korean": "您已經獲得英雄殿排名獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7409",
+    "Text_English": "Maximum revive reached",
+    "Text_Korean": "你不能崇拜自己。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7410",
+    "Text_English": "Raid is not open.",
+    "Text_Korean": "這是一個不存在的崇拜對象。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7411",
+    "Text_English": "Invalid raid open period",
+    "Text_Korean": "崇拜計數未重置。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7412",
+    "Text_English": "Invalid character information",
+    "Text_Korean": "無效的決鬥模式崇拜信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7413",
+    "Text_English": "Because of the recent breakout, you can enter <br>after a certain period.",
+    "Text_Korean": "超過每日敬拜次數。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7414",
+    "Text_English": "Invalid matching room information.",
+    "Text_Korean": "崇拜的次數沒有增加。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7415",
+    "Text_English": "Raid reward update failed.",
+    "Text_Korean": "晉升強化所需的晉升石不足。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7416",
+    "Text_English": "Invalid re-entry information.",
+    "Text_Korean": "你已經達到了最高強化等級。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7500",
+    "Text_English": "Invalid check-in time",
+    "Text_Korean": "無法完成解鎖所需的相應階段。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7502",
+    "Text_English": "Failed to activate the event check-in",
+    "Text_Korean": "這是一個已經很活躍的促銷活動。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7503",
+    "Text_English": "Failed to update event check-in information",
+    "Text_Korean": "這是不存在的排名信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7504",
+    "Text_English": "Event check-in date exceeded",
+    "Text_Korean": "增強促銷狀態無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7505",
+    "Text_English": "No more login rewards",
+    "Text_Korean": "無法達到解鎖等級條件。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7506",
+    "Text_English": "Reset failed because of change of date",
+    "Text_Korean": "無法增加晉升石。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7507",
+    "Text_English": "This is the new user attendance event information that has already ended.",
+    "Text_Korean": "準備任務獎勵失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7508",
+    "Text_English": "The maximum number of attendance for the new user attendance event has been exceeded.",
+    "Text_Korean": "已超過每日任務數量。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7509",
+    "Text_English": "Failed to update new user attendance information.",
+    "Text_Korean": "不存在的任務數據。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7600",
+    "Text_English": "Team control information does not exist.",
+    "Text_Korean": "任務獎勵信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7601",
+    "Text_English": "Invalid revive information",
+    "Text_Korean": "已經存在的任務信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7602",
+    "Text_English": "Incorrect revive information",
+    "Text_Korean": "更新任務計數失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7603",
+    "Text_English": "Team control match is not open.",
+    "Text_Korean": "無效的任務類型。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7604",
+    "Text_English": "This is non-existent pre-conquest information.",
+    "Text_Korean": "創建主線任務失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7700",
+    "Text_English": "This Unity Skill mission does not exist.",
+    "Text_Korean": "由於任務類型無效，任務失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7701",
+    "Text_English": "Failed to process Unity Skill mission.",
+    "Text_Korean": "無效的任務類型。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7702",
+    "Text_English": "Unity Skill mission info does not exist.",
+    "Text_Korean": "無效的任務狀態。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7703",
+    "Text_English": "Invalid unity skill mission information.",
+    "Text_Korean": "每日任務信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7704",
+    "Text_English": "Failed to update Unity Skill mission info.",
+    "Text_Korean": "每日任務信息更新失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7705",
+    "Text_English": "Failed to update Unity Skill character info.",
+    "Text_Korean": "不可能放棄已經完成的任務。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7800",
+    "Text_English": "Insufficient break points.",
+    "Text_Korean": "無效的任務信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7801",
+    "Text_English": "BreakTime Reward data does not exist.",
+    "Text_Korean": "捐贈狀態無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7850",
+    "Text_English": "Event activation failed.",
+    "Text_Korean": "捐贈狀態已激活。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7851",
+    "Text_English": "Non-existent event reward information.",
+    "Text_Korean": "免費捐贈狀態無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7852",
+    "Text_English": "Event reward information that has already been acquired.",
+    "Text_Korean": "已經獲取的活動獎勵信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7853",
+    "Text_English": "Non-existent event information.",
+    "Text_Korean": "不存在的事件信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7854",
+    "Text_English": "There are not enough points <br>to obtain event rewards.",
+    "Text_Korean": "<br>積分不足，無法獲得活動獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7855",
+    "Text_English": "Invalid level-up event reward information.",
+    "Text_Korean": "升級活動獎勵信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7856",
+    "Text_English": "Invalid season mission event information.",
+    "Text_Korean": "賽季任務事件信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7857",
+    "Text_English": "Invalid season mission event reward information.",
+    "Text_Korean": "賽季任務活動獎勵信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7858",
+    "Text_English": "Level-up event reward information that does not exist.",
+    "Text_Korean": "不存在的升級活動獎勵信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7859",
+    "Text_English": "This is stage clear event reward information that does not exist.",
+    "Text_Korean": "這是不存在的舞台通關活動獎勵信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7860",
+    "Text_English": "Failed to complete the stage clear event.",
+    "Text_Korean": "無法完成關卡活動。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7861",
+    "Text_English": "Point shop event information that does not exist.",
+    "Text_Korean": "不存在的積分店活動信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7862",
+    "Text_English": "Not enough points.",
+    "Text_Korean": "積分不夠。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7863",
+    "Text_English": "Points have been reduced.",
+    "Text_Korean": "積分已減少。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7864",
+    "Text_English": "This is the event information for 10 times summoning equipment that does not exist.",
+    "Text_Korean": "這是10次不存在的召喚裝備的事件信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7865",
+    "Text_English": "Invalid equipment 10 times summon event reward information.",
+    "Text_Korean": "無效裝備10次召喚活動獎勵信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7866",
+    "Text_English": "Equipment 10 summon event reward information already exists.",
+    "Text_Korean": "裝備10召喚活動獎勵信息已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7867",
+    "Text_English": "Information on how many invalid equipment summon events have been accomplished.",
+    "Text_Korean": "有關已完成多少無效設備召喚事件的信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7868",
+    "Text_English": "Failed to update equipment 10 summon event reward information.",
+    "Text_Korean": "裝備10召喚活動獎勵信息更新失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7869",
+    "Text_English": "Equipment summoning event information for 10 times is not complete.",
+    "Text_Korean": "10次​​裝備召喚事件信息不完整。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7870",
+    "Text_English": "Non-existent gem purchase event reward information.",
+    "Text_Korean": "不存在的寶石購買活動獎勵信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7871",
+    "Text_English": "Non-existent gem purchase event information.",
+    "Text_Korean": "不存在的寶石購買事件信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7872",
+    "Text_English": "There are not enough achievements to receive the Gem Purchase Event reward.",
+    "Text_Korean": "沒有足夠的成就來獲得寶石購買活動獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7873",
+    "Text_English": "You have already received the Gem Purchase Event reward.",
+    "Text_Korean": "您已收到寶石購買活動獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7874",
+    "Text_English": "Non-existent gem consumption event information.",
+    "Text_Korean": "不存在的寶石消費事件信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7875",
+    "Text_English": "Non-existent gem consumption event reward information.",
+    "Text_Korean": "不存在的寶石消費活動獎勵信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7876",
+    "Text_English": "There are not enough achievements to receive the gem consumption event rewards.",
+    "Text_Korean": "沒有足夠的成就來獲得寶石消費活動獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7877",
+    "Text_English": "You have already received the gem consumption event rewards.",
+    "Text_Korean": "您已獲得寶石消費活動獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7878",
+    "Text_English": "Failed to increase the number of equipment summon events achieved by 10 times.",
+    "Text_Korean": "未能將獲得的裝備召喚事件數量增加 10 倍。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7879",
+    "Text_English": "Failed to update equipment 10 summon event reward information.",
+    "Text_Korean": "裝備10召喚活動獎勵信息更新失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7880",
+    "Text_English": "This is information about the event reward for summoning equipment that does not exist 10 times.",
+    "Text_Korean": "這是關於召喚不存在10次裝備的活動獎勵的信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7881",
+    "Text_English": "There are not enough points to acquire rewards.",
+    "Text_Korean": "沒有足夠的積分來獲得獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7882",
+    "Text_English": "The 10 equipment summon event reward points have been reduced.",
+    "Text_Korean": "減少了10個裝備召喚活動獎勵積分。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7883",
+    "Text_English": "Dice event information that does not exist.",
+    "Text_Korean": "不存在的骰子事件信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7884",
+    "Text_English": "Not enough dice points.",
+    "Text_Korean": "骰子點數不夠。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7885",
+    "Text_English": "Not enough free dice points.",
+    "Text_Korean": "沒有足夠的免費骰子點數。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7886",
+    "Text_English": "Dice event field information that does not exist.",
+    "Text_Korean": "不存在的骰子事件字段信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7887",
+    "Text_English": "Dice event information update failed.",
+    "Text_Korean": "骰子事件信息更新失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7888",
+    "Text_English": "Failed to generate dice event information.",
+    "Text_Korean": "生成骰子事件信息失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7889",
+    "Text_English": "Invalid free dice point information.",
+    "Text_Korean": "無效的免費骰子點信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7890",
+    "Text_English": "Invalid dice point information.",
+    "Text_Korean": "骰子點信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7891",
+    "Text_English": "Invalid purchase dice point information.",
+    "Text_Korean": "購買骰子點數信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7892",
+    "Text_English": "Dice event point update failed.",
+    "Text_Korean": "骰子事件點更新失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7893",
+    "Text_English": "Dice event mileage rewards already exist.",
+    "Text_Korean": "骰子活動里程獎勵已經存在。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7894",
+    "Text_English": "Dice event mileage reward update failed.",
+    "Text_Korean": "骰子活動里程獎勵更新失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7895",
+    "Text_English": "Dice mileage is insufficient.",
+    "Text_Korean": "骰子里程不足。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7896",
+    "Text_English": "Not enough dice event points.",
+    "Text_Korean": "骰子事件點數不足。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7897",
+    "Text_English": "Not enough free dice points.",
+    "Text_Korean": "沒有足夠的免費骰子點數。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7898",
+    "Text_English": "The number of points shop event rewards has been exceeded.",
+    "Text_Korean": "已超過積分商店活動獎勵的數量。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7899",
+    "Text_English": "Point shop event reward count update failed.",
+    "Text_Korean": "積分商店活動獎勵計數更新失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7900",
+    "Text_English": "Empty Kakao message.",
+    "Text_Korean": "Kakao 消息為空。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7910",
+    "Text_English": "This coupon has been used already.",
+    "Text_Korean": "此優惠券已使用。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7911",
+    "Text_English": "Coupon expired.",
+    "Text_Korean": "優惠券已過期。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7912",
+    "Text_English": "Max coupon exchange chances reached.",
+    "Text_Korean": "已超過優惠券兌換次數。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7913",
+    "Text_English": "The Kakao message has already been processed.",
+    "Text_Korean": "Kakao 消息已被處理。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7914",
+    "Text_English": "You have already earned Kakao Rewards.",
+    "Text_Korean": "您已經獲得了 Kakao 獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7915",
+    "Text_English": "Invalid KakaoTalk Rewards API Key.",
+    "Text_Korean": "無效的 KakaoTalk 獎勵 API 密鑰。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7930",
+    "Text_English": "Failed to create user report.",
+    "Text_Korean": "未能創建用戶報告。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7931",
+    "Text_English": "Failed to block chat.",
+    "Text_Korean": "無法阻止聊天。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7932",
+    "Text_English": "Failed to delete chat blocked user information.",
+    "Text_Korean": "無法刪除聊天被阻止的用戶信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7933",
+    "Text_English": "Failed to exceed chat blocking user tolerance.",
+    "Text_Korean": "未能超出聊天阻止用戶容限。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7950",
+    "Text_English": "The server command is invalid.",
+    "Text_Korean": "服務器命令無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7951",
+    "Text_English": "Undefined server command.",
+    "Text_Korean": "未定義的服務器命令。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7952",
+    "Text_English": "Disabled server group command.",
+    "Text_Korean": "禁用服務器組命令。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7953",
+    "Text_English": "Unavailable server account type command.",
+    "Text_Korean": "不可用的服務器帳戶類型命令。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7999",
+    "Text_English": "Cannot log in to the server",
+    "Text_Korean": "未知錯誤",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8000",
+    "Text_English": "Service is unavailable.",
+    "Text_Korean": "服務不可用。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8001",
+    "Text_English": "No response from server.(8001)",
+    "Text_Korean": "服務器沒有響應。 （8001）",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8002",
+    "Text_English": "Session server is unavailable.",
+    "Text_Korean": "會話服務器不可用。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8003",
+    "Text_English": "Channel server is unavailable.",
+    "Text_Korean": "頻道服務器不可用。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8005",
+    "Text_English": "This is the room where the raid has already started.",
+    "Text_Korean": "這是襲擊已經開始的房間。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8010",
+    "Text_English": "Invalid version information.",
+    "Text_Korean": "版本信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8011",
+    "Text_English": "Invalid protocol.",
+    "Text_Korean": "無效的協議。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8099",
+    "Text_English": "Protocol mismatch.<br>Please update your client.",
+    "Text_Korean": "協議不匹配。 <br>請更新您的客戶端。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8100",
+    "Text_English": "Unauthorized information.",
+    "Text_Korean": "未經授權的信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8101",
+    "Text_English": "Invalid request.",
+    "Text_Korean": "無效請求。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8102",
+    "Text_English": "This is already verified information.",
+    "Text_Korean": "這是已經驗證的信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8104",
+    "Text_English": "Unauthorized information.",
+    "Text_Korean": "未經授權的信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8105",
+    "Text_English": "Unstable connection.",
+    "Text_Korean": "不穩定的連接。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8200",
+    "Text_English": "Invalid connection information.",
+    "Text_Korean": "無效的連接信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8201",
+    "Text_English": "Invalid invitation information.",
+    "Text_Korean": "邀請信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8210",
+    "Text_English": "The match has been cancelled.",
+    "Text_Korean": "比賽已取消。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8211",
+    "Text_English": "Match time is over.",
+    "Text_Korean": "比賽時間結束。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8212",
+    "Text_English": "No match information found.",
+    "Text_Korean": "未找到匹配信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8213",
+    "Text_English": "Non-existent raid map information.",
+    "Text_Korean": "不存在的突襲地圖信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8214",
+    "Text_English": "Non-existent raid difficulty information.",
+    "Text_Korean": "不存在的突襲難度信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8215",
+    "Text_English": "The maximum number of chat channels has been reached.",
+    "Text_Korean": "已達到最大聊天頻道數。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8216",
+    "Text_English": "Invalid chat channel information.",
+    "Text_Korean": "聊天頻道信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8404",
+    "Text_English": "Information not found.",
+    "Text_Korean": "未找到信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8405",
+    "Text_English": "Invalid information request.",
+    "Text_Korean": "信息請求無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8406",
+    "Text_English": "Response time exceeded.",
+    "Text_Korean": "超過響應時間。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6822",
+    "Text_English": "Please try again in a few minutes.",
+    "Text_Korean": "請在幾分鐘後再試一次。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "9000",
+    "Text_English": "Invalid connection information.",
+    "Text_Korean": "無效的連接信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "9001",
+    "Text_English": "Invalid connection information.",
+    "Text_Korean": "無效的連接信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "9002",
+    "Text_English": "Invalid connection information.",
+    "Text_Korean": "無效的連接信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "9003",
+    "Text_English": "Invalid connection information.",
+    "Text_Korean": "無效的連接信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "9004",
+    "Text_English": "Invalid connection information.",
+    "Text_Korean": "無效的連接信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "9005",
+    "Text_English": "The number of requests has been exceeded.",
+    "Text_Korean": "已超出請求數。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2800",
+    "Text_English": "Server DB error",
+    "Text_Korean": "服務器數據庫錯誤",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2801",
+    "Text_English": "Server DB error",
+    "Text_Korean": "服務器數據庫錯誤",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2802",
+    "Text_English": "Server DB error",
+    "Text_Korean": "服務器數據庫錯誤",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2803",
+    "Text_English": "Invalid item information.",
+    "Text_Korean": "無效的項目信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2804",
+    "Text_English": "Invalid item information.",
+    "Text_Korean": "無效的項目信息。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2805",
+    "Text_English": "Invalid material information.",
+    "Text_Korean": "材料信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2806",
+    "Text_English": "Invalid material information.",
+    "Text_Korean": "材料信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5073",
+    "Text_English": "Please try again in a few minutes.",
+    "Text_Korean": "請在幾分鐘後再試一次。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "9012",
+    "Text_English": "Invalid production information.",
+    "Text_Korean": "生產信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "9013",
+    "Text_English": "Invalid production information.",
+    "Text_Korean": "生產信息無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "9014",
+    "Text_English": "Invalid auxiliary material.",
+    "Text_Korean": "輔助材料無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "9015",
+    "Text_English": "The wrong approach.",
+    "Text_Korean": "錯誤的做法。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "9016",
+    "Text_English": "Invalid main ingredient.",
+    "Text_Korean": "主成分無效。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "9017",
+    "Text_English": "There are not enough counts left.",
+    "Text_Korean": "剩餘的計數不足。",
+    "Text_Other": ""
+  }
+]

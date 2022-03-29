@@ -1,0 +1,32 @@
+[
+  {
+    "Name": "PVPMent01",
+    "Text_English": "I'll break you into pieces!",
+    "Text_Korean": "我要打碎它！ ！",
+    "Text_Other": ""
+  },
+  {
+    "Name": "PVPMent02",
+    "Text_English": "What's your attack power?",
+    "Text_Korean": "哇，你的戰鬥力怎麼樣？",
+    "Text_Other": ""
+  },
+  {
+    "Name": "PVPMent03",
+    "Text_English": "I'll just use 50% of my skills.",
+    "Text_Korean": "我只展示了我50%的技能",
+    "Text_Other": ""
+  },
+  {
+    "Name": "PVPMent04",
+    "Text_English": "Take it easy!",
+    "Text_Korean": "請快點",
+    "Text_Other": ""
+  },
+  {
+    "Name": "PVPMent05",
+    "Text_English": "You cannot beat the dragon master!",
+    "Text_Korean": "一條黑色的炎龍在我的右手中狂奔。",
+    "Text_Other": ""
+  }
+]

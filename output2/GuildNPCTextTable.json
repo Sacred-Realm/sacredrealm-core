@@ -1,0 +1,362 @@
+[
+  {
+    "Name": "1",
+    "TextDataType": "NPCName",
+    "NPCID": 10001,
+    "Text_English": "guardian knight",
+    "Text_Korean": "守護騎士",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2",
+    "TextDataType": "NPCName",
+    "NPCID": 10002,
+    "Text_English": "spearman",
+    "Text_Korean": "矛兵",
+    "Text_Other": ""
+  },
+  {
+    "Name": "3",
+    "TextDataType": "NPCName",
+    "NPCID": 10003,
+    "Text_English": "Archer",
+    "Text_Korean": "射手",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4",
+    "TextDataType": "NPCNameDesc",
+    "NPCID": 10001,
+    "Text_English": "The Guardian Knight who protects Ruemos is the most specialized in defense among the soldiers.",
+    "Text_Korean": "守護魯莫斯的守護騎士是士兵中最擅長防禦的。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5",
+    "TextDataType": "NPCNameDesc",
+    "NPCID": 10002,
+    "Text_English": "The spearmen protecting Ruemos have a balanced attack and defense ability.",
+    "Text_Korean": "保護魯莫斯的長矛兵攻守平衡。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6",
+    "TextDataType": "NPCNameDesc",
+    "NPCID": 10003,
+    "Text_English": "The archers protecting Ruemos incapacitate enemies with poison attacks.",
+    "Text_Korean": "保護 Ruemos 的弓箭手用毒藥攻擊使敵人喪失行動能力。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7",
+    "TextDataType": "SpecialSkillName1",
+    "NPCID": 10001,
+    "Text_English": "Guts",
+    "Text_Korean": "膽量",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8",
+    "TextDataType": "SpecialSkillNameDesc1",
+    "NPCID": 10001,
+    "Text_English": "Guardian Knight's Professional Ability<br>You can withstand the attacks of enemies<br>more than other soldiers.",
+    "Text_Korean": "守護騎士的職業能力<br>你比其他士兵更能抵禦敵人的攻擊<br>。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "9",
+    "TextDataType": "SpecialSkillName1",
+    "NPCID": 10002,
+    "Text_English": "Threat",
+    "Text_Korean": "威脅",
+    "Text_Other": ""
+  },
+  {
+    "Name": "10",
+    "TextDataType": "SpecialSkillNameDesc1",
+    "NPCID": 10002,
+    "Text_English": "Spearman's Special Ability<br>You can use a long spear to make a threatening attack.",
+    "Text_Korean": "矛兵的特殊能力<br>您可以使用長矛進行威脅性攻擊。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "11",
+    "TextDataType": "SpecialSkillName2",
+    "NPCID": 10002,
+    "Text_English": "defence",
+    "Text_Korean": "防禦",
+    "Text_Other": ""
+  },
+  {
+    "Name": "12",
+    "TextDataType": "SpecialSkillNameDesc2",
+    "NPCID": 10002,
+    "Text_English": "Spearman's professional ability<br>It's not very strong, but it can defend to some extent with a long spear.",
+    "Text_Korean": "矛兵的職業能力<br>不是很強，但是長矛可以在一定程度上進行防禦。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "13",
+    "TextDataType": "SpecialSkillName1",
+    "NPCID": 10003,
+    "Text_English": "destructive fire",
+    "Text_Korean": "破壞性火災",
+    "Text_Other": ""
+  },
+  {
+    "Name": "14",
+    "TextDataType": "SpecialSkillNameDesc1",
+    "NPCID": 10003,
+    "Text_English": "Archer's professional ability<br>Has the most powerful<br>attacking ability among soldiers.",
+    "Text_Korean": "弓箭手的職業能力<br>擁有士兵中最強大的<br>攻擊能力。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "15",
+    "TextDataType": "SpecialSkillOption1",
+    "NPCID": 10001,
+    "Text_English": "Damage reduced by {0}%",
+    "Text_Korean": "傷害減少 {0}%",
+    "Text_Other": ""
+  },
+  {
+    "Name": "16",
+    "TextDataType": "SpecialSkillOption1",
+    "NPCID": 10002,
+    "Text_English": "Damage increased by {0}%",
+    "Text_Korean": "傷害提高了 {0}%",
+    "Text_Other": ""
+  },
+  {
+    "Name": "17",
+    "TextDataType": "SpecialSkillOption2",
+    "NPCID": 10002,
+    "Text_English": "Damage reduced by {0}%",
+    "Text_Korean": "傷害減少 {0}%",
+    "Text_Other": ""
+  },
+  {
+    "Name": "18",
+    "TextDataType": "SpecialSkillOption1",
+    "NPCID": 10003,
+    "Text_English": "Damage increased by {0}%",
+    "Text_Korean": "傷害提高了 {0}%",
+    "Text_Other": ""
+  },
+  {
+    "Name": "19",
+    "TextDataType": "NPCName",
+    "NPCID": 10004,
+    "Text_English": "goth",
+    "Text_Korean": "哥特",
+    "Text_Other": ""
+  },
+  {
+    "Name": "20",
+    "TextDataType": "NPCNameDesc",
+    "NPCID": 10004,
+    "Text_English": "Goth, commanding the soldiers of Ruemos, has an excellent ability to energize his team with great leadership.",
+    "Text_Korean": "哥特指揮魯埃莫斯的士兵，具有出色的領導能力，能夠以出色的領導力為團隊注入活力。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "21",
+    "TextDataType": "SpecialSkillName1",
+    "NPCID": 10004,
+    "Text_English": "vitality",
+    "Text_Korean": "活力",
+    "Text_Other": ""
+  },
+  {
+    "Name": "22",
+    "TextDataType": "SpecialSkillName2",
+    "NPCID": 10004,
+    "Text_English": "leadership",
+    "Text_Korean": "領導",
+    "Text_Other": ""
+  },
+  {
+    "Name": "23",
+    "TextDataType": "SpecialSkillName3",
+    "NPCID": 10004,
+    "Text_English": "Destruction",
+    "Text_Korean": "破壞",
+    "Text_Other": ""
+  },
+  {
+    "Name": "24",
+    "TextDataType": "SpecialSkillNameDesc1",
+    "NPCID": 10004,
+    "Text_English": "Goth's Expertise <br>Enables you to maintain the vitality of the Goth for a long time.",
+    "Text_Korean": "Goth's Expertise <br>使您能夠長時間保持哥特的活力。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "25",
+    "TextDataType": "SpecialSkillNameDesc2",
+    "NPCID": 10004,
+    "Text_English": "Goth's Expertise <br>You can give the vitality of Goth to many people.",
+    "Text_Korean": "哥特的專長 <br>您可以將哥特的活力賦予許多人。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "26",
+    "TextDataType": "SpecialSkillNameDesc3",
+    "NPCID": 10004,
+    "Text_English": "Goth's Expertise <br>Goth's old swordsmanship is not flashy<br>with powerful attacks.",
+    "Text_Korean": "哥特的專長<br>哥特的古老劍術並不華而不實<br>具有強大的攻擊力。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "27",
+    "TextDataType": "SpecialSkillOption1",
+    "NPCID": 10004,
+    "Text_English": "Increases buff time by {0} seconds",
+    "Text_Korean": "增益時間增加 {0} 秒",
+    "Text_Other": ""
+  },
+  {
+    "Name": "28",
+    "TextDataType": "SpecialSkillOption2",
+    "NPCID": 10004,
+    "Text_English": "Increases buff effect by {0}",
+    "Text_Korean": "增益效果增加 {0}",
+    "Text_Other": ""
+  },
+  {
+    "Name": "29",
+    "TextDataType": "SpecialSkillOption3",
+    "NPCID": 10004,
+    "Text_English": "Skill damage increased by {0}%",
+    "Text_Korean": "技能傷害提高 {0}%",
+    "Text_Other": ""
+  },
+  {
+    "Name": "30",
+    "TextDataType": "NPCName",
+    "NPCID": 10005,
+    "Text_English": "Gregor",
+    "Text_Korean": "格雷戈爾",
+    "Text_Other": ""
+  },
+  {
+    "Name": "31",
+    "TextDataType": "NPCNameDesc",
+    "NPCID": 10005,
+    "Text_English": "<br> Gregor, the hero who sealed Belzebub, has a brave and strong sealing power behind a pleasant appearance.",
+    "Text_Korean": "<br> 封印Belzebub的英雄格雷戈爾，在可人的外表背後有著勇敢而強大的封印力量。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "32",
+    "TextDataType": "SpecialSkillName1",
+    "NPCID": 10005,
+    "Text_English": "come alive",
+    "Text_Korean": "活過來",
+    "Text_Other": ""
+  },
+  {
+    "Name": "33",
+    "TextDataType": "SpecialSkillName2",
+    "NPCID": 10005,
+    "Text_English": "I suck blood",
+    "Text_Korean": "我吸血",
+    "Text_Other": ""
+  },
+  {
+    "Name": "34",
+    "TextDataType": "SpecialSkillNameDesc1",
+    "NPCID": 10005,
+    "Text_English": "Gregor's Professional Ability<br>Gregor recovers his HP with a mysterious power.",
+    "Text_Korean": "格雷戈爾的專業能力<br>格雷戈爾以神秘的力量恢復他的HP。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "35",
+    "TextDataType": "SpecialSkillNameDesc2",
+    "NPCID": 10005,
+    "Text_English": "Gregor's Professional Powers <br> Gregor's mysterious powers also give his teammates a lot of energy.",
+    "Text_Korean": "Gregor 的專長<br>Gregor 的神秘力量為他的隊友提供了很多能量。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "36",
+    "TextDataType": "SpecialSkillOption1",
+    "NPCID": 10005,
+    "Text_English": "When HP falls below 50%, {0}% HP is recovered for 3 seconds.",
+    "Text_Korean": "生命值低於50%時，3秒內恢復{0}%生命值。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "37",
+    "TextDataType": "SpecialSkillOption2",
+    "NPCID": 10005,
+    "Text_English": "Increases the HP of the team wearing Gregor by {0}%",
+    "Text_Korean": "穿著 Gregor 的隊伍的 HP 增加 {0}%",
+    "Text_Other": ""
+  },
+  {
+    "Name": "38",
+    "TextDataType": "NPCName",
+    "NPCID": 10006,
+    "Text_English": "Bertha",
+    "Text_Korean": "伯莎",
+    "Text_Other": ""
+  },
+  {
+    "Name": "39",
+    "TextDataType": "NPCNameDesc",
+    "NPCID": 10006,
+    "Text_English": "Saint Berta, who worshiped the Miracle, is good at releasing powerful bonds and harmful things.",
+    "Text_Korean": "崇拜奇蹟的聖伯塔，擅長釋放強大的羈絆和有害的東西。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "40",
+    "TextDataType": "SpecialSkillName1",
+    "NPCID": 10006,
+    "Text_English": "strong spirit",
+    "Text_Korean": "堅強的精神",
+    "Text_Other": ""
+  },
+  {
+    "Name": "41",
+    "TextDataType": "SpecialSkillName2",
+    "NPCID": 10006,
+    "Text_English": "noble soul",
+    "Text_Korean": "高貴的靈魂",
+    "Text_Other": ""
+  },
+  {
+    "Name": "42",
+    "TextDataType": "SpecialSkillNameDesc1",
+    "NPCID": 10006,
+    "Text_English": "Berta's Professional Skills<br>Berta's strong spirit is unimpeded.",
+    "Text_Korean": "Berta的專業技能<br>Berta的強大精神是暢通無阻的。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "43",
+    "TextDataType": "SpecialSkillNameDesc2",
+    "NPCID": 10006,
+    "Text_English": "Berta's Expertise<br>No one can touch Berta's noble soul.",
+    "Text_Korean": "Berta 的專長<br>沒有人能觸動 Berta 高貴的靈魂。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "44",
+    "TextDataType": "SpecialSkillOption1",
+    "NPCID": 10006,
+    "Text_English": "Immune to all status ailments for {0} seconds",
+    "Text_Korean": "免疫所有狀態異常 {0} 秒",
+    "Text_Other": ""
+  },
+  {
+    "Name": "45",
+    "TextDataType": "SpecialSkillOption2",
+    "NPCID": 10006,
+    "Text_English": "Stay invincible for {0} seconds",
+    "Text_Korean": "保持無敵 {0} 秒",
+    "Text_Other": ""
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "Name": "1",
+    "Text_English": "Attack the base!",
+    "Text_Korean": "攻擊基地！",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2",
+    "Text_English": "Defend the base!",
+    "Text_Korean": "保衛你的據點！",
+    "Text_Other": ""
+  },
+  {
+    "Name": "3",
+    "Text_English": "Go to the base!",
+    "Text_Korean": "集結為據點！",
+    "Text_Other": ""
+  },
+  {
+    "Name": "4",
+    "Text_English": "Attack Minotaur!",
+    "Text_Korean": "牛頭怪攻擊！",
+    "Text_Other": ""
+  },
+  {
+    "Name": "5",
+    "Text_English": "Huddle!",
+    "Text_Korean": "讓我們團結起來！",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6",
+    "Text_English": "Need help!",
+    "Text_Korean": "我需要你的支持！",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7",
+    "Text_English": "Keep it up!",
+    "Text_Korean": "再堅持一會兒！",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8",
+    "Text_English": "Switch lines!",
+    "Text_Korean": "用另一條線攻擊！",
+    "Text_Other": ""
+  }
+]

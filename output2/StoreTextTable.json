@@ -1,0 +1,2036 @@
+[
+  {
+    "Name": "Store_GeneralStore",
+    "Text_English": "Store",
+    "Text_Korean": "設備車間",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_GoodsStore",
+    "Text_English": "Goods",
+    "Text_Korean": "商品商店",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_SummonItem",
+    "Text_English": "Items",
+    "Text_Korean": "設備店",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_SummonItem_GemBox",
+    "Text_English": "Gems",
+    "Text_Korean": "首飾設備箱",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_SummonItem_FriendShipBox",
+    "Text_English": "FP Box",
+    "Text_Korean": "友誼裝備箱",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_SummonItem_Weapon",
+    "Text_English": "Weapon",
+    "Text_Korean": "武器",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_SummonItem_Armor",
+    "Text_English": "Armor",
+    "Text_Korean": "盔甲",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_SummonItem_Accessory",
+    "Text_English": "Trinket",
+    "Text_Korean": "配件",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_SummonItem_Costume",
+    "Text_English": "Costume",
+    "Text_Korean": "戲服",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_SummonItem_SummonGem",
+    "Text_English": "{0} gem item boxes",
+    "Text_Korean": "{0} 個珠寶齒輪箱",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_SummonItem_SummonFriendShip",
+    "Text_English": "{0} FP boxes",
+    "Text_Korean": "{0} 友誼齒輪箱",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_SummonItem_OneMore",
+    "Text_English": "One more",
+    "Text_Korean": "再一次",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_SummonItem_FlipAll",
+    "Text_English": "Open all",
+    "Text_Korean": "打開所有",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_FreeSummonItem_InLobby",
+    "Text_English": "Free gift!",
+    "Text_Korean": "贈品！",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Bonus_Product",
+    "Text_English": "{0} <br>Bonus!",
+    "Text_Korean": "{0}<br>額外付款！",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_SummonItem_DifficultyNormal",
+    "Text_English": "Normal",
+    "Text_Korean": "通常",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_SummonItem_DifficultyHard",
+    "Text_English": "Hard",
+    "Text_Korean": "困難",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_SummonItem_DifficultyVeryHard",
+    "Text_English": "Nightmare",
+    "Text_Korean": "非常困難",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_SummonItem_SummonDescription_Free",
+    "Text_English": "Free summon available",
+    "Text_Korean": "免費召喚",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_SummonItem_SummonDescription_Time",
+    "Text_English": "Free summon after {0}",
+    "Text_Korean": "{0}後，免費召喚",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_SummonItem_SummonDescription_Grade",
+    "Text_English": "At least one <span color=\"#7eff00\">★{0}</> guaranteed",
+    "Text_Korean": "已確認至少 1 個<span color=\"#7eff00\">★{0}</>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_SummonItem_FreeToSummon",
+    "Text_English": "Free summon",
+    "Text_Korean": "免費召喚",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_SummonItem_SelectCharacter_Title",
+    "Text_English": "Select Character",
+    "Text_Korean": "字符選擇",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_SummonItem_SelectCharacter_FullText",
+    "Text_English": "Select a character to choose an item.",
+    "Text_Korean": "請選擇一個角色來使用該設備。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_SummonItem_ConfirmQuestion",
+    "Text_English": "Purchase {0} character item?",
+    "Text_Korean": "您想購買 {0} 個角色裝備嗎？",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_ItemNameAndCountToBuy",
+    "Text_English": "{0} {1}",
+    "Text_Korean": "{0} {1}",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Mileage_BClass",
+    "Text_English": "Silver Grade",
+    "Text_Korean": "青銅級",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Mileage_AClass",
+    "Text_English": "Gold Grade",
+    "Text_Korean": "銀級",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Mileage_SClass",
+    "Text_English": "Dia Grade",
+    "Text_Korean": "黃金級",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Mileage_RewardTitle",
+    "Text_English": "{0} reward",
+    "Text_Korean": "{0} 獎勵",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Mileage_Text",
+    "Text_English": "Purchase mileage",
+    "Text_Korean": "購買里程",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Product_Package_01",
+    "Text_English": "Package bundle 1",
+    "Text_Korean": "包裝產品01",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Product_Package_02",
+    "Text_English": "Package bundle 2",
+    "Text_Korean": "包裝產品02",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Confirm_Buy_Item",
+    "Text_English": "Purchase <span color=\"#eec178\">{0}</> <span color=\"#eec178\">{1}</>?",
+    "Text_Korean": "您想購買 <span color=\"#eec178\">{0}</> <span color=\"#eec178\">{1}</> 狗嗎？",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Terms_Text",
+    "Text_English": "If 7days have passed since purchase, or the product is used or opened from the inbox, refund is unavailable. <br>Unauthorized purchase by a minor can be canceled.",
+    "Text_Korean": "- 此商品自購買後 7 天后，或收到或在郵箱中使用時，不可撤回。 <br>- 未經法定代理人同意的未成年人支付的款項可以被取消。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Bought_Product",
+    "Text_English": "Your purchase is complete.",
+    "Text_Korean": "您已完成購買。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Bonus_Notification",
+    "Text_English": "{0} <span color=\"#eeff00\">{1}</> bonus acquired",
+    "Text_Korean": "獲得 {1} 獎金<span color=\"#eeff00\">{0}</>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_MileageGuide_Title",
+    "Text_English": "Mileage Reward",
+    "Text_Korean": "里程補償",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_MileageGuide_GuideTitle",
+    "Text_English": "Instructions",
+    "Text_Korean": "如何賺取商店里程和查看獎勵",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_MileageGuide_Guide01",
+    "Text_English": " - Mileage is incurred when a player purchase gems or items from the store.",
+    "Text_Korean": "- 當您在商店使用珠寶或購買產品時，會累積里程。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_MileageGuide_Guide02",
+    "Text_English": "Each time you reach the Bronze, Silver, and Gold ranks, you can get their respective rewards.",
+    "Text_Korean": "每次達到青銅、白銀和黃金等級時，您都可以獲得各自的獎勵。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_MileageGuide_Guide03",
+    "Text_English": " - The reward content can be examined by tapping the reward box icon.",
+    "Text_Korean": "- 點擊獎勵框圖標查看獎勵詳情。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_MileageGuide_Caution",
+    "Text_English": "※ Notes",
+    "Text_Korean": "※ 注意",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_MileageGuide_Caution01",
+    "Text_English": " - Additional mileage is no longer incurred after achieving grade S.",
+    "Text_Korean": "- 達到黃金級別後無需額外里程累積。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_MileageGuide_Caution02",
+    "Text_English": " - Rewards after grade S will reset the mileage.",
+    "Text_Korean": "- 如果您在達到黃金級別後獲得獎勵，您的里程將被重置並重新計入。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_Buy",
+    "Text_English": "Purchase",
+    "Text_Korean": "購買",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_TabCategory_SoulBlade",
+    "Text_English": "Blade Point",
+    "Text_Korean": "魂劍",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_TabCategory_Gem",
+    "Text_English": "Gems",
+    "Text_Korean": "寶石",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_TabCategory_Gold",
+    "Text_English": "Gold",
+    "Text_Korean": "金子",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_TabCategory_DarkCrystal",
+    "Text_English": "Dark Crystal",
+    "Text_Korean": "暗水晶",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_TabCategory_Package",
+    "Text_English": "Package",
+    "Text_Korean": "包裹",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_BuyCount",
+    "Text_English": "({0}/{1})",
+    "Text_Korean": "({0}/{1})",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_BuyError",
+    "Text_English": "You cannot make a purchase anymore.",
+    "Text_Korean": "已超過每日抽獎次數。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_BuyBonusDarkCrystal",
+    "Text_English": "<Obtained Dark Crystal {0}Bonus>",
+    "Text_Korean": "<獲得{0}個黑暗水晶獎勵>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Restrict_Daily",
+    "Text_English": "daily limited",
+    "Text_Korean": "每日限定",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Restrict_Weekly",
+    "Text_English": "Weekly limited",
+    "Text_Korean": "每週限定",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Restrict_Monthly",
+    "Text_English": "Monthly limited",
+    "Text_Korean": "每月限定",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Restrict_Number",
+    "Text_English": "purchase only",
+    "Text_Korean": "只購買",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Restrict_Count",
+    "Text_English": "({0}/{1})",
+    "Text_Korean": "({0}/{1})",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Mileage_Value",
+    "Text_English": "({0}/{1})",
+    "Text_Korean": "({0}/{1})",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Restrict_Complete",
+    "Text_English": "purchase complete",
+    "Text_Korean": "購買完成",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_1",
+    "Text_English": "Recommended package",
+    "Text_Korean": "推薦套餐",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_2",
+    "Text_English": "equipment package",
+    "Text_Korean": "設備包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_3",
+    "Text_English": "growth package",
+    "Text_Korean": "成長包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_4",
+    "Text_English": "Hero Package",
+    "Text_Korean": "英雄包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_5",
+    "Text_English": "boost package",
+    "Text_Korean": "升壓包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_6",
+    "Text_English": "level up package",
+    "Text_Korean": "升級包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_7",
+    "Text_English": "Daily Benefits Package",
+    "Text_Korean": "每日福利套餐",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_9",
+    "Text_English": "equipment upgrade package",
+    "Text_Korean": "裝備升級包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_10",
+    "Text_English": "limited sale package",
+    "Text_Korean": "限量銷售套餐",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_SummonItem_EnableGrade",
+    "Text_English": "Equipment can be obtained",
+    "Text_Korean": "可以獲得裝備",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_SummonItem_EnableMileage",
+    "Text_English": "Earn purchase mileage",
+    "Text_Korean": "賺取購物里程",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_SummonItem_TenSummonDesc",
+    "Text_English": "When summoned 10 times, 1 piece of 4-star or higher equipment is confirmed",
+    "Text_Korean": "召喚10次，確認1件4星以上裝備",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_SummonItem_TenSummon",
+    "Text_English": "10 summons",
+    "Text_Korean": "10張傳票",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_SummonItem_OneSummon",
+    "Text_English": "Summon 1 time",
+    "Text_Korean": "召喚1次",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_1",
+    "Text_English": "starting package",
+    "Text_Korean": "起始包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_2",
+    "Text_English": "Gold Package II",
+    "Text_Korean": "黃金套餐二",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_3",
+    "Text_English": "soul sword package",
+    "Text_Korean": "魂劍禮包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_4",
+    "Text_English": "Time Boost Package II",
+    "Text_Korean": "時間加速套餐二",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_100",
+    "Text_English": "4-6 star weapon package",
+    "Text_Korean": "4-6星武器包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_101",
+    "Text_English": "4-6 star armor package",
+    "Text_Korean": "4-6星護甲包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_102",
+    "Text_English": "4-6 star ornaments package",
+    "Text_Korean": "4-6星飾品包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_200",
+    "Text_English": "Artifact Fragment Package II",
+    "Text_Korean": "神器碎片包二",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_201",
+    "Text_English": "Hero Growth Package II",
+    "Text_Korean": "英雄成長禮包二",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_202",
+    "Text_English": "Wings Growth Package II",
+    "Text_Korean": "翅膀成長套餐二",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_203",
+    "Text_English": "upgrade package",
+    "Text_Korean": "升級包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_204",
+    "Text_English": "Advanced Enhancement Package",
+    "Text_Korean": "高級增強包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_205",
+    "Text_English": "Artifact Fragment Package III",
+    "Text_Korean": "神器碎片包三",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_206",
+    "Text_English": "Hero Growth Package III",
+    "Text_Korean": "英雄成長禮包III",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_207",
+    "Text_English": "Wings Growth Package III",
+    "Text_Korean": "翅膀成長套餐III",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_300",
+    "Text_English": "Beginner Package",
+    "Text_Korean": "初學者套餐",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_301",
+    "Text_English": "Intermediate level package",
+    "Text_Korean": "中間包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_302",
+    "Text_English": "Advanced Package",
+    "Text_Korean": "高級包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_400",
+    "Text_English": "gold boost pack",
+    "Text_Korean": "黃金提升包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_401",
+    "Text_English": "Soul Sword Boost Pack",
+    "Text_Korean": "魂劍強化包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_402",
+    "Text_English": "experience boost pack",
+    "Text_Korean": "經驗提升包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_403",
+    "Text_English": "time boost pack",
+    "Text_Korean": "時間提升包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_500",
+    "Text_English": "Weekly Daily Benefits",
+    "Text_Korean": "每週每日福利",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_501",
+    "Text_English": "Monthly Daily Benefit I",
+    "Text_Korean": "每月每日利益 I",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_600",
+    "Text_English": "Gladiator Level Up Package I",
+    "Text_Korean": "角斗士升級套餐 I",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_601",
+    "Text_English": "Gladiator Level Up Package II",
+    "Text_Korean": "角斗士升級套餐 II",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_602",
+    "Text_English": "Gladiator Level Up Package III",
+    "Text_Korean": "角斗士升級包 III",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_620",
+    "Text_English": "Assassin Level Up Package I",
+    "Text_Korean": "刺客升級包 I",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_621",
+    "Text_English": "Assassin Level Up Package II",
+    "Text_Korean": "刺客升級包二",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_622",
+    "Text_English": "Assassin Level Up Package III",
+    "Text_Korean": "刺客升級包 III",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_640",
+    "Text_English": "Wizard Level Up Package I",
+    "Text_Korean": "巫師升級包 I",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_641",
+    "Text_English": "Wizard Level Up Package II",
+    "Text_Korean": "巫師升級包 II",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_642",
+    "Text_English": "Wizard Level Up Package III",
+    "Text_Korean": "巫師升級包 III",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_660",
+    "Text_English": "Fighter Level Up Package I",
+    "Text_Korean": "戰鬥機等級升級包 I",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_661",
+    "Text_English": "Fighter Level Up Package II",
+    "Text_Korean": "戰鬥機升級包二",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_662",
+    "Text_English": "Fighter Level Up Package III",
+    "Text_Korean": "戰鬥機升級包 III",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_700",
+    "Text_English": "Gladiator Level Contract Package",
+    "Text_Korean": "角斗士級別合同包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_710",
+    "Text_English": "Assassin Level Contract Package",
+    "Text_Korean": "刺客級契約包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_720",
+    "Text_English": "Wizard level contract package",
+    "Text_Korean": "嚮導級合約包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_730",
+    "Text_English": "Fighter Level Contract Package",
+    "Text_Korean": "戰鬥機級合同包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_SummonItem_Free_Sec",
+    "Text_English": "Free after {0} seconds",
+    "Text_Korean": "{0} 秒後免費",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_SummonItem_Free_MinSec",
+    "Text_English": "Free after {0} minutes {1} seconds",
+    "Text_Korean": "{0} 分鐘 {1} 秒後免費",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_SummonItem_Free_HourMinSec",
+    "Text_English": "Free after {0} hours {1} minutes {2} seconds",
+    "Text_Korean": "{0} 小時 {1} 分鐘 {2} 秒後免費",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_SummonItem_Free_DayHourMin",
+    "Text_English": "Free after {0} days {1} hours {2} minutes",
+    "Text_Korean": "{0} 天 {1} 小時 {2} 分鐘後免費",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_SummonItem_Chance",
+    "Text_English": "Draw probability",
+    "Text_Korean": "抽獎概率",
+    "Text_Other": ""
+  },
+  {
+    "Name": "ChanceURL",
+    "Text_English": "https://playgame.kakao.com/blade2/boards/2EpqEy7AR",
+    "Text_Korean": "https://playgame.kakao.com/blade2/boards/2EpqEy7AR",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_EventLabel_Sale",
+    "Text_English": "SALE",
+    "Text_Korean": "銷售",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_EventLabel_Hit",
+    "Text_English": "HIT",
+    "Text_Korean": "打",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_EventLabel_Hot",
+    "Text_English": "HOT",
+    "Text_Korean": "熱的",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_EventLabel_New",
+    "Text_English": "NEW",
+    "Text_Korean": "新的",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageText1",
+    "Text_English": "construction item",
+    "Text_Korean": "建築項目",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageText2",
+    "Text_English": "Read more",
+    "Text_Korean": "閱讀更多",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageText3",
+    "Text_English": "paid daily",
+    "Text_Korean": "每日支付",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageText4",
+    "Text_English": "Buy a package",
+    "Text_Korean": "購買套餐",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageText5",
+    "Text_English": "Daily experience boost gift ({0} days)",
+    "Text_Korean": "每日體驗提升禮物（{0} 天）",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageText6",
+    "Text_English": "A total of {0} experience boosts + a total of {1} gems!",
+    "Text_Korean": "總共 {0} 個經驗提升 + 總共 {1} 個寶石！",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_TermsURL",
+    "Text_English": "https://playgame.kakao.com/blade2/boards/2EpqEy7AR",
+    "Text_Korean": "https://playgame.kakao.com/blade2/boards/2EpqEy7AR",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_EventLabel_Event",
+    "Text_English": "EVENT",
+    "Text_Korean": "事件",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_BoostPackage_Desc400",
+    "Text_English": "Daily Gold Boost Gift (28) Days <br>{0} Gold Buff Tickets + Total {1} ​​Gems!",
+    "Text_Korean": "每日金幣提升禮物 (28) 天 <br>{0} 金幣 Buff 門票 + 總共 {1} 顆寶石！",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_BoostPackage_Desc401",
+    "Text_English": "Soul sword boost gift received every day (28) days <br>{0} soul swords + {1} gems in total!",
+    "Text_Korean": "每天 (28) 天收到靈魂劍提升禮物 <br>{0} 把靈魂劍 + {1} 顆寶石！",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_BoostPackage_Desc402",
+    "Text_English": "Daily EXP Boost Gift (28) Days <br>A total of {0} experience buff tickets + a total of {1} gems!",
+    "Text_Korean": "每日經驗提升禮物 (28) 天 <br>總共 {0} 經驗增益票 + 總共 {1} 寶石！",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_BoostPackage_Desc403",
+    "Text_English": "Daily Adventure Boost Gift (28) Days <br>A total of {0} triple adventure tickets + {1} jewels in total!",
+    "Text_Korean": "每日冒險加成禮物 (28) 天 <br>總共 {0} 三重冒險門票 + {1} 珠寶！",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_EventLabel_Bonus",
+    "Text_English": "BONUS",
+    "Text_Korean": "獎金",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_Levelup_Gladiator",
+    "Text_English": "gladiator package",
+    "Text_Korean": "角斗士包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_Levelup_Assassin",
+    "Text_English": "assassin package",
+    "Text_Korean": "刺客包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_Levelup_Wizard",
+    "Text_English": "wizard package",
+    "Text_Korean": "嚮導包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_Levelup_Fighter",
+    "Text_English": "fighter package",
+    "Text_Korean": "戰鬥機包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_600",
+    "Text_English": "Gladiator Level Up Package I",
+    "Text_Korean": "角斗士升級套餐 I",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_601",
+    "Text_English": "Gladiator Level Up Package II",
+    "Text_Korean": "角斗士升級套餐 II",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_602",
+    "Text_English": "Gladiator Level Up Package III",
+    "Text_Korean": "角斗士升級包 III",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_620",
+    "Text_English": "Assassin Level Up Package I",
+    "Text_Korean": "刺客升級包 I",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_621",
+    "Text_English": "Assassin Level Up Package II",
+    "Text_Korean": "刺客升級包二",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_622",
+    "Text_English": "Assassin Level Up Package III",
+    "Text_Korean": "刺客升級包 III",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_640",
+    "Text_English": "Wizard Level Up Package I",
+    "Text_Korean": "巫師升級包 I",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_641",
+    "Text_English": "Wizard Level Up Package II",
+    "Text_Korean": "巫師升級包 II",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_642",
+    "Text_English": "Wizard Level Up Package III",
+    "Text_Korean": "巫師升級包 III",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_660",
+    "Text_English": "Fighter Level Up Package I",
+    "Text_Korean": "戰鬥機等級升級包 I",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_661",
+    "Text_English": "Fighter Level Up Package II",
+    "Text_Korean": "戰鬥機升級包二",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_662",
+    "Text_English": "Fighter Level Up Package III",
+    "Text_Korean": "戰鬥機升級包 III",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_700",
+    "Text_English": "Level Achievement Contract Package",
+    "Text_Korean": "等級成就合同包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_710",
+    "Text_English": "Level Achievement Contract Package",
+    "Text_Korean": "等級成就合同包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_720",
+    "Text_English": "Level Achievement Contract Package",
+    "Text_Korean": "等級成就合同包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_730",
+    "Text_English": "Store_PackageTab_730",
+    "Text_Korean": "等級成就合同包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_LevelupDesc",
+    "Text_English": "You can get a total of <span color=\"#eec178\">{1} gems</> when purchasing {0}.",
+    "Text_Korean": "購買 {0} 時，您總共可以獲得 <span color=\"#eec178\">{1} 顆寶石</>。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_LevelupBuyDesc",
+    "Text_English": "Available after purchase",
+    "Text_Korean": "購買後可用",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_EventLabel_DiscountRate",
+    "Text_English": "{0}%",
+    "Text_Korean": "{0}%",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_EventLabel_IncreaseRate",
+    "Text_English": "{0}%",
+    "Text_Korean": "{0}%",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackagePeriod",
+    "Text_English": "Remaining benefit period: {0} days",
+    "Text_Korean": "剩餘福利期：{0} 天",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Acquired",
+    "Text_English": "Complete",
+    "Text_Korean": "完全的",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PossibleAcquire",
+    "Text_English": "obtainable",
+    "Text_Korean": "可獲得的",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Failed_Product",
+    "Text_English": "The purchase failed.",
+    "Text_Korean": "購買失敗。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_Flatrate_Title",
+    "Text_English": "additional benefits",
+    "Text_Korean": "額外的好處",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_Flatrate_Desc",
+    "Text_English": "If you purchase both Weekly Daily Benefits and Monthly Daily Offers, you can instantly get 1,000 Gems. (Limited to the first time)",
+    "Text_Korean": "如果您同時購買每週每日福利和每月每日優惠，您可以立即獲得 1,000 顆寶石。 （限第一次）",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_Flatrate_Complete",
+    "Text_English": "get rewarded",
+    "Text_Korean": "獲得獎勵",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_Flatrate_Summary",
+    "Text_English": "- This is a product that cannot be withdrawn after 7 days have passed since purchase, or when the product is received or used in the mailbox. <br>- Payments made by minors who do not have the consent of their legal representative can be cancelled.",
+    "Text_Korean": "- 此商品自購買後 7 天后，或收到或在郵箱中使用時，不可撤回。 <br>- 未經法定代理人同意的未成年人支付的款項可以被取消。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_Flatrate_Detail",
+    "Text_English": "Read more",
+    "Text_Korean": "閱讀更多",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_FlatrateItem_All",
+    "Text_English": "A total of {0} items obtained {1}!",
+    "Text_Korean": "共獲得 {0} 件物品{1}！",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_FlatrateItem_Day",
+    "Text_English": "{0} benefits received daily ({1} days)",
+    "Text_Korean": "每天收到 {0} 份福利（{1} 天）",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_Monthly_Incomplete",
+    "Text_English": "Monthly Daily Benefit Purchase Uncompleted",
+    "Text_Korean": "每月每日福利購買未完成",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_Monthly_Complete",
+    "Text_English": "Monthly Daily Benefits Purchase Complete",
+    "Text_Korean": "每月每天完成福利購買",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_FlatrateItem_Title_Weeckly",
+    "Text_English": "Weekly Daily Benefits Package",
+    "Text_Korean": "每週每日福利套餐",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_FlatrateItem_Title_Monthly",
+    "Text_English": "Monthly Daily Benefits Package",
+    "Text_Korean": "每月每日福利套餐",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_Weekly_Incomplete",
+    "Text_English": "Weekly Daily Benefit Purchase Uncompleted",
+    "Text_Korean": "每週每日福利購買未完成",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_Weekly_Complete",
+    "Text_English": "Weekly Daily Benefits Purchase Complete",
+    "Text_Korean": "每週每日福利購買完成",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_FlatrateBonus_Complete",
+    "Text_English": "Completion of rewards",
+    "Text_Korean": "完成獎勵",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_Weekly",
+    "Text_English": "Weekly Daily Benefits",
+    "Text_Korean": "每週每日福利",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_Monthly",
+    "Text_English": "Monthly Daily Benefit I",
+    "Text_Korean": "每月每日利益 I",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_Complete",
+    "Text_English": "purchase complete",
+    "Text_Korean": "購買完成",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_InComplete",
+    "Text_English": "purchase incomplete",
+    "Text_Korean": "購買不完整",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_Reach_Title",
+    "Text_English": "immediate postal payment",
+    "Text_Korean": "立即郵寄付款",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_Mission_Title",
+    "Text_English": "Mission achievement payment",
+    "Text_Korean": "任務成就支付",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_LimitLevel",
+    "Text_English": "Available levels for purchase:",
+    "Text_Korean": "可供購買的等級：",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_Reach_Warning",
+    "Text_English": "If you achieve {1} character level {2} within {0} days after purchase, you will receive {3} crystals! <br>Caution: If the mission fails, the mission reward is not paid, so please complete the mission within the period!",
+    "Text_Korean": "如果您在購買後 {0} 天內達到 {1} 個角色等級 {2}，您將收到 {3} 個水晶！ <br>注意：如果任務失敗，不支付任務獎勵，請在規定時間內完成任務！",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_Mission_Complete",
+    "Text_English": "Mission Complete",
+    "Text_Korean": "任務完成",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_Mission_InComplete",
+    "Text_English": "Mission accomplished",
+    "Text_Korean": "任務完成",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_NotPurchase",
+    "Text_English": "You can purchase this package product only if you are {0} {1} level <br> or lower.",
+    "Text_Korean": "只有 {0} {1} 級 <br> 或更低級別才能購買此套餐產品。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_Reach_LimitLevel",
+    "Text_English": "{0} {1} level or lower",
+    "Text_Korean": "{0} {1} 級或更低",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_EventLabel_LimitLevel",
+    "Text_English": "purchase level limit",
+    "Text_Korean": "購買水平限制",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackagePeriod_Hour",
+    "Text_English": "Remaining benefit period: {0} hours {1} minutes",
+    "Text_Korean": "剩餘福利期：{0} 小時 {1} 分鐘",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackagePeriod_Minute",
+    "Text_English": "Remaining benefit period: {0} minutes",
+    "Text_Korean": "剩餘福利期：{0} 分鐘",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackagePeriod_Second",
+    "Text_English": "Remaining benefit period: less than 1 minute",
+    "Text_Korean": "剩餘受益期：1分鐘以內",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Currency_Cost",
+    "Text_English": "{0} {1}",
+    "Text_Korean": "{0} {1}",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_5",
+    "Text_English": "7 Day Equipment Package",
+    "Text_Korean": "7天裝備包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_TabCategory_Item",
+    "Text_English": "goods item",
+    "Text_Korean": "商品項目",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_BoostPackage_Desc5",
+    "Text_English": "One ticket to summon equipment 10 times every day for 7 days!",
+    "Text_Korean": "7天每天10次召喚裝備一張票！",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_BoostPackage_BonusDesc",
+    "Text_English": "All products paid for 7 days are additionally paid as a bonus when you acquire <br>!",
+    "Text_Korean": "當您獲得 <br> 時，所有支付 7 天的產品都會作為獎勵額外支付！",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_BonusGoods",
+    "Text_English": "Bonus items!",
+    "Text_Korean": "獎勵物品！",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_GuestWarning_Content",
+    "Text_English": "Currently, the account is not linked. When purchasing products with a guest account, purchase data may be lost when <br>game is deleted, device is changed, or mobile phone is initialized. <br>In order to use the service on other devices, you need to link your account.",
+    "Text_Korean": "目前，該帳戶未關聯。使用訪客賬戶購買產品時，<br>刪除遊戲、更換設備或初始化手機可能會丟失購買數據。 <br>為了在其他設備上使用該服務，您需要關聯您的帳戶。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_GuestWarning_Switch",
+    "Text_English": "account conversion",
+    "Text_Korean": "帳戶轉換",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Mini_title",
+    "Text_English": "buy jewelry",
+    "Text_Korean": "購買珠寶",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_Used_SummonItem",
+    "Text_English": "※ Bonus tickets will not be awarded if you have not logged in for more than 1 day.",
+    "Text_Korean": "※ 超過 1 天未登錄將無法獲得獎勵門票。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_WarningSummury",
+    "Text_English": "- If you do not log in after purchasing the product, the product on the first day will not be paid. The product can be picked up in the mailbox.",
+    "Text_Korean": "- 如果您在購買產品後沒有登錄，第一天的產品將不會付款。可以在郵箱中領取物品。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_Used_HotTimeBuff",
+    "Text_English": "Buff tickets are available in the Hot Time & Buff menu.",
+    "Text_Korean": "Buff 門票可在 Hot Time & Buff 菜單中找到。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_Receive_Mail",
+    "Text_English": "- The product can be picked up in the mailbox.",
+    "Text_Korean": "- 可以在郵箱中提取產品。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Package_Receive_Immediately",
+    "Text_English": "Prizes will be paid out immediately upon reaching the target level.",
+    "Text_Korean": "獎品將在達到目標水平後立即支付。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Bought_MailProduct",
+    "Text_English": "You have completed your purchase. <br>Items can be picked up in the mailbox.",
+    "Text_Korean": "您已完成購買。 <br>可以在郵箱中提取物品。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageMission",
+    "Text_English": "Remaining period: {0} days",
+    "Text_Korean": "剩餘期限：{0} 天",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageMission_Hour",
+    "Text_English": "Remaining period: {0} hours {1} minutes",
+    "Text_Korean": "剩餘時間：{0} 小時 {1} 分鐘",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageMission_Minute",
+    "Text_English": "Remaining period: {0} minutes",
+    "Text_Korean": "剩餘時間：{0} 分鐘",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageMission_Second",
+    "Text_English": "Remaining period: less than 1 minute",
+    "Text_Korean": "剩餘時間：少於1分鐘",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_MagicStore_RemainTitle",
+    "Text_English": "Until the magic shop update",
+    "Text_Korean": "直到魔法商店更新",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_MagicStore_Refresh",
+    "Text_English": "Instant renewal",
+    "Text_Korean": "即時更新",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_MagicStore_Banner",
+    "Text_English": "<br>Mysterious magic shop that changes every day!",
+    "Text_Korean": "<br>每天都在變化的神秘魔法商店！",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_MagicStore_RefreshDesc",
+    "Text_English": "Would you like to renew your product?",
+    "Text_Korean": "您想更新您的產品嗎？",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_MagicStore_RefreshCount",
+    "Text_English": "(Numbers remaining today: {0}/{1})",
+    "Text_Korean": "（今天剩餘人數：{0}/{1}）",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_MagicStore_RefreshTime",
+    "Text_English": "{0} hours {1} minutes left",
+    "Text_Korean": "還剩 {0} 小時 {1} 分鐘",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_MagicStore_BuyItem",
+    "Text_English": "Would you like to purchase <span color=\"#eec178\">{0} pieces</> of items?",
+    "Text_Korean": "您想購買 <span color=\"#eec178\">{0} 件</> 件商品嗎？",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_MagicStore_EndTime",
+    "Text_English": "The time to purchase the product has passed. <br>Please check the updated list of new products.",
+    "Text_Korean": "購買產品的時間已經過去。 <br>請查看更新的新產品列表。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_MagicStore_EndRefresh",
+    "Text_English": "We have exhausted the number of instant renewals available today.",
+    "Text_Korean": "我們已經用盡了今天可用的即時續訂數量。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_MagicStore_RefreshTimeSecond",
+    "Text_English": "{0} seconds left",
+    "Text_Korean": "還剩 {0} 秒",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_MagicStore_RefreshInit",
+    "Text_English": "The product list and the number of instant updates have been initialized.",
+    "Text_Korean": "產品列表和即時更新數量已初始化。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_EventLabel_SaleForSummon",
+    "Text_English": "Sale!",
+    "Text_Korean": "銷售！",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_303",
+    "Text_English": "Beginner Package I",
+    "Text_Korean": "初學者套餐一",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_304",
+    "Text_English": "Beginner Package II",
+    "Text_Korean": "初學者套餐二",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_305",
+    "Text_English": "Beginner Package III",
+    "Text_Korean": "初學者套餐三",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_SummonItem_ExceptionItem",
+    "Text_English": "※Excluding growth and heavenly equipment",
+    "Text_Korean": "※不包括成長和天界裝備",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_603",
+    "Text_English": "Gladiator Level Up Package IV",
+    "Text_Korean": "角斗士升級套裝 IV",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_623",
+    "Text_English": "Assassin Level Up Package IV",
+    "Text_Korean": "刺客升級包 IV",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_643",
+    "Text_English": "Wizard Level Up Package IV",
+    "Text_Korean": "巫師升級包 IV",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_663",
+    "Text_English": "Fighter Level Up Package IV",
+    "Text_Korean": "戰鬥機等級升級包 IV",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_603",
+    "Text_English": "Gladiator Level Up Package IV",
+    "Text_Korean": "角斗士升級套裝 IV",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_623",
+    "Text_English": "Assassin Level Up Package IV",
+    "Text_Korean": "刺客升級包 IV",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_643",
+    "Text_English": "Wizard Level Up Package IV",
+    "Text_Korean": "巫師升級包 IV",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_663",
+    "Text_English": "Fighter Level Up Package IV",
+    "Text_Korean": "戰鬥機等級升級包 IV",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Possession",
+    "Text_English": "in stock",
+    "Text_Korean": "有存貨",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Costume_Guide",
+    "Text_English": "Purchased items are paid out immediately and can be equipped in your wardrobe.",
+    "Text_Korean": "購買的物品會立即付款，並且可以裝備在您的衣櫥中。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Bought_ClosetProduct",
+    "Text_English": "The purchase has been completed.<br>The product is delivered to the costume wardrobe.",
+    "Text_Korean": "購買已完成。 <br>產品已送到服裝衣櫃。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_502",
+    "Text_English": "Monthly Daily Benefits II",
+    "Text_Korean": "每月每日福利 II",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_6",
+    "Text_English": "Adventure Clearing Package II",
+    "Text_Korean": "冒險通關套餐 II",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_Limited",
+    "Text_English": "Limited",
+    "Text_Korean": "有限的",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageBuyDescription",
+    "Text_English": "- Purchased items are paid immediately and can be equipped in the costume menu.",
+    "Text_Korean": "- 購買的物品立即付款，可以裝備在服裝菜單中。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_800",
+    "Text_English": "Gladiator's New Year's Hanbok",
+    "Text_Korean": "角斗士的新年韓服",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_801",
+    "Text_English": "Assassin's New Year's Hanbok",
+    "Text_Korean": "刺客新年韓服",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_802",
+    "Text_English": "Wizard's New Year's Hanbok",
+    "Text_Korean": "巫師的新年韓服",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_803",
+    "Text_English": "Fighter's New Year's Hanbok",
+    "Text_Korean": "鬥士新年韓服",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_804",
+    "Text_English": "Gladiator's Sargon Set",
+    "Text_Korean": "角斗士的薩爾貢套裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_805",
+    "Text_English": "Assassin's Sargon Set",
+    "Text_Korean": "刺客的薩爾貢套裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_806",
+    "Text_English": "Wizard's Sargon Set",
+    "Text_Korean": "巫師的薩爾貢套裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_807",
+    "Text_English": "Fighter's Sargon Set",
+    "Text_Korean": "戰士的薩爾貢套裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_808",
+    "Text_English": "Gladiator's Harang Set",
+    "Text_Korean": "角斗士的哈朗套裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_809",
+    "Text_English": "Assassin's Harang Set",
+    "Text_Korean": "刺客的哈朗套裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_810",
+    "Text_English": "Wizard's Harang Set",
+    "Text_Korean": "巫師的哈朗套裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_811",
+    "Text_English": "Fighter's Harang Set",
+    "Text_Korean": "戰士的哈朗套裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_812",
+    "Text_English": "Gladiator's Sargon Set",
+    "Text_Korean": "角斗士的薩爾貢套裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_813",
+    "Text_English": "Assassin's Sargon Set",
+    "Text_Korean": "刺客的薩爾貢套裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_814",
+    "Text_English": "Wizard's Sargon Set",
+    "Text_Korean": "巫師的薩爾貢套裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_815",
+    "Text_English": "Fighter's Sargon Set",
+    "Text_Korean": "戰士的薩爾貢套裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_816",
+    "Text_English": "Gladiator's Harang Set",
+    "Text_Korean": "角斗士的哈朗套裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_817",
+    "Text_English": "Assassin's Harang Set",
+    "Text_Korean": "刺客的哈朗套裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_818",
+    "Text_English": "Wizard's Harang Set",
+    "Text_Korean": "巫師的哈朗套裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_819",
+    "Text_English": "Fighter's Harang Set",
+    "Text_Korean": "戰士的哈朗套裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_820",
+    "Text_English": "Gladiator's Hanbok Set",
+    "Text_Korean": "角斗士的韓服套裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_821",
+    "Text_English": "Assassin's Hanbok Set",
+    "Text_Korean": "刺客韓服套裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_822",
+    "Text_English": "Wizard's Hanbok Set",
+    "Text_Korean": "巫師韓服套裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_823",
+    "Text_English": "Fighter's Hanbok Set",
+    "Text_Korean": "鬥士韓服套裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_824",
+    "Text_English": "Gladiator's Halloween Set",
+    "Text_Korean": "角斗士的萬聖節套裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_825",
+    "Text_English": "Assassin's Halloween Set",
+    "Text_Korean": "刺客的萬聖節套裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_826",
+    "Text_English": "Wizard's Halloween Set",
+    "Text_Korean": "巫師的萬聖節套裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_827",
+    "Text_English": "Fighter's Halloween Set",
+    "Text_Korean": "戰士的萬聖節套裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageDescription_800",
+    "Text_English": "2019 Lunar New Year Costume",
+    "Text_Korean": "2019年農曆新年服裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageDescription_801",
+    "Text_English": "2019 Lunar New Year Costume",
+    "Text_Korean": "2019年農曆新年服裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageDescription_802",
+    "Text_English": "2019 Lunar New Year Costume",
+    "Text_Korean": "2019年農曆新年服裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageDescription_803",
+    "Text_English": "2019 Lunar New Year Costume",
+    "Text_Korean": "2019年農曆新年服裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageDescription_804",
+    "Text_English": "Sargon concept costume, the dragon of the lake who lives in the icy area of ​​relentless cold in Nifelheim.",
+    "Text_Korean": "薩爾貢概念服裝，居住在尼菲爾海姆無情冰冷地區的湖之巨龍。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageDescription_805",
+    "Text_English": "Sargon concept costume, the dragon of the lake who lives in the icy area of ​​relentless cold in Nifelheim.",
+    "Text_Korean": "薩爾貢概念服裝，居住在尼菲爾海姆無情冰冷地區的湖之巨龍。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageDescription_806",
+    "Text_English": "Sargon concept costume, the dragon of the lake who lives in the icy area of ​​relentless cold in Nifelheim.",
+    "Text_Korean": "薩爾貢概念服裝，居住在尼菲爾海姆無情冰冷地區的湖之巨龍。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageDescription_807",
+    "Text_English": "Sargon concept costume, the dragon of the lake who lives in the icy area of ​​relentless cold in Nifelheim.",
+    "Text_Korean": "薩爾貢概念服裝，居住在尼菲爾海姆無情冰冷地區的湖之巨龍。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageDescription_808",
+    "Text_English": "The fallen goddess who sold her soul, Harang's concept costume",
+    "Text_Korean": "出賣靈魂的墮落女神，哈朗的概念服裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageDescription_809",
+    "Text_English": "The fallen goddess who sold her soul, Harang's concept costume",
+    "Text_Korean": "出賣靈魂的墮落女神，哈朗的概念服裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageDescription_810",
+    "Text_English": "The fallen goddess who sold her soul, Harang's concept costume",
+    "Text_Korean": "出賣靈魂的墮落女神，哈朗的概念服裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageDescription_811",
+    "Text_English": "The fallen goddess who sold her soul, Harang's concept costume",
+    "Text_Korean": "出賣靈魂的墮落女神，哈朗的概念服裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageDescription_812",
+    "Text_English": "Sargon concept costume, the dragon of the lake who lives in the icy area of ​​relentless cold in Nifelheim.",
+    "Text_Korean": "薩爾貢概念服裝，居住在尼菲爾海姆無情冰冷地區的湖之巨龍。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageDescription_813",
+    "Text_English": "Sargon concept costume, the dragon of the lake who lives in the icy area of ​​relentless cold in Nifelheim.",
+    "Text_Korean": "薩爾貢概念服裝，居住在尼菲爾海姆無情冰冷地區的湖之巨龍。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageDescription_814",
+    "Text_English": "Sargon concept costume, the dragon of the lake who lives in the icy area of ​​relentless cold in Nifelheim.",
+    "Text_Korean": "薩爾貢概念服裝，居住在尼菲爾海姆無情冰冷地區的湖之巨龍。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageDescription_815",
+    "Text_English": "Sargon concept costume, the dragon of the lake who lives in the icy area of ​​relentless cold in Nifelheim.",
+    "Text_Korean": "薩爾貢概念服裝，居住在尼菲爾海姆無情冰冷地區的湖之巨龍。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageDescription_816",
+    "Text_English": "The fallen goddess who sold her soul, Harang's concept costume",
+    "Text_Korean": "出賣靈魂的墮落女神，哈朗的概念服裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageDescription_817",
+    "Text_English": "The fallen goddess who sold her soul, Harang's concept costume",
+    "Text_Korean": "出賣靈魂的墮落女神，哈朗的概念服裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageDescription_818",
+    "Text_English": "The fallen goddess who sold her soul, Harang's concept costume",
+    "Text_Korean": "出賣靈魂的墮落女神，哈朗的概念服裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageDescription_819",
+    "Text_English": "The fallen goddess who sold her soul, Harang's concept costume",
+    "Text_Korean": "出賣靈魂的墮落女神，哈朗的概念服裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageDescription_820",
+    "Text_English": "Oriental holiday commemorative costume",
+    "Text_Korean": "東方節日紀念服裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageDescription_821",
+    "Text_English": "Oriental holiday commemorative costume",
+    "Text_Korean": "東方節日紀念服裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageDescription_822",
+    "Text_English": "Oriental holiday commemorative costume",
+    "Text_Korean": "東方節日紀念服裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageDescription_823",
+    "Text_English": "Oriental holiday commemorative costume",
+    "Text_Korean": "東方節日紀念服裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageDescription_824",
+    "Text_English": "Bizarre and spooky Halloween concept costumes",
+    "Text_Korean": "奇異而詭異的萬聖節概念服裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageDescription_825",
+    "Text_English": "Bizarre and spooky Halloween concept costumes",
+    "Text_Korean": "奇異而詭異的萬聖節概念服裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageDescription_826",
+    "Text_English": "Bizarre and spooky Halloween concept costumes",
+    "Text_Korean": "奇異而詭異的萬聖節概念服裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageDescription_827",
+    "Text_English": "Bizarre and spooky Halloween concept costumes",
+    "Text_Korean": "奇異而詭異的萬聖節概念服裝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_CostumeDetail",
+    "Text_English": "costume information",
+    "Text_Korean": "服裝信息",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_604",
+    "Text_English": "Gladiator Level Up Package V",
+    "Text_Korean": "角斗士升級包 V",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_624",
+    "Text_English": "Assassin Level Up Package V",
+    "Text_Korean": "刺客升級包 V",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_644",
+    "Text_English": "Wizard Level Up Package V",
+    "Text_Korean": "巫師升級包 V",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_664",
+    "Text_English": "Fighter Level Up Package V",
+    "Text_Korean": "戰鬥機等級升級包 V",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_604",
+    "Text_English": "Gladiator Level Up Package V",
+    "Text_Korean": "角斗士升級包 V",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_624",
+    "Text_English": "Assassin Level Up Package V",
+    "Text_Korean": "刺客升級包 V",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_644",
+    "Text_English": "Wizard Level Up Package V",
+    "Text_Korean": "巫師升級包 V",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_664",
+    "Text_English": "Fighter Level Up Package V",
+    "Text_Korean": "戰鬥機等級升級包 V",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_7",
+    "Text_English": "Gold Package III",
+    "Text_Korean": "黃金套餐三",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_8",
+    "Text_English": "name change package",
+    "Text_Korean": "改名包",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_MaterialTrade",
+    "Text_English": "material exchange",
+    "Text_Korean": "物質交換",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_605",
+    "Text_English": "Gladiator Level Up Package VI",
+    "Text_Korean": "角斗士升級包 VI",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_625",
+    "Text_English": "Assassin Level Up Package VI",
+    "Text_Korean": "刺客升級包VI",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_645",
+    "Text_English": "Wizard Level Up Package VI",
+    "Text_Korean": "嚮導升級包 VI",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_665",
+    "Text_English": "Fighter Level Up Package VI",
+    "Text_Korean": "戰鬥機等級升級包 VI",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_605",
+    "Text_English": "Gladiator Level Up Package VI",
+    "Text_Korean": "角斗士升級包 VI",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_625",
+    "Text_English": "Assassin Level Up Package VI",
+    "Text_Korean": "刺客升級包VI",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_645",
+    "Text_English": "Wizard Level Up Package VI",
+    "Text_Korean": "嚮導升級包 VI",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_665",
+    "Text_English": "Fighter Level Up Package VI",
+    "Text_Korean": "戰鬥機等級升級包 VI",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_606",
+    "Text_English": "Gladiator Level Up Package VII",
+    "Text_Korean": "角斗士升級包 VII",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_626",
+    "Text_English": "Assassin Level Up Package VII",
+    "Text_Korean": "刺客升級包七",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_646",
+    "Text_English": "Wizard Level Up Package VII",
+    "Text_Korean": "巫師升級包 VII",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_666",
+    "Text_English": "Fighter Level Up Package VII",
+    "Text_Korean": "戰鬥機升級包 VII",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_606",
+    "Text_English": "Gladiator Level Up Package VII",
+    "Text_Korean": "角斗士升級包 VII",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_626",
+    "Text_English": "Assassin Level Up Package VII",
+    "Text_Korean": "刺客升級包七",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_646",
+    "Text_English": "Wizard Level Up Package VII",
+    "Text_Korean": "巫師升級包 VII",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageTab_666",
+    "Text_English": "Fighter Level Up Package VII",
+    "Text_Korean": "戰鬥機升級包 VII",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_503",
+    "Text_English": "Monthly Daily Benefits Ⅲ",
+    "Text_Korean": "每月每日福利Ⅲ",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_504",
+    "Text_English": "Monthly Daily Benefits Ⅳ",
+    "Text_Korean": "每月每日福利Ⅳ",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_306",
+    "Text_English": "Steel Hammer Package I",
+    "Text_Korean": "鋼錘套裝 I",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_307",
+    "Text_English": "Platinum Hammer Package I",
+    "Text_Korean": "鉑金鎚套裝 I",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_308",
+    "Text_English": "Shiny Steel Hammer Package I",
+    "Text_Korean": "閃亮鋼錘套裝 I",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_309",
+    "Text_English": "Shiny Platinum Hammer Package I",
+    "Text_Korean": "閃亮鉑金鎚套裝 I",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_310",
+    "Text_English": "Eternal Crystal Package I",
+    "Text_Korean": "永恆水晶禮包一",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_311",
+    "Text_English": "production package I",
+    "Text_Korean": "生產包我",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Store_PackageName_312",
+    "Text_English": "Advanced Production Package I",
+    "Text_Korean": "高級生產包 I",
+    "Text_Other": ""
+  }
+]

@@ -1,0 +1,920 @@
+[
+  {
+    "Name": "7003001",
+    "Text_English": "You can use an enhancement stone for this item.",
+    "Text_Korean": "這是一個允許您選擇升艙座位的項目。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7003002",
+    "Text_English": "With this item, you can choose five of the upgraded seats.",
+    "Text_Korean": "此項目允許您選擇 5 個升艙座位。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7003003",
+    "Text_English": "With this item, you can choose 10 promotion seats.",
+    "Text_Korean": "此項目允許您選擇 10 個升級座位。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7003004",
+    "Text_English": "With this item, you can choose 15 promotion seats.",
+    "Text_Korean": "此項目允許您選擇 15 個升級座位。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "7003005",
+    "Text_English": "With this item, you can choose 50 promotion seats.",
+    "Text_Korean": "此項目允許您選擇 50 個升級座位。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8000000",
+    "Text_English": "<span color=\"#dcdce1\">Use to upgrade your weapon.</> <br><br><span color=\"#8596c0\">The hidden powers of your weapon resonates with the powerful magic gem.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用於將武器升級為更高等級的物品。 </> <br><br><span color=\"#8596c0\">包含強大魔法的耀眼光芒。釋放隱藏的力量你的武器的力量與寶石。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8000001",
+    "Text_English": "<span color=\"#dcdce1\">Use to upgrade your armor.</> <br><br><span color=\"#8596c0\">The hidden powers of your armor resonates with the powerful magic gem.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">此物品用於將盔甲升級為更高等級。 </> <br><br><span color=\"#8596c0\">包含強大魔法的耀眼光芒。釋放隱藏的力量你的盔甲力量與寶石。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8000002",
+    "Text_English": "<span color=\"#dcdce1\">Use to upgrade your trinket.</> <br><br><span color=\"#8596c0\">The hidden powers of your trinket resonates with the powerful magic gem.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">一種用於將裝飾品升級為更高等級的物品。 </> <br><br><span color=\"#8596c0\">包含強大魔法的耀眼光芒。釋放隱藏的珠寶與寶石的力量。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8000005",
+    "Text_English": "<span color=\"#dcdce1\">Use to upgrade your wings.</> <br><br><span color=\"#8596c0\">Concentrated magic empowers your wings.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">一種用於強化翅膀的材料。 </> <br><br><span color=\"#8596c0\">水晶中蘊含的濃縮魔力讓翅膀變得更加堅固。 < />",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8000006",
+    "Text_English": "<span color=\"#dcdce1\">Use to evolve your wings.</> <br><br><span color=\"#8596c0\">Release the power of the gem and gain the power of light.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">一種用於進化翅膀的材料。 </> <br><br><span color=\"#8596c0\">在某人的痛苦和耐心中，一顆被加熱的寶石，它的力量會爆炸.當你這樣做的時候，你可以獲得輝煌之光的力量。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8000007",
+    "Text_English": "<span color=\"#dcdce1\">Use to upgrade your wings option.</> <br><br><span color=\"#8596c0\">Gain new powers from this ethereal energy.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">一種用於增強翅膀屬性選項的材料。 </> <br><br><span color=\"#8596c0\">由世界上最輕的材料製成，使用裝飾翅膀。賦予新的力量。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8000008",
+    "Text_English": "<span color=\"#dcdce1\">Use to upgrade your rank.</> <br><br><span color=\"#8596c0\">An honorable mark is only bestowed upon the victor.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用於提升等級的材料。 </> <br><br><span color=\"#8596c0\">這是一個僅授予決鬥勝者的榮譽標記。 </> >",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8000009",
+    "Text_English": "<span color=\"#dcdce1\">Use to upgrade your relic.</> <br><br><span color=\"#8596c0\">Release the hidden powers of the relic.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">一種用於增強古代神器的材料。 </> <br><br><span color=\"#8596c0\">用於解鎖神器的隱藏力量。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8000010",
+    "Text_English": "<span color=\"#dcdce1\">Use to upgrade your weapon.</> <br><br><span color=\"#8596c0\">Sharpens your weapon</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用於增強武器的物品。 </> <br><br><span color=\"#8596c0\">使武器更鋒利</>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8000011",
+    "Text_English": "<span color=\"#dcdce1\">Use to upgrade your armor.</> <br><br><span color=\"#8596c0\">Strengthens your armor</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用於加強盔甲的物品。 </> <br><br><span color=\"#8596c0\">使盔甲更堅固。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8000012",
+    "Text_English": "<span color=\"#dcdce1\">Use to upgrade your trinket.</> <br><br><span color=\"#8596c0\">Polishes your trinket</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用於增強珠寶的物品。 </> <br><br><span color=\"#8596c0\">使珠寶閃耀</>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8000013",
+    "Text_English": "<span color=\"#dcdce1\">Use to upgrade your weapon.</> <br><br><span color=\"#8596c0\">Chance to increase one to three stats</>",
+    "Text_Korean": "<span color=\"#dcdce1\">武器強化道具。 </> <br><br><span color=\"#8596c0\">有機率增加1-3個。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8000014",
+    "Text_English": "<span color=\"#dcdce1\">Use to upgrade your armor.</> <br><br><span color=\"#8596c0\">Chance to increase one to three stats</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用於增強護甲的物品。 </> <br><br><span color=\"#8596c0\">有機率增加1-3個。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8000015",
+    "Text_English": "<span color=\"#dcdce1\">Use to upgrade your trinket.</> <br><br><span color=\"#8596c0\">Chance to increase one to three stats</>",
+    "Text_Korean": "<span color=\"#dcdce1\">飾品強化所需物品。 </> <br><br><span color=\"#8596c0\">有機率增加1-3個。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8000016",
+    "Text_English": "<span color=\"#dcdce1\">Protect yourself from losing the upgrade level.</> <br><br><span color=\"#8596c0\">You have archangel Remiel's blessings.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">在升級裝備時防止力量下降的物品。 </> <br><br><span color=\"#8596c0\">注入了大天使拉米爾的神秘保護。 </> >",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8000017",
+    "Text_English": "<span color=\"#dcdce1\">This material is used to strengthen the ether.</> <br><br><span color=\"# 8596c0\">Increases the ability of the ether as a debris created as the ether disappears with light</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用於增強以太的材料。 </> <br><br><span color=\"#8596c0\">以太隨光消失時創建的碎片，增加以太的屬性。製造它。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8000018",
+    "Text_English": "<span color=\"#dcdce1\">Material used for smelting totems.</> <br><br><span color=\"#8596c0\">A shard from a dimensional rift glows with a brilliant light.</ >",
+    "Text_Korean": "<span color=\"#dcdce1\">用於熔煉圖騰的材料。 </> <br><br><span color=\"#8596c0\">來自次元裂隙的碎片發出耀眼的光芒。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8000019",
+    "Text_English": "<span color=\"#dcdce1\">Material used to enhance costume weapons</> <br><br><span color=\"#8596c0\">Makes costume weapons sharper</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用於增強服裝武器的材料</> <br><br><span color=\"#8596c0\">使服裝武器更鋒利</>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8000020",
+    "Text_English": "<span color=\"#dcdce1\">Material used to enhance costume armor</> <br><br><span color=\"#8596c0\">Makes costume armor stronger</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用於增強服裝盔甲的材料</> <br><br><span color=\"#8596c0\">使服裝盔甲更堅固</>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8001000",
+    "Text_English": "<span color=\"#dcdce1\">Use to upgrade relic.</> <br><br><span color=\"#8596c0\">Caligula's crown is said to offer immortality to whom it chooses.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">一種用於增強古代遺物的物品。 </> <br><br><span color=\"#8596c0\">如果你從卡利古拉佩戴的皇冠上的精製碎片中收集它們，你將獲得永生的力量。眾所周知，它是可以獲得的。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8001001",
+    "Text_English": "<span color=\"#dcdce1\">Use to upgrade relic.</> <br><br><span color=\"#8596c0\">Lilith's necklace holds the life force of the forest.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">一件用來強化古代神器的物品。 </> <br><br><span color=\"#8596c0\">在莉莉絲之後，縈繞在仙林裡的生命之魂，依然屬於她被封印。在</>的項鍊中盤旋",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8001002",
+    "Text_English": "<span color=\"#dcdce1\">Use to upgrade relic.</> <br><br><span color=\"#8596c0\">Beelzebub's eye can track anyone, anywhere.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用來強化古代遺物的物品。 </> <br><br><span color=\"#8596c0\">兇惡之眼的威力，無論跑多遠, 敵人 據說你不能把目光從它身上移開。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8001003",
+    "Text_English": "<span color=\"#dcdce1\">Use to upgrade relic.</> <br><br><span color=\"#8596c0\">Azrael's blade is said to be used to create this world.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用來強化古代遺蹟的物品。 </> <br><br><span color=\"#8596c0\">一開始用來分割天地的劍。一起，只剩下殘骸了。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8001004",
+    "Text_English": "<span color=\"#dcdce1\">Use to upgrade relic.</> <br><br><span color=\"#8596c0\">Nidhogg's wings holds the power of Niflheim.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">一種用於增強古代遺物的物品。 </> <br><br><span color=\"#8596c0\">顏色會根據尼德霍格的心情而變化，天界尼夫海姆的漂浮物包含必要的魔力。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8001005",
+    "Text_English": "<span color=\"#dcdce1\">An item used to enhance ancient relics.</> <br><br><span color=\"#8596c0\">A hard bone fragment of Apocalypse. It is said that the moment they saw the shape of the cursed skull, everyone was terrified and unable to move..</>",
+    "Text_Korean": "<span color=\"#dcdce1\">一件用來強化古代遺物的物品。 </> <br><br><span color=\"#8596c0\">天啟的硬骨碎片。據說在看到被詛咒的骷髏形狀的那一刻，所有人都嚇得動彈不得……</>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8002000",
+    "Text_English": "<span color=\"#dcdce1\">Material used to level up fairy.</> <br><br><span color=\"#8596c0\">This piece is created when equipment is destroyed and is said to be used to decorate the wings of fairies. there is. </>",
+    "Text_Korean": "<span color=\"#dcdce1\">精靈升級的材料。 </> <br><br><span color=\"#8596c0\">這件物品是在裝備被破壞時產生的，據說用於裝飾仙女的翅膀。有。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8003000",
+    "Text_English": "This item can be renamed once.",
+    "Text_Korean": "此項目可以重命名一次。",
+    "Text_Other": ""
+  },
+  {
+    "Name": "9000000",
+    "Text_English": "<span color=\"#dcdce1\">Use to buy items from the store.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">這是一種用於從商店購買物品的貨幣。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2000200",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Gladiator's weapon.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">作為角斗士武器升級材料的物品。 </> <br><br><span color=\"#8596c0\">這是Blacksmith Broke特製的裝備材料。 < /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2000300",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Gladiator's weapon.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">作為角斗士武器升級材料的物品。 </> <br><br><span color=\"#8596c0\">這是Blacksmith Broke特製的裝備材料。 < /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2000400",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Gladiator's weapon.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">作為角斗士武器升級材料的物品。 </> <br><br><span color=\"#8596c0\">這是Blacksmith Broke特製的裝備材料。 < /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2000500",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Gladiator's weapon.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">作為角斗士武器升級材料的物品。 </> <br><br><span color=\"#8596c0\">這是Blacksmith Broke特製的裝備材料。 < /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2000600",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Gladiator's weapon.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">作為角斗士武器升級材料的物品。 </> <br><br><span color=\"#8596c0\">這是Blacksmith Broke特製的裝備材料。 < /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2000700",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Gladiator's weapon.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">作為角斗士武器升級材料的物品。 </> <br><br><span color=\"#8596c0\">這是Blacksmith Broke特製的裝備材料。 < /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2000800",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Gladiator's weapon.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">作為角斗士武器升級材料的物品。 </> <br><br><span color=\"#8596c0\">這是Blacksmith Broke特製的裝備材料。 < /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2000900",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Gladiator's weapon.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">作為角斗士武器升級材料的物品。 </> <br><br><span color=\"#8596c0\">這是Blacksmith Broke特製的裝備材料。 < /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2100200",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Assassin's weapon.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用作刺客武器升級材料的物品。 </> <br><br><span color=\"#8596c0\">Blacksmith Broke特製的裝備材料。 < /> < br><span color=\"#8596c0\">走得越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2100300",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Assassin's weapon.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用作刺客武器升級材料的物品。 </> <br><br><span color=\"#8596c0\">Blacksmith Broke特製的裝備材料。 < /> <br><span color=\"#8596c0\">走得越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2100400",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Assassin's weapon.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用作刺客武器升級材料的物品。 </> <br><br><span color=\"#8596c0\">Blacksmith Broke特製的裝備材料。 < /> < br><span color=\"#8596c0\">走得越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2100500",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Assassin's weapon.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用作刺客武器升級材料的物品。 </> <br><br><span color=\"#8596c0\">Blacksmith Broke特製的裝備材料。 < /> < br><span color=\"#8596c0\">走得越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2100600",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Assassin's weapon.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用作刺客武器升級材料的物品。 </> <br><br><span color=\"#8596c0\">Blacksmith Broke特製的裝備材料。 < /> <br><span color=\"#8596c0\">走得越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2100700",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Assassin's weapon.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用作刺客武器升級材料的物品。 </> <br><br><span color=\"#8596c0\">Blacksmith Broke特製的裝備材料。 < /> < br><span color=\"#8596c0\">走得越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2100800",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Assassin's weapon.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用作刺客武器升級材料的物品。 </> <br><br><span color=\"#8596c0\">Blacksmith Broke特製的裝備材料。 < /> <br><span color=\"#8596c0\">走得越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2100900",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Assassin's weapon.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用作刺客武器升級材料的物品。 </> <br><br><span color=\"#8596c0\">Blacksmith Broke特製的裝備材料。 < /> <br><span color=\"#8596c0\">走得越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2200200",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Wizard's weapon.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">作為法師武器升級材料的物品。 </> <br><br><span color=\"#8596c0\">這是鐵匠布羅克特製的裝備材料.< /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2200300",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Wizard's weapon.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">作為法師武器升級材料的物品。 </> <br><br><span color=\"#8596c0\">這是鐵匠布羅克特製的裝備材料.< /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2200400",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Wizard's weapon.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">作為法師武器升級材料的物品。 </> <br><br><span color=\"#8596c0\">這是鐵匠布羅克特製的裝備材料.< /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2200500",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Wizard's weapon.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">作為法師武器升級材料的物品。 </> <br><br><span color=\"#8596c0\">這是鐵匠布羅克特製的裝備材料.< /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2200600",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Wizard's weapon.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">作為法師武器升級材料的物品。 </> <br><br><span color=\"#8596c0\">這是鐵匠布羅克特製的裝備材料.< /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2200700",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Wizard's weapon.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">作為法師武器升級材料的物品。 </> <br><br><span color=\"#8596c0\">這是鐵匠布羅克特製的裝備材料.< /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2200800",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Wizard's weapon.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">作為法師武器升級材料的物品。 </> <br><br><span color=\"#8596c0\">這是鐵匠布羅克特製的裝備材料.< /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2200900",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Wizard's weapon.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">作為法師武器升級材料的物品。 </> <br><br><span color=\"#8596c0\">這是鐵匠布羅克特製的裝備材料.< /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2300200",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Fighter's weapon.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">武術武器升級材料。 </> <br><br><span color=\"#8596c0\">這是鐵匠特製的裝備材料破了。 </> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2300300",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Fighter's weapon.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">武術武器升級材料。 </> <br><br><span color=\"#8596c0\">這是鐵匠特製的裝備材料破了。 </> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2300400",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Fighter's weapon.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">武術武器升級材料。 </> <br><br><span color=\"#8596c0\">這是鐵匠特製的裝備材料破了。 </> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2300500",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Fighter's weapon.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">武術武器升級材料。 </> <br><br><span color=\"#8596c0\">這是鐵匠特製的裝備材料破了。 </> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2300600",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Fighter's weapon.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">武術武器升級材料。 </> <br><br><span color=\"#8596c0\">這是鐵匠特製的裝備材料破了。 </> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2300700",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Fighter's weapon.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">武術武器升級材料。 </> <br><br><span color=\"#8596c0\">這是鐵匠特製的裝備材料破了。 </> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2300800",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Fighter's weapon.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">武術武器升級材料。 </> <br><br><span color=\"#8596c0\">這是鐵匠特製的裝備材料破了。 </> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2300900",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Fighter's weapon.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">武術武器升級材料。 </> <br><br><span color=\"#8596c0\">這是鐵匠特製的裝備材料破了。 </> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2001200",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Gladiator's armor.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用作升級角斗士盔甲的材料的物品。 </> <br><br><span color=\"#8596c0\">這是一種由Blacksmith Broke特別製作的裝備材料。 < /> <br><span color=\"#8596c0\">走得越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2001300",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Gladiator's armor.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用作升級角斗士盔甲的材料的物品。 </> <br><br><span color=\"#8596c0\">這是一種由Blacksmith Broke特別製作的裝備材料。 < /> <br><span color=\"#8596c0\">走得越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2001400",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Gladiator's armor.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用作升級角斗士盔甲的材料的物品。 </> <br><br><span color=\"#8596c0\">這是一種由Blacksmith Broke特別製作的裝備材料。 < /> <br><span color=\"#8596c0\">走得越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2001500",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Gladiator's armor.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用作升級角斗士盔甲的材料的物品。 </> <br><br><span color=\"#8596c0\">這是一種由Blacksmith Broke特別製作的裝備材料。 < /> <br><span color=\"#8596c0\">走得越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2001600",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Gladiator's armor.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用作升級角斗士盔甲的材料的物品。 </> <br><br><span color=\"#8596c0\">這是一種由Blacksmith Broke特別製作的裝備材料。 < /> <br><span color=\"#8596c0\">走得越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2001700",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Gladiator's armor.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用作升級角斗士盔甲的材料的物品。 </> <br><br><span color=\"#8596c0\">這是一種由Blacksmith Broke特別製作的裝備材料。 < /> <br><span color=\"#8596c0\">走得越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2001800",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Gladiator's armor.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用作升級角斗士盔甲的材料的物品。 </> <br><br><span color=\"#8596c0\">這是一種由Blacksmith Broke特別製作的裝備材料。 < /> <br><span color=\"#8596c0\">走得越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2001900",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Gladiator's armor.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用作升級角斗士盔甲的材料的物品。 </> <br><br><span color=\"#8596c0\">這是一種由Blacksmith Broke特別製作的裝備材料。 < /> <br><span color=\"#8596c0\">走得越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2101200",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Assassin's armor.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">刺客盔甲升級道具。 </> <br><br><span color=\"#8596c0\">這是鐵匠布羅克特製的裝備材料。 /> <br ><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2101300",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Assassin's armor.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">刺客盔甲升級道具。 </> <br><br><span color=\"#8596c0\">這是鐵匠布羅克特製的裝備材料。 /> <br ><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2101400",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Assassin's armor.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">刺客盔甲升級道具。 </> <br><br><span color=\"#8596c0\">這是鐵匠布羅克特製的裝備材料。 /> <br ><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2101500",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Assassin's armor.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">刺客盔甲升級道具。 </> <br><br><span color=\"#8596c0\">這是鐵匠布羅克特製的裝備材料。 /> <br ><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2101600",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Assassin's armor.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">刺客盔甲升級道具。 </> <br><br><span color=\"#8596c0\">這是鐵匠布羅克特製的裝備材料。 /> <br ><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2101700",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Assassin's armor.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">刺客盔甲升級道具。 </> <br><br><span color=\"#8596c0\">這是鐵匠布羅克特製的裝備材料。 /> <br ><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2101800",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Assassin's armor.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">刺客盔甲升級道具。 </> <br><br><span color=\"#8596c0\">這是鐵匠布羅克特製的裝備材料。 /> <br ><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2101900",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Assassin's armor.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">刺客盔甲升級道具。 </> <br><br><span color=\"#8596c0\">這是鐵匠布羅克特製的裝備材料。 /> <br ><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2201200",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Wizard's armor.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">作為法師盔甲升級材料的物品。 </> <br><br><span color=\"#8596c0\">這是鐵匠布羅克特製的裝備材料。 < /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2201300",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Wizard's armor.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">作為法師盔甲升級材料的物品。 </> <br><br><span color=\"#8596c0\">這是鐵匠布羅克特製的裝備材料。 < /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2201400",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Wizard's armor.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">作為法師盔甲升級材料的物品。 </> <br><br><span color=\"#8596c0\">這是鐵匠布羅克特製的裝備材料。 < /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2201500",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Wizard's armor.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">作為法師盔甲升級材料的物品。 </> <br><br><span color=\"#8596c0\">這是鐵匠布羅克特製的裝備材料。 < /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2201600",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Wizard's armor.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">作為法師盔甲升級材料的物品。 </> <br><br><span color=\"#8596c0\">這是鐵匠布羅克特製的裝備材料。 < /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2201700",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Wizard's armor.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">作為法師盔甲升級材料的物品。 </> <br><br><span color=\"#8596c0\">這是鐵匠布羅克特製的裝備材料。 < /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2201800",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Wizard's armor.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">作為法師盔甲升級材料的物品。 </> <br><br><span color=\"#8596c0\">這是鐵匠布羅克特製的裝備材料。 < /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2201900",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Wizard's armor.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">作為法師盔甲升級材料的物品。 </> <br><br><span color=\"#8596c0\">這是鐵匠布羅克特製的裝備材料。 < /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2301200",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Fighter's armor.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">武術盔甲的升級材料。 </> <br><br><span color=\"#8596c0\">這是鐵匠特製的裝備材料破了。 </> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2301300",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Fighter's armor.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">武術盔甲的升級材料。 </> <br><br><span color=\"#8596c0\">這是鐵匠特製的裝備材料破了。 </> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2301400",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Fighter's armor.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">武術盔甲的升級材料。 </> <br><br><span color=\"#8596c0\">這是鐵匠特製的裝備材料破了。 </> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2301500",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Fighter's armor.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">武術盔甲的升級材料。 </> <br><br><span color=\"#8596c0\">這是鐵匠特製的裝備材料破了。 </> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2301600",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Fighter's armor.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">武術盔甲的升級材料。 </> <br><br><span color=\"#8596c0\">這是鐵匠特製的裝備材料破了。 </> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2301700",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Fighter's armor.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">武術盔甲的升級材料。 </> <br><br><span color=\"#8596c0\">這是鐵匠特製的裝備材料破了。 </> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2301800",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Fighter's armor.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">武術盔甲的升級材料。 </> <br><br><span color=\"#8596c0\">這是鐵匠特製的裝備材料破了。 </> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2301900",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Fighter's armor.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">武術盔甲的升級材料。 </> <br><br><span color=\"#8596c0\">這是鐵匠特製的裝備材料破了。 </> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2002200",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Gladiator's trinket.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用作升級角斗士飾品的材料的物品。 </> <br><br><span color=\"#8596c0\">這是鐵匠布羅克特製的裝備材料。 < /> <br><span color=\"#8596c0\">走得越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2002300",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Gladiator's trinket.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用作升級角斗士飾品的材料的物品。 </> <br><br><span color=\"#8596c0\">這是鐵匠布羅克特製的裝備材料。 < /> <br><span color=\"#8596c0\">走得越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2002400",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Gladiator's trinket.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用作升級角斗士飾品的材料的物品。 </> <br><br><span color=\"#8596c0\">這是鐵匠布羅克特製的裝備材料。 < /> <br><span color=\"#8596c0\">走得越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2002500",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Gladiator's trinket.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用作升級角斗士飾品的材料的物品。 </> <br><br><span color=\"#8596c0\">這是鐵匠布羅克特製的裝備材料。 < /> <br><span color=\"#8596c0\">走得越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2002600",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Gladiator's trinket.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用作升級角斗士飾品的材料的物品。 </> <br><br><span color=\"#8596c0\">這是鐵匠布羅克特製的裝備材料。 < /> <br><span color=\"#8596c0\">走得越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2002700",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Gladiator's trinket.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用作升級角斗士飾品的材料的物品。 </> <br><br><span color=\"#8596c0\">這是鐵匠布羅克特製的裝備材料。 < /> <br><span color=\"#8596c0\">走得越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2002800",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Gladiator's trinket.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用作升級角斗士飾品的材料的物品。 </> <br><br><span color=\"#8596c0\">這是鐵匠布羅克特製的裝備材料。 < /> <br><span color=\"#8596c0\">走得越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2002900",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Gladiator's trinket.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用作升級角斗士飾品的材料的物品。 </> <br><br><span color=\"#8596c0\">這是鐵匠布羅克特製的裝備材料。 < /> <br><span color=\"#8596c0\">走得越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2102200",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Assassin's trinket.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">刺客飾品的升級材料。 </> <br><br><span color=\"#8596c0\">這是鐵匠布洛克特製的裝備材料。 < /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2102300",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Assassin's trinket.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">刺客飾品的升級材料。 </> <br><br><span color=\"#8596c0\">這是鐵匠布洛克特製的裝備材料。 < /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2102400",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Assassin's trinket.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">刺客飾品的升級材料。 </> <br><br><span color=\"#8596c0\">這是鐵匠布洛克特製的裝備材料。 < /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2102500",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Assassin's trinket.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">刺客飾品的升級材料。 </> <br><br><span color=\"#8596c0\">這是鐵匠布洛克特製的裝備材料。 < /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2102600",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Assassin's trinket.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">刺客飾品的升級材料。 </> <br><br><span color=\"#8596c0\">這是鐵匠布洛克特製的裝備材料。 < /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2102700",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Assassin's trinket.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">刺客飾品的升級材料。 </> <br><br><span color=\"#8596c0\">這是鐵匠布洛克特製的裝備材料。 < /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2102800",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Assassin's trinket.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">刺客飾品的升級材料。 </> <br><br><span color=\"#8596c0\">這是鐵匠布洛克特製的裝備材料。 < /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2102900",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Assassin's trinket.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">刺客飾品的升級材料。 </> <br><br><span color=\"#8596c0\">這是鐵匠布洛克特製的裝備材料。 < /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2202200",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Wizard's trinket.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">作為法師飾品的升級材料的物品。 </> <br><br><span color=\"#8596c0\">這是鐵匠布洛克特製的裝備材料.< /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2202300",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Wizard's trinket.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">作為法師飾品的升級材料的物品。 </> <br><br><span color=\"#8596c0\">這是鐵匠布洛克特製的裝備材料.< /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2202400",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Wizard's trinket.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">作為法師飾品的升級材料的物品。 </> <br><br><span color=\"#8596c0\">這是鐵匠布洛克特製的裝備材料.< /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2202500",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Wizard's trinket.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">作為法師飾品的升級材料的物品。 </> <br><br><span color=\"#8596c0\">這是鐵匠布洛克特製的裝備材料.< /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2202600",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Wizard's trinket.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">作為法師飾品的升級材料的物品。 </> <br><br><span color=\"#8596c0\">這是鐵匠布洛克特製的裝備材料.< /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2202700",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Wizard's trinket.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">作為法師飾品的升級材料的物品。 </> <br><br><span color=\"#8596c0\">這是鐵匠布洛克特製的裝備材料.< /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2202800",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Wizard's trinket.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">作為法師飾品的升級材料的物品。 </> <br><br><span color=\"#8596c0\">這是鐵匠布洛克特製的裝備材料.< /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2202900",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Wizard's trinket.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">作為法師飾品的升級材料的物品。 </> <br><br><span color=\"#8596c0\">這是鐵匠布洛克特製的裝備材料.< /> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2302200",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Fighter's trinket.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">前鋒飾品的升級材料。 </> <br><br><span color=\"#8596c0\">這是鐵匠特製的裝備材料破了。 </> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2302300",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Fighter's trinket.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">前鋒飾品的升級材料。 </> <br><br><span color=\"#8596c0\">這是鐵匠特製的裝備材料破了。 </> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2302400",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Fighter's trinket.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">前鋒飾品的升級材料。 </> <br><br><span color=\"#8596c0\">這是鐵匠特製的裝備材料破了。 </> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2302500",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Fighter's trinket.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">前鋒飾品的升級材料。 </> <br><br><span color=\"#8596c0\">這是鐵匠特製的裝備材料破了。 </> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2302600",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Fighter's trinket.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">前鋒飾品的升級材料。 </> <br><br><span color=\"#8596c0\">這是鐵匠特製的裝備材料破了。 </> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2302700",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Fighter's trinket.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">前鋒飾品的升級材料。 </> <br><br><span color=\"#8596c0\">這是鐵匠特製的裝備材料破了。 </> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2302800",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Fighter's trinket.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">前鋒飾品的升級材料。 </> <br><br><span color=\"#8596c0\">這是鐵匠特製的裝備材料破了。 </> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "2302900",
+    "Text_English": "<span color=\"#dcdce1\">An item used to level up the Fighter's trinket.</> <br><br><span color=\"#8596c0\">Material specially forged by Smith the blacksmith.</> <br><span color=\"#8596c0\">Higher grades are more effective.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">前鋒飾品的升級材料。 </> <br><br><span color=\"#8596c0\">這是鐵匠特製的裝備材料破了。 </> <br><span color=\"#8596c0\">走的越高，效果就越高。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6000606",
+    "Text_English": "<span color=\"#dcdce1\">Item used as a transcendental material for the Divine Weapon.</> <br><br><span color=\"#8596c0\">Level the Divine Weapon with the powerful magical power contained in the Golden Anvil. You can increase the maximum by 1 level. </>",
+    "Text_Korean": "<span color=\"#dcdce1\">用作神器的超然材料的物品。 </> <br><br><span color=\"#8596c0\">用包含在神器中的強大魔法力量升級神器金砧，最高可提升1級。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6001606",
+    "Text_English": "<span color=\"#dcdce1\">Item used as a transcendental material for Divine Armor.</> <br><br><span color=\"#8596c0\">Levels the Divine Armor with the powerful magical power contained in the Golden Anvil. You can increase the maximum by 1 level. </>",
+    "Text_Korean": "<span color=\"#dcdce1\">用作神鎧的超然材料的物品。 </> <br><br><span color=\"#8596c0\">以黃金中蘊含的強大魔力升級神鎧鐵砧. 你可以將最大值提高 1 級。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6002606",
+    "Text_English": "<span color=\"#dcdce1\">Item used as a transcendental material for Heavenly Accessory.</> <br><br><span color=\"#8596c0\">The level of Heavenly Accessory with the powerful magical power contained in the Golden Anvil. You can increase the maximum by 1 level. </>",
+    "Text_Korean": "<span color=\"#dcdce1\">天飾品的超凡材料。 </> <br><br><span color=\"#8596c0\">天飾品的等級，蘊含強大的魔力。金砧，最高可提升1級。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6100606",
+    "Text_English": "<span color=\"#dcdce1\">Item used as a transcendental material for the Divine Weapon.</> <br><br><span color=\"#8596c0\">Level the Divine Weapon with the powerful magical power contained in the Golden Anvil. You can increase the maximum by 1 level. </>",
+    "Text_Korean": "<span color=\"#dcdce1\">用作神器的超然材料的物品。 </> <br><br><span color=\"#8596c0\">用包含在神器中的強大魔法力量升級神器金砧，最高可提升1級。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6101606",
+    "Text_English": "<span color=\"#dcdce1\">Item used as a transcendental material for Divine Armor.</> <br><br><span color=\"#8596c0\">Levels the Divine Armor with the powerful magical power contained in the Golden Anvil. You can increase the maximum by 1 level. </>",
+    "Text_Korean": "<span color=\"#dcdce1\">用作神鎧的超然材料的物品。 </> <br><br><span color=\"#8596c0\">以黃金中蘊含的強大魔力升級神鎧鐵砧. 你可以將最大值提高 1 級。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6102606",
+    "Text_English": "<span color=\"#dcdce1\">Item used as a transcendental material for Heavenly Accessory.</> <br><br><span color=\"#8596c0\">The level of Heavenly Accessory with the powerful magical power contained in the Golden Anvil. You can increase the maximum by 1 level. </>",
+    "Text_Korean": "<span color=\"#dcdce1\">天飾品的超凡材料。 </> <br><br><span color=\"#8596c0\">天飾品的等級，蘊含強大的魔力。金砧，最高可提升1級。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6200606",
+    "Text_English": "<span color=\"#dcdce1\">Item used as a transcendental material for the Divine Weapon.</> <br><br><span color=\"#8596c0\">Level the Divine Weapon with the powerful magical power contained in the Golden Anvil. You can increase the maximum by 1 level. </>",
+    "Text_Korean": "<span color=\"#dcdce1\">用作神器的超然材料的物品。 </> <br><br><span color=\"#8596c0\">用包含在神器中的強大魔法力量升級神器金砧，最高可提升1級。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6201606",
+    "Text_English": "<span color=\"#dcdce1\">Item used as a transcendental material for Divine Armor.</> <br><br><span color=\"#8596c0\">Levels the Divine Armor with the powerful magical power contained in the Golden Anvil. You can increase the maximum by 1 level. </>",
+    "Text_Korean": "<span color=\"#dcdce1\">用作神鎧的超然材料的物品。 </> <br><br><span color=\"#8596c0\">以黃金中蘊含的強大魔力升級神鎧鐵砧. 你可以將最大值提高 1 級。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6202606",
+    "Text_English": "<span color=\"#dcdce1\">Item used as a transcendental material for Heavenly Accessory.</> <br><br><span color=\"#8596c0\">The level of Heavenly Accessory with the powerful magical power contained in the Golden Anvil. You can increase the maximum by 1 level. </>",
+    "Text_Korean": "<span color=\"#dcdce1\">天飾品的超凡材料。 </> <br><br><span color=\"#8596c0\">天飾品的等級，蘊含強大的魔力。金砧，最高可提升1級。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6300606",
+    "Text_English": "<span color=\"#dcdce1\">Item used as a transcendental material for the Divine Weapon.</> <br><br><span color=\"#8596c0\">Level the Divine Weapon with the powerful magical power contained in the Golden Anvil. You can increase the maximum by 1 level. </>",
+    "Text_Korean": "<span color=\"#dcdce1\">用作神器的超然材料的物品。 </> <br><br><span color=\"#8596c0\">用包含在神器中的強大魔法力量升級神器金砧，最高可提升1級。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6301606",
+    "Text_English": "<span color=\"#dcdce1\">Item used as a transcendental material for Divine Armor.</> <br><br><span color=\"#8596c0\">Levels the Divine Armor with the powerful magical power contained in the Golden Anvil. You can increase the maximum by 1 level. </>",
+    "Text_Korean": "<span color=\"#dcdce1\">用作神鎧的超然材料的物品。 </> <br><br><span color=\"#8596c0\">以黃金中蘊含的強大魔力升級神鎧鐵砧. 你可以將最大值提高 1 級。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "6302606",
+    "Text_English": "<span color=\"#dcdce1\">Item used as a transcendental material for Heavenly Accessory.</> <br><br><span color=\"#8596c0\">The level of Heavenly Accessory with the powerful magical power contained in the Golden Anvil. You can increase the maximum by 1 level. </>",
+    "Text_Korean": "<span color=\"#dcdce1\">天飾品的超凡材料。 </> <br><br><span color=\"#8596c0\">天飾品的等級，蘊含強大的魔力。金砧，最高可提升1級。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8000100",
+    "Text_English": "<span color=\"#dcdce1\">This item is used to convert a 10-star weapon to a higher grade.</> <br><br><span color=\"#8596c0\">Powerful magical power in a dazzling light. Unleash the hidden power of the weapon with the contained gem.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">此物品用於將10星武器轉換為更高等級的武器。 </> <br><br><span color=\"#8596c0\">耀眼光芒中的強大魔力. 使用包含的寶石釋放武器的隱藏力量。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8000101",
+    "Text_English": "<span color=\"#dcdce1\">This item is used to convert 10-star armor to a higher grade.</> <br><br><span color=\"#8596c0\">Strong magic power in the dazzling light. Unleash the hidden power of the armor with the contained gem.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">此物品用於將10星盔甲升級為更高等級。 </> <br><br><span color=\"#8596c0\">在耀眼的光芒中擁有強大的魔力。使用包含的寶石釋放盔甲的隱藏力量。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8000102",
+    "Text_English": "<span color=\"#dcdce1\">This item is used to convert 10-star ornaments to a higher grade.</> <br><br><span color=\"#8596c0\">Powerful magical power in a dazzling light. Unleash the hidden power of the jewel with the jewel it contains.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">此物品用於將10星飾品轉換為更高等級。 </> <br><br><span color=\"#8596c0\">在耀眼的光芒中擁有強大的魔力。用它所包含的寶石釋放寶石的隱藏力量。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8000108",
+    "Text_English": "<span color=\"#dcdce1\">A material used to enhance rank promotion.</> <br><br><span color=\"#8596c0\">Can be obtained by converting a promotion stone</>",
+    "Text_Korean": "<span color=\"#dcdce1\">一種用於提升等級的材料。 </> <br><br><span color=\"#8596c0\">可以通過兌換晉升石獲得</>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8004001",
+    "Text_English": "<span color=\"#dcdce1\">Material used to change the quality of equipment.</> <br><br><span color=\"#8596c0\">Steel material that changes to any quality from Normal to Superlative. hammer.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用於改變裝備質量的材料。 </> <br><br><span color=\"#8596c0\">從普通到最高級的任何質量變化的鋼質材料。錘子。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8004011",
+    "Text_English": "<span color=\"#dcdce1\">Material used to change the quality of equipment.</> <br><br><span color=\"#8596c0\">I don't know how it was quenched, but it's made of shiny steel. Hammer.</><br><span color=\"#8596c0\">Can be used for normal ~ advanced equipment and changes the quality to the best.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用來改變裝備品質的材料。 </> <br><br><span color=\"#8596c0\">我不知道它是怎麼淬火的，但它是由閃亮的鋼。錘子。 </><br><span color=\"#8596c0\">可用於普通〜高級設備，並將質量變為最佳。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8004021",
+    "Text_English": "<span color=\"#dcdce1\">Material used to change the quality of equipment.</> <br><br><span color=\"#8596c0\">A hammer that is both beautiful and strong because it is made of platinum.< /><br><span color=\"#8596c0\">Can be used on top-quality equipment, and changes the quality to any grade between Superlative and Superlative.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用來改變裝備品質的材料。 </> <br><br><span color=\"#8596c0\">一把用鉑金打造的錘子，既美觀又堅固.< /><br><span color=\"#8596c0\">可以用在頂級設備上，並且可以將質量更改為最高級和最高級之間的任何等級。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8004031",
+    "Text_English": "<span color=\"#dcdce1\">Material used to change the quality of equipment.</> <br><br><span color=\"#8596c0\">A beautiful hammer that shines by quenching platinum in a special way.< /><br><span color=\"#8596c0\">Can be used on top-quality equipment and unconditionally changes the quality to exclusive.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用來改變裝備品質的材料。 </> <br><br><span color=\"#8596c0\">一把美麗的錘子，通過特殊方式淬火鉑金而發光。 < /><br><span color=\"#8596c0\">可在頂級裝備上使用，無條件轉為專屬。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8005001",
+    "Text_English": "<span color=\"#dcdce1\">Material used for crafting and upgrading items.</> <br><br><span color=\"#8596c0\">A crystallized form of powerful magic.</><br>< span color=\"#8596c0\">In order to use it properly, it must be broken into small pieces and processed.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用於製作和升級物品的材料。 </> <br><br><span color=\"#8596c0\">強大魔法的結晶形式。 </><br>< span color=\"#8596c0\">為了能正常使用，必須打成小塊進行處理。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8005002",
+    "Text_English": "<span color=\"#dcdce1\">Material used for crafting and upgrading items.</> <br><br><span color=\"#8596c0\">A crystallized form of powerful magic.</><br>< span color=\"#8596c0\">It is easy to use because it is processed to an appropriate size.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">用於製作和升級物品的材料。 </> <br><br><span color=\"#8596c0\">強大魔法的結晶形式。 </><br>< span color=\"#8596c0\">加工成合適的尺寸，使用方便。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8005003",
+    "Text_English": "<span color=\"#dcdce1\">A material used to craft and upgrade items.</> <br><br><span color=\"#8596c0\">The crystallized form of condensed pure magic.</><br ><span color=\"#8596c0\">It is classified as the finest material due to its high purity.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">一種用於製作和升級物品的材料。 </> <br><br><span color=\"#8596c0\">濃縮純魔法的結晶形式。 </><br> <span color=\"#8596c0\">因其純度高而被列為上等材料。 </>",
+    "Text_Other": ""
+  },
+  {
+    "Name": "8005004",
+    "Text_English": "<span color=\"#dcdce1\">Ingredient used to upgrade Eternal Judge's equipment.</> <br><br><span color=\"#8596c0\">Mystical crystal of infinite eternal power</>< br><span color=\"#8596c0\">The power that transcends time has a tremendous impact even with a small crystal.</>",
+    "Text_Korean": "<span color=\"#dcdce1\">永恆審判者裝備升級材料。 </> <br><br><span color=\"#8596c0\">凝聚無限永恆力量的神秘水晶</>< br><span color=\"#8596c0\">超越時間的力量即使是小小的水晶也能產生巨大的影響。 </>",
+    "Text_Other": ""
+  }
+]

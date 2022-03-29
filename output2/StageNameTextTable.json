@@ -1,0 +1,1682 @@
+[
+  {
+    "Name": "Act1_1",
+    "Text_English": "1-1  Darkness in Luemos",
+    "Text_Korean": "1-1 魯莫斯的黑暗",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act1_2",
+    "Text_English": "1-2  Demon's Attack",
+    "Text_Korean": "1-2 惡魔攻擊",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act1_3",
+    "Text_English": "1-3  Reunion",
+    "Text_Korean": "1-3重逢",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act1_4",
+    "Text_English": "1-4  Chase",
+    "Text_Korean": "1-4跟踪",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act1_5",
+    "Text_English": "1-5  Gote in Danger",
+    "Text_Korean": "1-5 哥特的危機",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act1_6",
+    "Text_English": "1-6  Rachel's Whereabouts",
+    "Text_Korean": "1-6 瑞秋的下落",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act1_7",
+    "Text_English": "1-7  Gaius' Fury",
+    "Text_Korean": "1-7 蓋烏斯的憤怒",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act1_8",
+    "Text_English": "1-8  An Ill-Fated End",
+    "Text_Korean": "1-8 一段糟糕關係的結束",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act1_9",
+    "Text_English": "1-9  Caligula's Purpose",
+    "Text_Korean": "1-9 卡里古拉的目的",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act1_10",
+    "Text_English": "1-10  Powe of Darkness",
+    "Text_Korean": "1-10強大的黑暗力量",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act2_1",
+    "Text_English": "2-1  Corrupted Forest",
+    "Text_Korean": "2-1 腐敗覆蓋的森林",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act2_2",
+    "Text_English": "2-2  Nice the Fairy",
+    "Text_Korean": "2-2 尼斯妖精尼斯",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act2_3",
+    "Text_English": "2-3  Encroachment",
+    "Text_Korean": "2-3 侵占開始",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act2_4",
+    "Text_English": "2-4  Lilith in Danger",
+    "Text_Korean": "2-4 釋放危機",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act2_5",
+    "Text_English": "2-5  Ghost's Trap",
+    "Text_Korean": "2-5 幽靈的陷阱",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act2_6",
+    "Text_English": "2-6  Rio the Fairy",
+    "Text_Korean": "2-6 魯莽妖精里約",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act2_7",
+    "Text_English": "2-7  Warning",
+    "Text_Korean": "2-7 警告",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act2_8",
+    "Text_English": "2-8  Dim Clue",
+    "Text_Korean": "2-8條微弱的線索",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act2_9",
+    "Text_English": "2-9  Pan the Fairy",
+    "Text_Korean": "2-9 無辜的牙仙子",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act2_10",
+    "Text_English": "2-10  Sacrifice and Hope",
+    "Text_Korean": "2-10 犧牲與希望",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act3_1",
+    "Text_English": "3-1  The Gaze",
+    "Text_Korean": "3-1 神秘的凝視",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act3_2",
+    "Text_English": "3-2  Unknown Helper",
+    "Text_Korean": "3-2 不明幫手",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act3_3",
+    "Text_English": "3-3  Tomb Keeper",
+    "Text_Korean": "3-3 墓主",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act3_4",
+    "Text_English": "3-4  Beelzebub's Threat",
+    "Text_Korean": "3-4 貝爾西卜的威脅",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act3_5",
+    "Text_English": "3-5  Zombie's Purpose",
+    "Text_Korean": "3-5 殭屍戰士的目的",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act3_6",
+    "Text_English": "3-6  Dark Conspiracy",
+    "Text_Korean": "3-6 黑暗陰謀",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act3_7",
+    "Text_English": "3-7  A New Goal",
+    "Text_Korean": "3-7個新目標",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act3_8",
+    "Text_English": "3-8  For the Light",
+    "Text_Korean": "3-8 光明之旅",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act3_9",
+    "Text_English": "3-9  Hero's Return",
+    "Text_Korean": "3-9 英雄復活",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act3_10",
+    "Text_English": "3-10  The Seal",
+    "Text_Korean": "3-10 墳墓的印記",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act4_1",
+    "Text_English": "4-1  Souls Screaming",
+    "Text_Korean": "4-1 靈魂的吶喊",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act4_2",
+    "Text_English": "4-2  Goblin's Plan",
+    "Text_Korean": "4-2 哥布林薩滿的陰謀",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act4_3",
+    "Text_English": "4-3  Harvest",
+    "Text_Korean": "4-3 靈魂狩獵",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act4_4",
+    "Text_English": "4-4  Forbidden Ritual",
+    "Text_Korean": "4-4 禁忌黑暗儀式",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act4_5",
+    "Text_English": "4-5  Butcher's Room",
+    "Text_Korean": "4-5 屠夫的房間",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act4_6",
+    "Text_English": "4-6  The Spirit",
+    "Text_Korean": "4-6 靈魂的陪伴",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act4_7",
+    "Text_English": "4-7  Bertha's Memory",
+    "Text_Korean": "4-7 伯塔的記憶",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act4_8",
+    "Text_English": "4-8  Memory Shard",
+    "Text_Korean": "4-8 記憶碎片",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act4_9",
+    "Text_English": "4-9  Rage",
+    "Text_Korean": "4-9 動仇恨",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act4_10",
+    "Text_English": "4-10  Flame of Hatred",
+    "Text_Korean": "4-10 仇恨之火",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act5_1",
+    "Text_English": "5-1  The Sky Castle",
+    "Text_Korean": "5-1 天空之城的外觀",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act5_2",
+    "Text_English": "5-2  Hero's Remorse",
+    "Text_Korean": "5-2 受控英雄",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act5_3",
+    "Text_English": "5-3  Vanished",
+    "Text_Korean": "5-3 未找到痕跡",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act5_4",
+    "Text_English": "5-4  Ambush",
+    "Text_Korean": "5-4 腐化的伏擊",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act5_5",
+    "Text_English": "5-5  Slaughter's End",
+    "Text_Korean": "5-5 殺手的末日",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act5_6",
+    "Text_English": "5-6  Proving Ground",
+    "Text_Korean": "5-6 實力證明",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act5_7",
+    "Text_English": "5-7  Fist and Chi",
+    "Text_Korean": "5-7 拳頭對話",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act5_8",
+    "Text_English": "5-8  Daniel's Struggle",
+    "Text_Korean": "5-8 丹尼爾的奮鬥",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act5_9",
+    "Text_English": "5-9  Hero's Burden",
+    "Text_Korean": "5-9 英雄狀態",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act5_10",
+    "Text_English": "5-10  Darkness Gather",
+    "Text_Korean": "5-10 聚集黑暗",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act6_1",
+    "Text_English": "6-1",
+    "Text_Korean": "6-1 黑暗世界",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act6_2",
+    "Text_English": "6-2",
+    "Text_Korean": "6-2 內存竊取者的攻擊",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act6_3",
+    "Text_English": "6-3",
+    "Text_Korean": "6-3 被盜的記憶",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act6_4",
+    "Text_English": "6-4",
+    "Text_Korean": "6-4 他們的過去",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act6_5",
+    "Text_English": "6-5",
+    "Text_Korean": "6-5 找回你的記憶！",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act6_6",
+    "Text_English": "6-6",
+    "Text_Korean": "6-6 堆積的謎語",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act6_7",
+    "Text_English": "6-7",
+    "Text_Korean": "6-7 不祥的警告",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act6_8",
+    "Text_English": "6-8",
+    "Text_Korean": "6-8 天使的彼岸",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act6_9",
+    "Text_English": "6-9",
+    "Text_Korean": "6-9 最差重逢",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act6_10",
+    "Text_English": "6-10",
+    "Text_Korean": "6-10 絕對黑暗的複活",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act7_1",
+    "Text_English": "7-1 Destroyed Sanctuary",
+    "Text_Korean": "7-1 被破壞的聖域",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act7_2",
+    "Text_English": "7-2 Darkness of Angels",
+    "Text_Korean": "7-2 天使的黑暗",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act7_3",
+    "Text_English": "7-3 Spreading Spores of Death",
+    "Text_Korean": "7-3 傳播死亡孢子",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act7_4",
+    "Text_English": "7-4 Brutus's resolve",
+    "Text_Korean": "7-4 布魯圖斯的決心",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act7_5",
+    "Text_English": "7-5 Daniel's haven",
+    "Text_Korean": "7-5 丹尼爾的避風港",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act7_6",
+    "Text_English": "7-6 The Weakening Power of Light",
+    "Text_Korean": "7-6 光的弱化力量",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act7_7",
+    "Text_English": "7-7 Absolute Darkness Conspiracy",
+    "Text_Korean": "7-7 絕對黑暗陰謀",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act7_8",
+    "Text_English": "7-8 Crisis Coming",
+    "Text_Korean": "7-8 危機來臨",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act7_9",
+    "Text_English": "7-9 Last Step",
+    "Text_Korean": "7-9 最後一步",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act7_10",
+    "Text_English": "7-10 battle of fate",
+    "Text_Korean": "7-10 命運之戰",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act21_1",
+    "Text_English": "21_1",
+    "Text_Korean": "1-1 惡魔歸來",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act21_2",
+    "Text_English": "21_2",
+    "Text_Korean": "1-2 復活之謎",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act21_3",
+    "Text_English": "21_3",
+    "Text_Korean": "1-3 不明情況",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act21_4",
+    "Text_English": "21_4",
+    "Text_Korean": "1-4 線索收集",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act21_5",
+    "Text_English": "21_5",
+    "Text_Korean": "1-5 哥特的複活",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act21_6",
+    "Text_English": "21_6",
+    "Text_Korean": "1-6 強力復活的敵人",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act21_7",
+    "Text_English": "21_7",
+    "Text_Korean": "1-7 未知力波",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act21_8",
+    "Text_English": "21_8",
+    "Text_Korean": "1-8 反對天意的惡魔",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act21_9",
+    "Text_English": "21_9",
+    "Text_Korean": "1-9不可逆轉的過去",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act21_10",
+    "Text_English": "21_10",
+    "Text_Korean": "1-10個小線索",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act22_1",
+    "Text_English": "22_1",
+    "Text_Korean": "2-1 持續困難",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act22_2",
+    "Text_English": "22_2",
+    "Text_Korean": "2-2 幽靈的複活",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act22_3",
+    "Text_English": "22_3",
+    "Text_Korean": "2-3 迷失的妖精",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act22_4",
+    "Text_English": "22_4",
+    "Text_Korean": "2-4 不安的心",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act22_5",
+    "Text_English": "22_5",
+    "Text_Korean": "2-5 腐敗的勢力越來越大",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act22_6",
+    "Text_English": "22_6",
+    "Text_Korean": "2-6 英雄氣勢",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act22_7",
+    "Text_English": "22_7",
+    "Text_Korean": "2-7 情況相反",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act22_8",
+    "Text_English": "22_8",
+    "Text_Korean": "2-8 個波長的影響",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act22_9",
+    "Text_English": "22_9",
+    "Text_Korean": "2-9 一陣焦慮",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act22_10",
+    "Text_English": "22_10",
+    "Text_Korean": "2-10 越來越多的問題",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act23_1",
+    "Text_English": "23_1",
+    "Text_Korean": "3-1艱難的戰場",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act23_2",
+    "Text_English": "23_2",
+    "Text_Korean": "3-2 記住格雷戈爾",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act23_3",
+    "Text_English": "23_3",
+    "Text_Korean": "3-3 奇怪的氣流",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act23_4",
+    "Text_English": "23_4",
+    "Text_Korean": "3-4 他們的目的",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act23_5",
+    "Text_English": "23_5",
+    "Text_Korean": "3-5 擊敗復活的守望者",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act23_6",
+    "Text_English": "23_6",
+    "Text_Korean": "3-6 別西卜的凝視",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act23_7",
+    "Text_English": "23_7",
+    "Text_Korean": "3-7 理解現象",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act23_8",
+    "Text_English": "23_8",
+    "Text_Korean": "3-8條線索權重",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act23_9",
+    "Text_English": "23_9",
+    "Text_Korean": "3-9 英雄的鬥爭",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act23_10",
+    "Text_English": "23_10",
+    "Text_Korean": "3-10個波長的罪魁禍首",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act24_1",
+    "Text_English": "24_1",
+    "Text_Korean": "4-1 看不見的靈魂",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act24_2",
+    "Text_English": "24_2",
+    "Text_Korean": "4-2 阿琳的回憶",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act24_3",
+    "Text_English": "24_3",
+    "Text_Korean": "4-3 意外信息",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act24_4",
+    "Text_English": "24_4",
+    "Text_Korean": "4-4個完全不同的惡魔",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act24_5",
+    "Text_English": "24_5",
+    "Text_Korean": "4-5 迷失的人",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act24_6",
+    "Text_English": "24_6",
+    "Text_Korean": "靠近 4-6 步",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act24_7",
+    "Text_English": "24_7",
+    "Text_Korean": "4-7 線索出現",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act24_8",
+    "Text_English": "24_8",
+    "Text_Korean": "4-8 英雄的真面目",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act24_9",
+    "Text_English": "24_9",
+    "Text_Korean": "4-9 凝視",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act24_10",
+    "Text_English": "24_10",
+    "Text_Korean": "4-10 波強烈的力量",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act25_1",
+    "Text_English": "25_1",
+    "Text_Korean": "5-1 天城歸來",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act25_2",
+    "Text_English": "25_2",
+    "Text_Korean": "5-2 布洛克的記憶",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act25_3",
+    "Text_English": "25_3",
+    "Text_Korean": "5-3 時空變化",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act25_4",
+    "Text_English": "25_4",
+    "Text_Korean": "5-4 煩惱的湧現",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act25_5",
+    "Text_English": "25_5",
+    "Text_Korean": "5-5 次狂怒攻擊",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act25_6",
+    "Text_English": "25_6",
+    "Text_Korean": "5-6 英雄入侵",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act25_7",
+    "Text_English": "25_7",
+    "Text_Korean": "5-7 擱置確認",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act25_8",
+    "Text_English": "25_8",
+    "Text_Korean": "5-8 心煩意亂",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act25_9",
+    "Text_English": "25_9",
+    "Text_Korean": "5-9 資格戰",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act25_10",
+    "Text_English": "25_10",
+    "Text_Korean": "5-10 通往新維度的途徑",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act26_1",
+    "Text_English": "26_1",
+    "Text_Korean": "6-1 另一種方式",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act26_2",
+    "Text_English": "26_2",
+    "Text_Korean": "6-2 基本設備檢查",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act26_3",
+    "Text_English": "26_3",
+    "Text_Korean": "6-3 防銹機身",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act26_4",
+    "Text_English": "26_4",
+    "Text_Korean": "6-4 幫助和自豪",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act26_5",
+    "Text_English": "26_5",
+    "Text_Korean": "6-5 勝利的起源",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act26_6",
+    "Text_English": "26_6",
+    "Text_Korean": "6-6對決英雄",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act26_7",
+    "Text_English": "26_7",
+    "Text_Korean": "6-7 魔力的幫助",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act26_8",
+    "Text_English": "26_8",
+    "Text_Korean": "6-8 悲傷的過去",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act26_9",
+    "Text_English": "26_9",
+    "Text_Korean": "6-9 隱藏的情緒",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act26_10",
+    "Text_English": "26_10",
+    "Text_Korean": "6-10 通往它的道路",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act27_1",
+    "Text_English": "7-1 The true appearance of Elysium",
+    "Text_Korean": "7-1 極樂世界的真面目",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act27_2",
+    "Text_English": "7-2 The horrors of war",
+    "Text_Korean": "7-2 戰爭的恐怖",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act27_3",
+    "Text_English": "7-3 Absolute Dark Power",
+    "Text_Korean": "7-3 絕對暗能量",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act27_4",
+    "Text_English": "7-4 Daniel's Pain",
+    "Text_Korean": "7-4 但以理的痛苦",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act27_5",
+    "Text_English": "7-5 Another Combat Skill",
+    "Text_Korean": "7-5 另一個戰鬥技能",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act27_6",
+    "Text_English": "7-6 How to be strong",
+    "Text_Korean": "7-6 如何變得堅強",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act27_7",
+    "Text_English": "7-7 Ramiel's Confession",
+    "Text_Korean": "7-7 拉米爾的自白",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act27_8",
+    "Text_English": "7-8 The Reality of Absolute Darkness",
+    "Text_Korean": "7-8 絕對黑暗的現實",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act27_9",
+    "Text_English": "7-9 Ramiel's Advice",
+    "Text_Korean": "7-9 拉米爾的忠告",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act27_10",
+    "Text_English": "7-10 Hero's resolve",
+    "Text_Korean": "7-10 英雄的決心",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act41_1",
+    "Text_English": "41_1",
+    "Text_Korean": "1-1 超越人類的人",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act41_2",
+    "Text_English": "41_2",
+    "Text_Korean": "1-2 地獄之火",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act41_3",
+    "Text_English": "41_3",
+    "Text_Korean": "1-3 強電成因",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act41_4",
+    "Text_English": "41_4",
+    "Text_Korean": "1-4 有希望的信息",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act41_5",
+    "Text_English": "41_5",
+    "Text_Korean": "1-5 地獄之力的來源",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act41_6",
+    "Text_English": "41_6",
+    "Text_Korean": "1-6 惡魔入侵",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act41_7",
+    "Text_English": "41_7",
+    "Text_Korean": "1-7 爺爺的日記",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act41_8",
+    "Text_English": "41_8",
+    "Text_Korean": "1-8 歷代英雄",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act41_9",
+    "Text_English": "41_9",
+    "Text_Korean": "1-9強行軍",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act41_10",
+    "Text_English": "41_10",
+    "Text_Korean": "1-10 銷毀第一個來源",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act42_1",
+    "Text_English": "42_1",
+    "Text_Korean": "2-1 可怕的情況",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act42_2",
+    "Text_English": "42_2",
+    "Text_Korean": "2-2 問題背後",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act42_3",
+    "Text_English": "42_3",
+    "Text_Korean": "2-3 英雄的負擔",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act42_4",
+    "Text_English": "42_4",
+    "Text_Korean": "2-4 怪物如何戰鬥",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act42_5",
+    "Text_English": "42_5",
+    "Text_Korean": "2-5區控制器",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act42_6",
+    "Text_English": "42_6",
+    "Text_Korean": "2-6個新發現",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act42_7",
+    "Text_English": "42_7",
+    "Text_Korean": "2-7 老闆的實力",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act42_8",
+    "Text_English": "42_8",
+    "Text_Korean": "2-8 憂心忡忡",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act42_9",
+    "Text_English": "42_9",
+    "Text_Korean": "2-9 意外目的",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act42_10",
+    "Text_English": "42_10",
+    "Text_Korean": "2-10個連續挑戰",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act43_1",
+    "Text_English": "43_1",
+    "Text_Korean": "3-1 蓋烏斯的告白",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act43_2",
+    "Text_English": "43_2",
+    "Text_Korean": "3-2 地獄權勢的邪惡",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act43_3",
+    "Text_English": "43_3",
+    "Text_Korean": "3-3 統治者收到的命令",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act43_4",
+    "Text_English": "43_4",
+    "Text_Korean": "3-4 貝爾西卜的反應",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act43_5",
+    "Text_English": "43_5",
+    "Text_Korean": "3-5 場危險的戰鬥",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act43_6",
+    "Text_English": "43_6",
+    "Text_Korean": "3-6個複雜的想法",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act43_7",
+    "Text_English": "43_7",
+    "Text_Korean": "3-7 英雄的功績",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act43_8",
+    "Text_English": "43_8",
+    "Text_Korean": "3-8 怨恨情緒",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act43_9",
+    "Text_English": "43_9",
+    "Text_Korean": "3-9 信息分析",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act43_10",
+    "Text_English": "43_10",
+    "Text_Korean": "3-10 強大的力量背後",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act44_1",
+    "Text_English": "44_1",
+    "Text_Korean": "4-1 與開頭的共同點",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act44_2",
+    "Text_English": "44_2",
+    "Text_Korean": "4-2 巨無霸背後的目的",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act44_3",
+    "Text_English": "44_3",
+    "Text_Korean": "4-3 預期試驗",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act44_4",
+    "Text_English": "44_4",
+    "Text_Korean": "4-4 存在的黑暗",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act44_5",
+    "Text_English": "44_5",
+    "Text_Korean": "4-5 眼前的戰鬥",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act44_6",
+    "Text_English": "44_6",
+    "Text_Korean": "4-6 對未知的恐懼",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act44_7",
+    "Text_English": "44_7",
+    "Text_Korean": "4-7 英雄影響",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act44_8",
+    "Text_English": "44_8",
+    "Text_Korean": "4-8 阿林的夢",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act44_9",
+    "Text_English": "44_9",
+    "Text_Korean": "4-9 上升的勇氣",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act44_10",
+    "Text_English": "44_10",
+    "Text_Korean": "4-10 第四次成功",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act45_1",
+    "Text_English": "45_1",
+    "Text_Korean": "5-1 籠罩城堡的力量",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act45_2",
+    "Text_English": "45_2",
+    "Text_Korean": "5-2棘手的戰鬥",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act45_3",
+    "Text_English": "45_3",
+    "Text_Korean": "5-3 陌生空氣",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act45_4",
+    "Text_English": "45_4",
+    "Text_Korean": "5-4 不適的原因",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act45_5",
+    "Text_English": "45_5",
+    "Text_Korean": "5-5 擊退阻擋者",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act45_6",
+    "Text_English": "45_6",
+    "Text_Korean": "5-6 巨力大師",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act45_7",
+    "Text_English": "45_7",
+    "Text_Korean": "5-7 英雄的腳步",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act45_8",
+    "Text_English": "45_8",
+    "Text_Korean": "5-8 隱形末端",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act45_9",
+    "Text_English": "45_9",
+    "Text_Korean": "5-9 試煉和克服",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act45_10",
+    "Text_English": "45_10",
+    "Text_Korean": "5-10 最後一試",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act46_1",
+    "Text_English": "46_1",
+    "Text_Korean": "6-1 充滿絕望的世界",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act46_2",
+    "Text_English": "46_2",
+    "Text_Korean": "6-2 不為人知的故事",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act46_3",
+    "Text_English": "46_3",
+    "Text_Korean": "6-3 神秘物質",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act46_4",
+    "Text_English": "46_4",
+    "Text_Korean": "6-4 天使的另一面",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act46_5",
+    "Text_English": "46_5",
+    "Text_Korean": "6-5 不可逆步驟",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act46_6",
+    "Text_English": "46_6",
+    "Text_Korean": "6-6 暗屬性",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act46_7",
+    "Text_English": "46_7",
+    "Text_Korean": "6-7 逼近的威脅",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act46_8",
+    "Text_English": "46_8",
+    "Text_Korean": "6-8 警告觸發",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act46_9",
+    "Text_English": "46_9",
+    "Text_Korean": "6-9 噩夢重演",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act46_10",
+    "Text_English": "46_10",
+    "Text_Korean": "6-10 勢不可擋的挑戰",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act47_1",
+    "Text_English": "7-1 The Curse of the Bridle of Time",
+    "Text_Korean": "7-1 時間之韁繩的詛咒",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act47_2",
+    "Text_English": "7-2 Source of Curse",
+    "Text_Korean": "7-2 詛咒之源",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act47_3",
+    "Text_English": "7-3 Fight for Fate",
+    "Text_Korean": "7-3 為命運而戰",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act47_4",
+    "Text_English": "7-4 The sincerity of colleagues",
+    "Text_Korean": "7-4 同事的誠意",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act47_5",
+    "Text_English": "7-5 Growth Advice",
+    "Text_Korean": "7-5 成長建議",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act47_6",
+    "Text_English": "7-6 Cursed Movement",
+    "Text_Korean": "7-6 被詛咒的動作",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act47_7",
+    "Text_English": "7-7 Reasons to be strong",
+    "Text_Korean": "7-7 堅強的理由",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act47_8",
+    "Text_English": "7-8 Dark Hole",
+    "Text_Korean": "7-8 黑洞",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act47_9",
+    "Text_English": "7-9 light and dark",
+    "Text_Korean": "7-9明暗",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act47_10",
+    "Text_English": "7-10 Restoration of Light",
+    "Text_Korean": "7-10 光的恢復",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act61_1",
+    "Text_English": "51_1",
+    "Text_Korean": "1-1 另一個時間的韁繩",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act61_2",
+    "Text_English": "51_2",
+    "Text_Korean": "1-2 無休止的戰鬥",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act61_3",
+    "Text_English": "51_3",
+    "Text_Korean": "1-3 決鬥相關性",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act61_4",
+    "Text_English": "51_4",
+    "Text_Korean": "1-4策略",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act61_5",
+    "Text_English": "51_5",
+    "Text_Korean": "1-5 一段悲傷的關係",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act61_6",
+    "Text_English": "51_6",
+    "Text_Korean": "1-6 城市的命運",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act61_7",
+    "Text_English": "51_7",
+    "Text_Korean": "1-7 輸贏管理的重要性",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act61_8",
+    "Text_English": "51_8",
+    "Text_Korean": "1-8完成與成功",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act61_9",
+    "Text_English": "51_9",
+    "Text_Korean": "1-9 換人進攻",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act61_10",
+    "Text_English": "51_10",
+    "Text_Korean": "1-10 英雄之力",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act62_1",
+    "Text_English": "52_1",
+    "Text_Korean": "2-1 收穫材料的儲存",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act62_2",
+    "Text_English": "52_2",
+    "Text_Korean": "2-2 仙女歷險記",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act62_3",
+    "Text_English": "52_3",
+    "Text_Korean": "2-3 貝拉的勇氣",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act62_4",
+    "Text_English": "52_4",
+    "Text_Korean": "2-4 魔法議會的研究",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act62_5",
+    "Text_English": "52_5",
+    "Text_Korean": "2-5 研究成果",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act62_6",
+    "Text_English": "52_6",
+    "Text_Korean": "2-6新動力",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act62_7",
+    "Text_English": "52_7",
+    "Text_Korean": "2-7 高效使用",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act62_8",
+    "Text_English": "52_8",
+    "Text_Korean": "2-8英雄變強",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act62_9",
+    "Text_English": "52_9",
+    "Text_Korean": "2-9 個結果",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act62_10",
+    "Text_English": "52_10",
+    "Text_Korean": "2-10個戰鬥成就",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act63_1",
+    "Text_English": "53_1",
+    "Text_Korean": "3-1 謠言與真相",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act63_2",
+    "Text_English": "53_2",
+    "Text_Korean": "3-2 每個角色",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act63_3",
+    "Text_English": "53_3",
+    "Text_Korean": "3-3 更多信息",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act63_4",
+    "Text_English": "53_4",
+    "Text_Korean": "3-4 蓋烏斯的請求",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act63_5",
+    "Text_English": "53_5",
+    "Text_Korean": "3-5個強大的野獸",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act63_6",
+    "Text_English": "53_6",
+    "Text_Korean": "3-6 令人驚訝的事實",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act63_7",
+    "Text_English": "53_7",
+    "Text_Korean": "3-7 格雷戈爾的秘密",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act63_8",
+    "Text_English": "53_8",
+    "Text_Korean": "3-8 穩紮穩打",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act63_9",
+    "Text_English": "53_9",
+    "Text_Korean": "3-9 反轉方法",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act63_10",
+    "Text_English": "53_10",
+    "Text_Korean": "3-10 戰略與戰術",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act64_1",
+    "Text_English": "54_1",
+    "Text_Korean": "4-1 合作的力量",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act64_2",
+    "Text_English": "54_2",
+    "Text_Korean": "4-2 條件",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act64_3",
+    "Text_English": "54_3",
+    "Text_Korean": "4-3 阿林的建議",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act64_4",
+    "Text_English": "54_4",
+    "Text_Korean": "4-4 投資取勝",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act64_5",
+    "Text_English": "54_5",
+    "Text_Korean": "4-5 翅膀的力量",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act64_6",
+    "Text_English": "54_6",
+    "Text_Korean": "4-6 漫長而崎嶇的道路",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act64_7",
+    "Text_English": "54_7",
+    "Text_Korean": "4-7 好奇",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act64_8",
+    "Text_English": "54_8",
+    "Text_Korean": "4-8 神秘生物",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act64_9",
+    "Text_English": "54_9",
+    "Text_Korean": "4-9 光與暗的力量",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act64_10",
+    "Text_English": "54_10",
+    "Text_Korean": "4-10快速增長",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act65_1",
+    "Text_English": "55_1",
+    "Text_Korean": "5-1歲戰場英雄",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act65_2",
+    "Text_English": "55_2",
+    "Text_Korean": "5-2 斷支撐",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act65_3",
+    "Text_English": "55_3",
+    "Text_Korean": "5-3 盒子的秘密",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act65_4",
+    "Text_English": "55_4",
+    "Text_Korean": "5-4 設備記錄",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act65_5",
+    "Text_English": "55_5",
+    "Text_Korean": "5-5 成長時間",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act65_6",
+    "Text_English": "55_6",
+    "Text_Korean": "5-6 技術進步",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act65_7",
+    "Text_English": "55_7",
+    "Text_Korean": "5-7 研究成果",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act65_8",
+    "Text_English": "55_8",
+    "Text_Korean": "5-8 錯誤和事故",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act65_9",
+    "Text_English": "55_9",
+    "Text_Korean": "5-9 成為絕對強者之路",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act65_10",
+    "Text_English": "55_10",
+    "Text_Korean": "5-10 挑戰極限",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act66_1",
+    "Text_English": "56_1",
+    "Text_Korean": "6-1 力量平衡",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act66_2",
+    "Text_English": "56_2",
+    "Text_Korean": "6-2 慾望",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act66_3",
+    "Text_English": "56_3",
+    "Text_Korean": "6-3 資格",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act66_4",
+    "Text_English": "56_4",
+    "Text_Korean": "6-4 隱藏的能力",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act66_5",
+    "Text_English": "56_5",
+    "Text_Korean": "6-5 自尊",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act66_6",
+    "Text_English": "56_6",
+    "Text_Korean": "6-6個不同的天使面孔",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act66_7",
+    "Text_English": "56_7",
+    "Text_Korean": "6-7 特殊電源",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act66_8",
+    "Text_English": "56_8",
+    "Text_Korean": "6-8 大黑暗",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act66_9",
+    "Text_English": "56_9",
+    "Text_Korean": "6-9 戰鬥信號",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act66_10",
+    "Text_English": "56_10",
+    "Text_Korean": "6-10 超越之路",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act67_1",
+    "Text_English": "57_1",
+    "Text_Korean": "7-1 團結與力量",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act67_2",
+    "Text_English": "57_2",
+    "Text_Korean": "7-2 監護態度",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act67_3",
+    "Text_English": "57_3",
+    "Text_Korean": "7-3 鐵匠的研究",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act67_4",
+    "Text_English": "57_4",
+    "Text_Korean": "7-4 持久的挑戰",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act67_5",
+    "Text_English": "57_5",
+    "Text_Korean": "7-5 重考",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act67_6",
+    "Text_English": "57_6",
+    "Text_Korean": "7-6 新物質的秘密",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act67_7",
+    "Text_English": "57_7",
+    "Text_Korean": "7-7 弱者的希望",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act67_8",
+    "Text_English": "57_8",
+    "Text_Korean": "7-8 總司令的忠告",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act67_9",
+    "Text_English": "57_9",
+    "Text_Korean": "7-9 發現起源",
+    "Text_Other": ""
+  },
+  {
+    "Name": "Act67_10",
+    "Text_English": "57_10",
+    "Text_Korean": "7-10 天使的力量",
+    "Text_Other": ""
+  }
+]
