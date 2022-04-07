@@ -19,13 +19,27 @@ contract SN is ERC721Enumerable, AccessControlEnumerable {
 
     string public baseURI;
 
+    mapping(uint256 => uint256) public star;
+    mapping(uint256 => uint256) public power;
+    mapping(uint256 => uint256) public class;
+    mapping(uint256 => uint256) public place;
+    mapping(uint256 => uint256) public suit;
     mapping(uint256 => uint256) public spawntime;
 
     mapping(uint256 => mapping(string => uint256)) public data;
     mapping(uint256 => mapping(string => uint256[])) public datas;
 
     event SetBaseURI(string uri);
-    event SpawnSn(address indexed to, uint256 snId);
+    event SpawnSn(
+        address indexed to,
+        uint256 snId,
+        uint256 star,
+        uint256 power,
+        uint256 class,
+        uint256 place,
+        uint256 suiit,
+        uint256 spawntime
+    );
     event SetData(uint256 indexed snId, string slot, uint256 data);
     event SetDatas(uint256 indexed snId, string slot, uint256[] datas);
 
@@ -58,15 +72,34 @@ contract SN is ERC721Enumerable, AccessControlEnumerable {
      * @dev Spawn a New Sn to an Address
      */
     function spawnSn(
+        uint256 _star,
+        uint256 _power,
+        uint256 _class,
+        uint256 _place,
+        uint256 _suit,
         address to
     ) external onlyRole(SPAWNER_ROLE) returns (uint256) {
         uint256 newSnId = totalSupply();
 
+        star[newSnId] = _star;
+        power[newSnId] = _power;
+        class[newSnId] = _class;
+        place[newSnId] = _place;
+        suit[newSnId] = _suit;
         spawntime[newSnId] = block.timestamp;
 
         _safeMint(to, newSnId);
 
-        emit SpawnSn(to, newSnId);
+        emit SpawnSn(
+            to,
+            newSnId,
+            _star,
+            _power,
+            _class,
+            _place,
+            _suit,
+            block.timestamp
+        );
 
         return newSnId;
     }
@@ -171,13 +204,7 @@ contract SN is ERC721Enumerable, AccessControlEnumerable {
 
         return
             bytes(baseURI).length > 0
-                ? string(
-                    abi.encodePacked(
-                        baseURI,
-                        tokenId.toString(),
-                        ".json"
-                    )
-                )
+                ? string(abi.encodePacked(baseURI, tokenId.toString(), ".json"))
                 : "";
     }
 
