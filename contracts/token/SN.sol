@@ -37,7 +37,7 @@ contract SN is ERC721Enumerable, AccessControlEnumerable {
         uint256 power,
         uint256 class,
         uint256 place,
-        uint256 suiit,
+        uint256 suit,
         uint256 spawntime
     );
     event SetData(uint256 indexed snId, string slot, uint256 data);
