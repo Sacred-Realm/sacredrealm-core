@@ -1,33 +1,45 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.8.12;
 
+import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "@openzeppelin/contracts/access/AccessControlEnumerable.sol";
+import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
+import "../token/interface/IST.sol";
 
 /**
  * @title Sacred Realm Box
  * @author SEALEM-LAB
  * @notice Contract to supply SB
  */
-contract SB is ERC721Enumerable, AccessControlEnumerable {
+contract SB is ERC721Enumerable, AccessControlEnumerable, ReentrancyGuard {
+    using SafeERC20 for IST;
     using Strings for uint256;
 
     bytes32 public constant MANAGER_ROLE = keccak256("MANAGER_ROLE");
 
+    IST public st;
+
     string public baseURI;
+    uint256 public boxPrice = 100e18;
+    address public receivingAddr = 0x0000000000000000000000000000000000000020;
 
     event SetBaseURI(string uri);
-    event SpawnSb(address indexed to, uint256 sbId);
+    event BuyBoxes(address indexed user, uint256 amount);
+    event OpenBoxes(address indexed user, uint256 amount);
 
     /**
      * @param manager Initialize Manager Role
+     * @param stAddr Initialize ST Address
      */
-    constructor(
-        address manager
-    ) ERC721("Sacred Realm Box", "SB") {
+    constructor(address manager, address stAddr)
+        ERC721("Sacred Realm Box", "SB")
+    {
         _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
         _setupRole(MANAGER_ROLE, manager);
+
+        st = IST(stAddr);
     }
 
     /**
@@ -40,19 +52,35 @@ contract SB is ERC721Enumerable, AccessControlEnumerable {
     }
 
     /**
-     * @dev Spawn a New Sb to an Address
+     * @dev Users buy the boxes
      */
-    function spawnSb(address to)
-        external
-        returns (uint256)
-    {
-        uint256 newSbId = totalSupply();
+    function buyBoxes(uint256 amount) external nonReentrant {
+        require(amount > 0, "Amount must > 0");
 
-        _safeMint(to, newSbId);
+        st.safeTransferFrom(msg.sender, receivingAddr, amount * boxPrice);
 
-        emit SpawnSb(to, newSbId);
+        for (uint256 i = 0; i < amount; i++) {
+            _safeMint(msg.sender, totalSupply());
+        }
 
-        return newSbId;
+        emit BuyBoxes(msg.sender, amount);
+    }
+
+    /**
+     * @dev Users open the boxes
+     */
+    function openBoxes(uint256 amount) external nonReentrant {
+        require(amount > 0, "Amount must > 0");
+
+        for (uint256 i = 0; i < amount; i++) {
+            safeTransferFrom(
+                msg.sender,
+                receivingAddr,
+                tokenOfOwnerByIndex(msg.sender, 0)
+            );
+        }
+
+        emit OpenBoxes(msg.sender, amount);
     }
 
     /**
