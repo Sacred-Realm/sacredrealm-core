@@ -10,6 +10,7 @@ import "@chainlink/contracts/src/v0.8/interfaces/LinkTokenInterface.sol";
 import "@chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol";
 import "@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol";
 import "../token/interface/IST.sol";
+import "../token/interface/ISN.sol";
 
 /**
  * @title Sacred Realm Box
@@ -41,15 +42,14 @@ contract SB is
 
     uint32 public callbackGasLimit = 100000;
     uint16 public requestConfirmations = 3;
-    uint32 public numWords = 2;
 
-    uint256[] public s_randomWords;
-    uint256 public s_requestId;
-    uint64 public s_subscriptionId;
+    uint64 public subscriptionId;
+    mapping(uint256 => address) public requestIdToUser;
 
     bytes32 public constant MANAGER_ROLE = keccak256("MANAGER_ROLE");
 
     IST public st;
+    ISN public sn;
 
     string public baseURI;
     uint256 public boxPrice = 100e18;
@@ -62,20 +62,23 @@ contract SB is
     /**
      * @param manager Initialize Manager Role
      * @param stAddr Initialize ST Address
+     * @param snAddr Initialize SN Address
      */
-    constructor(address manager, address stAddr)
-        ERC721("Sacred Realm Box", "SB")
-        VRFConsumerBaseV2(vrfCoordinator)
-    {
+    constructor(
+        address manager,
+        address stAddr,
+        address snAddr
+    ) ERC721("Sacred Realm Box", "SB") VRFConsumerBaseV2(vrfCoordinator) {
         _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
         _setupRole(MANAGER_ROLE, manager);
 
         st = IST(stAddr);
+        sn = ISN(snAddr);
 
         COORDINATOR = VRFCoordinatorV2Interface(vrfCoordinator);
         LINKTOKEN = LinkTokenInterface(link_token_contract);
-        s_subscriptionId = COORDINATOR.createSubscription();
-        COORDINATOR.addConsumer(s_subscriptionId, address(this));
+        subscriptionId = COORDINATOR.createSubscription();
+        COORDINATOR.addConsumer(subscriptionId, address(this));
     }
 
     /**
@@ -94,7 +97,7 @@ contract SB is
         LINKTOKEN.transferAndCall(
             address(COORDINATOR),
             amount,
-            abi.encode(s_subscriptionId)
+            abi.encode(subscriptionId)
         );
     }
 
@@ -126,7 +129,7 @@ contract SB is
     /**
      * @dev Users open the boxes
      */
-    function openBoxes(uint256 amount) external nonReentrant {
+    function openBoxes(uint32 amount) external nonReentrant {
         require(amount > 0, "Amount must > 0");
 
         for (uint256 i = 0; i < amount; i++) {
@@ -137,13 +140,14 @@ contract SB is
             );
         }
 
-        s_requestId = COORDINATOR.requestRandomWords(
+        uint256 requestId = COORDINATOR.requestRandomWords(
             keyHash,
-            s_subscriptionId,
+            subscriptionId,
             requestConfirmations,
             callbackGasLimit,
-            numWords
+            amount
         );
+        requestIdToUser[requestId] = msg.sender;
 
         emit OpenBoxes(msg.sender, amount);
     }
@@ -217,10 +221,19 @@ contract SB is
     /**
      * @dev Spawn SN to User when get Randomness Response
      */
-    function fulfillRandomWords(uint256, uint256[] memory randomWords)
+    function fulfillRandomWords(uint256 requestId, uint256[] memory randomWords)
         internal
         override
     {
-        s_randomWords = randomWords;
+        for (uint256 i = 0; i < randomWords.length; i++) {
+            sn.spawnSn(
+                (randomWords[i] % 11) + 1,
+                100,
+                4,
+                8,
+                4,
+                requestIdToUser[requestId]
+            );
+        }
     }
 }
