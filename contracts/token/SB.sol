@@ -6,6 +6,9 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "@openzeppelin/contracts/access/AccessControlEnumerable.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
+import "@chainlink/contracts/src/v0.8/interfaces/LinkTokenInterface.sol";
+import "@chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol";
+import "@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol";
 import "../token/interface/IST.sol";
 
 /**
@@ -13,9 +16,36 @@ import "../token/interface/IST.sol";
  * @author SEALEM-LAB
  * @notice Contract to supply SB
  */
-contract SB is ERC721Enumerable, AccessControlEnumerable, ReentrancyGuard {
+contract SB is
+    ERC721Enumerable,
+    AccessControlEnumerable,
+    ReentrancyGuard,
+    VRFConsumerBaseV2
+{
     using SafeERC20 for IST;
     using Strings for uint256;
+
+    VRFCoordinatorV2Interface public COORDINATOR;
+    LinkTokenInterface public LINKTOKEN;
+
+    // testnet: 0x6A2AAd07396B36Fe02a22b33cf443582f682c82f
+    address public vrfCoordinator = 0xc587d9053cd1118f25F645F9E08BB98c9712A4EE;
+
+    // testnet: 0x84b9B910527Ad5C03A9Ca831909E21e236EA7b06
+    address public link_token_contract =
+        0x404460C6A5EdE2D891e8297795264fDe62ADBB75;
+
+    // testnet: 0xd4bb89654db74673a187bd804519e65e3f71a52bc55f11da7601a13dcf505314
+    bytes32 public keyHash =
+        0x114f3da0a805b6a67d6e9cd2ec746f7028f1b7376365af575cfea3550dd1aa04;
+
+    uint32 public callbackGasLimit = 100000;
+    uint16 public requestConfirmations = 3;
+    uint32 public numWords = 2;
+
+    uint256[] public s_randomWords;
+    uint256 public s_requestId;
+    uint64 public s_subscriptionId;
 
     bytes32 public constant MANAGER_ROLE = keccak256("MANAGER_ROLE");
 
@@ -35,11 +65,17 @@ contract SB is ERC721Enumerable, AccessControlEnumerable, ReentrancyGuard {
      */
     constructor(address manager, address stAddr)
         ERC721("Sacred Realm Box", "SB")
+        VRFConsumerBaseV2(vrfCoordinator)
     {
         _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
         _setupRole(MANAGER_ROLE, manager);
 
         st = IST(stAddr);
+
+        COORDINATOR = VRFCoordinatorV2Interface(vrfCoordinator);
+        LINKTOKEN = LinkTokenInterface(link_token_contract);
+        s_subscriptionId = COORDINATOR.createSubscription();
+        COORDINATOR.addConsumer(s_subscriptionId, address(this));
     }
 
     /**
@@ -49,6 +85,27 @@ contract SB is ERC721Enumerable, AccessControlEnumerable, ReentrancyGuard {
         baseURI = uri;
 
         emit SetBaseURI(uri);
+    }
+
+    /**
+     * @dev Assumes this contract owns link
+     */
+    function topUpSubscription(uint256 amount) external onlyRole(MANAGER_ROLE) {
+        LINKTOKEN.transferAndCall(
+            address(COORDINATOR),
+            amount,
+            abi.encode(s_subscriptionId)
+        );
+    }
+
+    /**
+     * @dev Transfer this contract's funds to an address
+     */
+    function withdraw(uint256 amount, address to)
+        external
+        onlyRole(MANAGER_ROLE)
+    {
+        LINKTOKEN.transfer(to, amount);
     }
 
     /**
@@ -79,6 +136,14 @@ contract SB is ERC721Enumerable, AccessControlEnumerable, ReentrancyGuard {
                 tokenOfOwnerByIndex(msg.sender, 0)
             );
         }
+
+        s_requestId = COORDINATOR.requestRandomWords(
+            keyHash,
+            s_subscriptionId,
+            requestConfirmations,
+            callbackGasLimit,
+            numWords
+        );
 
         emit OpenBoxes(msg.sender, amount);
     }
@@ -147,5 +212,15 @@ contract SB is ERC721Enumerable, AccessControlEnumerable, ReentrancyGuard {
         returns (bool)
     {
         return super.supportsInterface(interfaceId);
+    }
+
+    /**
+     * @dev Spawn SN to User when get Randomness Response
+     */
+    function fulfillRandomWords(uint256, uint256[] memory randomWords)
+        internal
+        override
+    {
+        s_randomWords = randomWords;
     }
 }
