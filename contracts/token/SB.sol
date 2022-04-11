@@ -55,9 +55,22 @@ contract SB is
     uint256 public boxPrice = 100e18;
     address public receivingAddr = 0x0000000000000000000000000000000000000020;
 
+    uint256[] public starProbabilities = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+    uint256[] public powerProbabilities = [1, 2, 3, 4, 5];
+
     event SetBaseURI(string uri);
     event BuyBoxes(address indexed user, uint256 amount);
     event OpenBoxes(address indexed user, uint256 amount);
+    event SpawnSns(
+        address indexed user,
+        uint256 amount,
+        uint256[] snIds,
+        uint256[] stars,
+        uint256[] powers,
+        uint256[] classes,
+        uint256[] places,
+        uint256[] suits
+    );
 
     /**
      * @param manager Initialize Manager Role
@@ -187,6 +200,26 @@ contract SB is
     }
 
     /**
+     * @dev Get Level
+     */
+    function getLevel(uint256[] memory array, uint256 random)
+        public
+        pure
+        returns (uint256)
+    {
+        uint256 accProbability;
+        uint256 level;
+        for (uint256 i = 0; i < array.length; i++) {
+            accProbability += array[i];
+            if (random < accProbability) {
+                level = i;
+                break;
+            }
+        }
+        return level + 1;
+    }
+
+    /**
      * @dev Returns the Uniform Resource Identifier (URI) for a token ID
      */
     function tokenURI(uint256 tokenId)
@@ -225,15 +258,42 @@ contract SB is
         internal
         override
     {
+        uint256[] memory snIds = new uint256[](randomWords.length);
+        uint256[] memory stars = new uint256[](randomWords.length);
+        uint256[] memory powers = new uint256[](randomWords.length);
+        uint256[] memory classes = new uint256[](randomWords.length);
+        uint256[] memory places = new uint256[](randomWords.length);
+        uint256[] memory suits = new uint256[](randomWords.length);
+
         for (uint256 i = 0; i < randomWords.length; i++) {
-            sn.spawnSn(
-                (randomWords[i] % 11) + 1,
-                100,
-                4,
-                8,
-                4,
+            stars[i] = getLevel(starProbabilities, randomWords[i] % 1e4);
+            powers[i] =
+                ((getLevel(powerProbabilities, (randomWords[i] % 1e8) / 1e4) -
+                    1) * 20) +
+                ((((randomWords[i] % 1e12) / 1e8) % 20) + 1);
+            classes[i] = ((randomWords[i] % 1e16) / 1e12) % 4;
+            places[i] = ((randomWords[i] % 1e20) / 1e16) % 8;
+            suits[i] = ((randomWords[i] % 1e24) / 1e20) % 4;
+
+            snIds[i] = sn.spawnSn(
+                stars[i],
+                powers[i],
+                classes[i],
+                places[i],
+                suits[i],
                 requestIdToUser[requestId]
             );
         }
+
+        emit SpawnSns(
+            requestIdToUser[requestId],
+            randomWords.length,
+            snIds,
+            stars,
+            powers,
+            classes,
+            places,
+            suits
+        );
     }
 }
