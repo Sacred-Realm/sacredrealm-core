@@ -19,13 +19,6 @@ contract SN is ERC721Enumerable, AccessControlEnumerable {
 
     string public baseURI;
 
-    mapping(uint256 => uint256) public star;
-    mapping(uint256 => uint256) public power;
-    mapping(uint256 => uint256) public class;
-    mapping(uint256 => uint256) public place;
-    mapping(uint256 => uint256) public suit;
-    mapping(uint256 => uint256) public spawntime;
-
     mapping(uint256 => mapping(string => uint256)) public data;
     mapping(uint256 => mapping(string => uint256[])) public datas;
 
@@ -37,8 +30,7 @@ contract SN is ERC721Enumerable, AccessControlEnumerable {
         uint256 power,
         uint256 class,
         uint256 place,
-        uint256 suit,
-        uint256 spawntime
+        uint256 suit
     );
     event SetData(uint256 indexed snId, string slot, uint256 data);
     event SetDatas(uint256 indexed snId, string slot, uint256[] datas);
@@ -72,34 +64,26 @@ contract SN is ERC721Enumerable, AccessControlEnumerable {
      * @dev Spawn a New Sn to an Address
      */
     function spawnSn(
-        uint256 _star,
-        uint256 _power,
-        uint256 _class,
-        uint256 _place,
-        uint256 _suit,
+        uint256 star,
+        uint256 power,
+        uint256 class,
+        uint256 place,
+        uint256 suit,
         address to
     ) external onlyRole(SPAWNER_ROLE) returns (uint256) {
         uint256 newSnId = totalSupply();
 
-        star[newSnId] = _star;
-        power[newSnId] = _power;
-        class[newSnId] = _class;
-        place[newSnId] = _place;
-        suit[newSnId] = _suit;
-        spawntime[newSnId] = block.timestamp;
+        uint256[] memory attr = new uint256[](5);
+        attr[0] = star;
+        attr[1] = power;
+        attr[2] = class;
+        attr[3] = place;
+        attr[4] = suit;
+        datas[newSnId]["attr"] = attr;
 
         _safeMint(to, newSnId);
 
-        emit SpawnSn(
-            to,
-            newSnId,
-            _star,
-            _power,
-            _class,
-            _place,
-            _suit,
-            block.timestamp
-        );
+        emit SpawnSn(to, newSnId, star, power, class, place, suit);
 
         return newSnId;
     }
