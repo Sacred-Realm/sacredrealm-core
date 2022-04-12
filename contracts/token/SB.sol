@@ -65,11 +65,7 @@ contract SB is
         address indexed user,
         uint256 amount,
         uint256[] snIds,
-        uint256[] stars,
-        uint256[] powers,
-        uint256[] classes,
-        uint256[] places,
-        uint256[] suits
+        uint256[][] attr
     );
 
     /**
@@ -259,41 +255,26 @@ contract SB is
         override
     {
         uint256[] memory snIds = new uint256[](randomWords.length);
-        uint256[] memory stars = new uint256[](randomWords.length);
-        uint256[] memory powers = new uint256[](randomWords.length);
-        uint256[] memory classes = new uint256[](randomWords.length);
-        uint256[] memory places = new uint256[](randomWords.length);
-        uint256[] memory suits = new uint256[](randomWords.length);
+        uint256[][] memory attr = new uint256[][](randomWords.length);
 
         for (uint256 i = 0; i < randomWords.length; i++) {
-            stars[i] = getLevel(starProbabilities, randomWords[i] % 1e4);
-            powers[i] =
+            attr[i][0] = getLevel(starProbabilities, randomWords[i] % 1e4);
+            attr[i][1] =
                 ((getLevel(powerProbabilities, (randomWords[i] % 1e8) / 1e4) -
                     1) * 20) +
                 ((((randomWords[i] % 1e12) / 1e8) % 20) + 1);
-            classes[i] = ((randomWords[i] % 1e16) / 1e12) % 4;
-            places[i] = ((randomWords[i] % 1e20) / 1e16) % 8;
-            suits[i] = ((randomWords[i] % 1e24) / 1e20) % 4;
+            attr[i][2] = ((randomWords[i] % 1e16) / 1e12) % 4;
+            attr[i][3] = ((randomWords[i] % 1e20) / 1e16) % 8;
+            attr[i][4] = ((randomWords[i] % 1e24) / 1e20) % 4;
 
-            snIds[i] = sn.spawnSn(
-                stars[i],
-                powers[i],
-                classes[i],
-                places[i],
-                suits[i],
-                requestIdToUser[requestId]
-            );
+            snIds[i] = sn.spawnSn(attr[i], requestIdToUser[requestId]);
         }
 
         emit SpawnSns(
             requestIdToUser[requestId],
             randomWords.length,
             snIds,
-            stars,
-            powers,
-            classes,
-            places,
-            suits
+            attr
         );
     }
 }

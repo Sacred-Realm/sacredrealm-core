@@ -19,14 +19,10 @@ abstract contract ISN is IERC721Enumerable {
     mapping(uint256 => mapping(string => uint256)) public data;
     mapping(uint256 => mapping(string => uint256[])) public datas;
 
-    function spawnSn(
-        uint256 star,
-        uint256 power,
-        uint256 class,
-        uint256 place,
-        uint256 suit,
-        address to
-    ) external virtual returns (uint256);
+    function spawnSn(uint256[] calldata attr, address to)
+        external
+        virtual
+        returns (uint256);
 
     function setData(
         uint256 snId,

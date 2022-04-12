@@ -23,15 +23,7 @@ contract SN is ERC721Enumerable, AccessControlEnumerable {
     mapping(uint256 => mapping(string => uint256[])) public datas;
 
     event SetBaseURI(string uri);
-    event SpawnSn(
-        address indexed to,
-        uint256 snId,
-        uint256 star,
-        uint256 power,
-        uint256 class,
-        uint256 place,
-        uint256 suit
-    );
+    event SpawnSn(address indexed to, uint256 snId, uint256[] attr);
     event SetData(uint256 indexed snId, string slot, uint256 data);
     event SetDatas(uint256 indexed snId, string slot, uint256[] datas);
 
@@ -63,27 +55,18 @@ contract SN is ERC721Enumerable, AccessControlEnumerable {
     /**
      * @dev Spawn a New Sn to an Address
      */
-    function spawnSn(
-        uint256 star,
-        uint256 power,
-        uint256 class,
-        uint256 place,
-        uint256 suit,
-        address to
-    ) external onlyRole(SPAWNER_ROLE) returns (uint256) {
+    function spawnSn(uint256[] calldata attr, address to)
+        external
+        onlyRole(SPAWNER_ROLE)
+        returns (uint256)
+    {
         uint256 newSnId = totalSupply();
 
-        uint256[] memory attr = new uint256[](5);
-        attr[0] = star;
-        attr[1] = power;
-        attr[2] = class;
-        attr[3] = place;
-        attr[4] = suit;
         datas[newSnId]["attr"] = attr;
 
         _safeMint(to, newSnId);
 
-        emit SpawnSn(to, newSnId, star, power, class, place, suit);
+        emit SpawnSn(to, newSnId, attr);
 
         return newSnId;
     }
