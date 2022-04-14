@@ -1,15 +1,16 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.8.12;
 
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "@openzeppelin/contracts/access/AccessControlEnumerable.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 import "@chainlink/contracts/src/v0.8/interfaces/LinkTokenInterface.sol";
 import "@chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol";
 import "@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol";
-import "../token/interface/IST.sol";
 import "../token/interface/ISN.sol";
 
 /**
@@ -23,7 +24,8 @@ contract SB is
     ReentrancyGuard,
     VRFConsumerBaseV2
 {
-    using SafeERC20 for IST;
+    using SafeERC20 for IERC20;
+    using EnumerableSet for EnumerableSet.AddressSet;
     using Strings for uint256;
 
     VRFCoordinatorV2Interface public COORDINATOR;
@@ -45,43 +47,67 @@ contract SB is
 
     uint64 public subscriptionId;
     mapping(uint256 => address) public requestIdToUser;
+    mapping(uint256 => uint256[]) public requestIdToSbIds;
 
     bytes32 public constant MANAGER_ROLE = keccak256("MANAGER_ROLE");
 
-    IST public st;
     ISN public sn;
 
     string public baseURI;
-    uint256 public boxPrice = 100e18;
-    address public receivingAddr = 0x0000000000000000000000000000000000000020;
 
-    uint256[] public starProbabilities = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
-    uint256[] public powerProbabilities = [1, 2, 3, 4, 5];
+    mapping(uint256 => uint256) public sbIdToType;
+
+    mapping(uint256 => uint256) public boxTokenPrices;
+    mapping(uint256 => address) public tokenAddrs;
+    mapping(uint256 => address) public receivingAddrs;
+    mapping(uint256 => uint256) public hourlyBuyLimits;
+    mapping(uint256 => bool) public whiteListFlags;
+    mapping(uint256 => uint256[]) public starProbabilities;
+    mapping(uint256 => uint256[]) public powerProbabilities;
+    mapping(uint256 => uint256[]) public placeProbabilities;
+
+    mapping(uint256 => uint256) public boxesMaxSupply;
+    mapping(uint256 => uint256) public totalBoxesLength;
+    mapping(address => mapping(uint256 => mapping(uint256 => uint256)))
+        public userHourlyBoxesLength;
+    mapping(uint256 => EnumerableSet.AddressSet) private whiteList;
 
     event SetBaseURI(string uri);
-    event BuyBoxes(address indexed user, uint256 amount);
+    event SetBoxInfo(
+        uint256 boxType,
+        uint256 boxTokenPrice,
+        address tokenAddr,
+        address receivingAddr,
+        uint256 hourlyBuylimit,
+        bool whiteListFlag,
+        uint256[] starProbability,
+        uint256[] powerProbability,
+        uint256[] placeProbability
+    );
+    event AddBoxesMaxSupply(uint256 supply, uint256 boxType);
+    event AddWhiteList(uint256 boxType, address[] whiteUsers);
+    event RemoveWhiteList(uint256 boxType, address[] whiteUsers);
+    event BuyBoxes(address indexed user, uint256 amount, uint256 boxType);
     event OpenBoxes(address indexed user, uint256 amount);
     event SpawnSns(
         address indexed user,
         uint256 amount,
         uint256[] snIds,
+        uint256[] boxTypes,
         uint256[][] attr
     );
 
     /**
      * @param manager Initialize Manager Role
-     * @param stAddr Initialize ST Address
      * @param snAddr Initialize SN Address
      */
-    constructor(
-        address manager,
-        address stAddr,
-        address snAddr
-    ) ERC721("Sacred Realm Box", "SB") VRFConsumerBaseV2(vrfCoordinator) {
+    constructor(address manager, address snAddr)
+        ERC721("Sacred Realm Box", "SB")
+        VRFConsumerBaseV2(vrfCoordinator)
+    {
         _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
         _setupRole(MANAGER_ROLE, manager);
 
-        st = IST(stAddr);
         sn = ISN(snAddr);
 
         COORDINATOR = VRFCoordinatorV2Interface(vrfCoordinator);
@@ -97,6 +123,82 @@ contract SB is
         baseURI = uri;
 
         emit SetBaseURI(uri);
+    }
+
+    /**
+     * @dev Set Box Info
+     */
+    function setBoxInfo(
+        uint256 boxType,
+        uint256 boxTokenPrice,
+        address tokenAddr,
+        address receivingAddr,
+        uint256 hourlyBuyLimit,
+        bool whiteListFlag,
+        uint256[] memory starProbability,
+        uint256[] memory powerProbability,
+        uint256[] memory placeProbability
+    ) external onlyRole(MANAGER_ROLE) {
+        boxTokenPrices[boxType] = boxTokenPrice;
+        tokenAddrs[boxType] = tokenAddr;
+        receivingAddrs[boxType] = receivingAddr;
+        hourlyBuyLimits[boxType] = hourlyBuyLimit;
+        whiteListFlags[boxType] = whiteListFlag;
+        starProbabilities[boxType] = starProbability;
+        powerProbabilities[boxType] = powerProbability;
+        placeProbabilities[boxType] = placeProbability;
+
+        emit SetBoxInfo(
+            boxType,
+            boxTokenPrice,
+            tokenAddr,
+            receivingAddr,
+            hourlyBuyLimit,
+            whiteListFlag,
+            starProbability,
+            powerProbability,
+            placeProbability
+        );
+    }
+
+    /**
+     * @dev Add Boxes Max Supply
+     */
+    function addBoxesMaxSupply(uint256 supply, uint256 boxType)
+        external
+        onlyRole(MANAGER_ROLE)
+    {
+        boxesMaxSupply[boxType] += supply;
+
+        emit AddBoxesMaxSupply(supply, boxType);
+    }
+
+    /**
+     * @dev Add White List
+     */
+    function addWhiteList(uint256 boxType, address[] memory whiteUsers)
+        external
+        onlyRole(MANAGER_ROLE)
+    {
+        for (uint256 i = 0; i < whiteUsers.length; i++) {
+            whiteList[boxType].add(whiteUsers[i]);
+        }
+
+        emit AddWhiteList(boxType, whiteUsers);
+    }
+
+    /**
+     * @dev Remove White List
+     */
+    function removeWhiteList(uint256 boxType, address[] memory whiteUsers)
+        external
+        onlyRole(MANAGER_ROLE)
+    {
+        for (uint256 i = 0; i < whiteUsers.length; i++) {
+            whiteList[boxType].remove(whiteUsers[i]);
+        }
+
+        emit RemoveWhiteList(boxType, whiteUsers);
     }
 
     /**
@@ -123,29 +225,84 @@ contract SB is
     /**
      * @dev Users buy the boxes
      */
-    function buyBoxes(uint256 amount) external nonReentrant {
+    function buyBoxes(uint256 amount, uint256 boxType)
+        external
+        payable
+        nonReentrant
+    {
         require(amount > 0, "Amount must > 0");
+        require(
+            getUserHourlyBoxesLeftSupply(
+                boxType,
+                msg.sender,
+                block.timestamp
+            ) >= amount,
+            "Amount exceeds the hourly buy limit"
+        );
+        require(
+            getBoxesLeftSupply(boxType) >= amount,
+            "Not enough boxes supply"
+        );
+        require(
+            boxTokenPrices[boxType] > 0,
+            "The box price of this box has not been set"
+        );
+        require(
+            receivingAddrs[boxType] != address(0),
+            "The receiving address of this box has not been set"
+        );
+        require(
+            starProbabilities[boxType].length == 11,
+            "The star probability of this box has not been set"
+        );
+        require(
+            powerProbabilities[boxType].length == 5,
+            "The power probability of this box has not been set"
+        );
+        require(
+            placeProbabilities[boxType].length == 8,
+            "The place probability of this box has not been set"
+        );
+        if (whiteListFlags[boxType]) {
+            require(
+                whiteList[boxType].contains(msg.sender),
+                "Your address must be on the whitelist"
+            );
+        }
 
-        st.safeTransferFrom(msg.sender, receivingAddr, amount * boxPrice);
+        uint256 price = amount * boxTokenPrices[boxType];
+        if (tokenAddrs[boxType] == address(0)) {
+            require(msg.value == price, "Price mismatch");
+            payable(receivingAddrs[boxType]).transfer(price);
+        } else {
+            IERC20 token = IERC20(tokenAddrs[boxType]);
+            token.safeTransferFrom(msg.sender, receivingAddrs[boxType], price);
+        }
 
         for (uint256 i = 0; i < amount; i++) {
+            sbIdToType[totalSupply()] = boxType;
             _safeMint(msg.sender, totalSupply());
         }
 
-        emit BuyBoxes(msg.sender, amount);
+        userHourlyBoxesLength[msg.sender][boxType][
+            block.timestamp / 3600
+        ] += amount;
+        totalBoxesLength[boxType] += amount;
+
+        emit BuyBoxes(msg.sender, amount, boxType);
     }
 
     /**
      * @dev Users open the boxes
      */
-    function openBoxes(uint32 amount) external nonReentrant {
-        require(amount > 0, "Amount must > 0");
+    function openBoxes(uint256[] memory sbIds) external nonReentrant {
+        require(sbIds.length > 0, "Amount must > 0");
 
-        for (uint256 i = 0; i < amount; i++) {
+        for (uint256 i = 0; i < sbIds.length; i++) {
             safeTransferFrom(
                 msg.sender,
-                receivingAddr,
-                tokenOfOwnerByIndex(msg.sender, 0)
+                0x0000000000000000000000000000000000000020,
+                sbIds[i]
             );
         }
 
@@ -154,11 +311,12 @@ contract SB is
             subscriptionId,
             requestConfirmations,
             callbackGasLimit,
-            amount
+            uint32(sbIds.length)
         );
         requestIdToUser[requestId] = msg.sender;
+        requestIdToSbIds[requestId] = sbIds;
 
-        emit OpenBoxes(msg.sender, amount);
+        emit OpenBoxes(msg.sender, sbIds.length);
     }
 
     /**
@@ -167,7 +325,7 @@ contract SB is
     function safeTransferFromBatch(
         address from,
         address to,
-        uint256[] calldata tokenIds
+        uint256[] memory tokenIds
     ) external {
         for (uint256 i = 0; i < tokenIds.length; i++) {
             safeTransferFrom(from, to, tokenIds[i]);
@@ -196,23 +354,34 @@ contract SB is
     }
 
     /**
-     * @dev Get Level
+     * @dev Get White List Existence
      */
-    function getLevel(uint256[] memory array, uint256 random)
-        public
-        pure
-        returns (uint256)
+    function getWhiteListExistence(uint256 boxType, address user)
+        external
+        view
+        returns (bool)
     {
-        uint256 accProbability;
-        uint256 level;
-        for (uint256 i = 0; i < array.length; i++) {
-            accProbability += array[i];
-            if (random < accProbability) {
-                level = i;
-                break;
-            }
-        }
-        return level + 1;
+        return whiteList[boxType].contains(user);
+    }
+
+    /**
+     * @dev Get Boxes Left Supply
+     */
+    function getBoxesLeftSupply(uint256 boxType) public view returns (uint256) {
+        return boxesMaxSupply[boxType] - totalBoxesLength[boxType];
+    }
+
+    /**
+     * @dev Get User Hourly Boxes Left Supply
+     */
+    function getUserHourlyBoxesLeftSupply(
+        uint256 boxType,
+        address user,
+        uint256 timestamp
+    ) public view returns (uint256) {
+        return
+            hourlyBuyLimits[boxType] -
+            userHourlyBoxesLength[user][boxType][timestamp / 3600];
     }
 
     /**
@@ -248,6 +417,26 @@ contract SB is
     }
 
     /**
+     * @dev Get Level
+     */
+    function getLevel(uint256[] memory array, uint256 random)
+        public
+        pure
+        returns (uint256)
+    {
+        uint256 accProbability;
+        uint256 level;
+        for (uint256 i = 0; i < array.length; i++) {
+            accProbability += array[i];
+            if (random < accProbability) {
+                level = i;
+                break;
+            }
+        }
+        return level + 1;
+    }
+
+    /**
      * @dev Spawn SN to User when get Randomness Response
      */
     function fulfillRandomWords(uint256 requestId, uint256[] memory randomWords)
@@ -255,16 +444,26 @@ contract SB is
         override
     {
         uint256[] memory snIds = new uint256[](randomWords.length);
+        uint256[] memory boxTypes = new uint256[](randomWords.length);
         uint256[][] memory attr = new uint256[][](randomWords.length);
 
         for (uint256 i = 0; i < randomWords.length; i++) {
-            attr[i][0] = getLevel(starProbabilities, randomWords[i] % 1e4);
+            boxTypes[i] = sbIdToType[requestIdToSbIds[requestId][i]];
+            attr[i][0] = getLevel(
+                starProbabilities[boxTypes[i]],
+                randomWords[i] % 1e4
+            );
             attr[i][1] =
-                ((getLevel(powerProbabilities, (randomWords[i] % 1e8) / 1e4) -
-                    1) * 20) +
+                ((getLevel(
+                    powerProbabilities[boxTypes[i]],
+                    (randomWords[i] % 1e8) / 1e4
+                ) - 1) * 20) +
                 ((((randomWords[i] % 1e12) / 1e8) % 20) + 1);
             attr[i][2] = ((randomWords[i] % 1e16) / 1e12) % 4;
-            attr[i][3] = ((randomWords[i] % 1e20) / 1e16) % 8;
+            attr[i][3] = getLevel(
+                placeProbabilities[boxTypes[i]],
+                (randomWords[i] % 1e20) / 1e16
+            );
             attr[i][4] = ((randomWords[i] % 1e24) / 1e20) % 4;
 
             snIds[i] = sn.spawnSn(attr[i], requestIdToUser[requestId]);
@@ -274,6 +473,7 @@ contract SB is
             requestIdToUser[requestId],
             randomWords.length,
             snIds,
+            boxTypes,
             attr
         );
     }

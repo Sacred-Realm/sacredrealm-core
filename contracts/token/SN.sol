@@ -55,7 +55,7 @@ contract SN is ERC721Enumerable, AccessControlEnumerable {
     /**
      * @dev Spawn a New Sn to an Address
      */
-    function spawnSn(uint256[] calldata attr, address to)
+    function spawnSn(uint256[] memory attr, address to)
         external
         onlyRole(SPAWNER_ROLE)
         returns (uint256)
@@ -76,7 +76,7 @@ contract SN is ERC721Enumerable, AccessControlEnumerable {
      */
     function setData(
         uint256 snId,
-        string calldata slot,
+        string memory slot,
         uint256 _data
     ) external onlyRole(SETTER_ROLE) {
         data[snId][slot] = _data;
@@ -89,8 +89,8 @@ contract SN is ERC721Enumerable, AccessControlEnumerable {
      */
     function setDatas(
         uint256 snId,
-        string calldata slot,
-        uint256[] calldata _datas
+        string memory slot,
+        uint256[] memory _datas
     ) external onlyRole(SETTER_ROLE) {
         datas[snId][slot] = _datas;
 
@@ -103,7 +103,7 @@ contract SN is ERC721Enumerable, AccessControlEnumerable {
     function safeTransferFromBatch(
         address from,
         address to,
-        uint256[] calldata tokenIds
+        uint256[] memory tokenIds
     ) external {
         for (uint256 i = 0; i < tokenIds.length; i++) {
             safeTransferFrom(from, to, tokenIds[i]);
@@ -113,7 +113,7 @@ contract SN is ERC721Enumerable, AccessControlEnumerable {
     /**
      * @dev Get Datas
      */
-    function getDatas(uint256 snId, string calldata slot)
+    function getDatas(uint256 snId, string memory slot)
         external
         view
         returns (uint256[] memory)
@@ -147,7 +147,7 @@ contract SN is ERC721Enumerable, AccessControlEnumerable {
      */
     function getRandomNumber(
         uint256 snId,
-        string calldata slot,
+        string memory slot,
         uint256 base,
         uint256 range
     ) external pure returns (uint256) {
