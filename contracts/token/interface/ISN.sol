@@ -9,13 +9,6 @@ import "@openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol";
  * @notice Interface of the SN
  */
 abstract contract ISN is IERC721Enumerable {
-    mapping(uint256 => uint256) public star;
-    mapping(uint256 => uint256) public power;
-    mapping(uint256 => uint256) public class;
-    mapping(uint256 => uint256) public place;
-    mapping(uint256 => uint256) public suit;
-    mapping(uint256 => uint256) public spawntime;
-
     mapping(uint256 => mapping(string => uint256)) public data;
     mapping(uint256 => mapping(string => uint256[])) public datas;
 
