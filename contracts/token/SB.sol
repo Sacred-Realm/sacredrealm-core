@@ -73,6 +73,7 @@ contract SB is
     mapping(uint256 => EnumerableSet.AddressSet) private whiteList;
 
     event SetBaseURI(string uri);
+    event SetSN(address snAddr);
     event SetBoxInfo(
         uint256 boxType,
         uint256 boxTokenPrice,
@@ -99,16 +100,13 @@ contract SB is
 
     /**
      * @param manager Initialize Manager Role
-     * @param snAddr Initialize SN Address
      */
-    constructor(address manager, address snAddr)
+    constructor(address manager)
         ERC721("Sacred Realm Box", "SB")
         VRFConsumerBaseV2(vrfCoordinator)
     {
         _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
         _setupRole(MANAGER_ROLE, manager);
-
-        sn = ISN(snAddr);
 
         COORDINATOR = VRFCoordinatorV2Interface(vrfCoordinator);
         LINKTOKEN = LinkTokenInterface(link_token_contract);
@@ -123,6 +121,15 @@ contract SB is
         baseURI = uri;
 
         emit SetBaseURI(uri);
+    }
+
+    /**
+     * @dev Set SN Address
+     */
+    function setSN(address snAddr) external onlyRole(MANAGER_ROLE) {
+        sn = ISN(snAddr);
+
+        emit SetSN(snAddr);
     }
 
     /**

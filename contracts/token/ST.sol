@@ -17,10 +17,10 @@ contract ST is ERC20, AccessControlEnumerable {
     /**
      * @param manager Initialize Manager Role
      */
-    constructor(address manager)
-        ERC20("Sealem Token", "ST")
-    {
+    constructor(address manager) ERC20("Sealem Token", "ST") {
         _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
         _setupRole(MANAGER_ROLE, manager);
+
+        _mint(manager, 1e8 * 1e18);
     }
 }

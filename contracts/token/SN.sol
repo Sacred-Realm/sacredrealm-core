@@ -29,18 +29,10 @@ contract SN is ERC721Enumerable, AccessControlEnumerable {
 
     /**
      * @param manager Initialize Manager Role
-     * @param spawner Initialize Spawner Role
-     * @param setter Initialize Setter Role
      */
-    constructor(
-        address manager,
-        address spawner,
-        address setter
-    ) ERC721("Sacred Realm NFT", "SN") {
+    constructor(address manager) ERC721("Sacred Realm NFT", "SN") {
         _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
         _setupRole(MANAGER_ROLE, manager);
-        _setupRole(SPAWNER_ROLE, spawner);
-        _setupRole(SETTER_ROLE, setter);
     }
 
     /**

@@ -17,10 +17,10 @@ contract SR is ERC20, AccessControlEnumerable {
     /**
      * @param manager Initialize Manager Role
      */
-    constructor(address manager)
-        ERC20("Sacred Realm", "SR")
-    {
+    constructor(address manager) ERC20("Sacred Realm", "SR") {
         _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
         _setupRole(MANAGER_ROLE, manager);
+
+        _mint(manager, 1e10 * 1e18);
     }
 }
