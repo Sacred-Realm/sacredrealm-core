@@ -2653,7 +2653,7 @@ contract SB is
     bytes32 public keyHash =
         0x114f3da0a805b6a67d6e9cd2ec746f7028f1b7376365af575cfea3550dd1aa04;
 
-    uint32 public callbackGasLimit = 100000;
+    uint32 public callbackGasLimit = 200000;
     uint16 public requestConfirmations = 3;
 
     uint64 public subscriptionId;
@@ -2685,6 +2685,11 @@ contract SB is
 
     event SetBaseURI(string uri);
     event SetSN(address snAddr);
+    event SetVrfInfo(
+        bytes32 keyHash,
+        uint32 callbackGasLimit,
+        uint16 requestConfirmations
+    );
     event SetBoxInfo(
         uint256 boxType,
         uint256 boxTokenPrice,
@@ -2741,6 +2746,21 @@ contract SB is
         sn = ISN(snAddr);
 
         emit SetSN(snAddr);
+    }
+
+    /**
+     * @dev Set VRF Info
+     */
+    function setVrfInfo(
+        bytes32 _keyHash,
+        uint32 _callbackGasLimit,
+        uint16 _requestConfirmations
+    ) external onlyRole(MANAGER_ROLE) {
+        keyHash = _keyHash;
+        callbackGasLimit = _callbackGasLimit;
+        requestConfirmations = _requestConfirmations;
+
+        emit SetVrfInfo(_keyHash, _callbackGasLimit, _requestConfirmations);
     }
 
     /**
@@ -2828,16 +2848,6 @@ contract SB is
             amount,
             abi.encode(subscriptionId)
         );
-    }
-
-    /**
-     * @dev Transfer this contract's funds to an address
-     */
-    function withdraw(uint256 amount, address to)
-        external
-        onlyRole(MANAGER_ROLE)
-    {
-        LINKTOKEN.transfer(to, amount);
     }
 
     /**
