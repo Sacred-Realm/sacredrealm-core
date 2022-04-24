@@ -2653,7 +2653,7 @@ contract SB is
     bytes32 public keyHash =
         0x114f3da0a805b6a67d6e9cd2ec746f7028f1b7376365af575cfea3550dd1aa04;
 
-    uint32 public callbackGasLimit = 200000;
+    uint32 public callbackGasLimit = 500000;
     uint16 public requestConfirmations = 3;
 
     uint64 public subscriptionId;
@@ -3089,12 +3089,12 @@ contract SB is
                     (randomWords[i] % 1e8) / 1e4
                 ) - 1) * 20) +
                 ((((randomWords[i] % 1e12) / 1e8) % 20) + 1);
-            att[2] = ((randomWords[i] % 1e16) / 1e12) % 4;
+            att[2] = (((randomWords[i] % 1e16) / 1e12) % 4) + 1;
             att[3] = getLevel(
                 placeProbabilities[boxTypes[i]],
                 (randomWords[i] % 1e20) / 1e16
             );
-            att[4] = ((randomWords[i] % 1e24) / 1e20) % 4;
+            att[4] = (((randomWords[i] % 1e24) / 1e20) % 4) + 1;
 
             attr[i] = att;
 
