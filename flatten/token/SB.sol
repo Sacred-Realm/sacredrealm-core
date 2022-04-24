@@ -3074,25 +3074,29 @@ contract SB is
         uint256[] memory snIds = new uint256[](randomWords.length);
         uint256[] memory boxTypes = new uint256[](randomWords.length);
         uint256[][] memory attr = new uint256[][](randomWords.length);
+        uint256[] memory att = new uint256[](5);
 
         for (uint256 i = 0; i < randomWords.length; i++) {
             boxTypes[i] = sbIdToType[requestIdToSbIds[requestId][i]];
-            attr[i][0] = getLevel(
+
+            att[0] = getLevel(
                 starProbabilities[boxTypes[i]],
                 randomWords[i] % 1e4
             );
-            attr[i][1] =
+            att[1] =
                 ((getLevel(
                     powerProbabilities[boxTypes[i]],
                     (randomWords[i] % 1e8) / 1e4
                 ) - 1) * 20) +
                 ((((randomWords[i] % 1e12) / 1e8) % 20) + 1);
-            attr[i][2] = ((randomWords[i] % 1e16) / 1e12) % 4;
-            attr[i][3] = getLevel(
+            att[2] = ((randomWords[i] % 1e16) / 1e12) % 4;
+            att[3] = getLevel(
                 placeProbabilities[boxTypes[i]],
                 (randomWords[i] % 1e20) / 1e16
             );
-            attr[i][4] = ((randomWords[i] % 1e24) / 1e20) % 4;
+            att[4] = ((randomWords[i] % 1e24) / 1e20) % 4;
+
+            attr[i] = att;
 
             snIds[i] = sn.spawnSn(attr[i], requestIdToUser[requestId]);
         }
