@@ -42,7 +42,7 @@ contract SB is
     bytes32 public keyHash =
         0x114f3da0a805b6a67d6e9cd2ec746f7028f1b7376365af575cfea3550dd1aa04;
 
-    uint32 public callbackGasLimit = 500000;
+    uint32 public callbackGasLimit = 2000000;
     uint16 public requestConfirmations = 3;
 
     uint64 public subscriptionId;
@@ -95,13 +95,7 @@ contract SB is
     event RemoveWhiteList(uint256 boxType, address[] whiteUsers);
     event BuyBoxes(address indexed user, uint256 amount, uint256 boxType);
     event OpenBoxes(address indexed user, uint256 amount);
-    event SpawnSns(
-        address indexed user,
-        uint256 amount,
-        uint256[] snIds,
-        uint256[] boxTypes,
-        uint256[][] attr
-    );
+    event SpawnSns(address indexed user, uint256 amount, uint256[] snIds);
 
     /**
      * @param manager Initialize Manager Role
@@ -461,41 +455,32 @@ contract SB is
         override
     {
         uint256[] memory snIds = new uint256[](randomWords.length);
-        uint256[] memory boxTypes = new uint256[](randomWords.length);
-        uint256[][] memory attr = new uint256[][](randomWords.length);
-        uint256[] memory att = new uint256[](5);
+        uint256[] memory attr = new uint256[](5);
+        uint256 boxTypes;
 
         for (uint256 i = 0; i < randomWords.length; i++) {
-            boxTypes[i] = sbIdToType[requestIdToSbIds[requestId][i]];
+            boxTypes = sbIdToType[requestIdToSbIds[requestId][i]];
 
-            att[0] = getLevel(
-                starProbabilities[boxTypes[i]],
+            attr[0] = getLevel(
+                starProbabilities[boxTypes],
                 randomWords[i] % 1e4
             );
-            att[1] =
+            attr[1] =
                 ((getLevel(
-                    powerProbabilities[boxTypes[i]],
+                    powerProbabilities[boxTypes],
                     (randomWords[i] % 1e8) / 1e4
                 ) - 1) * 20) +
                 ((((randomWords[i] % 1e12) / 1e8) % 20) + 1);
-            att[2] = (((randomWords[i] % 1e16) / 1e12) % 4) + 1;
-            att[3] = getLevel(
-                placeProbabilities[boxTypes[i]],
+            attr[2] = (((randomWords[i] % 1e16) / 1e12) % 4) + 1;
+            attr[3] = getLevel(
+                placeProbabilities[boxTypes],
                 (randomWords[i] % 1e20) / 1e16
             );
-            att[4] = (((randomWords[i] % 1e24) / 1e20) % 4) + 1;
+            attr[4] = (((randomWords[i] % 1e24) / 1e20) % 4) + 1;
 
-            attr[i] = att;
-
-            snIds[i] = sn.spawnSn(attr[i], requestIdToUser[requestId]);
+            snIds[i] = sn.spawnSn(attr, requestIdToUser[requestId]);
         }
 
-        emit SpawnSns(
-            requestIdToUser[requestId],
-            randomWords.length,
-            snIds,
-            boxTypes,
-            attr
-        );
+        emit SpawnSns(requestIdToUser[requestId], randomWords.length, snIds);
     }
 }
