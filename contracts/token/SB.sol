@@ -42,7 +42,7 @@ contract SB is
     bytes32 public keyHash =
         0x114f3da0a805b6a67d6e9cd2ec746f7028f1b7376365af575cfea3550dd1aa04;
 
-    uint32 public callbackGasLimit = 2000000;
+    uint32 public callbackGasLimit = 2500000;
     uint16 public requestConfirmations = 3;
 
     uint64 public subscriptionId;
