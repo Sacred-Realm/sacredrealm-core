@@ -42,11 +42,10 @@ contract SB is
     bytes32 public keyHash =
         0x114f3da0a805b6a67d6e9cd2ec746f7028f1b7376365af575cfea3550dd1aa04;
 
-    uint32 public callbackGasLimit = 2500000;
+    uint32 public callbackGasLimit = 500000;
     uint16 public requestConfirmations = 3;
 
     uint64 public subscriptionId;
-    mapping(uint256 => address) public requestIdToUser;
     mapping(uint256 => uint256[]) public requestIdToSbIds;
 
     bytes32 public constant MANAGER_ROLE = keccak256("MANAGER_ROLE");
@@ -56,6 +55,7 @@ contract SB is
     string public baseURI;
 
     mapping(uint256 => uint256) public sbIdToType;
+    mapping(uint256 => uint256) public sbIdToRandom;
 
     mapping(uint256 => uint256) public boxTokenPrices;
     mapping(uint256 => address) public tokenAddrs;
@@ -94,8 +94,13 @@ contract SB is
     event AddWhiteList(uint256 boxType, address[] whiteUsers);
     event RemoveWhiteList(uint256 boxType, address[] whiteUsers);
     event BuyBoxes(address indexed user, uint256 amount, uint256 boxType);
-    event OpenBoxes(address indexed user, uint256 amount);
-    event SpawnSns(address indexed user, uint256 amount, uint256[] snIds);
+    event OpenBoxes(
+        address indexed user,
+        uint256 amount,
+        uint256[] snIds,
+        uint256[] boxTypes,
+        uint256[][] attr
+    );
 
     /**
      * @param manager Initialize Manager Role
@@ -290,10 +295,23 @@ contract SB is
             token.safeTransferFrom(msg.sender, receivingAddrs[boxType], price);
         }
 
+        uint256[] memory sbIds = new uint256[](amount);
+
         for (uint256 i = 0; i < amount; i++) {
-            sbIdToType[totalSupply()] = boxType;
-            _safeMint(msg.sender, totalSupply());
+            sbIds[i] = totalSupply();
+            sbIdToType[sbIds[i]] = boxType;
+
+            _safeMint(msg.sender, sbIds[i]);
         }
+
+        uint256 requestId = COORDINATOR.requestRandomWords(
+            keyHash,
+            subscriptionId,
+            requestConfirmations,
+            callbackGasLimit,
+            uint32(amount)
+        );
+        requestIdToSbIds[requestId] = sbIds;
 
         userHourlyBoxesLength[msg.sender][boxType][
             block.timestamp / 3600
@@ -309,25 +327,45 @@ contract SB is
     function openBoxes(uint256[] memory sbIds) external nonReentrant {
         require(sbIds.length > 0, "Amount must > 0");
 
+        uint256[] memory snIds = new uint256[](sbIds.length);
+        uint256[] memory boxTypes = new uint256[](sbIds.length);
+        uint256[][] memory attr = new uint256[][](sbIds.length);
+        uint256[] memory att = new uint256[](5);
+
         for (uint256 i = 0; i < sbIds.length; i++) {
+            require(sbIdToRandom[sbIds[i]] > 0, "Random must > 0");
+
             safeTransferFrom(
                 msg.sender,
                 0x0000000000000000000000000000000000000020,
                 sbIds[i]
             );
+
+            boxTypes[i] = sbIdToType[sbIds[i]];
+
+            att[0] = getLevel(
+                starProbabilities[boxTypes[i]],
+                sbIdToRandom[sbIds[i]] % 1e4
+            );
+            att[1] =
+                ((getLevel(
+                    powerProbabilities[boxTypes[i]],
+                    (sbIdToRandom[sbIds[i]] % 1e8) / 1e4
+                ) - 1) * 20) +
+                ((((sbIdToRandom[sbIds[i]] % 1e12) / 1e8) % 20) + 1);
+            att[2] = (((sbIdToRandom[sbIds[i]] % 1e16) / 1e12) % 4) + 1;
+            att[3] = getLevel(
+                placeProbabilities[boxTypes[i]],
+                (sbIdToRandom[sbIds[i]] % 1e20) / 1e16
+            );
+            att[4] = (((sbIdToRandom[sbIds[i]] % 1e24) / 1e20) % 4) + 1;
+
+            attr[i] = att;
+
+            snIds[i] = sn.spawnSn(attr[i], msg.sender);
         }
 
-        uint256 requestId = COORDINATOR.requestRandomWords(
-            keyHash,
-            subscriptionId,
-            requestConfirmations,
-            callbackGasLimit,
-            uint32(sbIds.length)
-        );
-        requestIdToUser[requestId] = msg.sender;
-        requestIdToSbIds[requestId] = sbIds;
-
-        emit OpenBoxes(msg.sender, sbIds.length);
+        emit OpenBoxes(msg.sender, sbIds.length, snIds, boxTypes, attr);
     }
 
     /**
@@ -448,39 +486,14 @@ contract SB is
     }
 
     /**
-     * @dev Spawn SN to User when get Randomness Response
+     * @dev Get Randomness
      */
     function fulfillRandomWords(uint256 requestId, uint256[] memory randomWords)
         internal
         override
     {
-        uint256[] memory snIds = new uint256[](randomWords.length);
-        uint256[] memory attr = new uint256[](5);
-        uint256 boxTypes;
-
         for (uint256 i = 0; i < randomWords.length; i++) {
-            boxTypes = sbIdToType[requestIdToSbIds[requestId][i]];
-
-            attr[0] = getLevel(
-                starProbabilities[boxTypes],
-                randomWords[i] % 1e4
-            );
-            attr[1] =
-                ((getLevel(
-                    powerProbabilities[boxTypes],
-                    (randomWords[i] % 1e8) / 1e4
-                ) - 1) * 20) +
-                ((((randomWords[i] % 1e12) / 1e8) % 20) + 1);
-            attr[2] = (((randomWords[i] % 1e16) / 1e12) % 4) + 1;
-            attr[3] = getLevel(
-                placeProbabilities[boxTypes],
-                (randomWords[i] % 1e20) / 1e16
-            );
-            attr[4] = (((randomWords[i] % 1e24) / 1e20) % 4) + 1;
-
-            snIds[i] = sn.spawnSn(attr, requestIdToUser[requestId]);
+            sbIdToRandom[requestIdToSbIds[requestId][i]] = randomWords[i];
         }
-
-        emit SpawnSns(requestIdToUser[requestId], randomWords.length, snIds);
     }
 }
