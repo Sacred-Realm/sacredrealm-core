@@ -47,7 +47,7 @@ contract SB is
 
     uint64 public subscriptionId;
     mapping(uint256 => address) public requestIdToUser;
-    mapping(uint256 => uint256[]) public requestIdToSbIds;
+    mapping(uint256 => uint256[]) public requestIdToTypes;
 
     bytes32 public constant MANAGER_ROLE = keccak256("MANAGER_ROLE");
 
@@ -93,8 +93,18 @@ contract SB is
     event AddBoxesMaxSupply(uint256 supply, uint256 boxType);
     event AddWhiteList(uint256 boxType, address[] whiteUsers);
     event RemoveWhiteList(uint256 boxType, address[] whiteUsers);
-    event BuyBoxes(address indexed user, uint256 amount, uint256 boxType);
-    event OpenBoxes(address indexed user, uint256 amount);
+    event BuyBoxes(
+        address indexed user,
+        uint256 amount,
+        uint256[] sbIds,
+        uint256 boxType
+    );
+    event OpenBoxes(
+        address indexed user,
+        uint256 amount,
+        uint256[] sbIds,
+        uint256[] boxTypes
+    );
     event SpawnSns(address indexed user, uint256 amount, uint256[] snIds);
 
     /**
@@ -234,6 +244,17 @@ contract SB is
     }
 
     /**
+     * @dev Cancel the subscription and send the remaining LINK to a wallet address
+     */
+    function cancelSubscription(address receivingWallet)
+        external
+        onlyRole(MANAGER_ROLE)
+    {
+        COORDINATOR.cancelSubscription(subscriptionId, receivingWallet);
+        subscriptionId = 0;
+    }
+
+    /**
      * @dev Users buy the boxes
      */
     function buyBoxes(uint256 amount, uint256 boxType)
@@ -290,9 +311,12 @@ contract SB is
             token.safeTransferFrom(msg.sender, receivingAddrs[boxType], price);
         }
 
+        uint256[] memory sbIds = new uint256[](amount);
         for (uint256 i = 0; i < amount; i++) {
-            sbIdToType[totalSupply()] = boxType;
-            _safeMint(msg.sender, totalSupply());
+            sbIds[i] = totalSupply();
+            sbIdToType[sbIds[i]] = boxType;
+
+            _safeMint(msg.sender, sbIds[i]);
         }
 
         userHourlyBoxesLength[msg.sender][boxType][
@@ -300,7 +324,7 @@ contract SB is
         ] += amount;
         totalBoxesLength[boxType] += amount;
 
-        emit BuyBoxes(msg.sender, amount, boxType);
+        emit BuyBoxes(msg.sender, amount, sbIds, boxType);
     }
 
     /**
@@ -309,7 +333,10 @@ contract SB is
     function openBoxes(uint256[] memory sbIds) external nonReentrant {
         require(sbIds.length > 0, "Amount must > 0");
 
+        uint256[] memory boxTypes = new uint256[](sbIds.length);
         for (uint256 i = 0; i < sbIds.length; i++) {
+            boxTypes[i] = sbIdToType[sbIds[i]];
+
             safeTransferFrom(
                 msg.sender,
                 0x0000000000000000000000000000000000000020,
@@ -325,9 +352,9 @@ contract SB is
             uint32(sbIds.length)
         );
         requestIdToUser[requestId] = msg.sender;
-        requestIdToSbIds[requestId] = sbIds;
+        requestIdToTypes[requestId] = boxTypes;
 
-        emit OpenBoxes(msg.sender, sbIds.length);
+        emit OpenBoxes(msg.sender, sbIds.length, sbIds, boxTypes);
     }
 
     /**
@@ -456,24 +483,21 @@ contract SB is
     {
         uint256[] memory snIds = new uint256[](randomWords.length);
         uint256[] memory attr = new uint256[](5);
-        uint256 boxTypes;
 
         for (uint256 i = 0; i < randomWords.length; i++) {
-            boxTypes = sbIdToType[requestIdToSbIds[requestId][i]];
-
             attr[0] = getLevel(
-                starProbabilities[boxTypes],
+                starProbabilities[requestIdToTypes[requestId][i]],
                 randomWords[i] % 1e4
             );
             attr[1] =
                 ((getLevel(
-                    powerProbabilities[boxTypes],
+                    powerProbabilities[requestIdToTypes[requestId][i]],
                     (randomWords[i] % 1e8) / 1e4
                 ) - 1) * 20) +
                 ((((randomWords[i] % 1e12) / 1e8) % 20) + 1);
             attr[2] = (((randomWords[i] % 1e16) / 1e12) % 4) + 1;
             attr[3] = getLevel(
-                placeProbabilities[boxTypes],
+                placeProbabilities[requestIdToTypes[requestId][i]],
                 (randomWords[i] % 1e20) / 1e16
             );
             attr[4] = (((randomWords[i] % 1e24) / 1e20) % 4) + 1;
