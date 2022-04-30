@@ -39,9 +39,19 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     mapping(address => mapping(uint256 => uint256)) public userOrderClaimTime;
 
     event SetSTLP(address stlpAddr);
+    event CreateBond(
+        uint256 bondId,
+        address lpAddr,
+        address receivingAddr,
+        uint256 bondMaxSupplyLp,
+        uint256 bondRate,
+        uint256 bondTerm,
+        uint256 bondConclusion
+    );
     event Bond(
         address indexed user,
         uint256 bondId,
+        uint256 orderId,
         uint256 lpAmount,
         uint256 lpPrice,
         uint256 usdPayout,
@@ -70,6 +80,37 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         stlpAddr = _stlpAddr;
 
         emit SetSTLP(_stlpAddr);
+    }
+
+    /**
+     * @dev Create Bond
+     */
+    function createBond(
+        address _lpAddr,
+        address _receivingAddr,
+        uint256 _bondMaxSupplyLp,
+        uint256 _bondRate,
+        uint256 _bondTerm,
+        uint256 _bondConclusion
+    ) external onlyRole(MANAGER_ROLE) {
+        lpAddr[bondCount] = _lpAddr;
+        receivingAddr[bondCount] = _receivingAddr;
+        bondMaxSupplyLp[bondCount] = _bondMaxSupplyLp;
+        bondRate[bondCount] = _bondRate;
+        bondTerm[bondCount] = _bondTerm;
+        bondConclusion[bondCount] = _bondConclusion;
+
+        emit CreateBond(
+            bondCount,
+            _lpAddr,
+            _receivingAddr,
+            _bondMaxSupplyLp,
+            _bondRate,
+            _bondTerm,
+            _bondConclusion
+        );
+
+        bondCount++;
     }
 
     /**
@@ -104,18 +145,20 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         userOrderLpAmount[msg.sender][userOrderCount[msg.sender]] = lpAmount;
         userOrderUsdPayout[msg.sender][userOrderCount[msg.sender]] = usdPayout;
         userOrderExpiry[msg.sender][userOrderCount[msg.sender]] = expiry;
-        userOrderCount[msg.sender]++;
 
         bondSoldLpAmount[bondId] += lpAmount;
 
         emit Bond(
             msg.sender,
             bondId,
+            userOrderCount[msg.sender],
             lpAmount,
             lpPrice[bondId],
             usdPayout,
             expiry
         );
+
+        userOrderCount[msg.sender]++;
     }
 
     /**
@@ -143,6 +186,93 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         );
 
         emit Claim(msg.sender, orderIds, usdPayout, stPrice, stPayout);
+    }
+
+    /**
+     * @dev Get User Unclaimed Orders
+     */
+    function getUserUnclaimedOrders(address user)
+        external
+        view
+        returns (uint256[] memory, uint256)
+    {
+        uint256 length;
+        for (uint256 i = 0; i < userOrderCount[user]; i++) {
+            if (userOrderClaimTime[user][i] == 0) length++;
+        }
+
+        uint256[] memory orderIds = new uint256[](length);
+        uint256 usdPayout;
+        uint256 index;
+        for (uint256 i = 0; i < userOrderCount[user]; i++) {
+            if (userOrderClaimTime[user][i] == 0) {
+                orderIds[index] = i;
+                usdPayout += userOrderUsdPayout[user][i];
+                index++;
+            }
+        }
+
+        return (orderIds, usdPayout);
+    }
+
+    /**
+     * @dev Get User Claimed Orders
+     */
+    function getUserClaimedOrders(address user)
+        external
+        view
+        returns (uint256[] memory, uint256)
+    {
+        uint256 length;
+        for (uint256 i = 0; i < userOrderCount[user]; i++) {
+            if (userOrderClaimTime[user][i] > 0) length++;
+        }
+
+        uint256[] memory orderIds = new uint256[](length);
+        uint256 usdPayout;
+        uint256 index;
+        for (uint256 i = 0; i < userOrderCount[user]; i++) {
+            if (userOrderClaimTime[user][i] > 0) {
+                orderIds[index] = i;
+                usdPayout += userOrderUsdPayout[user][i];
+                index++;
+            }
+        }
+
+        return (orderIds, usdPayout);
+    }
+
+    /**
+     * @dev Get User Claimable Orders
+     */
+    function getUserClaimableOrders(address user)
+        external
+        view
+        returns (uint256[] memory, uint256)
+    {
+        uint256 length;
+        for (uint256 i = 0; i < userOrderCount[user]; i++) {
+            if (
+                block.timestamp >= userOrderExpiry[user][i] &&
+                userOrderClaimTime[user][i] == 0
+            ) length++;
+        }
+
+        uint256[] memory orderIds = new uint256[](length);
+        uint256 usdPayout;
+        uint256 index;
+        for (uint256 i = 0; i < userOrderCount[user]; i++) {
+            if (
+                block.timestamp >= userOrderExpiry[user][i] &&
+                userOrderClaimTime[user][i] == 0
+            ) {
+                orderIds[index] = i;
+                usdPayout += userOrderUsdPayout[user][i];
+                index++;
+            }
+        }
+
+        return (orderIds, usdPayout);
     }
 
     /**
