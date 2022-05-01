@@ -29,6 +29,9 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     mapping(uint256 => uint256) public bondConclusion;
 
     mapping(uint256 => uint256) public lpPrice;
+    mapping(uint256 => uint256) public lpPriceCursor;
+    mapping(uint256 => uint256) public lpPriceLastUpdateTime;
+    mapping(uint256 => uint256[10]) public lpPriceArr;
     mapping(uint256 => uint256) public bondSoldLpAmount;
 
     mapping(address => uint256) public userOrderCount;
@@ -189,6 +192,27 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     }
 
     /**
+     * @dev Get Active Bonds
+     */
+    function getActiveBonds() external view returns (uint256[] memory) {
+        uint256 length;
+        for (uint256 i = 0; i < bondCount; i++) {
+            if (block.timestamp < bondConclusion[i]) length++;
+        }
+
+        uint256[] memory bondIds = new uint256[](length);
+        uint256 index;
+        for (uint256 i = 0; i < bondCount; i++) {
+            if (block.timestamp < bondConclusion[i]) {
+                bondIds[index] = i;
+                index++;
+            }
+        }
+
+        return bondIds;
+    }
+
+    /**
      * @dev Get User Unclaimed Orders
      */
     function getUserUnclaimedOrders(address user)
@@ -279,10 +303,27 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
      * @dev Update Lp Price
      */
     function updateLpPrice(uint256 bondId) public {
-        (, uint112 reserve1, ) = IPancakePair(lpAddr[bondId]).getReserves();
-        lpPrice[bondId] =
-            (2 * reserve1 * 1e18) /
-            IPancakePair(lpAddr[bondId]).totalSupply();
+        if (block.timestamp > lpPriceLastUpdateTime[bondId] + 60) {
+            (, uint112 reserve1, ) = IPancakePair(lpAddr[bondId]).getReserves();
+            lpPriceArr[bondId][lpPriceCursor[bondId]] =
+                (2 * reserve1 * 1e18) /
+                IPancakePair(lpAddr[bondId]).totalSupply();
+
+            lpPriceCursor[bondId]++;
+            if (lpPriceCursor[bondId] == 10) lpPriceCursor[bondId] = 0;
+
+            uint256 total;
+            uint256 count;
+            for (uint256 i = 0; i < 10; i++) {
+                if (lpPriceArr[bondId][i] > 0) {
+                    total += lpPriceArr[bondId][i];
+                    count++;
+                }
+            }
+            lpPrice[bondId] = total / count;
+
+            lpPriceLastUpdateTime[bondId] = block.timestamp;
+        }
     }
 
     /**
