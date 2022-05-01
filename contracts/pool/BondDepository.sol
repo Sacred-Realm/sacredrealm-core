@@ -17,8 +17,13 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
 
     bytes32 public constant MANAGER_ROLE = keccak256("MANAGER_ROLE");
 
+    uint256 public priceUpdateInterval = 360;
+
     address public stlpAddr;
     uint256 public stPrice;
+    uint256 public stPriceCursor;
+    uint256 public stPriceLastUpdateTime;
+    uint256[10] public stPriceArr;
 
     uint256 public bondCount;
     mapping(uint256 => address) public lpAddr;
@@ -41,6 +46,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     mapping(address => mapping(uint256 => uint256)) public userOrderExpiry;
     mapping(address => mapping(uint256 => uint256)) public userOrderClaimTime;
 
+    event SetPriceUpdateInterval(uint256 interval);
     event SetSTLP(address stlpAddr);
     event CreateBond(
         uint256 bondId,
@@ -74,6 +80,18 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     constructor(address manager) {
         _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
         _setupRole(MANAGER_ROLE, manager);
+    }
+
+    /**
+     * @dev Set Price Update Interval
+     */
+    function setPriceUpdateInterval(uint256 interval)
+        external
+        onlyRole(MANAGER_ROLE)
+    {
+        priceUpdateInterval = interval;
+
+        emit SetPriceUpdateInterval(interval);
     }
 
     /**
@@ -303,7 +321,10 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
      * @dev Update Lp Price
      */
     function updateLpPrice(uint256 bondId) public {
-        if (block.timestamp > lpPriceLastUpdateTime[bondId] + 60) {
+        if (
+            block.timestamp >
+            lpPriceLastUpdateTime[bondId] + priceUpdateInterval
+        ) {
             (, uint112 reserve1, ) = IPancakePair(lpAddr[bondId]).getReserves();
             lpPriceArr[bondId][lpPriceCursor[bondId]] =
                 (2 * reserve1 * 1e18) /
@@ -312,15 +333,15 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
             lpPriceCursor[bondId]++;
             if (lpPriceCursor[bondId] == 10) lpPriceCursor[bondId] = 0;
 
-            uint256 total;
+            uint256 sum;
             uint256 count;
             for (uint256 i = 0; i < 10; i++) {
                 if (lpPriceArr[bondId][i] > 0) {
-                    total += lpPriceArr[bondId][i];
+                    sum += lpPriceArr[bondId][i];
                     count++;
                 }
             }
-            lpPrice[bondId] = total / count;
+            lpPrice[bondId] = sum / count;
 
             lpPriceLastUpdateTime[bondId] = block.timestamp;
         }
@@ -330,9 +351,26 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
      * @dev Update ST Price
      */
     function updateStPrice() public {
-        (uint112 reserve0, uint112 reserve1, ) = IPancakePair(stlpAddr)
-            .getReserves();
-        stPrice = (reserve1 * 1e18) / reserve0;
+        if (block.timestamp > stPriceLastUpdateTime + priceUpdateInterval) {
+            (uint112 reserve0, uint112 reserve1, ) = IPancakePair(stlpAddr)
+                .getReserves();
+            stPriceArr[stPriceCursor] = (reserve1 * 1e18) / reserve0;
+
+            stPriceCursor++;
+            if (stPriceCursor == 10) stPriceCursor = 0;
+
+            uint256 sum;
+            uint256 count;
+            for (uint256 i = 0; i < 10; i++) {
+                if (stPriceArr[i] > 0) {
+                    sum += stPriceArr[i];
+                    count++;
+                }
+            }
+            stPrice = sum / count;
+
+            stPriceLastUpdateTime = block.timestamp;
+        }
     }
 
     /**
