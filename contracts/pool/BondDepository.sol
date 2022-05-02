@@ -322,7 +322,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
      */
     function updateLpPrice(uint256 bondId) public {
         if (
-            block.timestamp >
+            block.timestamp >=
             lpPriceLastUpdateTime[bondId] + priceUpdateInterval
         ) {
             (, uint112 reserve1, ) = IPancakePair(lpAddr[bondId]).getReserves();
@@ -351,7 +351,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
      * @dev Update ST Price
      */
     function updateStPrice() public {
-        if (block.timestamp > stPriceLastUpdateTime + priceUpdateInterval) {
+        if (block.timestamp >= stPriceLastUpdateTime + priceUpdateInterval) {
             (uint112 reserve0, uint112 reserve1, ) = IPancakePair(stlpAddr)
                 .getReserves();
             stPriceArr[stPriceCursor] = (reserve1 * 1e18) / reserve0;
