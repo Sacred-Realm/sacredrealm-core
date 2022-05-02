@@ -17,13 +17,13 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
 
     bytes32 public constant MANAGER_ROLE = keccak256("MANAGER_ROLE");
 
-    uint256 public priceUpdateInterval = 360;
+    uint256 public priceUpdateInterval = 300;
 
     address public stlpAddr;
     uint256 public stPrice;
     uint256 public stPriceCursor;
     uint256 public stPriceLastUpdateTime;
-    uint256[10] public stPriceArr;
+    uint256[12] public stPriceArr;
 
     uint256 public bondCount;
     mapping(uint256 => address) public lpAddr;
@@ -36,7 +36,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     mapping(uint256 => uint256) public lpPrice;
     mapping(uint256 => uint256) public lpPriceCursor;
     mapping(uint256 => uint256) public lpPriceLastUpdateTime;
-    mapping(uint256 => uint256[10]) public lpPriceArr;
+    mapping(uint256 => uint256[12]) public lpPriceArr;
     mapping(uint256 => uint256) public bondSoldLpAmount;
 
     mapping(address => uint256) public userOrderCount;
@@ -331,7 +331,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
                 IPancakePair(lpAddr[bondId]).totalSupply();
 
             lpPriceCursor[bondId]++;
-            if (lpPriceCursor[bondId] == 10) lpPriceCursor[bondId] = 0;
+            if (lpPriceCursor[bondId] == 12) lpPriceCursor[bondId] = 0;
 
             uint256 sum;
             uint256 count;
@@ -357,7 +357,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
             stPriceArr[stPriceCursor] = (reserve1 * 1e18) / reserve0;
 
             stPriceCursor++;
-            if (stPriceCursor == 10) stPriceCursor = 0;
+            if (stPriceCursor == 12) stPriceCursor = 0;
 
             uint256 sum;
             uint256 count;
