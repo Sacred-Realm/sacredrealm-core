@@ -6,6 +6,7 @@ import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import "@openzeppelin/contracts/access/AccessControlEnumerable.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "../tool/interface/IPancakePair.sol";
+import "../tool/interface/IPancakeRouter.sol";
 
 /**
  * @title Bond Depository
@@ -17,16 +18,26 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
 
     bytes32 public constant MANAGER_ROLE = keccak256("MANAGER_ROLE");
 
+    // testnet: 0x78867BbEeF44f2326bF8DDd1941a4439382EF2A7
+    address public BUSD = 0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56;
+
+    // testnet: 0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd
+    address public WBNB = 0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c;
+
+    // testnet: 0x9Ac64Cc6e4415144C455BD8E4837Fea55603e5c3
+    IPancakeRouter public router =
+        IPancakeRouter(0x10ED43C718714eb63d5aA57B78B54704E256024E);
+
     uint256 public priceUpdateInterval = 300;
 
-    address public stlpAddr;
+    IPancakePair public STLP;
     uint256 public stPrice;
     uint256 public stPriceCursor;
     uint256 public stPriceLastUpdateTime;
     uint256[12] public stPriceArr;
 
     uint256 public bondCount;
-    mapping(uint256 => address) public lpAddr;
+    mapping(uint256 => IPancakePair) public LP;
     mapping(uint256 => address) public receivingAddr;
     mapping(uint256 => uint256) public bondMaxSupplyLp;
     mapping(uint256 => uint256) public bondRate;
@@ -95,26 +106,26 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     }
 
     /**
-     * @dev Set ST LP Address
+     * @dev Set ST LP
      */
-    function setSTLP(address _stlpAddr) external onlyRole(MANAGER_ROLE) {
-        stlpAddr = _stlpAddr;
+    function setSTLP(address stlpAddr) external onlyRole(MANAGER_ROLE) {
+        STLP = IPancakePair(stlpAddr);
 
-        emit SetSTLP(_stlpAddr);
+        emit SetSTLP(stlpAddr);
     }
 
     /**
      * @dev Create Bond
      */
     function createBond(
-        address _lpAddr,
+        address lpAddr,
         address _receivingAddr,
         uint256 _bondMaxSupplyLp,
         uint256 _bondRate,
         uint256 _bondTerm,
         uint256 _bondConclusion
     ) external onlyRole(MANAGER_ROLE) {
-        lpAddr[bondCount] = _lpAddr;
+        LP[bondCount] = IPancakePair(lpAddr);
         receivingAddr[bondCount] = _receivingAddr;
         bondMaxSupplyLp[bondCount] = _bondMaxSupplyLp;
         bondRate[bondCount] = _bondRate;
@@ -123,7 +134,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
 
         emit CreateBond(
             bondCount,
-            _lpAddr,
+            lpAddr,
             _receivingAddr,
             _bondMaxSupplyLp,
             _bondRate,
@@ -151,7 +162,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
 
         updateLpPrice(bondId);
 
-        IERC20(lpAddr[bondId]).safeTransferFrom(
+        IERC20(address(LP[bondId])).safeTransferFrom(
             msg.sender,
             receivingAddr[bondId],
             lpAmount
@@ -201,10 +212,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
 
         uint256 stPayout = (usdPayout * 1e18) / stPrice;
 
-        IERC20(IPancakePair(stlpAddr).token0()).safeTransfer(
-            msg.sender,
-            stPayout
-        );
+        IERC20(STLP.token0()).safeTransfer(msg.sender, stPayout);
 
         emit Claim(msg.sender, orderIds, usdPayout, stPrice, stPayout);
     }
@@ -325,10 +333,19 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
             block.timestamp >=
             lpPriceLastUpdateTime[bondId] + priceUpdateInterval
         ) {
-            (, uint112 reserve1, ) = IPancakePair(lpAddr[bondId]).getReserves();
+            (, uint112 reserve1, ) = LP[bondId].getReserves();
             lpPriceArr[bondId][lpPriceCursor[bondId]] =
                 (2 * reserve1 * 1e18) /
-                IPancakePair(lpAddr[bondId]).totalSupply();
+                LP[bondId].totalSupply();
+            if (LP[bondId].token1() == WBNB) {
+                address[] memory path = new address[](2);
+                path[0] = WBNB;
+                path[1] = BUSD;
+                uint256 wbnbPrice = router.getAmountsOut(1e18, path)[1];
+                lpPriceArr[bondId][lpPriceCursor[bondId]] =
+                    (lpPriceArr[bondId][lpPriceCursor[bondId]] * wbnbPrice) /
+                    1e18;
+            }
 
             lpPriceCursor[bondId]++;
             if (lpPriceCursor[bondId] == 12) lpPriceCursor[bondId] = 0;
@@ -352,9 +369,18 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
      */
     function updateStPrice() public {
         if (block.timestamp >= stPriceLastUpdateTime + priceUpdateInterval) {
-            (uint112 reserve0, uint112 reserve1, ) = IPancakePair(stlpAddr)
-                .getReserves();
-            stPriceArr[stPriceCursor] = (reserve1 * 1e18) / reserve0;
+            if (STLP.token1() == BUSD) {
+                address[] memory path = new address[](2);
+                path[0] = STLP.token0();
+                path[1] = BUSD;
+                stPriceArr[stPriceCursor] = router.getAmountsOut(1e18, path)[1];
+            } else {
+                address[] memory path = new address[](3);
+                path[0] = STLP.token0();
+                path[1] = WBNB;
+                path[2] = BUSD;
+                stPriceArr[stPriceCursor] = router.getAmountsOut(1e18, path)[2];
+            }
 
             stPriceCursor++;
             if (stPriceCursor == 12) stPriceCursor = 0;
