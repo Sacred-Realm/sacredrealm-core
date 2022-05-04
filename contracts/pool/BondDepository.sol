@@ -28,7 +28,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     IPancakeRouter public router =
         IPancakeRouter(0x10ED43C718714eb63d5aA57B78B54704E256024E);
 
-    uint256 public priceUpdateInterval = 300;
+    uint256 public priceUpdateInterval = 5 minutes;
 
     IPancakePair public STLP;
     uint256 public stPrice;
@@ -83,6 +83,18 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         uint256 usdPayout,
         uint256 stPrice,
         uint256 stPayout
+    );
+    event UpdateLpPrice(
+        IPancakePair lp,
+        address token0,
+        address token1,
+        uint256 lpPrice
+    );
+    event UpdateStPrice(
+        IPancakePair stlp,
+        address token0,
+        address token1,
+        uint256 stPrice
     );
 
     /**
@@ -148,7 +160,105 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     /**
      * @dev Bond
      */
-    function bond(uint256 bondId, uint256 lpAmount) external nonReentrant {
+    function bond(
+        uint256 bondId,
+        uint256 token0Amount,
+        uint256 token1Amount,
+        uint256 lpAmount
+    ) external payable nonReentrant {
+        (address token0, address token1) = updateLpPrice(bondId);
+
+        if (lpAmount == 0) {
+            if (token0Amount > 0 && token1Amount == 0) {
+                address[] memory path = new address[](2);
+                path[0] = token0;
+                path[1] = token1;
+                if (path[0] == WBNB) {
+                    token1Amount = router.swapExactETHForTokens(
+                        0,
+                        path,
+                        msg.sender,
+                        block.timestamp
+                    )[1];
+                } else if (path[1] == WBNB) {
+                    token1Amount = router.swapExactTokensForETH(
+                        token0Amount /= 2,
+                        0,
+                        path,
+                        msg.sender,
+                        block.timestamp
+                    )[1];
+                } else {
+                    token1Amount = router.swapExactTokensForTokens(
+                        token0Amount /= 2,
+                        0,
+                        path,
+                        msg.sender,
+                        block.timestamp
+                    )[1];
+                }
+            } else if (token1Amount > 0 && token0Amount == 0) {
+                address[] memory path = new address[](2);
+                path[0] = token1;
+                path[1] = token0;
+                if (path[0] == WBNB) {
+                    token0Amount = router.swapExactETHForTokens(
+                        0,
+                        path,
+                        msg.sender,
+                        block.timestamp
+                    )[1];
+                } else if (path[1] == WBNB) {
+                    token0Amount = router.swapExactTokensForETH(
+                        token1Amount /= 2,
+                        0,
+                        path,
+                        msg.sender,
+                        block.timestamp
+                    )[1];
+                } else {
+                    token0Amount = router.swapExactTokensForTokens(
+                        token1Amount /= 2,
+                        0,
+                        path,
+                        msg.sender,
+                        block.timestamp
+                    )[1];
+                }
+            }
+
+            if (token0 == WBNB) {
+                (, , lpAmount) = router.addLiquidityETH(
+                    token1,
+                    token1Amount,
+                    0,
+                    0,
+                    msg.sender,
+                    block.timestamp
+                );
+            } else if (token1 == WBNB) {
+                (, , lpAmount) = router.addLiquidityETH(
+                    token0,
+                    token0Amount,
+                    0,
+                    0,
+                    msg.sender,
+                    block.timestamp
+                );
+            } else {
+                (, , lpAmount) = router.addLiquidity(
+                    token0,
+                    token1,
+                    token0Amount,
+                    token1Amount,
+                    0,
+                    0,
+                    msg.sender,
+                    block.timestamp
+                );
+            }
+        }
+
         require(lpAmount > 0, "LP Amount must > 0");
         require(
             getBondLeftSupplyLp(bondId) >= lpAmount,
@@ -158,9 +268,10 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
             receivingAddr[bondId] != address(0),
             "The receiving address of this bond has not been set"
         );
+        require(bondRate[bondId] > 0, "The rate of this bond has not been set");
+        require(bondTerm[bondId] > 0, "The term of this bond has not been set");
         require(block.timestamp < bondConclusion[bondId], "Bond concluded");
-
-        updateLpPrice(bondId);
+        require(lpAmount <= getBondMaxSize(bondId), "Max size exceeded");
 
         IERC20(address(LP[bondId])).safeTransferFrom(
             msg.sender,
@@ -197,7 +308,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
      * @dev Claim
      */
     function claim(uint256[] memory orderIds) external nonReentrant {
-        updateStPrice();
+        (address token0, address token1) = updateStPrice();
 
         uint256 usdPayout;
         for (uint256 i = 0; i < orderIds.length; i++) {
@@ -212,7 +323,10 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
 
         uint256 stPayout = (usdPayout * 1e18) / stPrice;
 
-        IERC20(STLP.token0()).safeTransfer(msg.sender, stPayout);
+        IERC20(token0 == BUSD || token0 == WBNB ? token1 : token0).safeTransfer(
+                msg.sender,
+                stPayout
+            );
 
         emit Claim(msg.sender, orderIds, usdPayout, stPrice, stPayout);
     }
@@ -328,16 +442,20 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     /**
      * @dev Update Lp Price
      */
-    function updateLpPrice(uint256 bondId) public {
+    function updateLpPrice(uint256 bondId) public returns (address, address) {
+        (address token0, address token1) = getLPTokensAddrs(LP[bondId]);
+
         if (
             block.timestamp >=
             lpPriceLastUpdateTime[bondId] + priceUpdateInterval
         ) {
-            (, uint112 reserve1, ) = LP[bondId].getReserves();
+            (uint112 reserve0, uint112 reserve1, ) = LP[bondId].getReserves();
             lpPriceArr[bondId][lpPriceCursor[bondId]] =
-                (2 * reserve1 * 1e18) /
+                (2 *
+                    (token0 == BUSD || token0 == WBNB ? reserve0 : reserve1) *
+                    1e18) /
                 LP[bondId].totalSupply();
-            if (LP[bondId].token1() == WBNB) {
+            if (token0 == WBNB || token1 == WBNB) {
                 address[] memory path = new address[](2);
                 path[0] = WBNB;
                 path[1] = BUSD;
@@ -362,24 +480,41 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
 
             lpPriceLastUpdateTime[bondId] = block.timestamp;
         }
+
+        emit UpdateLpPrice(LP[bondId], token0, token1, lpPrice[bondId]);
+
+        return (token0, token1);
     }
 
     /**
      * @dev Update ST Price
      */
-    function updateStPrice() public {
+    function updateStPrice() public returns (address, address) {
+        (address token0, address token1) = getLPTokensAddrs(STLP);
+
         if (block.timestamp >= stPriceLastUpdateTime + priceUpdateInterval) {
-            if (STLP.token1() == BUSD) {
-                address[] memory path = new address[](2);
-                path[0] = STLP.token0();
-                path[1] = BUSD;
-                stPriceArr[stPriceCursor] = router.getAmountsOut(1e18, path)[1];
-            } else {
+            if (token0 == WBNB) {
                 address[] memory path = new address[](3);
-                path[0] = STLP.token0();
+                path[0] = token1;
                 path[1] = WBNB;
                 path[2] = BUSD;
                 stPriceArr[stPriceCursor] = router.getAmountsOut(1e18, path)[2];
+            } else if (token1 == WBNB) {
+                address[] memory path = new address[](3);
+                path[0] = token0;
+                path[1] = WBNB;
+                path[2] = BUSD;
+                stPriceArr[stPriceCursor] = router.getAmountsOut(1e18, path)[2];
+            } else if (token0 == BUSD) {
+                address[] memory path = new address[](2);
+                path[0] = token1;
+                path[1] = BUSD;
+                stPriceArr[stPriceCursor] = router.getAmountsOut(1e18, path)[1];
+            } else {
+                address[] memory path = new address[](2);
+                path[0] = token0;
+                path[1] = BUSD;
+                stPriceArr[stPriceCursor] = router.getAmountsOut(1e18, path)[1];
             }
 
             stPriceCursor++;
@@ -397,6 +532,10 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
 
             stPriceLastUpdateTime = block.timestamp;
         }
+
+        emit UpdateStPrice(STLP, token0, token1, stPrice);
+
+        return (token0, token1);
     }
 
     /**
@@ -404,5 +543,25 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
      */
     function getBondLeftSupplyLp(uint256 bondId) public view returns (uint256) {
         return bondMaxSupplyLp[bondId] - bondSoldLpAmount[bondId];
+    }
+
+    /**
+     * @dev Get Bond Max Size
+     */
+    function getBondMaxSize(uint256 bondId) public view returns (uint256) {
+        return
+            (bondMaxSupplyLp[bondId] * 1 days) /
+            (bondConclusion[bondId] - block.timestamp);
+    }
+
+    /**
+     * @dev Get LP Tokens Addrs
+     */
+    function getLPTokensAddrs(IPancakePair lp)
+        public
+        view
+        returns (address, address)
+    {
+        return (lp.token0(), lp.token1());
     }
 }
