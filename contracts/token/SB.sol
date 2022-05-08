@@ -320,7 +320,7 @@ contract SB is
         }
 
         userHourlyBoxesLength[msg.sender][boxType][
-            block.timestamp / 3600
+            block.timestamp / 1 hours
         ] += amount;
         totalBoxesLength[boxType] += amount;
 
@@ -339,7 +339,7 @@ contract SB is
 
             safeTransferFrom(
                 msg.sender,
-                0x0000000000000000000000000000000000000020,
+                0x000000000000000000000000000000000000dEaD,
                 sbIds[i]
             );
         }
@@ -419,7 +419,7 @@ contract SB is
     ) public view returns (uint256) {
         return
             hourlyBuyLimits[boxType] -
-            userHourlyBoxesLength[user][boxType][timestamp / 3600];
+            userHourlyBoxesLength[user][boxType][timestamp / 1 hours];
     }
 
     /**
