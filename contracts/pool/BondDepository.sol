@@ -29,6 +29,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         IPancakeRouter(0x10ED43C718714eb63d5aA57B78B54704E256024E);
 
     uint256 public priceUpdateInterval = 5 minutes;
+    uint256 public baseRate = 10;
 
     IPancakePair public STLP;
     uint256 public stPrice;
@@ -40,9 +41,13 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     mapping(uint256 => IPancakePair) public LP;
     mapping(uint256 => address) public receivingAddr;
     mapping(uint256 => uint256) public bondMaxSupplyLp;
-    mapping(uint256 => uint256) public bondRate;
     mapping(uint256 => uint256) public bondTerm;
     mapping(uint256 => uint256) public bondConclusion;
+
+    mapping(uint256 => uint256) public bondRate;
+    mapping(uint256 => uint256) public bondRateCursor;
+    mapping(uint256 => uint256) public bondRateLastUpdateTime;
+    mapping(uint256 => uint256[12]) public bondRateArr;
 
     mapping(uint256 => uint256) public lpPrice;
     mapping(uint256 => uint256) public lpPriceCursor;
@@ -53,27 +58,30 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     mapping(address => uint256) public userOrderCount;
     mapping(address => mapping(uint256 => uint256)) public userOrderBondId;
     mapping(address => mapping(uint256 => uint256)) public userOrderLpAmount;
+    mapping(address => mapping(uint256 => uint256)) public userOrderLpPrice;
+    mapping(address => mapping(uint256 => uint256)) public userOrderBondRate;
     mapping(address => mapping(uint256 => uint256)) public userOrderUsdPayout;
     mapping(address => mapping(uint256 => uint256)) public userOrderExpiry;
     mapping(address => mapping(uint256 => uint256)) public userOrderClaimTime;
 
     event SetPriceUpdateInterval(uint256 interval);
+    event SetRate(uint256 baseRate);
     event SetSTLP(address stlpAddr);
     event CreateBond(
         uint256 bondId,
         address lpAddr,
         address receivingAddr,
         uint256 bondMaxSupplyLp,
-        uint256 bondRate,
         uint256 bondTerm,
         uint256 bondConclusion
     );
     event Bond(
         address indexed user,
-        uint256 bondId,
         uint256 orderId,
+        uint256 bondId,
         uint256 lpAmount,
         uint256 lpPrice,
+        uint256 bondRate,
         uint256 usdPayout,
         uint256 expiry
     );
@@ -83,6 +91,12 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         uint256 usdPayout,
         uint256 stPrice,
         uint256 stPayout
+    );
+    event UpdateBondRate(
+        IPancakePair lp,
+        address token0,
+        address token1,
+        uint256 bondRate
     );
     event UpdateLpPrice(
         IPancakePair lp,
@@ -118,6 +132,15 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     }
 
     /**
+     * @dev Set Rate
+     */
+    function setRate(uint256 _baseRate) external onlyRole(MANAGER_ROLE) {
+        baseRate = _baseRate;
+
+        emit SetRate(_baseRate);
+    }
+
+    /**
      * @dev Set ST LP
      */
     function setSTLP(address stlpAddr) external onlyRole(MANAGER_ROLE) {
@@ -133,14 +156,12 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         address lpAddr,
         address _receivingAddr,
         uint256 _bondMaxSupplyLp,
-        uint256 _bondRate,
         uint256 _bondTerm,
         uint256 _bondConclusion
     ) external onlyRole(MANAGER_ROLE) {
         LP[bondCount] = IPancakePair(lpAddr);
         receivingAddr[bondCount] = _receivingAddr;
         bondMaxSupplyLp[bondCount] = _bondMaxSupplyLp;
-        bondRate[bondCount] = _bondRate;
         bondTerm[bondCount] = _bondTerm;
         bondConclusion[bondCount] = _bondConclusion;
 
@@ -149,7 +170,6 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
             lpAddr,
             _receivingAddr,
             _bondMaxSupplyLp,
-            _bondRate,
             _bondTerm,
             _bondConclusion
         );
@@ -166,6 +186,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         uint256 token1Amount,
         uint256 lpAmount
     ) external payable nonReentrant {
+        updateBondRate(bondId);
         (address token0, address token1) = updateLpPrice(bondId);
 
         if (lpAmount == 0) {
@@ -280,12 +301,20 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         );
 
         uint256 expiry = bondTerm[bondId] + block.timestamp;
-        uint256 usdPayout = (lpPrice[bondId] * lpAmount * bondRate[bondId]) /
+        uint256 usdPayout = (lpAmount *
+            lpPrice[bondId] *
+            (1e4 + bondRate[bondId])) /
             1e18 /
             1e4;
 
         userOrderBondId[msg.sender][userOrderCount[msg.sender]] = bondId;
         userOrderLpAmount[msg.sender][userOrderCount[msg.sender]] = lpAmount;
+        userOrderLpPrice[msg.sender][userOrderCount[msg.sender]] = lpPrice[
+            bondId
+        ];
+        userOrderBondRate[msg.sender][userOrderCount[msg.sender]] = bondRate[
+            bondId
+        ];
         userOrderUsdPayout[msg.sender][userOrderCount[msg.sender]] = usdPayout;
         userOrderExpiry[msg.sender][userOrderCount[msg.sender]] = expiry;
 
@@ -293,10 +322,11 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
 
         emit Bond(
             msg.sender,
-            bondId,
             userOrderCount[msg.sender],
+            bondId,
             lpAmount,
             lpPrice[bondId],
+            bondRate[bondId],
             usdPayout,
             expiry
         );
@@ -440,6 +470,53 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     }
 
     /**
+     * @dev Update Bond Rate
+     */
+    function updateBondRate(uint256 bondId) public {
+        (address token0, address token1) = getLPTokensAddrs(LP[bondId]);
+
+        if (
+            block.timestamp >=
+            bondRateLastUpdateTime[bondId] + priceUpdateInterval
+        ) {
+            (uint112 reserve0, uint112 reserve1, ) = LP[bondId].getReserves();
+            if (token0 == WBNB || token1 == WBNB) {
+                address[] memory path = new address[](2);
+                path[0] = WBNB;
+                path[1] = BUSD;
+                uint256 wbnbPrice = router.getAmountsOut(1e18, path)[1];
+                if (token0 == WBNB) {
+                    reserve0 = uint112((reserve0 * wbnbPrice) / 1e18);
+                } else {
+                    reserve1 = uint112((reserve1 * wbnbPrice) / 1e18);
+                }
+            }
+            bondRateArr[bondId][bondRateCursor[bondId]] =
+                (((2 *
+                    (token0 == BUSD || token0 == WBNB ? reserve0 : reserve1)) /
+                    1e22) * baseRate) +
+                100;
+
+            bondRateCursor[bondId]++;
+            if (bondRateCursor[bondId] == 12) bondRateCursor[bondId] = 0;
+
+            uint256 sum;
+            uint256 count;
+            for (uint256 i = 0; i < 12; i++) {
+                if (bondRateArr[bondId][i] > 0) {
+                    sum += bondRateArr[bondId][i];
+                    count++;
+                }
+            }
+            bondRate[bondId] = sum / count;
+
+            bondRateLastUpdateTime[bondId] = block.timestamp;
+        }
+
+        emit UpdateBondRate(LP[bondId], token0, token1, bondRate[bondId]);
+    }
+
+    /**
      * @dev Update Lp Price
      */
     function updateLpPrice(uint256 bondId) public returns (address, address) {
@@ -470,7 +547,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
 
             uint256 sum;
             uint256 count;
-            for (uint256 i = 0; i < 10; i++) {
+            for (uint256 i = 0; i < 12; i++) {
                 if (lpPriceArr[bondId][i] > 0) {
                     sum += lpPriceArr[bondId][i];
                     count++;
@@ -522,7 +599,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
 
             uint256 sum;
             uint256 count;
-            for (uint256 i = 0; i < 10; i++) {
+            for (uint256 i = 0; i < 12; i++) {
                 if (stPriceArr[i] > 0) {
                     sum += stPriceArr[i];
                     count++;
