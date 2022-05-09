@@ -22,7 +22,11 @@ contract SRDeposit is AccessControlEnumerable, ReentrancyGuard {
     mapping(address => uint256) public userDepositAmount;
 
     event SetAddrs(address treasury, address srAddr);
-    event Deposit(address indexed user, uint256 amount);
+    event Deposit(
+        address indexed operator,
+        address indexed user,
+        uint256 amount
+    );
 
     /**
      * @param manager Initialize Manager Role
@@ -48,11 +52,11 @@ contract SRDeposit is AccessControlEnumerable, ReentrancyGuard {
     /**
      * @dev Deposit
      */
-    function deposit(uint256 amount) external nonReentrant {
+    function deposit(address user, uint256 amount) external nonReentrant {
         sr.safeTransferFrom(msg.sender, treasury, amount);
 
-        userDepositAmount[msg.sender] += amount;
+        userDepositAmount[user] += amount;
 
-        emit Deposit(msg.sender, amount);
+        emit Deposit(msg.sender, user, amount);
     }
 }
