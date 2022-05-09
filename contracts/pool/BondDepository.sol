@@ -467,11 +467,11 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
                 100;
 
             note.cursor++;
-            if (note.cursor == 12) note.cursor = 0;
+            if (note.cursor == note.valueArr.length) note.cursor = 0;
 
             uint256 sum;
             uint256 count;
-            for (uint256 i = 0; i < 12; i++) {
+            for (uint256 i = 0; i < note.valueArr.length; i++) {
                 if (note.valueArr[i] > 0) {
                     sum += note.valueArr[i];
                     count++;
@@ -512,11 +512,11 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
             }
 
             note.cursor++;
-            if (note.cursor == 12) note.cursor = 0;
+            if (note.cursor == note.valueArr.length) note.cursor = 0;
 
             uint256 sum;
             uint256 count;
-            for (uint256 i = 0; i < 12; i++) {
+            for (uint256 i = 0; i < note.valueArr.length; i++) {
                 if (note.valueArr[i] > 0) {
                     sum += note.valueArr[i];
                     count++;
@@ -576,11 +576,11 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
             }
 
             stPrice.cursor++;
-            if (stPrice.cursor == 12) stPrice.cursor = 0;
+            if (stPrice.cursor == stPrice.valueArr.length) stPrice.cursor = 0;
 
             uint256 sum;
             uint256 count;
-            for (uint256 i = 0; i < 12; i++) {
+            for (uint256 i = 0; i < stPrice.valueArr.length; i++) {
                 if (stPrice.valueArr[i] > 0) {
                     sum += stPrice.valueArr[i];
                     count++;
