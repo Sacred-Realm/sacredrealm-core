@@ -18,7 +18,7 @@ contract SR is ERC20, AccessControlEnumerable {
     mapping(address => uint256) private _balances;
 
     address public treasury;
-    uint256 public fee = 1;
+    uint256 public fee = 100;
 
     event SetTreasury(address treasury);
     event SetWhiteList(address addr, bool isFeeExempt);
@@ -70,7 +70,7 @@ contract SR is ERC20, AccessControlEnumerable {
         uint256 fromBalance;
 
         if (!isFeeExempt[from]) {
-            uint256 feeAmount = (amount * fee) / 100;
+            uint256 feeAmount = (amount * fee) / 1e4;
 
             fromBalance = _balances[from];
             require(
