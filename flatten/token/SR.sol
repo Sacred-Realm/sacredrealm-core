@@ -1451,8 +1451,10 @@ contract SR is ERC20, AccessControlEnumerable {
 
     bytes32 public constant MANAGER_ROLE = keccak256("MANAGER_ROLE");
 
-    mapping(address => bool) isFeeExempt;
+    uint256 private _totalSupply;
     mapping(address => uint256) private _balances;
+
+    mapping(address => bool) public isFeeExempt;
 
     address public treasury;
     uint256 public fee = 100;
@@ -1516,6 +1518,35 @@ contract SR is ERC20, AccessControlEnumerable {
         _spendAllowance(from, spender, amount);
         _transfer(from, to, amount);
         return true;
+    }
+
+    /**
+     * @dev Total Supply
+     */
+    function totalSupply() public view override returns (uint256) {
+        return _totalSupply;
+    }
+
+    /**
+     * @dev Balance Of
+     */
+    function balanceOf(address account) public view override returns (uint256) {
+        return _balances[account];
+    }
+
+    /**
+     * @dev Creates `amount` tokens and assigns them to `account`, increasing
+     */
+    function _mint(address account, uint256 amount) internal override {
+        require(account != address(0), "ERC20: mint to the zero address");
+
+        _beforeTokenTransfer(address(0), account, amount);
+
+        _totalSupply += amount;
+        _balances[account] += amount;
+        emit Transfer(address(0), account, amount);
+
+        _afterTokenTransfer(address(0), account, amount);
     }
 
     /**
