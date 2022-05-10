@@ -55,13 +55,40 @@ contract SR is ERC20, AccessControlEnumerable {
     }
 
     /**
+     * @dev Transfer
+     */
+    function transfer(address to, uint256 amount)
+        public
+        override
+        returns (bool)
+    {
+        address owner = _msgSender();
+        _transfer(owner, to, amount);
+        return true;
+    }
+
+    /**
+     * @dev Transfer From
+     */
+    function transferFrom(
+        address from,
+        address to,
+        uint256 amount
+    ) public override returns (bool) {
+        address spender = _msgSender();
+        _spendAllowance(from, spender, amount);
+        _transfer(from, to, amount);
+        return true;
+    }
+
+    /**
      * @dev Moves `amount` of tokens from `sender` to `recipient`.
      */
     function _transfer(
         address from,
         address to,
         uint256 amount
-    ) internal virtual override {
+    ) internal override {
         require(from != address(0), "ERC20: transfer from the zero address");
         require(to != address(0), "ERC20: transfer to the zero address");
 
