@@ -2,7 +2,7 @@
 
 // File @openzeppelin/contracts/token/ERC20/IERC20.sol@v4.5.0
 
-// SPDX-License-Identifier: MIT
+
 // OpenZeppelin Contracts (last updated v4.5.0) (token/ERC20/IERC20.sol)
 
 pragma solidity ^0.8.0;
@@ -1416,9 +1416,24 @@ abstract contract ReentrancyGuard {
 }
 
 
+// File contracts/token/interface/ISR.sol
+
+
+pragma solidity >=0.8.12;
+/**
+ * @title SR Interface
+ * @author SEALEM-LAB
+ * @notice Interface of the SR
+ */
+abstract contract ISR is IERC20 {
+    uint256 public fee;
+    mapping(address => bool) public isFeeExempt;
+}
+
+
 // File contracts/tool/SRDeposit.sol
 
-
+// SPDX-License-Identifier: MIT
 pragma solidity >=0.8.12;
 /**
  * @title Sacred Realm Deposit Contract
@@ -1426,10 +1441,10 @@ pragma solidity >=0.8.12;
  * @notice In this contract, players can recharge SR into the game Sacred Realm
  */
 contract SRDeposit is AccessControlEnumerable, ReentrancyGuard {
-    using SafeERC20 for IERC20;
+    using SafeERC20 for ISR;
 
     address public treasury;
-    IERC20 public sr;
+    ISR public sr;
 
     bytes32 public constant MANAGER_ROLE = keccak256("MANAGER_ROLE");
 
@@ -1458,7 +1473,7 @@ contract SRDeposit is AccessControlEnumerable, ReentrancyGuard {
         onlyRole(MANAGER_ROLE)
     {
         treasury = _treasury;
-        sr = IERC20(srAddr);
+        sr = ISR(srAddr);
 
         emit SetAddrs(_treasury, srAddr);
     }
@@ -1469,6 +1484,10 @@ contract SRDeposit is AccessControlEnumerable, ReentrancyGuard {
     function deposit(address user, uint256 amount) external nonReentrant {
         sr.safeTransferFrom(msg.sender, treasury, amount);
 
+        if (!sr.isFeeExempt(msg.sender)) {
+            uint256 feeAmount = (amount * sr.fee()) / 1e4;
+            amount -= feeAmount;
+        }
         userDepositAmount[user] += amount;
 
         emit Deposit(msg.sender, user, amount);

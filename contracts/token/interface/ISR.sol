@@ -8,6 +8,7 @@ import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
  * @author SEALEM-LAB
  * @notice Interface of the SR
  */
-interface ISR is IERC20 {
-    
+abstract contract ISR is IERC20 {
+    uint256 public fee;
+    mapping(address => bool) public isFeeExempt;
 }
