@@ -1721,6 +1721,8 @@ contract SRWithdraw is AccessControlEnumerable, ReentrancyGuard {
      * @dev Set Fee
      */
     function setFee(uint256 _fee) external onlyRole(MANAGER_ROLE) {
+        require(_fee <= 5000, "The fee ratio cannot exceed 50%");
+
         fee = _fee;
 
         emit SetFee(_fee);
