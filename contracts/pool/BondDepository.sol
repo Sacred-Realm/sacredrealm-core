@@ -436,6 +436,49 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     }
 
     /**
+     * @dev Get Markets Length
+     */
+    function getMarketsLength() external view returns (uint256) {
+        return markets.length;
+    }
+
+    /**
+     * @dev Get User Orders Length
+     */
+    function getUserOrdersLength(address user) external view returns (uint256) {
+        return orders[user].length;
+    }
+
+    /**
+     * @dev Get ST Price Value Arr
+     */
+    function getSTPriceValueArr() external view returns (uint256[12] memory) {
+        return stPrice.valueArr;
+    }
+
+    /**
+     * @dev Get Bond Rate Value Arr
+     */
+    function getBondRateValueArr(uint256 bondId)
+        external
+        view
+        returns (uint256[12] memory)
+    {
+        return bondRates[bondId].valueArr;
+    }
+
+    /**
+     * @dev Get LP Price Value Arr
+     */
+    function getLpPriceValueArr(uint256 bondId)
+        external
+        view
+        returns (uint256[12] memory)
+    {
+        return lpPrices[bondId].valueArr;
+    }
+
+    /**
      * @dev Update Bond Rate
      */
     function updateBondRate(uint256 bondId) public {
