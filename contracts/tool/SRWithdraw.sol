@@ -20,37 +20,17 @@ contract SRWithdraw is AccessControlEnumerable, ReentrancyGuard {
     ISR public sr;
 
     uint256 public fee = 500;
-    uint256 public requestInterval = 5 minutes;
-    uint256 public minRequestAmount = 1e5 * 1e18;
 
     bytes32 public constant MANAGER_ROLE = keccak256("MANAGER_ROLE");
 
-    struct Request {
-        uint256 amount;
-        bytes32 message;
-        uint256 claimTime;
-    }
-    mapping(address => Request[]) public requests;
-
-    mapping(address => uint256) public userLastRequestTime;
-    mapping(address => uint256) public userWithdrawAmount;
+    mapping(address => mapping(uint256 => bool)) usedNonces;
 
     event SetAddrs(address treasury, address verifier, address srAddr);
-    event SetData(
-        uint256 fee,
-        uint256 requestInterval,
-        uint256 minRequestAmount
-    );
-    event RequestWithdrawal(
-        address indexed user,
-        uint256 requestId,
-        uint256 amount,
-        bytes32 message
-    );
+    event SetFee(uint256 fee);
     event Withdraw(
         address indexed user,
-        uint256 requestId,
         uint256 amount,
+        uint256 nonce,
         bytes signature
     );
 
@@ -78,94 +58,48 @@ contract SRWithdraw is AccessControlEnumerable, ReentrancyGuard {
     }
 
     /**
-     * @dev Set Data
+     * @dev Set Fee
      */
-    function setData(
-        uint256 _fee,
-        uint256 _requestInterval,
-        uint256 _minRequestAmount
-    ) external onlyRole(MANAGER_ROLE) {
+    function setFee(uint256 _fee) external onlyRole(MANAGER_ROLE) {
         fee = _fee;
-        requestInterval = _requestInterval;
-        minRequestAmount = _minRequestAmount;
 
-        emit SetData(_fee, _requestInterval, _minRequestAmount);
+        emit SetFee(_fee);
     }
 
     /**
-     * @dev Request Withdrawal
+     * @dev Claim Payment
      */
-    function requestWithdrawal(uint256 amount) external nonReentrant {
+    function claimPayment(
+        uint256 amount,
+        uint256 nonce,
+        bytes memory signature
+    ) external nonReentrant {
         require(
-            amount >= minRequestAmount,
-            "Amount must >= min request amount"
+            !usedNonces[msg.sender][nonce],
+            "You have already withdrawn this payment"
         );
-        require(
-            block.timestamp >=
-                userLastRequestTime[msg.sender] + requestInterval,
-            "Requests are too frequent"
-        );
+        usedNonces[msg.sender][nonce] = true;
 
         bytes32 message = ECDSA.toEthSignedMessageHash(
-            abi.encodePacked(msg.sender, requests[msg.sender].length, amount)
+            keccak256(abi.encodePacked(msg.sender, amount, nonce, this))
         );
 
-        requests[msg.sender].push(
-            Request({amount: amount, message: message, claimTime: 0})
-        );
-
-        userLastRequestTime[msg.sender] = block.timestamp;
-
-        emit RequestWithdrawal(
-            msg.sender,
-            requests[msg.sender].length - 1,
-            amount,
-            message
-        );
-    }
-
-    /**
-     * @dev Withdraw
-     */
-    function withdraw(uint256 requestId, bytes memory signature)
-        external
-        nonReentrant
-    {
-        Request storage request = requests[msg.sender][requestId];
         (address _verifier, ECDSA.RecoverError recoverError) = ECDSA.tryRecover(
-            request.message,
+            message,
             signature
         );
 
-        require(
-            request.claimTime == 0,
-            "You have already withdrawn this request"
-        );
         require(
             recoverError == ECDSA.RecoverError.NoError && _verifier == verifier,
             "Signature verification failed"
         );
 
-        request.claimTime = block.timestamp;
-
-        uint256 feeAmount = (request.amount * fee) / 1e4;
-        uint256 amount = request.amount - feeAmount;
+        uint256 feeAmount = (amount * fee) / 1e4;
         sr.safeTransfer(treasury, feeAmount);
+
+        amount -= feeAmount;
         sr.safeTransfer(msg.sender, amount);
 
-        userWithdrawAmount[msg.sender] += amount;
-
-        emit Withdraw(msg.sender, requestId, amount, signature);
-    }
-
-    /**
-     * @dev Get User Requests Length
-     */
-    function getUserRequestsLength(address user)
-        external
-        view
-        returns (uint256)
-    {
-        return requests[user].length;
+        emit Withdraw(msg.sender, amount, nonce, signature);
     }
 }
