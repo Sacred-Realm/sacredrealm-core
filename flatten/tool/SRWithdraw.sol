@@ -1792,6 +1792,8 @@ contract SRWithdraw is AccessControlEnumerable, ReentrancyGuard {
         amount -= feeAmount;
         sr.safeTransfer(msg.sender, amount);
 
+        lastWithdrawTime[msg.sender] = block.timestamp;
+
         emit Withdraw(msg.sender, amount, nonce, signature);
     }
 }
