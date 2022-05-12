@@ -1680,13 +1680,22 @@ contract SRWithdraw is AccessControlEnumerable, ReentrancyGuard {
     ISR public sr;
 
     uint256 public fee = 500;
+    uint256 public withdrawInterval = 5 minutes;
+    uint256 public minWithdrawAmount = 1e5 * 1e18;
+    uint256 public maxWithdrawAmount = 1e8 * 1e18;
 
     bytes32 public constant MANAGER_ROLE = keccak256("MANAGER_ROLE");
 
     mapping(address => mapping(uint256 => bool)) usedNonces;
+    mapping(address => uint256) public lastWithdrawTime;
 
     event SetAddrs(address treasury, address verifier, address srAddr);
-    event SetFee(uint256 fee);
+    event SetData(
+        uint256 fee,
+        uint256 withdrawInterval,
+        uint256 minWithdrawAmount,
+        uint256 maxWithdrawAmount
+    );
     event Withdraw(
         address indexed user,
         uint256 amount,
@@ -1718,14 +1727,25 @@ contract SRWithdraw is AccessControlEnumerable, ReentrancyGuard {
     }
 
     /**
-     * @dev Set Fee
+     * @dev Set Data
      */
-    function setFee(uint256 _fee) external onlyRole(MANAGER_ROLE) {
-        require(_fee <= 5000, "The fee ratio cannot exceed 50%");
-
+    function setData(
+        uint256 _fee,
+        uint256 _withdrawInterval,
+        uint256 _minWithdrawAmount,
+        uint256 _maxWithdrawAmount
+    ) external onlyRole(MANAGER_ROLE) {
         fee = _fee;
+        withdrawInterval = _withdrawInterval;
+        minWithdrawAmount = _minWithdrawAmount;
+        maxWithdrawAmount = _maxWithdrawAmount;
 
-        emit SetFee(_fee);
+        emit SetData(
+            _fee,
+            _withdrawInterval,
+            _maxWithdrawAmount,
+            _maxWithdrawAmount
+        );
     }
 
     /**
@@ -1737,6 +1757,18 @@ contract SRWithdraw is AccessControlEnumerable, ReentrancyGuard {
         bytes memory signature
     ) external nonReentrant {
         require(
+            amount >= minWithdrawAmount,
+            "Amount must >= min withdraw amount"
+        );
+        require(
+            amount <= maxWithdrawAmount,
+            "Amount must <= max withdraw amount"
+        );
+        require(
+            block.timestamp >= lastWithdrawTime[msg.sender] + withdrawInterval,
+            "Withdrawals are too frequent"
+        );
+        require(
             !usedNonces[msg.sender][nonce],
             "You have already withdrawn this payment"
         );
@@ -1745,12 +1777,10 @@ contract SRWithdraw is AccessControlEnumerable, ReentrancyGuard {
         bytes32 message = ECDSA.toEthSignedMessageHash(
             keccak256(abi.encodePacked(msg.sender, amount, nonce, this))
         );
-
         (address _verifier, ECDSA.RecoverError recoverError) = ECDSA.tryRecover(
             message,
             signature
         );
-
         require(
             recoverError == ECDSA.RecoverError.NoError && _verifier == verifier,
             "Signature verification failed"
