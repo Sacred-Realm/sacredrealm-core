@@ -1735,6 +1735,8 @@ contract SRWithdraw is AccessControlEnumerable, ReentrancyGuard {
         uint256 _minWithdrawAmount,
         uint256 _maxWithdrawAmount
     ) external onlyRole(MANAGER_ROLE) {
+        require(_fee <= 5000, "The fee ratio cannot exceed 50%");
+
         fee = _fee;
         withdrawInterval = _withdrawInterval;
         minWithdrawAmount = _minWithdrawAmount;
