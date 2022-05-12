@@ -26,7 +26,7 @@ contract SRWithdraw is AccessControlEnumerable, ReentrancyGuard {
 
     bytes32 public constant MANAGER_ROLE = keccak256("MANAGER_ROLE");
 
-    mapping(address => mapping(uint256 => bool)) usedNonces;
+    mapping(address => mapping(uint256 => bool)) public usedNonces;
     mapping(address => uint256) public lastWithdrawTime;
 
     event SetAddrs(address treasury, address verifier, address srAddr);
