@@ -7,6 +7,7 @@ import "@openzeppelin/contracts/access/AccessControlEnumerable.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "../tool/interface/IPancakePair.sol";
 import "../tool/interface/IPancakeRouter.sol";
+import "./interface/IInviting.sol";
 
 /**
  * @title Bond Depository
@@ -29,11 +30,22 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         IPancakeRouter(0x10ED43C718714eb63d5aA57B78B54704E256024E);
 
     uint256 public priceUpdateInterval = 5 minutes;
-    uint256 public baseRate = 10;
-    uint256 public taxRate = 10;
+
+    uint256 public bondDynamicRate = 10;
+    uint256 public bondBaseRate = 100;
+
+    uint256 public inviteBuyDynamicRate = 10;
+    uint256 public stakeDynamicRate = 10;
+    uint256 public inviteStakeDynamicRate = 10;
+    uint256 public extraMaxRate = 3000;
+
+    uint256 public taxDynamicRate = 10;
+    uint256 public taxBaseRate = 100;
+    uint256 public taxMaxRate = 5000;
 
     address public treasury;
     IPancakePair public STLP;
+    IInviting public inviting;
 
     struct Note {
         uint256 value;
@@ -61,6 +73,8 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         uint256 lpPrice;
         uint256 taxRate;
         uint256 bondRate;
+        uint256 inviteBuyRate;
+        uint256 extraRate;
         uint256 usdPayout;
         uint256 expiry;
         uint256 claimTime;
@@ -69,10 +83,22 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
 
     mapping(address => mapping(uint256 => uint256))
         public userMonthlyUsdPayinBeforeTax;
+    mapping(address => mapping(uint256 => uint256))
+        public affiliateMonthlyUsdPayinBeforeTax;
 
     event SetPriceUpdateInterval(uint256 interval);
-    event SetRate(uint256 baseRate, uint256 taxRate);
-    event SetAddrs(address treasury, address stlpAddr);
+    event SetRate(
+        uint256 bondDynamicRate,
+        uint256 bondBaseRate,
+        uint256 inviteBuyDynamicRate,
+        uint256 stakeDynamicRate,
+        uint256 inviteStakeDynamicRate,
+        uint256 extraMaxRate,
+        uint256 taxDynamicRate,
+        uint256 taxBaseRate,
+        uint256 taxMaxRate
+    );
+    event SetAddrs(address treasury, address stlpAddr, address invitingAddr);
     event Create(
         uint256 bondId,
         address lpAddr,
@@ -89,6 +115,8 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         uint256 lpPrice,
         uint256 userTaxRate,
         uint256 bondRate,
+        uint256 inviteBuyRate,
+        uint256 extraRate,
         uint256 usdPayout,
         uint256 expiry
     );
@@ -141,27 +169,53 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     /**
      * @dev Set Rate
      */
-    function setRate(uint256 _baseRate, uint256 _taxRate)
-        external
-        onlyRole(MANAGER_ROLE)
-    {
-        baseRate = _baseRate;
-        taxRate = _taxRate;
+    function setRate(
+        uint256 _bondDynamicRate,
+        uint256 _bondBaseRate,
+        uint256 _inviteBuyDynamicRate,
+        uint256 _stakeDynamicRate,
+        uint256 _inviteStakeDynamicRate,
+        uint256 _extraMaxRate,
+        uint256 _taxDynamicRate,
+        uint256 _taxBaseRate,
+        uint256 _taxMaxRate
+    ) external onlyRole(MANAGER_ROLE) {
+        bondDynamicRate = _bondDynamicRate;
+        bondBaseRate = _bondBaseRate;
+        inviteBuyDynamicRate = _inviteBuyDynamicRate;
+        stakeDynamicRate = _stakeDynamicRate;
+        inviteStakeDynamicRate = _inviteStakeDynamicRate;
+        extraMaxRate = _extraMaxRate;
+        taxDynamicRate = _taxDynamicRate;
+        taxBaseRate = _taxBaseRate;
+        taxMaxRate = _taxMaxRate;
 
-        emit SetRate(_baseRate, _taxRate);
+        emit SetRate(
+            _bondDynamicRate,
+            _bondBaseRate,
+            _inviteBuyDynamicRate,
+            _stakeDynamicRate,
+            _inviteStakeDynamicRate,
+            _extraMaxRate,
+            _taxDynamicRate,
+            _taxBaseRate,
+            _taxMaxRate
+        );
     }
 
     /**
      * @dev Set Addrs
      */
-    function setAddrs(address _treasury, address stlpAddr)
-        external
-        onlyRole(MANAGER_ROLE)
-    {
+    function setAddrs(
+        address _treasury,
+        address stlpAddr,
+        address invitingAddr
+    ) external onlyRole(MANAGER_ROLE) {
         treasury = _treasury;
         STLP = IPancakePair(stlpAddr);
+        inviting = IInviting(invitingAddr);
 
-        emit SetAddrs(_treasury, stlpAddr);
+        emit SetAddrs(_treasury, stlpAddr, invitingAddr);
     }
 
     /**
@@ -202,7 +256,8 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         uint256 bondId,
         uint256 token0Amount,
         uint256 token1Amount,
-        uint256 lpAmount
+        uint256 lpAmount,
+        address inviter
     ) external payable nonReentrant {
         updateBondRate(bondId);
         (address token0, address token1) = updateLpPrice(bondId);
@@ -298,7 +353,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
             }
         }
 
-        bond(bondId, lpAmount);
+        bond(bondId, lpAmount, inviter);
     }
 
     /**
@@ -506,8 +561,8 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
                 ((2 *
                     (token0 == BUSD || token0 == WBNB ? reserve0 : reserve1)) /
                     1e22) *
-                baseRate +
-                100;
+                bondDynamicRate +
+                bondBaseRate;
 
             note.cursor++;
             if (note.cursor == note.valueArr.length) note.cursor = 0;
@@ -667,21 +722,47 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     }
 
     /**
+     * @dev Get User Invite Buy Rate
+     */
+    function getUserInviteBuyRate(address user) public view returns (uint256) {
+        uint256 lastMonthrate = (affiliateMonthlyUsdPayinBeforeTax[user][
+            (block.timestamp - 30 days) / 30 days
+        ] / 1e21) * inviteBuyDynamicRate;
+        uint256 currentMonthrate = (affiliateMonthlyUsdPayinBeforeTax[user][
+            block.timestamp / 30 days
+        ] / 1e21) * inviteBuyDynamicRate;
+        return
+            lastMonthrate > currentMonthrate ? lastMonthrate : currentMonthrate;
+    }
+
+    /**
+     * @dev Get User Extra Rate
+     */
+    function getUserExtraRate(address user) public view returns (uint256) {
+        uint256 rate = getUserInviteBuyRate(user);
+        return rate > extraMaxRate ? extraMaxRate : rate;
+    }
+
+    /**
      * @dev Get User Tax Rate
      */
     function getUserTaxRate(address user) public view returns (uint256) {
         uint256 rate = (userMonthlyUsdPayinBeforeTax[user][
             block.timestamp / 30 days
         ] / 1e21) *
-            taxRate +
-            100;
-        return rate > 5000 ? 5000 : rate;
+            taxDynamicRate +
+            taxBaseRate;
+        return rate > taxMaxRate ? taxMaxRate : rate;
     }
 
     /**
      * @dev Bond
      */
-    function bond(uint256 bondId, uint256 lpAmount) private {
+    function bond(
+        uint256 bondId,
+        uint256 lpAmount,
+        address inviter
+    ) private {
         Market storage market = markets[bondId];
         Note memory lpPrice = lpPrices[bondId];
         Note memory bondRate = bondRates[bondId];
@@ -699,9 +780,17 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         require(block.timestamp < market.conclusion, "Bond concluded");
         require(lpAmount <= getBondMaxSize(bondId), "Max size exceeded");
 
-        userMonthlyUsdPayinBeforeTax[msg.sender][block.timestamp / 30 days] +=
-            (lpAmount * lpPrice.value) /
-            1e18;
+        uint256 UsdPayinBeforeTax = (lpAmount * lpPrice.value) / 1e18;
+        userMonthlyUsdPayinBeforeTax[msg.sender][
+            block.timestamp / 30 days
+        ] += UsdPayinBeforeTax;
+
+        address userInviter = inviting.bindInviter(inviter);
+        if (userInviter != address(0)) {
+            affiliateMonthlyUsdPayinBeforeTax[userInviter][
+                block.timestamp / 30 days
+            ] += UsdPayinBeforeTax;
+        }
 
         uint256 userTaxRate = getUserTaxRate(msg.sender);
         uint256 lpAmountTax = (lpAmount * userTaxRate) / 1e4;
@@ -718,9 +807,10 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
             lpAmountPay
         );
 
+        uint256 userExtraRate = getUserExtraRate(msg.sender);
         uint256 usdPayout = (lpAmountPay *
             lpPrice.value *
-            (1e4 + bondRate.value)) /
+            (1e4 + bondRate.value + userExtraRate)) /
             1e18 /
             1e4;
 
@@ -730,11 +820,12 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
             lpPrice: lpPrice.value,
             taxRate: userTaxRate,
             bondRate: bondRate.value,
+            inviteBuyRate: getUserInviteBuyRate(msg.sender),
+            extraRate: userExtraRate,
             usdPayout: usdPayout,
             expiry: market.term + block.timestamp,
             claimTime: 0
         });
-
         orders[msg.sender].push(order);
 
         market.soldLpAmount += lpAmount;
@@ -746,6 +837,8 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
             order.lpAmount,
             order.lpPrice,
             order.taxRate,
+            order.inviteBuyRate,
+            order.extraRate,
             order.bondRate,
             order.usdPayout,
             order.expiry
