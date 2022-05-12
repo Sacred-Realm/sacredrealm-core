@@ -1687,7 +1687,7 @@ contract SRWithdraw is AccessControlEnumerable, ReentrancyGuard {
     bytes32 public constant MANAGER_ROLE = keccak256("MANAGER_ROLE");
 
     mapping(address => mapping(uint256 => bool)) public usedNonces;
-    mapping(address => uint256) public lastWithdrawTime;
+    mapping(address => uint256) public nextWithdrawTime;
 
     event SetAddrs(address treasury, address verifier, address srAddr);
     event SetData(
@@ -1767,7 +1767,7 @@ contract SRWithdraw is AccessControlEnumerable, ReentrancyGuard {
             "Amount must <= max withdraw amount"
         );
         require(
-            block.timestamp >= lastWithdrawTime[msg.sender] + withdrawInterval,
+            block.timestamp >= nextWithdrawTime[msg.sender],
             "Withdrawals are too frequent"
         );
         require(
@@ -1794,8 +1794,15 @@ contract SRWithdraw is AccessControlEnumerable, ReentrancyGuard {
         amount -= feeAmount;
         sr.safeTransfer(msg.sender, amount);
 
-        lastWithdrawTime[msg.sender] = block.timestamp;
+        nextWithdrawTime[msg.sender] = block.timestamp + withdrawInterval;
 
         emit Withdraw(msg.sender, amount, nonce, signature);
+    }
+
+    /**
+     * @dev Check Claimable
+     */
+    function checkClaimable(address user) external view returns (bool) {
+        return block.timestamp >= nextWithdrawTime[user];
     }
 }
