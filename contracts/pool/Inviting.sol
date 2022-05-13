@@ -9,8 +9,6 @@ import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
  * @notice In this contract user can bind inviter
  */
 contract Inviting is ReentrancyGuard {
-    bytes32 public constant MANAGER_ROLE = keccak256("MANAGER_ROLE");
-
     mapping(address => address) public userInviter;
 
     event BindInviter(address indexed user, address inviter);
