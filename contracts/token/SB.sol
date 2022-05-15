@@ -438,7 +438,14 @@ contract SB is
 
         return
             bytes(baseURI).length > 0
-                ? string(abi.encodePacked(baseURI, tokenId.toString(), ".json"))
+                ? string(
+                    abi.encodePacked(
+                        baseURI,
+                        tokenId.toString(),
+                        "-",
+                        sbIdToType[tokenId].toString()
+                    )
+                )
                 : "";
     }
 
