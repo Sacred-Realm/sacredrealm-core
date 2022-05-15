@@ -5,6 +5,7 @@ import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import "@openzeppelin/contracts/access/AccessControlEnumerable.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import "@chainlink/contracts/src/v0.8/KeeperCompatible.sol";
 import "../tool/interface/IPancakePair.sol";
 import "../tool/interface/IPancakeRouter.sol";
 import "./interface/IInviting.sol";
@@ -15,7 +16,11 @@ import "./interface/ISTStaking.sol";
  * @author SEALEM-LAB
  * @notice Contract to supply Bond
  */
-contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
+contract BondDepository is
+    AccessControlEnumerable,
+    ReentrancyGuard,
+    KeeperCompatibleInterface
+{
     using SafeERC20 for IERC20;
 
     bytes32 public constant MANAGER_ROLE = keccak256("MANAGER_ROLE");
@@ -29,6 +34,9 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     // testnet: 0x9Ac64Cc6e4415144C455BD8E4837Fea55603e5c3
     IPancakeRouter public router =
         IPancakeRouter(0x10ED43C718714eb63d5aA57B78B54704E256024E);
+
+    // testnet: 30 minutes
+    uint256 public epoch = 30 days;
 
     uint256 public priceUpdateInterval = 5 minutes;
 
@@ -56,7 +64,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         uint256[12] valueArr;
     }
     Note public stPrice;
-    Note[] public bondRates;
+    Note[] public lpLiquidity;
     Note[] public lpPrices;
 
     struct Market {
@@ -132,11 +140,11 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         uint256 stPrice,
         uint256 stPayout
     );
-    event UpdateBondRate(
+    event UpdateLpLiquidity(
         IPancakePair lp,
         address token0,
         address token1,
-        uint256 bondRate
+        uint256 liquidity
     );
     event UpdateLpPrice(
         IPancakePair lp,
@@ -266,7 +274,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         uint256 lpAmount,
         address inviter
     ) external payable nonReentrant {
-        updateBondRate(bondId);
+        updateLpLiquidity(bondId);
         (address token0, address token1) = updateLpPrice(bondId);
         updateStPrice();
 
@@ -387,6 +395,15 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
             );
 
         emit Claim(msg.sender, orderIds, usdPayout, stPrice.value, stPayout);
+    }
+
+    /**
+     * @dev Perform Up Keep
+     */
+    function performUpkeep(bytes calldata) external override {
+        updateLpLiquidity(markets.length - 1);
+        updateLpPrice(markets.length - 1);
+        updateStPrice();
     }
 
     /**
@@ -520,14 +537,14 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     }
 
     /**
-     * @dev Get Bond Rate Value Arr
+     * @dev Get LP Liquidity Value Arr
      */
-    function getBondRateValueArr(uint256 bondId)
+    function getLpLiquidityValueArr(uint256 bondId)
         external
         view
         returns (uint256[12] memory)
     {
-        return bondRates[bondId].valueArr;
+        return lpLiquidity[bondId].valueArr;
     }
 
     /**
@@ -542,10 +559,157 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     }
 
     /**
-     * @dev Update Bond Rate
+     * @dev Get User Order Extra Rates
      */
-    function updateBondRate(uint256 bondId) public {
-        Note storage note = bondRates[bondId];
+    function getUserOrderExtraRates(address user, uint256 orderId)
+        external
+        view
+        returns (uint256[4] memory)
+    {
+        return orders[user][orderId].extraRates;
+    }
+
+    /**
+     * @dev Get Basic Rate Level Info
+     */
+    function getBasicRateLevelInfo(uint256 bondId)
+        external
+        view
+        returns (
+            uint256,
+            uint256,
+            uint256,
+            uint256
+        )
+    {
+        uint256 currentLiquidity = lpLiquidity[bondId].value;
+        uint256 level = (currentLiquidity / 1e22);
+        uint256 nextLevelLiquidity = (level + 1) * 1e22;
+        uint256 upgradeNeededLiquidity = nextLevelLiquidity - currentLiquidity;
+        uint256 progress = ((1e22 - upgradeNeededLiquidity) * 1e4) / 1e22;
+
+        return (
+            getBondRate(currentLiquidity),
+            level,
+            upgradeNeededLiquidity,
+            progress
+        );
+    }
+
+    /**
+     * @dev Get User Invite Buy Rate Level Info
+     */
+    function getUserInviteBuyLevelInfo(address user)
+        external
+        view
+        returns (
+            uint256,
+            uint256,
+            uint256,
+            uint256
+        )
+    {
+        uint256 currentMonthBuyAmount = affiliateMonthlyUsdPayinBeforeTax[user][
+            block.timestamp / epoch
+        ];
+        uint256 currentRate = getUserInviteBuyRate(user);
+        uint256 level = currentRate / inviteBuyDynamicRate;
+        uint256 nextLevelBuyAmount = (level + 1) * 1e21;
+        uint256 upgradeNeededBuyAmount = nextLevelBuyAmount -
+            currentMonthBuyAmount;
+        uint256 progress;
+        if (upgradeNeededBuyAmount <= 1e21) {
+            progress = ((1e21 - upgradeNeededBuyAmount) * 1e4) / 1e21;
+        } else {
+            progress = (currentMonthBuyAmount * 1e4) / (level * 1e21);
+        }
+
+        return (currentRate, level, upgradeNeededBuyAmount, progress);
+    }
+
+    /**
+     * @dev Get User Invite Stake Rate Level Info
+     */
+    function getUserInviteStakeLevelInfo(address user)
+        external
+        view
+        returns (
+            uint256,
+            uint256,
+            uint256,
+            uint256
+        )
+    {
+        uint256 currentStakeAmount = (stStaking.affiliateStakedST(user) *
+            stPrice.value) / 1e18;
+        uint256 currentRate = getUserInviteStakeRate(user);
+        uint256 level = currentRate / inviteStakeDynamicRate;
+        uint256 nextLevelStakeAmount = (level + 1) * 1e21;
+        uint256 upgradeNeededStakeAmount = nextLevelStakeAmount -
+            currentStakeAmount;
+        uint256 progress = ((1e21 - upgradeNeededStakeAmount) * 1e4) / 1e21;
+
+        return (currentRate, level, upgradeNeededStakeAmount, progress);
+    }
+
+    /**
+     * @dev Get User Stake Rate Level Info
+     */
+    function getUserStakeLevelInfo(address user)
+        external
+        view
+        returns (
+            uint256,
+            uint256,
+            uint256,
+            uint256
+        )
+    {
+        uint256 currentStakeAmount = (stStaking.userStakedST(user) *
+            stPrice.value) / 1e18;
+        uint256 currentRate = getUserStakeRate(user);
+        uint256 level = currentRate / stakeDynamicRate;
+        uint256 nextLevelStakeAmount = (level + 1) * 1e21;
+        uint256 upgradeNeededStakeAmount = nextLevelStakeAmount -
+            currentStakeAmount;
+        uint256 progress = ((1e21 - upgradeNeededStakeAmount) * 1e4) / 1e21;
+
+        return (currentRate, level, upgradeNeededStakeAmount, progress);
+    }
+
+    /**
+     * @dev Get Current Epoch Time
+     */
+    function getCurrentEpochTime() external view returns (uint256, uint256) {
+        uint256 startTime = (block.timestamp / epoch) * epoch;
+        uint256 endTime = startTime + epoch;
+        return (startTime, endTime);
+    }
+
+    /**
+     * @dev Check Up Keep
+     */
+    function checkUpkeep(bytes calldata)
+        external
+        view
+        override
+        returns (bool upkeepNeeded, bytes memory performData)
+    {
+        upkeepNeeded =
+            block.timestamp >=
+            lpLiquidity[markets.length - 1].lastUpdateTime +
+                priceUpdateInterval ||
+            block.timestamp >=
+            lpPrices[markets.length - 1].lastUpdateTime + priceUpdateInterval ||
+            block.timestamp >= stPrice.lastUpdateTime + priceUpdateInterval;
+        performData;
+    }
+
+    /**
+     * @dev Update LP Liquidity
+     */
+    function updateLpLiquidity(uint256 bondId) public {
+        Note storage note = lpLiquidity[bondId];
 
         if (block.timestamp >= note.lastUpdateTime + priceUpdateInterval) {
             (address token0, address token1) = getLPTokensAddrs(
@@ -566,11 +730,8 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
                 }
             }
             note.valueArr[note.cursor] =
-                ((2 *
-                    (token0 == BUSD || token0 == WBNB ? reserve0 : reserve1)) /
-                    1e22) *
-                bondDynamicRate +
-                bondBaseRate;
+                2 *
+                (token0 == BUSD || token0 == WBNB ? reserve0 : reserve1);
 
             note.cursor++;
             if (note.cursor == note.valueArr.length) note.cursor = 0;
@@ -587,7 +748,12 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
 
             note.lastUpdateTime = block.timestamp;
 
-            emit UpdateBondRate(markets[bondId].LP, token0, token1, note.value);
+            emit UpdateLpLiquidity(
+                markets[bondId].LP,
+                token0,
+                token1,
+                note.value
+            );
         }
     }
 
@@ -730,26 +896,24 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     }
 
     /**
+     * @dev Get Bond Rate
+     */
+    function getBondRate(uint256 liquidity) public view returns (uint256) {
+        return (liquidity / 1e22) * bondDynamicRate + bondBaseRate;
+    }
+
+    /**
      * @dev Get User Invite Buy Rate
      */
     function getUserInviteBuyRate(address user) public view returns (uint256) {
         uint256 lastMonthrate = (affiliateMonthlyUsdPayinBeforeTax[user][
-            (block.timestamp - 30 days) / 30 days
+            (block.timestamp - epoch) / epoch
         ] / 1e21) * inviteBuyDynamicRate;
         uint256 currentMonthrate = (affiliateMonthlyUsdPayinBeforeTax[user][
-            block.timestamp / 30 days
+            block.timestamp / epoch
         ] / 1e21) * inviteBuyDynamicRate;
         return
             lastMonthrate > currentMonthrate ? lastMonthrate : currentMonthrate;
-    }
-
-    /**
-     * @dev Get User Stake Rate
-     */
-    function getUserStakeRate(address user) public view returns (uint256) {
-        return
-            ((stStaking.userStakedST(user) * stPrice.value) / 1e18 / 1e21) *
-            stakeDynamicRate;
     }
 
     /**
@@ -767,6 +931,15 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     }
 
     /**
+     * @dev Get User Stake Rate
+     */
+    function getUserStakeRate(address user) public view returns (uint256) {
+        return
+            ((stStaking.userStakedST(user) * stPrice.value) / 1e18 / 1e21) *
+            stakeDynamicRate;
+    }
+
+    /**
      * @dev Get User Extra Rates
      */
     function getUserExtraRates(address user)
@@ -777,8 +950,8 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         uint256[4] memory rates;
 
         rates[0] = getUserInviteBuyRate(user);
-        rates[1] = getUserStakeRate(user);
-        rates[2] = getUserInviteStakeRate(user);
+        rates[1] = getUserInviteStakeRate(user);
+        rates[2] = getUserStakeRate(user);
 
         rates[3] = rates[0] + rates[1] + rates[2];
         rates[3] = rates[3] > extraMaxRate ? extraMaxRate : rates[3];
@@ -791,7 +964,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
      */
     function getUserTaxRate(address user) public view returns (uint256) {
         uint256 rate = (userMonthlyUsdPayinBeforeTax[user][
-            block.timestamp / 30 days
+            block.timestamp / epoch
         ] / 1e21) *
             taxDynamicRate +
             taxBaseRate;
@@ -808,7 +981,6 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     ) private {
         Market storage market = markets[bondId];
         Note memory lpPrice = lpPrices[bondId];
-        Note memory bondRate = bondRates[bondId];
 
         require(lpAmount > 0, "LP Amount must > 0");
         require(
@@ -825,13 +997,13 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
 
         uint256 UsdPayinBeforeTax = (lpAmount * lpPrice.value) / 1e18;
         userMonthlyUsdPayinBeforeTax[msg.sender][
-            block.timestamp / 30 days
+            block.timestamp / epoch
         ] += UsdPayinBeforeTax;
 
         address userInviter = inviting.bindInviter(inviter);
         if (userInviter != address(0)) {
             affiliateMonthlyUsdPayinBeforeTax[userInviter][
-                block.timestamp / 30 days
+                block.timestamp / epoch
             ] += UsdPayinBeforeTax;
         }
 
@@ -850,10 +1022,11 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
             lpAmountPay
         );
 
+        uint256 bondRate = getBondRate(lpLiquidity[bondId].value);
         uint256[4] memory extraRates = getUserExtraRates(msg.sender);
         uint256 usdPayout = (lpAmountPay *
             lpPrice.value *
-            (1e4 + bondRate.value + extraRates[3])) /
+            (1e4 + bondRate + extraRates[3])) /
             1e18 /
             1e4;
 
@@ -862,7 +1035,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
             lpAmount: lpAmount,
             lpPrice: lpPrice.value,
             taxRate: taxRate,
-            bondRate: bondRate.value,
+            bondRate: bondRate,
             extraRates: extraRates,
             usdPayout: usdPayout,
             expiry: market.term + block.timestamp,

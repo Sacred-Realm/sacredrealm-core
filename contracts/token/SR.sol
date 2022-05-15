@@ -10,8 +10,6 @@ import "@openzeppelin/contracts/access/AccessControlEnumerable.sol";
  * @notice Contract to supply SR
  */
 contract SR is ERC20, AccessControlEnumerable {
-    using EnumerableSet for EnumerableSet.AddressSet;
-
     bytes32 public constant MANAGER_ROLE = keccak256("MANAGER_ROLE");
 
     uint256 private _totalSupply;
