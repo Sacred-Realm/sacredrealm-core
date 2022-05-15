@@ -980,7 +980,7 @@ contract BondDepository is
         address inviter
     ) private {
         Market storage market = markets[bondId];
-        Note memory lpPrice = lpPrices[bondId];
+        uint256 lpPrice = lpPrices[bondId].value;
 
         require(lpAmount > 0, "LP Amount must > 0");
         require(
@@ -995,7 +995,7 @@ contract BondDepository is
         require(block.timestamp < market.conclusion, "Bond concluded");
         require(lpAmount <= getBondMaxSize(bondId), "Max size exceeded");
 
-        uint256 UsdPayinBeforeTax = (lpAmount * lpPrice.value) / 1e18;
+        uint256 UsdPayinBeforeTax = (lpAmount * lpPrice) / 1e18;
         userMonthlyUsdPayinBeforeTax[msg.sender][
             block.timestamp / epoch
         ] += UsdPayinBeforeTax;
@@ -1025,7 +1025,7 @@ contract BondDepository is
         uint256 bondRate = getBondRate(lpLiquidity[bondId].value);
         uint256[4] memory extraRates = getUserExtraRates(msg.sender);
         uint256 usdPayout = (lpAmountPay *
-            lpPrice.value *
+            lpPrice *
             (1e4 + bondRate + extraRates[3])) /
             1e18 /
             1e4;
@@ -1033,7 +1033,7 @@ contract BondDepository is
         Order memory order = Order({
             bondId: bondId,
             lpAmount: lpAmount,
-            lpPrice: lpPrice.value,
+            lpPrice: lpPrice,
             taxRate: taxRate,
             bondRate: bondRate,
             extraRates: extraRates,
