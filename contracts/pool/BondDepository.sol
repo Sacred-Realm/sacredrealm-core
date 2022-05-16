@@ -876,15 +876,6 @@ contract BondDepository is
     }
 
     /**
-     * @dev Get Bond Max Size
-     */
-    function getBondMaxSize(uint256 bondId) public view returns (uint256) {
-        return
-            (markets[bondId].maxSupplyLp * 1 days) /
-            (markets[bondId].conclusion - block.timestamp);
-    }
-
-    /**
      * @dev Get LP Tokens Addrs
      */
     function getLPTokensAddrs(IPancakePair lp)
@@ -983,17 +974,15 @@ contract BondDepository is
         uint256 lpPrice = lpPrices[bondId].value;
 
         require(lpAmount > 0, "LP Amount must > 0");
-        require(
-            getBondLeftSupplyLp(bondId) >= lpAmount,
-            "Not enough bond LP supply"
-        );
+        require(getBondLeftSupplyLp(bondId) > 0, "Not enough bond LP supply");
+        if (lpAmount > getBondLeftSupplyLp(bondId))
+            lpAmount = getBondLeftSupplyLp(bondId);
         require(
             market.receivingAddr != address(0),
             "The receiving address of this bond has not been set"
         );
         require(market.term > 0, "The term of this bond has not been set");
         require(block.timestamp < market.conclusion, "Bond concluded");
-        require(lpAmount <= getBondMaxSize(bondId), "Max size exceeded");
 
         uint256 UsdPayinBeforeTax = (lpAmount * lpPrice) / 1e18;
         userMonthlyUsdPayinBeforeTax[msg.sender][
