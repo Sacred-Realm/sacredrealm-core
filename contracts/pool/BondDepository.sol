@@ -67,8 +67,8 @@ contract BondDepository is
         uint256[12] valueArr;
     }
     Note public stPrice;
-    Note[] public lpLiquidity;
-    Note[] public lpPrices;
+    mapping(uint256 => Note) public lpLiquidity;
+    mapping(uint256 => Note) public lpPrices;
 
     struct Market {
         IPancakePair LP;
@@ -98,6 +98,8 @@ contract BondDepository is
     mapping(address => mapping(uint256 => uint256))
         public affiliateEpochUsdPayinBeforeTax;
 
+    mapping(address => bool) public isBlackListed;
+
     event SetPriceUpdateInterval(uint256 interval);
     event SetRate(
         uint256 bondDynamicRate,
@@ -124,6 +126,8 @@ contract BondDepository is
         uint256 bondTerm,
         uint256 bondConclusion
     );
+    event CloseBond(uint256 bondId);
+    event SetBlackList(address[] users, bool isBlackListed);
     event Bond(
         address indexed user,
         uint256 orderId,
@@ -268,6 +272,29 @@ contract BondDepository is
     }
 
     /**
+     * @dev Close Bond
+     */
+    function closeBond(uint256 bondId) external onlyRole(MANAGER_ROLE) {
+        markets[bondId].conclusion = block.timestamp;
+
+        emit CloseBond(bondId);
+    }
+
+    /**
+     * @dev Set Black List
+     */
+    function setBlackList(address[] memory users, bool _isBlackListed)
+        external
+        onlyRole(MANAGER_ROLE)
+    {
+        for (uint256 i = 0; i < users.length; i++) {
+            isBlackListed[users[i]] = _isBlackListed;
+        }
+
+        emit SetBlackList(users, _isBlackListed);
+    }
+
+    /**
      * @dev Swap And Add Liquidity And Bond
      */
     function swapAndAddLiquidityAndBond(
@@ -379,6 +406,8 @@ contract BondDepository is
      * @dev Claim
      */
     function claim(uint256[] memory orderIds) external nonReentrant {
+        require(!isBlackListed[msg.sender], "This account is abnormal");
+
         (address token0, address token1) = updateStPrice();
 
         Order[] storage order = orders[msg.sender];
