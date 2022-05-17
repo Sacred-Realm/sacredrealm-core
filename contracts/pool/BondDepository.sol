@@ -35,8 +35,11 @@ contract BondDepository is
     IPancakeRouter public router =
         IPancakeRouter(0x10ED43C718714eb63d5aA57B78B54704E256024E);
 
+    // testnet: publish timestamp
+    uint256 public startTime; // next Tuesday at 8:00AM UTC timestamp
+
     // testnet: 30 minutes
-    uint256 public epoch = 2 weeks;
+    uint256 public epochLength = 2 weeks;
 
     uint256 public priceUpdateInterval = 5 minutes;
 
@@ -44,8 +47,8 @@ contract BondDepository is
     uint256 public bondBaseRate = 500;
 
     uint256 public inviteBuyDynamicRate = 10;
-    uint256 public stakeDynamicRate = 10;
     uint256 public inviteStakeDynamicRate = 10;
+    uint256 public stakeDynamicRate = 10;
     uint256 public extraMaxRate = 3000;
 
     uint256 public taxDynamicRate = 1;
@@ -91,17 +94,17 @@ contract BondDepository is
     mapping(address => Order[]) public orders;
 
     mapping(address => mapping(uint256 => uint256))
-        public userMonthlyUsdPayinBeforeTax;
+        public userEpochUsdPayinBeforeTax;
     mapping(address => mapping(uint256 => uint256))
-        public affiliateMonthlyUsdPayinBeforeTax;
+        public affiliateEpochUsdPayinBeforeTax;
 
     event SetPriceUpdateInterval(uint256 interval);
     event SetRate(
         uint256 bondDynamicRate,
         uint256 bondBaseRate,
         uint256 inviteBuyDynamicRate,
-        uint256 stakeDynamicRate,
         uint256 inviteStakeDynamicRate,
+        uint256 stakeDynamicRate,
         uint256 extraMaxRate,
         uint256 taxDynamicRate,
         uint256 taxBaseRate,
@@ -186,8 +189,8 @@ contract BondDepository is
         uint256 _bondDynamicRate,
         uint256 _bondBaseRate,
         uint256 _inviteBuyDynamicRate,
-        uint256 _stakeDynamicRate,
         uint256 _inviteStakeDynamicRate,
+        uint256 _stakeDynamicRate,
         uint256 _extraMaxRate,
         uint256 _taxDynamicRate,
         uint256 _taxBaseRate,
@@ -196,8 +199,8 @@ contract BondDepository is
         bondDynamicRate = _bondDynamicRate;
         bondBaseRate = _bondBaseRate;
         inviteBuyDynamicRate = _inviteBuyDynamicRate;
-        stakeDynamicRate = _stakeDynamicRate;
         inviteStakeDynamicRate = _inviteStakeDynamicRate;
+        stakeDynamicRate = _stakeDynamicRate;
         extraMaxRate = _extraMaxRate;
         taxDynamicRate = _taxDynamicRate;
         taxBaseRate = _taxBaseRate;
@@ -207,8 +210,8 @@ contract BondDepository is
             _bondDynamicRate,
             _bondBaseRate,
             _inviteBuyDynamicRate,
-            _stakeDynamicRate,
             _inviteStakeDynamicRate,
+            _stakeDynamicRate,
             _extraMaxRate,
             _taxDynamicRate,
             _taxBaseRate,
@@ -609,19 +612,19 @@ contract BondDepository is
             uint256
         )
     {
-        uint256 currentMonthBuyAmount = affiliateMonthlyUsdPayinBeforeTax[user][
-            block.timestamp / epoch
+        uint256 currentEpochBuyAmount = affiliateEpochUsdPayinBeforeTax[user][
+            getCurrentEpoch()
         ];
         uint256 currentRate = getUserInviteBuyRate(user);
         uint256 level = currentRate / inviteBuyDynamicRate;
         uint256 nextLevelBuyAmount = (level + 1) * 1e21;
         uint256 upgradeNeededBuyAmount = nextLevelBuyAmount -
-            currentMonthBuyAmount;
+            currentEpochBuyAmount;
         uint256 progress;
         if (upgradeNeededBuyAmount <= 1e21) {
             progress = ((1e21 - upgradeNeededBuyAmount) * 1e4) / 1e21;
         } else {
-            progress = (currentMonthBuyAmount * 1e4) / (level * 1e21);
+            progress = (currentEpochBuyAmount * 1e4) / (level * 1e21);
         }
 
         return (currentRate, level, upgradeNeededBuyAmount, progress);
@@ -681,9 +684,9 @@ contract BondDepository is
      * @dev Get Current Epoch Time
      */
     function getCurrentEpochTime() external view returns (uint256, uint256) {
-        uint256 startTime = (block.timestamp / epoch) * epoch;
-        uint256 endTime = startTime + epoch;
-        return (startTime, endTime);
+        uint256 _startTime = startTime + (getCurrentEpoch() - 1) * epochLength;
+        uint256 _endTime = _startTime + epochLength;
+        return (_startTime, _endTime);
     }
 
     /**
@@ -897,14 +900,14 @@ contract BondDepository is
      * @dev Get User Invite Buy Rate
      */
     function getUserInviteBuyRate(address user) public view returns (uint256) {
-        uint256 lastMonthrate = (affiliateMonthlyUsdPayinBeforeTax[user][
-            (block.timestamp - epoch) / epoch
+        uint256 lastEpochrate = (affiliateEpochUsdPayinBeforeTax[user][
+            getCurrentEpoch() - 1
         ] / 1e21) * inviteBuyDynamicRate;
-        uint256 currentMonthrate = (affiliateMonthlyUsdPayinBeforeTax[user][
-            block.timestamp / epoch
+        uint256 currentEpochrate = (affiliateEpochUsdPayinBeforeTax[user][
+            getCurrentEpoch()
         ] / 1e21) * inviteBuyDynamicRate;
         return
-            lastMonthrate > currentMonthrate ? lastMonthrate : currentMonthrate;
+            lastEpochrate > currentEpochrate ? lastEpochrate : currentEpochrate;
     }
 
     /**
@@ -954,12 +957,18 @@ contract BondDepository is
      * @dev Get User Tax Rate
      */
     function getUserTaxRate(address user) public view returns (uint256) {
-        uint256 rate = (userMonthlyUsdPayinBeforeTax[user][
-            block.timestamp / epoch
-        ] / 1e21) *
+        uint256 rate = (userEpochUsdPayinBeforeTax[user][getCurrentEpoch()] /
+            1e21) *
             taxDynamicRate +
             taxBaseRate;
         return rate > taxMaxRate ? taxMaxRate : rate;
+    }
+
+    /**
+     * @dev Get Current Epoch
+     */
+    function getCurrentEpoch() public view returns (uint256) {
+        return (block.timestamp - startTime) / epochLength + 1;
     }
 
     /**
@@ -985,14 +994,14 @@ contract BondDepository is
         require(block.timestamp < market.conclusion, "Bond concluded");
 
         uint256 UsdPayinBeforeTax = (lpAmount * lpPrice) / 1e18;
-        userMonthlyUsdPayinBeforeTax[msg.sender][
-            block.timestamp / epoch
+        userEpochUsdPayinBeforeTax[msg.sender][
+            getCurrentEpoch()
         ] += UsdPayinBeforeTax;
 
         address userInviter = inviting.bindInviter(inviter);
         if (userInviter != address(0)) {
-            affiliateMonthlyUsdPayinBeforeTax[userInviter][
-                block.timestamp / epoch
+            affiliateEpochUsdPayinBeforeTax[userInviter][
+                getCurrentEpoch()
             ] += UsdPayinBeforeTax;
         }
 

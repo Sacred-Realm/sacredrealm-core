@@ -1416,6 +1416,89 @@ abstract contract ReentrancyGuard {
 }
 
 
+// File @chainlink/contracts/src/v0.8/KeeperBase.sol@v0.4.0
+
+
+pragma solidity ^0.8.0;
+
+contract KeeperBase {
+  error OnlySimulatedBackend();
+
+  /**
+   * @notice method that allows it to be simulated via eth_call by checking that
+   * the sender is the zero address.
+   */
+  function preventExecution() internal view {
+    if (tx.origin != address(0)) {
+      revert OnlySimulatedBackend();
+    }
+  }
+
+  /**
+   * @notice modifier that allows it to be simulated via eth_call by checking
+   * that the sender is the zero address.
+   */
+  modifier cannotExecute() {
+    preventExecution();
+    _;
+  }
+}
+
+
+// File @chainlink/contracts/src/v0.8/interfaces/KeeperCompatibleInterface.sol@v0.4.0
+
+
+pragma solidity ^0.8.0;
+
+interface KeeperCompatibleInterface {
+  /**
+   * @notice method that is simulated by the keepers to see if any work actually
+   * needs to be performed. This method does does not actually need to be
+   * executable, and since it is only ever simulated it can consume lots of gas.
+   * @dev To ensure that it is never called, you may want to add the
+   * cannotExecute modifier from KeeperBase to your implementation of this
+   * method.
+   * @param checkData specified in the upkeep registration so it is always the
+   * same for a registered upkeep. This can easily be broken down into specific
+   * arguments using `abi.decode`, so multiple upkeeps can be registered on the
+   * same contract and easily differentiated by the contract.
+   * @return upkeepNeeded boolean to indicate whether the keeper should call
+   * performUpkeep or not.
+   * @return performData bytes that the keeper should call performUpkeep with, if
+   * upkeep is needed. If you would like to encode data to decode later, try
+   * `abi.encode`.
+   */
+  function checkUpkeep(bytes calldata checkData) external returns (bool upkeepNeeded, bytes memory performData);
+
+  /**
+   * @notice method that is actually executed by the keepers, via the registry.
+   * The data returned by the checkUpkeep simulation will be passed into
+   * this method to actually be executed.
+   * @dev The input to this method should not be trusted, and the caller of the
+   * method should not even be restricted to any single registry. Anyone should
+   * be able call it, and the input should be validated, there is no guarantee
+   * that the data passed in is the performData returned from checkUpkeep. This
+   * could happen due to malicious keepers, racing keepers, or simply a state
+   * change while the performUpkeep transaction is waiting for confirmation.
+   * Always validate the data passed in.
+   * @param performData is the data which was passed back from the checkData
+   * simulation. If it is encoded, it can easily be decoded into other types by
+   * calling `abi.decode`. This data should not be trusted, and should be
+   * validated against the contract's current state.
+   */
+  function performUpkeep(bytes calldata performData) external;
+}
+
+
+// File @chainlink/contracts/src/v0.8/KeeperCompatible.sol@v0.4.0
+
+
+pragma solidity ^0.8.0;
+
+
+abstract contract KeeperCompatible is KeeperBase, KeeperCompatibleInterface {}
+
+
 // File contracts/tool/interface/IPancakeERC20.sol
 
 
@@ -1534,6 +1617,39 @@ interface IPancakeRouter {
 }
 
 
+// File contracts/pool/interface/IInviting.sol
+
+
+pragma solidity >=0.8.12;
+
+/**
+ * @title Inviting Interface
+ * @author SEALEM-LAB
+ * @notice Interface of the Inviting
+ */
+abstract contract IInviting {
+    mapping(address => address) public userInviter;
+
+    function bindInviter(address inviter) external virtual returns (address);
+}
+
+
+// File contracts/pool/interface/ISTStaking.sol
+
+
+pragma solidity >=0.8.12;
+
+/**
+ * @title STStaking Interface
+ * @author SEALEM-LAB
+ * @notice Interface of the STStaking
+ */
+abstract contract ISTStaking {
+    mapping(address => uint256) public userStakedST;
+    mapping(address => uint256) public affiliateStakedST;
+}
+
+
 // File contracts/pool/BondDepository.sol
 
 
@@ -1543,7 +1659,11 @@ pragma solidity >=0.8.12;
  * @author SEALEM-LAB
  * @notice Contract to supply Bond
  */
-contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
+contract BondDepository is
+    AccessControlEnumerable,
+    ReentrancyGuard,
+    KeeperCompatibleInterface
+{
     using SafeERC20 for IERC20;
 
     bytes32 public constant MANAGER_ROLE = keccak256("MANAGER_ROLE");
@@ -1558,52 +1678,104 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     IPancakeRouter public router =
         IPancakeRouter(0x10ED43C718714eb63d5aA57B78B54704E256024E);
 
+    // testnet: publish timestamp
+    uint256 public startTime; // next Tuesday at 8:00AM UTC timestamp
+
+    // testnet: 30 minutes
+    uint256 public epochLength = 2 weeks;
+
     uint256 public priceUpdateInterval = 5 minutes;
 
+    uint256 public bondDynamicRate = 1;
+    uint256 public bondBaseRate = 500;
+
+    uint256 public inviteBuyDynamicRate = 10;
+    uint256 public inviteStakeDynamicRate = 10;
+    uint256 public stakeDynamicRate = 10;
+    uint256 public extraMaxRate = 3000;
+
+    uint256 public taxDynamicRate = 1;
+    uint256 public taxBaseRate = 10;
+    uint256 public taxMaxRate = 1000;
+
+    address public treasury;
     IPancakePair public STLP;
-    uint256 public stPrice;
-    uint256 public stPriceCursor;
-    uint256 public stPriceLastUpdateTime;
-    uint256[12] public stPriceArr;
+    IInviting public inviting;
+    ISTStaking public stStaking;
 
-    uint256 public bondCount;
-    mapping(uint256 => IPancakePair) public LP;
-    mapping(uint256 => address) public receivingAddr;
-    mapping(uint256 => uint256) public bondMaxSupplyLp;
-    mapping(uint256 => uint256) public bondRate;
-    mapping(uint256 => uint256) public bondTerm;
-    mapping(uint256 => uint256) public bondConclusion;
+    struct Note {
+        uint256 value;
+        uint256 cursor;
+        uint256 lastUpdateTime;
+        uint256[12] valueArr;
+    }
+    Note public stPrice;
+    Note[] public lpLiquidity;
+    Note[] public lpPrices;
 
-    mapping(uint256 => uint256) public lpPrice;
-    mapping(uint256 => uint256) public lpPriceCursor;
-    mapping(uint256 => uint256) public lpPriceLastUpdateTime;
-    mapping(uint256 => uint256[12]) public lpPriceArr;
-    mapping(uint256 => uint256) public bondSoldLpAmount;
+    struct Market {
+        IPancakePair LP;
+        address receivingAddr;
+        uint256 maxSupplyLp;
+        uint256 term;
+        uint256 conclusion;
+        uint256 soldLpAmount;
+    }
+    Market[] public markets;
 
-    mapping(address => uint256) public userOrderCount;
-    mapping(address => mapping(uint256 => uint256)) public userOrderBondId;
-    mapping(address => mapping(uint256 => uint256)) public userOrderLpAmount;
-    mapping(address => mapping(uint256 => uint256)) public userOrderUsdPayout;
-    mapping(address => mapping(uint256 => uint256)) public userOrderExpiry;
-    mapping(address => mapping(uint256 => uint256)) public userOrderClaimTime;
+    struct Order {
+        uint256 bondId;
+        uint256 lpAmount;
+        uint256 lpPrice;
+        uint256 taxRate;
+        uint256 bondRate;
+        uint256[4] extraRates;
+        uint256 usdPayout;
+        uint256 expiry;
+        uint256 claimTime;
+    }
+    mapping(address => Order[]) public orders;
+
+    mapping(address => mapping(uint256 => uint256))
+        public userEpochUsdPayinBeforeTax;
+    mapping(address => mapping(uint256 => uint256))
+        public affiliateEpochUsdPayinBeforeTax;
 
     event SetPriceUpdateInterval(uint256 interval);
-    event SetSTLP(address stlpAddr);
-    event CreateBond(
+    event SetRate(
+        uint256 bondDynamicRate,
+        uint256 bondBaseRate,
+        uint256 inviteBuyDynamicRate,
+        uint256 inviteStakeDynamicRate,
+        uint256 stakeDynamicRate,
+        uint256 extraMaxRate,
+        uint256 taxDynamicRate,
+        uint256 taxBaseRate,
+        uint256 taxMaxRate
+    );
+    event SetAddrs(
+        address treasury,
+        address stlpAddr,
+        address invitingAddr,
+        address stStakingAddr
+    );
+    event Create(
         uint256 bondId,
         address lpAddr,
         address receivingAddr,
         uint256 bondMaxSupplyLp,
-        uint256 bondRate,
         uint256 bondTerm,
         uint256 bondConclusion
     );
     event Bond(
         address indexed user,
-        uint256 bondId,
         uint256 orderId,
+        uint256 bondId,
         uint256 lpAmount,
         uint256 lpPrice,
+        uint256 userTaxRate,
+        uint256 bondRate,
+        uint256[4] extraRates,
         uint256 usdPayout,
         uint256 expiry
     );
@@ -1613,6 +1785,12 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         uint256 usdPayout,
         uint256 stPrice,
         uint256 stPayout
+    );
+    event UpdateLpLiquidity(
+        IPancakePair lp,
+        address token0,
+        address token1,
+        uint256 liquidity
     );
     event UpdateLpPrice(
         IPancakePair lp,
@@ -1648,55 +1826,103 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     }
 
     /**
-     * @dev Set ST LP
+     * @dev Set Rate
      */
-    function setSTLP(address stlpAddr) external onlyRole(MANAGER_ROLE) {
-        STLP = IPancakePair(stlpAddr);
+    function setRate(
+        uint256 _bondDynamicRate,
+        uint256 _bondBaseRate,
+        uint256 _inviteBuyDynamicRate,
+        uint256 _inviteStakeDynamicRate,
+        uint256 _stakeDynamicRate,
+        uint256 _extraMaxRate,
+        uint256 _taxDynamicRate,
+        uint256 _taxBaseRate,
+        uint256 _taxMaxRate
+    ) external onlyRole(MANAGER_ROLE) {
+        bondDynamicRate = _bondDynamicRate;
+        bondBaseRate = _bondBaseRate;
+        inviteBuyDynamicRate = _inviteBuyDynamicRate;
+        inviteStakeDynamicRate = _inviteStakeDynamicRate;
+        stakeDynamicRate = _stakeDynamicRate;
+        extraMaxRate = _extraMaxRate;
+        taxDynamicRate = _taxDynamicRate;
+        taxBaseRate = _taxBaseRate;
+        taxMaxRate = _taxMaxRate;
 
-        emit SetSTLP(stlpAddr);
+        emit SetRate(
+            _bondDynamicRate,
+            _bondBaseRate,
+            _inviteBuyDynamicRate,
+            _inviteStakeDynamicRate,
+            _stakeDynamicRate,
+            _extraMaxRate,
+            _taxDynamicRate,
+            _taxBaseRate,
+            _taxMaxRate
+        );
     }
 
     /**
-     * @dev Create Bond
+     * @dev Set Addrs
      */
-    function createBond(
-        address lpAddr,
-        address _receivingAddr,
-        uint256 _bondMaxSupplyLp,
-        uint256 _bondRate,
-        uint256 _bondTerm,
-        uint256 _bondConclusion
+    function setAddrs(
+        address _treasury,
+        address stlpAddr,
+        address invitingAddr,
+        address stStakingAddr
     ) external onlyRole(MANAGER_ROLE) {
-        LP[bondCount] = IPancakePair(lpAddr);
-        receivingAddr[bondCount] = _receivingAddr;
-        bondMaxSupplyLp[bondCount] = _bondMaxSupplyLp;
-        bondRate[bondCount] = _bondRate;
-        bondTerm[bondCount] = _bondTerm;
-        bondConclusion[bondCount] = _bondConclusion;
+        treasury = _treasury;
+        STLP = IPancakePair(stlpAddr);
+        inviting = IInviting(invitingAddr);
+        stStaking = ISTStaking(stStakingAddr);
 
-        emit CreateBond(
-            bondCount,
-            lpAddr,
-            _receivingAddr,
-            _bondMaxSupplyLp,
-            _bondRate,
-            _bondTerm,
-            _bondConclusion
+        emit SetAddrs(_treasury, stlpAddr, invitingAddr, stStakingAddr);
+    }
+
+    /**
+     * @dev Create
+     */
+    function create(
+        address lpAddr,
+        address receivingAddr,
+        uint256 maxSupplyLp,
+        uint256 term,
+        uint256 conclusion
+    ) external onlyRole(MANAGER_ROLE) {
+        markets.push(
+            Market({
+                LP: IPancakePair(lpAddr),
+                receivingAddr: receivingAddr,
+                maxSupplyLp: maxSupplyLp,
+                term: term,
+                conclusion: conclusion,
+                soldLpAmount: 0
+            })
         );
 
-        bondCount++;
+        emit Create(
+            markets.length - 1,
+            lpAddr,
+            receivingAddr,
+            maxSupplyLp,
+            term,
+            conclusion
+        );
     }
 
     /**
-     * @dev Bond
+     * @dev Swap And Add Liquidity And Bond
      */
-    function bond(
+    function swapAndAddLiquidityAndBond(
         uint256 bondId,
         uint256 token0Amount,
         uint256 token1Amount,
-        uint256 lpAmount
+        uint256 lpAmount,
+        address inviter
     ) external payable nonReentrant {
+        updateLpLiquidity(bondId);
         (address token0, address token1) = updateLpPrice(bondId);
+        updateStPrice();
 
         if (lpAmount == 0) {
             if (token0Amount > 0 && token1Amount == 0) {
@@ -1789,49 +2015,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
             }
         }
 
-        require(lpAmount > 0, "LP Amount must > 0");
-        require(
-            getBondLeftSupplyLp(bondId) >= lpAmount,
-            "Not enough bond LP supply"
-        );
-        require(
-            receivingAddr[bondId] != address(0),
-            "The receiving address of this bond has not been set"
-        );
-        require(bondRate[bondId] > 0, "The rate of this bond has not been set");
-        require(bondTerm[bondId] > 0, "The term of this bond has not been set");
-        require(block.timestamp < bondConclusion[bondId], "Bond concluded");
-        require(lpAmount <= getBondMaxSize(bondId), "Max size exceeded");
-
-        IERC20(address(LP[bondId])).safeTransferFrom(
-            msg.sender,
-            receivingAddr[bondId],
-            lpAmount
-        );
-
-        uint256 expiry = bondTerm[bondId] + block.timestamp;
-        uint256 usdPayout = (lpPrice[bondId] * lpAmount * bondRate[bondId]) /
-            1e18 /
-            1e4;
-
-        userOrderBondId[msg.sender][userOrderCount[msg.sender]] = bondId;
-        userOrderLpAmount[msg.sender][userOrderCount[msg.sender]] = lpAmount;
-        userOrderUsdPayout[msg.sender][userOrderCount[msg.sender]] = usdPayout;
-        userOrderExpiry[msg.sender][userOrderCount[msg.sender]] = expiry;
-
-        bondSoldLpAmount[bondId] += lpAmount;
-
-        emit Bond(
-            msg.sender,
-            bondId,
-            userOrderCount[msg.sender],
-            lpAmount,
-            lpPrice[bondId],
-            usdPayout,
-            expiry
-        );
-
-        userOrderCount[msg.sender]++;
+        bond(bondId, lpAmount, inviter);
     }
 
     /**
@@ -1840,25 +2024,32 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     function claim(uint256[] memory orderIds) external nonReentrant {
         (address token0, address token1) = updateStPrice();
 
+        Order[] storage order = orders[msg.sender];
         uint256 usdPayout;
         for (uint256 i = 0; i < orderIds.length; i++) {
-            if (
-                block.timestamp >= userOrderExpiry[msg.sender][orderIds[i]] &&
-                userOrderClaimTime[msg.sender][orderIds[i]] == 0
-            ) {
-                userOrderClaimTime[msg.sender][orderIds[i]] = block.timestamp;
-                usdPayout += userOrderUsdPayout[msg.sender][orderIds[i]];
+            if (block.timestamp >= order[i].expiry && order[i].claimTime == 0) {
+                order[i].claimTime = block.timestamp;
+                usdPayout += order[i].usdPayout;
             }
         }
 
-        uint256 stPayout = (usdPayout * 1e18) / stPrice;
+        uint256 stPayout = (usdPayout * 1e18) / stPrice.value;
 
         IERC20(token0 == BUSD || token0 == WBNB ? token1 : token0).safeTransfer(
                 msg.sender,
                 stPayout
             );
 
-        emit Claim(msg.sender, orderIds, usdPayout, stPrice, stPayout);
+        emit Claim(msg.sender, orderIds, usdPayout, stPrice.value, stPayout);
+    }
+
+    /**
+     * @dev Perform Up Keep
+     */
+    function performUpkeep(bytes calldata) external override {
+        updateLpLiquidity(markets.length - 1);
+        updateLpPrice(markets.length - 1);
+        updateStPrice();
     }
 
     /**
@@ -1866,14 +2057,14 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
      */
     function getActiveBonds() external view returns (uint256[] memory) {
         uint256 length;
-        for (uint256 i = 0; i < bondCount; i++) {
-            if (block.timestamp < bondConclusion[i]) length++;
+        for (uint256 i = 0; i < markets.length; i++) {
+            if (block.timestamp < markets[i].conclusion) length++;
         }
 
         uint256[] memory bondIds = new uint256[](length);
         uint256 index;
-        for (uint256 i = 0; i < bondCount; i++) {
-            if (block.timestamp < bondConclusion[i]) {
+        for (uint256 i = 0; i < markets.length; i++) {
+            if (block.timestamp < markets[i].conclusion) {
                 bondIds[index] = i;
                 index++;
             }
@@ -1890,18 +2081,20 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         view
         returns (uint256[] memory, uint256)
     {
+        Order[] memory order = orders[user];
+
         uint256 length;
-        for (uint256 i = 0; i < userOrderCount[user]; i++) {
-            if (userOrderClaimTime[user][i] == 0) length++;
+        for (uint256 i = 0; i < order.length; i++) {
+            if (order[i].claimTime == 0) length++;
         }
 
         uint256[] memory orderIds = new uint256[](length);
         uint256 usdPayout;
         uint256 index;
-        for (uint256 i = 0; i < userOrderCount[user]; i++) {
-            if (userOrderClaimTime[user][i] == 0) {
+        for (uint256 i = 0; i < order.length; i++) {
+            if (order[i].claimTime == 0) {
                 orderIds[index] = i;
-                usdPayout += userOrderUsdPayout[user][i];
+                usdPayout += order[i].usdPayout;
                 index++;
             }
         }
@@ -1917,18 +2110,20 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         view
         returns (uint256[] memory, uint256)
     {
+        Order[] memory order = orders[user];
+
         uint256 length;
-        for (uint256 i = 0; i < userOrderCount[user]; i++) {
-            if (userOrderClaimTime[user][i] > 0) length++;
+        for (uint256 i = 0; i < order.length; i++) {
+            if (order[i].claimTime > 0) length++;
         }
 
         uint256[] memory orderIds = new uint256[](length);
         uint256 usdPayout;
         uint256 index;
-        for (uint256 i = 0; i < userOrderCount[user]; i++) {
-            if (userOrderClaimTime[user][i] > 0) {
+        for (uint256 i = 0; i < order.length; i++) {
+            if (order[i].claimTime > 0) {
                 orderIds[index] = i;
-                usdPayout += userOrderUsdPayout[user][i];
+                usdPayout += order[i].usdPayout;
                 index++;
             }
         }
@@ -1944,24 +2139,21 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         view
         returns (uint256[] memory, uint256)
     {
+        Order[] memory order = orders[user];
+
         uint256 length;
-        for (uint256 i = 0; i < userOrderCount[user]; i++) {
-            if (
-                block.timestamp >= userOrderExpiry[user][i] &&
-                userOrderClaimTime[user][i] == 0
-            ) length++;
+        for (uint256 i = 0; i < order.length; i++) {
+            if (block.timestamp >= order[i].expiry && order[i].claimTime == 0)
+                length++;
         }
 
         uint256[] memory orderIds = new uint256[](length);
         uint256 usdPayout;
         uint256 index;
-        for (uint256 i = 0; i < userOrderCount[user]; i++) {
-            if (
-                block.timestamp >= userOrderExpiry[user][i] &&
-                userOrderClaimTime[user][i] == 0
-            ) {
+        for (uint256 i = 0; i < order.length; i++) {
+            if (block.timestamp >= order[i].expiry && order[i].claimTime == 0) {
                 orderIds[index] = i;
-                usdPayout += userOrderUsdPayout[user][i];
+                usdPayout += order[i].usdPayout;
                 index++;
             }
         }
@@ -1970,48 +2162,290 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     }
 
     /**
-     * @dev Update Lp Price
+     * @dev Get Markets Length
      */
-    function updateLpPrice(uint256 bondId) public returns (address, address) {
-        (address token0, address token1) = getLPTokensAddrs(LP[bondId]);
+    function getMarketsLength() external view returns (uint256) {
+        return markets.length;
+    }
 
-        if (
+    /**
+     * @dev Get User Orders Length
+     */
+    function getUserOrdersLength(address user) external view returns (uint256) {
+        return orders[user].length;
+    }
+
+    /**
+     * @dev Get ST Price Value Arr
+     */
+    function getSTPriceValueArr() external view returns (uint256[12] memory) {
+        return stPrice.valueArr;
+    }
+
+    /**
+     * @dev Get LP Liquidity Value Arr
+     */
+    function getLpLiquidityValueArr(uint256 bondId)
+        external
+        view
+        returns (uint256[12] memory)
+    {
+        return lpLiquidity[bondId].valueArr;
+    }
+
+    /**
+     * @dev Get LP Price Value Arr
+     */
+    function getLpPriceValueArr(uint256 bondId)
+        external
+        view
+        returns (uint256[12] memory)
+    {
+        return lpPrices[bondId].valueArr;
+    }
+
+    /**
+     * @dev Get User Order Extra Rates
+     */
+    function getUserOrderExtraRates(address user, uint256 orderId)
+        external
+        view
+        returns (uint256[4] memory)
+    {
+        return orders[user][orderId].extraRates;
+    }
+
+    /**
+     * @dev Get Basic Rate Level Info
+     */
+    function getBasicRateLevelInfo(uint256 bondId)
+        external
+        view
+        returns (
+            uint256,
+            uint256,
+            uint256,
+            uint256
+        )
+    {
+        uint256 currentLiquidity = lpLiquidity[bondId].value;
+        uint256 level = (currentLiquidity / 1e22);
+        uint256 nextLevelLiquidity = (level + 1) * 1e22;
+        uint256 upgradeNeededLiquidity = nextLevelLiquidity - currentLiquidity;
+        uint256 progress = ((1e22 - upgradeNeededLiquidity) * 1e4) / 1e22;
+
+        return (
+            getBondRate(currentLiquidity),
+            level,
+            upgradeNeededLiquidity,
+            progress
+        );
+    }
+
+    /**
+     * @dev Get User Invite Buy Rate Level Info
+     */
+    function getUserInviteBuyLevelInfo(address user)
+        external
+        view
+        returns (
+            uint256,
+            uint256,
+            uint256,
+            uint256
+        )
+    {
+        uint256 currentEpochBuyAmount = affiliateEpochUsdPayinBeforeTax[user][
+            getCurrentEpoch()
+        ];
+        uint256 currentRate = getUserInviteBuyRate(user);
+        uint256 level = currentRate / inviteBuyDynamicRate;
+        uint256 nextLevelBuyAmount = (level + 1) * 1e21;
+        uint256 upgradeNeededBuyAmount = nextLevelBuyAmount -
+            currentEpochBuyAmount;
+        uint256 progress;
+        if (upgradeNeededBuyAmount <= 1e21) {
+            progress = ((1e21 - upgradeNeededBuyAmount) * 1e4) / 1e21;
+        } else {
+            progress = (currentEpochBuyAmount * 1e4) / (level * 1e21);
+        }
+
+        return (currentRate, level, upgradeNeededBuyAmount, progress);
+    }
+
+    /**
+     * @dev Get User Invite Stake Rate Level Info
+     */
+    function getUserInviteStakeLevelInfo(address user)
+        external
+        view
+        returns (
+            uint256,
+            uint256,
+            uint256,
+            uint256
+        )
+    {
+        uint256 currentStakeAmount = (stStaking.affiliateStakedST(user) *
+            stPrice.value) / 1e18;
+        uint256 currentRate = getUserInviteStakeRate(user);
+        uint256 level = currentRate / inviteStakeDynamicRate;
+        uint256 nextLevelStakeAmount = (level + 1) * 1e21;
+        uint256 upgradeNeededStakeAmount = nextLevelStakeAmount -
+            currentStakeAmount;
+        uint256 progress = ((1e21 - upgradeNeededStakeAmount) * 1e4) / 1e21;
+
+        return (currentRate, level, upgradeNeededStakeAmount, progress);
+    }
+
+    /**
+     * @dev Get User Stake Rate Level Info
+     */
+    function getUserStakeLevelInfo(address user)
+        external
+        view
+        returns (
+            uint256,
+            uint256,
+            uint256,
+            uint256
+        )
+    {
+        uint256 currentStakeAmount = (stStaking.userStakedST(user) *
+            stPrice.value) / 1e18;
+        uint256 currentRate = getUserStakeRate(user);
+        uint256 level = currentRate / stakeDynamicRate;
+        uint256 nextLevelStakeAmount = (level + 1) * 1e21;
+        uint256 upgradeNeededStakeAmount = nextLevelStakeAmount -
+            currentStakeAmount;
+        uint256 progress = ((1e21 - upgradeNeededStakeAmount) * 1e4) / 1e21;
+
+        return (currentRate, level, upgradeNeededStakeAmount, progress);
+    }
+
+    /**
+     * @dev Get Current Epoch Time
+     */
+    function getCurrentEpochTime() external view returns (uint256, uint256) {
+        uint256 _startTime = startTime + (getCurrentEpoch() - 1) * epochLength;
+        uint256 _endTime = _startTime + epochLength;
+        return (_startTime, _endTime);
+    }
+
+    /**
+     * @dev Check Up Keep
+     */
+    function checkUpkeep(bytes calldata)
+        external
+        view
+        override
+        returns (bool upkeepNeeded, bytes memory performData)
+    {
+        upkeepNeeded =
             block.timestamp >=
-            lpPriceLastUpdateTime[bondId] + priceUpdateInterval
-        ) {
-            (uint112 reserve0, uint112 reserve1, ) = LP[bondId].getReserves();
-            lpPriceArr[bondId][lpPriceCursor[bondId]] =
-                (2 *
-                    (token0 == BUSD || token0 == WBNB ? reserve0 : reserve1) *
-                    1e18) /
-                LP[bondId].totalSupply();
+            lpLiquidity[markets.length - 1].lastUpdateTime +
+                priceUpdateInterval ||
+            block.timestamp >=
+            lpPrices[markets.length - 1].lastUpdateTime + priceUpdateInterval ||
+            block.timestamp >= stPrice.lastUpdateTime + priceUpdateInterval;
+        performData;
+    }
+
+    /**
+     * @dev Update LP Liquidity
+     */
+    function updateLpLiquidity(uint256 bondId) public {
+        Note storage note = lpLiquidity[bondId];
+
+        if (block.timestamp >= note.lastUpdateTime + priceUpdateInterval) {
+            (address token0, address token1) = getLPTokensAddrs(
+                markets[bondId].LP
+            );
+            (uint112 reserve0, uint112 reserve1, ) = markets[bondId]
+                .LP
+                .getReserves();
             if (token0 == WBNB || token1 == WBNB) {
                 address[] memory path = new address[](2);
                 path[0] = WBNB;
                 path[1] = BUSD;
                 uint256 wbnbPrice = router.getAmountsOut(1e18, path)[1];
-                lpPriceArr[bondId][lpPriceCursor[bondId]] =
-                    (lpPriceArr[bondId][lpPriceCursor[bondId]] * wbnbPrice) /
-                    1e18;
+                if (token0 == WBNB) {
+                    reserve0 = uint112((reserve0 * wbnbPrice) / 1e18);
+                } else {
+                    reserve1 = uint112((reserve1 * wbnbPrice) / 1e18);
+                }
             }
+            note.valueArr[note.cursor] =
+                2 *
+                (token0 == BUSD || token0 == WBNB ? reserve0 : reserve1);
 
-            lpPriceCursor[bondId]++;
-            if (lpPriceCursor[bondId] == 12) lpPriceCursor[bondId] = 0;
+            note.cursor++;
+            if (note.cursor == note.valueArr.length) note.cursor = 0;
 
             uint256 sum;
             uint256 count;
-            for (uint256 i = 0; i < 10; i++) {
-                if (lpPriceArr[bondId][i] > 0) {
-                    sum += lpPriceArr[bondId][i];
+            for (uint256 i = 0; i < note.valueArr.length; i++) {
+                if (note.valueArr[i] > 0) {
+                    sum += note.valueArr[i];
                     count++;
                 }
             }
-            lpPrice[bondId] = sum / count;
+            note.value = sum / count;
 
-            lpPriceLastUpdateTime[bondId] = block.timestamp;
+            note.lastUpdateTime = block.timestamp;
+
+            emit UpdateLpLiquidity(
+                markets[bondId].LP,
+                token0,
+                token1,
+                note.value
+            );
         }
+    }
 
-        emit UpdateLpPrice(LP[bondId], token0, token1, lpPrice[bondId]);
+    /**
+     * @dev Update Lp Price
+     */
+    function updateLpPrice(uint256 bondId) public returns (address, address) {
+        (address token0, address token1) = getLPTokensAddrs(markets[bondId].LP);
+        Note storage note = lpPrices[bondId];
+
+        if (block.timestamp >= note.lastUpdateTime + priceUpdateInterval) {
+            (uint112 reserve0, uint112 reserve1, ) = markets[bondId]
+                .LP
+                .getReserves();
+            note.valueArr[note.cursor] =
+                (2 *
+                    (token0 == BUSD || token0 == WBNB ? reserve0 : reserve1) *
+                    1e18) /
+                markets[bondId].LP.totalSupply();
+            if (token0 == WBNB || token1 == WBNB) {
+                address[] memory path = new address[](2);
+                path[0] = WBNB;
+                path[1] = BUSD;
+                uint256 wbnbPrice = router.getAmountsOut(1e18, path)[1];
+                note.valueArr[note.cursor] =
+                    (note.valueArr[note.cursor] * wbnbPrice) /
+                    1e18;
+            }
+
+            note.cursor++;
+            if (note.cursor == note.valueArr.length) note.cursor = 0;
+
+            uint256 sum;
+            uint256 count;
+            for (uint256 i = 0; i < note.valueArr.length; i++) {
+                if (note.valueArr[i] > 0) {
+                    sum += note.valueArr[i];
+                    count++;
+                }
+            }
+            note.value = sum / count;
+
+            note.lastUpdateTime = block.timestamp;
+
+            emit UpdateLpPrice(markets[bondId].LP, token0, token1, note.value);
+        }
 
         return (token0, token1);
     }
@@ -2022,48 +2456,60 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     function updateStPrice() public returns (address, address) {
         (address token0, address token1) = getLPTokensAddrs(STLP);
 
-        if (block.timestamp >= stPriceLastUpdateTime + priceUpdateInterval) {
+        if (block.timestamp >= stPrice.lastUpdateTime + priceUpdateInterval) {
             if (token0 == WBNB) {
                 address[] memory path = new address[](3);
                 path[0] = token1;
                 path[1] = WBNB;
                 path[2] = BUSD;
-                stPriceArr[stPriceCursor] = router.getAmountsOut(1e18, path)[2];
+                stPrice.valueArr[stPrice.cursor] = router.getAmountsOut(
+                    1e18,
+                    path
+                )[2];
             } else if (token1 == WBNB) {
                 address[] memory path = new address[](3);
                 path[0] = token0;
                 path[1] = WBNB;
                 path[2] = BUSD;
-                stPriceArr[stPriceCursor] = router.getAmountsOut(1e18, path)[2];
+                stPrice.valueArr[stPrice.cursor] = router.getAmountsOut(
+                    1e18,
+                    path
+                )[2];
             } else if (token0 == BUSD) {
                 address[] memory path = new address[](2);
                 path[0] = token1;
                 path[1] = BUSD;
-                stPriceArr[stPriceCursor] = router.getAmountsOut(1e18, path)[1];
+                stPrice.valueArr[stPrice.cursor] = router.getAmountsOut(
+                    1e18,
+                    path
+                )[1];
             } else {
                 address[] memory path = new address[](2);
                 path[0] = token0;
                 path[1] = BUSD;
-                stPriceArr[stPriceCursor] = router.getAmountsOut(1e18, path)[1];
+                stPrice.valueArr[stPrice.cursor] = router.getAmountsOut(
+                    1e18,
+                    path
+                )[1];
             }
 
-            stPriceCursor++;
-            if (stPriceCursor == 12) stPriceCursor = 0;
+            stPrice.cursor++;
+            if (stPrice.cursor == stPrice.valueArr.length) stPrice.cursor = 0;
 
             uint256 sum;
             uint256 count;
-            for (uint256 i = 0; i < 10; i++) {
-                if (stPriceArr[i] > 0) {
-                    sum += stPriceArr[i];
+            for (uint256 i = 0; i < stPrice.valueArr.length; i++) {
+                if (stPrice.valueArr[i] > 0) {
+                    sum += stPrice.valueArr[i];
                     count++;
                 }
             }
-            stPrice = sum / count;
+            stPrice.value = sum / count;
 
-            stPriceLastUpdateTime = block.timestamp;
+            stPrice.lastUpdateTime = block.timestamp;
+
+            emit UpdateStPrice(STLP, token0, token1, stPrice.value);
         }
-
-        emit UpdateStPrice(STLP, token0, token1, stPrice);
 
         return (token0, token1);
     }
@@ -2072,16 +2518,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
      * @dev Get Bond Left Supply LP
      */
     function getBondLeftSupplyLp(uint256 bondId) public view returns (uint256) {
-        return bondMaxSupplyLp[bondId] - bondSoldLpAmount[bondId];
-    }
-
-    /**
-     * @dev Get Bond Max Size
-     */
-    function getBondMaxSize(uint256 bondId) public view returns (uint256) {
-        return
-            (bondMaxSupplyLp[bondId] * 1 days) /
-            (bondConclusion[bondId] - block.timestamp);
+        return markets[bondId].maxSupplyLp - markets[bondId].soldLpAmount;
     }
 
     /**
@@ -2093,5 +2530,173 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         returns (address, address)
     {
         return (lp.token0(), lp.token1());
+    }
+
+    /**
+     * @dev Get Bond Rate
+     */
+    function getBondRate(uint256 liquidity) public view returns (uint256) {
+        return (liquidity / 1e22) * bondDynamicRate + bondBaseRate;
+    }
+
+    /**
+     * @dev Get User Invite Buy Rate
+     */
+    function getUserInviteBuyRate(address user) public view returns (uint256) {
+        uint256 lastEpochrate = (affiliateEpochUsdPayinBeforeTax[user][
+            getCurrentEpoch() - 1
+        ] / 1e21) * inviteBuyDynamicRate;
+        uint256 currentEpochrate = (affiliateEpochUsdPayinBeforeTax[user][
+            getCurrentEpoch()
+        ] / 1e21) * inviteBuyDynamicRate;
+        return
+            lastEpochrate > currentEpochrate ? lastEpochrate : currentEpochrate;
+    }
+
+    /**
+     * @dev Get User Invite Stake Rate
+     */
+    function getUserInviteStakeRate(address user)
+        public
+        view
+        returns (uint256)
+    {
+        return
+            ((stStaking.affiliateStakedST(user) * stPrice.value) /
+                1e18 /
+                1e21) * inviteStakeDynamicRate;
+    }
+
+    /**
+     * @dev Get User Stake Rate
+     */
+    function getUserStakeRate(address user) public view returns (uint256) {
+        return
+            ((stStaking.userStakedST(user) * stPrice.value) / 1e18 / 1e21) *
+            stakeDynamicRate;
+    }
+
+    /**
+     * @dev Get User Extra Rates
+     */
+    function getUserExtraRates(address user)
+        public
+        view
+        returns (uint256[4] memory)
+    {
+        uint256[4] memory rates;
+
+        rates[0] = getUserInviteBuyRate(user);
+        rates[1] = getUserInviteStakeRate(user);
+        rates[2] = getUserStakeRate(user);
+
+        rates[3] = rates[0] + rates[1] + rates[2];
+        rates[3] = rates[3] > extraMaxRate ? extraMaxRate : rates[3];
+
+        return rates;
+    }
+
+    /**
+     * @dev Get User Tax Rate
+     */
+    function getUserTaxRate(address user) public view returns (uint256) {
+        uint256 rate = (userEpochUsdPayinBeforeTax[user][getCurrentEpoch()] /
+            1e21) *
+            taxDynamicRate +
+            taxBaseRate;
+        return rate > taxMaxRate ? taxMaxRate : rate;
+    }
+
+    /**
+     * @dev Get Current Epoch
+     */
+    function getCurrentEpoch() public view returns (uint256) {
+        return (block.timestamp - startTime) / epochLength + 1;
+    }
+
+    /**
+     * @dev Bond
+     */
+    function bond(
+        uint256 bondId,
+        uint256 lpAmount,
+        address inviter
+    ) private {
+        Market storage market = markets[bondId];
+        uint256 lpPrice = lpPrices[bondId].value;
+
+        require(lpAmount > 0, "LP Amount must > 0");
+        require(getBondLeftSupplyLp(bondId) > 0, "Not enough bond LP supply");
+        if (lpAmount > getBondLeftSupplyLp(bondId))
+            lpAmount = getBondLeftSupplyLp(bondId);
+        require(
+            market.receivingAddr != address(0),
+            "The receiving address of this bond has not been set"
+        );
+        require(market.term > 0, "The term of this bond has not been set");
+        require(block.timestamp < market.conclusion, "Bond concluded");
+
+        uint256 UsdPayinBeforeTax = (lpAmount * lpPrice) / 1e18;
+        userEpochUsdPayinBeforeTax[msg.sender][
+            getCurrentEpoch()
+        ] += UsdPayinBeforeTax;
+
+        address userInviter = inviting.bindInviter(inviter);
+        if (userInviter != address(0)) {
+            affiliateEpochUsdPayinBeforeTax[userInviter][
+                getCurrentEpoch()
+            ] += UsdPayinBeforeTax;
+        }
+
+        uint256 taxRate = getUserTaxRate(msg.sender);
+        uint256 lpAmountTax = (lpAmount * taxRate) / 1e4;
+        uint256 lpAmountPay = lpAmount - lpAmountTax;
+
+        IERC20(address(market.LP)).safeTransferFrom(
+            msg.sender,
+            treasury,
+            lpAmountTax
+        );
+        IERC20(address(market.LP)).safeTransferFrom(
+            msg.sender,
+            market.receivingAddr,
+            lpAmountPay
+        );
+
+        uint256 bondRate = getBondRate(lpLiquidity[bondId].value);
+        uint256[4] memory extraRates = getUserExtraRates(msg.sender);
+        uint256 usdPayout = (lpAmountPay *
+            lpPrice *
+            (1e4 + bondRate + extraRates[3])) /
+            1e18 /
+            1e4;
+
+        Order memory order = Order({
+            bondId: bondId,
+            lpAmount: lpAmount,
+            lpPrice: lpPrice,
+            taxRate: taxRate,
+            bondRate: bondRate,
+            extraRates: extraRates,
+            usdPayout: usdPayout,
+            expiry: market.term + block.timestamp,
+            claimTime: 0
+        });
+        orders[msg.sender].push(order);
+
+        market.soldLpAmount += lpAmount;
+
+        emit Bond(
+            msg.sender,
+            orders[msg.sender].length - 1,
+            order.bondId,
+            order.lpAmount,
+            order.lpPrice,
+            order.taxRate,
+            order.bondRate,
+            order.extraRates,
+            order.usdPayout,
+            order.expiry
+        );
     }
 }
