@@ -200,6 +200,8 @@ contract BondDepository is
         uint256 _taxBaseRate,
         uint256 _taxMaxRate
     ) external onlyRole(MANAGER_ROLE) {
+        require(_taxMaxRate <= 5000, "The tax max rate cannot exceed 50%");
+
         bondDynamicRate = _bondDynamicRate;
         bondBaseRate = _bondBaseRate;
         inviteBuyDynamicRate = _inviteBuyDynamicRate;

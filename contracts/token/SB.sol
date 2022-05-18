@@ -11,6 +11,7 @@ import "@openzeppelin/contracts/utils/Strings.sol";
 import "@chainlink/contracts/src/v0.8/interfaces/LinkTokenInterface.sol";
 import "@chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol";
 import "@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol";
+import "../pool/interface/IInviting.sol";
 import "../token/interface/ISN.sol";
 
 /**
@@ -52,6 +53,7 @@ contract SB is
     bytes32 public constant MANAGER_ROLE = keccak256("MANAGER_ROLE");
 
     ISN public sn;
+    IInviting public inviting;
 
     string public baseURI;
 
@@ -72,8 +74,12 @@ contract SB is
         public userHourlyBoxesLength;
     mapping(uint256 => EnumerableSet.AddressSet) private whiteList;
 
+    mapping(address => mapping(address => uint256)) public userTokenBuyAmount;
+    mapping(address => mapping(address => uint256))
+        public affiliateTokenBuyAmount;
+
     event SetBaseURI(string uri);
-    event SetSN(address snAddr);
+    event SetAddrs(address snAddr, address invitingAddr);
     event SetVrfInfo(
         bytes32 keyHash,
         uint32 callbackGasLimit,
@@ -133,12 +139,16 @@ contract SB is
     }
 
     /**
-     * @dev Set SN Address
+     * @dev Set Addrs
      */
-    function setSN(address snAddr) external onlyRole(MANAGER_ROLE) {
+    function setAddrs(address snAddr, address invitingAddr)
+        external
+        onlyRole(MANAGER_ROLE)
+    {
         sn = ISN(snAddr);
+        inviting = IInviting(invitingAddr);
 
-        emit SetSN(snAddr);
+        emit SetAddrs(snAddr, invitingAddr);
     }
 
     /**
@@ -257,11 +267,11 @@ contract SB is
     /**
      * @dev Users buy the boxes
      */
-    function buyBoxes(uint256 amount, uint256 boxType)
-        external
-        payable
-        nonReentrant
-    {
+    function buyBoxes(
+        uint256 amount,
+        uint256 boxType,
+        address inviter
+    ) external payable nonReentrant {
         require(amount > 0, "Amount must > 0");
         require(
             getUserHourlyBoxesLeftSupply(
@@ -323,6 +333,12 @@ contract SB is
             block.timestamp / 1 hours
         ] += amount;
         totalBoxesLength[boxType] += amount;
+
+        userTokenBuyAmount[msg.sender][tokenAddrs[boxType]] += price;
+        address userInviter = inviting.bindInviter(inviter);
+        if (userInviter != address(0)) {
+            affiliateTokenBuyAmount[userInviter][tokenAddrs[boxType]] += price;
+        }
 
         emit BuyBoxes(msg.sender, amount, sbIds, boxType);
     }
