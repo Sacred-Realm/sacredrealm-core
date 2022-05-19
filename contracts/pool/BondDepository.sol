@@ -5,7 +5,6 @@ import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import "@openzeppelin/contracts/access/AccessControlEnumerable.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
-import "@chainlink/contracts/src/v0.8/KeeperCompatible.sol";
 import "../tool/interface/IPancakePair.sol";
 import "../tool/interface/IPancakeRouter.sol";
 import "./interface/IInviting.sol";
@@ -16,11 +15,7 @@ import "./interface/ISTStaking.sol";
  * @author SEALEM-LAB
  * @notice Contract to supply Bond
  */
-contract BondDepository is
-    AccessControlEnumerable,
-    ReentrancyGuard,
-    KeeperCompatibleInterface
-{
+contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     using SafeERC20 for IERC20;
 
     bytes32 public constant MANAGER_ROLE = keccak256("MANAGER_ROLE");
@@ -41,8 +36,6 @@ contract BondDepository is
     // testnet: 30 minutes
     uint256 public epochLength = 2 weeks;
 
-    uint256 public priceUpdateInterval = 5 minutes;
-
     uint256 public bondDynamicRate = 1;
     uint256 public bondBaseRate = 500;
 
@@ -59,16 +52,6 @@ contract BondDepository is
     IPancakePair public STLP;
     IInviting public inviting;
     ISTStaking public stStaking;
-
-    struct Note {
-        uint256 value;
-        uint256 cursor;
-        uint256 lastUpdateTime;
-        uint256[12] valueArr;
-    }
-    Note public stPrice;
-    mapping(uint256 => Note) public lpLiquidity;
-    mapping(uint256 => Note) public lpPrices;
 
     struct Market {
         IPancakePair LP;
@@ -100,7 +83,6 @@ contract BondDepository is
 
     mapping(address => bool) public isBlackListed;
 
-    event SetPriceUpdateInterval(uint256 interval);
     event SetRate(
         uint256 bondDynamicRate,
         uint256 bondBaseRate,
@@ -147,24 +129,6 @@ contract BondDepository is
         uint256 stPrice,
         uint256 stPayout
     );
-    event UpdateLpLiquidity(
-        IPancakePair lp,
-        address token0,
-        address token1,
-        uint256 liquidity
-    );
-    event UpdateLpPrice(
-        IPancakePair lp,
-        address token0,
-        address token1,
-        uint256 lpPrice
-    );
-    event UpdateStPrice(
-        IPancakePair stlp,
-        address token0,
-        address token1,
-        uint256 stPrice
-    );
 
     /**
      * @param manager Initialize Manager Role
@@ -172,18 +136,6 @@ contract BondDepository is
     constructor(address manager) {
         _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
         _setupRole(MANAGER_ROLE, manager);
-    }
-
-    /**
-     * @dev Set Price Update Interval
-     */
-    function setPriceUpdateInterval(uint256 interval)
-        external
-        onlyRole(MANAGER_ROLE)
-    {
-        priceUpdateInterval = interval;
-
-        emit SetPriceUpdateInterval(interval);
     }
 
     /**
@@ -306,9 +258,7 @@ contract BondDepository is
         uint256 lpAmount,
         address inviter
     ) external payable nonReentrant {
-        updateLpLiquidity(bondId);
-        (address token0, address token1) = updateLpPrice(bondId);
-        updateStPrice();
+        (address token0, address token1) = getLPTokensAddrs(markets[bondId].LP);
 
         if (lpAmount == 0) {
             if (token0Amount > 0 && token1Amount == 0) {
@@ -410,7 +360,7 @@ contract BondDepository is
     function claim(uint256[] memory orderIds) external nonReentrant {
         require(!isBlackListed[msg.sender], "This account is abnormal");
 
-        (address token0, address token1) = updateStPrice();
+        (address token0, address token1) = getLPTokensAddrs(STLP);
 
         Order[] storage order = orders[msg.sender];
         uint256 usdPayout;
@@ -421,23 +371,15 @@ contract BondDepository is
             }
         }
 
-        uint256 stPayout = (usdPayout * 1e18) / stPrice.value;
+        uint256 stPrice = getStPrice();
+        uint256 stPayout = (usdPayout * 1e18) / stPrice;
 
         IERC20(token0 == BUSD || token0 == WBNB ? token1 : token0).safeTransfer(
                 msg.sender,
                 stPayout
             );
 
-        emit Claim(msg.sender, orderIds, usdPayout, stPrice.value, stPayout);
-    }
-
-    /**
-     * @dev Perform Up Keep
-     */
-    function performUpkeep(bytes calldata) external override {
-        updateLpLiquidity(markets.length - 1);
-        updateLpPrice(markets.length - 1);
-        updateStPrice();
+        emit Claim(msg.sender, orderIds, usdPayout, stPrice, stPayout);
     }
 
     /**
@@ -564,35 +506,6 @@ contract BondDepository is
     }
 
     /**
-     * @dev Get ST Price Value Arr
-     */
-    function getSTPriceValueArr() external view returns (uint256[12] memory) {
-        return stPrice.valueArr;
-    }
-
-    /**
-     * @dev Get LP Liquidity Value Arr
-     */
-    function getLpLiquidityValueArr(uint256 bondId)
-        external
-        view
-        returns (uint256[12] memory)
-    {
-        return lpLiquidity[bondId].valueArr;
-    }
-
-    /**
-     * @dev Get LP Price Value Arr
-     */
-    function getLpPriceValueArr(uint256 bondId)
-        external
-        view
-        returns (uint256[12] memory)
-    {
-        return lpPrices[bondId].valueArr;
-    }
-
-    /**
      * @dev Get User Order Extra Rates
      */
     function getUserOrderExtraRates(address user, uint256 orderId)
@@ -616,7 +529,7 @@ contract BondDepository is
             uint256
         )
     {
-        uint256 currentLiquidity = lpLiquidity[bondId].value;
+        uint256 currentLiquidity = getLpLiquidity(bondId);
         uint256 level = (currentLiquidity / 1e22);
         uint256 nextLevelLiquidity = (level + 1) * 1e22;
         uint256 upgradeNeededLiquidity = nextLevelLiquidity - currentLiquidity;
@@ -670,7 +583,7 @@ contract BondDepository is
         )
     {
         uint256 currentStakeAmount = (stStaking.affiliateStakedST(user) *
-            stPrice.value) / 1e18;
+            getStPrice()) / 1e18;
         uint256 currentRate = getUserInviteStakeRate(user);
         uint256 level = currentRate / inviteStakeDynamicRate;
         uint256 nextLevelStakeAmount = (level + 1) * 1e21;
@@ -695,7 +608,7 @@ contract BondDepository is
         )
     {
         uint256 currentStakeAmount = (stStaking.userStakedST(user) *
-            stPrice.value) / 1e18;
+            getStPrice()) / 1e18;
         uint256 currentRate = getUserStakeRate(user);
         uint256 level = currentRate / stakeDynamicRate;
         uint256 nextLevelStakeAmount = (level + 1) * 1e21;
@@ -716,187 +629,66 @@ contract BondDepository is
     }
 
     /**
-     * @dev Check Up Keep
+     * @dev Get LP Liquidity
      */
-    function checkUpkeep(bytes calldata)
-        external
-        view
-        override
-        returns (bool upkeepNeeded, bytes memory performData)
-    {
-        upkeepNeeded =
-            block.timestamp >=
-            lpLiquidity[markets.length - 1].lastUpdateTime +
-                priceUpdateInterval ||
-            block.timestamp >=
-            lpPrices[markets.length - 1].lastUpdateTime + priceUpdateInterval ||
-            block.timestamp >= stPrice.lastUpdateTime + priceUpdateInterval;
-        performData;
-    }
-
-    /**
-     * @dev Update LP Liquidity
-     */
-    function updateLpLiquidity(uint256 bondId) public {
-        Note storage note = lpLiquidity[bondId];
-
-        if (block.timestamp >= note.lastUpdateTime + priceUpdateInterval) {
-            (address token0, address token1) = getLPTokensAddrs(
-                markets[bondId].LP
-            );
-            (uint256 reserve0, uint256 reserve1, ) = markets[bondId]
-                .LP
-                .getReserves();
-            if (token0 == WBNB || token1 == WBNB) {
-                address[] memory path = new address[](2);
-                path[0] = WBNB;
-                path[1] = BUSD;
-                uint256 wbnbPrice = router.getAmountsOut(1e18, path)[1];
-                if (token0 == WBNB) {
-                    reserve0 = (reserve0 * wbnbPrice) / 1e18;
-                } else {
-                    reserve1 = (reserve1 * wbnbPrice) / 1e18;
-                }
-            }
-            note.valueArr[note.cursor] =
-                2 *
-                (token0 == BUSD || token0 == WBNB ? reserve0 : reserve1);
-
-            note.cursor++;
-            if (note.cursor == note.valueArr.length) note.cursor = 0;
-
-            uint256 sum;
-            uint256 count;
-            for (uint256 i = 0; i < note.valueArr.length; i++) {
-                if (note.valueArr[i] > 0) {
-                    sum += note.valueArr[i];
-                    count++;
-                }
-            }
-            note.value = sum / count;
-
-            note.lastUpdateTime = block.timestamp;
-
-            emit UpdateLpLiquidity(
-                markets[bondId].LP,
-                token0,
-                token1,
-                note.value
-            );
-        }
-    }
-
-    /**
-     * @dev Update Lp Price
-     */
-    function updateLpPrice(uint256 bondId) public returns (address, address) {
+    function getLpLiquidity(uint256 bondId) public view returns (uint256) {
         (address token0, address token1) = getLPTokensAddrs(markets[bondId].LP);
-        Note storage note = lpPrices[bondId];
+        (uint256 reserve0, uint256 reserve1, ) = markets[bondId]
+            .LP
+            .getReserves();
 
-        if (block.timestamp >= note.lastUpdateTime + priceUpdateInterval) {
-            (uint256 reserve0, uint256 reserve1, ) = markets[bondId]
-                .LP
-                .getReserves();
-            if (token0 == WBNB || token1 == WBNB) {
-                address[] memory path = new address[](2);
-                path[0] = WBNB;
-                path[1] = BUSD;
-                uint256 wbnbPrice = router.getAmountsOut(1e18, path)[1];
-                if (token0 == WBNB) {
-                    reserve0 = (reserve0 * wbnbPrice) / 1e18;
-                } else {
-                    reserve1 = (reserve1 * wbnbPrice) / 1e18;
-                }
+        if (token0 == WBNB || token1 == WBNB) {
+            address[] memory path = new address[](2);
+            path[0] = WBNB;
+            path[1] = BUSD;
+            uint256 wbnbPrice = router.getAmountsOut(1e18, path)[1];
+            if (token0 == WBNB) {
+                reserve0 = (reserve0 * wbnbPrice) / 1e18;
+            } else {
+                reserve1 = (reserve1 * wbnbPrice) / 1e18;
             }
-            note.valueArr[note.cursor] =
-                (2 *
-                    (token0 == BUSD || token0 == WBNB ? reserve0 : reserve1) *
-                    1e18) /
-                markets[bondId].LP.totalSupply();
-
-            note.cursor++;
-            if (note.cursor == note.valueArr.length) note.cursor = 0;
-
-            uint256 sum;
-            uint256 count;
-            for (uint256 i = 0; i < note.valueArr.length; i++) {
-                if (note.valueArr[i] > 0) {
-                    sum += note.valueArr[i];
-                    count++;
-                }
-            }
-            note.value = sum / count;
-
-            note.lastUpdateTime = block.timestamp;
-
-            emit UpdateLpPrice(markets[bondId].LP, token0, token1, note.value);
         }
 
-        return (token0, token1);
+        return 2 * (token0 == BUSD || token0 == WBNB ? reserve0 : reserve1);
     }
 
     /**
-     * @dev Update ST Price
+     * @dev Get Lp Price
      */
-    function updateStPrice() public returns (address, address) {
+    function getLpPrice(uint256 bondId) public view returns (uint256) {
+        return
+            (getLpLiquidity(bondId) * 1e18) / markets[bondId].LP.totalSupply();
+    }
+
+    /**
+     * @dev Get ST Price
+     */
+    function getStPrice() public view returns (uint256) {
         (address token0, address token1) = getLPTokensAddrs(STLP);
 
-        if (block.timestamp >= stPrice.lastUpdateTime + priceUpdateInterval) {
-            if (token0 == WBNB) {
-                address[] memory path = new address[](3);
-                path[0] = token1;
-                path[1] = WBNB;
-                path[2] = BUSD;
-                stPrice.valueArr[stPrice.cursor] = router.getAmountsOut(
-                    1e18,
-                    path
-                )[2];
-            } else if (token1 == WBNB) {
-                address[] memory path = new address[](3);
-                path[0] = token0;
-                path[1] = WBNB;
-                path[2] = BUSD;
-                stPrice.valueArr[stPrice.cursor] = router.getAmountsOut(
-                    1e18,
-                    path
-                )[2];
-            } else if (token0 == BUSD) {
-                address[] memory path = new address[](2);
-                path[0] = token1;
-                path[1] = BUSD;
-                stPrice.valueArr[stPrice.cursor] = router.getAmountsOut(
-                    1e18,
-                    path
-                )[1];
-            } else {
-                address[] memory path = new address[](2);
-                path[0] = token0;
-                path[1] = BUSD;
-                stPrice.valueArr[stPrice.cursor] = router.getAmountsOut(
-                    1e18,
-                    path
-                )[1];
-            }
-
-            stPrice.cursor++;
-            if (stPrice.cursor == stPrice.valueArr.length) stPrice.cursor = 0;
-
-            uint256 sum;
-            uint256 count;
-            for (uint256 i = 0; i < stPrice.valueArr.length; i++) {
-                if (stPrice.valueArr[i] > 0) {
-                    sum += stPrice.valueArr[i];
-                    count++;
-                }
-            }
-            stPrice.value = sum / count;
-
-            stPrice.lastUpdateTime = block.timestamp;
-
-            emit UpdateStPrice(STLP, token0, token1, stPrice.value);
+        if (token0 == WBNB) {
+            address[] memory path = new address[](3);
+            path[0] = token1;
+            path[1] = WBNB;
+            path[2] = BUSD;
+            return router.getAmountsOut(1e18, path)[2];
+        } else if (token1 == WBNB) {
+            address[] memory path = new address[](3);
+            path[0] = token0;
+            path[1] = WBNB;
+            path[2] = BUSD;
+            return router.getAmountsOut(1e18, path)[2];
+        } else if (token0 == BUSD) {
+            address[] memory path = new address[](2);
+            path[0] = token1;
+            path[1] = BUSD;
+            return router.getAmountsOut(1e18, path)[1];
+        } else {
+            address[] memory path = new address[](2);
+            path[0] = token0;
+            path[1] = BUSD;
+            return router.getAmountsOut(1e18, path)[1];
         }
-
-        return (token0, token1);
     }
 
     /**
@@ -942,9 +734,8 @@ contract BondDepository is
         returns (uint256)
     {
         return
-            ((stStaking.affiliateStakedST(user) * stPrice.value) /
-                1e18 /
-                1e21) * inviteStakeDynamicRate;
+            ((stStaking.affiliateStakedST(user) * getStPrice()) / 1e18 / 1e21) *
+            inviteStakeDynamicRate;
     }
 
     /**
@@ -952,7 +743,7 @@ contract BondDepository is
      */
     function getUserStakeRate(address user) public view returns (uint256) {
         return
-            ((stStaking.userStakedST(user) * stPrice.value) / 1e18 / 1e21) *
+            ((stStaking.userStakedST(user) * getStPrice()) / 1e18 / 1e21) *
             stakeDynamicRate;
     }
 
@@ -1003,7 +794,7 @@ contract BondDepository is
         address inviter
     ) private {
         Market storage market = markets[bondId];
-        uint256 lpPrice = lpPrices[bondId].value;
+        uint256 lpPrice = getLpPrice(bondId);
 
         require(lpAmount > 0, "LP Amount must > 0");
         require(getBondLeftSupplyLp(bondId) > 0, "Not enough bond LP supply");
@@ -1043,7 +834,7 @@ contract BondDepository is
             lpAmountPay
         );
 
-        uint256 bondRate = getBondRate(lpLiquidity[bondId].value);
+        uint256 bondRate = getBondRate(getLpLiquidity(bondId));
         uint256[4] memory extraRates = getUserExtraRates(msg.sender);
         uint256 usdPayout = (lpAmountPay *
             lpPrice *
