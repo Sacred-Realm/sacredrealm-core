@@ -1591,12 +1591,6 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     IPancakeRouter public router =
         IPancakeRouter(0x10ED43C718714eb63d5aA57B78B54704E256024E);
 
-    // testnet: publish timestamp
-    uint256 public startTime; // next Tuesday at 8:00AM UTC timestamp
-
-    // testnet: 30 minutes
-    uint256 public epochLength = 2 weeks;
-
     uint256 public bondDynamicRate = 1;
     uint256 public bondBaseRate = 500;
 
@@ -1618,6 +1612,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         IPancakePair LP;
         address receivingAddr;
         uint256 maxSupplyLp;
+        uint256 userMaxLpBuyAmount;
         uint256 term;
         uint256 conclusion;
         uint256 soldLpAmount;
@@ -1641,6 +1636,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         public userEpochUsdPayinBeforeTax;
     mapping(address => mapping(uint256 => uint256))
         public affiliateEpochUsdPayinBeforeTax;
+    mapping(address => mapping(uint256 => uint256)) public userEpochLpBuyAmount;
 
     mapping(address => bool) public isBlackListed;
 
@@ -1666,6 +1662,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         address lpAddr,
         address receivingAddr,
         uint256 bondMaxSupplyLp,
+        uint256 userMaxLpBuyAmount,
         uint256 bondTerm,
         uint256 bondConclusion
     );
@@ -1762,6 +1759,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         address lpAddr,
         address receivingAddr,
         uint256 maxSupplyLp,
+        uint256 userMaxLpBuyAmount,
         uint256 term,
         uint256 conclusion
     ) external onlyRole(MANAGER_ROLE) {
@@ -1770,6 +1768,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
                 LP: IPancakePair(lpAddr),
                 receivingAddr: receivingAddr,
                 maxSupplyLp: maxSupplyLp,
+                userMaxLpBuyAmount: userMaxLpBuyAmount,
                 term: term,
                 conclusion: conclusion,
                 soldLpAmount: 0
@@ -1781,6 +1780,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
             lpAddr,
             receivingAddr,
             maxSupplyLp,
+            userMaxLpBuyAmount,
             term,
             conclusion
         );
@@ -1926,9 +1926,12 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         Order[] storage order = orders[msg.sender];
         uint256 usdPayout;
         for (uint256 i = 0; i < orderIds.length; i++) {
-            if (block.timestamp >= order[i].expiry && order[i].claimTime == 0) {
-                order[i].claimTime = block.timestamp;
-                usdPayout += order[i].usdPayout;
+            if (
+                block.timestamp >= order[orderIds[i]].expiry &&
+                order[orderIds[i]].claimTime == 0
+            ) {
+                order[orderIds[i]].claimTime = block.timestamp;
+                usdPayout += order[orderIds[i]].usdPayout;
             }
         }
 
@@ -2107,7 +2110,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     /**
      * @dev Get User Invite Buy Rate Level Info
      */
-    function getUserInviteBuyLevelInfo(address user)
+    function getUserInviteBuyLevelInfo(address user, uint256 bondId)
         external
         view
         returns (
@@ -2118,9 +2121,9 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         )
     {
         uint256 currentEpochBuyAmount = affiliateEpochUsdPayinBeforeTax[user][
-            getCurrentEpoch()
+            bondId
         ];
-        uint256 currentRate = getUserInviteBuyRate(user);
+        uint256 currentRate = getUserInviteBuyRate(user, bondId);
         uint256 level = currentRate / inviteBuyDynamicRate;
         uint256 nextLevelBuyAmount = (level + 1) * 1e21;
         uint256 upgradeNeededBuyAmount = nextLevelBuyAmount -
@@ -2178,15 +2181,6 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         uint256 progress = ((1e21 - upgradeNeededStakeAmount) * 1e4) / 1e21;
 
         return (currentRate, level, upgradeNeededStakeAmount, progress);
-    }
-
-    /**
-     * @dev Get Current Epoch Time
-     */
-    function getCurrentEpochTime() external view returns (uint256, uint256) {
-        uint256 _startTime = startTime + (getCurrentEpoch() - 1) * epochLength;
-        uint256 _endTime = _startTime + epochLength;
-        return (_startTime, _endTime);
     }
 
     /**
@@ -2260,6 +2254,19 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     }
 
     /**
+     * @dev Get User Left Lp Can Buy
+     */
+    function getUserLeftLpCanBuy(address user, uint256 bondId)
+        public
+        view
+        returns (uint256)
+    {
+        return
+            markets[bondId].userMaxLpBuyAmount -
+            userEpochLpBuyAmount[user][bondId];
+    }
+
+    /**
      * @dev Get LP Tokens Addrs
      */
     function getLPTokensAddrs(IPancakePair lp)
@@ -2280,9 +2287,13 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     /**
      * @dev Get User Invite Buy Rate
      */
-    function getUserInviteBuyRate(address user) public view returns (uint256) {
+    function getUserInviteBuyRate(address user, uint256 bondId)
+        public
+        view
+        returns (uint256)
+    {
         return
-            (affiliateEpochUsdPayinBeforeTax[user][getCurrentEpoch()] / 1e21) *
+            (affiliateEpochUsdPayinBeforeTax[user][bondId] / 1e21) *
             inviteBuyDynamicRate;
     }
 
@@ -2311,14 +2322,14 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     /**
      * @dev Get User Extra Rates
      */
-    function getUserExtraRates(address user)
+    function getUserExtraRates(address user, uint256 bondId)
         public
         view
         returns (uint256[4] memory)
     {
         uint256[4] memory rates;
 
-        rates[0] = getUserInviteBuyRate(user);
+        rates[0] = getUserInviteBuyRate(user, bondId);
         rates[1] = getUserInviteStakeRate(user);
         rates[2] = getUserStakeRate(user);
 
@@ -2331,19 +2342,15 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     /**
      * @dev Get User Tax Rate
      */
-    function getUserTaxRate(address user) public view returns (uint256) {
-        uint256 rate = (userEpochUsdPayinBeforeTax[user][getCurrentEpoch()] /
-            1e21) *
+    function getUserTaxRate(address user, uint256 bondId)
+        public
+        view
+        returns (uint256)
+    {
+        uint256 rate = (userEpochUsdPayinBeforeTax[user][bondId] / 1e21) *
             taxDynamicRate +
             taxBaseRate;
         return rate > taxMaxRate ? taxMaxRate : rate;
-    }
-
-    /**
-     * @dev Get Current Epoch
-     */
-    function getCurrentEpoch() public view returns (uint256) {
-        return (block.timestamp - startTime) / epochLength + 1;
     }
 
     /**
@@ -2354,33 +2361,40 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         uint256 lpAmount,
         address inviter
     ) private {
-        Market storage market = markets[bondId];
-        uint256 lpPrice = getLpPrice(bondId);
-
         require(lpAmount > 0, "LP Amount must > 0");
         require(getBondLeftSupplyLp(bondId) > 0, "Not enough bond LP supply");
         if (lpAmount > getBondLeftSupplyLp(bondId))
             lpAmount = getBondLeftSupplyLp(bondId);
         require(
-            market.receivingAddr != address(0),
+            getUserLeftLpCanBuy(msg.sender, bondId) > 0,
+            "User's purchase reaches the limit"
+        );
+        if (lpAmount > getUserLeftLpCanBuy(msg.sender, bondId))
+            lpAmount = getUserLeftLpCanBuy(msg.sender, bondId);
+        require(
+            markets[bondId].receivingAddr != address(0),
             "The receiving address of this bond has not been set"
         );
-        require(market.term > 0, "The term of this bond has not been set");
-        require(block.timestamp < market.conclusion, "Bond concluded");
+        require(
+            markets[bondId].term > 0,
+            "The term of this bond has not been set"
+        );
+        require(block.timestamp < markets[bondId].conclusion, "Bond concluded");
+
+        Market storage market = markets[bondId];
+        uint256 lpPrice = getLpPrice(bondId);
 
         uint256 UsdPayinBeforeTax = (lpAmount * lpPrice) / 1e18;
-        userEpochUsdPayinBeforeTax[msg.sender][
-            getCurrentEpoch()
-        ] += UsdPayinBeforeTax;
+        userEpochUsdPayinBeforeTax[msg.sender][bondId] += UsdPayinBeforeTax;
 
         address userInviter = inviting.bindInviter(inviter);
         if (userInviter != address(0)) {
             affiliateEpochUsdPayinBeforeTax[userInviter][
-                getCurrentEpoch()
+                bondId
             ] += UsdPayinBeforeTax;
         }
 
-        uint256 taxRate = getUserTaxRate(msg.sender);
+        uint256 taxRate = getUserTaxRate(msg.sender, bondId);
         uint256 lpAmountTax = (lpAmount * taxRate) / 1e4;
         uint256 lpAmountPay = lpAmount - lpAmountTax;
 
@@ -2396,7 +2410,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         );
 
         uint256 bondRate = getBondRate(getLpLiquidity(bondId));
-        uint256[4] memory extraRates = getUserExtraRates(msg.sender);
+        uint256[4] memory extraRates = getUserExtraRates(msg.sender, bondId);
         uint256 usdPayout = (lpAmountPay *
             lpPrice *
             (1e4 + bondRate + extraRates[3])) /
@@ -2417,6 +2431,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         orders[msg.sender].push(order);
 
         market.soldLpAmount += lpAmount;
+        updateUserBuyAmount(msg.sender, bondId, lpAmount);
 
         emit Bond(
             msg.sender,
@@ -2430,5 +2445,16 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
             order.usdPayout,
             order.expiry
         );
+    }
+
+    /**
+     * @dev Update User Buy Amount
+     */
+    function updateUserBuyAmount(
+        address user,
+        uint256 bondId,
+        uint256 lpAmount
+    ) private {
+        userEpochLpBuyAmount[user][bondId] += lpAmount;
     }
 }
