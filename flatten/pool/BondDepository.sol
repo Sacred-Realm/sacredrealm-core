@@ -1843,6 +1843,8 @@ contract BondDepository is
         uint256 _taxBaseRate,
         uint256 _taxMaxRate
     ) external onlyRole(MANAGER_ROLE) {
+        require(_taxMaxRate <= 5000, "The tax max rate cannot exceed 50%");
+
         bondDynamicRate = _bondDynamicRate;
         bondBaseRate = _bondBaseRate;
         inviteBuyDynamicRate = _inviteBuyDynamicRate;
@@ -2390,7 +2392,7 @@ contract BondDepository is
             (address token0, address token1) = getLPTokensAddrs(
                 markets[bondId].LP
             );
-            (uint112 reserve0, uint112 reserve1, ) = markets[bondId]
+            (uint256 reserve0, uint256 reserve1, ) = markets[bondId]
                 .LP
                 .getReserves();
             if (token0 == WBNB || token1 == WBNB) {
@@ -2399,9 +2401,9 @@ contract BondDepository is
                 path[1] = BUSD;
                 uint256 wbnbPrice = router.getAmountsOut(1e18, path)[1];
                 if (token0 == WBNB) {
-                    reserve0 = uint112((reserve0 * wbnbPrice) / 1e18);
+                    reserve0 = (reserve0 * wbnbPrice) / 1e18;
                 } else {
-                    reserve1 = uint112((reserve1 * wbnbPrice) / 1e18);
+                    reserve1 = (reserve1 * wbnbPrice) / 1e18;
                 }
             }
             note.valueArr[note.cursor] =
@@ -2440,23 +2442,25 @@ contract BondDepository is
         Note storage note = lpPrices[bondId];
 
         if (block.timestamp >= note.lastUpdateTime + priceUpdateInterval) {
-            (uint112 reserve0, uint112 reserve1, ) = markets[bondId]
+            (uint256 reserve0, uint256 reserve1, ) = markets[bondId]
                 .LP
                 .getReserves();
-            note.valueArr[note.cursor] =
-                (2 *
-                    (token0 == BUSD || token0 == WBNB ? reserve0 : reserve1) *
-                    1e18) /
-                markets[bondId].LP.totalSupply();
             if (token0 == WBNB || token1 == WBNB) {
                 address[] memory path = new address[](2);
                 path[0] = WBNB;
                 path[1] = BUSD;
                 uint256 wbnbPrice = router.getAmountsOut(1e18, path)[1];
-                note.valueArr[note.cursor] =
-                    (note.valueArr[note.cursor] * wbnbPrice) /
-                    1e18;
+                if (token0 == WBNB) {
+                    reserve0 = (reserve0 * wbnbPrice) / 1e18;
+                } else {
+                    reserve1 = (reserve1 * wbnbPrice) / 1e18;
+                }
             }
+            note.valueArr[note.cursor] =
+                (2 *
+                    (token0 == BUSD || token0 == WBNB ? reserve0 : reserve1) *
+                    1e18) /
+                markets[bondId].LP.totalSupply();
 
             note.cursor++;
             if (note.cursor == note.valueArr.length) note.cursor = 0;
