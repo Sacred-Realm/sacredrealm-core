@@ -2294,12 +2294,7 @@ contract BondDepository is
         uint256 nextLevelBuyAmount = (level + 1) * 1e21;
         uint256 upgradeNeededBuyAmount = nextLevelBuyAmount -
             currentEpochBuyAmount;
-        uint256 progress;
-        if (upgradeNeededBuyAmount <= 1e21) {
-            progress = ((1e21 - upgradeNeededBuyAmount) * 1e4) / 1e21;
-        } else {
-            progress = (currentEpochBuyAmount * 1e4) / (level * 1e21);
-        }
+        uint256 progress = ((1e21 - upgradeNeededBuyAmount) * 1e4) / 1e21;
 
         return (currentRate, level, upgradeNeededBuyAmount, progress);
     }
@@ -2576,14 +2571,9 @@ contract BondDepository is
      * @dev Get User Invite Buy Rate
      */
     function getUserInviteBuyRate(address user) public view returns (uint256) {
-        uint256 lastEpochrate = (affiliateEpochUsdPayinBeforeTax[user][
-            getCurrentEpoch() - 1
-        ] / 1e21) * inviteBuyDynamicRate;
-        uint256 currentEpochrate = (affiliateEpochUsdPayinBeforeTax[user][
-            getCurrentEpoch()
-        ] / 1e21) * inviteBuyDynamicRate;
         return
-            lastEpochrate > currentEpochrate ? lastEpochrate : currentEpochrate;
+            (affiliateEpochUsdPayinBeforeTax[user][getCurrentEpoch()] / 1e21) *
+            inviteBuyDynamicRate;
     }
 
     /**
