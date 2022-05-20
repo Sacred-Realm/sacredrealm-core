@@ -358,13 +358,13 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
 
                 (token0Used, token1Used, lpAmount) = router.addLiquidityETH{
                     value: token0Amount
-                }(token1, token1Amount, 0, 0, msg.sender, block.timestamp);
+                }(token1, token1Amount, 0, 0, address(this), block.timestamp);
             } else if (token1 == WBNB) {
                 IERC20(token0).approve(address(router), token0Amount);
 
                 (token0Used, token1Used, lpAmount) = router.addLiquidityETH{
                     value: token1Amount
-                }(token0, token0Amount, 0, 0, msg.sender, block.timestamp);
+                }(token0, token0Amount, 0, 0, address(this), block.timestamp);
             } else {
                 IERC20(token0).approve(address(router), token0Amount);
                 IERC20(token1).approve(address(router), token1Amount);
@@ -376,7 +376,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
                     token1Amount,
                     0,
                     0,
-                    msg.sender,
+                    address(this),
                     block.timestamp
                 );
             }
@@ -398,6 +398,12 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
                     IERC20(token1).safeTransfer(msg.sender, token1Returned);
                 }
             }
+        } else {
+            IERC20(address(markets[bondId].LP)).safeTransferFrom(
+                msg.sender,
+                address(this),
+                lpAmount
+            );
         }
 
         bond(bondId, lpAmount, inviter);
@@ -886,13 +892,8 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         uint256 lpAmountTax = (lpAmount * taxRate) / 1e4;
         uint256 lpAmountPay = lpAmount - lpAmountTax;
 
-        IERC20(address(market.LP)).safeTransferFrom(
-            msg.sender,
-            treasury,
-            lpAmountTax
-        );
-        IERC20(address(market.LP)).safeTransferFrom(
-            msg.sender,
+        IERC20(address(market.LP)).safeTransfer(treasury, lpAmountTax);
+        IERC20(address(market.LP)).safeTransfer(
             market.receivingAddr,
             lpAmountPay
         );
