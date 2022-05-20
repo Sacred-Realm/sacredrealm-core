@@ -1,5 +1,5 @@
 {
-  "name": "sacredrealm-core",
+  "name": "sealemlab-core",
   "version": "1.0.11",
   "description": "",
   "main": "index.js",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sacred-Realm/sacredrealm-core.git"
+    "url": "git+https://github.com/sealemlab/sealemlab-core.git"
   },
   "files": [
     "typechain-types/"
@@ -22,9 +22,9 @@
   "author": "SEALEM-LAB",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Sacred-Realm/sacredrealm-core/issues"
+    "url": "https://github.com/sealemlab/sealemlab-core/issues"
   },
-  "homepage": "https://github.com/Sacred-Realm/sacredrealm-core#readme",
+  "homepage": "https://github.com/sealemlab/sealemlab-core#readme",
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.5",
     "@nomiclabs/hardhat-etherscan": "^3.0.3",
