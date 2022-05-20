@@ -9,5 +9,8 @@ pragma solidity >=0.8.12;
 abstract contract IInviting {
     mapping(address => address) public userInviter;
 
-    function bindInviter(address inviter) external virtual returns (address);
+    function managerBindInviter(address user, address inviter)
+        external
+        virtual
+        returns (address);
 }

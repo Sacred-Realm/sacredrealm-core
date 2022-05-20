@@ -2563,6 +2563,26 @@ abstract contract VRFConsumerBaseV2 {
 }
 
 
+// File contracts/pool/interface/IInviting.sol
+
+
+pragma solidity >=0.8.12;
+
+/**
+ * @title Inviting Interface
+ * @author SEALEM-LAB
+ * @notice Interface of the Inviting
+ */
+abstract contract IInviting {
+    mapping(address => address) public userInviter;
+
+    function managerBindInviter(address user, address inviter)
+        external
+        virtual
+        returns (address);
+}
+
+
 // File contracts/token/interface/ISN.sol
 
 
@@ -2663,6 +2683,7 @@ contract SB is
     bytes32 public constant MANAGER_ROLE = keccak256("MANAGER_ROLE");
 
     ISN public sn;
+    IInviting public inviting;
 
     string public baseURI;
 
@@ -2683,8 +2704,12 @@ contract SB is
         public userHourlyBoxesLength;
     mapping(uint256 => EnumerableSet.AddressSet) private whiteList;
 
+    mapping(address => mapping(address => uint256)) public userTokenBuyAmount;
+    mapping(address => mapping(address => uint256))
+        public affiliateTokenBuyAmount;
+
     event SetBaseURI(string uri);
-    event SetSN(address snAddr);
+    event SetAddrs(address snAddr, address invitingAddr);
     event SetVrfInfo(
         bytes32 keyHash,
         uint32 callbackGasLimit,
@@ -2744,12 +2769,16 @@ contract SB is
     }
 
     /**
-     * @dev Set SN Address
+     * @dev Set Addrs
      */
-    function setSN(address snAddr) external onlyRole(MANAGER_ROLE) {
+    function setAddrs(address snAddr, address invitingAddr)
+        external
+        onlyRole(MANAGER_ROLE)
+    {
         sn = ISN(snAddr);
+        inviting = IInviting(invitingAddr);
 
-        emit SetSN(snAddr);
+        emit SetAddrs(snAddr, invitingAddr);
     }
 
     /**
@@ -2868,11 +2897,11 @@ contract SB is
     /**
      * @dev Users buy the boxes
      */
-    function buyBoxes(uint256 amount, uint256 boxType)
-        external
-        payable
-        nonReentrant
-    {
+    function buyBoxes(
+        uint256 amount,
+        uint256 boxType,
+        address inviter
+    ) external payable nonReentrant {
         require(amount > 0, "Amount must > 0");
         require(
             getUserHourlyBoxesLeftSupply(
@@ -2931,9 +2960,15 @@ contract SB is
         }
 
         userHourlyBoxesLength[msg.sender][boxType][
-            block.timestamp / 3600
+            block.timestamp / 1 hours
         ] += amount;
         totalBoxesLength[boxType] += amount;
+
+        userTokenBuyAmount[msg.sender][tokenAddrs[boxType]] += price;
+        address userInviter = inviting.managerBindInviter(msg.sender, inviter);
+        if (userInviter != address(0)) {
+            affiliateTokenBuyAmount[userInviter][tokenAddrs[boxType]] += price;
+        }
 
         emit BuyBoxes(msg.sender, amount, sbIds, boxType);
     }
@@ -2950,7 +2985,7 @@ contract SB is
 
             safeTransferFrom(
                 msg.sender,
-                0x0000000000000000000000000000000000000020,
+                0x000000000000000000000000000000000000dEaD,
                 sbIds[i]
             );
         }
@@ -3030,7 +3065,7 @@ contract SB is
     ) public view returns (uint256) {
         return
             hourlyBuyLimits[boxType] -
-            userHourlyBoxesLength[user][boxType][timestamp / 3600];
+            userHourlyBoxesLength[user][boxType][timestamp / 1 hours];
     }
 
     /**
@@ -3049,7 +3084,14 @@ contract SB is
 
         return
             bytes(baseURI).length > 0
-                ? string(abi.encodePacked(baseURI, tokenId.toString(), ".json"))
+                ? string(
+                    abi.encodePacked(
+                        baseURI,
+                        tokenId.toString(),
+                        "-",
+                        sbIdToType[tokenId].toString()
+                    )
+                )
                 : "";
     }
 

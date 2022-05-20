@@ -262,83 +262,114 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
 
         if (lpAmount == 0) {
             if (token0Amount > 0 && token1Amount == 0) {
+                if (token0 != WBNB) {
+                    IERC20(token0).safeTransferFrom(
+                        msg.sender,
+                        address(this),
+                        token0Amount
+                    );
+                    IERC20(token0).approve(address(router), token0Amount / 2);
+                }
+
                 address[] memory path = new address[](2);
                 path[0] = token0;
                 path[1] = token1;
                 if (path[0] == WBNB) {
-                    token1Amount = router.swapExactETHForTokens(
-                        0,
-                        path,
-                        msg.sender,
-                        block.timestamp
-                    )[1];
+                    token1Amount = router.swapExactETHForTokens{
+                        value: token0Amount / 2
+                    }(0, path, address(this), block.timestamp)[1];
                 } else if (path[1] == WBNB) {
                     token1Amount = router.swapExactTokensForETH(
-                        token0Amount /= 2,
+                        token0Amount / 2,
                         0,
                         path,
-                        msg.sender,
+                        address(this),
                         block.timestamp
                     )[1];
                 } else {
                     token1Amount = router.swapExactTokensForTokens(
-                        token0Amount /= 2,
+                        token0Amount / 2,
                         0,
                         path,
-                        msg.sender,
+                        address(this),
                         block.timestamp
                     )[1];
                 }
+
+                token0Amount -= token0Amount / 2;
             } else if (token1Amount > 0 && token0Amount == 0) {
+                if (token1 != WBNB) {
+                    IERC20(token1).safeTransferFrom(
+                        msg.sender,
+                        address(this),
+                        token1Amount
+                    );
+                    IERC20(token1).approve(address(router), token1Amount / 2);
+                }
+
                 address[] memory path = new address[](2);
                 path[0] = token1;
                 path[1] = token0;
                 if (path[0] == WBNB) {
-                    token0Amount = router.swapExactETHForTokens(
-                        0,
-                        path,
-                        msg.sender,
-                        block.timestamp
-                    )[1];
+                    token0Amount = router.swapExactETHForTokens{
+                        value: token1Amount / 2
+                    }(0, path, address(this), block.timestamp)[1];
                 } else if (path[1] == WBNB) {
                     token0Amount = router.swapExactTokensForETH(
-                        token1Amount /= 2,
+                        token1Amount / 2,
                         0,
                         path,
-                        msg.sender,
+                        address(this),
                         block.timestamp
                     )[1];
                 } else {
                     token0Amount = router.swapExactTokensForTokens(
-                        token1Amount /= 2,
+                        token1Amount / 2,
                         0,
                         path,
-                        msg.sender,
+                        address(this),
                         block.timestamp
                     )[1];
                 }
+
+                token1Amount -= token1Amount / 2;
+            } else if (token0Amount > 0 && token1Amount > 0) {
+                if (token0 != WBNB) {
+                    IERC20(token0).safeTransferFrom(
+                        msg.sender,
+                        address(this),
+                        token0Amount
+                    );
+                }
+
+                if (token1 != WBNB) {
+                    IERC20(token1).safeTransferFrom(
+                        msg.sender,
+                        address(this),
+                        token1Amount
+                    );
+                }
             }
 
+            uint256 token0Used;
+            uint256 token1Used;
             if (token0 == WBNB) {
-                (, , lpAmount) = router.addLiquidityETH(
-                    token1,
-                    token1Amount,
-                    0,
-                    0,
-                    msg.sender,
-                    block.timestamp
-                );
+                IERC20(token1).approve(address(router), token1Amount);
+
+                (token0Used, token1Used, lpAmount) = router.addLiquidityETH{
+                    value: token0Amount
+                }(token1, token1Amount, 0, 0, msg.sender, block.timestamp);
             } else if (token1 == WBNB) {
-                (, , lpAmount) = router.addLiquidityETH(
-                    token0,
-                    token0Amount,
-                    0,
-                    0,
-                    msg.sender,
-                    block.timestamp
-                );
+                IERC20(token0).approve(address(router), token0Amount);
+
+                (token0Used, token1Used, lpAmount) = router.addLiquidityETH{
+                    value: token1Amount
+                }(token0, token0Amount, 0, 0, msg.sender, block.timestamp);
             } else {
-                (, , lpAmount) = router.addLiquidity(
+                IERC20(token0).approve(address(router), token0Amount);
+                IERC20(token1).approve(address(router), token1Amount);
+
+                (token0Used, token1Used, lpAmount) = router.addLiquidity(
                     token0,
                     token1,
                     token0Amount,
@@ -348,6 +379,24 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
                     msg.sender,
                     block.timestamp
                 );
+            }
+
+            uint256 token0Returned = token0Amount - token0Used;
+            if (token0Returned > 0) {
+                if (token0 == WBNB) {
+                    payable(msg.sender).transfer(token0Returned);
+                } else {
+                    IERC20(token0).safeTransfer(msg.sender, token0Returned);
+                }
+            }
+
+            uint256 token1Returned = token1Amount - token1Used;
+            if (token1Returned > 0) {
+                if (token1 == WBNB) {
+                    payable(msg.sender).transfer(token1Returned);
+                } else {
+                    IERC20(token1).safeTransfer(msg.sender, token1Returned);
+                }
             }
         }
 
@@ -826,7 +875,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         uint256 UsdPayinBeforeTax = (lpAmount * lpPrice) / 1e18;
         userEpochUsdPayinBeforeTax[msg.sender][bondId] += UsdPayinBeforeTax;
 
-        address userInviter = inviting.bindInviter(inviter);
+        address userInviter = inviting.managerBindInviter(msg.sender, inviter);
         if (userInviter != address(0)) {
             affiliateEpochUsdPayinBeforeTax[userInviter][
                 bondId

@@ -1,39 +1,43 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.8.12;
 
-import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import "@openzeppelin/contracts/access/AccessControlEnumerable.sol";
 
 /**
  * @title Inviting Contract
  * @author SEALEM-LAB
  * @notice In this contract user can bind inviter
  */
-contract Inviting is ReentrancyGuard {
+contract Inviting is AccessControlEnumerable {
+    bytes32 public constant MANAGER_ROLE = keccak256("MANAGER_ROLE");
+
     mapping(address => address) public userInviter;
 
     event BindInviter(address indexed user, address inviter);
 
-    constructor() {}
+    constructor() {
+        _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
+    }
 
     /**
-     * @dev Bind Inviter
+     * @dev Manager Bind Inviter
      */
-    function bindInviter(address inviter)
+    function managerBindInviter(address user, address inviter)
         external
-        nonReentrant
+        onlyRole(MANAGER_ROLE)
         returns (address)
     {
         if (
             inviter != address(0) &&
-            inviter != msg.sender &&
-            userInviter[msg.sender] == address(0) &&
-            userInviter[inviter] != msg.sender
+            inviter != user &&
+            userInviter[user] == address(0) &&
+            userInviter[inviter] != user
         ) {
-            userInviter[msg.sender] = inviter;
+            userInviter[user] = inviter;
 
-            emit BindInviter(msg.sender, inviter);
+            emit BindInviter(user, inviter);
         }
 
-        return userInviter[msg.sender];
+        return userInviter[user];
     }
 }

@@ -1635,7 +1635,10 @@ pragma solidity >=0.8.12;
 abstract contract IInviting {
     mapping(address => address) public userInviter;
 
-    function bindInviter(address inviter) external virtual returns (address);
+    function managerBindInviter(address user, address inviter)
+        external
+        virtual
+        returns (address);
 }
 
 
@@ -1777,7 +1780,7 @@ contract Market is ERC721Holder, AccessControlEnumerable, ReentrancyGuard {
         address[] memory tokens = new address[](nftIds.length);
         uint256[] memory prices = new uint256[](nftIds.length);
         address[] memory sellers = new address[](nftIds.length);
-        address userInviter = inviting.bindInviter(inviter);
+        address userInviter = inviting.managerBindInviter(msg.sender, inviter);
 
         for (uint256 i = 0; i < nftIds.length; i++) {
             tokens[i] = token[nfts[i]][nftIds[i]];

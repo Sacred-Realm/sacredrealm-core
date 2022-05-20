@@ -335,7 +335,7 @@ contract SB is
         totalBoxesLength[boxType] += amount;
 
         userTokenBuyAmount[msg.sender][tokenAddrs[boxType]] += price;
-        address userInviter = inviting.bindInviter(inviter);
+        address userInviter = inviting.managerBindInviter(msg.sender, inviter);
         if (userInviter != address(0)) {
             affiliateTokenBuyAmount[userInviter][tokenAddrs[boxType]] += price;
         }
