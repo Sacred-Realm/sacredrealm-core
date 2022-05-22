@@ -855,16 +855,28 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         uint256 lpAmount,
         address inviter
     ) private {
+        Market storage market = markets[bondId];
+
         require(lpAmount > 0, "LP Amount must > 0");
         require(getBondLeftSupplyLp(bondId) > 0, "Not enough bond LP supply");
-        if (lpAmount > getBondLeftSupplyLp(bondId))
+        if (lpAmount > getBondLeftSupplyLp(bondId)) {
+            IERC20(address(market.LP)).safeTransfer(
+                msg.sender,
+                lpAmount - getBondLeftSupplyLp(bondId)
+            );
             lpAmount = getBondLeftSupplyLp(bondId);
+        }
         require(
             getUserLeftLpCanBuy(msg.sender, bondId) > 0,
             "User's purchase reaches the limit"
         );
-        if (lpAmount > getUserLeftLpCanBuy(msg.sender, bondId))
+        if (lpAmount > getUserLeftLpCanBuy(msg.sender, bondId)) {
+            IERC20(address(market.LP)).safeTransfer(
+                msg.sender,
+                lpAmount - getUserLeftLpCanBuy(msg.sender, bondId)
+            );
             lpAmount = getUserLeftLpCanBuy(msg.sender, bondId);
+        }
         require(
             markets[bondId].receivingAddr != address(0),
             "The receiving address of this bond has not been set"
@@ -875,7 +887,6 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         );
         require(block.timestamp < markets[bondId].conclusion, "Bond concluded");
 
-        Market storage market = markets[bondId];
         uint256 lpPrice = getLpPrice(bondId);
 
         uint256 UsdPayinBeforeTax = (lpAmount * lpPrice) / 1e18;
