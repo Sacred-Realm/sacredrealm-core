@@ -2694,9 +2694,9 @@ contract SB is
     mapping(uint256 => address) public receivingAddrs;
     mapping(uint256 => uint256) public hourlyBuyLimits;
     mapping(uint256 => bool) public whiteListFlags;
-    mapping(uint256 => uint256[]) public starProbabilities;
+    mapping(uint256 => uint256[]) public starsProbabilities;
     mapping(uint256 => uint256[]) public powerProbabilities;
-    mapping(uint256 => uint256[]) public placeProbabilities;
+    mapping(uint256 => uint256[]) public partProbabilities;
 
     mapping(uint256 => uint256) public boxesMaxSupply;
     mapping(uint256 => uint256) public totalBoxesLength;
@@ -2722,9 +2722,9 @@ contract SB is
         address receivingAddr,
         uint256 hourlyBuylimit,
         bool whiteListFlag,
-        uint256[] starProbability,
+        uint256[] starsProbability,
         uint256[] powerProbability,
-        uint256[] placeProbability
+        uint256[] partProbability
     );
     event AddBoxesMaxSupply(uint256 supply, uint256 boxType);
     event AddWhiteList(uint256 boxType, address[] whiteUsers);
@@ -2806,18 +2806,18 @@ contract SB is
         address receivingAddr,
         uint256 hourlyBuyLimit,
         bool whiteListFlag,
-        uint256[] memory starProbability,
+        uint256[] memory starsProbability,
         uint256[] memory powerProbability,
-        uint256[] memory placeProbability
+        uint256[] memory partProbability
     ) external onlyRole(MANAGER_ROLE) {
         boxTokenPrices[boxType] = boxTokenPrice;
         tokenAddrs[boxType] = tokenAddr;
         receivingAddrs[boxType] = receivingAddr;
         hourlyBuyLimits[boxType] = hourlyBuyLimit;
         whiteListFlags[boxType] = whiteListFlag;
-        starProbabilities[boxType] = starProbability;
+        starsProbabilities[boxType] = starsProbability;
         powerProbabilities[boxType] = powerProbability;
-        placeProbabilities[boxType] = placeProbability;
+        partProbabilities[boxType] = partProbability;
 
         emit SetBoxInfo(
             boxType,
@@ -2826,9 +2826,9 @@ contract SB is
             receivingAddr,
             hourlyBuyLimit,
             whiteListFlag,
-            starProbability,
+            starsProbability,
             powerProbability,
-            placeProbability
+            partProbability
         );
     }
 
@@ -2924,16 +2924,16 @@ contract SB is
             "The receiving address of this box has not been set"
         );
         require(
-            starProbabilities[boxType].length == 11,
-            "The star probability of this box has not been set"
+            starsProbabilities[boxType].length == 11,
+            "The stars probability of this box has not been set"
         );
         require(
             powerProbabilities[boxType].length == 5,
             "The power probability of this box has not been set"
         );
         require(
-            placeProbabilities[boxType].length == 8,
-            "The place probability of this box has not been set"
+            partProbabilities[boxType].length == 8,
+            "The part probability of this box has not been set"
         );
         if (whiteListFlags[boxType]) {
             require(
@@ -3139,7 +3139,7 @@ contract SB is
 
         for (uint256 i = 0; i < randomWords.length; i++) {
             attr[0] = getLevel(
-                starProbabilities[requestIdToTypes[requestId][i]],
+                starsProbabilities[requestIdToTypes[requestId][i]],
                 randomWords[i] % 1e4
             );
             attr[1] =
@@ -3150,7 +3150,7 @@ contract SB is
                 ((((randomWords[i] % 1e12) / 1e8) % 20) + 1);
             attr[2] = (((randomWords[i] % 1e16) / 1e12) % 4) + 1;
             attr[3] = getLevel(
-                placeProbabilities[requestIdToTypes[requestId][i]],
+                partProbabilities[requestIdToTypes[requestId][i]],
                 (randomWords[i] % 1e20) / 1e16
             );
             attr[4] = (((randomWords[i] % 1e24) / 1e20) % 4) + 1;
