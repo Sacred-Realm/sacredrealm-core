@@ -1447,17 +1447,15 @@ pragma solidity >=0.8.12;
  * @notice Contract to supply SR
  */
 contract SR is ERC20, AccessControlEnumerable {
-    using EnumerableSet for EnumerableSet.AddressSet;
-
     bytes32 public constant MANAGER_ROLE = keccak256("MANAGER_ROLE");
 
     uint256 private _totalSupply;
     mapping(address => uint256) private _balances;
 
-    mapping(address => bool) public isFeeExempt;
-
     address public treasury;
     uint256 public fee = 100;
+
+    mapping(address => bool) public isFeeExempt;
 
     event SetTreasury(address treasury);
     event SetWhiteList(address addr, bool isFeeExempt);

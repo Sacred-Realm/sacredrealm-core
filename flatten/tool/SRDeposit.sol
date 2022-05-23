@@ -2,7 +2,7 @@
 
 // File @openzeppelin/contracts/token/ERC20/IERC20.sol@v4.5.0
 
-
+// SPDX-License-Identifier: MIT
 // OpenZeppelin Contracts (last updated v4.5.0) (token/ERC20/IERC20.sol)
 
 pragma solidity ^0.8.0;
@@ -1433,7 +1433,7 @@ abstract contract ISR is IERC20 {
 
 // File contracts/tool/SRDeposit.sol
 
-// SPDX-License-Identifier: MIT
+
 pragma solidity >=0.8.12;
 /**
  * @title Sacred Realm Deposit Contract

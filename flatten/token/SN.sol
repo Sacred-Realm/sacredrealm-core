@@ -2172,9 +2172,26 @@ contract SN is ERC721Enumerable, AccessControlEnumerable {
             "ERC721Metadata: URI query for nonexistent token"
         );
 
+        uint256[] memory attr = datas[tokenId]["attr"];
+
         return
             bytes(baseURI).length > 0
-                ? string(abi.encodePacked(baseURI, tokenId.toString(), ".json"))
+                ? string(
+                    abi.encodePacked(
+                        baseURI,
+                        tokenId.toString(),
+                        "-",
+                        attr[0].toString(),
+                        "-",
+                        attr[1].toString(),
+                        "-",
+                        attr[2].toString(),
+                        "-",
+                        attr[3].toString(),
+                        "-",
+                        attr[4].toString()
+                    )
+                )
                 : "";
     }
 
