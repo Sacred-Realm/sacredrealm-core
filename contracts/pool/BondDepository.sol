@@ -31,15 +31,15 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         IPancakeRouter(0x10ED43C718714eb63d5aA57B78B54704E256024E);
 
     uint256 public bondDynamicRate = 1;
-    uint256 public bondBaseRate = 500;
+    uint256 public bondBaseRate = 300;
 
     uint256 public inviteBuyDynamicRate = 10;
     uint256 public inviteStakeDynamicRate = 10;
     uint256 public stakeDynamicRate = 10;
     uint256 public extraMaxRate = 3000;
 
-    uint256 public taxDynamicRate = 1;
-    uint256 public taxBaseRate = 10;
+    uint256 public taxDynamicRate = 10;
+    uint256 public taxBaseRate = 100;
     uint256 public taxMaxRate = 1000;
 
     address public treasury;
