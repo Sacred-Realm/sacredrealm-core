@@ -21,10 +21,10 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     bytes32 public constant MANAGER_ROLE = keccak256("MANAGER_ROLE");
 
     // testnet: 0x78867BbEeF44f2326bF8DDd1941a4439382EF2A7
-    address public BUSD = 0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56;
+    address public constant BUSD = 0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56;
 
     // testnet: 0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd
-    address public WBNB = 0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c;
+    address public constant WBNB = 0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c;
 
     // testnet: 0x9Ac64Cc6e4415144C455BD8E4837Fea55603e5c3
     IPancakeRouter public router =
@@ -136,6 +136,14 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     }
 
     /**
+     * @dev Validate BondId
+     */
+    modifier validateBondId(uint256 bondId) {
+        require(bondId < markets.length, "bondId does not exist");
+        _;
+    }
+
+    /**
      * @dev Set Rate
      */
     function setRate(
@@ -149,7 +157,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         uint256 _taxBaseRate,
         uint256 _taxMaxRate
     ) external onlyRole(MANAGER_ROLE) {
-        require(_taxMaxRate <= 5000, "The tax max rate cannot exceed 50%");
+        require(_taxMaxRate <= 3000, "The tax max rate cannot exceed 30%");
 
         bondDynamicRate = _bondDynamicRate;
         bondBaseRate = _bondBaseRate;
@@ -183,6 +191,14 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         address invitingAddr,
         address stStakingAddr
     ) external onlyRole(MANAGER_ROLE) {
+        require(
+            _treasury != address(0) &&
+                stlpAddr != address(0) &&
+                invitingAddr != address(0) &&
+                stStakingAddr != address(0),
+            "Addrs cannot be empty"
+        );
+
         treasury = _treasury;
         STLP = IPancakePair(stlpAddr);
         inviting = IInviting(invitingAddr);
@@ -202,6 +218,11 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         uint256 term,
         uint256 conclusion
     ) external onlyRole(MANAGER_ROLE) {
+        require(
+            lpAddr != address(0) && receivingAddr != address(0),
+            "Addrs cannot be empty"
+        );
+
         markets.push(
             Market({
                 LP: IPancakePair(lpAddr),
@@ -228,7 +249,11 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
     /**
      * @dev Close Bond
      */
-    function closeBond(uint256 bondId) external onlyRole(MANAGER_ROLE) {
+    function closeBond(uint256 bondId)
+        external
+        onlyRole(MANAGER_ROLE)
+        validateBondId(bondId)
+    {
         markets[bondId].conclusion = block.timestamp;
 
         emit CloseBond(bondId);
@@ -257,7 +282,7 @@ contract BondDepository is AccessControlEnumerable, ReentrancyGuard {
         uint256 token1Amount,
         uint256 lpAmount,
         address inviter
-    ) external payable nonReentrant {
+    ) external payable nonReentrant validateBondId(bondId) {
         (address token0, address token1) = getLPTokensAddrs(markets[bondId].LP);
 
         if (lpAmount == 0) {

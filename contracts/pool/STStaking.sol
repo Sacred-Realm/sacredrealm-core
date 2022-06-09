@@ -63,7 +63,7 @@ contract STStaking is AccessControlEnumerable, ReentrancyGuard {
         external
         onlyRole(MANAGER_ROLE)
     {
-        require(_taxBaseRate <= 5000, "The tax base rate cannot exceed 50%");
+        require(_taxBaseRate <= 3000, "The tax base rate cannot exceed 30%");
 
         taxDynamicRate = _taxDynamicRate;
         taxBaseRate = _taxBaseRate;
@@ -79,6 +79,13 @@ contract STStaking is AccessControlEnumerable, ReentrancyGuard {
         address stAddr,
         address invitingAddr
     ) external onlyRole(MANAGER_ROLE) {
+        require(
+            _treasury != address(0) &&
+                stAddr != address(0) &&
+                invitingAddr != address(0),
+            "Addrs cannot be empty"
+        );
+
         treasury = _treasury;
         st = IERC20(stAddr);
         inviting = IInviting(invitingAddr);
