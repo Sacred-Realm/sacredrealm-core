@@ -1,6 +1,6 @@
 {
   "name": "sealemlab-core",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "build": "npm run clean && npm run compile",
     "coverage": "npm run build && npx hardhat coverage --temp artifacts --network coverage",
     "deploy": "npm run build && npx hardhat run --network testnet scripts/deploy.ts",
-    "flatten": "npx hardhat flatten ./contracts/pool/Market.sol > ./flatten/pool/Market.sol"
+    "flatten": "npx hardhat flatten ./contracts/pool/IDO.sol > ./flatten/pool/IDO.sol"
   },
   "repository": {
     "type": "git",
