@@ -18,8 +18,7 @@ contract IDO is AccessControlEnumerable, ReentrancyGuard {
 
     bytes32 public constant MANAGER_ROLE = keccak256("MANAGER_ROLE");
 
-    IERC20 public st;
-
+    mapping(uint256 => address) public idoTokens;
     mapping(uint256 => uint256) public tokenPrices;
     mapping(uint256 => address) public tokenAddrs;
     mapping(uint256 => address) public receivingAddrs;
@@ -33,9 +32,9 @@ contract IDO is AccessControlEnumerable, ReentrancyGuard {
     mapping(address => mapping(uint256 => uint256)) public userTokenPurchased;
     mapping(uint256 => EnumerableSet.AddressSet) private whiteList;
 
-    event SetAddrs(address stAddr);
     event SetIDOInfo(
         uint256 idoId,
+        address idoToken,
         uint256 tokenPrice,
         address tokenAddr,
         address receivingAddr,
@@ -58,19 +57,11 @@ contract IDO is AccessControlEnumerable, ReentrancyGuard {
     }
 
     /**
-     * @dev Set Addrs
-     */
-    function setAddrs(address stAddr) external onlyRole(MANAGER_ROLE) {
-        st = IERC20(stAddr);
-
-        emit SetAddrs(stAddr);
-    }
-
-    /**
      * @dev Set IDO Info
      */
     function setIDOInfo(
         uint256 idoId,
+        address idoToken,
         uint256 tokenPrice,
         address tokenAddr,
         address receivingAddr,
@@ -80,6 +71,7 @@ contract IDO is AccessControlEnumerable, ReentrancyGuard {
         uint256 endTime,
         bool whiteListFlag
     ) external onlyRole(MANAGER_ROLE) {
+        idoTokens[idoId] = idoToken;
         tokenPrices[idoId] = tokenPrice;
         tokenAddrs[idoId] = tokenAddr;
         receivingAddrs[idoId] = receivingAddr;
@@ -91,6 +83,7 @@ contract IDO is AccessControlEnumerable, ReentrancyGuard {
 
         emit SetIDOInfo(
             idoId,
+            idoToken,
             tokenPrice,
             tokenAddr,
             receivingAddr,
@@ -140,6 +133,10 @@ contract IDO is AccessControlEnumerable, ReentrancyGuard {
     {
         require(amount > 0, "Amount must > 0");
         require(
+            idoTokens[idoId] != address(0),
+            "The token of this IDO has not been set"
+        );
+        require(
             block.timestamp >= startTimes[idoId],
             "This IDO has not started"
         );
@@ -151,11 +148,11 @@ contract IDO is AccessControlEnumerable, ReentrancyGuard {
         require(getTokenLeftSupply(idoId) >= amount, "Not enough token supply");
         require(
             tokenPrices[idoId] > 0,
-            "The price of this token has not been set"
+            "The price of this IDO has not been set"
         );
         require(
             receivingAddrs[idoId] != address(0),
-            "The receiving address of this token has not been set"
+            "The receiving address of this IDO has not been set"
         );
         if (whiteListFlags[idoId]) {
             require(
@@ -173,7 +170,7 @@ contract IDO is AccessControlEnumerable, ReentrancyGuard {
             token.safeTransferFrom(msg.sender, receivingAddrs[idoId], price);
         }
 
-        st.safeTransfer(msg.sender, amount);
+        IERC20(idoTokens[idoId]).safeTransfer(msg.sender, amount);
 
         userTokenPurchased[msg.sender][idoId] += amount;
         tokenSoldout[idoId] += amount;
