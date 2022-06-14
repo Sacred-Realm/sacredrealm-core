@@ -161,7 +161,7 @@ contract IDO is AccessControlEnumerable, ReentrancyGuard {
             );
         }
 
-        uint256 price = amount * tokenPrices[idoId];
+        uint256 price = (amount * tokenPrices[idoId]) / 1e18;
         if (tokenAddrs[idoId] == address(0)) {
             require(msg.value == price, "Price mismatch");
             payable(receivingAddrs[idoId]).transfer(price);
