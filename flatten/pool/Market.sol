@@ -1646,6 +1646,13 @@ abstract contract IInviting {
 
 
 pragma solidity >=0.8.12;
+
+
+
+
+
+
+
 /**
  * @title Market Contract
  * @author SEALEM-LAB

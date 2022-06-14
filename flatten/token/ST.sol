@@ -533,6 +533,7 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
 
 
 pragma solidity >=0.8.12;
+
 /**
  * @title Sealem Token
  * @author SEALEM-LAB

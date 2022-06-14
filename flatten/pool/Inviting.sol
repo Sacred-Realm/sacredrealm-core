@@ -940,6 +940,7 @@ abstract contract AccessControlEnumerable is IAccessControlEnumerable, AccessCon
 
 
 pragma solidity >=0.8.12;
+
 /**
  * @title Inviting Contract
  * @author SEALEM-LAB

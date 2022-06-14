@@ -2587,6 +2587,7 @@ abstract contract IInviting {
 
 
 pragma solidity >=0.8.12;
+
 /**
  * @title SN Interface
  * @author SEALEM-LAB
@@ -2644,6 +2645,18 @@ abstract contract ISN is IERC721Enumerable {
 
 
 pragma solidity >=0.8.12;
+
+
+
+
+
+
+
+
+
+
+
+
 /**
  * @title Sacred Realm Box
  * @author SEALEM-LAB
