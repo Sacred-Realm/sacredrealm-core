@@ -5,4 +5,6 @@ typechain-types/
 artifacts/
 logs/
 coverage*
+scripts/maker.ts
+scripts/.info
 .env
