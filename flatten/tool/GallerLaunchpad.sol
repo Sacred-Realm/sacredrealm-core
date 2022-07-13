@@ -326,7 +326,7 @@ abstract contract ISN is IERC721Enumerable {
 
 // File contracts/tool/GallerLaunchpad.sol
 
-//SPDX-License-Identifier: Unlicense
+
 pragma solidity >=0.8.12;
 
 

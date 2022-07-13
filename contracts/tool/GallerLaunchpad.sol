@@ -1,4 +1,4 @@
-//SPDX-License-Identifier: Unlicense
+// SPDX-License-Identifier: MIT
 pragma solidity >=0.8.12;
 
 import "@openzeppelin/contracts/token/ERC721/utils/ERC721Holder.sol";
