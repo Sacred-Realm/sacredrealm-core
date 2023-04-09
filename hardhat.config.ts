@@ -21,15 +21,15 @@ const config: HardhatUserConfig = {
     hardhat: {},
     localhost: {},
     testnet: {
-      url: "https://data-seed-prebsc-1-s1.binance.org:8545/",
-      chainId: 97,
+      url: "https://goerli.infura.io/v3/bf8dec918d984e83b993411ee2ab6f00",
+      chainId: 5,
       gas: 2100000,
       gasPrice: 20000000000,
       accounts: [PRIVATE_KEY]
     },
     mainnet: {
-      url: "https://bsc-dataseed.binance.org/",
-      chainId: 56,
+      url: "https://mainnet.infura.io/v3/bf8dec918d984e83b993411ee2ab6f00",
+      chainId: 1,
       gas: 2100000,
       gasPrice: 20000000000,
       accounts: [PRIVATE_KEY]

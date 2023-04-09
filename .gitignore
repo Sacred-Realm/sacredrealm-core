@@ -6,5 +6,6 @@ artifacts/
 logs/
 coverage*
 scripts/maker.ts
+scripts/mint.ts
 scripts/.info
 .env
