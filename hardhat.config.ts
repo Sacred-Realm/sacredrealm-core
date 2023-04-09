@@ -21,14 +21,14 @@ const config: HardhatUserConfig = {
     hardhat: {},
     localhost: {},
     testnet: {
-      url: "https://eth-goerli.g.alchemy.com/v2/dDCf0lfjfq1HeLlGAK3-u8r7hRhrJrEY",
+      url: "https://rpc.ankr.com/eth_goerli",
       chainId: 5,
       gas: 2100000,
       gasPrice: 20000000000,
       accounts: [PRIVATE_KEY]
     },
     mainnet: {
-      url: "https://eth-mainnet.g.alchemy.com/v2/Z_xFFXUwd05vfeJOS74UETGJVEd2A65Y",
+      url: "https://rpc.ankr.com/eth",
       chainId: 1,
       gas: 2100000,
       gasPrice: 20000000000,
