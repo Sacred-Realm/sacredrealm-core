@@ -26,7 +26,7 @@ const config: HardhatUserConfig = {
       accounts: [PRIVATE_KEY]
     },
     mainnet: {
-      url: "https://eth-mainnet.g.alchemy.com/v2/Z_xFFXUwd05vfeJOS74UETGJVEd2A65Y",
+      url: "https://mainnet.infura.io/v3/bf8dec918d984e83b993411ee2ab6f00",
       chainId: 1,
       accounts: [PRIVATE_KEY]
     },
