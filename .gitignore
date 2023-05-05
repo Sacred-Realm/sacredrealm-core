@@ -7,5 +7,6 @@ logs/
 coverage*
 scripts/maker.ts
 scripts/mint.ts
+scripts/nft.ts
 scripts/.info
 .env
